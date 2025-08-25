@@ -1,7 +1,7 @@
 ---
-id: useofweb3js
-name: Basic use of web3.js
-summary: This tutorial gives a short introduction of the web3.js library, querying the block number
+id: usodeweb3js
+name: Uso básico de web3.js
+summary: Este tutorial da una breve introducción a la biblioteca web3.js, consultando el número de bloque
 level: 2
 tags:
   - JS
