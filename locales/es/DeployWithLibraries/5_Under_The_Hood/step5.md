@@ -1,7 +1,7 @@
 Cambia al módulo `Solidity compiler` ![Solidity Compiler](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_icon_solidity.png "Solidity Compiler")
 
-- Selecciona el contrato `sampleContract` en la lista de contratos compilados.
-- haz clic en `ByteCode`, debería copiar lo siguiente en el portapapeles:
+ - Selecciona el contrato `sampleContract` en la lista de contratos compilados.
+ - haz clic en `ByteCode`, debería copiar lo siguiente en el portapapeles:
 
 ```
 {
@@ -23,7 +23,7 @@ Cambia al módulo `Solidity compiler` ![Solidity Compiler](https://github.com/et
 
 Esto es básicamente lo que el compilador está volviendo:
 
-- `linkReferences` describe cuáles son las librerías utilizadas por el contrato.
-- `object` es el contrato compilado (bytecode). Esto es lo que se desplegó y se guardó en la cadena de bloques. En este ejemplo, el valor `__$d42d70ba92b626965f4c69b39148e37a33$__` dentro del bytecode es solo un marcador de posición para la dirección de la librería. En tu caso, el marcador estará entre `__$` y `$__`.
+ - `linkReferences` describe cuáles son las librerías utilizadas por el contrato.
+ - `object` es el contrato compilado (bytecode). Esto es lo que se desplegó y se guardó en la cadena de bloques. En este ejemplo, el valor `__$d42d70ba92b626965f4c69b39148e37a33$__` dentro del bytecode es solo un marcador de posición para la dirección de la librería. En tu caso, el marcador estará entre `__$` y `$__`.
 
 El metadato JSON del IDE Remix le dice a Remix que reemplace el marcador de posición con la dirección dada.
