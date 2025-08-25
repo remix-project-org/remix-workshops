@@ -25,7 +25,7 @@
 8. 投票権を与えたアドレスの内の1つに切り替えて、提案 **1** に投票します  (vote関数の隣のテキストボックスに **1** を入力します)。  そして再度、他のアドレスに切り替えて、そのアドレスで提案 **2**に投票します。
 
 9. モジュールの **Transactions recorded** セクションをキャレットをクリックして開きます。  **Transactions recorded** にあるハードディスクのアイコンをクリックして、ステップを保存します。
-  ![recorder](https://github.com/ethereum/remix-workshops/blob/master/Recorder/2_Record/images/recorder.png?raw=true "recorder")
+   ![recorder](https://github.com/ethereum/remix-workshops/blob/master/Recorder/2_Record/images/recorder.png?raw=true "recorder")
 
 10. モーダルウィンドウが立ち上がり、 **scenario.json** というファイルを保存するか確認をしてきます。  OKをクリックします。
 
