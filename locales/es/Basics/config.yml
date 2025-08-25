@@ -1,26 +1,26 @@
 ---
-id: basics
-name: Basics of Remix
-summary: A typical workflow in Remix
+id: conceptos básicos
+name: Conceptos básicos de Remix
+summary: Un flujo de trabajo típico en Remix
 level: 1
 tags:
   - Remix
 steps:
   - 
-    name: Intro to the Interface
-    path: interface_introduction
+    name: Introducción a la interfaz
+    path: introducción a la interfaz
   - 
-    name: Intro to Workspaces
-    path: workspaces
+    name: Introducción a los espacios de trabajo
+    path: espacios de trabajo
   - 
-    name: Loading & Compiling
-    path: load_and_compile
+    name: Carga y compilación
+    path: cargar_y_compilar
   - 
-    name: Deploying to the Remix VM
-    path: deploy_to_the_remixvm
+    name: Implementación en la máquina virtual Remix
+    path: implementar en RemixVM
   - 
-    name: Interacting with Functions
-    path: interacting
+    name: Interactuar con funciones
+    path: interactuando
   - 
-    name: Deploying to Public Networks
-    path: deploy_injected
+    name: Implementación a las Redes Públicas
+    path: implementar_inyectado
