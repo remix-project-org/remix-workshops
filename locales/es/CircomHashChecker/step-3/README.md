@@ -1,32 +1,32 @@
-## Exploring `calculate_hash.circom`
+## Explorando `calculate_hash.circom`
 
-Navigate to the `circuits` directory and open `calculate_hash.circom`. This file contains the Circom code for the Hash Checker circuit.
+Navegue hasta el directorio «circuits» y abra «calculate_hash.circom». Este archivo contiene el código Circom para el circuito Hash Checker.
 
-### Code Breakdown
+### Desglose del código
 
-#### Pragma and Includes:
+#### Pragma e incluye:
 
-- `pragma circom 2.0.0;` specifies the Circom version.
-- `include "circomlib/circuits/poseidon.circom";` fetch and includes the Poseidon hash function from [CircomLib](https://github.com/iden3/circomlib).
+- `pragma circom 2.0.0;` especifica la versión de Circom.
+- `incluir «circomlib/circuits/poseidon.circom»;` obtiene e incluye la función hash Poseidon de [CircomLib](https://github.com/iden3/circomlib).
 
-#### `CalculateHash` Template:
+#### Plantilla `CalculateHash`:
 
-- Defines inputs `value1`, `value2`, `value3`, `value4`.
-- Uses the `Poseidon` hash function to compute a hash of these values.\
-- Outputs `out`, which is the hash.
+- Define las entradas «valor1», «valor2», «valor3» y «valor4».
+- Utiliza la función hash `Poseidon` para calcular un hash de estos valores.
+- Salida `out`, que es el hash.
 
-#### `HashChecker` Template:
+#### Plantilla `HashChecker`:
 
-- Inputs are the same values plus a `hash`.
-- Instantiates `CalculateHash` as `calculateSecret`.
-- Computes `calculatedHash`.
-- Uses `assert(hash == calculatedHash);` to ensure the provided hash matches the calculated hash.
+- Las entradas son los mismos valores más un «hash».
+- Instancia `CalculateHash` como `calculateSecret`.
+- Calcula `calculatedHash`.
+- Utiliza `assert(hash == calculatedHash);` para garantizar que el hash proporcionado coincide con el hash calculado.
 
-#### Main Component:
+#### Componente Principal:
 
-- `component main {public [hash]} = HashChecker();`
-- Specifies that `hash` is a `public` input, while the values are `private`.
+- `componente principal {público [hash]} = HashChecker();`
+- Especifica que «hash» es una entrada «pública», mientras que los valores son «privados».
 
-### Purpose
+### Objetivo
 
-The circuit allows someone to prove they know `value1`, `value2`, `value3`, and `value4` that hash to a specific `hash` without revealing the values themselves.
+El circuito permite a alguien demostrar que conoce «valor1», «valor2», «valor3» y «valor4», que se resumen en un «hash» específico, sin revelar los valores en sí.
