@@ -4,7 +4,7 @@
 
 在文件资源管理器顶部，单击\*\*+\*\*图标以创建新的工作区。
 
-**default_workspace** 的contracts 文件夹中有三个Solidity (.sol) 文件。 Remix has a number of other templates. 当您加载模板时，它会进入工作区。 要在工作区之间切换，请使用文件资源管理器顶部的选择框。
+**default_workspace** 的contracts 文件夹中有三个Solidity (.sol) 文件。 Remix 提供了多种模板。 当您加载模板时，它会进入工作区。 要在工作区之间切换，请使用文件资源管理器顶部的选择框。
 
 当单击展开菜单（位于文件资源管理器右上角）时，会显示出工作区管理工具。
 
