@@ -27,11 +27,11 @@ component main = Multiplier();
 
 ## Explanation:
 
-- template `Multiplier()`: Defines a new circuit template called Multiplier.
-- `signal input a;` and `signal input b;`: Declare input signals a and b.
-- `signal output c;`: Declare an output signal c.
-- `c <== a * b;`: Constrain c to be the product of a and b.
-- `component main = Multiplier();`: Instantiates the Multiplier circuit as main, which is required for the compiler.
+ - template `Multiplier()`: Defines a new circuit template called Multiplier.
+ - `signal input a;` and `signal input b;`: Declare input signals a and b.
+ - `signal output c;`: Declare an output signal c.
+ - `c <== a * b;`: Constrain c to be the product of a and b.
+ - `component main = Multiplier();`: Instantiates the Multiplier circuit as main, which is required for the compiler.
 
 ### NB:
 
