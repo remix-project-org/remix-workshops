@@ -5,11 +5,11 @@ summary: Go through the Solidity code of the Uniswap V3 Swap contract. Developed
 level: 2
 tags:
   - Solidity
-  - Tokens
+  - Tókenes
   - Uniswap
 steps:
   - 
-    name: 1. Introduction
+    name: 1. Introducción
     path: 1-introduction-to-uniswap
   - 
     name: 2. Routers, Interfaces, and Structs
