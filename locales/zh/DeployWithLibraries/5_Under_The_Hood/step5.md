@@ -1,8 +1,8 @@
 切换到`Solidity compiler`模块
 ![Solidity Compiler](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_icon_solidity.png "Solidity Compiler")
 
-- 在已编译合约列表中选择`sampleContract`合约。
-- 点击`ByteCode`，它应该将以下内容复制到剪贴板：
+ - 在已编译合约列表中选择`sampleContract`合约。
+ - 点击`ByteCode`，它应该将以下内容复制到剪贴板：
 
 ```
 {
@@ -24,7 +24,7 @@
 
 这基本上是编译器返回的内容：
 
-- `linkReferences` 描述了合约使用的库。
-- `object` 是编译后的合约（字节码）。 这就是部署并保存到区块链上的内容。 在此示例中，字节码内的值`__$d42d70ba92b626965f4c69b39148e37a33$__`只是库地址的占位符。 对你来说，占位符将位于`__$`和`$__`之间。
+ - `linkReferences` 描述了合约使用的库。
+ - `object` 是编译后的合约（字节码）。 这就是部署并保存到区块链上的内容。 在此示例中，字节码内的值`__$d42d70ba92b626965f4c69b39148e37a33$__`只是库地址的占位符。 对你来说，占位符将位于`__$`和`$__`之间。
 
 来自 Remix IDE 的元数据 JSON 告诉 Remix 使用给定地址替换占位符。
