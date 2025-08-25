@@ -14,11 +14,11 @@
 
 それでは、Remixで**メタデータファイル**の生成の設定をしましょう。
 
-- アイコンパネルにある settings ![settings](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/settings.png "Settings") アイコンをクリックして設定モジュールに行きます。
+ - アイコンパネルにある settings ![settings](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/settings.png "Settings") アイコンをクリックして設定モジュールに行きます。
 
 ![settings module](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_settings.png "Settings Module")
 
-- `Generate contract metadata`にチェックをします。
+ - `Generate contract metadata`にチェックをします。
 
 # コンパイルとメタデータ(JSON)ファイルの生成
 
@@ -29,7 +29,7 @@
 3. ファイルエクスプローラ![File Explorer](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_file_explorer.png "File Explorer")に切り替えます。
 
 4. 新しく作成されたJSONファイルに移動します。
- - 次のフォルダ内にあります:
+    - 次のフォルダ内にあります:
 
 **browser/.learneth/DeployWithLibraries/2_Generate_Metadata/artifacts/**
 
