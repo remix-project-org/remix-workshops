@@ -27,11 +27,11 @@ component main = Multiplier();
 
 ## 説明:
 
-- template `Multiplier()`: Multiplierという新規の回路のテンプレートを定義しています。
-- `signal input a;` および `signal input b;`: 入力シグナルである a と b を宣言しています。
-- `signal output c;`: 出力シグナルである c を宣言しています。
-- `c <== a * b;`: c が a と b の積であることを制限しています。
-- `component main = Multiplier();`: mainとしてMultiplier回路をインスタンス化しています。これには、コンパイラが必要になります。
+ - template `Multiplier()`: Multiplierという新規の回路のテンプレートを定義しています。
+ - `signal input a;` および `signal input b;`: 入力シグナルである a と b を宣言しています。
+ - `signal output c;`: 出力シグナルである c を宣言しています。
+ - `c <== a * b;`: c が a と b の積であることを制限しています。
+ - `component main = Multiplier();`: mainとしてMultiplier回路をインスタンス化しています。これには、コンパイラが必要になります。
 
 ### 注意:
 
