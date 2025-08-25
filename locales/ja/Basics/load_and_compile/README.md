@@ -11,7 +11,7 @@ File Explorerからエディタにファイルをロードしましょう。
 4. アイコンパネルで、 **Solidity Compiler** ![solidity compiler icon](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/load_and_compile/images/solidity1.png "solidity compiler icon") をクリックします。 サイドパネルにSolidityコンパイラが表示されます。
 
 5. コンパイルボタンをクリックします。
-   ![compile 2\_owner](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/load_and_compile/images/compile2owner.png "compile 2_Owner")
+   ![compile 2_owner](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/load_and_compile/images/compile2owner.png "compile 2_Owner")
 
 6. **CTRL + S** を押すことでもコンパイル可能です。
 
