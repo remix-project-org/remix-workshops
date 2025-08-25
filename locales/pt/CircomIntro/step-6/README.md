@@ -2,15 +2,15 @@ With the trusted setup complete, you can now compute the witness for your circui
 
 ## What is a Witness?
 
-- A **Witness** is a set of values that satisfy all the constraints of your circuit. It includes all the intermediate numbers and results that satisfy the circuit's rules. The witness is used in zero-knowledge proofs to demonstrate that you know a valid solution to the problem without actually showing the solution itself. This allows others to verify that you did everything correctly while keeping your specific numbers and calculations private.
-- It is essential for generating a proof.
+ - A **Witness** is a set of values that satisfy all the constraints of your circuit. It includes all the intermediate numbers and results that satisfy the circuit's rules. The witness is used in zero-knowledge proofs to demonstrate that you know a valid solution to the problem without actually showing the solution itself. This allows others to verify that you did everything correctly while keeping your specific numbers and calculations private.
+ - It is essential for generating a proof.
 
 ## Inputting Values
 
 1. In the **Compute Witness** section, you'll see input fields dynamically generated based on your circuit's inputs.
 2. Enter values for `a` and `b`. For example:
-   - `a = 3`
-   - `b = 4`
+    - `a = 3`
+    - `b = 4`
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-6/images/compute_witness.png" alt="compute-witness" width=280 height=240>
 
