@@ -14,11 +14,11 @@ A contract's metadata is generated at **compile time**.
 
 Let's setup Remix to generate the **metadata file**.
 
-- Go to the settings module by clicking on the settings ![settings](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/settings.png "Settings") icon in the icon panel.
+ - Go to the settings module by clicking on the settings ![settings](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/settings.png "Settings") icon in the icon panel.
 
 ![settings module](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_settings.png "Settings Module")
 
-- And check the first option `Generate contract metadata`.
+ - And check the first option `Generate contract metadata`.
 
 # Compile and generate metadata (JSON) file.
 
@@ -29,7 +29,7 @@ Let's setup Remix to generate the **metadata file**.
 3. Switch to the File Explorer ![File Explorer](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_file_explorer.png "File Explorer")
 
 4. Navigate to the newly create JSON files.
-   - It should be in the folder:
+    - It should be in the folder:
 
 **browser/.learneth/DeployWithLibraries/2_Generate_Metadata/artifacts/**
 
