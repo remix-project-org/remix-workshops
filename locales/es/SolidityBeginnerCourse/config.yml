@@ -7,10 +7,10 @@ tags:
   - Solidity
 steps:
   - 
-    name: 1. Introduction
-    path: introduction
+    name: 1. Introducción
+    path: introducción
   - 
-    name: 2. Basic Syntax
+    name: 2. Sintaxis básica
     path: basic-syntax
   - 
     name: 3. Primitive Data Types
