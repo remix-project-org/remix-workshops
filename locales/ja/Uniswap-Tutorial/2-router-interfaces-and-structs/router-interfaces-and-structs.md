@@ -39,3 +39,4 @@ ISwapRouterインターフェースは、Uniswapスワップコントラクト�
 - **`uint deadline`**: 上で述べたのと同様で、トランザクションが処理されるまでの時間制限です。
 - **`uint amountIn`**: インプットトークンの量です。
 - **`uint amountOutMinimum`**: 送信者が受け取る出力トークンの最小量です。
+
