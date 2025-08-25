@@ -14,11 +14,11 @@
 
 让我们设置 Remix 来生成元数据文件吧！
 
-- 点击图标面板上方“设置”![settings](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/settings.png "Settings")图标进入设置模块。
+ - 点击图标面板上方“设置”![settings](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/settings.png "Settings")图标进入设置模块。
 
 ![settings module](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_settings.png "Settings Module")
 
-- 选择第一个选项`Generate contract metadata`.
+ - 选择第一个选项`Generate contract metadata`.
 
 # 编译并生成元数据（JSON）文件。
 
@@ -29,7 +29,7 @@
 3. 切换到文件浏览器 ![File Explorer](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_file_explorer.png "File Explorer")
 
 4. 导航到新创建的JSON文件。
- - 它应该在以下文件夹中：
+    - 它应该在以下文件夹中：
 
 **browser/.learneth/DeployWithLibraries/2_Generate_Metadata/artifacts/**
 
