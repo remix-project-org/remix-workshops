@@ -12,11 +12,11 @@ That is expected: **We have set `autoDeployLib` to false, so Remix expects to ha
 
 - コンパイルされたコントラクトのリストの中からライブラリ`aLib`を選択し、`deploy`を押します。
 
- ![Choose aLib](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/4_Linking_and_Deploying/images/contract_alib.png "Choose aLib")
+  ![Choose aLib](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/4_Linking_and_Deploying/images/contract_alib.png "Choose aLib")
 
 - クリップボードアイコンをクリックして、ライブラリのアドレスをコピーします。
 
- ![Copy lib1](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/4_Linking_and_Deploying/images/alib_copy.png "Copy")
+  ![Copy lib1](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/4_Linking_and_Deploying/images/alib_copy.png "Copy")
 
 - **contract sample's**メタデータJSONにアドレスをペーストします。
 
