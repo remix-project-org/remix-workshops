@@ -5,4 +5,4 @@ In this tutorial, we'll explore the **Hash Checker** circuit, a zero-knowledge p
 - How to generate a Hash Checker circuit using Remix-IDE's workspace templates.
 - Understanding the Circom code for hashing and checking hashes.
 - Performing a trusted setup using Groth16.
-- Generating zero-knowledge proofs.
+- 生成零知识证明。
