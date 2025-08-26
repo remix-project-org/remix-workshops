@@ -1,15 +1,15 @@
 ---
 id: multisigCourse
-name: Multisig Wallet
+name: Billetera multifirma
 summary: Learn how to create and interact with a multisig wallet. Developed by the p2p learning platform https://dacade.org.
 level: 1
 tags:
   - Solidity
-  - Tokens
-  - Multisig
+  - Tókenes
+  - Multifirma
 steps:
   - 
-    name: 1. Introduction
+    name: 1. Introducción
     path: 1-multisig-introduction
   - 
     name: 2. Initialize the Contract
