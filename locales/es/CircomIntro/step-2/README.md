@@ -20,6 +20,6 @@ En este paso, configuraremos Remix para el desarrollo con Circom activando la ex
 
 Con el complemento instalado, ahora está listo para empezar a escribir código Circom en Remix-IDE.
 
-**Note:** Make sure your internet connection is stable, as Remix-IDE is a web-based tool.
+**Nota:** asegúrese de que su conexión a Internet es estable, ya que Remix-IDE es una herramienta basada en la web.
 
-In the next step, we'll write our first Circom circuit.
+En el siguiente paso, escribiremos nuestro primer circuito de Circom.
