@@ -1,34 +1,34 @@
-## Understanding `groth16_trusted_setup.ts`
+## Comprender «groth16_trusted_setup.ts»
 
-Navigate to `scripts/groth16/groth16_trusted_setup.ts`. This script performs the trusted setup necessary for generating proofs.
+Navega hasta `scripts/groth16/groth16_trusted_setup.ts`. Este script realiza la configuración de confianza necesaria para generar pruebas.
 
-### Code Breakdown
+### Desglose del código
 
-#### Circuit Compilation:
+#### Compilación de circuitos:
 
-- Uses `remix.call('circuit-compiler', 'generateR1cs', ...)` to generate `R1CS` (Rank-1 Constraint System) from the circuit.
+- Utiliza `remix.call(“circuit-compiler”, “generateR1cs”, ...)` para generar `R1CS` (sistema de restricciones de rango 1) a partir del circuito.
 
-#### Trusted Setup Steps:
+#### Pasos de configuración de confianza:
 
-- `snarkjs.zKey.newZKey`: Initializes the proving key (`zkey_0`).
-- `snarkjs.zKey.contribute`: Adds contributions to the proving key (`zkey_1`).
-- `snarkjs.zKey.beacon`: Finalizes the proving key (`zkey_final`).
+- `snarkjs.zKey.newZKey`: Inicializa la clave de prueba (`zkey_0`).
+- `snarkjs.zKey.contribute`: Añade contribuciones a la clave de prueba (`zkey_1`).
+- `snarkjs.zKey.beacon`: Finaliza la clave de prueba (`zkey_final`).
 
-#### Verification:
+#### Verificación:
 
-- `snarkjs.zKey.verifyFromR1cs`: Verifies the proving key against the `R1CS` and initial parameters.
+- `snarkjs.zKey.verifyFromR1cs`: Verifica la clave de prueba con respecto a `R1CS` y los parámetros iniciales.
 
-#### Exporting Keys:
+#### Exportación de claves:
 
-- Exports the verification key to `scripts/groth16/zk/keys/verification_key.json`.
-- Exports the final proving key (`scripts/groth16/zk/keys/zkey_final.txt`).
+- Exporta la clave de verificación a `scripts/groth16/zk/keys/verification_key.json`.
+- Exporta la clave de verificación final (`scripts/groth16/zk/keys/zkey_final.txt`).
 
-### Purpose
+### Propósito
 
-- Performs the trusted setup required for the `Groth16` proving system.
-- Generates the necessary keys for proof generation and verification.
+- Realiza la configuración de confianza necesaria para el sistema de verificación `Groth16`.
+- Genera las claves necesarias para la generación y verificación de pruebas.
 
-### Execute the Script
+### Ejecutar el script
 
-- Click the play button in the editor, or right-click the file and select "Run".
-- Wait for the script to complete and `"setup done."` logged in the terminal.
+- Haga clic en el botón de reproducción del editor o haga clic con el botón derecho del ratón en el archivo y seleccione «Ejecutar».
+- Espera a que se complete el script y aparezca «setup done» en el terminal.
