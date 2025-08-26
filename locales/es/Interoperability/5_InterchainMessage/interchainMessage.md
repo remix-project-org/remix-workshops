@@ -28,7 +28,7 @@ Para pagar toda la transacción intercadena activarás la función `payNativeGas
 
 Esta función necesita los parámetros explicados anteriormente en la sección GasService. El `sender` para esta transacción será este contrato, que es `address(this)`. El `destinationChain` y `destinationAddress` simplemente pueden pasarse desde estos parámetros de funciones, el `payload` es el \_message codificado que escribimos antes. Por último, necesita especificar cuál es la dirección de reembolso, esta puede ser la dirección que activa esta función, que se obtiene escribiendo `msg.sender`.
 
-Once you trigger this function you will have successfully sent a transaction from the source chain via Axelar to the destination chain! But there is still one final step that needs to be complete.
+Once you trigger this function you will have successfully sent a transaction from the source chain via Axelar to the destination chain! Pero todavía hay un último paso que debe ser completado.
 
 ### Recibir mensajes en la cadena de destino
 
