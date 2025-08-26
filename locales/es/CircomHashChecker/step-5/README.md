@@ -1,25 +1,25 @@
-## Performing a Trusted Setup
+## Realización de una configuración de confianza
 
-1. **Access the Setup and Exports Section**:
+1. **Acceda a la sección Configuración y exportaciones**:
 
-- After successful compilation, the **Setup and Exports** section becomes available in the plugin.
+- Tras una compilación satisfactoria, la sección **Configuración y exportaciones** estará disponible en el complemento.
 
-2. **Select Proving Scheme**:
+2. **Seleccionar esquema de prueba**:
 
 - Choose **Groth16** from the **Proving Scheme** dropdown.
 
-3. **Select Power of Tau File**:
+3. **Seleccionar archivo Power of Tau**:
 
-- Choose the appropriate **Power of Tau** file from the dropdown. If unsure, use the default option.
+- Seleccione el archivo **Power of Tau** adecuado en el menú desplegable. Si no estás seguro, utiliza la opción predeterminada.
 
-4. **Export Verification Key and Contract** (optional):
+4. **Clave de verificación de exportación y contrato** (opcional):
 
-- Enable **Export Verification Key** to save the verification key to the File Explorer.
-- Enable **Export Verifier Contract** to save the Solidity contract for on-chain verification.
+- Habilite **Exportar clave de verificación** para guardar la clave de verificación en el Explorador de archivos.
+- Habilite **Exportar contrato verificador** para guardar el contrato Solidity para su verificación en cadena.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-5/images/trusted_setup.png" alt="trusted-setup" width=330 height=350>
 
-5. **Run the Trusted Setup**:
+5. **Ejecute la configuración de confianza**:
 
-- Click on the **Run Setup** button.
-- Wait for the process to complete. This may take some time depending on the circuit complexity.
+- Haga clic en el botón **Ejecutar configuración**.
+- Espere a que finalice el proceso. Esto puede llevar algún tiempo, dependiendo de la complejidad del circuito.
