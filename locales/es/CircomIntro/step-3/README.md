@@ -25,7 +25,7 @@ template Multiplier() {
 component main = Multiplier();
 ```
 
-## Explanation:
+## Explicación:
 
  - template `Multiplier()`: Defines a new circuit template called Multiplier.
  - `signal input a;` and `signal input b;`: Declare input signals a and b.
