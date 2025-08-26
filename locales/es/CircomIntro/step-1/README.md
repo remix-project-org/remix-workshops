@@ -1,13 +1,13 @@
-Welcome to this beginner-level tutorial on Circom using Remix. In this tutorial, you'll learn the basics of Circom, a domain-specific language used for creating arithmetic circuits.
+Bienvenido a este tutorial para principiantes sobre Circom utilizando Remix. En este tutorial aprenderá los conceptos básicos de Circom, un lenguaje específico de dominio utilizado para crear circuitos aritméticos.
 
-**What is Circom?**
+**¿Qué es Circom?**
 
-Circom is a language designed for writing arithmetic circuits that can be used in zero-knowledge proofs, particularly zk-SNARKs. It allows developers to define complex mathematical circuits that can prove knowledge of certain data without revealing it.
+Circom es un lenguaje diseñado para escribir circuitos aritméticos que pueden utilizarse en pruebas de conocimiento cero, particularmente zk-SNARKs. Permite a los desarrolladores definir circuitos matemáticos complejos que pueden demostrar el conocimiento de ciertos datos sin revelarlos.
 
-**Why Use Remix-IDE for Circom?**
+**¿Por qué usar Remix-IDE para Circom?**
 
-- **Ease of Use:** Remix-IDE provides a user-friendly interface that simplifies the development process.
-- **Integrated Tools:** With plugins like `circuit-compiler`, you can compile Circom code, perform trusted setups, compute witnesses, and generate proofs all within the same environment.
-- **No Installation Required:** As a web-based IDE, you can start coding immediately without setting up a local development environment.
+- **Facilidad de uso**: Remix-IDE proporciona una interfaz fácil de usar que simplifica el proceso de desarrollo.
+- **Herramientas integradas**: con extensiones como `circuit-compiler`, puede compilar código Circom, realizar configuraciones de confianza, calcular testigos y generar pruebas, todo dentro del mismo entorno.
+- **No se requiere instalación**: como es un IDE basado en la web, puede empezar a programar inmediatamente sin configurar un entorno de desarrollo local.
 
-In the next steps, we'll guide you through setting up Remix-IDE for Circom development and help you write your first circuit.
+En los siguientes pasos, le guiaremos a través de la configuración de Remix-IDE para el desarrollo con Circom y le ayudaremos a escribir su primer circuito.
