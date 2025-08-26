@@ -20,4 +20,4 @@
 
 ![hamburger](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/workspaces/images/workspace-man.png "hamburger")
 
-请注意，在此弹出菜单中，您可以克隆一个repo。 请注意，在此弹出菜单中，您可以克隆一个repo。Git repo的管理发生在 DGit 插件中。您还可以使用工作流程选项创建 Github 操作。 You can also create Github actions with the three workflow choices in the popup menu.
+请注意，在此弹出菜单中，您可以克隆一个repo。 请注意，在此弹出菜单中，您可以克隆一个repo。Git repo的管理发生在 DGit 插件中。您还可以使用工作流程选项创建 Github 操作。 您还可以使用弹出菜单中的三个工作流配置选项（workflow choices）创建 GitHub 操作（GitHub Actions）。
