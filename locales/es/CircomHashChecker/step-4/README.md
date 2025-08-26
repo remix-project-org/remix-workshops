@@ -1,32 +1,32 @@
-## Compiling the Circuit
+## Compilación del circuito
 
-### Selecting the Compiler Version
+### Selección de la versión del compilador
 
-1. Go to the **Circuit Compiler** plugin in the sidebar.
-2. Choose the desired **Compiler Version** from the dropdown menu. For this tutorial, select the latest stable version.
+1. Ve al complemento **Circuit Compiler** en la barra lateral.
+2. Seleccione la **versión del compilador** deseada en el menú desplegable. Para este tutorial, selecciona la última versión estable.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-4/images/select_compiler_version.png" alt="select-compiler-version" width=250 height=100>
 
-### Configuring Compilation Options
+### Configuración de las opciones de compilación
 
-- **Auto Compile:** You can enable this option to automatically compile your circuit whenever you save changes.
-- **Hide Warnings:** Enable this to suppress compiler warnings if any.
-- **Advanced Configuration:**
-  - Click to expand.
-  - Select the **Prime Field**. For most cases, `BN128` is sufficient.
+- **Compilación automática:** Puede habilitar esta opción para compilar automáticamente su circuito cada vez que guarde los cambios.
+- **Ocultar advertencias:** Active esta opción para suprimir las advertencias del compilador, si las hay.
+- **Configuración avanzada:**
+  - Haga clic para ampliar.
+  - Seleccione el **campo principal**. En la mayoría de los casos, `BN128` es suficiente.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-4/images/advanced_configuration.png" alt="advanced-configuration" width=300 height=100>
 
-### Compiling the Circuit
+### Compilación del circuito
 
-1. Click on the **Compile** button.
-2. Wait for the compilation to complete. A success badge will appear if compilation is successful.
+1. Haga clic en el botón **Compilar**.
+2. Espere a que finalice la compilación. Si la compilación se realiza correctamente, aparecerá una insignia de éxito.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-4/images/compilation_success.png" alt="compilation-success" width=300 height=675>
 
-### Understanding the Compilation Output
+### Comprender el resultado de la compilación
 
-- After successful compilation, the **Setup and Exports** section becomes visible.
-- You can proceed to the next step to perform a trusted setup.
+- Tras una compilación satisfactoria, la sección **Configuración y exportaciones** se vuelve visible.
+- Puede continuar con el siguiente paso para realizar una configuración de confianza.
 
-In the next step, we'll perform a trusted setup using the compiled circuit.
+En el siguiente paso, realizaremos una configuración de confianza utilizando el circuito compilado.
