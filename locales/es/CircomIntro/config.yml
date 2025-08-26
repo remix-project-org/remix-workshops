@@ -1,13 +1,13 @@
 id: circom-intro
-name: Intro to Circom
-summary: A intro to using Circom for creating arithmetic circuits.
+name: Introducción a Circom
+summary: Una introducción al uso de Circom para crear circuitos aritméticos.
 level: 1
 tags:
   - Circom
   - Remix-IDE
 steps:
   - 
-    name: Introduction
+    name: Introducción
     path: step-1
   - 
     name: Installing the Circuit-Compiler
