@@ -1,11 +1,11 @@
-In this step, we'll set up Remix for Circom development by activating the `Circom ZKP compiler` plugin.
+En este paso, configuraremos Remix para el desarrollo con Circom activando la extensión `Circom ZKP compiler`.
 
-## Activating the Circom ZKP compiler
+## Activando el Circom ZKP compiler
 
 1. At the bottom of the icon panel on the left of the screen, click on the **Plugin Manager** (the plug icon).
-   2.In the search bar, type **Circom**.
+   2. En la barra de búsqueda, escriba **Circom**.
 2. Find the **Circuit Compiler** plugin in the list and click on the **Activate** button.
-3. The plugin will now appear in your sidebar.
+3. La extensión aparecerá en su barra lateral.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-2/images/install_plugin.png" alt="install-plugin" width=200 height=475>
 
@@ -18,7 +18,7 @@ In this step, we'll set up Remix for Circom development by activating the `Circo
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-2/images/compiler_interface.png" alt="compiler-interface" width=300 height=300>
 
-With the plugin installed, you're now ready to start writing Circom code in Remix-IDE.
+Con el complemento instalado, ahora está listo para empezar a escribir código Circom en Remix-IDE.
 
 **Note:** Make sure your internet connection is stable, as Remix-IDE is a web-based tool.
 
