@@ -1,4 +1,4 @@
-In this section, we will use Metamask (an Ethereum wallet) to deploy our contract to the Sepolia testnet of the Ethereum blockchain, mint an NFT, and look at it on the NFT marketplace OpenSea.
+En esta sección, usaremos Metamask (una billetera de Ethereum) para implementar nuestro contrato en la red de pruebas Sepolia de la cadena de bloques de Ethereum, acuñar un NFT y verlo en el mercado de NFT OpenSea.
 
 ### 1. Instalar Metamask
 
@@ -8,7 +8,7 @@ In this section, we will use Metamask (an Ethereum wallet) to deploy our contrac
 
 **1.3** Crea una cartera como se describe.
 
-### 2. Get testnet token for Sepolia
+### 2. Obtener el token de la red de prueba de Sepolia
 
 Para realizar transacciones en la testnet, necesitamos tokens de Ethereum testnet.
 
