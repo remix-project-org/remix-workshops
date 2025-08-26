@@ -23,4 +23,4 @@ After compiling your circuit, you need to perform a trusted setup to generate pr
 
 **Note:** The trusted setup may take some time, depending on the complexity of your circuit.
 
-In the next step, we'll compute the witness for our circuit.
+En el siguiente paso, calcularemos el testigo de nuestro circuito.
