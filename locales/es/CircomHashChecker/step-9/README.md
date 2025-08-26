@@ -1,12 +1,12 @@
-## Understanding `groth16_zkproof.ts`
+## Comprender «groth16_zkproof.ts»
 
-Navigate to `scripts/groth16/groth16_zkproof.ts`. This script generates the zero-knowledge proof and prepares it for verification.
+Navega hasta `scripts/groth16/groth16_zkproof.ts`. Este script genera la prueba de conocimiento cero y la prepara para su verificación.
 
-### Code Overview
+### Descripción general del código
 
-#### Loading Files:
+#### Cargando archivos:
 
-- Reads the R1CS and WASM files generated from the circuit.
+- Lee los archivos R1CS y WASM generados a partir del circuito.
 - Loads the final proving key (`zkey_final`) and verification key (`vKey`).
 
 #### Defining Inputs:
