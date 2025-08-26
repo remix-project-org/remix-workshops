@@ -1,14 +1,14 @@
 ## Compute Witness
 
-1. **Access the Compute Witness Section**:
-    - After the trusted setup, the **Compute Witness** section becomes available.
+1. **Acceda a la sección «Compute Witness» (Testigo informático):**
+    - Tras la configuración de confianza, la sección **Compute Witness** estará disponible.
 
-2. **Input Values**:
-    - You'll see input fields for `value1`, `value2`, `value3`, `value4`, and `hash`.
-    - Enter values for each input. For example:
-       - `value1`: `1234`
-       - `value2`: `2`
-       - `value3`: `3`
+2. **Valores de entrada**:
+    - Verás campos de entrada para «valor1», «valor2», «valor3», «valor4» y «hash».
+    - Introduzca los valores para cada entrada. Por ejemplo:
+       - `valor1`: `1234`
+       - `valor2`: `2`
+       - `valor3`: `3`
        - `value4`: `4`
 
 3. **Calculate the Hash**:
@@ -23,6 +23,6 @@
 
     - Click on the **Compute Witness** button.
     - Wait for the process to complete. A success badge will appear if the witness is computed successfully.
-    - If successful, you'll see `calculate_hash.wtn` created in the `.bin` directory in the file explorer.
+    - Si se realiza correctamente, verás que se ha creado «calculate_hash.wtn» en el directorio «.bin» del explorador de archivos.
 
          <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-6/images/witness_computed.png" alt="witness-computed" width=300 height=100>
