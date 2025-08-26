@@ -1,6 +1,6 @@
-With the witness computed, the final step is to generate a proof that can be verified by others.
+Con el testigo calculado, el paso final es generar una prueba que pueda ser verificada por otros.
 
-## Generating the Proof
+## Generar la prueba
 
 1. In the **Generate Proof** section, you have the option to **Export Verifier Calldata**.
     - Enable the **Export Verifier Calldata** checkbox if you plan to verify the proof on-chain.
@@ -15,17 +15,17 @@ With the witness computed, the final step is to generate a proof that can be ver
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-7/images/proof_generated.png" alt="proof-generated" width=310 height=350>
 
-## Next Steps
+## Próximos pasos
 
  - **Verification:** You can use the verification key or contract exported earlier to verify the proof.
  - **On-Chain Verification:** If you're familiar with smart contracts, you can deploy the verification contract and use the calldata to perform on-chain verification.
 
 **Congratulations!** You've successfully written a Circom circuit, compiled it, performed a trusted setup, computed a witness, and generated a proof using Remix-IDE.
 
-## Additional Resources
+## Recursos adicionales
 
- - [Circom Documentation](https://docs.circom.io/)
- - [Remix-IDE Documentation](https://remix-ide.readthedocs.io/)
- - [Zero-Knowledge Proofs Explained](https://zkproof.org/)
+ - [Documentación de Circom](https://docs.circom.io/)
+ - [Documentación de Remix-IDE](https://remix-ide.readthedocs.io/)
+ - [Explicación de las pruebas de conocimiento cero](https://zkproof.org/)
 
-Feel free to experiment with more complex circuits and explore the capabilities of Circom and Remix-IDE further.
+Siéntase libre de experimentar con circuitos más complejos y explorar aún más las capacidades de Circom y Remix-IDE.
