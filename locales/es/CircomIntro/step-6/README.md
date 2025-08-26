@@ -1,14 +1,14 @@
-With the trusted setup complete, you can now compute the witness for your circuit based on specific inputs.
+Con la configuración de confianza completada, ahora puede calcular el testigo de su circuito basándose en entradas específicas.
 
-## What is a Witness?
+## ¿Qué es un testigo?
 
  - A **Witness** is a set of values that satisfy all the constraints of your circuit. It includes all the intermediate numbers and results that satisfy the circuit's rules. The witness is used in zero-knowledge proofs to demonstrate that you know a valid solution to the problem without actually showing the solution itself. This allows others to verify that you did everything correctly while keeping your specific numbers and calculations private.
- - It is essential for generating a proof.
+ - Es esencial para generar una prueba.
 
 ## Inputting Values
 
 1. In the **Compute Witness** section, you'll see input fields dynamically generated based on your circuit's inputs.
-2. Enter values for `a` and `b`. For example:
+2. Introduzca valores para `a` y `b`. Por ejemplo:
     - `a = 3`
     - `b = 4`
 
@@ -24,4 +24,4 @@ With the trusted setup complete, you can now compute the witness for your circui
 
 **Note:** If there are any errors, ensure that your inputs are valid and satisfy the circuit's constraints.
 
-In the next step, we'll generate a proof using the computed witness.
+En el siguiente paso, generaremos una prueba usando el testigo calculado.
