@@ -1,14 +1,14 @@
-1. If you don't have a browser wallet like **MetaMask** download and install one now.
+1. Si vous n'avez pas de portefeuille Ethereum dans votre navigateur (ex : **Metamask**), téléchargez et installez en un maintenant.
 
-2. Cliquez sur l'icône MetaMask dans votre navigateur. Sign in and choose the Ephemery test network. You might need to update your wallet's settings so that you can see **test networks**.  Alternatively, you can go to Remix's Deploy & Run transation module and in the ENVIRONMENT section select Ephemery.
+2. Cliquez sur l'icône MetaMask dans votre navigateur. Connectez-vous et choisissez le réseau de test Ephemery. Vous devrez probablement changer les réglages de votre portefeuille pour voir les **réseaux de test**.  Vous pouvez aussi vous rendre dans le module de transaction Remix "Deploy & Run" et dans la section ENVIRONMENT, choisir Ephemery.
 
-3. Getting test ETH for public test networks is often annoying.  Ephemery is a public network that is refreshed monthly, so getting test ETH should be painless.  Here is a link to some <a href="https://github.com/ephemery-testnet/ephemery-resources?tab=readme-ov-file#faucets" target="_blank">Ephemery faucets</a>.
+3. Obtenir des ETH dans un réseau de test public est souvent gênant.  Ephemery est un réseau de test public qui est remis à zéro mensuellement. Obtenir des ETH de test ne devrait pas poser de problème.  Voici un lien vers des <a href="https://github.com/ephemery-testnet/ephemery-resources?tab=readme-ov-file#faucets" target="_blank">faucets Ephemery</a>.
 
 ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/deploy_injected/images/testnet.png)
 
-Sepolia is another popular testnet that is not refreshed, so deployments will persist, but Sepolia faucets are more difficult to use.
+Sepolia est un autre réseau de test populaire qui n'est pas remis à zéro : les déploiements y persistent, mais les faucets Sepolia sont plus difficile à utilier.
 
-In your browser wallet make sure that you have NOT selected mainnet or any network that will cost real ETH. In the Deploy & Run module, below the Environment select box, you'll see a badge with the network's ID and for popular chains, its name.  In the case below its Sepolia.
+Dans le portefeuille de votre navigateur, assurez-vous de ne PAS avoir sélectionné "mainnet" ou tout autre réseau qui vous coûterai de vrais ETH. In the Deploy & Run module, below the Environment select box, you'll see a badge with the network's ID and for popular chains, its name.  In the case below its Sepolia.
 
 ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/deploy_injected/images/sepolia.png)
 
