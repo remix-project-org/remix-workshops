@@ -1,21 +1,21 @@
-## Generate Proof
+## Generar prueba
 
-1. **Access the Generate Proof Section**:
-    - After computing the witness, expand the **Generate Proof** section.
+1. **Acceda a la sección Generar prueba**:
+    - Después de calcular el testigo, expanda la sección **Generar prueba**.
 
-2. **Configure Proof Generation**:
-    - **Export Verifier Calldata**: Enable this option if you plan to verify the proof on-chain.
+2. **Configurar la generación de pruebas**:
+    - **Verificador de exportación Calldata**: habilite esta opción si planea verificar la prueba en cadena.
 
-3. **Generate the Proof**:
+3. **Generar la prueba**:
 
-    - Click on the **Generate Proof** button.
-    - Wait for the proof generation to complete.
+    - Haga clic en el botón **Generar prueba**.
+    - Espere a que se complete la generación de la prueba.
 
          <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-7/images/generate_proof.png" alt="generate-proof" width=280 height=120>
 
-4. **View the Proof**:
+4. **Ver la prueba**:
 
-    - The proof data will be displayed in the File Explorer.
-    - **Congratulations!** You've successfully compiled the `Hash Checker` circuit, performed a trusted setup, computed a witness, and generated a proof using Remix-IDE.
+    - Los datos de prueba se mostrarán en el Explorador de archivos.
+    - **¡Enhorabuena!** Ha compilado correctamente el circuito «Hash Checker», ha realizado una configuración de confianza, ha calculado un testigo y ha generado una prueba utilizando Remix-IDE.
 
          <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-7/images/proof_generated.png" alt="generate-proof" width=375 height=300>
