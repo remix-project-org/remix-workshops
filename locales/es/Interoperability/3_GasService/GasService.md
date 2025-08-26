@@ -16,7 +16,7 @@ Los parámetros se solapan con los parámetros requeridos por la función `callC
 
 ## payNativeGasForContractCallWithToken()
 
-This function allows you to pay for the entirety of an interchain transaction (that includes a token transfer) in the native token of the source chain. Necesitas tres parámetros relevantes:
+Esta función le permite pagar por la totalidad de una transacción intercadena (que incluye una transferencia de tókenes) en el token nativo de la cadena de origen. Necesitas tres parámetros relevantes:
 
 1. `sender`: La dirección que realiza el pago
 2. `destinationContractAddress`: La dirección en la cadena de destino en la que se ejecutará esta transacción
