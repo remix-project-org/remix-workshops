@@ -1,30 +1,30 @@
-In this section, we'll explore the process of revoking confirmations. This process is necessary when an owner changes their mind about a transaction and wants to stop it from being executed. This section will be pretty straightforward.
+در این بخش، فرآیند لغو تأییدیه‌ها را بررسی خواهیم کرد. این فرآیند زمانی ضروری است که مالک نظر خود را در مورد یک تراکنش تغییر دهد و بخواهد از اجرای آن جلوگیری کند. این بخش کاملاً سرراست خواهد بود.
 
-## revokeConfirmation Event
+## رویداد لغو تأیید
 
-On line 14, we have added the `RevokeConfirmation` event. This event is emitted whenever a transaction confirmation is revoked by an owner.
+در خط ۱۴، رویداد `RevokeConfirmation` را اضافه کرده‌ایم. این رویداد هر زمان که تأیید تراکنش توسط مالک لغو شود، صادر می‌شود.
 
-## revokeConfirmation Function
+## تابع لغو تأیید
 
-On line 129, we have added the `revokeConfirmation` function. It allows users to revoke a transaction confirmation.
+در خط ۱۲۹، تابع `revokeConfirmation` را اضافه کرده‌ایم. این به کاربران اجازه می‌دهد تا تأیید تراکنش را لغو کنند.
 
-`revokeConfirmation` takes one parameter: `txIndex`. It has three modifiers: `onlyOwner`, `txExists`, and `notExecuted`.
+تابع `revokeConfirmation` یک پارامتر به نام `txIndex` دریافت می‌کند. این شامل سه اصلاح‌کننده است: `onlyOwner`، `txExists` و `notExecuted`.
 
-On line 134, we require that the transaction has been confirmed by the caller. This ensures that an owner who has confirmed the transaction can only revoke their own confirmation.
-We then decrement the `numConfirmations` variable of the transaction and set the `isConfirmed` mapping of the transaction index and the caller's address to false. Finally, we emit the `RevokeConfirmation` event.
+در خط ۱۳۴، ما نیاز داریم که تراکنش توسط تماس‌گیرنده تأیید شده باشد. این تضمین می‌کند که مالکی که تراکنش را تأیید کرده است، فقط می‌تواند تأیید خود را لغو کند.
+سپس متغیر `numConfirmations` تراکنش را یک واحد کاهش می‌دهیم و نگاشت `isConfirmed` اندیس تراکنش و آدرس فراخوانی‌کننده را روی false تنظیم می‌کنیم. در نهایت، رویداد `RevokeConfirmation` را صادر می‌کنیم.
 
-## Conclusion
+## نتیجه گیری
 
-In this section, we explored the process of revoking confirmations. We examined the `revokeConfirmation` function and understood how it works to allow users to revoke confirmations.
+در این بخش، فرآیند لغو تأییدیه‌ها را بررسی کردیم. ما تابع `revokeConfirmation` را بررسی کردیم و نحوه‌ی عملکرد آن را در جهت لغو تأییدیه‌ها توسط کاربران آموختیم.
 
-## ⭐️ Assignment: Revoke a Confirmation
+## ⭐️ تکلیف: لغو یک تأییدیه
 
-Confirm and revoke a transaction to send 2 Ether to the first account in the "ACCOUNTS" dropdown menu.
+تراکنش ارسال ۲ اتر به اولین حساب را در منوی کشویی «حساب‌ها» تأیید و لغو کنید.
 
-1. As in the previous assignment, deploy the Multisig contract, send the contract some Ether, and then  submit a transaction to the first account in the "ACCOUNTS" dropdown menu with a value of 2 Ether.
-2. Confirm the transaction twice as in the previous assignment.
-3. Revoke the transaction by clicking on `revokeConfirmation` and inserting 0 as the transaction index. If you click on `getTransaction` again, you should see that the transaction has been confirmed once.
+1. مانند تکلیف قبلی، قرارداد چندامضایی را مستقر کنید، مقداری اتر به قرارداد ارسال کنید و سپس تراکنشی را به اولین حساب در منوی کشویی «حساب‌ها» با مقدار ۲ اتر ارسال کنید.
+2. همانند تکلیف قبلی، تراکنش را دو بار تأیید کنید.
+3. با کلیک روی `revokeConfirmation` و وارد کردن عدد ۰ به عنوان اندیس تراکنش، تراکنش را لغو کنید. اگر دوباره روی «getTransaction» کلیک کنید، باید ببینید که تراکنش یک بار تأیید شده است.
 
-## Final Conclusion
+## نتیجه گیری نهایی
 
-In this tutorial, we explored the process of creating a multi-signature wallet. We learned how to initialize the contract, deposit Ether, submit, confirm, and revoke transactions. We also learned how to execute transactions and retrieve information about the multi-signature wallet.
+در این آموزش، فرآیند ایجاد یک کیف پول چند امضایی را بررسی کردیم. ما یاد گرفتیم که چگونه قرارداد را مقداردهی اولیه کنیم، اتر واریز کنیم، تراکنش‌ها را ارسال، تأیید و لغو کنیم. ما همچنین یاد گرفتیم که چگونه تراکنش‌ها را انجام دهیم و اطلاعات مربوط به کیف پول چندامضایی را بازیابی کنیم.
