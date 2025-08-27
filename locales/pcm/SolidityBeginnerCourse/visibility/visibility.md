@@ -1,17 +1,17 @@
-The `visibility` specifier is used to control who has access to functions and state variables.
+Di `visibility` wey dey specify dem dey use take control who get access to functions wit state variables.
 
-There are four types of visibilities: `external`, `public`, `internal`, and `private`.
+E get four type of visibility wey dey: `external`, `public`, `internal`, and `private`.
 
-They regulate if functions and state variables can be called from inside the contract, from contracts that derive from the contract (child contracts), or from other contracts and transactions.
+Dem dey regulate if function wit state variable dem fit call am form inside di contrakt, na from contrakt wey dey come from di contrakt (pikin contrakt) or na from oda contrakt wit transakshion.
 
-### private
+### inside
 
-- Can be called from inside the contract
+- Dem fit call am from di contrakt
 
-### internal
+### inside
 
-- Can be called from inside the contract
-- Can be called from a child contract
+- Dem fit call am from insid di contrakt
+- Dem fit call am from child contrakt
 
 ### public
 
