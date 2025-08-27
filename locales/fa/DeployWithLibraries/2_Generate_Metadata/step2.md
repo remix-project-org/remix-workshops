@@ -1,38 +1,38 @@
-## Deploying Library
+## بکارگیریک تابخانه
 
-The **library** from the previous chapter was in the same file as the **contract**. However, they won't be deployed together and will have different addresses.
+کتابخانه **فصل** قبلی در همان فایل **قرارداد** بود. با این حال، آنها به طور همزمان مستقر نخواهند شد و آدرس های متفاوتی خواهند داشت.
 
-In order to use a library, the calling contract must have the library's **address**.
+برای استفاده از یک کتابخانه، قرارداد فراخوانی باید **آدرس** کتابخانه را داشته باشد.
 
-But the library's address is not directly specified in the solidity code. The calling contract's compiled bytecode contains a **placeholder** where library's **addresses** will go.
+اما آدرس کتابخانه به طور مستقیم در کد سالیدیتی مشخص نشده است. کد بایت کامپایل شده قرارداد فراخوانی شامل یک **placeholder** است که در آن **آدرس** های کتابخانه قرار خواهد گرفت.
 
-At deployment of the **calling contract**, Remix will look in the contract's **metadata** for the library's address and will update the placeholder with the address.
+در زمان استقرار **قرارداد فراخوانی**، ریمیکس در **متاداده** قرارداد به دنبال آدرس کتابخانه خواهد بود و جایگزین را با آدرس به‌روزرسانی خواهد کرد.
 
-So before deploying a contract that calls a library, you need to generate the contract's metadata (AKA its **build artifact**) and then you need to input the library's address into the metadata file.
+بنابراین قبل از استقرار یک قرارداد که به یک کتابخانه فراخوانی می‌کند، شما نیاز دارید که متاداده‌های قرارداد را تولید کنید (که به آن **اثر ساخت** نیز گفته می‌شود) و سپس باید آدرس کتابخانه را در فایل متاداده وارد کنید.
 
-A contract's metadata is generated at **compile time**.
+متاداده‌های یک قرارداد در **زمان کامپایل** تولید می‌شود.
 
-Let's setup Remix to generate the **metadata file**.
+بیایید Remix را تنظیم کنیم تا **فایل متادا** را تولید کند.
 
- - Go to the settings module by clicking on the settings ![settings](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/settings.png "Settings") icon in the icon panel.
+ - برای رفتن به ماژول تنظیمات، روی آیکون تنظیمات ![settings](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/settings.png "Settings") در پنل آیکون کلیک کنید.
 
-![settings module](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_settings.png "Settings Module")
+![ماژول تنظیمات](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_settings.png "ماژول تنظیمات")
 
- - And check the first option `Generate contract metadata`.
+ - و گزینه اول "تولید metadata قرارداد" را بررسی کنید.
 
-# Compile and generate metadata (JSON) file.
+# فایل متادیتا (JSON) را گردآوری و تولید کنید.
 
-1. Open the Solidity Compiler ![Solidity Compiler](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_icon_solidity.png "Solidity Compiler")
+1. کامپایلر سالیدیتی را باز کنید ![کامپایلر سالیدیتی](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_icon_solidity.png "کامپایلر سالیدیتی")
 
-2. Compile `2_contractSimpleLibrary.sol`.
+2. `2_contractSimpleLibrary.sol` را کامپایل کنید.
 
-3. Switch to the File Explorer ![File Explorer](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_file_explorer.png "File Explorer")
+3. به مرورگر فایل بروید ![مرورگر فایل](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_file_explorer.png "مرورگر فایل")
 
-4. Navigate to the newly create JSON files.
-    - It should be in the folder:
+4. به فایل‌های JSON جدید ایجاد شده بروید.
+    - باید در پوشه باشد:
 
-**browser/.learneth/DeployWithLibraries/2_Generate_Metadata/artifacts/**
+**مرورگر/.learneth/DeployWithLibraries/2_Generate_Metadata/artifacts/**
 
-5. Select the newly created JSON file created from the contract.  It has the **same name** as the contract `sample` but with the extension **json**: `sample.json` (don't select the library's metadata `contractSimpleLibrary.json`).
+5. فایل JSON جدیدی را که از قرارداد ایجاد شده انتخاب کنید.  این **نام مشابهی** با قرارداد `نمونه` دارد اما با پسوند **json**: `sample.json` (از متاداده کتابخانه `contractSimpleLibrary.json` انتخاب نکنید).
 
-In the next step we'll make some adjustments to the metadata file.
+در مرحله بعدی، ما تغییراتی در فایل متاداده ایجاد خواهیم کرد.
