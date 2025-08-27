@@ -1,64 +1,64 @@
-In this section of the course, we will give you a theoretical introduction to blockchain-based tokens.
+For de section of de course, we go give you theoretical introduction to blockchain-based tokens.
 
-Blockchain tokens are a new technological building block created by blockchain technology (like websites were for the internet) that enables a decentralized, ownable internet (web3).
+Blockchain tokens na new technological building block wey dey created by blockchain technology (like dem websites were for the internet) dat enables a decentralized, ownable internet (web3).
 
-### Introduction
+### For start
 
-In the context of web3, tokens represent ownership. Tokens can represent ownership of anything: art, reputation, items in a video game, shares in a company, voting rights, or currencies.
+For de context of web3, tokens mean ownership. Tokens fit represent ownership of anytin: art, reputation, items for video game, shares for company, voting rights, or moni.
 
-The revolutionary innovation of blockchain technology is that it allows data to be stored publicly in an immutable (unchangeable) way.
-This new form of data storage allows us to keep track of ownership and enable truly ownable digital items for the first time.
+De revolutionary innovation of blockchain technologi na say e dey allow data to dey stored outside for way wey no change.
+Dis new form of data storage de gree us to keep track of ownership and fit true true get digital items for di first time.
 
-Blockchain Technology was originally invented to keep track of the ownership of Bitcoin, a decentralized digital currency and fungible token.
+Blockchain Technology dem first do am to keep track of who get bitcoin na decentralized digital money and token wey dey fungible.
 
-### Fungible and non-fungible tokens
+### Token wey dey Fungible and non-fungible
 
-Assets like money: Bitcoin or a one-dollar bill, for example, are fungible. Fungible means that all assets are the same and are interchangeable. Assets like art, collectibles, or houses are non-fungible; they are all different and not interchangeable.
+Tins like dem money: Bitcoin or one dolla now dey fungible. Fungible means say all assets da di same and e dey interchangeable. Assets like dem art, collectibles, or houses dey non-fungible; dem all dey diffrent and you no fit interchange dem.
 
-We can divide tokens into these two types: fungible tokens, where all tokens are the same, and non-fungible tokens (NFTs), where every token is unique.
+We fit divide tokens into two: fungile tokens na where all di tokens an di same and non fungible like dem nfts were all of dem dey unique.
 
-### Token standard
+### Di standard of token
 
-The behavior of a token is specified in its smart contract (token contract). The contract could, for example, include the functionality to transfer a token or check for its total supply.
+De behavior of token dem write am for smart contract (de token contract). Di token fit for example get di function to fit transfer token or check am for im total supply.
 
-If everybody would create their own token contracts with different behavior and naming conventions, it would make it very hard for people to build contracts or applications that are able to interact with each other.
+If everibodi do dem own token contract wit diffrent behaviour and di naming convention e go make am hard make pipu fit build contrt or app wey fit relate wit each oda.
 
-The Ethereum community has developed token standards that define how a developer can create tokens that are interoperable (able to work with others) with other contracts, products, and services. Contracts developed under these standards need to include a certain set of functions and events.
+Di ethereum communiti don do token standard wey talk how dev fit do token wey anybodi fit operate with oda contrats, products and dem services. Contracts wey dem do unda dis standard need make e get some kind function and events.
 
-The most popular token standards are the ERC20 for fungible tokens and the ERC721 for non-fungible tokens. In this course, we will learn how to create and interact with the ERC20 token standard in the following sections.
+Di one wey we sabi pass na ERC20 wey be fungible token and ERC721 wey no be fungible token. For dis course we go learn how to fit create and relate wit di ERC20 token im standard for di followin sections.
 
-If you want to learn more about NFTs and the ERC721 token standard, have a look at the Learneth NFT Course.
+If you wan know plenti on top NFTs and ERC721 token standard go look am for Learneth NFT im course.
 
-The ERC777 is a fungible token standard, like the ERC20, that includes more advanced features like hooks while remaining backward compatible with ERC20. Learn more about the ERC777 in its <a href="https://eips.ethereum.org/EIPS/eip-777" target="_blank">EIP (Ethereum improvement proposal)</a>.
+Di ERC777 na fungible token standard like di ERC20 wey contain plenty beta feature like hooks wey remain for back dey compatible wit ERC20. Go sabi plenti of ERC777 for <a href="https://eips.ethereum.org/EIPS/eip-777" target="_blank">EIP (Ethereum improvement im proposal)</a>.
 
-The ERC1155 is a multi-token standard that allows a single contract to manage different types of tokens, such as fungible, non-fungible, or semi-fungible tokens.
-Learn more about the ERC1155 in its <a href="https://eips.ethereum.org/EIPS/eip-1155" target="_blank">EIP</a>.
+Di ERC1155 na multi-token standard wey dey allow single contract to fit manage different types of tokens, like dem fungible, non-fungible, or semi-fungible tokens.
+Go sabi plenti of ERC1155 for im <a href="https://eips.ethereum.org/EIPS/eip-1155" target="_blank">EIP</a>.
 
 ## ⭐️ Assignment
 
-For this assignment, we will test your knowledge via a short quiz.
-Assign the number of the best answer to the variables `question1` (line 5),
-`question2` (line 6), `question3` (line 7) in the `Quiz` contract (line 4).
+For dis homework we go check your head with small quiz.
+Assign di number of di best answer to di variables `question1` (line 5),
+`question2` (line 6), `question3` (line 7) for di `Quiz` contract (line 4).
 
-### Question 1:
+### For question 1:
 
-Why are blockchain based tokens so revolutionary?
+Why blockchain based tokens dey change everytime?
 
-1. Because people can now make investments anonymously.
-2. Because they represent ownership in digital assets that can be owned and transferred.
-3. Because you can use tokens to make transactions without having to pay taxes.
+1. Na say pipi fit come dey invest lowkey.
+2. Unto say dem fit represent ownership for digital moni wey dem fit own and transfer.
+3. Na say you fit use tokens to fit make transactions wey you no go pay taxes.
 
-### Question 2:
+### Di question 2:
 
-Why did the community create token standards?
+Why di community been do token standards?
 
-1. So that the community can control and approve the tokens that are created.
-2. In order to restrict the functionality of tokens to safe and non-malicious actions.
-3. So that the community can create tokens that are interoperable with other contracts, products, and services.
+1. So di community fit control and approve di tokens wey dem create.
+2. To fit stop di function of token to dey free from actions wey no dey alright.
+3. So di community go fit do token wey dem no fit operate wit oda contract, product and work.
 
-### Question 3:
+### Di Question 3:
 
-If you would create a decentralised application for a baseball trading card game where each baseball player would be represented by a token, what token standard would you use to write the token contract?
+If you go create decentralised applikashon for baseball trading card game where each baseball player go dey represented by token, wich token standard you go use to write de token contract?
 
 1. ERC20
 2. ERC721
