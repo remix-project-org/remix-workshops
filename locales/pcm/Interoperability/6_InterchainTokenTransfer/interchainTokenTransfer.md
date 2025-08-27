@@ -10,31 +10,32 @@ E get function wey dem go call from di source chain wey dem call`sendToMany` tha
 1. u fit`_destinationChain`: The chain de transaction is sending to
 2. `_destinationAddress`: Di adress for di destination chain transaction go execute for
 3. u fit`_destinationAddresses`: The message that you will be sending along with your token transfer. For di message is a list of receiving addresses for di token transfer.
-4. `_symbol`: The symbol of the token address being sent
-5. `_amount`: The amount of the token being sent
+4. dis `_symbol`: die symbol of de token address being sent
+5. di `_amount`: de amount of di token being sent
 
-In the function we already have the `require` statement implemented to ensure gas is sent
+For dis function we get di require statement implemented to ensure gas
 
-We also have the basic ERC20 functionality to send the token from the calling wallet to this smart contract. The contract also calls the `approve` function to allow the Gateway to eventually transfer funds on its behalf.
+We get di basic ERC20 functionality to fit send di token from di call wallet to dis smart contract. Di contract dem dey call am di `approve` function to allow de Gateway to eventually transfer funds on its behalf.
 
-Finally, the `_executeWithToken()` function is also implemented out of the box.
+Finally di `_executeWithToken()` function is also implemented out of de box.
 
-It makes use of the following params:
+E fit makes use the following params:
 
-1. `_payload`: The incoming message from the source chain
-2. `_tokenSymbol`: The symbol of the token that was sent from the source chain
-3. `_amount`: The amount of the token that was sent from the source chain
+1. dis `_payload`: de incoming message from the source chain
+2. di_tokenSymbol\`: The symbol of the token that was sent from the source chain
+3. De `_amount`: The amount of the token that was sent from the source chain
 
-Now with these params that were passed in, the `_execute()` function can send the tokens that were sent to the appropriate receivers.
+Now dis param dem pass di executed()\` function can send the tokens that were sent to the appropriate receivers.
 
-## Challenge
+## Problem
 
-Your challenge here is to finish off the `sendToMany()` function using the Axelar Gateway and Gas Service to trigger an interchain transaction.
+Ur challenge here na to finish di `sendToMany()` function using the Axelar Gateway and Gas Service to trigger an interchain transaction.
 
-In the end you should be able to deploy this contract on two testnets, trigger the `sendToMany()` function and see the live transaction on <a href="https://testnet.axelarscan.io" target="_blank">Axelarscan (testnet) block explorer</a>.
+For di end u go dey able to fit deploy dis contract on two testnets, trigger di `sendToMany()` function and see de live transaction on <a href="https://testnet.axelarscan.io" target="_blank">Axelarscan (testnet) block explorer</a>.
 
-### Testing Notes
+### Di testing notes
 
-Note 1: The recommended ERC20 to use is `aUSDC` a wrapped version of the USDC token that can be obtained from <a href= "https://docs.axelar.dev/resources/rpc/resources" target="_blank">the discord faucet bot</a>. When triggering the `sendToMany()` function simply pass in the symbol `aUSDC` to the fourth param.
+Note say for dis one e dey recommended for ERC20 to fit use im USDC`a wrapped version of the USDC token that can be obtained from <a href= "https://docs.axelar.dev/resources/rpc/resources" target="_blank">the discord faucet bot</a>.
+ When u trigger di`sendToMany()`function simply pass in de symbol`aUSDC\` to de fourth param.
 
-Note2: When triggering the `sendToMany()` function you must remember to `approve` your contract to spend `aUSDC` tokens on your behalf, otherwise `transferFrom()` on line49 will throw an error.
+Note say for dis one when u trigger di `sendToMany()` function you must remember to `approve` ur contract to spend `aUSDC` tokens on your behalf, otherwise `transferFrom()` on line49 will throw an error.
