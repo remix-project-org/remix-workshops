@@ -1,7 +1,7 @@
-From the Remix terminal, identify the transaction that deployed the contract and click `Debug`
+From the Remix terminal, know the transaction wey deploy the contract con press `Debug`
 
-In the gutter of the editor, put a breakpoint on the line `s = _o`, and click on `Jump to the next Breakpoint` (bottom right button).
+Inside the gutter of the Editor, put break point for the line `s = _o`, con press `jump go the next Breakpoint` (button wey dey the bottom right corner).
 
-Click on `Step into`, to move along the opcodes until you reach `SSTORE`.
+Press `step into`, make you fit move along opcodes until you go reach `SSTORE`.
 
-`SSTORE` is the opcode for storing the value `_o` in the storage. Let's continue further to the `CODECOPY`.
+`SSTORE` na the opcode wey you go use if you wan store value `_o` for inside storage. Let's continue further to the `CODECOPY`.
