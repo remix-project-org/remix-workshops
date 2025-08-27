@@ -1,29 +1,29 @@
-As we have seen in the previous section, executing code via transactions on the Ethereum Network costs transaction fees in the form of Ether. The amount of fees that have to be paid to execute a transaction depends on the amount of _gas_ that the execution of the transaction costs.
+همانطور که در بخش قبلی مشاهده کردیم، اجرای کد از طریق تراکنش‌ها در شبکه اتریوم هزینه‌های تراکنش را به صورت اتر دارد. مقدار هزینه‌هایی که باید برای انجام یک تراکنش پرداخت شود به مقدار _گاز_ مورد نیاز برای اجرای تراکنش بستگی دارد.
 
-### Gas
+### گاز
 
-_Gas_ is the unit that measures the amount of computational effort that is required to execute a specific operation on the Ethereum network.
+_گاز_ واحدی است که میزان تلاش محاسباتی مورد نیاز برای انجام یک عملیات خاص در شبکه اتریوم را اندازه‌گیری می‌کند.
 
-### Gas price
+### قیمت گاز
 
-The _gas_ that fuels Ethereum is sometimes compared to the gas that fuels a car. The amount of gas your car consumes is mostly the same, but the price you pay for gas depends on the market.
+گازی که اترون را تغذیه می‌کند، گاهی با گازی که ماشین را تغذیه می‌کند مقایسه می‌شود. مقدار گازی که خودروی شما مصرف می‌کند عمدتاً یکسان است، اما قیمتی که برای گاز پرداخت می‌کنید به بازار بستگی دارد.
 
-Similarly, the amount of _gas_ that a transaction requires is always the same for the same computational work that is associated with it. However the price that the sender of the transaction is willing to pay for the _gas_ is up to them. Transactions with higher _gas prices_ are going through faster; transactions with very low _gas prices_ might not go through at all.
+به طور مشابه، مقدار _گاز_ مورد نیاز برای یک تراکنش همیشه برای همان کار محاسباتی که با آن مرتبط است، یکسان است. با این حال، قیمتی که فرستنده تراکنش برای _گاز_ مایل به پرداخت است به آنها بستگی دارد. معاملات با _قیمت گاز_ بالاتر سریع‌تر انجام می‌شوند؛ معاملات با _قیمت گاز_ بسیار پایین ممکن است اصلاً انجام نشوند.
 
-When sending a transaction, the sender has to pay the _gas_ fee (gas_price \* gas) upon execution of the transaction. If _gas_ is left over after the execution is completed, the sender gets refunded.
+هنگام ارسال یک تراکنش، فرستنده باید هزینه _گاز_ (قیمت گاز \* گاز) را در زمان اجرای تراکنش پرداخت کند. اگر پس از اتمام اجرا _گاز_ باقی بماند، فرستنده مبلغ آن را پس می‌گیرد.
 
-_Gas_ prices are denoted in gwei.
+_قیمت_ گاز به واحد گwei نشان داده می‌شود.
 
-### Gas limit
+### حد گاز
 
-When sending a transaction, the sender specifies the maximum amount of gas that they are willing to pay for. If they set the limit too low, their transaction can run out of _gas_ before being completed, reverting any changes being made. In this case, the _gas_ was consumed and can’t be refunded.
+هنگام ارسال یک تراکنش، فرستنده حداکثر مبلغ گازی را که مایل به پرداخت برای آن است مشخص می‌کند. اگر آنها حد را خیلی پایین تنظیم کنند، تراکنش آنها ممکن است قبل از اتمام از _گاز_ خارج شود و هر تغییری که در حال انجام است به حالت اولیه برگردد. در این مورد، _گاز_ مصرف شده و قابل بازپرداخت نیست.
 
-Learn more about _gas_ on <a href="https://ethereum.org/en/developers/docs/gas/" target="_blank">ethereum.org</a>.
+بیشتر درباره _گاز_ در <a href="https://ethereum.org/en/developers/docs/gas/" target="_blank">ethereum.org</a> بیاموزید.
 
-<a href="https://www.youtube.com/watch?v=oTS9uxU6cAM" target="_blank">Watch a video tutorial on Gas and Gas Price</a>.
+<a href="https://www.youtube.com/watch?v=oTS9uxU6cAM" target="_blank">یک ویدیوی آموزشی درباره گاز و قیمت گاز را تماشا کنید</a>.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-Create a new `public` state variable in the `Gas` contract called `cost` of the type `uint`. Store the value of the gas cost for deploying the contract in the new variable, including the cost for the value you are storing.
+یک متغیر ایالتی جدید با نام `cost` از نوع `uint` در قرارداد `Gas` ایجاد کنید. مقدار هزینه گاز برای راه‌اندازی قرارداد را در متغیر جدید ذخیره کنید، شامل هزینه برای مقداری که ذخیره می‌کنید.
 
-Tip: You can check in the Remix terminal the details of a transaction, including the gas cost. You can also use the Remix plugin _Gas Profiler_ to check for the gas cost of transactions.
+نکته: شما می‌توانید جزئیات یک تراکنش، از جمله هزینه گاز، را در ترمینال ریمیکس بررسی کنید. شما همچنین می‌توانید از افزونه‌ی Remix _Gas Profiler_ برای بررسی هزینه‌ی گاز معاملات استفاده کنید.
