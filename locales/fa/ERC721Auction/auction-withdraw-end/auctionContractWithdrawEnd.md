@@ -1,45 +1,45 @@
-In this section, we will finish the contract, create a function to withdraw the bids that an account has made, and create a function to end the auction.
+در این بخش، قرارداد را تمام می‌کنیم، تابعی برای پس گرفتن پیشنهادهای داده شده توسط یک حساب کاربری ایجاد می‌کنیم و تابعی برای پایان دادن به حراج ایجاد می‌کنیم.
 
-### Withdraw
+### عقب نشینی
 
-We create a local variable `bal` (balance) that stores the total value of bids that the function caller has made (line 75) since their last withdrawal. We can assign this value to `bal` by accessing the bids mapping using the address of the function caller as the key.
+ما یک متغیر محلی به نام `bal` (balance) ایجاد می‌کنیم که کل ارزش پیشنهادهایی را که فراخوانی‌کننده تابع (خط ۷۵) از آخرین برداشت خود ارائه داده است، ذخیره می‌کند. ما می‌توانیم با دسترسی به نگاشت bids با استفاده از آدرس فراخوانی‌کننده تابع به عنوان کلید، این مقدار را به `bal` اختصاص دهیم.
 
-Next, we set the value of the address of the function caller to 0 in the bids mapping because they will withdraw the total value of their bids (line 76).
+در مرحله بعد، مقدار آدرس فراخوانی‌کننده تابع را در نگاشت پیشنهادها روی 0 تنظیم می‌کنیم زیرا آنها کل مقدار پیشنهادها خود را پس می‌گیرند (خط 76).
 
-Now we transfer that amount of ETH from the contract to the function caller and emit the `Withdraw` event (line 79).
+حالا آن مقدار ETH را از قرارداد به فراخوانی‌کننده تابع منتقل می‌کنیم و رویداد `Withdraw` را منتشر می‌کنیم (خط ۷۹).
 
-### End
+### پایان
 
-Before the function caller can execute this function and end the auction, we need to check if certain conditions are met. The auction needs to have started (line 83), the end date of the auction needs to have been reached (line 84), and the auction must not have ended already (line 85).
+قبل از اینکه فراخوانی‌کننده‌ی تابع بتواند این تابع را اجرا کند و حراج را پایان دهد، باید بررسی کنیم که آیا شرایط خاصی برقرار است یا خیر. حراج باید شروع شده باشد (خط ۸۳)، تاریخ پایان حراج باید رسیده باشد (خط ۸۴) و حراج نباید قبلاً پایان یافته باشد (خط ۸۵).
 
-Once the auction has ended, we set the state variable `ended` to `true` (line 87).
+پس از پایان حراج، متغیر وضعیت `ended` را روی `true` تنظیم می‌کنیم (خط ۸۷).
 
-We check if anybody participated in the auction and bid on the NFT (line 88).
+ما بررسی می‌کنیم که آیا کسی در حراج شرکت کرده و روی NFT پیشنهاد قیمت داده است یا خیر (خط ۸۸).
 
-If there was a bid, we transfer the NFT from the contract to the highest bidder (line 89) and transfer the ETH that was sent from the highest bidder to the contract, now to the address of the auctioneer, the seller of the NFT (line 90).
+اگر پیشنهادی وجود داشته باشد، NFT را از قرارداد به بالاترین پیشنهاد دهنده (خط ۸۹) منتقل می‌کنیم و ETH ارسال شده از بالاترین پیشنهاد دهنده به قرارداد، اکنون به آدرس حراج‌گذار، فروشنده NFT (خط ۹۰) منتقل می‌کنیم.
 
-If nobody bids on the NFT, we send the NFT back to the auctioneer (line 92).
+اگر کسی روی NFT پیشنهادی ارائه ندهد، NFT را به حراج‌گذار (خط ۹۲) برمی‌گردانیم.
 
-Finally, we emit the `End` event (line 95).
+در نهایت، رویداد `End` را منتشر می‌کنیم (خط ۹۵).
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-1. Deploy an NFT contract. You can use the NFT contract that we created in our Learneth "Solidity NFT Course".
+1. یک قرارداد NFT راه‌اندازی کنید. شما می‌توانید از قرارداد NFT که ما در دوره آموزشی Solidity NFT در Learneth ایجاد کرده‌ایم، استفاده کنید.
 
-2. Mint yourself an NFT with the tokenId 0.
+2. برای خودتان یک NFT با شناسه توکن ۰ ایجاد کنید.
 
-3. For testing purposes, change the value that is assigned to the `endAt` state variable (line 54) from `7 days` to `5 minutes`.
+3. برای اهداف آزمایشی، مقداری که به متغیر وضعیت `endAt` (خط ۵۴) اختصاص داده شده است را از `۷ روز` به `۵ دقیقه` تغییر دهید.
 
-4. Deploy this EnglishAuction contract. Use the address of the NFT contract as an argument for the `_nft` parameter, 0 for `_nftId`, and 1 for `_startingBid`.
+4. این قرارداد EnglishAuction را مستقر کنید. از آدرس قرارداد NFT به عنوان آرگومان برای پارامتر `_nft`، 0 برای `_nftId` و 1 برای `_startingBid` استفاده کنید.
 
-5. Call the `approve` function of your NFT contract with the address of the auction contract as an argument for the `to` parameter, and 0 for the `tokenId`.
+5. تابع «تأیید» قرارداد NFT خود را با آدرس قرارداد حراج به عنوان آرگومان برای پارامتر «to» و ۰ برای «tokenId» فراخوانی کنید.
 
-6. Call the `start` function of your auction contract.
+6. تابع «شروع» قرارداد حراج خود را فراخوانی کنید.
 
-7. Bid 2 Ether using account 1, and 3 Ether using account 2. If you call the `highestBidder` function, it should now return the address of account 2.
+7. با استفاده از حساب ۱، ۲ اتر و با استفاده از حساب ۲، ۳ اتر پیشنهاد دهید. طبق قرارداد حراج خود عمل کنید. اگر تابع `highestBidder` را فراخوانی کنید، اکنون باید آدرس حساب ۲ را برگرداند.
 
-8. Call the `withdraw` function with account 1. In the balance of account 1, you should see the 2 Ether minus some transaction fees.
+8. تابع `withdraw` را با حساب ۱ فراخوانی کنید. در موجودی حساب ۱، باید ۲ اتر منهای مقداری از کارمزد تراکنش‌ها را ببینید.
 
-9. After 5 minutes have passed, call the `end` function. Then, call the `ended` function which should return `true`.
+9. پس از گذشت ۵ دقیقه، تابع `end` را فراخوانی کنید. سپس، تابع `ended` را فراخوانی کنید که باید مقدار `true` را برگرداند.
 
-In the NFT contract, if you call the `ownerOf` function with the tokenId 0, it should return the address of account 2. If you look at the balance of account 1 it should have increased by 3 Ether minus some transaction fees.
+در قرارداد NFT، اگر تابع `ownerOf` را با توکنId 0 فراخوانی کنید، باید آدرس حساب 2 را برگرداند. اگر به موجودی حساب ۱ نگاه کنید، باید ۳ اتر منهای مقداری کارمزد تراکنش افزایش یافته باشد.
