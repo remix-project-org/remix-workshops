@@ -1,10 +1,10 @@
-This section will give a short introduction to functions and teach you how to use them to read from and write to a state variable.
+This section go give short introduction ontop functions nd teach you how to dey use them to read from nd write to a state variable.
 
-As in other languages, we use functions in Solidity to create modular, reusable code. However, Solidity functions have some particularities.
+As e be for other languages, we dey use functions in Solidity take create modular, reusable code. But as e be, Solidity functions get some particularities.
 
-Solidity functions can be split into two types:
+Solidity functions fit dey split into two types:
 
-1. Functions that modify the state of the blockchain, like writing to a state variable. In this contract, the `set` function (line 9) changes the state variable `num`.
+1. Functions wey modify di state of d iblockchain, like writing to a state variable. In this contract, the `set` function (line 9) changes the state variable `num`.
 2. Functions that don't modify the state of the blockchain. These functions are marked `view` or `pure`. For example, in this contract, the `get` function (line 14) marked `view` that only returns `num` does not change the state.
 
 To define a function, use the `function` keyword followed by a unique name.
