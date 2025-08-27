@@ -1,43 +1,43 @@
-ERC20 (Ethereum Request for Comments 20) is a standard for token contracts that manages fungible tokens on the Ethereum blockchain.
+ERC20 (درخواست نظرات اتریوم ۲۰) استانداردی برای قراردادهای توکن است که توکن‌های قابل تعویض را در بلاکچین اتریوم مدیریت می‌کند.
 
-Fungible tokens are all equal to each other and have the same value, behavior, and rights. Fungible tokens are often used as a medium of exchange, like the currencies ETH or BTC. However, they can also have other use cases like voting rights or reputation.
+توکن‌های قابل تعویض همگی با یکدیگر برابر هستند و ارزش، رفتار و حقوق یکسانی دارند. توکن‌های قابل تعویض اغلب به عنوان واسطه مبادله، مانند ارزهای ETH یا BTC، استفاده می‌شوند. با این حال، آنها می‌توانند موارد استفاده دیگری مانند حق رأی یا اعتبار نیز داشته باشند.
 
-If you want to know more about the ERC20 token standard, have a look at the specifications in its <a href="https://eips.ethereum.org/EIPS/eip-20" target="_blank">Ethereum improvement proposal</a>.
+اگر می‌خواهید درباره استاندارد توکن ERC20 بیشتر بدانید، به مشخصات موجود در <a href="https://eips.ethereum.org/EIPS/eip-20" target="_blank">پیشنهاد بهبود اتریوم</a> آن نگاهی بیندازید.
 
-## Interface
+## رابط
 
-To get an overview of the required functionality of an ERC20 token contract, we will look at an interface that interacts with an ERC20 contract.
-This interface (line 9) is part of the open-source contract library provided by <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.4.0/contracts/token/ERC20/IERC20.sol" target="_blank">OpenZeppelin</a>.
+برای اینکه مروری بر قابلیت‌های مورد نیاز یک قرارداد توکن ERC20 داشته باشیم، به رابطی که با یک قرارداد ERC20 تعامل دارد، نگاهی خواهیم انداخت.
+این رابط (خط 9) بخشی از کتابخانه قرارداد متن‌باز ارائه شده توسط <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.4.0/contracts/token/ERC20/IERC20.sol" target="_blank">OpenZeppelin</a> است.
 
-## ERC20 Functions
+## توابع ERC20
 
-Contracts compliant with the ERC20 standard must implement the following six functions:
+قراردادهایی که با استاندارد ERC20 مطابقت دارند باید شش عملکرد زیر را پیاده‌سازی کنند:
 
-### totalSupply
+### تامین کل
 
-The function `totalSupply` (line 13) returns the total amount of tokens available.
+تابع `totalSupply` (خط ۱۳) کل تعداد توکن‌های موجود را برمی‌گرداند.
 
-### balanceOf
+### تعادل از
 
-The function `balanceOf` (line 18) returns the amount of tokens owned by the account with the address `account`.
+تابع `balanceOf` (خط ۱۸) تعداد توکن‌های متعلق به حسابی با آدرس `account` را برمی‌گرداند.
 
-### transfer
+### تراکنش ها
 
-The function `transfer` (line 27) transfers `amount` of tokens to the address `recipient`.
-This function **must** emit (produce) a `Transfer` event (see below) and **should** throw an exception when the sender doesn't have enough tokens to make the transfer.
+تابع `transfer` (خط ۲۷) `مقدار` توکن‌ها را به آدرس `recipient` منتقل می‌کند.
+این تابع **باید** یک رویداد `Transfer` (به پایین مراجعه کنید) را منتشر (تولید) کند و **باید** زمانی که فرستنده توکن‌های کافی برای انجام انتقال ندارد، یک استثنا صادر کند.
 
 ### approve
 
-The function `approve` (line 52) creates an allowance for the address `spender` to transfer `amount` of tokens on behalf of the account calling the function.
+تابع `approv` (خط ۵۲) به آدرس `spender` اجازه می‌دهد تا `amount` توکن‌ها را از طرف حسابی که تابع را فراخوانی می‌کند، منتقل کند.
 
-### allowance
+### کمک هزینه
 
-The function `allowance` (line 36) returns the amount of tokens that the address `spender` is allowed to spend on behalf of the account with the address `owner`.
+تابع `allowance` (خط ۳۶) مقدار توکن‌هایی را که آدرس `spender` مجاز است از طرف حسابی با آدرس `owner` خرج کند، برمی‌گرداند.
 
-### transferFrom
+### انتقال از
 
-The function `transferFrom` (line 63) transfers `amount` of tokens on behalf of the address `sender` to the address `recipient`.
-This function **must** emit a `Transfer` event.
+تابع `transferFrom` (خط ۶۳) `مقداری` از توکن‌ها را از طرف آدرس `sender` به آدرس `recipient` منتقل می‌کند.
+این تابع **باید** یک رویداد `Transfer` منتشر کند.
 
 ## ERC20 Events
 
