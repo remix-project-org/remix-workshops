@@ -1,5 +1,5 @@
-## Interactive Solidity Course
+## دوره تعاملی سالیدیتی
 
-Learn the most important Solidity beginner concepts interactively, based on the popular https://solidity-by-example.org/ contracts.
+مفاهیم مهم ابتدای Solidity را به صورت تعاملی یاد بگیرید، بر اساس قراردادهای محبوب https://solidity-by-example.org/.
 
-Developed by the p2p learning platform https://dacade.org.
+توسعه یافته توسط پلتفرم یادگیری p2p https://dacade.org.
