@@ -1,12 +1,12 @@
-In this section, we'll explore the process of submitting and confirming transactions.
+در این بخش، فرآیند ارسال و تأیید تراکنش‌ها را بررسی خواهیم کرد.
 
-## Modifiers
+## اصلاح کننده ها
 
-We have new modifiers in this iteration of the contract. Let's examine them one by one.
+ما در این نسخه از قرارداد، اصلاح‌کننده‌های جدیدی داریم. بیایید آنها را یک به یک بررسی کنیم.
 
-1. **`txExists` modifier:** (Line 13) ensures that the transaction exists. It does this by checking whether the transaction index is less than the length of the `transactions` array. We'll go into more about in this modifier later in this section.
-2. **`notExecuted` modifier:** (Line 18) ensures that the transaction has not been executed. It does this by checking whether the `executed` variable of the transaction is false.
-3. **`notConfirmed` modifier:** (Line 23) ensures that the transaction has not been confirmed by the caller. It does this by checking whether the `isConfirmed` mapping of the transaction index and the caller's address is false.
+1. اصلاح‌کننده‌ی **txExists:** (خط ۱۳) تضمین می‌کند که تراکنش وجود دارد. این کار را با بررسی اینکه آیا شاخص تراکنش کمتر از طول آرایه `transactions` است یا خیر، انجام می‌دهد. در ادامه‌ی این بخش، بیشتر در مورد این اصلاح‌کننده صحبت خواهیم کرد.
+2. اصلاح‌کننده‌ی **`notExecuted`:** (خط ۱۸) تضمین می‌کند که تراکنش اجرا نشده است. این کار را با بررسی اینکه آیا متغیر «اجرا شده» تراکنش نادرست است یا خیر، انجام می‌دهد.
+3. اصلاح‌کننده‌ی **`notConfirmed`:** (خط ۲۳) تضمین می‌کند که تراکنش توسط فراخوانی‌کننده تأیید نشده است. It does this by checking whether the `isConfirmed` mapping of the transaction index and the caller's address is false.
 
 ## Transaction Struct
 
