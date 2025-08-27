@@ -1,25 +1,25 @@
-## Performing a Trusted Setup
+## انجام یک راه‌اندازی اعتماد شده
 
-1. **Access the Setup and Exports Section**:
+1. **به بخش راه‌اندازی و صادرات دسترسی پیدا کنید**:
 
-- After successful compilation, the **Setup and Exports** section becomes available in the plugin.
+- پس از تکمیل موفقیت آمیز، بخش **نصب و صادرات** در پلاگین در دسترس قرار می گیرد.
 
-2. **Select Proving Scheme**:
+2. **انتخاب طرح اثبات**:
 
-- Choose **Groth16** from the **Proving Scheme** dropdown.
+- از منوی کشویی **طرح اثبات** **Groth16** را انتخاب کنید.
 
-3. **Select Power of Tau File**:
+3. **فایل قدرت تائو را انتخاب کنید**:
 
-- Choose the appropriate **Power of Tau** file from the dropdown. If unsure, use the default option.
+- فایل مناسب **قدرت تائو** را از منوی کشویی انتخاب کنید. اگر مطمئن نیستید، از گزینه پیش‌فرض استفاده کنید.
 
-4. **Export Verification Key and Contract** (optional):
+4. **کلید تأیید صادرات و قرارداد** (اختیاری):
 
-- Enable **Export Verification Key** to save the verification key to the File Explorer.
-- Enable **Export Verifier Contract** to save the Solidity contract for on-chain verification.
+- گزینه **فعال‌سازی کلید تأیید صادرات** را فعال کنید تا کلید تأیید را در File Explorer ذخیره کنید.
+- **فعال‌سازی قرارداد تأیید صادر کننده** برای ذخیره قرارداد Solidity برای تأیید روی زنجیره.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-5/images/trusted_setup.png" alt="trusted-setup" width=330 height=350>
 
-5. **Run the Trusted Setup**:
+5. **راه‌اندازی قابل اعتماد را اجرا کنید**:
 
-- Click on the **Run Setup** button.
-- Wait for the process to complete. This may take some time depending on the circuit complexity.
+- بر روی دکمه **اجرای تنظیمات** کلیک کنید.
+- منتظر بمانید تا فرایند به پایان برسد. این ممکن است بسته به پیچیدگی مدار کمی زمان ببرد.
