@@ -1,12 +1,12 @@
-# This is a repo of tutorials for the Remix's LearnEth Plugin
+# این یک مخزن از آموزش‌ها برای افزونه LearnEth Remix است
 
-### To use these tutorials:
+### برای استفاده از این آموزش‌ها:
 
-**1. Open Remix**
+**1. ریمیکس باز**
 
 https://remix.ethereum.org
 
-**2. In the plugin manager activate LEARNETH**
+\*\*2. در مدیریت پلاگین، LEARNETH را فعال کنید
 
 **3. Go to the Learneth plugin and these tutorials will load by default**
 
