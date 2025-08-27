@@ -1,17 +1,17 @@
-A libraries looks like a **contract** but use the keyword `library`
+یک کتابخانه شبیه به **قرارداد** است اما از کلمه کلیدی `library` استفاده کنید
 
-A library typically is a collection of useful functions sitting out there on the blockchain that any contract can use.  Because the library is already deployed, it saves the deployment costs of the many contracts that use it.
+یک کتابخانه معمولاً مجموعه‌ای از توابع مفید است که در آن سوی بلاکچین قرار دارد و هر قراردادی می‌تواند از آن استفاده کند.  زیرا کتابخانه قبلاً راه‌اندازی شده است، هزینه‌های استقرار بسیاری از قراردادهایی که از آن استفاده می‌کنند را صرفه‌جویی می‌کند.
 
-In the following contract:
+در قرارداد زیر:
 
-- Make a library with the name `LibraryForTest`.
+- یک کتابخانه به نام `LibraryForTest` بسازید.
 
-It is possible to put a library in same file with another contract.  So put the library below the contract.
+ممکن است که یک کتابخانه را درون یک پرونده با یک قرارداد دیگر قرار دهید.  بنابراین کتابخانه را زیر قرارداد قرار دهید.
 
-This library should have a method called `getFromLib` method which returns `3`.
+این کتابخانه باید متدی به نام `getFromLib` داشته باشد که `3` را برمی‌گرداند.
 
-- Update the `get` method in the `test` contract to use the `LibraryForTest` library.   The function `get` should return the value it receives from `getFromLib`.
+- متد `get` را در قرارداد `test` به‌روزرسانی کنید تا از کتابخانه `LibraryForTest` استفاده کند.   تابع `get` باید مقداری را که از `getFromLib` دریافت می‌کند، بازگرداند.
 
 ---------
 
-You can find more info about libraries in <a href="https://solidity.readthedocs.io/en/latest/contracts.html?highlight=library#libraries" target="_blank">this section of the Solidity Docs</a>.
+شما می‌توانید اطلاعات بیشتری در مورد کتابخانه‌ها در <a href="https://solidity.readthedocs.io/en/latest/contracts.html?highlight=library#libraries" target="_blank">این بخش از مستندات سالیدیتی</a> بیابید.
