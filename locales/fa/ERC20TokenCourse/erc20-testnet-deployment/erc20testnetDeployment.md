@@ -1,41 +1,41 @@
-In this section, we will use Metamask (an Ethereum wallet) to deploy our contract to a testnet of the Ethereum blockchain. This testnet behaves very similarly to the real blockchain (mainnet), but does not require real ETH to pay for transactions.
+در این بخش، ما از متامسک (یک کیف پول اتریوم) برای استقرار قرارداد خود در یک شبکه آزمایشی از بلاکچین اتریوم استفاده خواهیم کرد. این شبکه آزمایشی بسیار شبیه به بلاکچین واقعی (شبکه اصلی) رفتار می‌کند، اما برای پرداخت تراکنش‌ها به اتریوم واقعی نیاز ندارد.
 
-### 1. Install Metamask
+### 1. Metamask را نصب کنید
 
-**1.1** Go to <a href="https://metamask.io/" target="_blank">metamask.io</a>.
+**1.1** به <a href="https://metamask.io/" target="_blank">metamask.io</a> بروید.
 
-**1.2** Click on the download button, then click on install for your browser (e.g. Chrome) and add the extension to your browser.
+**۱٫۲** روی دکمه دانلود کلیک کنید، سپس روی نصب برای مرورگر خود (مثلاً کروم) کلیک کنید و افزونه را به مرورگر خود اضافه کنید.
 
-**1.3** Create a wallet as described.
+**۱٫۳** طبق توضیحات، یک کیف پول ایجاد کنید.
 
-### 2. Get testnet token
+### 2. دریافت توکن شبکه آزمایشی
 
-In order to make transactions on the testnet we need Ethereum testnet tokens, which you can receive from something called a _faucet_.
+برای انجام تراکنش‌ها در شبکه آزمایشی، به توکن‌های شبکه آزمایشی اتریوم نیاز داریم که می‌توانید آنها را از چیزی به نام _faucet_ دریافت کنید.
 
-**2.1** Switch your Metamask network by clicking on the "Ethereum Mainnetwork" drop down and selecting "Ropsten Test Network". If you don’t see any test networks, click on the "Show/hide" link and enable "Show test networks" in the settings.
+**2.1** شبکه متامسک خود را با کلیک بر روی منوی کشویی «Ethereum Mainnetwork» و انتخاب «Ropsten Test Network» تغییر دهید. اگر هیچ شبکه آزمایشی نمی‌بینید، روی پیوند «نمایش/پنهان کردن» کلیک کنید و «نمایش شبکه‌های آزمایشی» را در تنظیمات فعال کنید.
 
-**2.2** Go to <a href="https://faucet.ropsten.be/" target="_blank">https://faucet.ropsten.be/</a>, enter the address of your account, and claim testnet ETH. You could also use other ropsten faucets like <a href="https://faucet.paradigm.xyz/" target="_blank">https://faucet.paradigm.xyz/</a> or <a href="https://app.mycrypto.com/faucet" target="_blank">https://app.mycrypto.com/faucet</a>. Have a look at the faucets listed on <a href="https://ethereum.org/en/developers/docs/networks/#testnet-faucets" target="_blank">ethereum.org</a> to learn more.
+**2.2** به <a href="https://faucet.ropsten.be/" target="_blank">https://faucet.ropsten.be/</a> بروید، آدرس حساب خود را وارد کنید و اتریوم شبکه آزمایشی را دریافت کنید. همچنین می‌توانید از سایر شیرهای روپستن مانند <a href="https://faucet.paradigm.xyz/" target="_blank">https://faucet.paradigm.xyz/</a> یا <a href="https://app.mycrypto.com/faucet" target="_blank">https://app.mycrypto.com/faucet</a> استفاده کنید. برای کسب اطلاعات بیشتر، نگاهی به فاست‌های فهرست‌شده در <a href="https://ethereum.org/en/developers/docs/networks/#testnet-faucets" target="_blank">ethereum.org</a> بیندازید.
 
-### 3. Deployment
+### 3. استقرار
 
-Make sure the EduCoin contract is compiled.
+مطمئن شوید که قرارداد EduCoin کامپایل شده است.
 
-**3.1.** In the "DEPLOY & RUN TRANSACTIONS" module of the Remix IDE under "ENVIRONMENT" select "Injected Web3". It will ask you to connect your account which you should confirm.
+**۳٫۱.** در ماژول «استقرار و اجرای تراکنش‌ها» از Remix IDE در قسمت «محیط»، «Injected Web3» را انتخاب کنید. از شما خواسته می‌شود که حساب خود را متصل کنید که باید آن را تأیید کنید.
 
-**3.2** Deploy the EduCoin contract and confirm the transaction in Metamask.
+**۳٫۲** قرارداد EduCoin را مستقر کرده و تراکنش را در Metamask تأیید کنید.
 
-**3.3** Your contract should appear in the "Deployed Contracts" section. Copy the contract address.
+**۳٫۳** قرارداد شما باید در بخش «قراردادهای مستقر» نمایش داده شود. آدرس قرارداد را کپی کنید.
 
-**3.4** In Metamask, click on assets, then click on the "Import tokens" link, and paste the address of your contract in the input field.
+**۳٫۴** در متامسک، روی دارایی‌ها کلیک کنید، سپس روی پیوند «وارد کردن توکن‌ها» کلیک کنید و آدرس قرارداد خود را در فیلد ورودی جایگذاری کنید.
 
-You should now see a balance of 1000 EDC in your wallet.
+اکنون باید موجودی ۱۰۰۰ EDC را در کیف پول خود مشاهده کنید.
 
-### 4. Make a transaction
+### 4. معامله انجام دهید
 
-**4.1** Click on the identicon (visual representation of your address) in the Metamask wallet and create a second account (Account 2).
+**۴٫۱** روی آیکن (نمایش تصویری آدرس شما) در کیف پول متامسک کلیک کنید و یک حساب دوم (حساب ۲) ایجاد کنید.
 
-**4.2** Copy the address of Account 2.
+**۴٫۲** آدرس حساب ۲ را کپی کنید.
 
-**4.3** Switch to the first account (Account 1) and send 250 EDC to Account 2. Check the balances of Account 1 and Account 2. You might need to add the token address again for Account 2 to import the tokens and you will need testeth if you want to make a transaction with this account.
+**۴٫۳** به حساب اول (حساب ۱) بروید و ۲۵۰ EDC به حساب ۲ ارسال کنید. مانده حساب ۱ و حساب ۲ را بررسی کنید. ممکن است لازم باشد آدرس توکن را دوباره برای حساب ۲ اضافه کنید تا توکن‌ها وارد شوند و اگر می‌خواهید با این حساب تراکنشی انجام دهید، به testeth نیاز خواهید داشت.
 
-You can also see your account balances if you look at the contract in Remix and call the `balanceOf` function using the addresses of Account 1 and Account 2.
+همچنین می‌توانید موجودی حساب خود را با نگاه کردن به قرارداد در Remix و فراخوانی تابع `balanceOf` با استفاده از آدرس‌های حساب ۱ و حساب ۲ مشاهده کنید.
