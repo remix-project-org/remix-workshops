@@ -1,37 +1,37 @@
-The `visibility` specifier is used to control who has access to functions and state variables.
+تعیین‌کننده `visibility` برای کنترل کردن اینکه چه کسی به توابع و متغیرهای وضعیت دسترسی داشته باشد، استفاده می‌شود.
 
-There are four types of visibilities: `external`, `public`, `internal`, and `private`.
+چهار نوع دسترسی وجود دارد: `خارجی`، `عمومی`، `داخلی` و `خصوصی`.
 
-They regulate if functions and state variables can be called from inside the contract, from contracts that derive from the contract (child contracts), or from other contracts and transactions.
+آنها تنظیم می‌کنند که آیا توابع و متغیرهای حالت می‌توانند از درون قرارداد، از قراردادهایی که از آن قرارداد به ارث می‌برند (قراردادهای فرزند) یا از سایر قراردادها و تراکنش‌ها فراخوانی شوند.
 
-### private
+### خصوصی
 
-- Can be called from inside the contract
+- می‌توان از داخل قرارداد فراخوانی شود
 
-### internal
+### داخلی
 
-- Can be called from inside the contract
-- Can be called from a child contract
+- می‌توان از داخل قرارداد فراخوانی شود
+- می‌توان از یک قرارداد فرزند فراخوانی شود
 
-### public
+### عمومی
 
-- Can be called from inside the contract
-- Can be called from a child contract
-- Can be called from other contracts or transactions
+- می‌توان از داخل قرارداد فراخوانی شود
+- می‌توان از یک قرارداد فرزند فراخوانی شود
+- می‌تواند از قراردادها یا تراکنش‌های دیگر فراخوانی شود
 
-### external
+### خارجی
 
-- Can be called from other contracts or transactions
-- State variables can not be `external`
+- می‌تواند از قراردادها یا تراکنش‌های دیگر فراخوانی شود
+- متغیرهای حالت نمی‌توانند `خارجی` باشند
 
-In this example, we have two contracts, the `Base` contract (line 4) and the `Child` contract (line 55) which inherits the functions and state variables from the `Base` contract.
+در این مثال، ما دو قرارداد داریم، قرارداد `Base` (خط ۴) و قرارداد `Child` (خط ۵۵) که توابع و متغیرهای حالت را از قرارداد `Base` به ارث می‌برد.
 
-When you uncomment the `testPrivateFunc` (lines 58-60) you get an error because the child contract doesn’t have access to the private function `privateFunc` from the `Base` contract.
+زمانی که شما `testPrivateFunc` را (خطوط 58-60) uncomment کنید، خطایی دریافت می‌کنید زیرا قرارداد فرزند به تابع خصوصی `privateFunc` از قرارداد `Base` دسترسی ندارد.
 
-If you compile and deploy the two contracts, you will not be able to call the functions `privateFunc` and `internalFunc` directly. You will only be able to call them via `testPrivateFunc` and `testInternalFunc`.
+اگر شما دو قرارداد را کامپایل و مستقر کنید، نمی‌توانید به طور مستقیم به توابع `privateFunc` و `internalFunc` دسترسی پیدا کنید. شما تنها می‌توانید با استفاده از `testPrivateFunc` و `testInternalFunc` آنها را فراخوانی کنید.
 
-<a href="https://www.youtube.com/watch?v=NBzQVJ6OrrQ" target="_blank">Watch a video tutorial on Visibility</a>.
+<a href="https://www.youtube.com/watch?v=NBzQVJ6OrrQ" target="_blank">یک آموزش ویدیویی در مورد قابلیت مشاهده را مشاهده کنید</a>.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-Create a new function in the `Child` contract called `testInternalVar` that returns the values of all state variables from the `Base` contract that are possible to return.
+یک تابع جدید در قرارداد `Child` به نام `testInternalVar` ایجاد کنید که مقادیر تمام متغیرهای وضعیت از قرارداد `Base` را که ممکن است برگردانده شوند، بازگرداند.
