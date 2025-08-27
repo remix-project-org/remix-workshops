@@ -11,32 +11,32 @@ Structs dey use to defines kustom data types.
 
 ## ISwapRouter Interface
 
-The ISwapRouter interface defines the functions that can be called on the Uniswap Swap contract. We will need to use this interface to interact with the Uniswap Swap contract and execute swaps.
+Di ISwapRouter interface defines di fuktions wey dem dey call for di Uniswap Swap kontract. We go need use dis interface to interact with di Uniswap Swap kontract and comot di swaps.
 
-On line 5, we define a constant variable called `router` that is of type `ISwapRouter`. We set the value of this variable to the interface instance of a smart contract that is deployed at the address `0xE592427A0AEce92De3Edee1F18E0157C05861564`. This is the address of the Uniswap V3 Swap contract on the Ethereum mainnet.
+For line 5, we defines kontract variable called 'router' dat na for type 'ISwapRouter'. We set di value for dis variable to di interface instance of smart kontract wey dem deploy for di address '0xE592427A0AEce92De3Edee1F18E0157C05861564'. Dis na di address for di Uniswap V3 Swap kontract on di Ethereum Mainnet.
 
-On line 9, we define an interface called `ISwapRouter`. This interface defines two functions: `exactInputSingle` and `exactInput`.
+For line 9, we define interface wey dem call 'ISwapRouter'. Dis interface defines two fuktions 'exactInputSingle' and 'exactinput'.
 
 ## exactInputSingle
 
-On line 25, we define a struct called `ExactInputSingleParams`. This struct defines the parameters that are required for our exactInputSingle function on line 21, which will execute a single-hop swap. The struct has the following parameters:
+For line 25, we defines struct called 'ExactInputSingleParams'. Dis struct defines di parameters wey dey required for our exactInputSingle fuktion for line 21, which go execute one single hop swap. Dis struct get di following parameters:
 
-- **`address tokenIn`**: The address of the token being sent.
-- **`address tokenOut`**: The address of the token being received.
-- **`uint24 fee`**: The fee associated with the swap.
-- **`address recipient`**: The address that will receive the output token.
-- **`uint deadline`**: A timestamp by which the transaction must be processed, for time-limiting the swap.
-- **`uint amountIn`**: The amount of the input token being sent.
-- **`uint amountOutMinimum`**: The minimum amount of the output token that the sender is willing to accept, to protect against unfavorable price movements.
-- **`uint160 sqrtPriceLimitX96`**: A limit on the price, represented in a specific format, to prevent the swap from occurring at unfavorable prices.
+- **`address tokenIn`**: Di address for di tokin being sent.
+- **`address tokenOut`**: Di address for di tokin being received.
+- **`uint24 fee`**: Di fee wey follow join di swap.
+- **`address recipient`**: Di address wey go receive di output tokin.
+- **`uint deadline`**: A timestamp by which di transaction must be processed, for time-limiting di swap.
+- **`uint amountIn`**: Di amount of d input tokin being sent.
+- **`uint amountOutMinimum`**: Di minimum amount of di output tokin wey we sender dey willing to accept, to protect against unfavorable price movements.
+- **`uint160 sqrtPriceLimitX96`**: A limit for di price, represented for specifik format, to prevent di swap from occuring at unfavorable prices.
 
 ## exactInput
 
-On line 25, we define a struct called `ExactInputParams`. This struct defines the parameters that are required for our `exactInput` function on line 33. This function will execute a multi-hop swap. The struct has the following parameters:
+For line 25, we define a struct called 'ExactInputParams'. Dis struct defines di parameters wey dey required for our 'exactinput' fuktion for line 33. Dis funktion go execute a multi-hop swap. Dis struct get di following parameters:
 
-- **`bytes path`**: Encoded information about the swap path (i.e., which tokens to swap through).
-- **`address recipient`**: The address receiving the output tokens.
-- **`uint deadline`**: Similar to above, a timestamp by which the transaction must be processed.
-- **`uint amountIn`**: The amount of the input token.
-- **`uint amountOutMinimum`**: The minimum amount of the output token the sender expects to receive.
+- **`bytes path`**: Encoded info about di swap path (i.e., which tokins to swap through).
+- **`address recipient`**: di address receiving di output tokins.
+- **`uint deadline`**: Similar to above, a timestamp by which di transaction must dey processed.
+- **`uint amountIn`**: Di amount of di input tokin.
+- **`uint amountOutMinimum`**: Di minimum amount of di output tokin di sender dey expects receive.
 
