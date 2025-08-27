@@ -6,68 +6,67 @@
 
 1. اصلاح‌کننده‌ی **txExists:** (خط ۱۳) تضمین می‌کند که تراکنش وجود دارد. این کار را با بررسی اینکه آیا شاخص تراکنش کمتر از طول آرایه `transactions` است یا خیر، انجام می‌دهد. در ادامه‌ی این بخش، بیشتر در مورد این اصلاح‌کننده صحبت خواهیم کرد.
 2. اصلاح‌کننده‌ی **`notExecuted`:** (خط ۱۸) تضمین می‌کند که تراکنش اجرا نشده است. این کار را با بررسی اینکه آیا متغیر «اجرا شده» تراکنش نادرست است یا خیر، انجام می‌دهد.
-3. اصلاح‌کننده‌ی **`notConfirmed`:** (خط ۲۳) تضمین می‌کند که تراکنش توسط فراخوانی‌کننده تأیید نشده است. It does this by checking whether the `isConfirmed` mapping of the transaction index and the caller's address is false.
+3. اصلاح‌کننده‌ی **`notConfirmed`:** (خط ۲۳) تضمین می‌کند که تراکنش توسط فراخوانی‌کننده تأیید نشده است. این کار را با بررسی اینکه آیا نگاشت `isConfirmed` از شاخص تراکنش و آدرس تماس‌گیرنده نادرست است یا خیر، انجام می‌دهد.
 
-## Transaction Struct
+## ساختار تراکنش
 
-On line 28, we have a struct called `Transaction`. We store the struct members: `to`, `value`, `data`, `executed`, and `numConfirmations` in individual variables.
+در خط ۲۸، ما یک struct به نام `Transaction` داریم. ما اعضای ساختار: `to`، `value`، `data`، `executed` و `numConfirmations` را در متغیرهای جداگانه ذخیره می‌کنیم.
 
-## Mapping of Confirmations
+## نگاشت تأییدیه‌ها
 
-On line 37, we have a mapping called `isConfirmed`. This mapping is used to keep track of the confirmations of each transaction. It maps the transaction's index to a mapping of an owner addresse to a boolean value. The boolean value indicates whether this owner has confirmed the transaction.
+در خط ۳۷، ما یک نگاشت به نام `isConfirmed` داریم. این نگاشت برای پیگیری تأییدیه‌های هر تراکنش استفاده می‌شود. این تابع، اندیس تراکنش را به نگاشتی از آدرس مالک به یک مقدار بولی نگاشت می‌کند. مقدار بولی نشان می‌دهد که آیا این مالک تراکنش را تأیید کرده است یا خیر.
 
-## Transactions Array
+## آرایه تراکنش‌ها
 
-On line 39, we have an array called `transactions`. The array is used to store all the transactions submitted to the multi-signature wallet.
+در خط ۳۹، آرایه‌ای به نام `transactions` داریم. این آرایه برای ذخیره تمام تراکنش‌های ارسال شده به کیف پول چند امضایی استفاده می‌شود.
 
-## Events
+## رویدادها
 
-We have four new events in this iteration of the contract:
+ما در این نسخه از قرارداد، چهار رویداد جدید داریم:
 
-1. **`SubmitTransaction` event:** emitted whenever a transaction is submitted to the multi-signature wallet.
-2. **`ConfirmTransaction` event:** emitted whenever a transaction is confirmed by an owner.
-3. **`RevokeConfirmation` event:** emitted whenever a transaction confirmation is revoked by an owner.
-4. **`ExecuteTransaction` event:** emitted whenever a transaction is executed.
+1. رویداد `SubmitTransaction`: هر زمان که تراکنشی به کیف پول چندامضایی ارسال شود، منتشر می‌شود.
+2. رویداد **`ConfirmTransaction`:** هر زمان که یک تراکنش توسط مالک تأیید شود، منتشر می‌شود.
+3. رویداد `RevokeConfirmation`: هر زمان که تأیید تراکنش توسط مالک لغو شود، منتشر می‌شود.
+4. رویداد `ExecuteTransaction`: هر زمان که یک تراکنش اجرا شود، منتشر می‌شود.
 
-## submitTransaction Function
+## ارائه تابع تراکنش
 
-The `submitTransaction` function (Line 78) allows users to submit a transaction to the multi-sig wallet. It takes three parameters: `to`, `value`, and `data`. The `to` parameter is the address of the recipient of the transaction. The `value` parameter is the amount of Ether to be sent. The `data` parameter is the data to be sent to the recipient. Only owners can submit transactions.
+تابع `submitTransaction` (خط ۷۸) به کاربران اجازه می‌دهد تا تراکنشی را به کیف پول چندامضایی ارسال کنند. این تابع سه پارامتر می‌گیرد: `to`، `value` و `data`. پارامتر `to` آدرس گیرنده تراکنش است. پارامتر «مقدار» مقدار اتری است که قرار است ارسال شود. پارامتر `data` داده‌ای است که قرار است به گیرنده ارسال شود. فقط مالکان می‌توانند تراکنش‌ها را ارسال کنند.
 
-On line, 85 we create a new transaction struct and push it to the `transactions` array and emit the `SubmitTransaction` event. The `txIndex` variable is used to keep track of the transaction index.
+در خط ۸۵، یک ساختار تراکنش جدید ایجاد می‌کنیم و آن را به آرایه `transactions` ارسال می‌کنیم و رویداد `SubmitTransaction` را منتشر می‌کنیم. متغیر `txIndex` برای پیگیری شاخص تراکنش استفاده می‌شود.
 
-## confirmTransaction Function
+## تایید عملکرد تراکنش
 
-The `confirmTransaction` function (Line 98) allows users to confirm a transaction. It takes one parameter: `txIndex`.
-It has three modifiers: `onlyOwner`, `txExists`, and `notExecuted`. The `onlyOwner` modifier ensures that only owners can confirm transactions. The `txExists` modifier ensures that the transaction exists. The `notExecuted` modifier ensures that the transaction has not been executed.
+تابع `confirmTransaction` (خط ۹۸) به کاربران اجازه می‌دهد تا یک تراکنش را تأیید کنند. این تابع یک پارامتر به نام `txIndex` دریافت می‌کند.
+این شامل سه اصلاح‌کننده است: `onlyOwner`، `txExists` و `notExecuted`. اصلاح‌کننده‌ی «onlyOwner» تضمین می‌کند که فقط مالکان می‌توانند تراکنش‌ها را تأیید کنند. اصلاح‌کننده‌ی `txExists` تضمین می‌کند که تراکنش وجود دارد. اصلاح‌کننده‌ی `notExecuted` تضمین می‌کند که تراکنش اجرا نشده است.
 
-On line 101, we store the transaction in a local variable called `transaction`. We then increment the `numConfirmations` variable of the transaction and set the `isConfirmed` mapping of the transaction index and the caller's address to true. Finally, we emit the `ConfirmTransaction` event.
+در خط ۱۰۱، تراکنش را در یک متغیر محلی به نام `transaction` ذخیره می‌کنیم. سپس متغیر `numConfirmations` تراکنش را افزایش می‌دهیم و نگاشت `isConfirmed` اندیس تراکنش و آدرس فراخواننده را روی true تنظیم می‌کنیم. در نهایت، رویداد `ConfirmTransaction` را منتشر می‌کنیم.
 
 ## executeTransaction Function
 
-The `executeTransaction` function (Line 108) allows users to execute a transaction. On line 113, we require that the number of confirmations of the transaction is greater than or equal to the required number of confirmations. We then set the `executed` variable of the transaction to true. Finally, send the funds using the `call` function.  This is the `call` of the recipient address with the value and data of the transaction. If the transaction is successful, we emit the `ExecuteTransaction` event.
+تابع `executeTransaction` (خط 108) به کاربران اجازه می‌دهد تا یک تراکنش را اجرا کنند. در خط ۱۱۳، ما الزام می‌کنیم که تعداد تأییدهای تراکنش بزرگتر یا مساوی تعداد تأییدهای مورد نیاز باشد. سپس متغیر `executed` تراکنش را روی true تنظیم می‌کنیم. در نهایت، با استفاده از تابع `call` وجه را ارسال کنید.  این «فراخوانی» آدرس گیرنده با مقدار و داده‌های تراکنش است. اگر تراکنش موفقیت‌آمیز باشد، رویداد `ExecuteTransaction` را منتشر می‌کنیم.
 
-## getTransactionCount Function
+## تابع getTransactionCount
 
-The `getTransactionCount` function (Line 132) allows users to retrieve the number of transactions in the multi-signature wallet. It returns the length of the `transactions` array.
+تابع `getTransactionCount` (خط ۱۳۲) به کاربران اجازه می‌دهد تا تعداد تراکنش‌های موجود در کیف پول چندامضایی را بازیابی کنند. طول آرایه `transactions` را برمی‌گرداند.
 
-## getTransaction Function
+## تابع getTransaction
 
-The `getTransaction` function (Line 136) allows users to retrieve a transaction. It returns the transaction struct members that we explored earlier in this section.
+تابع `getTransaction` (خط ۱۳۶) به کاربران اجازه می‌دهد تا یک تراکنش را بازیابی کنند. این تابع اعضای ساختار تراکنش را که قبلاً در این بخش بررسی کردیم، برمی‌گرداند.
 
-## Conclusion
+## نتیجه گیری
 
-In this section, we explored the process of submitting, confirming, and executing transactions. We examined the `submitTransaction`, `confirmTransaction`, and `executeTransaction` functions and understood how they work together to allow multiple users to submit and confirm transactions.
+در این بخش، فرآیند ارسال، تأیید و اجرای تراکنش‌ها را بررسی کردیم. ما توابع `submitTransaction`، `confirmTransaction` و `executeTransaction` را بررسی کردیم و فهمیدیم که چگونه آنها با هم کار می‌کنند تا به چندین کاربر امکان ارسال و تأیید تراکنش‌ها را بدهند.
 
-## ⭐️ Assignment: Make a Transaction
+## ⭐️ تکلیف: انجام تراکنش
 
-Submit, confirm, and execute a transaction to send 2 Ether to the first account in the "ACCOUNTS" dropdown menu.
+ارسال، تأیید و اجرای تراکنش برای ارسال ۲ اتر به اولین حساب در منوی کشویی «حساب‌ها».
 
-1. Deploy the Multisig contract as in the previous assignment. Make sure that the required number of confirmations is 2.
-2. Fund the multisig from any address by sending 4 Ether as you did in the previous assignment.
-3. Try sending 2 Ether to the first account in the "ACCOUNTS" dropdown menu.  Once you have submitted this transaction (with submitTransaction), click on `getTransactionCount` and should see one transaction or you can click on `getTransaction`, insert 0 as the transaction index and see the transaction you just submitted.
-4. Now you can click on `confirmTransaction` and insert 0 as the transaction index. If you click on `getTransaction` again, you should see that the transaction has been confirmed once.
-5. Switch to the second owner account and confirm the transaction again. If you click on `getTransaction` again, you should see that the transaction has been confirmed twice.
-6. The last step is to execute the transaction. Click on `executeTransaction` and insert 0 as the transaction index. If you click on `getTransaction` again, you should see that the transaction has been executed. You can also check the balance of the first account in the "ACCOUNTS" dropdown menu. It should now be 2 Ether higher and the balance of the multi-signature wallet should be 2 Ether lower.
+1. قرارداد چندامضایی را مانند تکلیف قبلی مستقر کنید. مطمئن شوید که تعداد تاییدیه‌های مورد نیاز ۲ است.
+2. با ارسال ۴ اتر، همانطور که در تکلیف قبلی انجام دادید، از هر آدرسی، چندامضایی را تأمین مالی کنید.
+3. سعی کنید ۲ اتر را به اولین حساب در منوی کشویی «حساب‌ها» ارسال کنید.  پس از ارسال این تراکنش (با submitTransaction)، روی «getTransactionCount» کلیک کنید و باید یک تراکنش را ببینید یا می‌توانید روی «getTransaction» کلیک کنید، عدد ۰ را به عنوان اندیس تراکنش وارد کنید و تراکنشی را که ارسال کرده‌اید، ببینید.
+4. حالا می‌توانید روی «confirmTransaction» کلیک کنید و عدد ۰ را به عنوان اندیس تراکنش وارد کنید. اگر دوباره روی «getTransaction» کلیک کنید، باید ببینید که تراکنش یک بار تأیید شده است.
+5. به حساب مالک دوم بروید و دوباره تراکنش را تأیید کنید. اگر دوباره روی «getTransaction» کلیک کنید، باید ببینید که تراکنش دو بار تأیید شده است.
+6. آخرین مرحله، اجرای تراکنش است. روی «executeTransaction» کلیک کنید و عدد ۰ را به عنوان اندیس تراکنش وارد کنید. اگر دوباره روی `getTransaction` کلیک کنید، باید ببینید که تراکنش اجرا شده است. همچنین می‌توانید موجودی حساب اول را در منوی کشویی «حساب‌ها» بررسی کنید. اکنون باید ۲ اتر بیشتر و موجودی کیف پول چندامضایی ۲ اتر کمتر شده باشد.
 
-**Hint:**
-If you submit a transaction make sure that the value is in Wei and that the _data field is correctly filled in. E.g. it could look like this: "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4, 2000000000000000000, 0x" for 2 Ether.
+اگر تراکنشی را ارسال می‌کنید، مطمئن شوید که مقدار آن به Wei باشد و فیلد _data به درستی پر شده باشد. به عنوان مثال. می‌تواند به این شکل باشد: "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4, 200000000000000000, 0x" برای 2 اتر.
