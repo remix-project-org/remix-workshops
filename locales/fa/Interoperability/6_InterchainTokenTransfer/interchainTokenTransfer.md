@@ -36,4 +36,4 @@
 
 نکته ۱: ERC20 پیشنهادی برای استفاده، «aUSDC» است، یک نسخه پیچیده شده از توکن USDC که می‌توان آن را از <a href= "https://docs.axelar.dev/resources/rpc/resources" target="_blank">ربات دیسکورد فاست</a> دریافت کرد. هنگام فعال‌سازی تابع `sendToMany()`، کافیست نماد `aUSDC` را به پارامتر چهارم ارسال کنید.
 
-Note2: When triggering the `sendToMany()` function you must remember to `approve` your contract to spend `aUSDC` tokens on your behalf, otherwise `transferFrom()` on line49 will throw an error.
+نکته2: هنگام فعال‌سازی تابع `sendToMany()`، باید به خاطر داشته باشید که قرارداد خود را برای خرج کردن توکن‌های `aUSDC` از طرف خود `تأیید` کنید، در غیر این صورت `transferFrom()` در خط۴۹ خطا می‌دهد.
