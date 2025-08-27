@@ -1,16 +1,16 @@
-For dis we go explore di process of submitting and to confirm di transaction. Dis pocess dey neccessary wen de owner don change dier mind about de transaction and wetin go stop am from being executed. This section will be pretty straightforward.
+For dis we go explore di process of submitting and to confirm di transaction. Dis pocess dey neccessary wen de owner don change dier mind about de transaction and wetin go stop am from being executed. Dis section go dey straithfoward.
 
-## revokeConfirmation Event
+## dis na revokeConfirmation Event
 
-On line 14, we have added the `RevokeConfirmation` event. This event is emitted whenever a transaction confirmation is revoked by an owner.
+On line we don add de RevokeConfirmation event. Dis event dey emmited whenever trasaction confirmation dey revoked by de owner.
 
-## revokeConfirmation Function
+## dis na revokeConfirmation Function
 
-On line 129, we have added the `revokeConfirmation` function. It allows users to revoke a transaction confirmation.
+On line 129, we have added the `revokeConfirmation` function. Im dey allow users to revoke transactioon confirmation.
 
-`revokeConfirmation` takes one parameter: `txIndex`. It has three modifiers: `onlyOwner`, `txExists`, and `notExecuted`.
+De revokeConfirmation dey take one parameter: txlndex. Im get three modifiers: onlyOwner; txExist and no go dey Executed.
 
-On line 134, we require that the transaction has been confirmed by the caller. This ensures that an owner who has confirmed the transaction can only revoke their own confirmation.
+On line 134, we go require dat se transaction don dey confirmed by de caller. This ensures that an owner who has confirmed the transaction can only revoke their own confirmation.
 We then decrement the `numConfirmations` variable of the transaction and set the `isConfirmed` mapping of the transaction index and the caller's address to false. Finally, we emit the `RevokeConfirmation` event.
 
 ## Conclusion
@@ -27,4 +27,4 @@ Confirm and revoke a transaction to send 2 Ether to the first account in the "AC
 
 ## Final Conclusion
 
-In this tutorial, we explored the process of creating a multi-signature wallet. We learned how to initialize the contract, deposit Ether, submit, confirm, and revoke transactions. We also learned how to execute transactions and retrieve information about the multi-signature wallet.
+In this tutorial, we explored the process of creating a multi-signature wallet. We don learn how we go te initiate de contract, deposit Ether, submit, confirm and how we go te revoke transactions. We don learn how we go te execute transactions and how we go retrieve information about de multi-signature wallet.
