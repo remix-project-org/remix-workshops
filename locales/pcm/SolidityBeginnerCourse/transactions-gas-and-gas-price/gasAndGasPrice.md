@@ -1,29 +1,29 @@
-As we have seen in the previous section, executing code via transactions on the Ethereum Network costs transaction fees in the form of Ether. The amount of fees that have to be paid to execute a transaction depends on the amount of _gas_ that the execution of the transaction costs.
+Like we don see for di previous section, as we dey execute codes wit transactions on di Ethereum Network dey cost transaction fees for di form of Ether. Di amount of fees wey you gaz pay to fit execute transaction dey depend on di amount of gas wey di execution of di transaction dey cost.
 
 ### Gas
 
-_Gas_ is the unit that measures the amount of computational effort that is required to execute a specific operation on the Ethereum network.
+Gas na di unit wey dey measure di amount of computational effort wey dey needed to execute specific operation on di Ethereum network.
 
-### Gas price
+### Price of gas
 
-The _gas_ that fuels Ethereum is sometimes compared to the gas that fuels a car. The amount of gas your car consumes is mostly the same, but the price you pay for gas depends on the market.
+Di gas wey dey fuel Ethereum sometimes dem dey compare am to di gas wey dey fuel car. Di amount of gas wey your car dey consume na mostly di same but di price wey you dey pay for gas dey depend on di market.
 
-Similarly, the amount of _gas_ that a transaction requires is always the same for the same computational work that is associated with it. However the price that the sender of the transaction is willing to pay for the _gas_ is up to them. Transactions with higher _gas prices_ are going through faster; transactions with very low _gas prices_ might not go through at all.
+E resemble di amount of gas wey transaction dey need dey always di same for di same computational work wey dey associated with am. Well sha di price wey di sender of di transacshon wan pay for di gas e dey their hand. Transactions wey get higher gas prices dey go fast fast transactions wey get very low gas prices fit no go through at all.
 
-When sending a transaction, the sender has to pay the _gas_ fee (gas_price \* gas) upon execution of the transaction. If _gas_ is left over after the execution is completed, the sender gets refunded.
+Wen you dey send moni di sender gots pay di gas fee (gas_price \* gas) once dem execute di transaction. If gas remain data di execution don complete di sender go dey refunded.
 
-_Gas_ prices are denoted in gwei.
+Dem dey label has price for gwei.
 
-### Gas limit
+### Limit of gas
 
-When sending a transaction, the sender specifies the maximum amount of gas that they are willing to pay for. If they set the limit too low, their transaction can run out of _gas_ before being completed, reverting any changes being made. In this case, the _gas_ was consumed and can’t be refunded.
+Wen you dey send transaction, di sender dey specify di big amount of gas wey dem wan pay If dey set di limit low, dem transaction gas fit finish dor dem transaction before e finish, to fit turn any change wey dem make. For dis matta, dem chop di gas and dem no go return am.
 
-Learn more about _gas_ on <a href="https://ethereum.org/en/developers/docs/gas/" target="_blank">ethereum.org</a>.
+Go learn wetin gas be for <a href="https://ethereum.org/en/developers/docs/gas/" target="_blank">Ethereum.org</a>.
 
-<a href="https://www.youtube.com/watch?v=oTS9uxU6cAM" target="_blank">Watch a video tutorial on Gas and Gas Price</a>.
+<a href="https://www.youtube.com/watch?v=oTS9uxU6cAM" target="_blank">Go see video tutorial for Gas and Gas price</a>.
 
 ## ⭐️ Assignment
 
-Create a new `public` state variable in the `Gas` contract called `cost` of the type `uint`. Store the value of the gas cost for deploying the contract in the new variable, including the cost for the value you are storing.
+Create public state variable wey new dor Di Gas contract wey dem dey call cost for di type unit. Store di value Bof Di gas cost to fit deploy di contract if di new variable, wey contain di cost if di value wey you dey store.
 
-Tip: You can check in the Remix terminal the details of a transaction, including the gas cost. You can also use the Remix plugin _Gas Profiler_ to check for the gas cost of transactions.
+Tip: You fit check for di Remix terminal di detail of di transaction wit di gas cost You fit use di Remix plug-in _Gas Profiler_ to fit check for Di gas cost of di transaction.
