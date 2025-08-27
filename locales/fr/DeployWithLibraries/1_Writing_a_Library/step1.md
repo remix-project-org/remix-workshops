@@ -1,17 +1,17 @@
-A libraries looks like a **contract** but use the keyword `library`
+Une bibliothèque ressemble à un contrat mais utilise le mot-clé library.
 
-A library typically is a collection of useful functions sitting out there on the blockchain that any contract can use.  Because the library is already deployed, it saves the deployment costs of the many contracts that use it.
+Une bibliothèque est généralement une collection de fonctions utiles situées sur la blockchain que n'importe quel contrat peut utiliser.  Comme la bibliothèque est déjà déployée, cela économise les coûts de déploiement des nombreux contrats qui l'utilisent.
 
-In the following contract:
+Dans le contrat suivant :
 
-- Make a library with the name `LibraryForTest`.
+- Créez une bibliothèque nommée LibraryForTest.
 
-It is possible to put a library in same file with another contract.  So put the library below the contract.
+Il est possible de placer une bibliothèque dans le même fichier qu'un autre contrat.  Placez donc la bibliothèque sous le contrat.
 
-This library should have a method called `getFromLib` method which returns `3`.
+Cette bibliothèque doit avoir une méthode appelée getFromLib qui retourne 3.
 
-- Update the `get` method in the `test` contract to use the `LibraryForTest` library.   The function `get` should return the value it receives from `getFromLib`.
+- Mettez à jour la méthode get dans le contrat test pour utiliser la bibliothèque LibraryForTest.   La fonction get doit retourner la valeur qu'elle reçoit de getFromLib.
 
 ---------
 
-You can find more info about libraries in <a href="https://solidity.readthedocs.io/en/latest/contracts.html?highlight=library#libraries" target="_blank">this section of the Solidity Docs</a>.
+Vous pouvez trouver plus d'informations sur les bibliothèques dans <a href="https://solidity.readthedocs.io/en/latest/contracts.html?highlight=library#libraries" target="_blank">cette section de la documentation Solidity</a>.
