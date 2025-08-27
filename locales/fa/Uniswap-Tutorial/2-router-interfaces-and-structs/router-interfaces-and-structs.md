@@ -7,36 +7,36 @@
 
 رابط‌ها در سالیدیتی توابعی را مشخص می‌کنند که باید در قراردادی که آن‌ها را به ارث می‌برد، گنجانده شوند.  آنها برای اعلام اینکه چه عملکردهایی پشتیبانی می‌شوند و همچنین برای تسهیل ادغام و تعامل بین قراردادهای مختلف مفید هستند.
 
-Structs are used to define custom data types.
+ساختارها برای تعریف نوع‌های داده سفارشی استفاده می‌شوند.
 
-## ISwapRouter Interface
+## رابط ISwapRouter
 
-The ISwapRouter interface defines the functions that can be called on the Uniswap Swap contract. We will need to use this interface to interact with the Uniswap Swap contract and execute swaps.
+رابط ISwapRouter توابعی را تعریف می‌کند که می‌توان بر روی قرارداد مبادله Uniswap فراخوانی کرد. ما به استفاده از این رابط نیاز داریم تا با قرارداد مبادله یونی‌سواپ تعامل کنیم و مبادلات را انجام دهیم.
 
-On line 5, we define a constant variable called `router` that is of type `ISwapRouter`. We set the value of this variable to the interface instance of a smart contract that is deployed at the address `0xE592427A0AEce92De3Edee1F18E0157C05861564`. This is the address of the Uniswap V3 Swap contract on the Ethereum mainnet.
+در خط ۵، یک متغیر ثابت به نام `router` تعریف می‌کنیم که از نوع `ISwapRouter` است. ما مقدار این متغیر را به نمونه رابط یک قرارداد هوشمند که در آدرس `0xE592427A0AEce92De3Edee1F18E0157C05861564` مستقر شده است، تنظیم می‌کنیم. این آدرس قرارداد مبادله Uniswap V3 در شبکه اصلی اتریوم است.
 
-On line 9, we define an interface called `ISwapRouter`. This interface defines two functions: `exactInputSingle` and `exactInput`.
+در خط 9، ما یک رابط به نام `ISwapRouter` تعریف می‌کنیم. این رابط دو تابع را تعریف می کند: `exactInputSingle` و `exactInput`.
 
-## exactInputSingle
+## ورودی دقیق تنها
 
-On line 25, we define a struct called `ExactInputSingleParams`. This struct defines the parameters that are required for our exactInputSingle function on line 21, which will execute a single-hop swap. The struct has the following parameters:
+در خط ۲۵، ما یک ساختار به نام `ExactInputSingleParams` تعریف می‌کنیم. این ساختار پارامترهای مورد نیاز برای تابع exactInputSingle ما در خط 21 را تعریف می کند، که یک تعویض تک پرش را اجرا خواهد کرد. این ساختار پارامترهای زیر را دارد:
 
-- **`address tokenIn`**: The address of the token being sent.
-- **`address tokenOut`**: The address of the token being received.
-- **`uint24 fee`**: The fee associated with the swap.
-- **`address recipient`**: The address that will receive the output token.
-- **`uint deadline`**: A timestamp by which the transaction must be processed, for time-limiting the swap.
-- **`uint amountIn`**: The amount of the input token being sent.
-- **`uint amountOutMinimum`**: The minimum amount of the output token that the sender is willing to accept, to protect against unfavorable price movements.
-- **`uint160 sqrtPriceLimitX96`**: A limit on the price, represented in a specific format, to prevent the swap from occurring at unfavorable prices.
+- **`آدرس tokenIn`**: آدرس توکنی که در حال ارسال است.
+- **`آدرس tokenOut`**: آدرس توکنی که دریافت می‌شود.
+- **`uint24 هزینه`**: هزینه مرتبط با تعویض.
+- **`نشانی گیرنده`**: نشانی که توکن خروجی را دریافت خواهد کرد.
+- **`uint deadline`**: یک زمان‌بر برای پردازش تراکنش که باید تا آن زمان تعویض انجام شود.
+- **`uint amountIn`**: مقدار توکن ورودی که ارسال می‌شود.
+- **`مقدار حداقلی خروجی`**: حداقل مقدار توکن خروجی که فرستنده آماده است قبول کند، برای حفاظت در برابر حرکات نامطلوب قیمت.
+- **`uint160 sqrtPriceLimitX96`**: یک محدودیت بر روی قیمت، که به فرمت خاصی نمایش داده می‌شود، تا از وقوع مبادله در قیمت‌های نامطلوب جلوگیری کند.
 
-## exactInput
+## ورودی دقیق
 
-On line 25, we define a struct called `ExactInputParams`. This struct defines the parameters that are required for our `exactInput` function on line 33. This function will execute a multi-hop swap. The struct has the following parameters:
+در خط ۲۵، ما یک ساختار به نام `ExactInputParams` تعریف می‌کنیم. این ساختار پارامترهایی را تعریف می‌کند که برای تابع `exactInput` ما در خط ۳۳ لازم است. این تابع یک مبادله چند مرحله ای را اجرا خواهد کرد. این ساختار پارامترهای زیر را دارد:
 
-- **`bytes path`**: Encoded information about the swap path (i.e., which tokens to swap through).
-- **`address recipient`**: The address receiving the output tokens.
-- **`uint deadline`**: Similar to above, a timestamp by which the transaction must be processed.
-- **`uint amountIn`**: The amount of the input token.
-- **`uint amountOutMinimum`**: The minimum amount of the output token the sender expects to receive.
+- **`مسیر بایت`**: اطلاعات رمزگذاری شده در مورد مسیر مبادله (یعنی کدام توکن‌ها باید مبادله شوند).
+- **`نشانی گیرنده`**: نشانی که توکن‌های خروجی را دریافت می‌کند.
+- **`uint deadline`**: مشابه مورد بالا، یک زمان‌بر است که تا آن زمان تراکنش باید پردازش شود.
+- **`uint amountIn`**: مقدار توکن ورودی.
+- **`uint amountOutMinimum`**: حداقل مقدار توکن خروجی که فرستنده انتظار دارد دریافت کند.
 
