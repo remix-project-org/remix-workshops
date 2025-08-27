@@ -9,11 +9,9 @@
 - Proxy Patterns by OpenZeppelin
   https://blog.openzeppelin.com/proxy-patterns/
 
-- The most mature implementation of Proxy pattern is The Unstructure Storage pattern that is released as part of ZeppelinOS
-  https://blog.openzeppelin.com/upgradeability-using-unstructured-storage/
+- The implementation of proxy pattern wey dey mature the most na the Unstructured storage pattern wey dem release as part of ZeppelinOS https://blog.openzeppelin.com/upgradeability-using-unstructured-storage/
 
 - Great blog post by Jack Tanner
   https://blog.indorse.io/ethereum-upgradeable-smart-contract-strategies-456350d0557c
 
-- Upgradeable Ethereum Smart Contracts
-  https://medium.com/@daonomic/upgradeable-ethereum-smart-contracts-d036cb373d6
+- Ethereum smart contracts wey dey upgradable https://medium.com/@daonomic/upgradeable-ethereum-smart-contracts-d036cb373d6
