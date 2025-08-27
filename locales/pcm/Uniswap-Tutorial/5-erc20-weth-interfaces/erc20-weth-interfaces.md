@@ -10,13 +10,13 @@ On line 80, we fit define di `IERC20` interface. Dis interface defines a standar
 
 For dis line 81 we define di `totalSupply` function. Di function return di total supply of di token.
 
-### 2. balanceOf
+### na 2. di balance of
 
-On line 83, we define the `balanceOf` function. This function returns the balance of the specified address.
+For dis line 83 we talk di `balanceOf` function. Dis function return di balance of di specified address.
 
-### 3. transfer
+### 3. di tansfer
 
-On line 85, we define the `transfer` function. This function transfers tokens from the sender to the specified recipient.
+For dis line 85 we talk di `balanceOf` function. Dis function dey transfer tokens from im sender go di specified recipient.
 
 ### 4. allowance
 
