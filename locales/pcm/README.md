@@ -1,35 +1,36 @@
-# This is a repo of tutorials for the Remix's LearnEth Plugin
+# Na repo of tutorial dor Di Remix LearnEth Plugin
 
-### To use these tutorials:
+### To fit use dis tutorial:
 
-**1. Open Remix**
+**1. Go open Remix**
 
-https://remix.ethereum.org
+https://remix.ethereum.org/
 
-**2. In the plugin manager activate LEARNETH**
+**2. Dor Di plug-in manager make you activate LEARNETH**
 
-**3. Go to the Learneth plugin and these tutorials will load by default**
+\*\*3. Go di Learneth plug-in and di tutorial go jus load
 
-**4. You may need to sign into Github especially during an in-person workshop**
+\*\*4. You go need sign enta Github for wen person shop dey
 
-Github will block too many requests from the same location, unless you are signed into Github and have input your token.  Generally, this is only an issue during in person workshops, when there can be many requests from the same location.
+GitHub go block too many request wey dey di same location, except say you sign inside Github and you don put your token.  Generally na only issue wen in person workshop, request fit plenty from di same place.
 
-To input your Github token:
+Go put your Github token:
 
 ```
-- In one browser window - go to https://remix.ethereum.org and go to the settings tab
-- In another browser window go to: 
+-For one window wey dey browse - dey go 
+https://remix.ethereum.org make you go di settings tab
+-for anoda windows go: 
 
 https://github.com/settings/tokens 
 
-and create a new token and save it in Remix in the you just opened on the settings tab.
+Make you create new token come save am for Remix wey you just open for settings.
 ```
 
 ---
 
-### Write your own tutorials for LEARNETH:
+### Go write your own tutorials for LEARNETH:
 
-See this site for instructions:
+Go see di site make you see di instructions:
 
 https://remix-learneth-plugin.readthedocs.io/en/latest/index.html#creating-tutorials
 
