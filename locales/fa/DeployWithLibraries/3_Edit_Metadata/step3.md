@@ -1,12 +1,12 @@
-The `Deploy` property in `sampleContract.json` contains everything you need for telling Remix IDE the address of the library for a specific network.
+خاصیت `Deploy` در `sampleContract.json` شامل تمام اطلاعاتی است که برای گفتن به Remix IDE به آدرس کتابخانه برای یک شبکه خاص نیاز دارید.
 
-- `<address>` contains the address of the library that is already deployed. You have to specify this address for each network.
-- `autoDeployLib` is a boolean and tells Remix IDE if it should autodeploy the library before deploying the contract.
+- `<address>` شامل آدرس کتابخانه‌ای است که از قبل مستقر شده است. شما باید این آدرس را برای هر شبکه مشخص کنید.
+- `autoDeployLib` یک متغیر بولی است و به IDE Remix می‌گوید که آیا باید قبل از استقرار قرارداد به‌طور خودکار کتابخانه را مستقر کند یا خیر.
 
-Basically if `autoDeployLib` is **true**, the `<address>` will not be used and Remix will automatically deploy the library before deploying the contract.
+به‌طور کلی، اگر `autoDeployLib` **درست** باشد، `<address>` استفاده نخواهد شد و ریمیکس به‌طور خودکار کتابخانه را قبل از استقرار قرارداد مستقر می‌کند.
 
-For the purpose of this demo - we are mimicking a situation where the library has already been deployed because this is a more common situation.
+برای هدف این نمایش - ما در حال تقلید از وضعیتی هستیم که کتابخانه قبلاً مستقر شده است زیرا این یک وضعیت رایج تر است.
 
 So set `autoDeploy` to **false**, for the `VM:-` entry.
 
-Move to next Step.
+به مرحله بعد بروید.
