@@ -1,38 +1,38 @@
-In this section of the course, we will give you a theoretical introduction to blockchain-based tokens.
+در این بخش از دوره، مقدمه‌ای نظری در مورد توکن‌های مبتنی بر بلاکچین ارائه خواهیم داد.
 
-Blockchain tokens are a new technological building block created by blockchain technology (like websites were for the internet) that enables a decentralized, ownable internet (web3).
+توکن‌های بلاکچین یک بلوک سازنده فناوری جدید هستند که توسط فناوری بلاکچین ایجاد شده‌اند (مانند وب‌سایت‌ها برای اینترنت) که اینترنت غیرمتمرکز و قابل مالکیت (web3) را امکان‌پذیر می‌کنند.
 
-### Introduction
+### مقدمه
 
-In the context of web3, tokens represent ownership. Tokens can represent ownership of anything: art, reputation, items in a video game, shares in a company, voting rights, or currencies.
+در زمینه وب 3توکن‌ها نشان‌دهنده مالکیت هستند. توکن‌ها می‌توانند نشان‌دهنده مالکیت هر چیزی باشند: آثار هنری، اعتبار، اقلام موجود در یک بازی ویدیویی، سهام یک شرکت، حق رأی یا ارز.
 
-The revolutionary innovation of blockchain technology is that it allows data to be stored publicly in an immutable (unchangeable) way.
-This new form of data storage allows us to keep track of ownership and enable truly ownable digital items for the first time.
+نوآوری انقلابی فناوری بلاکچین این است که اجازه می‌دهد داده‌ها به صورت عمومی و به روشی تغییرناپذیر (غیرقابل تغییر) ذخیره شوند.
+این شکل جدید از ذخیره‌سازی داده‌ها به ما امکان می‌دهد تا مالکیت را پیگیری کنیم و برای اولین بار اقلام دیجیتالی واقعاً قابل مالکیت را امکان‌پذیر سازیم.
 
-Blockchain Technology was originally invented to keep track of the ownership of Bitcoin, a decentralized digital currency and fungible token.
+فناوری بلاکچین در ابتدا برای پیگیری مالکیت بیت‌کوین، یک ارز دیجیتال غیرمتمرکز و توکن قابل تعویض، اختراع شد.
 
-### Fungible and non-fungible tokens
+### توکن‌های قابل تعویض و غیرقابل تعویض
 
-Assets like money: Bitcoin or a one-dollar bill, for example, are fungible. Fungible means that all assets are the same and are interchangeable. Assets like art, collectibles, or houses are non-fungible; they are all different and not interchangeable.
+دارایی‌هایی مانند پول: برای مثال، بیت‌کوین یا یک اسکناس یک دلاری، قابل تعویض هستند. قابل تعویض بودن به این معنی است که همه دارایی‌ها یکسان و قابل تعویض هستند. دارایی‌هایی مانند آثار هنری، اشیاء کلکسیونی یا خانه‌ها غیرقابل تعویض هستند؛ همه آنها متفاوت هستند و قابل تعویض با یکدیگر نیستند.
 
-We can divide tokens into these two types: fungible tokens, where all tokens are the same, and non-fungible tokens (NFTs), where every token is unique.
+می‌توانیم توکن‌ها را به این دو نوع تقسیم کنیم: توکن‌های قابل تعویض، که در آن‌ها همه توکن‌ها یکسان هستند، و توکن‌های غیرقابل تعویض (NFT)، که در آن‌ها هر توکن منحصر به فرد است.
 
-### Token standard
+### استاندارد توکن
 
-The behavior of a token is specified in its smart contract (token contract). The contract could, for example, include the functionality to transfer a token or check for its total supply.
+رفتار یک توکن در قرارداد هوشمند آن (قرارداد توکن) مشخص شده است. برای مثال، این قرارداد می‌تواند شامل قابلیت انتقال یک توکن یا بررسی کل موجودی آن باشد.
 
-If everybody would create their own token contracts with different behavior and naming conventions, it would make it very hard for people to build contracts or applications that are able to interact with each other.
+اگر هر کسی قراردادهای توکن خود را با رفتارها و قراردادهای نامگذاری متفاوت ایجاد کند، ساختن قراردادها یا برنامه‌هایی که بتوانند با یکدیگر تعامل داشته باشند، برای افراد بسیار دشوار خواهد شد.
 
-The Ethereum community has developed token standards that define how a developer can create tokens that are interoperable (able to work with others) with other contracts, products, and services. Contracts developed under these standards need to include a certain set of functions and events.
+جامعه اتریوم استانداردهای توکن را توسعه داده است که تعریف می‌کند چگونه یک توسعه‌دهنده می‌تواند توکن‌هایی ایجاد کند که با سایر قراردادها، محصولات و خدمات قابل تعامل (قابل همکاری با دیگران) باشند. قراردادهایی که تحت این استانداردها تدوین می‌شوند، باید شامل مجموعه‌ای از کارکردها و رویدادها باشند.
 
-The most popular token standards are the ERC20 for fungible tokens and the ERC721 for non-fungible tokens. In this course, we will learn how to create and interact with the ERC20 token standard in the following sections.
+محبوب‌ترین استانداردهای توکن، ERC20 برای توکن‌های قابل تعویض و ERC721 برای توکن‌های غیرقابل تعویض هستند. در این دوره، در بخش‌های بعدی نحوه ایجاد و تعامل با استاندارد توکن ERC20 را خواهیم آموخت.
 
-If you want to learn more about NFTs and the ERC721 token standard, have a look at the Learneth NFT Course.
+اگر می‌خواهید درباره NFTها و استاندارد توکن ERC721 بیشتر بدانید، نگاهی به دوره Learneth NFT بیندازید.
 
-The ERC777 is a fungible token standard, like the ERC20, that includes more advanced features like hooks while remaining backward compatible with ERC20. Learn more about the ERC777 in its <a href="https://eips.ethereum.org/EIPS/eip-777" target="_blank">EIP (Ethereum improvement proposal)</a>.
+ERC777 یک استاندارد توکن قابل تعویض است، مانند ERC20، که شامل ویژگی‌های پیشرفته‌تری مانند قلاب‌ها می‌شود و در عین حال با ERC20 سازگار است. برای کسب اطلاعات بیشتر در مورد ERC777 به <a href="https://eips.ethereum.org/EIPS/eip-777" target="_blank">EIP (پیشنهاد بهبود اتریوم)</a> آن مراجعه کنید.
 
-The ERC1155 is a multi-token standard that allows a single contract to manage different types of tokens, such as fungible, non-fungible, or semi-fungible tokens.
-Learn more about the ERC1155 in its <a href="https://eips.ethereum.org/EIPS/eip-1155" target="_blank">EIP</a>.
+ERC1155 یک استاندارد چند توکنی است که به یک قرارداد واحد اجازه می‌دهد انواع مختلفی از توکن‌ها، مانند توکن‌های قابل تعویض، غیرقابل تعویض یا نیمه قابل تعویض را مدیریت کند.
+برای کسب اطلاعات بیشتر در مورد ERC1155 به <a href="https://eips.ethereum.org/EIPS/eip-1155" target="_blank">EIP</a> آن مراجعه کنید.
 
 ## ⭐️ Assignment
 
