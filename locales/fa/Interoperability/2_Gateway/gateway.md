@@ -1,25 +1,25 @@
-The Axelar Gateway is the entrypoint for your smart contract into the Axelar ecosystem. Once you have triggered the appropriate function on the Gateway, your transaction will begin its interchain journey from your source chain across the Axelar network to the destination chain. Each chain that is connected to Axelar has a deployed gateway contract for you to interact with.
+درگاه Axelar نقطه ورود قرارداد هوشمند شما به اکوسیستم Axelar است. به محض اینکه تابع مربوط را در Gateway فعال کردید، تراکنش شما سفر بین زنجیره‌ای خود را از زنجیره مبدا در شبکه Axelar به زنجیره مقصد آغاز خواهد کرد. هر زنجیره‌ای که به Axelar متصل است، یک قرارداد دروازه‌ای مستقر برای تعامل شما دارد.
 
-The following are the two more relevant functions you will need to be familiar with.
+در ادامه دو تابع مرتبط‌تر که باید با آنها آشنا باشید، آورده شده است.
 
-## callContract()
+## فراخوانی قرارداد()
 
-This function triggers an interchain transaction with a message from the source to the destination chain. It takes three relevant parameters:
+این تابع یک تراکنش بین زنجیره‌ای را با پیامی از زنجیره مبدا به زنجیره مقصد آغاز می‌کند. سه پارامتر مرتبط را می‌پذیرد:
 
-1. `destinationChain`: The name of the destination chain
-2. `destinationContractAddress`: The address on the destination chain this transaction will execute at.
-3. `payload`: The message that is being sent
+1. `destinationChain`: نام زنجیره مقصد
+2. `destinationContractAddress`: آدرسی در زنجیره مقصد که این تراکنش در آن اجرا خواهد شد.
+3. «بار داده»: پیامی که ارسال می‌شود
 
-The first two parameters are quite intuitive. They consist of both the name of the chain you want this transaction to go to and the address on that chain you want to end execute at. The final parameter is the payload. This payload represents a general message that is sent to the destination chain. The message can be used in many different ways on the destination chain. For example, you can send data to be used as a parameter in another function on the destination chain, you can send a function signature as a message that will then get executed on a destination chain, and much more.
+دو پارامتر اول کاملاً شهودی هستند. آنها شامل نام زنجیره‌ای هستند که می‌خواهید این تراکنش به آن منتقل شود و آدرسی که می‌خواهید در آن زنجیره، تراکنش در آن پایان یابد. پارامتر آخر، بار مفید payload است. این payload نشان دهنده یک پیام عمومی است که به زنجیره مقصد ارسال می‌شود. این پیام می‌تواند به روش‌های مختلفی در زنجیره مقصد مورد استفاده قرار گیرد. برای مثال، می‌توانید داده‌ها را برای استفاده به عنوان پارامتر در تابع دیگری در زنجیره مقصد ارسال کنید، می‌توانید امضای تابع را به عنوان پیامی ارسال کنید که سپس در زنجیره مقصد اجرا شود و موارد بسیار دیگر.
 
-## callContractWithToken()
+## فراخوانی قرارداد با توکن ()
 
-This function triggers an interchain with a message and a fungible token from the source to the destination chain. It takes five relevant parameters:
+این تابع یک زنجیره میانی با یک پیام و یک توکن قابل تعویض از زنجیره مبدا به زنجیره مقصد را فعال می‌کند. پنج پارامتر مرتبط را می‌پذیرد:
 
-1. `destinationChain`: The name of the destination chain
-2. `destinationContractAddress`: The address on the destination chain this transaction will execute at.
-3. `payload`: The message that is being sent
-4. `symbol`: The symbol of the token being sent
-5. `amount`: The amount of that token that is being sent
+1. `destinationChain`: نام زنجیره مقصد
+2. `destinationContractAddress`: آدرسی در زنجیره مقصد که این تراکنش در آن اجرا خواهد شد.
+3. «بار داده»: پیامی که ارسال می‌شود
+4. `symbol`: نماد توکن ارسال شده
+5. «مقدار»: مقدار توکنی که ارسال می‌شود
 
-The first three parameters here are the same as in `callContract()`. The final two parameters are relevant to the token that is being sent along with the message. These are the symbol of the token and the amount of the token that is being sent.
+سه پارامتر اول در اینجا همانند `callContract()` هستند. دو پارامتر آخر مربوط به توکنی هستند که همراه پیام ارسال می‌شود. اینها نماد توکن و مقدار توکنی هستند که ارسال می‌شود.
