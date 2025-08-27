@@ -1,21 +1,16 @@
-# Editing a scenario
+# ویرایش یک سناریو
 
-Here's the first few lines of the scenario that I recorded.  The addresses on my machine will be different from your's.
+اینجا چند خط اول سناریویی است که ضبط کرده‌ام.  آدرس‌های روی دستگاه من با آدرس‌های شما متفاوت خواهد بود.
 
 ```
-{
-    "accounts": {
-    "account{0}": "0xca35b7d915458ef540ade6068dfe2f44e8fa733c",
-    "account{4}": "0xdd870fa1b7c4700f2bd7f44238821c26f7392148",
-    "account{3}": "0x583031d1113ad414f02576bd6afabfb302140225"
-    }
+{"حساب ها": {"حساب{0}": "0xca35b7d915458ef540ade6068dfe2f44e8fa733c", "حساب{4}": "0xdd870fa1b7c4700f2bd7f44238821c26f7392148", "حساب{3}": "0x583031d1113ad414f02576bd6afabfb302140225"}}
 ```
 
-So if you wanted to play this scenario in another testnet, you'd need to change these addresses to address that you have test ETH on so that you could pay for the transactions.  But other than swapping out the addresses, you can quickly run this on other nets.
+پس اگر می‌خواستید این سناریو را در شبکه تست دیگری بازی کنید، باید این آدرس‌ها را به آدرس‌هایی تغییر دهید که اتریوم تستی در آن‌ها دارید تا بتوانید هزینه‌های ترا transactions را پرداخت کنید.  اما به جز تغییر آدرس‌ها، می‌توانید به سرعت این را روی شبکه‌های دیگر اجرا کنید.
 
-And you might change the parameters for the functions.
+و شما ممکن است پارامترهای توابع را تغییر دهید.
 
-For example here is a bit of the scenario.json a bit further down where proposal 2 was voted for by one of the addresses:
+به عنوان مثال، در اینجا بخشی از scenario.json آورده شده است که کمی پایین‌تر جایی است که پیشنهاد 2 توسط یکی از آدرس‌ها رأی‌گیری شده است:
 
 ```
 {
@@ -35,20 +30,16 @@ For example here is a bit of the scenario.json a bit further down where proposal
     },
 ```
 
-Let's edit this so that another proposal wins in the playback.
+بیایید این را ویرایش کنیم تا پیشنهاد دیگری در پخش برنده شود.
 
-Change the **parameters** array which now is:
-
-```
-"parameters": [
-          "2"
-        ]
-```
-
-to:
+آرایه **پارامترها** را تغییر دهید که اکنون به شکل زیر است:
 
 ```
-"parameters": [
-          "1"
-        ]
+پارامترها: ["۲"]
+```
+
+به:
+
+```
+پارامترها: ["1"]
 ```
