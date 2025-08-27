@@ -1,8 +1,8 @@
-# Playing a scenario
+# بازی کردن یک سناریو
 
-1. Click the play icon to the right of the floppy disk icon to play the steps you did.
+1. بر روی آیکون پخش در سمت راست آیکون دیسک نرم کلیک کنید تا مراحل انجام شده را پخش کنید.
 
-2. You'll see another instance of the contract deployed. Open it up.
+2. شما نمونه دیگری از قرارداد مستقر شده را خواهید دید. آن را باز کن.
 
-3. Click the winningProposal function and you should see now that proposal 1 won.
-   It should print out: **0: uint256: winningProposal_ 1**
+3. روی تابع winningProposal کلیک کنید و اکنون باید ببینید که پیشنهاد ۱ برنده شده است.
+   باید چاپ کند: **0: uint256: winningProposal_ 1**
