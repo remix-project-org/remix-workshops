@@ -1,44 +1,44 @@
-This section will look into the types of functions that don't modify the state of the blockchain: _view_ and _pure_ functions.
+این بخش به انواع توابعی می‌پردازد که حالت بلاک‌چین را تغییر نمی‌دهند: توابع _view_ و _pure_.
 
-### View Functions
+### عملکردها را مشاهده کنید
 
-_View functions_ promise to not modify the state.
+_توابع نمایش_ قول می‌دهند که وضعیت را تغییر ندهند.
 
-"The following statements are considered modifying the state:
+جملات زیر به عنوان تغییر دهنده وضعیت در نظر گرفته می‌شوند:
 
-1. Writing to state variables.
-2. Emitting events.
-3. Creating other contracts.
-4. Using selfdestruct.
-5. Sending Ether via calls.
-6. Calling any function not marked view or pure.
-7. Using low-level calls.
-8. Using inline assembly that contains certain opcodes."
+1. نوشتن به متغیرهای وضعیت.
+2. انتشار رویدادها.
+3. ایجاد قراردادهای دیگر.
+4. استفاده از خود تخریب.
+5. ارسال اتر از طریق تماس‌ها.
+6. فراخوانی هر تابعی که به عنوان نمایشی یا خالص علامت‌گذاری نشده است.
+7. استفاده از تماس‌های سطح پایین.
+8. استفاده از اسمبلی خطی که شامل کدهای عملیاتی خاصی است
 
-From the <a href="https://docs.soliditylang.org/en/latest/contracts.html#view-functions" target="_blank">Solidity documentation</a>.
+از <a href="https://docs.soliditylang.org/en/latest/contracts.html#view-functions" target="_blank">مستندات سالیدیتی</a>.
 
-You can declare a view function using the keyword `view`. In this contract, `addToX` (line 8) is a view function. This function takes the parameter `y` and returns the sum of the parameter and the state variable `x`. It reads `x` but does not modify it.
+شما می‌توانید یک تابع نمایه را با استفاده از کلمه کلیدی `view` اعلام کنید. در این قرارداد، `addToX` (خط 8) یک تابع مشاهده‌ای است. این تابع پارامتر `y` را گرفته و مجموع این پارامتر و متغیر وضعیت `x` را برمی‌گرداند. این مقدار `x` را می‌خواند اما آن را تغییر نمی‌دهد.
 
-### Pure functions
+### توابع خالص
 
-_Pure functions_ promise to neither modify nor to read the state.
+_توابع خالص_ قول می‌دهند که نه وضعیت را تغییر دهند و نه بخوانند.
 
-"In addition to the list of state modifying statements explained above, the following are considered reading from the state:
+علاوه بر فهرست عبارات تغییر دهنده حالت که در بالا توضیح داده شد، موارد زیر به عنوان خواندن از حالت در نظر گرفته می‌شوند:
 
-1. Reading from state variables.
-2. Accessing `address(this).balance` or `<address>.balance`.
-3. Accessing any of the members of block, tx, msg (with the exception of `msg.sig` and `msg.data`).
-4. Calling any function not marked pure.
-5. Using inline assembly that contains certain opcodes."
+1. خواندن از متغیرهای حالت.
+2. `دسترسی به address(this).balance` یا `<address>.balance`.
+3. دسترسی به هر یک از اعضای بلاک، tx، msg (به جز `msg.sig` و `msg.data`).
+4. صدا زدن هر تابعی که به عنوان خالص علامت‌گذاری نشده است.
+5. استفاده از اسمبلی خطی که شامل کدهای عملیاتی خاصی است
 
-From the <a href="https://docs.soliditylang.org/en/latest/contracts.html#pure-functions" target="_blank">Solidity documentation</a>.
+از <a href="https://docs.soliditylang.org/en/latest/contracts.html#pure-functions" target="_blank">مستندات سالیدیتی</a>.
 
-You can declare a pure function using the keyword `pure`. In this contract, `add` (line 13) is a pure function. This function takes the parameters `i` and `j`, and returns the sum of them. It neither reads nor modifies the state variable `x`.
+شما می‌توانید یک تابع خالص را با استفاده از کلمه کلیدی `pure` اعلام کنید. در این قرارداد، `add` (خط ۱۳) یک تابع خالص است. این تابع پارامترهای `i` و `j` را گرفته و مجموع آن‌ها را برمی‌گرداند. نه وضعیت متغیر `x` را می‌خواند و نه تغییر می‌دهد.
 
-In Solidity development, you need to optimise your code for saving computation cost (gas cost). Declaring functions view and pure can save gas cost and make the code more readable and easier to maintain. Pure functions don't have any side effects and will always return the same result if you pass the same arguments.
+در توسعه سالیدیتی، شما نیاز دارید که کد خود را برای صرفه‌جویی در هزینه محاسباتی (هزینه گاز) بهینه‌سازی کنید. اعلام توابع view و pure می‌تواند هزینه گاز را کاهش دهد و کد را قابل خواندن‌تر و نگهداری آسان‌تر کند. توابع خالص هیچ عوارض جانبی ندارند و اگر همان آرگومان‌ها را وارد کنید همیشه همان نتیجه را برمی‌گردانند.
 
-<a href="https://www.youtube.com/watch?v=vOmXqJ4Qzbc" target="_blank">Watch a video tutorial on View and Pure Functions</a>.
+<a href="https://www.youtube.com/watch?v=vOmXqJ4Qzbc" target="_blank">یک ویدیوی آموزشی درباره توابع نمایشی و خالص را تماشا کنید</a>.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-Create a function called `addToX2` that takes the parameter `y` and updates the state variable `x` with the sum of the parameter and the state variable `x`.
+یک تابع به نام `addToX2` ایجاد کنید که پارامتر `y` را گرفته و متغیر حالت `x` را با مجموع پارامتر و متغیر حالت `x` به روز رسانی کند.
