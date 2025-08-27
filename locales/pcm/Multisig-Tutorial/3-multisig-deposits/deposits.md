@@ -22,13 +22,13 @@ For enta Ether, contract must to get receive fallback or function wey get di pay
 
 ## Conclusion
 
-In this section, we explored the `receive` function and the associated Deposit event. We examined how the `receive` function is used to deposit Ether into the multi-signature wallet and how the Deposit event provides transparency.
+For this section we go through the `receive` function and the deposit event wey join am. We go examine how di receive function dey use for deposit Ether inside di multi-signature wallet and how di Deposit event dey bring transparency.
 
 ## ⭐️ Assignment: Deposit Ether
 
-Deposit 2 Ether into the Multisig contract.
+Deposit 2 Ether inside di Multisig contract.
 
-1. Deploy the Multisig contract as in the previous assignment.
-2. Enter a Value of 2 Ether in the Value field and select Ether in the dropdown menu.
-3. At the bottom of your deployed contract in the "Low level interactions" section, click on the "Transact" button.
-4. On top of your deployed contract, it should now say "Balance: 2 Ether".
+1. Deploy di Multisig contract like for di previous assignment.
+2. Enta value of 2 Ether inside di Value field and select Ether for di dropdown menu.
+3. For di bottom of your deployed contract inside di “Low level interactions” section click di “Transact” button.
+4. For top of your deployed contract e go tal say “Balance: 2 Ether”.
