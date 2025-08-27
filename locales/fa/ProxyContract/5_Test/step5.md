@@ -1,6 +1,6 @@
-# Let's test what we've learned
+# بگذارید آنچه را که آموخته‌ایم آزمایش کنیم
 
-- Write a contract named "LogicContract" which implements a public function named "getNumber" which returns 10
-- Write a proxy contract named "ProxyContract". This ProxyContract should take an address of LogicContract as a first parameter.
+- یک قرارداد به نام "LogicContract" بنویسید که یک تابع عمومی به نام "getNumber" را پیاده‌سازی کند که عدد 10 را برگرداند
+- یک قرارداد پروکسی به نام "ProxyContract" بنویسید. این قرارداد پروکسی باید آدرس قرارداد منطقی را به عنوان پارامتر اول بگیرد.
 
-Good Luck!
+موفق باشی!
