@@ -1,3 +1,3 @@
 ## Learn the Proxy Pattern
 
-Save gas & make upgradable contracts
+Save gas & make contracts wey de upgradable
