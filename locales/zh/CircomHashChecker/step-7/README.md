@@ -1,21 +1,21 @@
-## Generate Proof
+## 生成证明
 
-1. **Access the Generate Proof Section**:
-    - After computing the witness, expand the **Generate Proof** section.
+1. **访问生成证明部分**：
+    - 计算完见证后，扩展**生成证明**部分。
 
-2. **Configure Proof Generation**:
-    - **Export Verifier Calldata**: Enable this option if you plan to verify the proof on-chain.
+2. **配置凭证生成**：
+    - **导出验证器调用数据**：如果您打算在链上验证证明，请启用此选项。
 
-3. **Generate the Proof**:
+3. **生成证明**：
 
-    - Click on the **Generate Proof** button.
-    - Wait for the proof generation to complete.
+    - 点击 **生成证明** 按钮。
+    - 等待证明生成完成。
 
          <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-7/images/generate_proof.png" alt="generate-proof" width=280 height=120>
 
-4. **View the Proof**:
+4. **查看证明**：
 
-    - The proof data will be displayed in the File Explorer.
-    - **Congratulations!** You've successfully compiled the `Hash Checker` circuit, performed a trusted setup, computed a witness, and generated a proof using Remix-IDE.
+    - 证明数据将在文件资源管理器中显示。
+    - **恭喜！** 你已成功编译了 `Hash Checker` 电路，进行了可信设置，计算了见证，并使用 Remix-IDE 生成了证明。
 
          <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-7/images/proof_generated.png" alt="generate-proof" width=375 height=300>
