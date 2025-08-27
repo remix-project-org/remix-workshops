@@ -1,13 +1,13 @@
-The entire UniswapSwapExamples contract will only be presented in section 5 of this tutorial.  Before then, we'll build up blocks of code.
+Di entire UniswapSwapExample kontract go only dey present for section 5 for dis tutorial.  Before then, we dey build up blocks of code.
 
-This section explores the `ISwapRouter` interface, which defines the functions that can be called on the Uniswap Swap contract.
+Dis section dey explore di 'ISwapRouter' interface, which defines di fuktions wey fit call for di Uniswap Swap kontract.
 
-Single-hop swaps allow users to exchange one token for another directly within a liquidity pool.
-Multi-hop swaps allow users to exchange one token for another by routing through multiple tokens.
+Single-hop swaps dey allow users exchange on tokin for anoda directli wey dey liquidity pool.
+Muiti-hop swaps dey allow users exchange one tokin for anoda by routing through multiple Tokins.
 
-Interfaces in Solidity specify functions that must be included in a contract that inherits them.  They are useful for declaring what functions be supported and allow for easier integration and interaction between different contracts.
+Interface dey Solidity specifi fuktions wey gats dey for di kontract wey inherits Dem.  Dem dey useful for declaring wetin fuktions be dey support and allow for easier integration and interaction between different kontracts.
 
-Structs are used to define custom data types.
+Structs dey use to defines kustom data types.
 
 ## ISwapRouter Interface
 
