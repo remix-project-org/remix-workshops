@@ -34,31 +34,30 @@ ERC777 یک استاندارد توکن قابل تعویض است، مانند 
 ERC1155 یک استاندارد چند توکنی است که به یک قرارداد واحد اجازه می‌دهد انواع مختلفی از توکن‌ها، مانند توکن‌های قابل تعویض، غیرقابل تعویض یا نیمه قابل تعویض را مدیریت کند.
 برای کسب اطلاعات بیشتر در مورد ERC1155 به <a href="https://eips.ethereum.org/EIPS/eip-1155" target="_blank">EIP</a> آن مراجعه کنید.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-For this assignment, we will test your knowledge via a short quiz.
-Assign the number of the best answer to the variables `question1` (line 5),
-`question2` (line 6), `question3` (line 7) in the `Quiz` contract (line 4).
+برای این تکلیف، دانش شما را از طریق یک آزمون کوتاه می‌سنجیم.
+شماره بهترین پاسخ را به متغیرهای `question1` (خط 5)، `question2` (خط 6)، `question3` (خط 7) در قرارداد `Quiz` (خط 4) اختصاص دهید.
 
-### Question 1:
+### سوال 1:
 
-Why are blockchain based tokens so revolutionary?
+چرا توکن‌های مبتنی بر بلاکچین انقلابی هستند؟
 
-1. Because people can now make investments anonymously.
-2. Because they represent ownership in digital assets that can be owned and transferred.
-3. Because you can use tokens to make transactions without having to pay taxes.
+1. زیرا مردم اکنون می‌توانند به صورت ناشناس سرمایه‌گذاری کنند. سرمایه‌گذاری‌ها به صورت ناشناس.
+2. زیرا آنها نمایانگر مالکیت در دارایی‌های دیجیتالی هستند که می‌توانند تملک و منتقل شوند.
+3. زیرا می‌توانید بدون نیاز به پرداخت مالیات، از توکن‌ها برای انجام تراکنش‌ها استفاده کنید.
 
-### Question 2:
+### سؤال 2:
 
-Why did the community create token standards?
+چرا جامعه استانداردهای توکن را ایجاد کرد؟
 
-1. So that the community can control and approve the tokens that are created.
-2. In order to restrict the functionality of tokens to safe and non-malicious actions.
-3. So that the community can create tokens that are interoperable with other contracts, products, and services.
+1. به طوری که جامعه بتواند توکن‌های ایجاد شده را کنترل و تأیید کند.
+2. به منظور محدود کردن عملکرد توکن‌ها به اقدامات ایمن و غیر مخرب.
+3. به طوری که جامعه بتواند توکن‌هایی ایجاد کند که با سایر قراردادها، محصولات و خدمات قابل تعامل باشند.
 
-### Question 3:
+### سؤال 3:
 
-If you would create a decentralised application for a baseball trading card game where each baseball player would be represented by a token, what token standard would you use to write the token contract?
+اگر بخواهید یک برنامه غیرمتمرکز برای بازی کارتی بیسبال بسازید که در آن هر بازیکن بیسبال با یک توکن نمایش داده شود، از چه استاندارد توکنی برای نوشتن قرارداد توکن استفاده خواهید کرد؟
 
 1. ERC20
 2. ERC721
