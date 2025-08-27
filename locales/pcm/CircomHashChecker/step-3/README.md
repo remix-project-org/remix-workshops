@@ -7,17 +7,17 @@ Fain your way go the `circuits` directory con open `calculate_hash.circom`. Circ
 #### Pragma and Includes:
 
 - `pragma circom 2.0.0;` de specify the Circom version.
-- `include "circomlib/circuits/poseidon.circom";` fetch and includes the Poseidon hash function from [CircomLib](https://github.com/iden3/circomlib).
+- "Put "circomlib/circuits/poseidon.circom";\` fetch con add the Poseidon hash function from [CircomLib](https://github.com/iden3/circomlib).
 
 #### `CalculateHash` Template:
 
 - Defines inputs `value1`, `value2`, `value3`, `value4`.
 - E de use the `Poseidon` hash function to compute hash of all dis values.\
-- Outputs `out`, which is the hash.
+- Outputs `out`, na the hash be this.
 
 #### `HashChecker` Template:
 
-- Inputs are the same values plus a `hash`.
+- Input na the same numbers plus hash.
 - Instantiates `CalculateHash` as `calculateSecret`.
 - Computes `calculatedHash`.
 - E de use `assert(hash == calculatedHash);` de make sure say the hash wey dem provide match the hash wey dem don calculate.
