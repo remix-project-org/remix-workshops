@@ -1,10 +1,10 @@
-In this section, we will deploy a contract in our browser and test its functionality.
+For this section, we go deploy contract for our browser con test the functionality.
 
 ### 1. Deploy the contract
 
-**1.1** Compile your EduCoin contract in the "Solidity compiler" module of the Remix IDE.
+1.1 Compile your EduCoin contract for "Solidity compiler" module wey dey Remix IDE.
 
-**1.2** In the "Deploy & run transactions" module, select your contract "EduCoin" in the contract input field and click on the "Deploy" button. Always make sure to select the correct contract in the contract selector input field.
+1.2 for the Deploy & run transactions module, tap on your contract "EduCoin" for the contract input field con click the "Deploy" button. Always make sure say you select the correct contract for the contract selector input field.
 
 **GIF** Compile and deploy: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_compileAndDeploy.gif?raw=true" alt="Compile and deploy contract" width="300"/>
 
