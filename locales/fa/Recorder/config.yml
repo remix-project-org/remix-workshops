@@ -1,7 +1,7 @@
 ---
-id: recorder
-name: Recorder
-summary: Save a set of actions and replay and replay and replay
+id: ضبط کننده
+name: ضبط کننده
+summary: یک مجموعه از اقدامات را ذخیره کنید و آن را دوباره و دوباره و دوباره پخش کنید
 level: 2
 tags:
-  - Remix
+  - ریمیکس
