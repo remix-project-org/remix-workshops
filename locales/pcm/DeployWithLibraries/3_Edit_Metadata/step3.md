@@ -1,12 +1,12 @@
-The `Deploy` property in `sampleContract.json` contains everything you need for telling Remix IDE the address of the library for a specific network.
+The Deploy property for `sampleContract.json` get everything wey you need to tell remix ide the address for the library for specific network.
 
-- `<address>` contains the address of the library that is already deployed. You have to specify this address for each network.
-- `autoDeployLib` is a boolean and tells Remix IDE if it should autodeploy the library before deploying the contract.
+- `<address>` get the address of the library wey dey already deployed. You gats specify this address for each network.
+- `autoDeployLib` na boolean and e dey tell Remix IDE if e suppse autodeploy the library before deploying the contract.
 
-Basically if `autoDeployLib` is **true**, the `<address>` will not be used and Remix will automatically deploy the library before deploying the contract.
+Normally if `autoDeployLib` na true, we no go use `<address>` and Remix go automatically deploy the library before e deploy the contract.
 
-For the purpose of this demo - we are mimicking a situation where the library has already been deployed because this is a more common situation.
+For the sake of this demo- we go mimic situation wey be say the library don dey deployed based on say this na common situation.
 
-So set `autoDeploy` to **false**, for the `VM:-` entry.
+So you go set autodeploy to false, for inside the `VM:-` entry.
 
-Move to next Step.
+Move go the next step.
