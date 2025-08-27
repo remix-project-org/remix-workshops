@@ -1,15 +1,15 @@
-## Remix is composed of four panels.
+## ریمیکس از چهار پنل تشکیل شده است.
 
-![Remix layout](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/a-layout1c.png "Remix layout")
+![چیدمان ریمیکس](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/a-layout1c.png "چیدمان ریمیکس")
 
-- Most plugins appear in the **Side Panel**.
-- Editing code happens in tabs in the **Main Panel**.
-- The results of transactions and other actions are visible in the **Terminal**.
-- Switching between plugins happens in the **Icons Panel**.
-- To make a panel larger, drag its border.
+- بیشتر افزونه‌ها در **پنل کناری** ظاهر می‌شوند.
+- ویرایش کد در زبانه‌ها در **پنل اصلی** انجام می‌شود.
+- نتایج معاملات و سایر اقدامات در **ترمینال** قابل مشاهده هستند.
+- تعویض بین پلاگین‌ها در **پنل نمادها** انجام می‌شود.
+- برای بزرگتر کردن یک پانل، گوشه آن را بکشید.
 
-Try clicking the **Solidity Compiler** icon ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/solidity-icon.png) in the **Icons Panel**. Then click the **Deploy & Run** icon ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/deploy-run.png).  Then come back to **LearnEth** by clicking this icon ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/learneth.png).
+سعی کنید روی آیکن **کامپایلر سالیدیتی** کلیک کنید ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/solidity-icon.png) در **پنل آیکن‌ها**. سپس بر روی نماد **استقرار و اجرا** کلیک کنید ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/deploy-run.png).  سپس با کلیک روی این آیکون به **LearnEth** برگردید ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/learneth.png).
 
-In the **Main Panel** of Remix, make sure you see the **Home** tab.  The **Home** tab has lots of useful links. To navigate there, either click the **Home** tab in the **Main Panel** or click the Remix icon ![Remix icon](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/remix-logo.png "Remix icon") on the top of the icon panel.
+در **پنل اصلی** Remix، اطمینان حاصل کنید که برگه **خانه** را مشاهده می‌کنید.  زبان **خانه** دارای پیوندهای مفیدی است. برای رفتن به آنجا، یا بر روی برگه **خانه** در **پنل اصلی** کلیک کنید یا بر روی آیکون Remix کلیک کنید ![آیکون Remix](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/remix-logo.png "آیکون Remix") در بالای پنل آیکون.
 
-- See all the plugins in the **Plugin Manager**.  Click this icon ![plugin manager](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/plugin1.png "Plugin Manager icon") in the lower left corner Remix.
+- تمام پلاگین‌ها را در **مدیریت پلاگین** مشاهده کنید.  این آیکون را در گوشه پایین سمت چپ ریمیکس کلیک کنید ![مدیر پلاگین](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/plugin1.png "آیکون مدیر پلاگین").
