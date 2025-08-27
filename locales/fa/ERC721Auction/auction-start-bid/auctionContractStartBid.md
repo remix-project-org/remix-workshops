@@ -1,42 +1,42 @@
-In this section, we will create a function to start the auction and a function to bid on the NFT.
+در این بخش، ما یک تابع برای شروع حراج و یک تابع برای پیشنهاد قیمت روی NFT ایجاد خواهیم کرد.
 
-### Start
+### شروع کنید
 
-We use some control structures to check if necessary conditions are met before we let the seller start the auction.
+ما از برخی ساختارهای کنترلی استفاده می‌کنیم تا بررسی کنیم که آیا شرایط لازم قبل از اینکه به فروشنده اجازه دهیم حراج را شروع کند، برآورده شده‌اند یا خیر.
 
-First, we check if the auction has already started (line 49). If it has started and our state variable `started` returns `true` we exit the function and throw an exception.
+ابتدا بررسی می‌کنیم که آیا حراج از قبل شروع شده است یا خیر (خط ۴۹). اگر شروع شده باشد و متغیر وضعیت ما یعنی «started» مقدار «true» را برگرداند، از تابع خارج می‌شویم و یک استثنا ایجاد می‌کنیم.
 
-The second condition we check for is whether the seller is executing the function (line 50). We have already created a function to store the seller's address when they deploy the contract in the `seller` state variable and can now check if the account executing the start function is the seller. If not we throw an exception.
+شرط دومی که بررسی می‌کنیم این است که آیا فروشنده تابع را اجرا می‌کند یا خیر (خط ۵۰). ما قبلاً تابعی برای ذخیره آدرس فروشنده هنگام استقرار قرارداد در متغیر وضعیت `seller` ایجاد کرده‌ایم و اکنون می‌توانیم بررسی کنیم که آیا حسابی که تابع شروع را اجرا می‌کند، فروشنده است یا خیر. اگر نه، یک استثنا ایجاد می‌کنیم.
 
-Next, we want to transfer the NFT that is up for auction from the seller to the contract (line 52).
-We set the state variable `started` to `true` (line 53), and create an end date for the auction (line 54). In this case, it will be seven days from when the start function has been called. We can use a suffix like `days` after a literal number to specify units of time. If you want to learn more about time units have a look at the <a href="https://docs.soliditylang.org/en/latest/units-and-global-variables.html#time-units" target="_blank">solidity documentation</a>.
+در مرحله بعد، می‌خواهیم NFT که برای حراج گذاشته شده است را از فروشنده به قرارداد منتقل کنیم (خط ۵۲).
+ما متغیر وضعیت «شروع شده» را روی «درست» تنظیم می‌کنیم (خط ۵۳) و یک تاریخ پایان برای حراج ایجاد می‌کنیم (خط ۵۴). در این حالت، هفت روز از زمانی که تابع start فراخوانی شده است، می‌گذرد. می‌توانیم از پسوندی مانند «روزها» بعد از یک عدد حقیقی برای مشخص کردن واحدهای زمانی استفاده کنیم. اگر می‌خواهید درباره واحدهای زمانی بیشتر بدانید، نگاهی به <a href="https://docs.soliditylang.org/en/latest/units-and-global-variables.html#time-units" target="_blank">مستندات سالیدیتی</a> بیندازید.
 
-Finally, we will emit our `Start()` event (line 56).
+در نهایت، رویداد `Start()` خود را منتشر خواهیم کرد (خط ۵۶).
 
-### Bid
+### مناقصه
 
-Before the function caller can make a bid, we need to be sure that certain conditions are met. The auction needs to have started (line 60), the auction can not have ended (line 61) and the bid (the value attached to the call) needs to be higher than the current highest bid (line 62).
+قبل از اینکه فراخوانی‌کننده‌ی تابع بتواند پیشنهادی ارائه دهد، باید مطمئن شویم که شرایط خاصی برقرار است. حراج باید شروع شده باشد (خط ۶۰)، حراج نمی‌تواند پایان یافته باشد (خط ۶۱) و پیشنهاد (مقدار ضمیمه شده به فراخوان) باید بالاتر از بالاترین پیشنهاد فعلی باشد (خط ۶۲).
 
-Now we want to store the bid of the current highest bidder before we make a new bid.
-First, we check if there is a bidder (line 64). If this function call is the first bid then the next line would be irrelevant.
-In our mapping `bids` (line 34) we map the key, the `address` of the bidder, to the value, a `uint` that represents the total amount of ETH a bidder has bid in the auction before withdrawing.
-If there is a bidder, we add the last bid (`highestBid`) of the `highestBidder` to the total value of the bids they have made (line 65) before withdrawing.
-We store the bids because we want to enable the bidder to withdraw the ETH they used to make bids if they are no longer the highest bidder.
+اکنون می‌خواهیم قبل از ارائه پیشنهاد جدید، پیشنهاد بالاترین پیشنهاد دهنده فعلی را ذخیره کنیم.
+ابتدا بررسی می‌کنیم که آیا پیشنهاد دهنده‌ای وجود دارد یا خیر (خط ۶۴). اگر این فراخوانی تابع اولین پیشنهاد باشد، خط بعدی بی‌ربط خواهد بود.
+در نگاشت «پیشنهادها» (خط ۳۴)، کلید، یعنی «آدرس» پیشنهاددهنده، را به مقدار، یعنی یک «واحد» uint که نشان دهنده کل مبلغ ETH است که یک پیشنهاددهنده قبل از انصراف در حراج پیشنهاد داده است، نگاشت می‌کنیم.
+اگر پیشنهاددهنده‌ای وجود داشته باشد، آخرین پیشنهاد ("بالاترین پیشنهاد") "بالاترین پیشنهاددهنده" را قبل از انصراف به کل ارزش پیشنهادهای ارائه شده توسط آنها (خط ۶۵) اضافه می‌کنیم.
+ما پیشنهادها را ذخیره می‌کنیم زیرا می‌خواهیم پیشنهاددهنده را قادر سازیم که اگر دیگر بالاترین پیشنهاد را ندهد، ETH مورد استفاده برای ارائه پیشنهاد را برداشت کند.
 
-Next, we set the `highestBidder` to the account calling the function (line 68), and the `highestBid` to their bid, the value that was sent with the call (line 69).
+در مرحله بعد، `highestBidder` را روی حسابی که تابع را فراخوانی می‌کند (خط ۶۸) و `highestBid` را روی پیشنهاد آنها، مقداری که با فراخوانی ارسال شده است (خط ۶۹)، تنظیم می‌کنیم.
 
-Finally, we emit the `Bid` event (line 71).
+در نهایت، رویداد `Bid` را منتشر می‌کنیم (خط ۷۱).
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-1. Deploy an NFT contract. You can use the NFT contract that we create in our "Solidity NFT Course" Learneth course.
+1. یک قرارداد NFT راه‌اندازی کنید. شما می‌توانید از قرارداد NFT که ما در دوره آموزشی «Solidity NFT Course» ایجاد می‌کنیم، استفاده کنید.
 
-2. Mint yourself an NFT with the tokenId 0.
+2. برای خودتان یک NFT با شناسه توکن ۰ ایجاد کنید.
 
-3. Deploy this EnglishAuction contract. Use the address of the NFT contract as an argument for the `_nft` parameter, 0 for `_nftId`, and 1 for `_startingBid`.
+3. این قرارداد EnglishAuction را مستقر کنید. از آدرس قرارداد NFT به عنوان آرگومان برای پارامتر `_nft`، 0 برای `_nftId` و 1 برای `_startingBid` استفاده کنید.
 
-4. Call the `approve` function of your NFT contract with the address of the auction contract as an argument for the `to` parameter, and 0 for `tokenId`. This will allow the contract to transfer the token to be auctioned.
+4. تابع «تأیید» قرارداد NFT خود را با آدرس قرارداد حراج به عنوان آرگومان برای پارامتر «to» و ۰ برای «tokenId» فراخوانی کنید. این به قرارداد اجازه می‌دهد تا توکن مورد نظر برای حراج را منتقل کند.
 
-5. Call the `start` function of your auction contract. If you call the `started` function now, it should return `true`. If you call the `highestBid` function it should return 1.
+5. تابع «شروع» قرارداد حراج خود را فراخوانی کنید. اگر اکنون تابع `started` را فراخوانی کنید، باید `true` را برگرداند. اگر تابع `highestBid` را فراخوانی کنید، باید مقدار ۱ را برگرداند.
 
-6. Set the value that you can attach to transactions to 3 Wei and call the `bid` function of the auction contract. If you call the `highestBid` function it should now return 3.
+6. مقداری را که می‌توانید به تراکنش‌ها پیوست کنید، روی ۳Wei تنظیم کنید و تابع «پیشنهاد» از contracturn 3 مربوط به حراج را فراخوانی کنید. اگر تابع `highestBid` را فراخوانی کنید، اکنون باید مقدار ۳ را برگرداند.
