@@ -1,11 +1,11 @@
-Congratulations on making it to the end of the interoperability module! 🎉🎉
+تبریک می‌گویم که به پایان ماژول قابلیت همکاری رسیدید! 🎉🎉
 
-To continue your learning journey of interoperability with Axelar. There are many useful resources available.
+برای ادامه سفر یادگیری خود در زمینه قابلیت همکاری با Axelar. منابع مفید زیادی در دسترس است.
 
-- For <a href="https://docs.axelar.dev/" target="_blank">documentation 📚</a>
+- برای <a href="https://docs.axelar.dev/" target="_blank">مستندات 📚</a>
 
-- For <a href="https://github.com/axelarnetwork/axelar-examples/tree/main" target="_blank">more technical examples 💻 </a>
+- برای <a href="https://github.com/axelarnetwork/axelar-examples/tree/main" target="_blank">مثال‌های فنی بیشتر 💻 </a>
 
-- For <a href="https://www.youtube.com/watch?v=3sctKcQIaLA&list=PLh_q0hSKS_y0Zt_GfL3olZHi4GwbF6tuo" target="_blank">live coding demos 📹</a>
+- برای <a href="https://www.youtube.com/watch?v=3sctKcQIaLA&list=PLh_q0hSKS_y0Zt_GfL3olZHi4GwbF6tuo" target="_blank">مثال‌های فنی بیشتر 💻 </a>
 
-- For <a href="https://blog.axelar.dev/" target="_blank">the developer blog 📝</a>
+- برای <a href="https://blog.axelar.dev/" target="_blank">وبلاگ توسعه‌دهندگان 📝</a>
