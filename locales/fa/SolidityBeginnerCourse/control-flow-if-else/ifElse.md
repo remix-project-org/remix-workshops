@@ -1,33 +1,33 @@
-Solidity supports different control flow statements that determine which parts of the contract will be executed. The conditional _If/Else statement_ enables contracts to make decisions depending on whether boolean conditions are either `true` or `false`.
+سالیدیتی از عبارات کنترل جریان مختلفی پشتیبانی می‌کند که تعیین می‌کنند کدام بخش‌های قرارداد اجرا خواهند شد. عبارت شرطی _اگر/در غیر اینصورت_ به قراردادها این امکان را می‌دهد که بسته به اینکه آیا شرایط بولی `درست` یا `نادرست` هستند، تصمیم بگیرند.
 
-Solidity differentiates between three different If/Else statements: `if`, `else`, and `else if`.
+سالیدیتی بین سه نوع مختلف از عبارات If/Else تمایز قائل می‌شود: `if`، `else` و `else if`.
 
-### if
+### اگر
 
-The `if` statement is the most basic statement that allows the contract to perform an action based on a boolean expression.
+عبارت `if` ابتدایی‌ترین عبارتی است که به قرارداد اجازه می دهد تا عملی را بر اساس یک عبارت بولی انجام دهد.
 
-In this contract’s `foo` function (line 5) the if statement (line 6) checks if `x` is smaller than `10`. If the statement is true, the function returns `0`.
+در تابع `foo` این قرارداد (خط 5) دستور if (خط 6) بررسی می‌کند که آیا `x` کوچکتر از `10` است. اگر این بیانیه درست باشد، تابع `0` را باز می‌گرداند.
 
-### else
+### دیگر
 
-The `else` statement enables our contract to perform an action if conditions are not met.
+عبارت `else` به قرارداد ما امکان می‌دهد تا اقدامی انجام دهد اگر شرایط برآورده نشوند.
 
-In this contract, the `foo` function uses the `else` statement (line 10) to return `2` if none of the other conditions are met.
+در این قرارداد، تابع `foo` از دستور `else` (خط 10) استفاده می‌کند تا در صورتی که هیچ‌یک از سایر شرایط برقرار نباشند، `2` را بازگرداند.
 
-### else if
+### دیگر اگر
 
-With the `else if` statement we can combine several conditions.
+با استفاده از دستور `else if` می‌توانیم چندین شرط را ترکیب کنیم.
 
-If the first condition (line 6) of the foo function is not met, but the condition of the `else if` statement (line 8) becomes true, the function returns `1`.
+اگر شرط اول (خط 6) تابع foo برقرار نباشد، اما شرط بیانیه `else if` (خط 8) درست شود، تابع مقدار `1` را باز می‌گرداند.
 
-<a href="https://www.youtube.com/watch?v=Ld8bFWXLSfs" target="_blank">Watch a video tutorial on the If/Else statement</a>.
+<a href="https://www.youtube.com/watch?v=Ld8bFWXLSfs" target="_blank">یک آموزش ویدیویی در مورد عبارت If/Else را تماشا کنید</a>.
 
-## ⭐️ Assignment
+## تکلیف
 
-Create a new function called `evenCheck` in the `IfElse` contract:
+یک تابع جدید به نام `evenCheck` در قرارداد `IfElse` ایجاد کنید:
 
-- That takes in a `uint` as an argument.
-- The function returns `true` if the argument is even, and `false` if the argument is odd.
-- Use a ternery operator to return the result of the `evenCheck` function.
+- این یک `uint` را به عنوان آرگومان می‌گیرد.
+- این تابع `true` را برمی‌گرداند اگر آرگومان زوج باشد و `false` را اگر آرگومان فرد باشد.
+- از یک عملگر سه‌تایی برای بازگرداندن نتیجه تابع `evenCheck` استفاده کنید.
 
-Tip: The modulo (%) operator produces the remainder of an integer division.
+نکته: عملگر مدولوی (%) باقی‌مانده تقسیم یک عدد صحیح را تولید می‌کند.
