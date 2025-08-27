@@ -1,8 +1,8 @@
-1. If you don't have a browser wallet like **MetaMask** download and install one now.
+1. Eğer gibi bir tarayıcı cüzdanınız yoksa, şimdi bir tane indirin ve kurun.
 
 2. Click the MetaMask icon in your browser. Sign in and choose the Ephemery test network. You might need to update your wallet's settings so that you can see **test networks**.  Alternatively, you can go to Remix's Deploy & Run transation module and in the ENVIRONMENT section select Ephemery.
 
-3. Getting test ETH for public test networks is often annoying.  Ephemery is a public network that is refreshed monthly, so getting test ETH should be painless.  Here is a link to some <a href="https://github.com/ephemery-testnet/ephemery-resources?tab=readme-ov-file#faucets" target="_blank">Ephemery faucets</a>.
+3. Getting test ETH for public test networks is often annoying.  Ephemery is a public network that is refreshed monthly, so getting test ETH should be painless.  Burada bazı <a href="https://github.com/ephemery-testnet/ephemery-resources?tab=readme-ov-file#faucets" target="_blank">musluklarına</a> bir bağlantı var.
 
 ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/deploy_injected/images/testnet.png)
 
@@ -18,4 +18,4 @@ If the **CONTRACT** select box is empty, you'll need to compile 2_Owner again by
 
 6. After you hit the `Deploy` button, you'll see the browser wallet popup asking you to pay for the transactions.  If you have the appropriate kind of ETH for this chain, approve this transaction.  Check the printout in the terminal.  Once the block is validated, the **deployed instance** will appear at the bottom of Deploy & Run
 
-And with that you have finished this tutorial.  You now have experience with opening, compiling, deploying and interacting with Smart Contracts in Remix IDE.
+And with that you have finished this tutorial.  Artık "IDE" Akıllı Sözleşmeleri açma, derleme, dağıtma ve etkileşim kurma deneyiminiz var.
