@@ -1,11 +1,11 @@
-Let's go back to our contract.
-Please make sure the `solidity compiler` and `Deploy & Run Transactions` are activated.
+Make we go back to our contract.
+Please make sure say the `solidity complier` and `Deploy & Run Transactions` dey activated.
 
-Alternatively, you can click on `Solidity` from the `Home Page` **Environments** section.
+As option, you fit press `Solidity` from `Home page` **Environments** section.
 
-- Compile the contract from the `solidity compiler`.
-- Go to the `Deploy & Run Transactions` and make sure `SimpleStore` is selected contract.
-- In the textbox to the right of `Deploy`, input a positive integer.
-- Click on `Deploy`.
+- Compile all di contract from the `solididty complier`.
+- Go the `Deploy & Run Transactions` con make sure say `SimeStore` na selected contract.
+- Inside the textbox wey dey the right of `Deploy`, input positive interger.
+- Press `Deploy`.
 
-In the next step, we'll watch the deployment in the debugger.
+Inside the next step, we go see the development for inside the debugger.
