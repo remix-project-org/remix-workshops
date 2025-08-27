@@ -6,59 +6,58 @@
 
 در زمینه وب3، توکن‌ها نمایانگر مالکیت هستند. توکن‌ها می‌توانند نمایانگر مالکیت هر چیزی باشند: هنر، شهرت، آیتم‌ها در یک بازی ویدئویی، سهام در یک شرکت، حقوق رأی‌گیری یا ارزها.
 
-توکن‌ها می‌توانند نمایانگر مالکیت هر چیزی باشند: هنر، شهرت، آیتم‌ها در یک بازی ویدئویی، سهام در یک شرکت، حقوق رأی‌گیری یا ارزها.
+نوآوری انقلابی فناوری بلاک‌چین این است که اجازه می‌دهد داده‌ها به صورت عمومی و به روشی (غیرقابل) تغییر ذخیره شوند.
 این شکل جدید از ذخیره‌سازی داده‌ها به ما این امکان را می‌دهد که مالکیت را پیگیری کنیم و برای اولین‌بار اشیای دیجیتال واقعاً قابل مالکیت را ممکن کنیم.
 
 فناوری بلاک‌چین در ابتدا برای پیگیری مالکیت بیت‌کوین، یک ارز دیجیتال غیرمتمرکز و توکن قابل تعویض، اختراع شد.
 
-### توکن‌های قابل تعویض و غیرقابل تعویض
+### توکن‌ های قابل تعویض و غیرقابل تعویض
 
-Assets like money: Bitcoin or a one-dollar bill, for example, are fungible. Fungible means that all assets are the same and are interchangeable. Assets like art, collectibles, or houses are non-fungible; they are all different and not interchangeable.
+دارایی‌هایی مانند پول: بیت‌کوین یا یک اسکناس یک دلاری، به عنوان مثال، قابل تعویض هستند. قابل تعویض به این معناست که همه دارایی‌ها یکسان هستند و قابل تعویض با یکدیگرند. دارایی‌هایی مانند هنر، کلکسیون‌ها یا خانه‌ها غیرقابل تعویض هستند؛ همه آن‌ها متفاوت هستند و قابل تعویض نیستند.
 
-We can divide tokens into these two types: fungible tokens, where all tokens are the same, and non-fungible tokens (NFTs), where every token is unique.
+ما می‌توانیم توکن‌ها را به این دو نوع تقسیم کنیم: توکن‌های قابل تعویض، جایی که تمام توکن‌ها یکسان هستند، و توکن‌های غیرقابل تعویض (NFTs)، جایی که هر توکن منحصر به فرد است.
 
-### Token standard
+### استانداردهای توکن
 
-The behavior of a token is specified in its smart contract (token contract). The contract could, for example, include the functionality to transfer a token or check for its total supply.
+رفتار یک توکن در قرارداد هوشمند آن (قرارداد توکن) مشخص شده است. قرارداد می‌تواند، به عنوان مثال، شامل عملکردی برای انتقال یک توکن یا بررسی مجموع موجودی آن باشد.
 
-If everybody would create their own token contracts with different behavior and naming conventions, it would make it very hard for people to build contracts or applications that are able to interact with each other.
+اگر هر کسی قراردادهای توکن خود را با رفتارها و روش‌های نام‌گذاری متفاوت ایجاد کند، این امر باعث می‌شود که افراد برای ساخت قراردادها یا برنامه‌هایی که قادر به تعامل با یکدیگر باشند، بسیار مشکل شود.
 
-The Ethereum community has developed token standards that define how a developer can create tokens that are interoperable (able to work with others) with other contracts, products, and services. Contracts developed under these standards need to include a certain set of functions and events.
+جامعه اتریوم استانداردهای توکنی را توسعه داده است که تعیین می‌کند یک توسعه‌دهنده چگونه می‌تواند توکن‌های قابل همکاری (قابل کار با دیگران) با سایر قراردادها، محصولات و خدمات ایجاد کند. قراردادهای توسعه‌یافته تحت این استانداردها باید شامل مجموعه‌ای خاص از عملکردها و رویدادها باشد.
 
-The most popular token standards are the ERC20 for fungible tokens and the ERC721 for non-fungible tokens. In this course, we will learn how to create and interact with NFTs, tokens created with the ERC721 token standard.
+محبوب‌ترین استانداردهای توکن، ERC20 برای توکن‌های قابل تعویض و ERC721 برای توکن‌های غیرقابل تعویض هستند. در این دوره، ما خواهیم آموخت که چگونه NFT ها را ایجاد کرده و با آنها تعامل داشته باشیم، توکن هایی که با استاندارد توکن ERC721 ایجاد شده اند.
 
-If you want to learn more about fungible tokens and the ERC20 token standard, have a look at the Learneth ERC20 Token Course.
+اگر می‌خواهید بیشتر درباره‌ی توکن‌های قابل تعویض و استاندارد توکن ERC20 بیاموزید، به دوره‌ی توکن ERC20 Learneth نگاهی بیندازید.
 
-The ERC777 is a fungible token standard, like the ERC20, that includes more advanced features like hooks while remaining backward compatible with ERC20. Learn more about the ERC777 in its <a href="https://eips.ethereum.org/EIPS/eip-777" target="_blank">EIP (Ethereum improvement proposal)</a>.
+استاندارد ERC777 یک توکن قابل تعویض است، مانند ERC20، که ویژگی‌های پیشرفته‌تری مانند هوک‌ها را شامل می‌شود در حالی که با ERC20 کاملاً سازگار است. بیشتر در مورد ERC777 در <a href="https://eips.ethereum.org/EIPS/eip-777" target="_blank">پیشنهاد بهبود اتریوم (EIP)</a> آن بیاموزید.
 
-The ERC1155 is a multi-token standard that allows a single contract to manage different types of tokens, such as fungible, non-fungible, or semi-fungible tokens.
-Learn more about the ERC1155 in its <a href="https://eips.ethereum.org/EIPS/eip-1155" target="_blank">EIP</a>.
+استاندارد ERC1155 یک استاندارد چندتوکنی است که به یک قرارداد امکان می‌دهد انواع مختلف توکن‌ها را مدیریت کند، از جمله توکن‌های قابل تعویض، غیرقابل تعویض یا نیمه‌قابل تعویض.
+برای اطلاعات بیشتر درباره ERC1155 به <a href="https://eips.ethereum.org/EIPS/eip-1155" target="_blank">EIP</a> آن مراجعه کنید.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-For this assignment, we will test your knowledge via a short quiz.
-Assign the number of the best answer to the variables `question1` (line 5),
-`question2` (line 6), `question3` (line 7) in the `Quiz` contract (line 4).
+برای این تکلیف، ما دانش شما را از طریق یک آزمون کوتاه آزمایش خواهیم کرد.
+شماره بهترین پاسخ را به متغیرهای `question1` (خط 5)، `question2` (خط 6)، `question3` (خط 7) در قرارداد `Quiz` (خط 4) اختصاص دهید.
 
-### Question 1:
+### سؤال ۱:
 
-Why are blockchain-based tokens so revolutionary?
+چرا توکن‌های مبتنی بر بلاکچین این‌قدر انقلابی هستند؟
 
-1. Because people can now make investments anonymously.
-2. Because they represent ownership in digital assets that can be owned and transferred.
-3. Because you can use tokens to make transactions without having to pay taxes.
+1. زیرا مردم اکنون می‌توانند به‌صورت ناشناس سرمایه‌گذاری کنند.
+2. زیرا آنها نمایانگر مالکیت در دارایی‌های دیجیتال هستند که می‌توانند owned و منتقل شوند.
+3. زیرا می‌توانید از توکن‌ها برای انجام تراکنش‌ها استفاده کنید بدون اینکه نیازی به پرداخت مالیات داشته باشید.
 
-### Question 2:
+### سؤال ۲:
 
-Why did the community create token standards?
+چرا جامعه استانداردهای توکن را ایجاد کرد؟
 
-1. So that the community can control and approve the tokens that are created.
-2. In order to restrict the functionality of tokens to safe and non-malicious actions.
-3. So that the community can create tokens that are interoperable with other contracts, products, and services.
+1. به گونه‌ای که جامعه بتواند توکن‌های ایجاد شده را کنترل و تأیید کند.
+2. به منظور محدود کردن عملکرد توکن‌ها به اقدامات ایمن و غیر مخرب.
+3. تا جامعه بتواند توکن‌هایی را ایجاد کند که با قراردادها، محصولات و خدمات دیگر قابل همکاری باشد.
 
-### Question 3:
+### سؤال ۳:
 
-If you would create a decentralised application for a baseball trading card game where each baseball player would be represented by a token, what token standard would you use to write the token contract?
+اگر شما می‌خواهید یک برنامه غیرمتمرکز برای یک بازی تبادل کارت‌های بیسبال ایجاد کنید که در آن هر بازیکن بیسبال توسط یک نشانه نمایندگی شود، از کدام استاندارد نشانه برای نوشتن قرارداد نشانه استفاده می‌کنید؟
 
-1. ERC20
-2. ERC721
+1. اِرْسی20
+2. اِرک721
