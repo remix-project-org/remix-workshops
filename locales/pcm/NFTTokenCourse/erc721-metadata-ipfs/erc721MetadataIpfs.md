@@ -17,28 +17,29 @@ geo-img
 
 ### You go register for Pinata
 
-Now, we want to host these images somewhere so we can point to them in the metadata of our tokens. Let's do it in a decentralized way and use Pinata to host them on IPFS.
+Like dis we wan host dis picture for one place so we go fit point give dem for di metadata of awa tokens. Make we do am for decentralised way make we use Piñata take host dem for IPFS.
 
-First you need an account on Pinata. Go to <a href="https://app.pinata.cloud/register" target="_blank">Pinata.cloud</a> and create an account. On Pinata you can upload up to 1 GB of data for free.
+First you go need akant for Pinata. Go <a href="https://app.pinata.cloud/register" target="_blank">Pinata.cloud</a> come create akant. For pinata you fit upload reach 1 Gb of data for free.
 
-Once you have signed up, you should be in the Pin Manager view.
+Once you don sign up, you suppose dey di Pin Manager view.
 
 <img src="https://i.imgur.com/yKpD65m.png" alt="Pin Manager Pinata" width="300"/>
 
-### Upload Images to IPFS
+### Upload Pictires go IPFS
 
-Click on the upload button and upload the folder with your images.
-Once you've uploaded your folder, you should see the name of your folder and the CID (content identifier) associated with it. If the content in the folder changes, the CID will also change.
+Click di upload button make you oo load folder wit your pictures.
+Once you don upload your folder you suppose see di name of your folder and di CID (content identifier) wey dey associated with am. If di contend wey dey folder change, di CID sef go change.
 
-To access your folder on IPFS, enter this address "https://ipfs.io/ipfs/" and add your CID. For our current example, you can access your folder by using: <a href="https://ipfs.io/ipfs/QmTJok2tju9zstjtAqESdZxTiUiFCBAyApHiDVj4maV75P" target="_blank">
+To fit reach your folder wey dey IPFS, enta dis address
+"https://ipfs.io/ipfs/" make you add your CID. For our example now now, you go access your folder if you dey use <a href="https://ipfs.io/ipfs/QmTJok2tju9zstjtAqESdZxTiUiFCBAyApHiDVj4maV75P" target="_blank">
 https://ipfs.io/ipfs/QmTJok2tju9zstjtAqESdZxTiUiFCBAyApHiDVj4maV75P </a>
 
-You can access a specific image by using: <a href="https://ipfs.io/ipfs/QmTJok2tju9zstjtAqESdZxTiUiFCBAyApHiDVj4maV75P/geo_1.png" target="_blank">
+You fit reach one kind image if you dey use: <a href="https://ipfs.io/ipfs/QmTJok2tju9zstjtAqESdZxTiUiFCBAyApHiDVj4maV75P/geo_1.png" target="_blank">
 https://ipfs.io/ipfs/QmTJok2tju9zstjtAqESdZxTiUiFCBAyApHiDVj4maV75P/geo_1.png </a>
 
-### Create JSON files
+### Go create JSON files
 
-We create another folder where we store three JSON files.
+We go do anoda folder wey we store three JSON files.
 
 ```
 geo-json
@@ -47,10 +48,10 @@ geo-json
 ├── 2
 ```
 
-Inside the JSON files, create the metadata for the tokens, like name, description, and image.
-For the image URL, we are going to use the URL of our images on IPFS. You can add additional data if you like; in this example, we added some unique attributes for each token.
+Inside di JSON files, create di metadata for di tokens, like name, description, and image.
+For di image URL, we dey go use di URL of our images on IPFS. You fit add data join if you like: for dis example we don add some kind fine attributes go each token.
 
-This is how the JSON for the first token could look:
+Na like how do JSON for di first token go be:
 
 ```
 {
@@ -66,7 +67,7 @@ This is how the JSON for the first token could look:
 }
 ```
 
-This is how the JSON for the second token could look:
+Na like how di JSON for di second token go be like:
 
 ```
 {
@@ -81,21 +82,22 @@ This is how the JSON for the second token could look:
 }
 ```
 
-As shown above, the folder in this example is called "geo-json". Inside this folder, we have three JSON files.
-The first JSON file is called "0", the second JSON file is called "1", and the third JSON file is called "2".
+As dem show am for up, di folder wey dey dis example dem dey call am geojson. Insid dis folder we get three JSON files.
+Di first JSON file dem dey call am “0", di second JSON file dem dey call "1" and di third JSON dem dey call am "2".
 
-Make sure that your JSON files don't have a file ending and are named like their corresponding tokenIds.
-In the pin manager on pinata.cloud, click on the upload button and upload the folder with your JSON files.
+Ensure say your JSON files no get file ending and dem name dem like dem corresponding tokenlds.
+For di pin manager for pinata.cloud, click for di upload button make you come upload di folder with.
 
-To access your folder on IPFS, enter this address "https://ipfs.io/ipfs/" and add your CID.
-For our current example, you can access your folder by using: <a href="https://ipfs.io/ipfs/QmVrsYxXh5PzTfkKZr1MfUN6PotJj8VQkGQ3kGyBNVKtqp" target="_blank">
-https://ipfs.io/ipfs/QmVrsYxXh5PzTfkKZr1MfUN6PotJj8VQkGQ3kGyBNVKtqp </a>
-This will become our baseURI.
+To fit access your folder for IPFS, enta dis adress
+"https://ipfs.io/ipfs/" and add your CID.
+For our example now now, you go access your folder if you dey use<a href="https://ipfs.io/ipfs/QmVrsYxXh5PzTfkKZr1MfUN6PotJj8VQkGQ3kGyBNVKtqp" target="_blank">
+https://ipfs.io/ipfs/QmVrsYxXh5PzTfkKZr1MfUN6PotJj8VQkGQ3kGyBNVKtqpThis
+</a>.
 
-You can access a specific JSON file then by just adding a slash and the tokenId by using: <a href="https://ipfs.io/ipfs/QmVrsYxXh5PzTfkKZr1MfUN6PotJj8VQkGQ3kGyBNVKtqp/0" target="_blank">
+You fit access one kind JSON file den you go just dey add slash and di tokenld wit <a href="https://ipfs.io/ipfs/QmVrsYxXh5PzTfkKZr1MfUN6PotJj8VQkGQ3kGyBNVKtqp/0" target="_blank">
 https://ipfs.io/ipfs/QmVrsYxXh5PzTfkKZr1MfUN6PotJj8VQkGQ3kGyBNVKtqp/0 </a>
 
-In the contract, replace the baseURI with your own baseURI. In this example, the baseURI consists of the URL
-"https://ipfs.io/ipfs/", the CID containing the JSON files, and a slash at the end "/".
+For dis contrakt, commot di baseURL wit your own baseURL. For dis example di baseURl e consist of di URL
+"https://ipfs.io/ipfs/", di CID wey dey contain di JSON files and slash for di end "/".
 
 An individual tokenURI will now be created for each token by adding the tokenId to the baseURI — exactly what we did manually in the example above to access the JSON file.
