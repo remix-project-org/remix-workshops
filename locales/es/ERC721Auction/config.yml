@@ -1,6 +1,6 @@
 ---
 id: er721Auction
-name: Contrato de subasta NFT
+name: Contrato de Subasta de NFT
 summary: Aprenda a redactar un contrato de subasta ERC721 (NFT). Desarrollado por la plataforma de aprendizaje p2p https://dacade.org.
 level: 2
 tags:
@@ -12,8 +12,8 @@ steps:
     name: Configuración del contrato
     path: auction-contract-setup
   - 
-    name: Funciones de inicio y oferta
+    name: Funciones de Inicio y Oferta
     path: auction-start-bid
   - 
     name: Retirar y Finalizar Funciones
-    path: auction-withdraw-end
+    path: finalización-de-la-subasta-de-retiro
