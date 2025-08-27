@@ -1,14 +1,15 @@
-At this point we have gone over an example of how to send a general message between one blockchain to another. Now, let's implement a contract that sends a message and a token from one blockchain to another.
+At dis point we fit don gomover an example of how to fit send general message
+between one blockchain to another. Now make we implement contract wey go send message and token from one blockchain to another.
 
-## Overview
+## Di overview
 
-This contract should seem largely familiar. Much like the previous section the `constructor` receives the `Gateway` and `Gas Service` addresses.
+Dis contract fit dey large and familiar. For di other area constructor dey recieve im gateway and `Gas Service` addresses.
 
-It then has a function that will be called from the source chain called `sendToMany` that takes in parameters similar to the previous section.
+E get function wey dem go call from di source chain wey dem call`sendToMany` that takes in parameters similar to de previous section.
 
-1. `_destinationChain`: The chain the transaction is sending to
-2. `_destinationAddress`: The address on the destination chain your transaction is sending to
-3. `_destinationAddresses`: The message that you will be sending along with your token transfer. In this example the message is a list of receiving addresses for the token transfer.
+1. u fit`_destinationChain`: The chain de transaction is sending to
+2. `_destinationAddress`: Di adress for di destination chain transaction go execute for
+3. u fit`_destinationAddresses`: The message that you will be sending along with your token transfer. For di message is a list of receiving addresses for di token transfer.
 4. `_symbol`: The symbol of the token address being sent
 5. `_amount`: The amount of the token being sent
 
