@@ -1,34 +1,34 @@
-## Understanding `groth16_trusted_setup.ts`
+## `groth16_trusted_setup.ts` را درک کردن
 
-Navigate to `scripts/groth16/groth16_trusted_setup.ts`. This script performs the trusted setup necessary for generating proofs.
+به `scripts/groth16/groth16_trusted_setup.ts` بروید. این اسکریپت تنظیمات مورد اعتماد لازم برای تولید اثبات‌ها را انجام می‌دهد.
 
-### Code Breakdown
+### تحلیل کد
 
-#### Circuit Compilation:
+#### ترکیب مدار:
 
-- Uses `remix.call('circuit-compiler', 'generateR1cs', ...)` to generate `R1CS` (Rank-1 Constraint System) from the circuit.
+- `remix.call('circuit-compiler', 'generateR1cs', ...)` برای تولید `R1CS` (سیستم قید رتبه-۱) از مدار استفاده می‌شود.
 
-#### Trusted Setup Steps:
+#### مراحل راه‌اندازی قابل اعتماد:
 
-- `snarkjs.zKey.newZKey`: Initializes the proving key (`zkey_0`).
-- `snarkjs.zKey.contribute`: Adds contributions to the proving key (`zkey_1`).
-- `snarkjs.zKey.beacon`: Finalizes the proving key (`zkey_final`).
+- `snarkjs.zKey.newZKey`: کلید اثبات (`zkey_0`) را初始化 می‌کند.
+- `snarkjs.zKey.contribute`: افزوده‌های جدید به کلید اثبات (`zkey_1`) را اضافه می‌کند.
+- `snarkjs.zKey.beacon`: کلید اثبات (`zkey_final`) را نهایی می‌کند.
 
-#### Verification:
+#### تأیید:
 
-- `snarkjs.zKey.verifyFromR1cs`: Verifies the proving key against the `R1CS` and initial parameters.
+- `snarkjs.zKey.verifyFromR1cs`: کلید اثبات را در برابر `R1CS` و پارامترهای اولیه تأیید می‌کند.
 
-#### Exporting Keys:
+#### صادرات کلیدها:
 
-- Exports the verification key to `scripts/groth16/zk/keys/verification_key.json`.
-- Exports the final proving key (`scripts/groth16/zk/keys/zkey_final.txt`).
+- کلید تأیید را به `scripts/groth16/zk/keys/verification_key.json` صادر می‌کند.
+- کلید نهایی اثبات را صادر می‌کند (`scripts/groth16/zk/keys/zkey_final.txt`).
 
-### Purpose
+### هدف
 
-- Performs the trusted setup required for the `Groth16` proving system.
-- Generates the necessary keys for proof generation and verification.
+- راه‌اندازی قابل اعتماد مورد نیاز برای سیستم اثبات `Groth16` را انجام می‌دهد.
+- کلیدهای ضروری برای تولید و تأیید مدرک را تولید می‌کند.
 
-### Execute the Script
+### اسکریپت را اجرا کن
 
-- Click the play button in the editor, or right-click the file and select "Run".
-- Wait for the script to complete and `"setup done."` logged in the terminal.
+- دکمه پخش را در ویرایشگر کلیک کنید، یا روی فایل کلیک راست کرده و "اجرا" را انتخاب کنید.
+- صبر کنید تا اسکریپت کامل شود و "تنظیمات انجام شده." در ترمینال ثبت شود.
