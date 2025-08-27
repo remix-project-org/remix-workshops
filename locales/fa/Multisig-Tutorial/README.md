@@ -1,5 +1,5 @@
-## MultiSig Wallet
+## کیف پول
 
-Learn how to write a MultiSig Wallet smart contract on Ethereum.
+یاد بگیرید که چگونه یک قرارداد هوشمند کیف پول چند امضایی MultiSig Walletدر اتریوم بنویسید.
 
-Developed by the p2p learning platform https://dacade.org.
+توسعه یافته توسط پلتفرم یادگیری p2p https://dacade.org.
