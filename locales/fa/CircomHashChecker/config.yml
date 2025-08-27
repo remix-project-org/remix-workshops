@@ -1,35 +1,35 @@
-id: circom-hash-checker
-name: Hash Checker Tutorial
-summary: A tutorial on creating and understanding a Hash Checker circuit using Remix-IDE templates, including trusted setup and proof generation.
+id: چک کننده هش سیرکوم
+name: آموزش چک کردن هش
+summary: یک آموزش در مورد ایجاد و درک یک مدار بررسی هش با استفاده از الگوهای Remix-IDE، شامل راه‌اندازی مورد اعتماد و تولید گواهینامه.
 level: 1
 tags:
-  - Circom
-  - Remix-IDE
+  - سیرکوم
+  - ریمیکس-آیدی ای دی
 steps:
   - 
-    name: Introduction to the Hash Checker Circuit
-    path: step-1
+    name: مقدمه‌ای بر مدار بررسی هش
+    path: گام-۱
   - 
-    name: Generating the Hash Checker Template in Remix-IDE
-    path: step-2
+    name: تولید قالب بررسی هش در Remix-IDE
+    path: گام-۲
   - 
-    name: Exploring calculate_hash.circom
-    path: step-3
+    name: کاوش در calculate_hash.circom
+    path: گام-3
   - 
-    name: Compiling the Circuit
-    path: step-4
+    name: تجمیع مدار
+    path: گام-۴
   - 
-    name: Performing a Trusted Setup
-    path: step-5
+    name: انجام یک راه‌اندازی اعتماد شده
+    path: گام-۵
   - 
-    name: Compute Witness
-    path: step-6
+    name: شاهد محاسبه
+    path: گام-۶
   - 
-    name: Generate Proof
-    path: step-7
+    name: مدرک تولید کنید
+    path: گام-۷
   - 
-    name: Exploring the Trusted Setup Script (Optional)
-    path: step-8
+    name: بررسی اسکریپت راه‌اندازی مورد اعتماد (اختیاری)
+    path: گام-۸
   - 
-    name: Exploring the Proof Generation Script (Optional)
-    path: step-9
+    name: بررسی اسکریپت تولید اثبات (اختیاری)
+    path: گام-9
