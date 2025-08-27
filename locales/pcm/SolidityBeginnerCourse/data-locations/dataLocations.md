@@ -26,29 +26,29 @@ For dis contract, `parameter _`arr`(line 35) data location na for *calldata*. If
 
 ### Memory to memory
 
-Assignments from _memory_ to _memory_ create references instead of copies. If you change the value in one variable, the value of all other variables that reference the same data will be changed.
+Value wey you give from _memory_ to _memory_ no dey copy but e dey reference. If you change one variable value, the value for di remaining variable wey reference di same data go change.
 
-If we were to create a new struct `myMemStruct2` with the data location _memory_ inside the `function f` (line 12) and assign it the value of `myMemStruct` (line 19), any change to `myMemStruct2` would also change the value of `myMemStruct`.
+If we create new struct `myMemStruct2` wit dat location _memory_ for inside `function f` (line 12) kon give am di value of 'myMemStruct`(line 19), if I change anything for`myMemStruct2`e go change`myMemStruct\` value.
 
-### Storage to local storage
+### Storage to loca storage
 
-Assignments from _storage_ to _local storage_ also create references, not copies.
+Value wey you give from _storage_ to _local storage_ sef dey create reference, no be copy.
 
-If we change the value of the local variable `myStruct` (line 17), the value of our state variable `myStructs` (line 10) changes as well.
+If we change value of local variable `myStruct` (line 17), di value of state variable `myStructs` (line 10) sef go change.
 
 ## Storage and memory/calldata
 
-Assignments between _storage_ and _memory_ (or _calldata_) create independent copies, not references.
+Value wey variable carry for _storage_ and _memory_ (or _calldata_) get seperate copies no be reference.
 
-If we were to create a new struct `myMemStruct3` with the data location _memory_ inside the `function f` (line 12) and assign it the value of `myStruct`, changes in `myMemStruct3` would not affect the values stored in the mapping `myStructs` (line 10).
+If we make new struct `myMemStruct3` wit data location _memory_ inside `function f` (line 12) kon give am value of `myStruct` e no affect value wey dey for mapping `myStructs` (line 10).
 
-As we said in the beginning, when creating contracts we have to be mindful of gas costs. Therefore, we need to use data locations that require the lowest amount of gas possible.
+As we don talk as we dey start, we gats dey think of transaction money as we dey create contract. So we gats use data location wey no too need gas wey cost.
 
-## ⭐️ Assignment
+## When you give variable value
 
-1. Change the value of the `myStruct` member `foo`, inside the `function f`, to 4.
-2. Create a new struct `myMemStruct2` with the data location _memory_ inside the `function f` and assign it the value of `myMemStruct`. Change the value of the `myMemStruct2` member `foo` to 1.
-3. Create a new struct `myMemStruct3` with the data location _memory_ inside the `function f` and assign it the value of `myStruct`. Change the value of the `myMemStruct3` member `foo` to 3.
-4. Let the function f return `myStruct`, `myMemStruct2`, and `myMemStruct3`.
+1. Change value of `mystruct` member `foo`, inside `function f`, to 4.
+2. Create new struct `myMemstruct2` wit data location inside `function f` kon give am value of `myMemStruct`. Change value of `myMemStruct2` member `foo` to 1.
+3. Create new struct `myMemStruct3` wey di data location na _memory_ inside `function f` kon give am value of `myStruct`. Change the value of `myMemStruct3` member `foo` to 3.
+4. Make function f show the value for `myStruct`, `myMemStruct`, and `myMemStruct3`.
 
-Tip: Make sure to create the correct return types for the function `f`.
+Small advice: No forget make correct return types for di function `f`.
