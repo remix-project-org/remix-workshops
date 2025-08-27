@@ -1,12 +1,12 @@
-In this section, we will create our metadata and store it in a decentralized way.
+For dis section, we go create our metadata come store am for decentralised way.
 
-IPFS ( InterPlanetary File System) is a peer-to-peer network for storing files in a distributed way. Pinata.cloud is a pinning service that allows users to easily host files on the IPFS network.
+IPFS ( InterPlanetary File System) na peer-to-peer network to take store files for distributed way. Pinata.cloud na pinning service wey dey allow make users fit easily host files for di IPFS network.
 
-We want to host our images and the JSON files with their metadata on IPFS.
+We wan host sea image and di JSON files wit dem metadata for IPFS.
 
-### Create Image Folder
+### Come create picture folder
 
-In this example, we will create metadata for three tokens. As you can see below, we create three images that we stored in a folder.
+For dis example, we go create metadata for three tokens. As you dey see for down, we dey create picture wey be three wey we store for folder.
 
 ```
 geo-img
@@ -15,7 +15,7 @@ geo-img
 ├── geo_3.png
 ```
 
-### Register on Pinata
+### You go register for Pinata
 
 Now, we want to host these images somewhere so we can point to them in the metadata of our tokens. Let's do it in a decentralized way and use Pinata to host them on IPFS.
 
