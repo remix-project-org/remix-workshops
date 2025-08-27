@@ -4,38 +4,38 @@ U dey welcome to de Multisignature Wallet course! For dis section we go exploy d
 
 Multisignatur (multisig) wallet ma a type if digital wallet wey require plenty keys to te authorize transaction for cryptocurrency.
 
-Emagine multisig wey be like secure vault wit plenty locks. To tey open de vault one one key ho; der must open dier individual locks. This setup ensures that no single person can access the vault's contents without the others' consent.
+Emagine multisig wey be like secure vault wit plenty locks. To tey open de vault one one key ho; der must open dier individual locks. Dis setup dey sure dat no simgle person no fit open de vault content without de other pesin permission
 
-## How Does a Multisig Wallet Work?
+## How multiseg wallet dey work?
 
-In a multisig setup, each transaction must receive a predetermined number of approvals from a set group of individuals. For instance, in a 3-of-5 wallet configuration, there are five authorized addresses, but a transaction only goes through when at least three of them give their approval. When a transaction is initiated, it's presented as a **proposal** to the group. Each member who agrees to the transaction uses their private key to digitally sign it.
+For multiseg wallet setup, each transaction must to dey recieve predetermined number of approval from plenty people wey form group. For eksampol for 3 of wallet wey get configuraton, dem get five authorized addresses, transaction wey only dey go throu at least thre of dem give dier approval. Wen transaction dey initiated im dey present as proposal to de group. One one member who confirm to de transaction users dier private key sgo sign am.
 
-These **digital signatures** are unique and are generated based on the combination of the transaction data and the private key.
+D
 
-When the required number of signatures is reached, the transaction is broadcasted to the blockchain for execution.
+Wen de reqired nomber of signature don reach de transaction broadcasted to de blockchain for execution.
 
-## Why Use a Multisig Wallet?
+## Why u go use Multisig Wallet?
 
-Multisig wallets are crucial for enhanced security in cryptocurrency transactions. They mitigate the risk of theft or loss of a single key. In business, they're used to ensure that funds can't be moved without consensus among stakeholders. For instance, in a company managing cryptocurrency assets, a multisig wallet might require the CFO, CEO, and a board member to all approve significant transactions, protecting against internal fraud or external hacks.
+Multisig wallet dey crucial for enhanced security for transactions for cryptcurrencies. Dey mitigate dey risk oh theft or loss of one key. For buisness dem don use am to ensure dat funds no fit move without concesus among stake holders. For eksampol for a company wey dey manage cryptocurrency assets, multisig fit require di CFO, CEO, and a board member to fit approve siginificant transaction, protecting against internal fraud or external hacks.
 
-## Conclusion
+## Dis na Conclusion
 
-In this section, we learned that a multisig wallet requires multiple keys to authorize a proposed cryptocurrency transaction and that a multisigs mitigates the risk of theft or loss of a single key.
+For dis area we learn say multisig wallet require plenty keys to fit authorize a proposed cryptocurrency transaction and dat multisig go fit mitigate di risk of theft or loss of a single key.
 
-## ⭐️ Assignment: Multiple Choice Test
+## Assignment wey dey on plenty choice test
 
-### 1. What is a Multisignature Wallet?
+### 1. Wetin be Multisignature wallet?
 
-1. A digital wallet that requires a single signature for transactions.
-2. A digital wallet that requires multiple signatures for transactions.
-3. A physical wallet used for storing cryptocurrency.
-4. A wallet that can only hold multiple types of cryptocurrencies.
+1. One digital wallet wey need one signature for transactions.
+2. One digital wallet need plenty signature for transactions.
+3. Wallet wey u fit see go dey used for keeping cryptocurencies.
+4. One wallet wey fit carryu plenty types os cryptocurrencies.
 
-### 2) How does a Multisignature Wallet enhance security?
+### 2) How multisignature dey improve security wel wel?
 
-1. By requiring a single private key for transactions.
-2. By distributing transaction approval across multiple owners.
-3. By storing transaction data on-chain.
-4. None of the above.
+1. To dey require a single private key for transaction.
+2. To dey disribute transaction approval for plenty multiple owners.
+3. To fit store transaction data wey dey chain.
+4. Dis one no dey part of dem.
 
 E dey okay to take ur time anser de kwestion wey dey up. Omce u dey ready we go move to dey exploy de multisig smart contrct and understanding im structure.
