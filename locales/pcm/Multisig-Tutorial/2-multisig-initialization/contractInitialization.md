@@ -1,4 +1,4 @@
-For dis area we go explore di **initialization process** of the Multisig smart contract. We fit examine di constructor function and review how im set up di initial state of di contract.
+For dis area we go explore di **initialization process** of the Multisig smart contract.We fit examine di constructor function and review how im set up di initial state of di contract.
 
 ## De note
 
@@ -24,37 +24,38 @@ Next we get modifiers wey dem call `onlyOwner` (Line 9). Modifiers in Solidity a
 
 ## Di Constructor Function
 
-The `constructor` function (Line 14) is executed only once during the deployment of the contract. It initializes essential parameters, in this case, the list of owners and the required number of confirmations (Line 14).
+Di costructor function (Line 14) is executed only once during de deployment of de contract. E dey initialize essential parameters, for dis case di list of owners and di required number of confirmations (line 14).
 
-On lines 15 and 16, we have two `require` statements to ensure that the inputs are valid. In this case, we require that there must be at least one owner and that the number of required confirmations must be greater than zero and less than or equal to the number of owners.
+For line 15 and 16, we get two `require` statements to ensure that the inputs are valid. For dis case, e require say at least one owner and sat di number of required confirmations must be greater than zero and less than or di same as di number of owners.
 
-The constructor then initializes the contract state by verifying that is not address(0) (Line 25) and that the owner is unique (Line 26).  Then it adds a key/ value pair to the isOwner mapping (Line 28), and then it populates the `owners` array with the provided owner addresses (Line 29).
+Di constructor then go initializes di conntract state by verifying say address(0) (line25) and di owner is unique (Line 26).
+E go add key/ value pair to di owner mapping (Line 28), and then e go populate di owner array with di provided owner addresses (Line 29).
 
-Finally, it sets the `numConfirmationsRequired` variable with the specified value (Line 32).
+E set di `numConfirmationsRequired` variable with the specified value (Line 32).
 
-## getOwners Function
+## na to getOwners Function
 
-The `getOwners` function (Line 36) allows users to retrieve the list of owners of the multi-signature wallet. It returns the `owners` array (Line 37).
+Di owners\`function(Line 36) allows users to fit retrieve di list of owners of the multi-signature wallet. E return di owners array (Line 37).
 
-## getNumConfirmationsRequired Function
+## na to getNumConfirmationsRequired Function
 
-The `getNumConfirmationsRequired` function (Line 41) allows users to retrieve the number of confirmations required for a transaction. It returns the `numConfirmationsRequired` variable (Line 42).
+Di `getNumConfirmationsRequired` function (Line 41) allows yusers to retrieve the number of confirmations required for a transaction. E return di `numConfirmationsRequired` variable (Line 42).
 
-## Conclusion
+## Di Conclusion
 
-In this section, we explored the initialization process of the Multisig smart contract. We examined the constructor function and understood how it sets up the initial state of the contract.
+For dis area we go explore di initialization process of de Multisig smart contract. We dey examined di constructor function and understood how e set up di initial state of di contract.
 
-## ⭐️ Assignment: Deploy a Multisig Wallet
+## di Assignment: Deploy a Multisig Wallet
 
-Deploy a Multisig contract with three owners and require two confirmations for transaction execution.
+E deploy im mulstig contract with di three owners and e require two confirmations for transaction execution.
 
-1. Compile contractInitialization.sol
-2. Go to Deploy & Run Transactions in Remix.
-3. Expand the "Deploy" section.
-4. Under "_OWNERS", enter three an array of three addresses.
-5. Under "_NUM_CONFIRMATIONS_REQUIRED", enter the number of confirmations required for a transaction.
+1. To fit compile contractInitialization.sol
+2. U go deploy and run transactions in remix.
+3. De Expand the "Deploy" section.
+4. Na Under "_OWNERS", enter three an array of three addresses.
+5. Under "_NUM_CONFIRMATIONS_REQUIRED", enter de number of confirmations required for im transaction.
 
-**Hints:**
+di **Hints:**
 
-- You can get addresses from the "ACCOUNTS" dropdown menu.
-- The array of addresses should be in the format: ["0x123...", "0x456...", "0x789..."].
+- U fit get address from di "ACCOUNTS" dropdown menu.
+- Di array of adddresses must be for di format: ["0x123...", "0x456...", "0x789..."].
