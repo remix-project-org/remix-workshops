@@ -1,3 +1,3 @@
-## Interoperability Between Blockchains
+## De Interoperability between Blockchains
 
-Learn how to build interoperable smart contracts that can send messages and assets between different blockchains using Axelar technology.
+U go learn how to te build interoperable smart contracts wey fit send merssages and assets between different blockchains using Axelar technology.
