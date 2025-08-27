@@ -38,21 +38,21 @@ steps:
     path: control-flujo-si-otro
   - 
     name: 7.2 Flujo de control - Bucles
-    path: control-flow-loops
+    path: bucles-de-flujo-de-control
   - 
-    name: 8.1 Data Structures - Arrays
-    path: data-structures-arrays
+    name: 8.1 Estructuras de datos - Matrices
+    path: matrices de estructuras de datos
   - 
-    name: 8.2 Data Structures - Mappings
+    name: 8.2 Estructuras de datos - Mapeos
     path: data-structures-mappings
   - 
-    name: 8.3 Data Structures - Structs
-    path: data-structures-structs
+    name: 8.3 Estructuras de datos - Estructuras
+    path: estructuras-de-datos
   - 
-    name: 8.4 Data Structures - Enums
+    name: 8.4 Estructuras de datos - Enumeraciones
     path: data-structures-enums
   - 
-    name: 9. Data Locations
+    name: 9. Ubicaciones de datos
     path: data-locations
   - 
     name: 10.1 Transactions - Ether and Wei
