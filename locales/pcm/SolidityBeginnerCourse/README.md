@@ -1,5 +1,5 @@
-## Interactive Solidity Course
+## This na interactive solidity course
 
-Learn the most important Solidity beginner concepts interactively, based on the popular https://solidity-by-example.org/ contracts.
+Learn all the important solidity beginner concepts through interactive way, based on the popular https://solidity-by-example.org/ contracts.
 
-Developed by the p2p learning platform https://dacade.org.
+Na the p2p learning platform make am https://dacade.org.
