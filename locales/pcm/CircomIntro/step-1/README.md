@@ -1,13 +1,13 @@
-Welcome to this beginner-level tutorial on Circom using Remix. In this tutorial, you'll learn the basics of Circom, a domain-specific language used for creating arithmetic circuits.
+We welcome yu con dis beginner-level tutorial ontop Circom using Remix. Fr dis tutorial, yu go learn d basics of Circom, na domain-specific language wey dem dey use to create arithmetic circuits.
 
-**What is Circom?**
+Wetin be circom
 
-Circom is a language designed for writing arithmetic circuits that can be used in zero-knowledge proofs, particularly zk-SNARKs. It allows developers to define complex mathematical circuits that can prove knowledge of certain data without revealing it.
+Circom na language wey dey created for writing arithmetic circuits wey you fit use for zero knowledge proofs, especially zk-SNARKs. E dey allow developers define complex mathematical circuits wey fit prove knowledge for certain data without showing am.
 
-**Why Use Remix-IDE for Circom?**
+**Why I go use Remix-IDE for Circom?**
 
-- **Ease of Use:** Remix-IDE provides a user-friendly interface that simplifies the development process.
-- **Integrated Tools:** With plugins like `circuit-compiler`, you can compile Circom code, perform trusted setups, compute witnesses, and generate proofs all within the same environment.
-- **No Installation Required:** As a web-based IDE, you can start coding immediately without setting up a local development environment.
+- **Easy to Use:** Remix-IDE dey provide user-friendly interface wey dey simplify d development process.
+- **Integrated Tools:** Wit plugins like `circuit-compiler`, you fit compile Circom code, perform trusted setups, compute witnesses, nd generate proofs all of dem fr d same environment.
+- **u no need Installation:** As e be web-based IDE, you fit start coding immediately mk u no set up local development environment.
 
-In the next steps, we'll guide you through setting up Remix-IDE for Circom development and help you write your first circuit.
+For the next step, we go teach you setting up remix-ide for circom development con help you write your first circuit.
