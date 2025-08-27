@@ -1,16 +1,15 @@
-Switch to the `Deploy & Run` module
+Passez au module Déployer & Exécuter.
 ![Run transaction](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/4_Linking_and_Deploying/images/remix_runtransaction.png "Run Transaction")
 
-- Select the Remix VM Environment and select the `sampleContract` contract in the list of compiled contracts.
+- Sélectionnez l'Environnement VM Remix et sélectionnez le contrat sampleContract dans la liste des contrats compilés.
 
-- Click on `Deploy`
+- Cliquez sur Déployer
 
-The terminal should output something like `creation of sample errored: <address> is not a valid address. Please check the provided address is valid.`
-That is expected: **We have set `autoDeployLib` to false, so Remix expects to have an address and not just `<address>`**
+Le terminal devrait afficher quelque chose comme `création de sample errored : <address> n'est pas une adresse valide. Veuillez vérifier que l'adresse fournie est valide. C'est attendu : **Nous avons définiautoDeployLibà faux, donc Remix s'attend à avoir une adresse et pas seulement<address>`\*\*
 
-So we need deploy the library to get its address.
+Nous devons donc déployer la bibliothèque pour obtenir son adresse.
 
-- Select the library `aLib` in the list of compiled contract and hit `deploy`
+- Sélectionnez la bibliothèque aLib dans la liste des contrats compilés et cliquez sur déployer
 
   ![Choose aLib](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/4_Linking_and_Deploying/images/contract_alib.png "Choose aLib")
 
