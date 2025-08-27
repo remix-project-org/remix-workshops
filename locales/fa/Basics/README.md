@@ -1,3 +1,3 @@
-## Loading, Compiling, Deploying
+## بارگذاری، کامپایل کردن، استقرار
 
-This beginner level tutorial introduces Remix's interface and concepts used in Ethereum.
+این آموزش مبتدی رابط کاربری و مفاهیم مورد استفاده در اتریوم را معرفی می‌کند.
