@@ -1,45 +1,45 @@
-In this section, we will finish the contract, create a function to withdraw the bids that an account has made, and create a function to end the auction.
+For dis place, we go finish di contract, come do function to take commot di bids wey akant don make, come create di function to take stop di auction.
 
-### Withdraw
+### Commot am
 
-We create a local variable `bal` (balance) that stores the total value of bids that the function caller has made (line 75) since their last withdrawal. We can assign this value to `bal` by accessing the bids mapping using the address of the function caller as the key.
+We been make local variabu `bal` (balance) wey dey keep di whole value wey de function caller don make (line 75) time wey dem widraw last. We fit carry dis value go `bal` make we access di bids im maps come dey use di adress wey Di function caller get as di key.
 
-Next, we set the value of the address of the function caller to 0 in the bids mapping because they will withdraw the total value of their bids (line 76).
+Now, we go carry di value of di address of di function caller go 0 for di bids im map unto say dem go commot d while value of di bids (line 76).
 
-Now we transfer that amount of ETH from the contract to the function caller and emit the `Withdraw` event (line 79).
+As e be now we fit commot di amount of di ETH from di contract go di funkshon mallee come emit di `Withdraw` event (line 79).
 
-### End
+### Di end
 
-Before the function caller can execute this function and end the auction, we need to check if certain conditions are met. The auction needs to have started (line 83), the end date of the auction needs to have been reached (line 84), and the auction must not have ended already (line 85).
+Before di funkshon kaller go fit do anytime on top di funkshon come end di auction we go need check if dem meet some kind things. Di aukshon need to don start sef (line 83), di end date of di aukshon go nid to don reach (line 84), and di auction no suppose end (line 85).
 
-Once the auction has ended, we set the state variable `ended` to `true` (line 87).
+As de auction go end, we don set di state variables `ended` go `true` (line 87).
 
-We check if anybody participated in the auction and bid on the NFT (line 88).
+We don see if person join for di auction come do bid wey dey NFT (line 88).
 
-If there was a bid, we transfer the NFT from the contract to the highest bidder (line 89) and transfer the ETH that was sent from the highest bidder to the contract, now to the address of the auctioneer, the seller of the NFT (line 90).
+If bid dey, we go transfa di NFT come from contrakt go who bid pass (line 89) come transfa di ETH wey dem send from who bid high pass go di contrakt, now go di address of who auction him thing wey dey sell di NFT (line 90).
 
-If nobody bids on the NFT, we send the NFT back to the auctioneer (line 92).
+If person no bid for di NFT, we go carry am go meet who get am (line 92).
 
-Finally, we emit the `End` event (line 95).
+Now now, we come emit di `End` event (line 95).
 
-## ⭐️ Assignment
+## De Asignment
 
-1. Deploy an NFT contract. You can use the NFT contract that we created in our Learneth "Solidity NFT Course".
+1. U go deploy NFT contract. U fit use NFT contract wey we create for our own LearnEth "Solidity NFT Course".
 
-2. Mint yourself an NFT with the tokenId 0.
+2. U go mint urself NFT wit de tokenld 0.
 
-3. For testing purposes, change the value that is assigned to the `endAt` state variable (line 54) from `7 days` to `5 minutes`.
+3. Just to take test how e be, change di value wey dem put for di `endAt` state variable (line 54) from `7 days` go \`5 minis.
 
-4. Deploy this EnglishAuction contract. Use the address of the NFT contract as an argument for the `_nft` parameter, 0 for `_nftId`, and 1 for `_startingBid`.
+4. Use dis EnglishAuction contract. Use di NFT contract im address take argue di `_nft` parameter, 0 for `_nftId`, and 1 for `_startingBid`.
 
-5. Call the `approve` function of your NFT contract with the address of the auction contract as an argument for the `to` parameter, and 0 for the `tokenId`.
+5. Make you put call for di `approve` function for your NFT contract wit di address of di auction contract take argue for di `to` parameter, and 0 for di `tokenId`.
 
-6. Call the `start` function of your auction contract.
+6. Put call for di `start` function of your auction contract.
 
-7. Bid 2 Ether using account 1, and 3 Ether using account 2. If you call the `highestBidder` function, it should now return the address of account 2.
+7. Run Bid 2 Ether wey dey use akant 1 and 3 Ether wey dey use akant 2. Wen you put call for di function for who bid pass e go carry di adress of akant 2 go back.
 
-8. Call the `withdraw` function with account 1. In the balance of account 1, you should see the 2 Ether minus some transaction fees.
+8. Make you call di widraw function with akant 1. For akant 1 for wetin remain you go see di 2 Ether if you commot transaction fees.
 
-9. After 5 minutes have passed, call the `end` function. Then, call the `ended` function which should return `true`.
+9. If 5 minutes commot, put call for di end function. Put call for di function wey don end wey suppose come back true.
 
-In the NFT contract, if you call the `ownerOf` function with the tokenId 0, it should return the address of account 2. If you look at the balance of account 1 it should have increased by 3 Ether minus some transaction fees.
+For di NFT contrakt wen you put call for who get di function wit di tokenld 0, e suppose give Una di address of akant 2 back. Put eyes for wetin remain for akant 1 e suppose don go up by 3 Ether commot some fees wey e take transact.
