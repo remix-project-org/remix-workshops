@@ -1,10 +1,10 @@
-The metadata extension is optional. It allows us to add additional information to our ERC721 tokens. We can specify a name, a symbol, and an URI (Uniform Resource Identifier) that can point to a file where we can add even more information in the form of a JSON.
+اکستنشن متا اختیاری است. این امکان را به ما می‌دهد که اطلاعات اضافی را به توکن‌های ERC721 خود اضافه کنیم. ما می‌توانیم یک نام، یک نماد و یک URI (شناسه منبع یکنواخت) را مشخص کنیم که می‌تواند به فایلی اشاره کند که می‌توانیم اطلاعات بیشتری را به صورت JSON در آن اضافه کنیم.
 
-## ERC721 Metadata Functions
+## توابع متاداده ERC721
 
-### name
+### نام
 
-The function `name` (line 16) returns the name of the token collection. A token collection means all tokens created with your ERC721 token contract implementation. Every token in this collection will have this name, regardless of their tokenId.
+تابع `name` (خط 16) نام مجموعه توکن‌ها را برمی‌گرداند. یک مجموعه توکن به معنای تمام توکن‌هایی است که با پیاده‌سازی قرارداد توکن ERC721 شما ایجاد شده‌اند. هر توکن در این مجموعه این نام را خواهد داشت، صرف نظر از tokenId آن.
 
 ### symbol
 
