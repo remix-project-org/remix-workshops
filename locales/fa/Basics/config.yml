@@ -1,26 +1,26 @@
 ---
-id: basics
-name: Basics of Remix
-summary: A typical workflow in Remix
+id: مبانی
+name: مبانی ریمیکس
+summary: یک روند کاری معمولی در ریمیکس
 level: 1
 tags:
-  - Remix
+  - ریمیکس
 steps:
   - 
-    name: Intro to the Interface
-    path: interface_introduction
+    name: مقدمه‌ای بر رابط کاربری
+    path: معرفی رابط کاربری
   - 
-    name: Intro to Workspaces
-    path: workspaces
+    name: مقدمه‌ای بر فضاهای کاری
+    path: فضاهای کاری
   - 
-    name: Loading & Compiling
-    path: load_and_compile
+    name: در حال بارگذاری و کامپایل
+    path: بارگذاری و کامپایل
   - 
-    name: Deploying to the Remix VM
-    path: deploy_to_the_remixvm
+    name: استقرار در ماشین مجازی Remix
+    path: استقرار به RemixVM
   - 
-    name: Interacting with Functions
-    path: interacting
+    name: تعامل با توابع
+    path: تعامل
   - 
-    name: Deploying to Public Networks
-    path: deploy_injected
+    name: استقرار در شبکه‌های عمومی
+    path: استقرار تزریق شده
