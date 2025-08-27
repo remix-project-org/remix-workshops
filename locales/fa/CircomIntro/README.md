@@ -1,21 +1,15 @@
-Intro to Circom
+مقدمه‌ای بر سیرکوم
 
-This is an introduction to Circom. You'll learn how to write, compile, and test arithmetic circuits in Circom. We'll go over how to do this within Remix-IDE.
+این مقدمه‌ای بر Circom است. شما یاد خواهید گرفت که چگونه مدارهای算یش را در Circom بنویسید، کامپایل کنید و آزمایش کنید. ما خواهیم دید که چگونه این کار را در Remix-IDE انجام دهیم.
 
-Tutorial Overview
-
-```
-Step 1: Introduction
-Step 2: Setting Up Remix-IDE and Installing the Circuit-Compiler Plugin
-Step 3: Writing Your First Circom Circuit
-Step 4: Compiling the Circuit Using the Plugin
-Step 5: Performing a Trusted Setup
-Step 6: Computing the Witness
-Step 7: Generating the Proof
-```
-
-Prerequisites:
+مروری بر آموزش
 
 ```
-Basic understanding of cryptography and zero-knowledge proofs is helpful but not required.
+مرحله 1: مقدمهمرحله 2: راه‌اندازی Remix-IDE و نصب افزونه Circuit-Compilerمرحله 3: نوشتن اولین مدار Circomمرحله 4: کامپایل کردن مدار با استفاده از افزونهمرحله 5: انجام یک راه‌اندازی مورد اعتمادمرحله 6: محاسبه شاهدمرحله 7: تولید اثبات
+```
+
+پیشنهادها:
+
+```
+درک پایه‌ای از رمزنگاری و اثبات‌های صفر-دانش مفید است اما الزامی نیست.
 ```
