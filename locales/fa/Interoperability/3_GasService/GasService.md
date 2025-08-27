@@ -1,29 +1,29 @@
-The Axelar Gas Service is an extremely useful tool made available to pay gas for an interchain transaction. It allows you to pay for the cost of a transaction in the token of the source chain, making for a much easier end user (and developer) experience. If for example the source chain is Ethereum and the destination chain is Polygon then the gas service will receive the complete payment for the transaction in ETH and no matic is needed from the caller to pay for the execution on the Polygon destination chain.
+سرویس گاز Axelar ابزاری بسیار مفید است که برای پرداخت گاز برای تراکنش‌های بین زنجیره‌ای در دسترس قرار گرفته است. این به شما امکان می‌دهد هزینه تراکنش را با توکن زنجیره منبع پرداخت کنید و تجربه بسیار آسان‌تری را برای کاربر نهایی (و توسعه‌دهنده) فراهم می‌کند. برای مثال، اگر زنجیره مبدا اتریوم و زنجیره مقصد Polygon باشد، سرویس Gas کل پرداخت تراکنش را به صورت ETH دریافت می‌کند و نیازی به پرداخت ماتیک از سوی فراخواننده برای اجرای تراکنش در زنجیره مقصد Polygon نیست.
 
-The following are the two more relevant functions you will need to be familiar with in regards to the Gas Service.
+در ادامه دو عملکرد مرتبط‌تر که باید در رابطه با خدمات گاز با آنها آشنا باشید، آورده شده است.
 
 ## payNativeGasForContractCall()
 
-This function allows you to pay for the entirety of an interchain transaction in the native token of the source chain. It takes five relevant parameters:
+این عملکرد به شما امکان می‌دهد تا کل تراکنش بین زنجیره‌ای را با توکن بومی زنجیره مبدا پرداخت کنید. پنج پارامتر مرتبط را می‌پذیر:
 
-1. `sender`: The address making the payment
-2. `destinationAddress`: The address on the destination chain the transaction is sent to
-3. `destinationChain`: The name of the destination the transaction is sent to
-4. `payload`: The message that is being sent
-5. `refundAddress`: The address any refunds should be sent to if too much gas was sent along with this transaction.
+1. «فرستنده»: آدرسی که پرداخت را انجام می‌دهد
+2. `destinationAddress`: آدرسی در زنجیره مقصد که تراکنش به آن ارسال می‌شود
+3. `destinationChain`: نام مقصدی که تراکنش به آن ارسال می‌شود
+4. «بار مفید»: پیامی که ارسال می‌شود
+5. «آدرس بازپرداخت»: آدرسی که در صورت ارسال بیش از حد سوخت همراه با این تراکنش، باید هرگونه بازپرداخت به آن ارسال شود.
 
-The parameters overlap with the parameters required by the `callContract()` function in the Gateway contract. The two parameters not discussed in the Gateway section are `sender` and `refundAddress`. The sender is the address paying for the transaction and the refund address is the address that will receive any surplus funds sent to the gas service.
+پارامترها با پارامترهای مورد نیاز تابع `callContract()` در قرارداد Gateway همپوشانی دارند. دو پارامتری که در بخش Gateway مورد بحث قرار نگرفته‌اند، «sender» و «refundAddress» هستند. فرستنده، آدرسی است که هزینه تراکنش را پرداخت می‌کند و آدرس بازپرداخت، آدرسی است که هرگونه وجه مازاد ارسالی به سرویس گاز را دریافت خواهد کرد.
 
-## payNativeGasForContractCallWithToken()
+## تابع () payNativeGasForContractCallWithToken
 
-This function allows you to pay for the entirety of an interchain transaction (that includes a token transfer) in the native token of the source chain. It takes seven relevant parameters:
+این عملکرد به شما امکان می‌دهد تا کل تراکنش بین زنجیره‌ای (که شامل انتقال توکن نیز می‌شود) را با توکن بومی زنجیره مبدا پرداخت کنید. هفت پارامتر مرتبط را می‌پذیرد:
 
-1. `sender`: The address making the payment
-2. `destinationAddress`: The address on the destination chain the transaction is sent to
-3. `destinationChain`: The name of the destination the transaction is sent to
-4. `payload`: The message that is being sent
-5. `symbol`: The symbol of the token that was sent
-6. `amount`: The amount of the token that was sent
-7. `refundAddress`: The address any refunds should be sent to if too much gas was sent along with this transaction.
+1. «فرستنده»: آدرسی که پرداخت را انجام می‌دهد
+2. `destinationAddress`: آدرسی در زنجیره مقصد که تراکنش به آن ارسال می‌شود
+3. `destinationChain`: نام مقصدی که تراکنش به آن ارسال می‌شود
+4. «بار مفید»: پیامی که ارسال می‌شود
+5. `symbol`: نماد توکنی که ارسال شده است
+6. «مقدار»: مقدار توکنی که ارسال شده است
+7. «آدرس بازپرداخت»: آدرسی که در صورت ارسال بیش از حد سوخت همراه با این تراکنش، باید هرگونه بازپرداخت به آن ارسال شود.
 
-This function is nearly identical to the first top one the main difference being that it is used for message + token transfer transactions as opposed to just interchain message transactions (aka GMP Transactions). As a result the GasService needs to also know the `symbol` and `amount` of the token that is being sent.
+این تابع تقریباً مشابه تابع اول است، با این تفاوت که برای تراکنش‌های انتقال پیام + توکن استفاده می‌شود، نه فقط تراکنش‌های پیام بین زنجیره‌ای (معروف به تراکنش‌های GMP). در نتیجه، GasService باید «نماد» و «مقدار» توکن ارسالی را نیز بداند.
