@@ -1,25 +1,25 @@
-## Performing a Trusted Setup
+## To do trusted setup
 
-1. **Access the Setup and Exports Section**:
+1. **Access di setup and export section**:
 
-- After successful compilation, the **Setup and Exports** section becomes available in the plugin.
+- After plenty compilation di **Setup and Exports** section dey available for di plugin.
 
-2. **Select Proving Scheme**:
+2. **To select Proving Scheme**:
 
-- Choose **Groth16** from the **Proving Scheme** dropdown.
+- Choose **Groth16** from de **Proving Scheme** dropdown.
 
-3. **Select Power of Tau File**:
+3. **Select Di Power of Tau File**:
 
-- Choose the appropriate **Power of Tau** file from the dropdown. If unsure, use the default option.
+- Pick di correct **Power of Tau** file from di dropdown. If you no sure use di default option.
 
-4. **Export Verification Key and Contract** (optional):
+4. **Export Verification Key and Im Contract** (e dey optional):
 
-- Enable **Export Verification Key** to save the verification key to the File Explorer.
-- Enable **Export Verifier Contract** to save the Solidity contract for on-chain verification.
+- Enable **Export Verification Key** to take save de verification key to de File Explorer.
+- Enable **Export Verifier Contract** to save de Solidity contract for on-chain verification.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-5/images/trusted_setup.png" alt="trusted-setup" width=330 height=350>
 
-5. **Run the Trusted Setup**:
+5. **Run di Trusted Setup**:
 
-- Click on the **Run Setup** button.
-- Wait for the process to complete. This may take some time depending on the circuit complexity.
+- Click de **Run Setup** button.
+- Wait make de process complete. E fit take time depending on de circuit complexity.
