@@ -1,7 +1,7 @@
 ---
 id: دیباگ کدهای عملیاتی
 name: دستورها عملیاتی در دیباگر
-summary: Using the Debugger, we'll check out what the CODECOPY opcode does and how it is used by the EVM during contract creation.
+summary: با استفاده از دیباگر، بررسی خواهیم کرد که عملگر CODECOPY چه کاری انجام می‌دهد و چگونه توسط EVM در حین ایجاد قرارداد استفاده می‌شود.
 level: 3
 tags:
   - ریمیکس
