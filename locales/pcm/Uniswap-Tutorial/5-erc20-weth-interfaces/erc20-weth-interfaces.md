@@ -18,35 +18,35 @@ For dis line 83 we talk di `balanceOf` function. Dis function return di balance 
 
 For dis line 85 we talk di `balanceOf` function. Dis function dey transfer tokens from im sender go di specified recipient.
 
-### 4. allowance
+### 4. dis na allowance
 
-On line 87, we define the `allowance` function. This function returns the amount of tokens that the spender is allowed to spend on behalf of the owner.
+Di line 87 define im allowance function. Dis function dey return im amount of token wey di spender allow spend on im behalf of di owner.
 
-### 5. approve
+### dis na 5. approve am
 
-On line 89, we define the `approve` function. When called, this function approves a spender to spend the specified amount of tokens on behalf of the sender.
+For line 89 define the `approve` function. When di function approve im spender to spend di specified amount of im token on behalf of di sender.
 
-### 6. transferFrom
+### na 6. dis na transferFrom
 
-On line 91, we define the `transferFrom` function. This function transfers tokens from the specified sender to the recipient. The function can only be called by the spender if the spender is allowed to spend the specified amount of tokens on behalf of the sender.
+For line 91 e define the `transferFrom` function. Dis function transfer token from di specified sender go di recipient. Di function fit call di spender if di spender allow to spend di specified amount of im token on im behalf.
 
-### 7. Events
+### dis na 7. Im event
 
-On lines 102-103, we define the `Transfer` and `Approval` events. These events are emitted when the `transfer` and `approve` functions are called, respectively.
+For line 102-103, we fit define di `Transfer` and `Approval` events. Dis event dey comot when di transfer and `approve` functions are called, respectively.
 
-## IWETH Interface
+## Dis na IWETH Interface
 
-On line 106, we define the `IWETH` interface. This interface extends the `IERC20` interface and defines two additional functions:
+Di line 106, we define di `IWETH` interface. Dis interface di extend di `IERC20` interface and defines two additional functions:
 
-### 1. deposit
+### 1. dem deposit
 
-On line 107, we define the `deposit` function. This function deposits ETH into the contract and returns the equivalent amount of WETH. This function is used to wrap ETH into WETH.
-We need to wrap ETH into WETH because the Uniswap V3 Swap contract only supports ERC-20 tokens.
+For line 107, we define di `deposit` function. Dis function deposits ETH for im contract and return di equivalent amount of WETH. Dis function dey used wrap ETH into WETH.
+We need to wrap ETH into WETH becuz di Uniswap V3 swap contract only di support ERC-20 tokens.
 
-### 2. withdraw
+### 2. dis na withdraw
 
-On line 109, we define the `withdraw` function. This function withdraws the specified amount of WETH from the contract and returns the equivalent amount of ETH. This function is used to unwrap WETH into ETH.
+For di line 109, we define di `withdraw` function. Dis function withdraws di specified amount of WETH from di contract and returns the equivalent amount of ETH. Dis function dey use unwrap WETH into ETH.
 
-## Conclusion
+## Dis Conclusion
 
-In this tutorial, we explored the Uniswap V3 Swap contract.  To get a full sense of how Uniswap works, try making some swaps on the <a href="https://app.uniswap.org/" target="_blank">Uniswap DApp</a> and go to the <a href="https://docs.uniswap.org/" target="_blank">Uniswap docs</a>.
+Di tutorial we explored di Uniswap V3 Swap contract.  To fit get full sense of how di uniswap works, try make some swaps for di <a href="https://app.uniswap.org/" target="_blank">Uniswap DApp</a> and go to the <a href="https://docs.uniswap.org/" target="_blank">Uniswap docs</a>.
