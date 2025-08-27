@@ -1,12 +1,12 @@
-In this section, we will create our metadata and store it in a decentralized way.
+در این بخش، ما ابرداده‌های خود را ایجاد کرده و آنها را به صورت غیرمتمرکز ذخیره خواهیم کرد.
 
-IPFS ( InterPlanetary File System) is a peer-to-peer network for storing files in a distributed way. Pinata.cloud is a pinning service that allows users to easily host files on the IPFS network.
+IPFS (سیستم فایل بین سیاره‌ای) یک شبکه نظیر به نظیر برای ذخیره فایل‌ها به صورت توزیع‌شده است. Pinata.cloud یک سرویس پین کردن است که به کاربران امکان می‌دهد به راحتی فایل‌ها را در شبکه IPFS میزبانی کنند.
 
-We want to host our images and the JSON files with their metadata on IPFS.
+ما می‌خواهیم تصاویر و فایل‌های JSON خود را به همراه متادیتای آنها در IPFS میزبانی کنیم.
 
-### Create Image Folder
+### ایجاد پوشه تصویر
 
-In this example, we will create metadata for three tokens. As you can see below, we create three images that we stored in a folder.
+در این مثال، ما برای سه توکن، متادیتا ایجاد خواهیم کرد. همانطور که در زیر می‌بینید، ما سه تصویر ایجاد می‌کنیم که آنها را در یک پوشه ذخیره کرده‌ایم.
 
 ```
 geo-img
@@ -15,30 +15,30 @@ geo-img
 ├── geo_3.png
 ```
 
-### Register on Pinata
+### در پیناتا ثبت نام کنید
 
-Now, we want to host these images somewhere so we can point to them in the metadata of our tokens. Let's do it in a decentralized way and use Pinata to host them on IPFS.
+حالا می‌خواهیم این تصاویر را در جایی میزبانی کنیم تا بتوانیم در متادیتای توکن‌هایمان به آنها اشاره کنیم. بیایید این کار را به صورت غیرمتمرکز انجام دهیم و از پیناتا برای میزبانی آنها در IPFS استفاده کنیم.
 
-First you need an account on Pinata. Go to <a href="https://app.pinata.cloud/register" target="_blank">Pinata.cloud</a> and create an account. On Pinata you can upload up to 1 GB of data for free.
+ابتدا به یک حساب کاربری در پیناتا نیاز دارید. به <a href="https://app.pinata.cloud/register" target="_blank">Pinata.cloud</a> بروید و یک حساب کاربری ایجاد کنید. در پیناتا می‌توانید تا ۱ گیگابایت داده را به صورت رایگان آپلود کنید.
 
-Once you have signed up, you should be in the Pin Manager view.
+پس از ثبت نام، باید در نمای مدیریت پین Pin Managerباشید.
 
 <img src="https://i.imgur.com/yKpD65m.png" alt="Pin Manager Pinata" width="300"/>
 
-### Upload Images to IPFS
+### آپلود تصاویر در IPFS
 
-Click on the upload button and upload the folder with your images.
-Once you've uploaded your folder, you should see the name of your folder and the CID (content identifier) associated with it. If the content in the folder changes, the CID will also change.
+روی دکمه آپلود کلیک کنید و پوشه حاوی تصاویر خود را آپلود کنید.
+پس از آپلود پوشه، باید نام پوشه و CID (شناسه محتوا) مرتبط با آن را مشاهده کنید. اگر محتوای پوشه تغییر کند، CID نیز تغییر خواهد کرد.
 
-To access your folder on IPFS, enter this address "https://ipfs.io/ipfs/" and add your CID. For our current example, you can access your folder by using: <a href="https://ipfs.io/ipfs/QmTJok2tju9zstjtAqESdZxTiUiFCBAyApHiDVj4maV75P" target="_blank">
+برای دسترسی به پوشه خود در IPFS، آدرس "https://ipfs.io/ipfs/" را وارد کنید و CID خود را اضافه کنید. برای مثال فعلی ما، می‌توانید با استفاده از این آدرس به پوشه خود دسترسی پیدا کنید: <a href="https://ipfs.io/ipfs/QmTJok2tju9zstjtAqESdZxTiUiFCBAyApHiDVj4maV75P" target="_blank">
 https://ipfs.io/ipfs/QmTJok2tju9zstjtAqESdZxTiUiFCBAyApHiDVj4maV75P </a>
 
-You can access a specific image by using: <a href="https://ipfs.io/ipfs/QmTJok2tju9zstjtAqESdZxTiUiFCBAyApHiDVj4maV75P/geo_1.png" target="_blank">
+شما می‌توانید با استفاده از موارد زیر به یک تصویر خاص دسترسی پیدا کنید: <a href="https://ipfs.io/ipfs/QmTJok2tju9zstjtAqESdZxTiUiFCBAyApHiDVj4maV75P/geo_1.png" target="_blank">
 https://ipfs.io/ipfs/QmTJok2tju9zstjtAqESdZxTiUiFCBAyApHiDVj4maV75P/geo_1.png </a>
 
-### Create JSON files
+### فایل های JSON ایجاد کنید
 
-We create another folder where we store three JSON files.
+ما یک پوشه دیگر ایجاد می‌کنیم که در آن سه فایل JSON ذخیره می‌کنیم.
 
 ```
 geo-json
@@ -47,26 +47,26 @@ geo-json
 ├── 2
 ```
 
-Inside the JSON files, create the metadata for the tokens, like name, description, and image.
-For the image URL, we are going to use the URL of our images on IPFS. You can add additional data if you like; in this example, we added some unique attributes for each token.
+درون فایل‌های JSON، متادیتاهای مربوط به توکن‌ها، مانند نام، توضیحات و تصویر را ایجاد کنید.
+برای آدرس تصویر، ما از آدرس تصاویر خود در IPFS استفاده خواهیم کرد. در صورت تمایل می‌توانید داده‌های اضافی اضافه کنید؛ در این مثال، ما برای هر توکن چند ویژگی منحصر به فرد اضافه کردیم.
 
-This is how the JSON for the first token could look:
+JSON مربوط به اولین توکن می‌تواند به این شکل باشد:
 
 ```
 {
-    "name": "Geometry#0",
-    "description": "Geometry is an NFT collection for educational purposes.",
-    "image": "https://ipfs.io/ipfs/QmTJok2tju9zstjtAqESdZxTiUiFCBAyApHiDVj4maV75P/geo_1.png
+"name": "Geometry#0",
+"description": "Geometry یک مجموعه NFT برای اهداف آموزشی است.",
+"image": "https://ipfs.io/ipfs/QmTJok2tju9zstjtAqESdZxTiUiFCBAyApHiDVj4maV75P/geo_1.png
 ",
-    "attributes": [
-        { "trait_type": "background", "value": "cyan" },
-        { "trait_type": "color", "value": "red" },
-        { "trait_type": "shape", "value": "circle" }
-    ]
+"attributes": [
+{ "trait_type": "background", "value": "cyan" },
+{ "trait_type": "color", "value": "red" },
+{ "trait_type": "shape", "value": "circle" }
+]
 }
 ```
 
-This is how the JSON for the second token could look:
+JSON مربوط به توکن دوم می‌تواند به این شکل باشد:
 
 ```
 {
@@ -81,21 +81,20 @@ This is how the JSON for the second token could look:
 }
 ```
 
-As shown above, the folder in this example is called "geo-json". Inside this folder, we have three JSON files.
-The first JSON file is called "0", the second JSON file is called "1", and the third JSON file is called "2".
+همانطور که در بالا نشان داده شده است، پوشه در این مثال "geo-json" نام دارد. درون این پوشه، سه فایل JSON داریم.
+اولین فایل JSON با نام "0"، دومین فایل JSON با نام "1" و سومین فایل JSON با نام "2" شناخته می‌شود.
 
-Make sure that your JSON files don't have a file ending and are named like their corresponding tokenIds.
-In the pin manager on pinata.cloud, click on the upload button and upload the folder with your JSON files.
+مطمئن شوید که فایل‌های JSON شما پسوند file نداشته باشند و مانند tokenId های مربوط نامگذاری شوند.
+در قسمت مدیریت پین در pinata.cloud، روی دکمه آپلود کلیک کنید و پوشه حاوی فایل‌های JSON خود را آپلود کنید.
 
-To access your folder on IPFS, enter this address "https://ipfs.io/ipfs/" and add your CID.
-For our current example, you can access your folder by using: <a href="https://ipfs.io/ipfs/QmVrsYxXh5PzTfkKZr1MfUN6PotJj8VQkGQ3kGyBNVKtqp" target="_blank">
+برای دسترسی به پوشه خود در IPFS، آدرس "https://ipfs.io/ipfs/" را وارد کنید و CID خود را اضافه کنید.
+برای مثال فعلی ما، می‌توانید با استفاده از موارد زیر به پوشه خود دسترسی پیدا کنید: <a href="https://ipfs.io/ipfs/QmVrsYxXh5PzTfkKZr1MfUN6PotJj8VQkGQ3kGyBNVKtqp" target="_blank">
 https://ipfs.io/ipfs/QmVrsYxXh5PzTfkKZr1MfUN6PotJj8VQkGQ3kGyBNVKtqp </a>
-This will become our baseURI.
+این آدرس، آدرس پایه ما خواهد بود.
 
-You can access a specific JSON file then by just adding a slash and the tokenId by using: <a href="https://ipfs.io/ipfs/QmVrsYxXh5PzTfkKZr1MfUN6PotJj8VQkGQ3kGyBNVKtqp/0" target="_blank">
+شما می‌توانید با اضافه کردن یک اسلش و شناسه توکن tokenId با استفاده از دستور زیر به یک فایل JSON خاص دسترسی پیدا کنید: <a href="https://ipfs.io/ipfs/QmVrsYxXh5PzTfkKZr1MfUN6PotJj8VQkGQ3kGyBNVKtqp/0" target="_blank">
 https://ipfs.io/ipfs/QmVrsYxXh5PzTfkKZr1MfUN6PotJj8VQkGQ3kGyBNVKtqp/0 </a>
 
-In the contract, replace the baseURI with your own baseURI. In this example, the baseURI consists of the URL
-"https://ipfs.io/ipfs/", the CID containing the JSON files, and a slash at the end "/".
+در قرارداد، baseURI را با baseURI خودتان جایگزین کنید. در این مثال، baseURI شامل URL است.
 
-An individual tokenURI will now be created for each token by adding the tokenId to the baseURI — exactly what we did manually in the example above to access the JSON file.
+اکنون با اضافه کردن tokenId به baseURI، برای هر توکن یک tokenURI مجزا ایجاد می‌شود - دقیقاً همان کاری که ما در مثال بالا برای دسترسی به فایل JSON به صورت دستی انجام دادیم.
