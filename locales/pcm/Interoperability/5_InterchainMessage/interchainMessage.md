@@ -1,53 +1,53 @@
-In this section we will create a contract that will send a "hello world" message between two blockchains.
+For dis section we go create contract wey go send hello world give two blockchain.
 
-## Constructor
+## Di constructor
 
-The first thing you will need to create is the `constructor` for the function. This will allow you to set the `Gateway` and `Gas Service` contracts we discussed in the previous sections.
+Di first in to do na to crate di constructor for di work. E go allow makenyou set gateway and gas service contract as discuss for oda section.
 
-When deploying the contract you will pass in the address of the `Gateway` and `GasService` for Ethereum Sepolia those addresses are `0xe432150cce91c13a887f7D836923d5597adD8E31` for the Gateway and `0xbE406F0189A0B4cf3A05C286473D23791Dd44Cc6` for the Gas Service.
+Wen you dey deploy contract you go pass di adress of di gateway and gas service for Ethereum Sepolia dose adress dem be 0xe432150cce91c13a887f7D836923d5597adD8E31`for di Gateway and`0xbE406F0189A0B4cf3A05C286473D23791Dd44Cc6\` for di Gas Service.
 
-For the full list of relevant Axelar addresses <a href="https://docs.axelar.dev/resources/contract-addresses/testnet" target="_blank">see here</a>
+For di full list of di relevant Axelar address <a href="https://docs.axelar.dev/resources/contract-addresses/testnet" target="_blank">check here</a>
 
-## Send Interchain Message
+## Send message wey dey interchain
 
-Now that the constructor has set the relevant Axelar addresses needed to trigger an interchain transaction you can move on to the `setRemoteValue()`, which will trigger this transaction.
+Now wey di constructor don set di relevant Axelar address wey e need to take trigger interchain transaction you fit move dey go `setRemoteValue()`, wey go trigger dis transaction.
 
-This function takes three parameters:
+Di function dey take three parameta:
 
-1. `_destinationChain`: The chain which the transaction is going to
-2. `_destinationAddress`: The address on the destination chain the transaction will execute at
-3. `_message`: The message being passed to the destination chain
+1. `_destinationChain`: Di chain ey di transation dey go
+2. `_destinationAddress`: Di adress for di destination chain transaction go execute for
+3. `_message`: Di message wey dem pass go di destination chain
 
-First, you have a `require` statement which ensures that the `msg.value` contains a value. This `msg.value` will be used to pay the `GasService`. If no funds were sent, then the transaction should be reverted as the transaction cannot execute on the Axelar blockchain and destination chain without any gas.
+First you go need statement wey dey ensure say di `msg.value` get value. Dis msg.value`dem go use am pa`GasService\`. If dem no send moni den di transaction go go back as di transaction no fit execute for Alexar blockchain and destination chain wey gas no dey.
 
-Next, you encode the `_message` that was passed in. Notice that the `_message` is set as a `string` type. Axelar expects this message to be submitted as a `bytes` type so to convert the `string` to `bytes` you simply pass it through `abi.encode()`.
+Next you go encode di message wey dem pass. You o notice say di message na set of string type. Alexar dey expect say dis message dem go submit am as bytes type so to take convert di string go bytes you go simply pass am through `abi.encode()`.
 
-Now, with your message encoded you can begin to interact with the `GasService` and the `Gateway`
+Now wey your gas don encode you go start to dey follow gas sevice and di gateway talk
 
-To pay for the entire interchain transaction you will trigger the function `payNativeGasForContractCall`, which is defined in the `GasService`.
+To pay for di entire interchain transaction you go trigger di function `payNativeGasForContractCall`, wey dem define for gas service.
 
-This function needs the parameters explained earlier in the GasService section. The `sender` for this transaction will be this contract, which is `address(this)`. The `destinationChain` and `destinationAddress` can simply be passed in from this functions parameters, the `payload` is the encoded \_message we wrote earlier. Finally, you need to specify what the refund address is, this can be the address that triggers this function, which you get by writing `msg.sender`.
+Dis function need di parameter wey dem explain for start in di GasService section. Di sender for dis transaction dey dis contract, wey be address(dis)'. Di destination chin and di destination adress dem fit pass am from dis function parameters di payload na di encoded message wey we write before. Last last you go need specify wetin di refund adress be e fit be di adress wey dey trigger dis function wey you go get as you dey write `msg.sender`.
 
-Once you trigger this function you will have successfully sent a transaction from the source chain via Axelar to the destination chain! But there is still one final step that needs to be complete.
+Once you trigger dis function you don successfully send transaction from di source chin through Alexar go di destinaton chain! But one step dey wey person go need complete.
 
-### Receive Message on Destination Chain
+### Make you collect emssage for destination chain
 
-On the destination chain the inbound interchain transaction needs to be picked up and handled by the `AxelarExecutable`'s `_execute()` function.
+For di destination chain di inbound interchain transaction dem need to pick am up make `AxelarExecutable`'s `_execute()` function handle am.
 
-The `_execute()` function is defined in the `AxelarExecutable` contract so when defining this function you must remember to include the `override` keyword.
+Di `_execute()` function im meaning dey for `AxelarExecutable` contract so wen you dey define dis function you go remember say you go need include di override keyword.
 
-This function takes three parameters.
+Di function dey take three parameta.
 
-1. `_sourceChain`: The blockchain which the transaction has originated from
-2. `_sourceAddress`: The address on the source chain which the transaction has been sent from
-3. `_payload`: The message that has been sent from the source chain
+1. `_sourceChain`: The blockchain wey di transaction come from
+2. `_sourceAddress`: Di address for di source chain ey dem send di transaction from
+3. `_payload`: Dem don send di message from di source chain
 
-The first thing that needs to be done in this contract is to get access to your `message` that was sent. Recall, before sending the message it was sent through `abi.encode()` to convert the message from type `string` to type `bytes`. To convert your message back from type `bytes` to type `string` simply pass the `_payload` to the function `abi.decode()` and specify that you want the `_payload` decoded to type `string`. This will return the message as a string.
+Di first thing ey you go need do for dis contract na to get access to your message wey dem send. Remember, before you send di message dem send am through `abi.encode()`to turn di message from type string to type bytes. To turn di message back frm type bytes go type string just pass di overload go di function abi decode am come secify say you want di payload make e decode go back string. E go return di message as string.
 
-Now that you have your message as a type string you can set the `sourceChain` and `sourceAddress` storage variables as `_sourceChain` and `_sourceAddress` to have an easy reference to the data that was passed in. You can also emit the `Executed` event with the `sourceAddress` and `message` event that you just decoded.
+Now wey you don get your message as type string you fit set di `sourceChain`and `sourceAddress` storage variable as `_sourceChain` and `_sourceAddress` to fit get reference give di data wey dem pass come. You fit commot di `Executed` event wit di `sourceAddress` and `message` event wey you just decode.
 
-Great! At this point you are now handling the interchain transaction on the destination chain.
+Make sense! Like dis now you dey handle di interchain for destination chain.
 
-To interact with this contract make sure you deploy it on at least two blockchains so that you can call `setRemoteValue()` from the one chain and then have the `_execute()` function automatically triggered on another chain. You will be able to query the `sourceChain` and `sourceAddress` variables on the destination chain to ensure that the interchain execution worked correctly.
+To fit relate wit dis contract make sue say you deploy am for at least two blockchain so you go call `setRemoteValue()` from di one chain and den have di `_execute()` function wey go just trigger from anoda chain. You go fit query di `sourceChain` and `sourceAddress` variables for di destination chain to make sure say di interchain execution work well well.
 
-To view the full step by step of the interchain transaction checkout the <a href="https://testnet.axelarscan.io" target="_blank">Axelarscan (testnet) block explorer</a>.
+To fit see di full step of di interchain transaction go check di <a href="https://testnet.axelarscan.io" target="_blank">Axelarscan (testnet) block explorer</a>.
