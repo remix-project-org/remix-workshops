@@ -7,31 +7,31 @@ Navega hasta `scripts/groth16/groth16_zkproof.ts`. Este script genera la prueba 
 #### Cargando archivos:
 
 - Lee los archivos R1CS y WASM generados a partir del circuito.
-- Loads the final proving key (`zkey_final`) and verification key (`vKey`).
+- Carga la llave de prueba final (`zkey_final`) y verifica la llave (`vKey`).
 
-#### Defining Inputs:
+#### Definiciones de Entradas (Inputs):
 
-- Sets the private values (`value1`, `value2`, `value3`, `value4`).
-- Computes the `hash` using Poseidon from [CircomLib](https://github.com/iden3/circomlib).
+- Conjunto de valores privados (`value1`, `value2`, `value3`, `value4`).
+- Calcula el `hash` usando Poseidon desde [CircomLib](https://github.com/iden3/circomlib).
 
-#### Witness Calculation and Proof Generation:
+#### Cálculo de Testigo y Generación de Prueba:
 
-- Calculates the witness (`wtns`).
-- Checks the witness against the `R1CS`.
-- Generates the proof using `Groth16`.
-- Verifies the proof.
+- Calcula el testigo (`wtns`).
+- Compara el testigo contra el `R1CS`.
+- Genera la prueba usando `Groth16`.
+- Verifica la prueba.
 
-#### Exporting Verifier Contract and Inputs:
+#### Exportando Contratos e Inputs de Verificador:
 
-- Generates a Solidity verifier contract.
-- Exports the proof inputs to `input.json`.
+- Genera un Contrato verificador en Solidity.
+- Exporta los inputs de prueba hacía `input.json`.
 
-### Purpose
+### Propósito
 
-- Generates a zero-knowledge proof that the prover knows values hashing to a specific hash.
-- Prepares the verifier contract and inputs for on-chain verification.
+- Generar una prueba de conocimiento cero que el probador conocen los valores de hash de un hash en específico.
+- Prepara el contrato del verificador y sus inputs para una verificación en cadena.
 
-### Execute the Script
+### Ejecuta el Script
 
-- Click the play button in the editor, or right-click the file and select "Run".
-- Wait for the script to complete and `"zk proof validity"` logged in the terminal.
+- Dale click al botón de empezar en el editor, o click derecho en el archivo y selecciona "Ejecutar".
+- Espera a que el script se complete y a que la "validez de pruebas zk" inicie sesion en el terminal.
