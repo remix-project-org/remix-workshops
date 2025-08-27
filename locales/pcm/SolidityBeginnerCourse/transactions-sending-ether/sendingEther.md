@@ -1,54 +1,54 @@
-In this section, we will learn how a contract can send and receive Ether.
+Inside dis section, we go learn how contract fit send and receive Ether.
 
-### Sending Ether
+### To send Ether
 
-We have three different options to transfer Ether: `transfer()`, `send()` and `call()`.
+We get three different options to transfer Ether: `transfer()`, `send()` and `call()`.
 
 #### **transfer**
 
 `<address payable>.transfer(uint256 amount)`
 
-- `transfer()` throws an exception on failure
-- Forwards a fixed 2300 gas stipend
+- `transfer()` e dey throw exception ontop failure
+- E dey forward a fixed 2300 gas stipend
 
-An example of `transfer()` can be seen in the `SendEther` contract (line 35).
-**`Transfer()` is not recommended to be used anymore.**
+Yu fit see example of `transfer()` inside di `SendEther` contract (line 35).
+**`Transfer()` no dey recommended to use like before again.**
 
 #### **send**
 
 `<address payable>.send(uint256 amount) returns (bool)`
 
-- `send()` returns false on failure
-- Forwards a fixed 2300 gas stipend
+- `send()` e dey return false if e fail
+- E dey forward a fixed 2300 gas stipend
 
-An example of `send()` can be seen in the `SendEther` contract (line 41).
-**`Send()` is not recommended to be used anymore.**
+Yu fit see example of `send()` inside the `SendEther` contract (line 41).
+**`Send()` no dey recommended to dey use like before.**
 
 #### **call**
 
-`<address>.call(bytes memory) returns (bool, bytes memory)`
+`<address>.call(bytes memory) dey return (bool, bytes memory)`
 
-- `call()` returns false on failure
-- Forwards the maximum amount of gas, but this is adjustable
+- `call()` e dey return false if e fail
+- E dey forward d maximum amount of gas, but dem fit adjust am
 
-An example of `call()` can be seen in the `SendEther` contract (line 48).
-`Call()` is currently recommended if you are transfering Ether.
+Yu fit see example of `call()` inside di `SendEther` contract (line 48).
+`Call()` no dey recommended like before again if you dey transfer Ether.
 
-The reason `transfer()` and `send()` were introduced was to guard against _reentry attacks_ by limiting the forwarded gas to 2300, which would be insufficient to make a reentrant call that can modify storage.
+Di reason dem inrtoduce `transfer()` and `send()` na to guard against _reentry attacks_ by limiting di forwarded gas to 2300, wey go con dey insufficient to make a reentrant call wey fit modify storage.
 
-As we discussed in the last section, each operation on Ethereum has a specific cost associated with it. Certain operations have become more cost intensive over time, so the gas costs associated with them are also raised. When gas costs for operations are subject to change it is not good to use a hardcoded gas amount like transfer(), and send() do.
+As we don discuss for di last section, each operation ontop Ethereum get specific cost wey dem associate with am. Certain operations don dey more expensive with time, so the gas costs wey dey associated with them are don also increase. When dem change gas costs for operations e no good to use hardcoded gas amount like transfer(), and send() do am.
 
-That’s why `call()` instead of `transfer()` is now recommended to send Ether.
+Na why `call()` instead of `transfer()` dey recommended now to dey send Ether.
 
-Learn more about the subject in this <a href="https://consensys.net/diligence/blog/2019/09/stop-using-soliditys-transfer-now/" target="_blank">Consensys blog post</a>.
+Yu fit Learn more about d subject inside here <a href="https://consensys.net/diligence/blog/2019/09/stop-using-soliditys-transfer-now/" target="_blank">Consensys blog post</a>.
 
 ### Reentrancy attack
 
-A _reentrancy attack_ occurs when a function makes an external call to an untrusted contract and the attacker uses the contract to make recursive calls back to the original function before it finishes its execution. Through this method, the attacker can drain funds and manipulate data in unintended ways.
+A _reentrancy attack_ dey occur when function make external call go meet untrusted contract nd the attacker con use di contract make recursive calls back go di original function before e finish hin execution. With this kind method, the attacker fit drain funds and manipulate data for unintended ways.
 
-To guard against a _reentrancy attack_, all state changes should be made before calling an external contract. This is also called the <a href="https://docs.soliditylang.org/en/latest/security-considerations.html#re-entrancy" target="_blank">Checks-Effects-Interactions</a> pattern.
+To fit guide against a _reentrancy attack_, do all state changes before u call an external contract. Dem dey also call am <a href="https://docs.soliditylang.org/en/latest/security-considerations.html#re-entrancy" target="_blank">Checks-Effects-Interactions</a> pattern.
 
-Another way to prevent reentrancy is to use a _Reentrancy Guard_ that checks for such calls and rejects them. You can see an example of this in the contract in our modifier section or a more gas-efficient version on <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/ReentrancyGuard.sol" target="_blank">Open Zepplin</a>.
+Another way to prevent reentrancy na to use a _Reentrancy Guard_ wey go dey check for dat kind calls dey reject them. You fit see hin example inside the contract for our modifier section abi a more gas-efficient version ontop <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/ReentrancyGuard.sol" target="_blank">Open Zepplin</a>.
 
 ### Receiving Ether
 
