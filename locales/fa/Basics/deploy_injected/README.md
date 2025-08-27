@@ -1,21 +1,21 @@
-1. If you don't have a browser wallet like **MetaMask** download and install one now.
+1. اگر کیف پول مرورگری مثل **MetaMask** ندارید، هم اکنون یکی را دانلود و نصب کنید.
 
-2. Click the MetaMask icon in your browser. Sign in and choose the Ephemery test network. You might need to update your wallet's settings so that you can see **test networks**.  Alternatively, you can go to Remix's Deploy & Run transation module and in the ENVIRONMENT section select Ephemery.
+2. بر روی آیکون متاماسک در مرورگر خود کلیک کنید. وارد شوید و شبکه آزمایشی اپه‌مری را انتخاب کنید. شما ممکن است نیاز داشته باشید تنظیمات کیف پول خود را به‌روزرسانی کنید تا بتوانید **شبکه‌های آزمایشی** را مشاهده کنید.  به‌علاوه، می‌توانید به ماژول استقرار و اجرای Remix رفته و در بخش محیط، گزینه Ephemery را انتخاب کنید.
 
-3. Getting test ETH for public test networks is often annoying.  Ephemery is a public network that is refreshed monthly, so getting test ETH should be painless.  Here is a link to some <a href="https://github.com/ephemery-testnet/ephemery-resources?tab=readme-ov-file#faucets" target="_blank">Ephemery faucets</a>.
+3. به دست آوردن اتر تست برای شبکه‌های تست عمومی اغلب خسته‌کننده است.  اپه‌مری یک شبکه عمومی است که به صورت ماهانه تازه‌سازی می‌شود، بنابراین گرفتن ETH آزمایشی باید بدون دردسر باشد.  در اینجا لینکی به برخی از <a href="https://github.com/ephemery-testnet/ephemery-resources?tab=readme-ov-file#faucets" target="_blank">شیرآلات افمری</a> وجود دارد.
 
 ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/deploy_injected/images/testnet.png)
 
-Sepolia is another popular testnet that is not refreshed, so deployments will persist, but Sepolia faucets are more difficult to use.
+Sepolia یک شبکه آزمایشی محبوب دیگر است که بروزرسانی نمی‌شود، بنابراین تعهدات باقی خواهند ماند، اما استفاده از شیرهای Sepolia دشوارتر است.
 
-In your browser wallet make sure that you have NOT selected mainnet or any network that will cost real ETH. In the Deploy & Run module, below the Environment select box, you'll see a badge with the network's ID and for popular chains, its name.  In the case below its Sepolia.
+در کیف پول مرورگر خود مطمئن شوید که شبکه اصلی یا هر شبکه‌ای که هزینه واقعی ETH را داشته باشد انتخاب نکرده‌اید. در ماژول استقرار و اجرا، زیر جعبه انتخاب محیط، می‌توانید یک نشان با شناسه شبکه و برای زنجیره‌های محبوب، نام آن را مشاهده کنید.  در حالت زیر، سپولیا است.
 
 ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/deploy_injected/images/sepolia.png)
 
-5. Make sure you see the 2_Owner.sol as a choice in the **CONTRACT** select box, then click the **Deploy** button.
+5. مطمئن شوید که 2_Owner.sol به عنوان یک گزینه در کادر انتخاب **قرارداد** دیده می‌شود، سپس روی دکمه **اجرا** کلیک کنید.
 
-If the **CONTRACT** select box is empty, you'll need to compile 2_Owner again by making 2_Owner.sol the active file in the **editor** and then go to the **Solidity Compiler** to compile it.
+اگر جعبه انتخاب **قرارداد** خالی است، شما باید دوباره 2_Owner را کامپایل کنید با قرار دادن 2_Owner.sol به عنوان فایل فعال در **ویرایشگر** و سپس به **کامپایلر سالیدیتی** بروید تا آن را کامپایل کنید.
 
-6. After you hit the `Deploy` button, you'll see the browser wallet popup asking you to pay for the transactions.  If you have the appropriate kind of ETH for this chain, approve this transaction.  Check the printout in the terminal.  Once the block is validated, the **deployed instance** will appear at the bottom of Deploy & Run
+6. پس از اینکه بر روی دکمه `Deploy` کلیک کنید، یک پنجره مرورگر برای کیف پول شما باز می‌شود که از شما می‌خواهد هزینه معاملات را پرداخت کنید.  اگر شما نوع مناسب ETH برای این زنجیره را دارید، این تراکنش را تأیید کنید.  پرینت را در ترمینال بررسی کنید.  پس از تأیید بلاک، **نمونه مستقر شده** در انتهای بخش استقرار و اجرا ظاهر خواهد شد
 
-And with that you have finished this tutorial.  You now have experience with opening, compiling, deploying and interacting with Smart Contracts in Remix IDE.
+و با این کار شما این آموزش را به پایان رساندید.  شما اکنون تجربه باز کردن، کامپایل کردن، استقرار و تعامل با قراردادهای هوشمند در محیط توسعه ریمیکس Remix IDE را دارید.
