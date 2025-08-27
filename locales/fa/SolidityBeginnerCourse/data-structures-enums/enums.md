@@ -1,33 +1,33 @@
-In Solidity _enums_ are custom data types consisting of a limited set of constant values. We use enums when our variables should only get assigned a value from a predefined set of values.
+در سالیدیتی، _enums_ نوع داده سفارشی هستند که متشکل از یک مجموعه محدود از مقادیر ثابت می‌باشند. ما از enum ها استفاده می کنیم زمانی که متغیرهای ما باید تنها مقداری از یک مجموعه از پیش تعریف شده از مقادیر نسبت داده شوند.
 
-In this contract, the state variable `status` can get assigned a value from the limited set of provided values of the enum `Status` representing the various states of a shipping status.
+در این قرارداد، متغیر دولتی `status` می‌تواند به یک مقدار از مجموعه محدود مقادیر ارائه شده از نوع enum `Status` که نمایانگر وضعیت‌های مختلف وضعیت حمل و نقل است، اختصاص یابد.
 
-### Defining enums
+### تعریف enum ها
 
-We define an enum with the enum keyword, followed by the name of the custom type we want to create (line 6). Inside the curly braces, we define all available members of the enum.
+ما یک enum را با کلمه کلیدی enum تعریف می کنیم، که به دنبال آن نام نوع سفارشی که می خواهیم ایجاد کنیم، می آید (خط 6). درون آکولادها، تمام اعضای قابل دسترس این شمارش تعریف می‌شوند.
 
-### Initializing an enum variable
+### در حال راه‌اندازی یک متغیر enum
 
-We can initialize a new variable of an enum type by providing the name of the enum, the visibility, and the name of the variable (line 16). Upon its initialization, the variable will be assigned the value of the first member of the enum, in this case, Pending (line 7).
+ما می‌توانیم یک متغیر جدید از نوع enum را با ارائه نام enum، Visibility و نام متغیر (خط 16) مقداردهی اولیه کنیم. با راه‌اندازی آن، به متغیر مقدار اولین عضو از ENUM، در این مورد، در حال انتظار (خط ۷) اختصاص داده می‌شود.
 
-Even though enum members are named when you define them, they are stored as unsigned integers, not strings. They are numbered in the order that they were defined, the first member starting at 0. The initial value of status, in this case, is 0.
+اگرچه اعضای enum هنگام تعریف نامگذاری می‌شوند، اما به عنوان اعداد صحیح بدون علامت ذخیره می‌شوند، نه رشته‌ها. آنها به ترتیبی که تعریف شده‌اند شماره‌گذاری شده‌اند، اولین عضو از 0 شروع می‌شود. مقدار اولیه وضعیت، در این مورد، ۰ است.
 
-### Accessing an enum value
+### دسترسی به یک مقدار enum
 
-To access the enum value of a variable, we simply need to provide the name of the variable that is storing the value (line 25).
+برای دسترسی به مقدار enum یک متغیر، کافی است نام متغیر که مقدار را ذخیره می‌کند ارائه دهیم (خط ۲۵).
 
-### Updating an enum value
+### به‌روزرسانی یک مقدار enum
 
-We can update the enum value of a variable by assigning it the `uint` representing the enum member (line 30). Shipped would be 1 in this example. Another way to update the value is using the dot operator by providing the name of the enum and its member (line 35).
+ما می‌توانیم مقدار enum یک متغیر را با تعیین آن به `uint` که نمایانگر عضو enum است، به‌روز کنیم (خط 30). در این مثال، شمارش شده ۱ خواهد بود. یک روش دیگر برای بروزرسانی مقدار، استفاده از عملگر نقطه‌ای است که با ارائه نامEnum و عضو آن انجام می‌شود (خط ۳۵).
 
-### Removing an enum value
+### حذف یک مقدار انوم
 
-We can use the delete operator to delete the enum value of the variable, which means as for arrays and mappings, to set the default value to 0.
+ما می‌توانیم از عملگر حذف برای حذف مقدار enum متغیر استفاده کنیم، که به معنای این است که برای آرایه‌ها و نگاشت‌ها، مقدار پیش‌فرض را به ۰ تنظیم کنیم.
 
 <a href="https://www.youtube.com/watch?v=yJbx07N15j0" target="_blank">Watch a video tutorial on Enums</a>.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-1. Define an enum type called `Size` with the members `S`, `M`, and `L`.
-2. Initialize the variable `sizes` of the enum type `Size`.
-3. Create a getter function `getSize()` that returns the value of the variable `sizes`.
+1. یک نوع enum با نام `Size` تعریف کنید که اعضای آن `S`، `M` و `L` باشد.
+2. متغیر `sizes` از نوع enum `Size` را مقداردهی اولیه کنید.
+3. یک تابع گیرنده به نام `getSize()` ایجاد کنید که مقدار متغیر `sizes` را برمی‌گرداند.
