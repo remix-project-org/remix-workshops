@@ -1,27 +1,27 @@
-The Axelar executable contains relevant helper functions that will be automatically executed on the destination chain in correspondence to the relevant inbound transaction from the source chain.
+Di Axelar executable get important helper functions wey go dey automatically executed for di final place chain in correspondence to di important inbound transaction from di source chain.
 
-The following are the relevant functions you will need to use from Axelar Executable
+Di following na di important functions wey you go need to use from Axelar Executable
 
 ## \_execute()
 
-This function handles the execution on the destination chain. It takes the following four parameters:
+Dis function dey handle di execution for di final place chain. E dey take di following four parameta:
 
-1. `commandId`: A unique transaction id on the Axelar chain.
-2. `sourceChain`: The blockchain which the transaction has been sent from
-3. `sourceAddress`: The address from the source chain that the transaction has been sent from
-4. `payload`: The message that is being sent
+1. `commandId`: Na unique transaction id dor Di Axelar chain.
+2. `sourceChain`: Di blockchain wey dem send di transaction from
+3. `sourceAddress`: Di address from di source chain wey di transaction dey sent from
+4. `payload`: Di message wey dem send
 
-The `sourceChain` and `sourceAddress` are key parameters which you receive out of the box that can be used for verifying authenticity of messages on the destination chain. The payload (as discussed in the gateway section) is the message that was sent from the source chain to be used on your destination chain. The `commandId` will not be used during the rest of this module.
+Di sourceChain and sourceAddress na key parameters wey you dey receive out of di box wey fit dey use to dey verify authenticity of messages for di final place chain. Di payload like wey we don talk for di gateway section na di message wey dem send from di source chain wey dem go dey use for your final place chain. Di `commandId` no go dey used for di rest of dis module.
 
 ## \_executeWithToken()
 
-This function handles the execution on the destination chain for a message being sent with a fungible token. It takes six relevant parameters:
+Dis function dey handle di execution for di final place chain for message wey dem dey send with fungible token. E dey take six important parameta:
 
-1. `commandId`: A unique transaction id on the Axelar chain.
-2. `sourceChain`: The blockchain which the transaction has been sent from
-3. `sourceAddress`: The address from the source chain that the transaction has been sent from
-4. `payload`: The message that is being sent
-5. `tokenSymbol`: The symbol of the token being sent
-6. `amount`: The amount of that token that is being sent
+1. `commandId`: Na unique transaction id for di Axelar chain.
+2. `sourceChain`: Di blockchain wey dem send di transaction from
+3. `sourceAddress`: Di address from di source chain wey dem send di transaction from
+4. `payload`: Di message wey dem sent
+5. `tokenSymbol`: Di symbol of the token wey dem send
+6. `amount`: Di amount of dat token wey dem send
 
-The first four parameters are identical to that of the `_execute()` function. The final two parameters of `tokenSymbol` and `amount` are in reference to the token that is being sent along with the message. It allows you on the destination chain to interact with the token accordingly, for example transferring it to another receiving address. The `commandId` will not be used during the rest of this module.
+Di first four parameta resemble di `_execute()` function. Di final two parameters of tokenSymbol and amount dey in reference to di token wey dem send join di message. E go gree you for di final place chain to relate with di token accordingly like now to transfer am for anoda receiving address. Di commandos no go dey used for di rest of di module.
