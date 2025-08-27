@@ -2,25 +2,25 @@ For this part, we go use metamask( na Ethereum wallet) take deploy our contract 
 
 ### 1. Download metamask
 
-**1.1** Go to <a href="https://metamask.io/" target="_blank">metamask.io</a>.
+**1.1** Dey go <a href="https://metamask.io/" target="_blank">metamask.io</a>.
 
-**1.2** Click on the download button, then click on install for your browser (e.g. Chrome) and add the extension to your browser.
+**1.2** Click di download button den click install for your browser like now Chrome and put di extension for your browser.
 
-**1.3** Create a wallet as described.
+1.3 make the wallet as we talk am.
 
-### 2. Get testnet token for Sepolia
+### 2. Collect testnet token for sepolia
 
-In order to make transactions on the testnet, we need Ethereum testnet tokens.
+To do transaction for testnet, we gats get Ethereum testnet tokens.
 
-**2.1** Switch your Metamask from "Ethereum Mainnetwork" to "Sepolia Test Network".
+2.1\*\* change your Metamask from "Ethereum Mainnetwork" go "Sepolia Test Network".
 
-**2.2** Go to <a href="https://www.alchemy.com/faucets/ethereum-sepolia" 
-target="_blank">https://www.alchemy.com/faucets/ethereum-sepolia</a>, enter the address of your account and claim testnet ETH.
-Or check the faucets listed on <a href="https://ethereum.org/en/developers/docs/networks/#testnet-faucets" target="_blank">ethereum.org</a> for other options.
+2.2\*\* Go to <a href="https://www.alchemy.com/faucets/ethereum-sepolia" 
+target="_blank">https://www.alchemy.com/faucets/ethereum-sepolia</a>, write the address of your own account con claim testnet ETH.
+Or observe the faucets listed for <a href="https://ethereum.org/en/developers/docs/networks/#testnet-faucets" target="_blank">ethereum.org</a> for plenty options.
 
-### 3. Contract Deployment
+### 3. How to deploy contract
 
-**3.1** In the "DEPLOY & RUN TRANSACTIONS" module of the Remix IDE under "ENVIRONMENT" **select** "Injected Provide-Metamask" (or whatever wallet you are using). It should then ask you to connect your account, which you should confirm. Then in the wallet, connect to the Sepolia network.  You may need to turn on a switch to view test networks. Once connected, there will be a "badge" with Sepolia and its network ID under "Injected Provider".
+**3.1** In the "DEPLOY & RUN TRANSACTIONS" module of the Remix IDE under "ENVIRONMENT" **select** "Injected Provide-Metamask" (or whatever wallet you are using). E go come ask you make u connect your account wey u go confirm. Then inside the wallet connect go sepolia network.  You go gats turn on switch to see test networks. Once connected, there will be a "badge" with Sepolia and its network ID under "Injected Provider".
 
 **3.2** Deploy your token contract and confirm the transaction in Metamask.
 
@@ -36,7 +36,7 @@ Or check the faucets listed on <a href="https://ethereum.org/en/developers/docs/
 
 You should now see the name of the symbol of your token contract (e.g. GEO) in your “Assets” view in Metamask. You should have one of these tokens.
 
-### 5. See your NFT on OpenSea
+### 5. Observe your nft for opensea
 
 <a href="https://opensea.io/" 
 target="_blank">OpenSea </a> is one of the most popular online marketplace for NFTs. OpenSea also provides a version where you can see assets on the testnet, under <a href="https://testnets.opensea.io/" 
@@ -45,6 +45,6 @@ target="_blank">https://testnets.opensea.io/</a>
 **5.1** Go to <a href="https://testnets.opensea.io/login" 
 target="_blank">https://testnets.opensea.io/login</a>.
 
-**5.2** Connect with your Metamask wallet. You should be redirected to your account <a href="https://testnets.opensea.io/account" target="_blank">https://testnets.opensea.io/account</a> view on OpenSea, where you should be able to see your NFT. You should see the image of your NFT; when you click on it, you should see the name, description, and under properties, also the attributes that you created.
+5.2 link your Metamask wallet. You should be redirected to your account <a href="https://testnets.opensea.io/account" target="_blank">https://testnets.opensea.io/account</a> view on OpenSea, where you should be able to see your NFT. You suppose see the picture of your nft, when you tap am. You go see the name, description and hidden properties, and the attribute wey you create too.
 
-If you successfully completed this course and are familiar with the basics of Solidity development, we encourage you to continue your learning journey by learning how to create your own NFT auction contract from the Learneth resources.
+If you don finally finish this course and you dey familiar with basis for solidity development, we go encourage you make you no stop your learning journey based on learning how to make your own NFT auction contract wey dey the Learneth resources.
