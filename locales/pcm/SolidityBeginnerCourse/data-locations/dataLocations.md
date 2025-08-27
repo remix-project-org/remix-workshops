@@ -1,28 +1,28 @@
 For Solidity, variable fit dey for different kain location: _memory_ wey be temporary, _storage_ wey permanent for blockchain, and _calldata_ wey hold the input wey no fit change.
 
-As we have discussed before, variables of the value type store an independent copy of a value, while variables of the reference type (array, struct, mapping) only store the location (reference) of the value.
+As we don talk before, value type variable dey keep hin own copy of value, while reference type variable (array, struct, mapping) dey only store location(position) of di value.
 
-If we use reference type for function, we gats talk where we wan store the value for the data. The price for the execution of the function is influenced by the data location; creating copies from reference types costs gas.
+If we use reference type for function, we gats talk where we wan store the value for di data. Na Data location dey determine money wey you go pay because you use di function; you go pay small money if you use reference create ccopy.
 
-### Storage
+### Main store house
 
-Values stored in _storage_ are stored permanently on the blockchain and, therefore, are expensive to use.
+Value wey you store for _storage_ go dey for blockchain forever na why e cost to use am.
 
-In this contract, the state variables `arr`, `map`, and `myStructs` (lines 5, 6, and 10) are stored in storage. State variables are always stored in storage.
+For dis contract, state variables dem `arr`, `map`, and `myStructs` (lines 5, 6, and 10) dey inside storage. Na for storage na hin dem dey always keep State variables.
 
-### Memory
+### Short time store
 
-Values stored in _memory_ are only stored temporarily and are not on the blockchain. They only exist during the execution of an external function and are discarded afterward. They are cheaper to use than values stored in _storage_.
+Value wey you store for _memory_ no dey tey for the blockchain. Na when you dey use external function na hin e go dey after dat one e go delete. E no cost like value wey you keep for _storage_.
 
-In this contract, the local variable `myMemstruct` (line 19), as well as the parameter `_arr` (line 31), are stored in memory. Function parameters need to have the data location _memory_ or _calldata_.
+For dis contract, di local variable `myMemstruct` (line 19), and parameter `_arr` (line 31) dey for inside memory. Function parameters data location gats be either _memory_ or _calldata_.
 
-### Calldata
+### Store house for di function memory
 
-_Calldata_ stores function arguments. Like _memory_, _calldata_ is only stored temporarily during the execution of an external function. In contrast to values stored in _memory_, values stored in _calldata_ can not be changed. Calldata is the cheapest data location to use.
+_Calldata_ dey keep function values. E be like _memory_ because _calldata_ sef dey only keep am while you dey do external function. No be everything e use take be like _memory_ because e no be like memory wey you fit change value wey dem keep for there. Na calldata cheap pass for data location.
 
-In this contract, the parameter `_arr` (line 35) has the data location _calldata_. If we wanted to assign a new value to the first element of the array `_arr`, we could do that in the `function g` (line 31) but not in the `function h` (line 35). This is because `_arr` in `function g `has the data location _memory_ and _function h_ has the data location `calldata`.
+For dis contract, `parameter _`arr`(line 35) data location na for *calldata*. If we wan give new value to th first element for the lisdt`_arr`, we fit do am for `function g`(line 31) but no be as`function h`(line 35). Na because`_arr`for`function g`dey for *memory* but *function h* dey`calldata\`.
 
-## Assignments
+## Value wey you give variable
 
 ### Memory to memory
 
