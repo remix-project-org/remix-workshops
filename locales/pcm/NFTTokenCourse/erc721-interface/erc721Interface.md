@@ -1,26 +1,26 @@
-ERC721 is a standard for token contracts that manage non-fungible tokens (NFTs) on the Ethereum blockchain.
+ERC721 na di standard for token kontract wey dey manage non fungible token (NFTs) for di ethereum blokchain.
 
-Each non-fungible token is unique and not interchangeable. NFTs can have different properties, behavior, or rights. Non-fungible tokens are used to represent ownership of unique digital and physical assets like art, collectibles, or real estate.
+Everi token wey no dey fungible dey sweet and u no fit change am. NFTs fit get different propati, behaviour or rights. Token wey no dey fungible dem dey use am represent d owner of assets wey unique and dem dey digital and one on one dem arts, collectible or land.
 
-If you want to know more about the ERC721 token standard, have a look at the specifications in its <a href="https://eips.ethereum.org/EIPS/eip-721" target="_blank">Ethereum improvement proposal</a>.
+If you wan sabi plenti on top di ERC721 token standard you go look di specs for im <a href="https://eips.ethereum.org/EIPS/eip-721" target="_blank">Ethereum improvementof im proposal</a>.
 
-## Interface
+## Di intaface
 
-The ERC721 standard is more complex than the ERC20 standard and it features optional extensions. ERC721 compliant contracts must, at a minimum, implement the ERC721 and ERC165 interfaces, which we will look at in this section.
+Di aerc271 dey hard pass di ERC20 standad wit im feature extension wey be less opshion. ERC721 compliant contracts must, to from small dey implement di ERC721 an di ERC165 intaface, wey we go check for dis place.
 
-This interface (line 11) is part of the open-source contract library provided by <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/IERC721.sol" target="_blank">OpenZeppelin</a>.
+Dis intaface (line 11) na part of di open source contrakt library wey <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/IERC721.sol" target="_blank">OpenZeppelin</a> bring.
 
-## Basic IERC721 Functions
+## Di basic IERC721 im function
 
-Contracts compliant with the ERC721 standard have to implement the following functions:
+Contraks wey compli wit di ERC721 standard go need impliment dis functions dem:
 
-### balanceOf
+### di balance na
 
-The function `balanceOf` (line 30) returns the amount of tokens owned by the account with the address `owner`.
+Di function wey dem dey call `balanceOf` (line 30) dey return di amount of tokens wey who get di account wit di address `owner`.
 
-### ownerOf
+### ownaOf
 
-The function `ownerOf` (line 39) returns the address `owner` of the account that holds the token with the id `tokenId`.
+Di function `ownerOf` (line 39) dey return di address `owner` of di account wey dey hold di token wit de id `tokenId`.
 
 ### safeTransferFrom
 
