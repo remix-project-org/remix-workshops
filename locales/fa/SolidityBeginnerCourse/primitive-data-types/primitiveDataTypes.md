@@ -1,33 +1,33 @@
-In this section, we will show you Solidity’s primitive data types, how to declare them, and their characteristics.
+در این بخش، ما انواع داده اولیه Solidity را به شما نشان خواهیم داد، نحوه اعلام آنها و ویژگی‌هایشان.
 
-### bool
+### بول
 
-You can declare data a boolean type by using the keyword ‘bool’. Booleans can either have the value `true` or `false`.
+شما می‌توانید داده‌ها را با استفاده از کلمه کلیدی ‘bool’ به نوع بولی اعلام کنید. بولین‌ها می‌توانند یا مقدار `درست` یا `نادرست` داشته باشند.
 
-### uint
+### عدد صحیح بدون علامت
 
-We use  the keywords `uint` and `uint8` to `uint256` to declare an _unsigned integer type_ (they don’t have a sign, unlike -12, for example). Uints are integers that are positive or zero and range from 8 bits to 256 bits. The type `uint` is the same as `uint256`.
+ما از کلیدواژه‌های `uint` و `uint8` تا `uint256` برای اعلام یک _نوع عدد صحیح بدون علامت_ استفاده می‌کنیم (آن‌ها علامتی ندارند، برخلاف -12، به عنوان مثال). Uints اعداد صحیح غیرمنفی هستند که از 8 بیت تا 256 بیت متغیرند. نوع `uint` همانند `uint256` است.
 
-### int
+### متعادل
 
-We use the keywords `int` and `int8` to `int256` to declare an integer type. Integers can be positive, negative, or zero and range from 8 bits to 256 bits. The type `int` is the same as `int256`.
+ما از کلیدواژه‌های `int` و `int8` تا `int256` برای اعلام نوع صحیح استفاده می‌کنیم. اعداد صحیح می توانند مثبت، منفی یا صفر باشند و از ۸ بیت تا ۲۵۶ بیت متغیر هستند. نوع `int` همانند `int256` است.
 
-### address
+### آدرس
 
-Variables of the type `address` hold a 20-byte value, which is the size of an Ethereum address. There is also a special kind of Ethereum address, `address payable`, which can receive ether from the contract.
+متغیرهای از نوع `address` دارای یک مقدار ۲۰ بایتی هستند که معادل اندازه یک آدرس اتریوم است. همچنین نوع خاصی از آدرس اتریوم وجود دارد، `address payable`، که می‌تواند اتر را از قرارداد دریافت کند.
 
-All these data types have default values, as shown in the contract (line 29).
+تمام این نوع داده‌ها دارای مقادیر پیش‌فرض هستند، همانطور که در قرارداد (خط ۲۹) نشان داده شده است.
 
-You can learn more about these data types as well as _Fixed Point Numbers_, _Byte Arrays_, _Strings_, and more in the <a href="https://docs.soliditylang.org/en/latest/types.html" target="_blank">Solidity documentation</a>.
+شما می‌توانید اطلاعات بیشتری درباره این نوع داده‌ها و همچنین _اعداد ثابت نقطه‌ای_، _آرایه‌های بایت_، _رشته‌ها_ و بیشتر در <a href="https://docs.soliditylang.org/en/latest/types.html" target="_blank">مستندات سالیدیتی</a> بیابید.
 
-Later in the course, we will look at data structures like **Mappings**, **Arrays**, **Enums**, and **Structs**.
+در ادامه دوره، به ساختارهای داده‌ای مانند **نقشه‌ها**، **آرایه‌ها**، **نوع‌های شمارشی** و **ساختارها** نگاه خواهیم کرد.
 
-<a href="https://www.youtube.com/watch?v=8Tj-Th_S7NU" target="_blank">Watch a video tutorial on Primitive Data Types</a>.
+<a href="https://www.youtube.com/watch?v=8Tj-Th_S7NU" target="_blank">یک ویدیوی آموزشی درباره انواع داده اولیه تماشا کنید</a>.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-1. Create a new variable `newAddr` that is a `public` `address` and give it a value that is not the same as the available variable `addr`.
-2. Create a `public` variable called `neg` that is a negative number, decide upon the type.
-3. Create a new variable, `newU` that has the smallest `uint` size type and the smallest `uint` value and is `public`.
+1. یک متغیر جدید `newAddr` ایجاد کنید که `public` و از نوع `address` باشد و به آن مقداری بدهید که با متغیر موجود `addr` یکسان نباشد.
+2. یک متغیر عمومی به نام `neg` ایجاد کنید که یک عدد منفی باشد و نوع آن را مشخص کنید.
+3. یک متغیر جدید به نام `newU` ایجاد کنید که کوچکترین نوع اندازه `uint` و کوچکترین مقدار `uint` را داشته باشد و به صورت `public` باشد.
 
-Tip: Look at the other address in the contract or search the internet for an Ethereum address.
+نکته: به آدرس دیگر در قرارداد نگاه کنید یا در اینترنت برای یک آدرس اتریوم جستجو کنید.
