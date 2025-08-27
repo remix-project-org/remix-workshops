@@ -22,12 +22,12 @@ For more information, have a look at the <a href="https://github.com/OpenZeppeli
 With the "Pausable" contract module (line 6 and 9) the owner is able to pause (line 14) and unpause (line 18) the contract. In the pause state, tokens can't be transferred, which can be helpful in emergency scenarios.
 For more information, have a look at the <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/Pausable.sol" target="_blank">Pausable contract</a>.
 
-Have a look at the OpenZeppelins <a href="https://docs.openzeppelin.com/contracts/4.x/wizard" target="_blank">Contract Wizard</a>, which allows you to easily add additional functionality.
+Dai un'occhiata al <a href="https://docs.openzeppelin.com/contracts/4.x/wizard" target="_blank">Contract Wizard</a> di OpenZeppelin, che ti permette di aggiungere facilmente funzionalità aggiuntive.
 
-If you successfully completed this course, try the Learneth NFT Course as the next step in your journey.
+Se hai completato con successo questo corso, prova il Corso NFT Learneth come prossimo passo nel tuo percorso.
 
-## ⭐️ Assignment
+## ⭐️ Compito
 
-1. Try to mint tokens to an account after deployment. Call `totalSupply()` and `balanceOf()` to confirm the correct execution.
-2. Burn tokens and then call `totalSupply()` and `balanceOf()` to confirm the correct execution.
-3. Test the pause function by pausing the contract using the owner account and trying to make a transfer with a second account. The transaction should not be able to be executed and will throw the exception: "Pausable: paused".
+1. Prova a coniare token su un account dopo il deployment. Chiama totalSupply() e balanceOf() per confermare l'esecuzione corretta.
+2. Brucia i token e poi chiama totalSupply() e balanceOf() per confermare l'esecuzione corretta.
+3. Testa la funzione di pausa mettendo in pausa il contratto utilizzando l'account del proprietario e provando a effettuare un trasferimento con un secondo account. La transazione non dovrebbe essere eseguibile e genererà l'eccezione: "Pausable: paused".
