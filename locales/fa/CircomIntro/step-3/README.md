@@ -1,38 +1,38 @@
-Let's write a simple Circom circuit.
+بیایید یک مدار ساده Circom بنویسیم.
 
-## Creating a New Circuit File
+## ایجاد یک فایل مدار جدید
 
-1. In the **File Explorer** on the left sidebar, click on the **Create New File** icon.
-2. Name your file `multiplier.circom` and press **Enter**.
+1. در **اکسپلورر فایل** در نوار کناری سمت چپ، روی آیکون **ایجاد فایل جدید** کلیک کنید.
+2. فایل خود را `multiplier.circom` نامگذاری کرده و **Enter** را بزنید.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-3/images/create_new_file.png" alt="create-new-file" width=300 height=200>
 
-## Writing the Circuit
+## نوشتن مدار
 
-Open `multiplier.circom` and add the following code:
+فایل `multiplier.circom` را باز کنید و کد زیر را اضافه کنید:
 
 ```circom
 pragma circom 2.0.0;
 
 template Multiplier() {
-    signal input a;
-    signal input b;
-    signal output c;
+    signal input a؛
+    signal input b؛
+    signal output c؛
 
-    c <== a * b;
+    c <== a * b؛
 }
 
-component main = Multiplier();
+component main = Multiplier()؛
 ```
 
-## Explanation:
+## توضیح:
 
- - template `Multiplier()`: Defines a new circuit template called Multiplier.
- - `signal input a;` and `signal input b;`: Declare input signals a and b.
- - `signal output c;`: Declare an output signal c.
- - `c <== a * b;`: Constrain c to be the product of a and b.
- - `component main = Multiplier();`: Instantiates the Multiplier circuit as main, which is required for the compiler.
+ - قالب `Multiplier()`: یک الگوی مدار جدید به نام Multiplier تعریف می‌کند.
+ - `سیگنال ورودی a;` و `سیگنال ورودی b;`: سیگنال‌های ورودی a و b را اعلام کنید.
+ - `signal output c;`: یک سیگنال خروجی به نام c اعلام کنید.
+ - `c <== a * b;`: محدود کردن c به حاصلضرب a و b.
+ - `مؤلفه اصلی = ضرب‌کننده();`: مدار ضرب‌کننده را به عنوان اصلی نمونه‌سازی می‌کند که برای کامپایلر ضروری است.
 
-### NB:
+### توجه:
 
-Signals are values in a cryptographic circuit that are strictly determined by the circuit's equations and constraints. Think of a signal as a value that must follow specific mathematical rules defined by the circuit—once set, it can't be changed arbitrarily. In regular programming, variables are flexible and can be updated or reassigned as needed, whereas, signals can't be altered freely.
+سیگنال‌ها مقادیری در یک مدار رمزنگاری هستند که به طور دقیق توسط معادلات و محدودیت‌های مدار تعیین می‌شوند. سیگنال‌ها مقادیری در یک مدار رمزنگاری هستند که به طور دقیق توسط معادلات و محدودیت‌های مدار تعیین می‌شوند. در برنامه‌نویسی معمولی، متغیرها انعطاف‌پذیر هستند و می‌توانند به روزرسانی یا دوباره تخصیص داده شوند به اندازه نیاز، در حالی که سیگنال‌ها نمی‌توانند به صورت آزادانه تغییر کنند.
