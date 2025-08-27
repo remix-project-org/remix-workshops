@@ -1,46 +1,45 @@
 For dis contract tutorial we learn how to fit create ERC721 auction contract.
-We recommend to you, to do the Learneth "Solidity NFT Course" before starting this tutorial.
+We fit recommend u to fit learneth"Solidity NFT Course" before starting this tutorial.
 
-In the following sections, we will create a contract that will enable a seller to auction an NFT to the highest bidder. This contract was created by the <a href="https://solidity-by-example.org/app/english-auction/" target="_blank">Solidity by Example</a> project. In this first section, we will create an interface, the necessary state variables, and the constructor.
+Di ff area we fit create contract wey fit enable seller auction an NFT to di highest bidder. Dis contract dey created by di <a href="https://solidity-by-example.org/app/english-auction/" target="_blank">Solidity by Example</a> project. For dis section we fit create an interface wey dey neccessary state variables, and di constructor.
 
-### Interface
+### Di interface
 
-We create the interface (line 5) for the ERC721 token since our contract will need to interact with it. We will need the `safeTransferFrom` (line 5),  and` transferFrom` (line 11) methods.
+We fit create di interface (line 5) for the ERC721 token since our contract will need to interact with am. We go need di safeTransferFrom` (line 5),  and` transferFrom\` (line 11) methods.
 
-### EnglishAuction
+### Di EnglishAuction
 
-We create the four events `Start`, `Bid`, `Withdraw`, `End` (line 19-22) so we can log important interactions.
+We go create four events`Start`, `Bid`, `Withdraw`, `End` (line 19-22) so we can log important interactions.
 
-Next, we will create the state variables that store all the necessary information about our auction on-chain.
+We must create di state variablea wey store all di necessary information about our auction on-chain.
 
-We create two state variables for the NFT we want to auction. In the variable `nft` (line 24) we store a representation of the NFT contract, that will allow us to call its functions by combining the interface IERC721 and the address of the NFT contract.
-In `nftId` (line 25), we store the specific token id in our NFT contract that will be auctioned.
+We fit create two state variables for the NFT we want to auction. Di variable nft`(line 24) we go store representative of di NFT contract, wey go allow us to call its functions by combining the interface IERC721 and di address of the NFT contract.
+In`nftId\` (line 25), we fit store di specific token id in our NFT contract that will be auctioned.
 
-Next, we need a variable to store the address of the person that is auctioning off the NFT, the `seller` (line 27).
-We want our NFT contract to send the seller the proceeds of the auction when it is finished, that’s why use `address payable`.
+Next we fit variable to fit store di address fo di person wey dey auction di NFT, di seller (line 27).
+Functionality dey from ERC20 and we don override dis function, other contracts fit inherit from us and override dis function too.
 
-We create a state variable `endAt` (line 28) where we will store the end date of the auction.
-We also create the two booleans, `started` (line 29) and `ended` (line 30), that keep track of whether the auction has started or ended.
+"We create one state variable endAt (line 28) wey go store di auction end date."
+We still create two booleans, started (line 29) and ended (line 30), wey dey track whether auction don start or don end.".
 
-We create a variable `highestBidder` (line 32) where we will store the address of the highest bidder. We will send the highest bidder the NFT once the auction has ended.
+We fit create variable `highestBidder` (line 32) where we will store the address of the highest bidder. We fit send di hidhest bidder di NFT once d auction don end.
 
-Finally, we need a uint `highestBid` (line 33) to store the highest bid and a mapping `bids` (line 34), where we can store the total value of bids that an account has made before withdrawing; more on this in the next section.
+E do reach uint `highestBid` (line 33) to store de highest bid and a mapping `bids` (line 34), where we fit store de total value of bids dat an account has made before withdrawing; more on this in the next section.
 
-### Constructor
+### Di Constructor
 
-When the auctioneer deploys the contract, they need to provide a few arguments:
-the address of the contract of the NFT they want to auction `_nft` (line 37), the token id of the NFT they want to auction `_nftId` (line 38), and a starting price that must be overbid to place the first bid in the auction,`_startingBid` (line 39).
+When auctioner deploy contract dem go need provide few argument: di address of di contract of di NFT dem go wan auction nft`(line 37), de token id of de NFT they want to auction`_nftId` (line 38), and a starting price that must be overbid to place the first bid in the auction,`_startingBid\` (line 39).
 
-Once deployed, the state variables `nft` (line 41), `nftId` (line 42), `highestBid` (line 45) will be assigned the values from the arguments. The address of the `seller` that deployed the contract will be automatically read out via msg.sender and stored in the state variable `seller` (line 44).
+Once deploydi state variables `nft` (line 41), `nftId` (line 42), `highestBid` (line 45) dem go assigned de values from de arguments. Di address of di seller wey deployed di contract go be automatically read am out.
 
-In the next section, we will enable the auctioneer to start the auction and bidders to place their bids.
+For dis area we fit enable di auctioneer start di auction and bidders to fit place their bids.
 
-## ⭐️ Assignment
+## di ⭐️ Assignment
 
-We will use the assignment part of the following sections to give you instructions on testing your contract in the Remix VM environment of Remix.
+We fit use assignment part of di ff sections to fit give u instructions on testing ur contract in di remix VM environment of remix.
 
-1. Deploy an NFT contract. You can use the NFT contract that we created in our "3.3 ERC721 - Token Creation" section.
+1. U go deploy NFT contract. U fit use di NFT contract wey we create for our "3.3 ERC721 - Token Creation" section.
 
-2. Deploy this EnglishAuction contract. Use the address of the NFT contract as an argument for the `_nft` parameter, 0 for `_nftId`, and 1 for `_startingBid`.
+2. Use dis EnglishAuction contract. Use di NFT contract im address take argue di `_nft` parameter, 0 for `_nftId`, and 1 for `_startingBid`.
 
-3. After deploying your contract, test if contract functions like `nft`, `nftId`, and `started` work as expected.
+3. When u don deploy ur contract test if contrat functions like`nft`, `nftId`, and `started` work as expected.
