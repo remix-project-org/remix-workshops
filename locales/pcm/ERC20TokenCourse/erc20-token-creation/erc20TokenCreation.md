@@ -1,6 +1,6 @@
-A token standard tells us what functionality the contract needs to comply with it. How this functionality is implemented is up to the developers. In this contract, we will use an ERC20 token contract implementation from OpenZeppelin (line 4). In this case, we import version 4.4.0 of the OpenZeppelin contracts.
+De token standard go tell us wat function de contract go need to te comply. How we go te implement dis functionality dey up to de people wey Dey develop. For dis contract we go use ERC20 token contract implementation from openzepplin (line 4). For dis case, we go import version 4.4.0de openzeplen contracts.
 
-Have a look at their nicely documented <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol" target="_blank">ERC20 contract</a> to have a better understanding of how an implementation might look. Apart from the functionality specified in the ERC20 standard, this contract provides additional functionality.
+U go look at how dier nicely documented <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol" target="_blank">ERC20 contract</a> to get better understanding of how implementation go look. Apart from the functionality specified in the ERC20 standard, this contract provides additional functionality.
 
 We will create our own contract called MyToken (line 6), which inherits the functionality from the OpenZepplin ERC20 token contract implementation that we imported (line 4).
 
@@ -12,7 +12,7 @@ In this case, the account that deploys the contract will receive the tokens and 
 
 ## ⭐️ Assignment
 
-1. Rename your contract to `EduCoin`.
-2. Rename your token to `EduCoin`.
+1. U go r name ur contract to EduCoin.
+2. U go rename ur token to educoin.
 3. Change the symbol of your token to `EDC`.
-4. Change the amount of tokens that will be minted from 1000000 to 1000.
+4. I go change de amount of tokens wey go dey minted from 1000000 to 1000.
