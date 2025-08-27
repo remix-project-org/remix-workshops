@@ -1,10 +1,10 @@
 ---
 id: opcodesdebug
-name: Opcodes in the Debugger
-summary: Using the Debugger, we'll check out what the CODECOPY opcode does and how it is used by the EVM during contract creation.
+name: Opcodes en el depurador
+summary: Usando el depurador, comprobaremos qué hace el código de operación CODECOPY y cómo lo utiliza la EVM durante la creación del contrato.
 level: 3
 tags:
   - Remix
-  - Debugging
+  - Depuración
   - EVM
   - Opcodes
