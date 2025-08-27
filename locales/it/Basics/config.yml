@@ -1,26 +1,26 @@
 ---
-id: basics
-name: Basics of Remix
-summary: A typical workflow in Remix
+id: basi
+name: Fondamenti del Rimica
+summary: Un flusso di lavoro tipico in Rimica
 level: 1
 tags:
-  - Remix
+  - Rimica
 steps:
   - 
-    name: Intro to the Interface
-    path: interface_introduction
+    name: Introduzione all'interfaccia
+    path: introduzione all'interfaccia
   - 
-    name: Intro to Workspaces
+    name: Introduzione agli Spazi di lavoro
     path: workspaces
   - 
-    name: Loading & Compiling
-    path: load_and_compile
+    name: Caricamento e Compilazione
+    path: carica_e_compila
   - 
-    name: Deploying to the Remix VM
-    path: deploy_to_the_remixvm
+    name: Distribuzione sulla Remi VM
+    path: distribuire_alla_remixvm
   - 
-    name: Interacting with Functions
-    path: interacting
+    name: Interagire con le funzioni
+    path: interagendo
   - 
-    name: Deploying to Public Networks
-    path: deploy_injected
+    name: Distribuzione su reti pubbliche
+    path: distribuire_iniettato
