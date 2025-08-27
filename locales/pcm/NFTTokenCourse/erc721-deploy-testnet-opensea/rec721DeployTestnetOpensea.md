@@ -1,6 +1,6 @@
-In this section, we will use Metamask (an Ethereum wallet) to deploy our contract to the Sepolia testnet of the Ethereum blockchain, mint an NFT, and look at it on the NFT marketplace OpenSea.
+For this part, we go use metamask( na Ethereum wallet) take deploy our contract go sepolia testnet for Ethereum blockchain, mint NFT, con look the NFT for opensea Marketplace.
 
-### 1. Install Metamask
+### 1. Download metamask
 
 **1.1** Go to <a href="https://metamask.io/" target="_blank">metamask.io</a>.
 
