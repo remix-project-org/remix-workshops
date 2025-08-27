@@ -1,76 +1,76 @@
-ERC20 (Ethereum Request for Comments 20) is a standard for token contracts that manages fungible tokens on the Ethereum blockchain.
+ERC20 (Ethereum Request for Comments 20) na standard for token contracts ey dey manage fungible tokens for di Ethereum blockchain.
 
-Fungible tokens are all equal to each other and have the same value, behavior, and rights. Fungible tokens are often used as a medium of exchange, like the currencies ETH or BTC. However, they can also have other use cases like voting rights or reputation.
+Fungible token dem all dey equal to each oda and dem get di same, value, behaviour and right. Dem dey quick use fungible token as wetin dem take dey exchange like dem foreign money ETH or BTC. Well sha, dem fit get oda use cases like to dey vote right or reputation.
 
-If you want to know more about the ERC20 token standard, have a look at the specifications in its <a href="https://eips.ethereum.org/EIPS/eip-20" target="_blank">Ethereum improvement proposal</a>.
+If you wan know more inside di ERC20 token standard you go go look di specs for <a href="https://eips.ethereum.org/EIPS/eip-20" target="_blank">Ethereum improvement proposal</a>.
 
-## Interface
+## Di interface
 
-To get an overview of the required functionality of an ERC20 token contract, we will look at an interface that interacts with an ERC20 contract.
-This interface (line 9) is part of the open-source contract library provided by <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.4.0/contracts/token/ERC20/IERC20.sol" target="_blank">OpenZeppelin</a>.
+To fit get di whole view of di function wey e need for ERC20 oken contract, we go look di interface wey dey follow ERC20 contract.
+Di intaface (line 9) na part of di open source contract library wey be say na <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.4.0/contracts/token/ERC20/IERC20.sol" target="_blank">OpenZeppelin</a> bring am.
 
-## ERC20 Functions
+## ERC20 Im Functions
 
-Contracts compliant with the ERC20 standard must implement the following six functions:
+Contracts compliant wit di ERC20 standard must to implement di following six function:
 
-### totalSupply
+### ditotalSupply
 
-The function `totalSupply` (line 13) returns the total amount of tokens available.
+Di function `totalSupply` (line 13) dey return di total amount of tokens wey dey available.
 
 ### balanceOf
 
-The function `balanceOf` (line 18) returns the amount of tokens owned by the account with the address `account`.
+Di function `balanceOf` (line 18) dey return di amount of tokens wey dey owned by di account wit di address `account`.
 
-### transfer
+### send am
 
-The function `transfer` (line 27) transfers `amount` of tokens to the address `recipient`.
-This function **must** emit (produce) a `Transfer` event (see below) and **should** throw an exception when the sender doesn't have enough tokens to make the transfer.
+Di function `transfer` (line 27) transfers `amount` of tokens to di address `recipient`.
+Dis function **must** to emit (produce) a `Transfer` event (look am down) and **should** throw exception when di sender no get enough tokens to fit make di transfer.
 
-### approve
+### gree for am
 
-The function `approve` (line 52) creates an allowance for the address `spender` to transfer `amount` of tokens on behalf of the account calling the function.
+Di function `approve` (line 52) dey create allowance for the address `spender` to fit make transfer `amount` of token on behalf of di account wey dey call di function.
 
-### allowance
+### allowee
 
-The function `allowance` (line 36) returns the amount of tokens that the address `spender` is allowed to spend on behalf of the account with the address `owner`.
+Di function `allowance` (line 36) dey return di amount of token wey di address `spender` dey allowed to spend on behalf of di account wit di address owner.
 
-### transferFrom
+### di transferFrom
 
-The function `transferFrom` (line 63) transfers `amount` of tokens on behalf of the address `sender` to the address `recipient`.
-This function **must** emit a `Transfer` event.
+Di function `transferFrom` (line 63) transfers `amount` of tokens on behalf of di address `sender` go di address recipient.
+Dis fuction **must** showcase `Transfer` event.
 
-## ERC20 Events
+## ERC20 Im Events
 
-ERC20 contracts must also emit two events:
+ERC20 contracts must to emit two events sha:
 
-### Transfer
+### Carry am go
 
-The `Transfer` (line 71) event must be emitted when `value` amount of tokens are transferred from the account with the address `indexed from` to `indexed to`. The parameters `from` and `to` are `indexed` allowing us to search for these events using the indexed parameters as filters.
+Di `Transfer` (line 71) event must to dey emitted when `value` amount of tokens dey transferred from di account wit di address `indexed from` to `indexed to`. Di parameters `from` and `to` dey \`indexed e dey gree make we search dis events come dey use di indexed paameters as filters.
 
-### Approval
+### E accept am
 
-The `Approval` (line 77)  event must be emitted when the account `indexed owner` approves the account `indexed spender` to transfer `value` amount of tokens on its behalf.
+Di  `Approval` (line 77)  event must dey emitted wen the account `indexed owner` approve di account `indexed spender` to take transfer `value` amount of tokens on im behalf.
 
-## ERC20 Optional functions
+## ERC20 functions wey no need
 
-In addition to the mandatory functions and events, there are also three optional functions specified in the ERC20 standard that are not implemented in this interface:
+To add join di amndatory function wit event e get thre function wey no need wey dem specift for ERC20 wey dem no implement for dis intaface:
 
-### name
+### wetin dem dey call am
 
-`function name() external view returns (string);`
+`function name() external view wey dey return (string);`
 
-Returns the name of the token.
+Send di name of di token back.
 
-### symbol
+### sign
 
-`function symbol() external view returns (string);`
+`function symbol() external view wey dem return (string);`
 
-Returns the symbol of the token.
+Send di sign of di token back.
 
 ### decimals
 
-`function decimals() external view returns (uint8);`
+\`function decimals() external view wey dem return (uint8)
 
-Returns the number of decimal places the token uses.
+Send bak di number of decimal place wey di token use.
 
-You may want to use decimals to make your token divisible into arbitrary amounts like 1.5 ETH when displayed. The EVM (Ethereum virtual machine) only supports integer numbers. That's why the ERC20 standard suggests to implement the decimal functionality that specifies how many decimal places a token has. 18 decimal places is the industry standard.
+You fit wan use decimal to fit take divide your toke into small amountlike 1.5 ETH wen den show am. Di EVM (Ethereum virtual machine) only dey supports integer numbers. Na why di ERC20 standard want make e suggest di decimal function wey dey specify how many decimal di token get. 18 decimal place na di industry standard.
