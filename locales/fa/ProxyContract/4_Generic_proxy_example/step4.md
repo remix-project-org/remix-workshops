@@ -1,15 +1,15 @@
-# A Basic Generic Proxy Example
+# یک مثال پایه برای پروکسی عمومی
 
-In the associated solidity file, **step4.sol**, there are 2 contracts - **ProxyContract** and **LogicContract**.
+در فایل سالیدیتی مرتبط، **step4.sol**، 2 قرارداد وجود دارد - **ProxyContract** و **LogicContract**.
 
-To use this system, we first deploy the LogicContract.
+برای استفاده از این سیستم، ابتدا قرارداد منطقی را پیاده‌سازی می‌کنیم.
 
-And then when we go to deploy the ProxyContract, we pass the LogicContract's address as an argument of the ProxyContract's constructor.
+و سپس زمانی که به پیاده‌سازی ProxyContract می‌رویم، آدرس LogicContract را به عنوان آرگومان سازنده ProxyContract می‌گذرانیم.
 
-The ProxyContract is deployed only once.
+قرارداد پروکسی فقط یک بار مستقر می‌شود.
 
-The code of LogicContract will be called at the line 20. It will be forwarded with delegate call while keeping the context of LogicContract.
+کد LogicContract در خط 20 فراخوانی خواهد شد. این با تماس نماینده به جلو ارسال خواهد شد در حالی که زمینه LogicContract حفظ می‌شود.
 
-In case we need to change the logic we would deploy a new LogicContract and set the address of it with setLogicContractAddress setter function.
+در صورتی که نیاز به تغییر منطق داشته باشیم، یک قرارداد منطقی جدید را مستقر خواهیم کرد و آدرس آن را با تابع تنظیم کننده setLogicContractAddress تعیین خواهیم کرد.
 
-_Note: The LogicContract we have here does not use the storage. Once you need to use the storage the implementation becomes a bit more complicated because those contracts share the context._
+\*توجه: قرارداد منطق LogicContract که در اینجا داریم از حافظه استفاده نمی‌کند. زمانی که نیاز به استفاده از ذخیره‌سازی پیدا می‌کنید، پیاده‌سازی کمی پیچیده‌تر می‌شود زیرا آن قراردادها زمینه را به اشتراک می‌گذارند
