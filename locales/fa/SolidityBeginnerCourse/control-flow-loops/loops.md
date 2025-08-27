@@ -1,32 +1,32 @@
-Solidity supports iterative control flow statements that allow contracts to execute code repeatedly.
+سالیدیتی از بیانیه‌های کنترل جریان تکراری پشتیبانی می‌کند که به قراردادها این امکان را می‌دهد تا کد را به طور مکرر اجرا کنند.
 
-Solidity differentiates between three types of loops: `for`, `while`, and `do while` loops.
+زبان سالیدیتی بین سه نوع حلقه تمایز قائل می‌شود: حلقه‌های `for`، `while` و `do while`.
 
-### for
+### برای
 
-Generally, `for` loops (line 7) are great if you know how many times you want to execute a certain block of code. In solidity, you should specify this amount to avoid transactions running out of gas and failing if the amount of iterations is too high.
+به طور کلی، حلقه‌های `for` (خط ۷) عالی هستند اگر بدانید چند بار می‌خواهید یک بلوک خاص از کد را اجرا کنید. در سالیدیتی، شما باید این مقدار را مشخص کنید تا از تمام شدن گاز تراکنش‌ها و عدم موفقیت در صورت بالا بودن تعداد تکرارها جلوگیری کنید.
 
-### while
+### در حالی که
 
-If you don’t know how many times you want to execute the code but want to break the loop based on a condition, you can use a `while` loop (line 20).
-Loops are seldom used in Solidity since transactions might run out of gas and fail if there is no limit to the number of iterations that can occur.
+اگر نمی دانید چند بار می خواهید کد را اجرا کنید اما می خواهید حلقه را بر اساس یک شرط بشکنید، می توانید از یک حلقه `while` استفاده کنید (خط 20).
+حلقه‌ها به ندرت در سالیدیتی استفاده می‌شوند زیرا تراکنش‌ها ممکن است تمام گاز خود را مصرف کنند و در صورتی که محدودیتی برای تعداد تکرارهایی که می‌تواند اتفاق بیفتد وجود نداشته باشد، با شکست مواجه شوند.
 
-### do while
+### دو در حالی که
 
-The `do while` loop is a special kind of while loop where you can ensure the code is executed at least once, before checking on the condition.
+حلقه `do while` نوع خاصی از حلقه while است که به شما این امکان را می‌دهد که اطمینان حاصل کنید کد حداقل یک بار اجرا می‌شود، قبل از اینکه شرط بررسی شود.
 
-### continue
+### ادامه دهید
 
-The `continue` statement is used to skip the remaining code block and start the next iteration of the loop. In this contract, the `continue` statement (line 10) will prevent the second if statement (line 12) from being executed.
+عبارت `continue` برای نادیده گرفتن بلوک کد باقی‌مانده و شروع تکرار بعدی حلقه استفاده می‌شود. در این قرارداد، دستور `continue` (خط 10) مانع از اجرای دستور if دوم (خط 12) خواهد شد.
 
-### break
+### شکستن
 
-The `break` statement is used to exit a loop. In this contract, the break statement (line 14) will cause the for loop to be terminated after the sixth iteration.
+عبارت `break` برای خروج از یک حلقه استفاده می‌شود. در این قرارداد، دستور شکست (خط 14) باعث می‌شود که حلقه for پس از ششمین تکرار به پایان برسد.
 
-<a href="https://www.youtube.com/watch?v=SB705OK3bUg" target="_blank">Watch a video tutorial on Loop statements</a>.
+<a href="https://www.youtube.com/watch?v=SB705OK3bUg" target="_blank">یک آموزش ویدیویی درباره حلقه‌ها مشاهده کنید</a>.
 
-## ⭐️ Assignment
+## تکلیف
 
-1. Create a public `uint` state variable called count in the `Loop` contract.
-2. At the end of the for loop, increment the count variable by 1.
-3. Try to get the count variable to be equal to 9, but make sure you don’t edit the `break` statement.
+1. یک متغیر عمومی `uint` با نام count در قرارداد `Loop` ایجاد کنید.
+2. در انتهای حلقه for، متغیر شمارش را به اندازه ۱ افزایش دهید.
+3. سعی کنید متغیر count برابر 9 شود، اما مطمئن شوید که دستور `break` را ویرایش نکنید.
