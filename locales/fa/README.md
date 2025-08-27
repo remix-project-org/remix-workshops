@@ -8,28 +8,24 @@ https://remix.ethereum.org
 
 \*\*2. در مدیریت پلاگین، LEARNETH را فعال کنید
 
-**3. Go to the Learneth plugin and these tutorials will load by default**
+\*\*3. به پلاگین Learneth بروید و این آموزش‌ها به طور پیش‌فرض بارگذاری خواهند شد
 
-**4. You may need to sign into Github especially during an in-person workshop**
+\*\*4. شاید لازم باشد که به گیت‌هاب وارد شوید، به ویژه در طول یک کارگاه حضوری
 
-Github will block too many requests from the same location, unless you are signed into Github and have input your token.  Generally, this is only an issue during in person workshops, when there can be many requests from the same location.
+گیت‌هاب درخواست‌های خیلی زیاد از همان محل را مسدود خواهد کرد، مگر اینکه به گیت‌هاب وارد شده باشید و توکن خود را وارد کرده باشید.  به طور کلی، این فقط یک مشکل در کارگاه‌های حضوری است، زمانی که ممکن است درخواست‌های زیادی از یک مکان خاص وجود داشته باشد.
 
-To input your Github token:
+برای وارد کردن توکن گیت‌هاب خود:
 
 ```
-- In one browser window - go to https://remix.ethereum.org and go to the settings tab
-- In another browser window go to: 
-
-https://github.com/settings/tokens 
-
-and create a new token and save it in Remix in the you just opened on the settings tab.
+- در یک پنجره مرورگر به https://remix.ethereum.org بروید و به برگه تنظیمات بروید- در یک پنجره مرورگر دیگر 
+به:https://github.com/settings/tokensبروید و یک توکن جدید ایجاد کنید و آن را در ریمیفک، در برگه تنظیمات که تازه باز کرده‌اید، ذخیره کنید.
 ```
 
 ---
 
-### Write your own tutorials for LEARNETH:
+### تدریس‌های خود را برای LEARNETH بنویسید:
 
-See this site for instructions:
+به این سایت برای راهنما مراجعه کنید:
 
 https://remix-learneth-plugin.readthedocs.io/en/latest/index.html#creating-tutorials
 
