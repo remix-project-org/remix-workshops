@@ -1,13 +1,13 @@
-In this section, we will learn more about the inputs and outputs of functions.
+در این بخش، ما بیشتر در مورد ورودی‌ها و خروجی‌های توابع یاد خواهیم گرفت.
 
 ### Multiple named Outputs
 
-Functions can return multiple values that can be named and assigned to their name.
+توابع می‌توانند چندین مقدار را بازگردانند که می‌توانند نام‌گذاری شده و به نام‌هایشان اختصاص یابند.
 
-The `returnMany` function (line 6) shows how to return multiple values.
-You will often return multiple values. It could be a function that collects outputs of various functions and returns them in a single function call for example.
+تابع `returnMany` (خط 6) نشان می‌دهد که چگونه می‌توان مقادیر متعدد را بازگرداند.
+شما اغلب چندین مقدار را برمی‌گردانید. این می‌تواند تابعی باشد که خروجی‌های عملکردهای مختلف را جمع‌آوری کرده و آنها را در یک فراخوانی تابع واحد برمی‌گرداند، به عنوان مثال.
 
-The `named` function (line 19) shows how to name return values.
+تابع `named` (خط ۱۹) نشان می‌دهد که چگونه می‌توان ارزش‌های برگشتی را نام‌گذاری کرد.
 Naming return values helps with the readability of your contracts. Named return values make it easier to keep track of the values and the order in which they are returned. You can also assign values to a name.
 
 The `assigned` function (line 33) shows how to assign values to a name.
