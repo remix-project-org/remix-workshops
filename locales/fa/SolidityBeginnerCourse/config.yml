@@ -1,65 +1,65 @@
 ---
-id: soliditybeginner
-name: Solidity Beginner Course
-summary: Solidity Beginner Course based on the popular https://solidity-by-example.org/ contracts. Developed by the p2p learning platform https://dacade.org.
+id: مبتدی در سالیدیتی
+name: دوره مبتدی سولیدیتی
+summary: دوره آموزشی مبتدی سالیدیتی بر اساس قراردادهای محبوب در https://solidity-by-example.org/. توسعه یافته توسط پلتفرم یادگیری P2P در https://dacade.org.
 level: 1
 tags:
   - Solidity
 steps:
   - 
-    name: 1. Introduction
-    path: introduction
+    name: 1. مقدمه
+    path: مقدمه
   - 
-    name: 2. Basic Syntax
-    path: basic-syntax
+    name: 2. نحو پایه
+    path: سینتکس پایه
   - 
-    name: 3. Primitive Data Types
-    path: primitive-data-types
+    name: ۳. نوع‌های داده اولیه
+    path: نوع‌های داده‌ی ابتدایی
   - 
-    name: 4. Variables
-    path: variables
+    name: ۴. متغیرها
+    path: متغیرها
   - 
-    name: 5.1 Functions - Reading and Writing to a State Variable
-    path: functions-reading-and-writing
+    name: 5.1 توابع - خواندن و نوشتن به یک متغیر حالت
+    path: عملکردهای خواندن و نوشتن
   - 
-    name: 5.2 Functions - View and Pure
-    path: functions-view-and-pure
+    name: 5.2 توابع - نما و خالص
+    path: دید و توابع خالص
   - 
-    name: 5.3 Functions - Modifiers and Constructors
-    path: functions-modifiers-and-constructors
+    name: 5.3 توابع - تغییر دهنده‌ها و سازنده‌ها
+    path: توابع، اصلاح‌کننده‌ها و سازنده‌ها
   - 
-    name: 5.4 Functions - Inputs and Outputs
-    path: functions-inputs-and-outputs
+    name: 5.4 توابع - ورودی‌ها و خروجی‌ها
+    path: توابع، ورودی‌ها و خروجی‌ها
   - 
-    name: 6. Visibility
-    path: visibility
+    name: 6. قابلیت دید
+    path: قابلیت دید
   - 
-    name: 7.1 Control Flow - If/Else
-    path: control-flow-if-else
+    name: 7.1 کنترل جریان - اگر/دیگر
+    path: جریان کنترل - اگر-در غیر این صورت
   - 
-    name: 7.2 Control Flow - Loops
-    path: control-flow-loops
+    name: 7.2 جریان کنترل - حلقه ها
+    path: حلقه‌های کنترل جریان
   - 
-    name: 8.1 Data Structures - Arrays
-    path: data-structures-arrays
+    name: 8.1 ساختارهای داده - آرایه ها
+    path: ساختارهای داده - آرایه‌ها
   - 
-    name: 8.2 Data Structures - Mappings
-    path: data-structures-mappings
+    name: 8.2 ساختارهای داده - نقشه‌ها
+    path: نگاشت‌های ساختار داده
   - 
-    name: 8.3 Data Structures - Structs
-    path: data-structures-structs
+    name: 8.3 ساختار داده ها - ساختارها
+    path: ساختارهای داده - ساختارها
   - 
-    name: 8.4 Data Structures - Enums
-    path: data-structures-enums
+    name: 8.4 ساختار داده - Enums
+    path: ساختارهای داده و Enum ها
   - 
-    name: 9. Data Locations
-    path: data-locations
+    name: 9. مکان‌های داده
+    path: مکان‌های داده
   - 
-    name: 10.1 Transactions - Ether and Wei
-    path: transactions-ether-and-wei
+    name: 10.1 تراکنش‌ها - اتریوم و وی
+    path: تراکنش‌ها - اتر و وی
   - 
-    name: 10.2 Transactions - Gas and Gas Price
-    path: transactions-gas-and-gas-price
+    name: 10.2 تراکنش‌ها - گاز و قیمت گاز
+    path: معاملات گاز و قیمت گاز
   - 
-    name: 10.3 Transactions - Sending Ether
-    path: transactions-sending-ether
+    name: 10.3 تراکنش‌ها - ارسال اتریوم
+    path: تراکنش‌ها - ارسال اتر
