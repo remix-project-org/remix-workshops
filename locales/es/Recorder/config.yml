@@ -1,7 +1,7 @@
 ---
 id: recorder
 name: Recorder
-summary: Save a set of actions and replay and replay and replay
+summary: Guardar un conjunto de acciones y reproducir y reproducir y reproducir
 level: 2
 tags:
   - Remix
