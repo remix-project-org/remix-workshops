@@ -1,8 +1,8 @@
-Before we start, just quick reminder:
+قبل از اینکه شروع کنیم، فقط یک یادآوری سریع:
 
-The runtime of the EVM has several kinds of memory:
+زمان اجرای EVM چندین نوع حافظه دارد:
 
-- `calldata`: This is the input value given to the transaction.
-- `stack`: Basically, this is a list of values, each value is limited in size (32 bytes).
-- `memory`: Memory is used when the **type** of value getting stored is more complex like an array or a mapping. This memory is **temporary** and is **released** at the end of the execution.
-- `storage`: This is a mapping, each value stored is **persisted** and saved on chain.
+- `calldata`: این مقدار ورودی است که به تراکنش داده می‌شود.
+- `پشته`: اساساً، این یک لیست از مقادیر است، هر مقدار اندازه‌ای محدود (32 بایت) دارد.
+- `حافظه`: حافظه زمانی استفاده می‌شود که **نوع** مقدار ذخیره شده پیچیده‌تر باشد، مانند آرایه یا نقشه. این حافظه **موقتی** است و در پایان اجرای برنامه **آزاد** می‌شود.
+- `ذخیره`: این یک نگاشت است، هر مقداری که ذخیره شده است **دائمی** و بر روی زنجیره ذخیره می‌شود.
