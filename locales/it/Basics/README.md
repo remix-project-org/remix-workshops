@@ -1,3 +1,3 @@
 ## Caricare, Compilare, Distribuire
 
-This beginner level tutorial introduces Remix's interface and concepts used in Ethereum.
+Questo tutorial di livello principiante introduce l’interfaccia di Remix e i concetti usati in Ethereum.
