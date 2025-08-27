@@ -1,4 +1,4 @@
-## Understanding `groth16_zkproof.ts`
+## 理解 `groth十六_zkproof.ts`
 
 Navigate to `scripts/groth16/groth16_zkproof.ts`. This script generates the zero-knowledge proof and prepares it for verification.
 
