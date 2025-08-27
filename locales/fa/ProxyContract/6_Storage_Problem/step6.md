@@ -1,13 +1,13 @@
-# What if we have state variables?
+# اگر متغیرهای حالت داشته باشیم چه؟
 
-Things are more complicated once we need to deal with state variables.  State variable are saved to **storage**.
+مسائل پیچیده‌تر می‌شوند وقتی که باید با متغیرهای دولتی سر و کار داشته باشیم.  متغیرهای وضعیت در **ذخیره‌سازی** ذخیره می‌شوند.
 
-`storage`: is a mapping; each value stored there is persisted and saved on chain.
+`storage`: یک نگاشت است؛ هر مقداری که در آن ذخیره شود پایدار و بر روی زنجیره ذخیره می‌شود.
 
-_Note: Statically-sized state variables (everything except mapping and dynamically-sized array types) are laid out contiguously in storage starting from position 0. Multiple, contiguous items that need less than 32 bytes are packed into a single storage slot if possible. For contracts that use inheritance, the ordering of state variables is determined by the C3-linearized order of contracts starting with the most base-ward contract_
+\*توجه: متغیرهای حالت با اندازه ثابت (همه چیز به جز نوع‌های نگاشت و آرایه‌های با اندازه پویا) به صورت پیوسته در ذخیره از موقعیت ۰ قرار می‌گیرند. آیتم‌های متعددی که به طور هم‌زمان کمتر از ۳۲ بایت نیاز دارند، اگر ممکن باشد در یک فضای ذخیره‌سازی واحد بسته‌بندی می‌شوند. برای قراردادهایی که از وراثت استفاده می‌کنند، ترتیب متغیرهای حالت با توجه به ترتیب خطی C3 از قراردادها تعیین می‌شود که از قرارداد پایه‌تر شروع می‌شود
 
-Once we execute **delegate call**, the storage of both contracts get **"merged"** into a single messy state.
+زمانی که ما **فراخوانی واگذار** را اجرا کنیم، ذخیره‌سازی هر دو قرارداد به یک وضعیت بهم ریخته و واحد **ادغام** می‌شود.
 
-We have to "tell" ProxyContract what the **state** of the **Logic contract** looks like.
+ما باید به ProxyContract بگوییم که وضعیت قرارداد منطق چگونه به نظر می‌رسد.
 
-The easiest way to do this is to create a separate contract - in this example - named **StorageContract** which will represent the **state** and which proxyContract will inherit from.
+راحت‌ترین راه برای انجام این کار ایجاد یک قرارداد جداگانه به نام **StorageContract** است که نمایانگر **وضعیت** باشد و قرارداد proxyContract از آن ارث‌بری کند.
