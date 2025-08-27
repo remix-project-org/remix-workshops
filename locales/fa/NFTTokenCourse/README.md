@@ -1,5 +1,5 @@
-## Solidity NFT Course
+## دوره آموزشی NFT در سالیدیتی
 
-Learn how to create your own NFTs (non-fungible tokens).
+یاد بگیرید که چگونه توکن‌های غیرقابل تعویض (NFT) خود را ایجاد کنید.
 
-Developed by the p2p learning platform https://dacade.org.
+توسعه یافته توسط پلتفرم یادگیری p2p https://dacade.org.
