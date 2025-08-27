@@ -24,7 +24,7 @@
 
 ما می‌توانیم از عملگر حذف برای حذف مقدار enum متغیر استفاده کنیم، که به معنای این است که برای آرایه‌ها و نگاشت‌ها، مقدار پیش‌فرض را به ۰ تنظیم کنیم.
 
-<a href="https://www.youtube.com/watch?v=yJbx07N15j0" target="_blank">Watch a video tutorial on Enums</a>.
+<a href="https://www.youtube.com/watch?v=yJbx07N15j0" target="_blank">یک آموزش ویدیویی درباره Enums را مشاهده کنید</a>.
 
 ## ⭐️ تکلیف
 
