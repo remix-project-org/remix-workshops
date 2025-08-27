@@ -1,21 +1,21 @@
-Intro to Circom
+Introducción a Circom
 
-This is an introduction to Circom. You'll learn how to write, compile, and test arithmetic circuits in Circom. We'll go over how to do this within Remix-IDE.
+Esta es una introducción a Circom. Donde aprenderás a cómo escribir, compilar y probar circuitos aritméticos en Circom. Repasaremos cómo hacer todo esto dentro del IDE de Remix.
 
-Tutorial Overview
-
-```
-Step 1: Introduction
-Step 2: Setting Up Remix-IDE and Installing the Circuit-Compiler Plugin
-Step 3: Writing Your First Circom Circuit
-Step 4: Compiling the Circuit Using the Plugin
-Step 5: Performing a Trusted Setup
-Step 6: Computing the Witness
-Step 7: Generating the Proof
-```
-
-Prerequisites:
+Vista General del Tutorial
 
 ```
-Basic understanding of cryptography and zero-knowledge proofs is helpful but not required.
+Paso 1: Introducción
+Paso 2: Configuración del IDE de Remix e Instalación del Complemento Compilador de Circuito
+Paso 3: Escribiendo Tu Primer Circuito Circom
+Paso 4: Compilando tu Circuito Usando el Complemento
+Paso 5: Ejecutando una Configuración de Confianza
+Paso 6: Computando el Testigo
+Paso 7: Generación de Prueba
+```
+
+Requisitos Previos:
+
+```
+Conocimientos básicos sobre criptografía y pruebas de conocimiento cero es de ayuda pero no es requerido.
 ```
