@@ -1,27 +1,27 @@
-The Axelar executable contains relevant helper functions that will be automatically executed on the destination chain in correspondence to the relevant inbound transaction from the source chain.
+فایل اجرایی Axelar شامل توابع کمکی مرتبطی است که به طور خودکار در زنجیره مقصد و مطابق با تراکنش ورودی مربوط از زنجیره منبع اجرا می‌شوند.
 
-The following are the relevant functions you will need to use from Axelar Executable
+توابع مرتبطی که برای استفاده از Axelar Executable نیاز خواهید داشت، در زیر آمده است
 
-## \_execute()
+## \_اجرا()
 
-This function handles the execution on the destination chain. It takes the following four parameters:
+این تابع، اجرا در زنجیره مقصد را مدیریت می‌کند. چهار پارامتر زیر را دریافت می‌کند:
 
-1. `commandId`: A unique transaction id on the Axelar chain.
-2. `sourceChain`: The blockchain which the transaction has been sent from
-3. `sourceAddress`: The address from the source chain that the transaction has been sent from
-4. `payload`: The message that is being sent
+1. `commandId`: یک شناسه تراکنش منحصر به فرد در زنجیره Axelar.
+2. «سورس‌چین»: بلاکچینی که تراکنش از آن ارسال شده است
+3. `sourceAddress`: آدرسی از زنجیره مبدا که تراکنش از آن ارسال شده است
+4. «بار مفید»: پیامی که ارسال می‌شود
 
-The `sourceChain` and `sourceAddress` are key parameters which you receive out of the box that can be used for verifying authenticity of messages on the destination chain. The payload (as discussed in the gateway section) is the message that was sent from the source chain to be used on your destination chain. The `commandId` will not be used during the rest of this module.
+«sourceChain» و «sourceAddress» پارامترهای کلیدی هستند که شما به صورت پیش‌فرض دریافت می‌کنید و می‌توانند برای تأیید صحت پیام‌ها در زنجیره مقصد مورد استفاده قرار گیرند. بار داده (همانطور که در بخش دروازه بحث شد) پیامی است که از زنجیره منبع ارسال شده تا در زنجیره مقصد شما استفاده شود. `commandId` در ادامه‌ی این ماژول استفاده نخواهد شد.
 
-## \_executeWithToken()
+## \_اجرای_با_توکن()
 
-This function handles the execution on the destination chain for a message being sent with a fungible token. It takes six relevant parameters:
+این تابع، اجرای پیام ارسال شده با یک توکن قابل تعویض را در زنجیره مقصد مدیریت می‌کند. شش پارامتر مرتبط را می‌پذیرد:
 
-1. `commandId`: A unique transaction id on the Axelar chain.
-2. `sourceChain`: The blockchain which the transaction has been sent from
-3. `sourceAddress`: The address from the source chain that the transaction has been sent from
-4. `payload`: The message that is being sent
-5. `tokenSymbol`: The symbol of the token being sent
-6. `amount`: The amount of that token that is being sent
+1. `commandId`: یک شناسه تراکنش منحصر به فرد در زنجیره Axelar.
+2. «سورس‌چین»: بلاکچینی که تراکنش از آن ارسال شده است
+3. `sourceAddress`: آدرسی از زنجیره مبدا که تراکنش از آن ارسال شده است
+4. «بار مفید»: پیامی که ارسال می‌شود
+5. `tokenSymbol`: نماد توکن ارسالی
+6. «مقدار»: مقدار توکنی که ارسال می‌شود
 
-The first four parameters are identical to that of the `_execute()` function. The final two parameters of `tokenSymbol` and `amount` are in reference to the token that is being sent along with the message. It allows you on the destination chain to interact with the token accordingly, for example transferring it to another receiving address. The `commandId` will not be used during the rest of this module.
+چهار پارامتر اول با چهار پارامتر تابع `_execute()` یکسان هستند. دو پارامتر آخر `tokenSymbol` و `amount` به توکنی که همراه پیام ارسال می‌شود اشاره دارند. این به شما اجازه می‌دهد تا در زنجیره مقصد با توکن تعامل داشته باشید، برای مثال آن را به آدرس گیرنده دیگری منتقل کنید. `commandId` در ادامه‌ی این ماژول استفاده نخواهد شد.
