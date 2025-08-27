@@ -24,15 +24,15 @@ Di function `ownerOf` (line 39) dey return di address `owner` of di account wey 
 
 ### safeTransferFrom
 
-The function `safeTransferFrom` (line 55) transfers the ownership of a token with the id `tokenId` from the account with the address `from` to the account with the address `to`.
+Di function `safeTransferFrom` (line 55) di transfer di ownership of a token with the id `tokenId` from di akant wit di address `from` go the account wit di address `to`.
 
-The function `safeTransferFrom` (line 137) is almost identical to the function `safeTransferFrom` (line 55) .The only difference is that this function has a non-empty payload `data`.
+Di function `safeTransferFrom` (line 137) dey almost same wit di function `safeTransferFrom` (line 55) . Di onli difference na dis func`safeTransferFrom` (line 55) . De only difference be say dis function get non-empty payload data.
 
-A smart contract must implement the ERC721TokenReceiver Interface if it is to receive a transfer. This will ensure that the contract can handle ERC721 token transfers and prevent the tokens from being locked in a contract that can’t.
+Contract wey make sense must implement de ERC721TokenReciever Interface na to confirm transfer. Dis go ensure dat de contract fit handle ERC721 token transfer and go prevent de tokens from being locked to contract wey no fit.
 
-### transferFrom
+### de transfer from
 
-The function `transferFrom` (line 55) transfers the ownership of a token with the id `tokenId` from the account with the address `from` to the account with the address `to`.
+De function transferFrom (line 55) tranfer de ownership of token wey get de id tokenld from de account wey get de address from to de account wit de adress to.
 
 **It is recommended to use safeTransferFrom instead of transferFrom whenever possible.**
 The `transferFrom` function is not secure because it doesn’t check if the smart contract that is the recipient of the transfer has implemented the ERC721TokenReceiver interface and is capable of handling ERC721 tokens.
