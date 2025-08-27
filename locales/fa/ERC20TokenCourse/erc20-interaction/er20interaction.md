@@ -1,87 +1,87 @@
-In this section, we will deploy a contract in our browser and test its functionality.
+در این بخش، ما یک قرارداد را در مرورگر خود مستقر کرده و عملکرد آن را آزمایش خواهیم کرد.
 
 ### 1. Deploy the contract
 
-**1.1** Compile your EduCoin contract in the "Solidity compiler" module of the Remix IDE.
+**1.1** قرارداد EduCoin خود را در ماژول "کامپایلر سالیدیتی" Remix IDE کامپایل کنید.
 
-**1.2** In the "Deploy & run transactions" module, select your contract "EduCoin" in the contract input field and click on the "Deploy" button. Always make sure to select the correct contract in the contract selector input field.
+**1.2** در ماژول "استقرار و انجام تراکنش‌ها"، قرارداد خود "EduCoin" را در فیلد ورودی قرارداد انتخاب کرده و روی دکمه "استقرار" کلیک کنید. همیشه مطمئن شوید که قرارداد صحیح را در فیلد ورودی انتخاب کننده قرارداد انتخاب کنید.
 
-**GIF** Compile and deploy: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_compileAndDeploy.gif?raw=true" alt="Compile and deploy contract" width="300"/>
+**GIF** compile و منتشر کنید <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_compileAndDeploy.gif?raw=true" alt="Compile and deploy contract" width="300"/>
 
-### 2. Test the functions
+### 2. توابع را آزمایش کن
 
-Expand the token contract functions in the IDE.
+توابع قرارداد توکن را در IDE گسترش دهید.
 
-#### 2.1 Decimals
+#### 2.1 اعشار
 
-Click on the "decimals" button to call the decimals() function.
-It should return "18".
+روی دکمه "اعشار" کلیک کنید تا تابع decimals() فراخوانی شود.
+این باید "۱۸" را برگرداند.
 
-#### 2.2 Name
+#### 2.2 نام
 
-Click on the "name" button to call the name() function.
-It should return "EduCoin".
+روی دکمه "نام" کلیک کنید تا تابع name() فراخوانی شود.
+این باید "EduCoin" را برگرداند.
 
-#### 2.3 Symbol
+#### 2.3 نماد
 
-Click on the "symbol" button to call the symbol() function.
-It should return "EDC".
+روی دکمه "نماد" کلیک کنید تا تابع symbol() فراخوانی شود.
+این باید "EDC" را برگرداند.
 
-#### 2.4 Total supply
+#### 2.4 مجموع عرضه
 
-Click on the "totalSupply" button to call the totalSupply() function.
-It should return 1000000000000000000000 (1000\*10\*\*18).
+روی دکمه "totalSupply" کلیک کنید تا تابع totalSupply() فراخوانی شود.
+این باید ۱۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰ (۱۰۰۰ \* ۱۰\*\*۱۸) را برگرداند.
 
-**GIF** Test decimals, name, symbol, and totalSupply functions: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_test_functions.gif?raw=true" alt="Test transfer function" width="300"/>
+**GIF** آزمایش توابع دقت اعشاری، نام، نماد و کل عرضه: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_test_functions.gif?raw=true" alt="Test transfer function" width="300"/>
 
-#### 2.5 Balance of
+#### توازن ۲٫۵
 
-**2.5.1** Go to the "ACCOUNT" section in the sidebar and copy the displayed address by using the copy icon next to it.
+**2.5.1** به بخش "حساب" در نوار کناری بروید و آدرس نمایش داده شده را با استفاده از نماد کپی در کنار آن کپی کنید.
 
-**2.5.2** Paste the address in the input field next to the "balanceOf" function button and click on the button.
-It should return 1000000000000000000000 (1000\*10\*\*18).
+**2.5.2** آدرس را در قسمت ورودی کنار دکمه عملکرد "balanceOf" قرار دهید و روی دکمه کلیک کنید.
+این باید ۱۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰ (۱۰۰۰ \* ۱۰\*\*۱۸) را برگرداند.
 
-**GIF** Test balanceOf function: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_balanceOf.gif?raw=true" alt="Test transfer function" width="300"/>
+**GIF** تست تابع balanceOf:<img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_balanceOf.gif?raw=true" alt="Test transfer function" width="300"/>
 
-#### 2.6 Transfer
+#### 2.6 انتقال
 
-We will transfer EduCoin from one account to a second account.
+ما EduCoin را از یک حساب به یک حساب دیگر منتقل خواهیم کرد.
 
-**2.6.1** Go to the "ACCOUNT" section in the sidebar and click on the displayed address. This should open a dropdown. Select the second address displayed and copy its address (account 2).
+**2.6.1** به بخش "حساب" در نوار کناری بروید و روی آدرس نمایش داده شده کلیک کنید. این باید یک منوی کشویی را باز کند. آدرس دوم نمایش داده شده را انتخاب کرده و آدرس آن را کپی کنید (حساب ۲).
 
-**2.6.2** Open the dropdown and select the first account again (account 1), because this is the account that we want to use to make the transfer.
+**2.6.2** منوی کشویی را باز کنید و دوباره حساب اول (حساب ۱) را انتخاب کنید، زیرا این حسابی است که می‌خواهیم از آن برای انجام انتقال استفاده کنیم.
 
-**2.6.3** Paste the address in the input field next to the "transfer" function button, input the number 500000000000000000000, and click on the button.
+**2.6.3** آدرس را در قسمت ورودی کنار دکمه عملکرد "انتقال" قرار دهید، شماره 500000000000000000000000000000 را وارد کنید و روی دکمه کلیک کنید.
 
-**2.6.4** If you check the balances for account 1 and account 2, they should both return the amount 500000000000000000000.
+**2.6.4** اگر موجودی‌های حساب ۱ و حساب ۲ را بررسی کنید، باید هر دو مقدار ۵۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰ را بازگردانند.
 
-**GIF** Test transfer function: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_transfer.gif?raw=true" alt="Test transfer function" width="300"/>
+**GIF** تابع انتقال آزمایش: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_transfer.gif?raw=true" alt="Test transfer function" width="300"/>
 
-#### 2.7 Approve
+#### 2.7 تأیید
 
-We will now allow account 1 to spend tokens on behalf of account 2.
+ما اکنون اجازه می‌دهیم حساب ۱ به نمایندگی از حساب ۲ توکن‌ها را خرج کند.
 
-**2.7.1** Go to the "Account" section, copy the address of account 1, then set it to account 2 again.
+**2.7.1** به بخش «حساب» بروید، آدرس حساب ۱ را کپی کنید، سپس دوباره آن را به حساب ۲ تنظیم کنید.
 
-**2.7.2** In the approve function, enter the address of account 1 as the input for spender and set the amount to 250000000000000000000.
+**2.7.2** در تابع تأیید، آدرس حساب ۱ را به عنوان ورودی برای خرج‌کننده وارد کنید و مقدار را به ۲۵۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰ تنظیم کنید.
 
-**GIF** Test approve function: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_approve.gif?raw=true" alt="Test approve function" width="300"/>
+**GIF** تابع تایید آزمون: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_approve.gif?raw=true" alt="Test approve function" width="300"/>
 
-#### 2.8 Allowance
+#### 2.8 کمک هزینه
 
-Next to the "allowance" button enter the address of account 2 as the owner and account 1 as the spender; click on the button.
-It should return 1000000000000000000000.
+در کنار دکمه "مجوز"، آدرس حساب 2 را به عنوان مالک و حساب 1 را به عنوان خرج‌کننده وارد کنید؛ روی دکمه کلیک کنید.
+باید ۱۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰ را بازگرداند.
 
-**GIF** Test allowance function: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_allowance.gif?raw=true" alt="Test allowance function" width="300"/>
+**GIF** تابع اجازه آزمایش: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_allowance.gif?raw=true" alt="Test allowance function" width="300"/>
 
-#### 2.9 TransferFrom
+#### 2.9 انتقال از
 
-Now account 1 will transfer 250000000000000000000 tokens from account 2 to its own account.
+اکنون حساب ۱، ۲۵۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰ توکن را از حساب ۲ به حساب خود منتقل خواهد کرد.
 
-**2.9.1** Select account 1 in the "ACCOUNT" section.
+**2.9.1** حساب 1 را در بخش "حساب" انتخاب کنید.
 
-**2.9.2** Next to the "transferFrom" button enter the address of account 2 as the sender and account 1 as the recipient, enter 250000000000000000000 as the amount and click on the button.
+**2.9.2**در کنار دکمه «انتقال از» آدرس حساب ۲ را به عنوان فرستنده و حساب ۱ را به عنوان دریافت‌کننده وارد کنید، ۲۵۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰ را به عنوان مقدار وارد کنید و روی دکمه کلیک کنید.
 
-**2.9.3** Check the balances of accounts 2 and 1, they should return 250000000000000000000 and 750000000000000000000.
+**2.9.3** تعادل حساب‌های ۲ و ۱ را بررسی کنید، باید به ترتیب ۲۵۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰ و ۷۵۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰۰ برگردانند.
 
-**GIF** Test transferFrom function: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_transferFrom.gif?raw=true" alt="Test transferFrom function" width="300"/>
+**GIF** تست تابع transferFrom: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_transferFrom.gif?raw=true" alt="Test transferFrom function" width="300"/>
