@@ -1,10 +1,10 @@
 ---
-id: opcodesdebug
-name: Opcodes in the Debugger
+id: دیباگ کدهای عملیاتی
+name: دستورها عملیاتی در دیباگر
 summary: Using the Debugger, we'll check out what the CODECOPY opcode does and how it is used by the EVM during contract creation.
 level: 3
 tags:
-  - Remix
-  - Debugging
+  - ریمیکس
+  - دیباگ کردن
   - EVM
-  - Opcodes
+  - کدگذاری ها
