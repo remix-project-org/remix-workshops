@@ -1,33 +1,33 @@
 The ERC20 standard only describes the required and optional functionality that your contract needs, but you can add additional functionality.
 
-In this section, we added the functionality to burn and mint tokens, as well as the ability to pause the contract, by using OpenZeppelin extensions.
+در این بخش، ما قابلیت سوزاندن و ضرب توکن‌ها و همچنین امکان متوقف کردن قرارداد را با استفاده از افزونه‌های OpenZeppelin اضافه کردیم.
 
-Of course, you can write your own ERC20 token contract implementation or extensions and import them into your contract. But OpenZeppelin contracts have been audited by security experts and are a great way to add desired functionality.
+البته، شما می‌توانید پیاده‌سازی یا گسترش‌های قرارداد توکن ERC20 خود را بنویسید و آنها را به قرارداد خود وارد کنید. اما قراردادهای اوپن‌زدلین توسط کارشناسان امنیتی بررسی شده‌اند و راهی عالی برای افزودن قابلیت‌های مورد نظر هستند.
 
-### Mintable
+### مینتیبل
 
-The mint function allows the creator of the contract to mint (create) additional tokens after the contract has been deployed (line 22). As input parameters, the function needs the address that the tokens will be minted to, and the amount of tokens that should be minted.
+تابع مینت به سازنده قرارداد این امکان را می‌دهد که توکن‌های (اضافی) را پس از استقرار قرارداد (خط ۲۲) یجاد کند. به عنوان ورودی، این تابع به آدرسی که توکن‌ها به آن ضرب خواهند شد و مقدار توکن‌هایی که باید ضرب شوند نیاز دارد.
 
-We don't have to import `mint()` from another contract since the mint function is already part of the <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol" target="_blank">ERC20 contract</a> implementation of OpenZeppelin. We import `Ownable` (line 7) which is a contract module that provides a basic access control mechanism that allows an owner to have exclusive access to specific functions. In this contract, we add the inherited `onlyOwner` modifier to the `mint` function (line 22) and restrict access to this function to the "owner".
+ما نیازی به وارد کردن `mint()` از یک قرارداد دیگر نداریم زیرا تابع mint قبلاً بخشی از پیاده‌سازی <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol" target="_blank">قرارداد ERC20</a> اوپن‌زپلین است. ما `Ownable` (خط ۷) را وارد می‌کنیم که یک ماژول قرارداد است و یک مکانیزم کنترل دسترسی پایه را فراهم می‌کند که به یک مالک اجازه می‌دهد به صورت انحصاری به توابع خاصی دسترسی داشته باشد. در این قرارداد، ما اصلاحگر به ارث برده `onlyOwner` را به تابع `mint` (خط ۲۲) اضافه می کنیم و دسترسی به این تابع را به "مالک" محدود می کنیم.
 
-The contract will inherit additional functions like owner(), transferOwnership() and renounceOwnership() to manage access, from the <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol" target="_blank">Ownable contract</a>.
+قرارداد توابع اضافی مانند owner()، transferOwnership() و renounceOwnership() را برای مدیریت دسترسی از قرارداد <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol" target="_blank">Ownable</a> به ارث خواهد برد.
 
-### Burnable
+### قابل سوختن
 
-By importing the "ERC20Burnable" (line 5) and inheriting its functions (line 9) our contract allows token holders to destroy their tokens as well as the tokens in their allowance.
-For more information, have a look at the <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Burnable.sol" target="_blank">ERC20Burnable contract</a>.
+با وارد کردن "ERC20Burnable" (خط ۵) و ارث‌بری از توابع آن (خط ۹)، قرارداد ما به دارندگان توکن اجازه می‌دهد تا توکن‌های خود و همچنین توکن‌های موجود در سهمیه‌شان را نابود کنند.
+برای اطلاعات بیشتر، نگاهی به <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Burnable.sol" target="_blank">قرارداد ERC20Burnable</a> بیندازید.
 
-### Pausable
+### قابل توقف
 
-With the "Pausable" contract module (line 6 and 9) the owner is able to pause (line 14) and unpause (line 18) the contract. In the pause state, tokens can't be transferred, which can be helpful in emergency scenarios.
-For more information, have a look at the <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/Pausable.sol" target="_blank">Pausable contract</a>.
+با ماژول قرارداد "قابل توقف" (خط 6 و 9) مالک قادر است قرارداد را متوقف (خط 14) و از حالت توقف خارج (خط 18) کند. در حالت وقفه، توکن‌ها نمی‌توانند منتقل شوند که این می‌تواند در سناریوهای اضطراری مفید باشد.
+برای اطلاعات بیشتر، نگاهی به <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/Pausable.sol" target="_blank">قرارداد قابل توقف</a> بیندازید.
 
-Have a look at the OpenZeppelins <a href="https://docs.openzeppelin.com/contracts/4.x/wizard" target="_blank">Contract Wizard</a>, which allows you to easily add additional functionality.
+نگاهی به <a href="https://docs.openzeppelin.com/contracts/4.x/wizard" target="_blank">جادوگر قراردادهای OpenZeppelin</a> بیندازید که به شما این امکان را می‌دهد که به راحتی عملکردهای اضافی اضافه کنید.
 
-If you successfully completed this course, try the Learneth NFT Course as the next step in your journey.
+اگر این دوره را با موفقیت گذراندید، دوره NFT Learneth را به عنوان مرحله بعدی سفر خود امتحان کنید.
 
-## ⭐️ Assignment
+## تكليف
 
-1. Try to mint tokens to an account after deployment. Call `totalSupply()` and `balanceOf()` to confirm the correct execution.
-2. Burn tokens and then call `totalSupply()` and `balanceOf()` to confirm the correct execution.
-3. Test the pause function by pausing the contract using the owner account and trying to make a transfer with a second account. The transaction should not be able to be executed and will throw the exception: "Pausable: paused".
+1. سعی کنید پس از استقرار توکن‌ها را به یک حساب صادر کنید. تابع `totalSupply()` و `balanceOf()` را فراخوانی کنید تا اجرای صحیح را تأیید کنید.
+2. توکن‌ها را بسوزانید و سپس `totalSupply()` و `balanceOf()` را فراخوانی کنید تا صحیح بودن اجرا را تأیید کنید.
+3. عملکرد توقف را با متوقف کردن قرارداد با حساب مالک آزمایش کنید و سعی کنید با یک حساب دوم انتقال انجام دهید. این تراکنش نباید قابل اجرا باشد و باید استثنای "قابل متوقف: متوقف شده" را پرتاب کند.
