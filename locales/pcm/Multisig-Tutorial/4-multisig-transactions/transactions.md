@@ -4,17 +4,17 @@ For dis we go explore di process of submitting and to confirm di transaction.
 
 We get new new modifiers for dis iteration. Make we examine nam one by one.
 
-1. **`txExists` modifier:** (Line 13) ensures that the transaction exists. It does this by checking whether the transaction index is less than the length of the `transactions` array. We'll go into more about in this modifier later in this section.
-2. **`notExecuted` modifier:** (Line 18) ensures that the transaction has not been executed. It does this by checking whether the `executed` variable of the transaction is false.
-3. **`notConfirmed` modifier:** (Line 23) ensures that the transaction has not been confirmed by the caller. It does this by checking whether the `isConfirmed` mapping of the transaction index and the caller's address is false.
+1. `txExists` modifier. (Line 13) dey make sure say the transaction dey real. E dey do this go tin by checking if the transaction index dey smaller than the length of the transaction array. We go look into dis modifier later on for dis section.
+2. `notExecuted` modifier:\*\* (Line 18) dey ensures say the transaction never execute. E dey do dis by checking if the executed variable for the transaction dey false.
+3. `notConfirmed` modifier:\*\* (Line 23) e dey make sure say the transaction never dey confirmed by the caller. E dey do dis thing by checking if `isConfirmed` mapping for the transaction index and the caller address dey false.
 
 ## Transaction Struct
 
-On line 28, we have a struct called `Transaction`. We store the struct members: `to`, `value`, `data`, `executed`, and `numConfirmations` in individual variables.
+For line 28, we get struct wey we deh call `Transaction`. We dey store struct members: `to`, `value`, `data`, `executed`, and `numConfirmations` for individual variables.
 
 ## Mapping of Confirmations
 
-On line 37, we have a mapping called `isConfirmed`. This mapping is used to keep track of the confirmations of each transaction. It maps the transaction's index to a mapping of an owner addresse to a boolean value. The boolean value indicates whether this owner has confirmed the transaction.
+For line 37, we get mapping wey dem dey call `isConfirmed`. This mapping is used to keep track of the confirmations of each transaction. It maps the transaction's index to a mapping of an owner addresse to a boolean value. The boolean value indicates whether this owner has confirmed the transaction.
 
 ## Transactions Array
 
@@ -31,7 +31,7 @@ We have four new events in this iteration of the contract:
 
 ## submitTransaction Function
 
-The `submitTransaction` function (Line 78) allows users to submit a transaction to the multi-sig wallet. It takes three parameters: `to`, `value`, and `data`. The `to` parameter is the address of the recipient of the transaction. The `value` parameter is the amount of Ether to be sent. The `data` parameter is the data to be sent to the recipient. Only owners can submit transactions.
+The `submitTransaction` function (Line 78) allows users to submit a transaction to the multi-sig wallet. E go take three parameters: to`, `value`, and `data`. The `to`parameter is the address of the recipient of the transaction. The`value`parameter is the amount of Ether to be sent. The`data\` parameter is the data to be sent to the recipient. Only the owner fit submit transactions.
 
 On line, 85 we create a new transaction struct and push it to the `transactions` array and emit the `SubmitTransaction` event. The `txIndex` variable is used to keep track of the transaction index.
 
