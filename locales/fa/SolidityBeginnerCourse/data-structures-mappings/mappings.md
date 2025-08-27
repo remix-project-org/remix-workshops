@@ -1,37 +1,37 @@
-In Solidity, _mappings_ are a collection of key types and corresponding value type pairs.
+در سالیدیتی، _نقشه‌ها_ مجموعه‌ای از نوع‌های کلیدی و جفت‌های نوع مقدار متناظر هستند.
 
-The biggest difference between a mapping and an array is that you can't iterate over mappings. If we don't know a key we won't be able to access its value. If we need to know all of our data or iterate over it, we should use an array.
+بزرگ‌ترین تفاوت بین یک نقشه و یک آرایه این است که نمی‌توانید بر روی نقشه‌ها تکرار کنید. اگر یک کلید را ندانیم، نمی‌توانیم به ارزش آن دسترسی پیدا کنیم. اگر ما نیاز داریم که تمام داده‌های خود را بدانیم یا بر روی آن‌ها تکرار کنیم، باید از یک آرایه استفاده کنیم.
 
-If we want to retrieve a value based on a known key we can use a mapping (e.g. addresses are often used as keys). Looking up values with a mapping is easier and cheaper than iterating over arrays. If arrays become too large, the gas cost of iterating over it could become too high and cause the transaction to fail.
+اگر بخواهیم مقداری را بر اساس یک کلید شناخته شده بازیابی کنیم می‌توانیم از یک نقشه‌برداری استفاده کنیم (برای مثال، آدرس‌ها اغلب به عنوان کلید استفاده می‌شوند). جستجوی مقادیر با استفاده از نقشه‌ها آسان‌تر و ارزان‌تر از تکرار در آرایه‌ها است. اگر آرایه‌ها خیلی بزرگ شوند، هزینه گاز برای تکرار بر روی آن می‌تواند خیلی بالا برود و باعث شود تراکنش ناموفق شود.
 
-We could also store the keys of a mapping in an array that we can iterate over.
+ما همچنین می‌توانیم کلیدهای یک نگاشت را در یک آرایه ذخیره کنیم که می‌توانیم بر روی آن تکرار کنیم.
 
-### Creating mappings
+### ایجاد نقشه‌ها
 
-Mappings are declared with the syntax `mapping(KeyType => ValueType) VariableName`.
-The key type can be any built-in value type or any contract, but not a reference type. The value type can be of any type.
+نگاشت‌ها با نحو `mapping(KeyType => ValueType) VariableName` اعلام می‌شوند.
+نوع کلید می‌تواند هر نوع ارزش ساخته‌شده داخلی یا هر قرارداد باشد، اما نمی‌تواند یک نوع مرجع باشد. نوع مقدار می‌تواند از هر نوعی باشد.
 
-In this contract, we are creating the public mapping `myMap` (line 6) that associates the key type `address` with the value type `uint`.
+در این قرارداد، ما یک نقشه عمومی به نام `myMap` (خط 6) ایجاد می‌کنیم که نوع کلید `address` را با نوع ارزش `uint` مرتبط می‌سازد.
 
-### Accessing values
+### دسترسی به مقادیر
 
-The syntax for interacting with key-value pairs of mappings is similar to that of arrays.
-To find the value associated with a specific key, we provide the name of the mapping and the key in brackets (line 11).
+ساختار نحوی برای تعامل با جفت‌های کلید-مقدار در نگاشت‌ها مشابه آرایه‌ها است.
+برای پیدا کردن مقدار مرتبط با یک کلید خاص، نام نگاشته و کلید را در پرانتزها ارائه می‌دهیم (خط 11).
 
-In contrast to arrays, we won't get an error if we try to access the value of a key whose value has not been set yet. When we create a mapping, every possible key is mapped to the default value 0.
+بر خلاف آرایه‌ها، اگر سعی کنیم به مقدار یک کلید که هنوز مقداری برای آن تعیین نشده است دسترسی پیدا کنیم، با خطا مواجه نخواهیم شد. بر خلاف آرایه‌ها، اگر سعی کنیم به مقدار یک کلید که هنوز مقداری برای آن تعیین نشده است دسترسی پیدا کنیم، با خطا مواجه نخواهیم شد 0.
 
-### Setting values
+### تنظیم مقادیر
 
-We set a new value for a key by providing the mapping’s name and key in brackets and assigning it a new value (line 16).
+ما یک مقدار جدید برای یک کلید تعیین می‌کنیم با ارائه نام نگاشت و کلید در پرانتز و اختصاص دادن یک مقدار جدید به آن (خط 16).
 
-### Removing values
+### حذف مقادیر
 
-We can use the delete operator to delete a value associated with a key, which will set it to the default value of 0. As we have seen in the arrays section.
+ما می‌توانیم از اپراتور حذف برای حذف یک مقدار مرتبط با یک کلید استفاده کنیم که این مقدار را به مقدار پیش‌فرض 0 تنظیم می‌کند. همانطور که در بخش آرایه‌ها دیده‌ایم.
 
-<a href="https://www.youtube.com/watch?v=tO3vVMCOts8" target="_blank">Watch a video tutorial on Mappings</a>.
+<a href="https://www.youtube.com/watch?v=tO3vVMCOts8" target="_blank">یک آموزش ویدیویی درباره نقشه‌برداری‌ها را تماشا کنید</a>.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-1. Create a public mapping `balances` that associates the key type `address` with the value type `uint`.
-2. Change the functions `get` and `remove` to work with the mapping balances.
-3. Change the function `set` to create a new entry to the balances mapping, where the key is the address of the parameter and the value is the balance associated with the address of the parameter.
+1. یک نقشه عمومی به نام `balances` ایجاد کنید که نوع کلید `address` را با نوع مقدار `uint` مرتبط کند.
+2. توابع `get` و `remove` را تغییر دهید تا با تعادل های نگاشت کار کنند.
+3. تابع `set` را تغییر دهید تا یک ورودی جدید به نگاشت موجودی ها ایجاد کند، جایی که کلید، آدرس پارامتر و مقدار، موجودی مرتبط با آدرس پارامتر است.
