@@ -1,34 +1,34 @@
-In this section, we'll explore the `receive` function and the associated Deposit event. We'll examine how the `receive` function is used to deposit Ether into the multi-signature wallet and how the Deposit event provides transparency.
+در این بخش، تابع `receive` و رویداد Deposit مرتبط با آن را بررسی خواهیم کرد. ما بررسی خواهیم کرد که چگونه از تابع «دریافت» برای واریز اتر به کیف پول چند امضایی استفاده می‌شود و چگونه رویداد «واریز» شفافیت ایجاد می‌کند.
 
-## Deposit Event
+## رویداد سپرده گذاری
 
-On line, 9 we have the Deposit event. The Deposit event is emitted whenever Ether is deposited into the multi-signature wallet. It includes three parameters:
+در خط ۹، رویداد واریز Deposit را داریم. رویداد واریز Deposit هر زمان که اتر به کیف پول چندامضایی واریز شود، منتشر می‌شود. شامل سه پارامتر است:
 
-1. `sender`: The address that sent the Ether.
-2. `amount`: The amount of Ether deposited.
-3. `balance`: The updated balance of the contract after the deposit.
+1. «فرستنده»: آدرسی که اتر را ارسال کرده است.
+2. «مبلغ»: مقدار اتر واریز شده.
+3. «موجودی»: موجودی به‌روز شده قرارداد پس از واریز.
 
-We can use the Deposit event to track the flow of Ether into the multi-signature wallet and maybe trigger other actions based on the event.
+ما می‌توانیم از رویداد واریز Deposit برای ردیابی جریان اتر به کیف پول چندامضایی استفاده کنیم و شاید بر اساس این رویداد اقدامات دیگری را انجام دهیم.
 
-## receive Function
+## دریافت تابع
 
-On line 43, we have the `receive` function. The `receive` function is a special function that is executed whenever Ether is sent to the contract.
+در خط ۴۳، تابع `receive` را داریم. تابع «دریافت» یک تابع ویژه است که هر زمان که اتر به قرارداد ارسال می‌شود، اجرا می‌شود.
 
-The `receive` function is marked as `external` and `payable`. The `external` modifier means that the function can only be called from outside the contract. The `payable` modifier means that the function can receive Ether.
+تابع «دریافت» یک تابع ویژه است که هر زمان که اتر به قرارداد ارسال می‌شود، اجرا می‌شود. اصلاح‌کننده‌ی «خارجی» به این معنی است که تابع فقط می‌تواند از خارج از قرارداد فراخوانی شود. عبارت «payable» به این معنی است که این تابع می‌تواند اتر دریافت کند.
 
-The `receive` function emits the Deposit event (Line 44) with the address of the sender, the amount of Ether sent, and the updated balance of the contract. It doesn't return anything.
+تابع «دریافت» رویداد «واریز» (خط ۴۴) را به همراه آدرس فرستنده، مقدار اتر ارسالی و موجودی به‌روز شده قرارداد منتشر می‌کند. چیزی برنمی گرداند.
 
-To receive Ether, a contract must have a `receive`, `fallback`, or a function with the `payable` modifier. If none of these are present, the contract will reject any Ether sent to it.
+برای دریافت اتر، یک قرارداد باید دارای یک «دریافت»، «جایگزین» یا یک تابع با اصلاح‌کننده «پرداخت‌پذیر» باشد. اگر هیچ یک از این موارد وجود نداشته باشد، قرارداد هر اتری که به آن ارسال شود را رد می‌کند.
 
-## Conclusion
+## نتیجه گیری
 
-In this section, we explored the `receive` function and the associated Deposit event. We examined how the `receive` function is used to deposit Ether into the multi-signature wallet and how the Deposit event provides transparency.
+در این بخش، تابع «دریافت» و رویداد مربوط به آن یعنی «واریز» را بررسی کردیم. ما بررسی کردیم که چگونه از تابع «دریافت» برای واریز اتر به کیف پول چندامضایی استفاده می‌شود و چگونه رویداد «واریز» شفافیت ایجاد می‌کند.
 
-## ⭐️ Assignment: Deposit Ether
+## ⭐️ تکلیف: واریز اتر
 
-Deposit 2 Ether into the Multisig contract.
+۲ اتر را به قرارداد چندامضایی واریز کنید.
 
-1. Deploy the Multisig contract as in the previous assignment.
-2. Enter a Value of 2 Ether in the Value field and select Ether in the dropdown menu.
-3. At the bottom of your deployed contract in the "Low level interactions" section, click on the "Transact" button.
-4. On top of your deployed contract, it should now say "Balance: 2 Ether".
+1. قرارداد چندامضایی را مانند تکلیف قبلی مستقر کنید.
+2. مقدار ۲ اتر را در فیلد مقدار وارد کنید و اتر را از منوی کشویی انتخاب کنید.
+3. در پایین قرارداد مستقر شده خود در بخش «تعاملات سطح پایین»، روی دکمه «تراکنش» کلیک کنید.
+4. بالای قرارداد مستقر شده شما، اکنون باید عبارت «موجودی: ۲ اتر» نوشته شده باشد.
