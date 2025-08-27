@@ -1,6 +1,6 @@
-In this contract, we use an ERC721 token contract implementation from OpenZeppelin (line 4).
+For dis contract we go use ERC20 token contract implementation from openzepplin (line 4).
 
-Have a look at their implementation of a <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol" target="_blank">ERC721 contract</a>. Apart from the functionality specified in the ERC721 standard, the contract provides additional functions which we will see in a bit.
+U go look dier implementation of a<a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol" target="_blank">ERC721 contract</a>. Apart from di functionality specified in di ERC20 standard dis contract provides additional functionality.
 
 ## myToken
 
