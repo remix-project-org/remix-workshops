@@ -1,20 +1,20 @@
-The goal here na to store the code inside the blockchain. The EVM need to tell the client (get, parity) wey dey part of the **call data** to store.   In this step, we are saving the contract MINUS its constructor (because that gets inplmented only 1 time) and MINUS the input parameter does not need to be stored.
+The goal here na to store the code inside the blockchain. The EVM need to tell the client (get, parity) wey dey part of the **call data** to store.   For dis step, we go save the contract MINUS the constructor because e go get implemented 1 time con MINUS de input parameter which no need to dey store am.
 
-`CODECOPY` is the first step: it copies the bytecode to memory, then the ethereum client will be able to consume it.  MUNCH!
+`CODECOPY` na the first step: it dey copy the bytecode to memory, den de Ethereum client go fit consume am.  Di MUNCH!
 
-But wait... before the client can **MUNCH**  bytecode, it needs an instruction - an opcode to tell it to MUNCH. `RETURN` is this opcode!
+U go wait first... before the client go fit **MUNCH** bytecode, it go need instruction - an opcode to tell am to MUNCH. `RETURN` na the opcode!
 
-As stated in the general spec, at the end of the contract creation, the client (geth, parity) takes the targeted value by the opcode `RETURN` and **persists** it by making it part of the deployed bytecode.
+As e state for the general spec, for di end of the contract creation, di client(geth, parity) go take the targeted value by di opcode `RETURN` and **persists** am con make am part of di deployed bytecode.
 
-Once you are in the `CODECOPY`, look at the top 3 items in the **Stack**:
+Once u don dey the `CODECOPY`, look di top 3 items for the **stack**:
 
-`0: 0x0000000000000000000000000000000000000000000000000000000000000000`
+0: 0x0000000000000000000000000000000000000000000000000000000000000000`
 `1: 0x0000000000000000000000000000000000000000000000000000000000000055`
-`2: 0x000000000000000000000000000000000000000000000000000000000000003e`
+`2: 0x000000000000000000000000000000000000000000000000000000000000003e\`
 
-_In your Stack - `1` & `2` may be slightly different.  The difference may be due to a different compiler version._
+_for ur stack- `1` & `2` fit be slightly different.  The difference fit be different compiler version._
 
-**These are the parameters for `CODECOPY`.**
+**Na this be parameters for `CODECOPY`.**
 
 Remember: _codecopy(t, f, s)_ - copy **s** bytes from code at position **f** to memory at position **t**
 
