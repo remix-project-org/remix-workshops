@@ -11,9 +11,9 @@ Se questo contratto avesse importato altri contratti, anche le funzioni dei cont
 
 3. Le funzioni con i pulsanti blu sono funzioni pure o view.  Questo significa che si limitano a leggere una proprietà o a restituire un valore.  In altre parole, non salvano nulla – quindi sono GRATUITE (non costano gas).  Le funzioni con altri colori – solitamente arancione (a seconda del tema di Remix) – costano gas perché salvano informazioni.  Stanno creando una transazione.
 
-4. 2_Owner.sol does not have a **payable** function.  If it did, the button's color would be red.  Payable functions allow you to send Ether to the function.  To send ETH with a payable function, you put the amount you want to send in the **value** field towards the top of the Deploy & Run module.
+4. 2_Owner.sol non ha una funzione payable.  Se l'avesse, il colore del pulsante sarebbe rosso.  Le funzioni payable consentono di inviare Ether alla funzione.  Per inviare ETH con una funzione payable, inserisci l'importo che desideri inviare nel campo value verso la parte superiore del modulo Deploy & Run.
 
-5. In the Remix VM, you don't need to approve a transaction.  When using a more realistic test environment or when using the mainnet - you will need to approve the transactions for them to go through. Approving a transaction costs gas.
+5. Nella Remix VM, non è necessario approvare una transazione.  Quando si utilizza un ambiente di test più realistico o la mainnet, sarà necessario approvare le transazioni affinché vengano completate. Approvare una transazione costa gas.
 
-6. Choosing a public network is not done in Remix but in your Browser Wallet.  There is a plug icon to the right of the Environment title that links to chainlist.org where you can get the specs of the chain you want to interact with.
+6. La scelta di una rete pubblica non avviene in Remix, ma nel tuo Browser Wallet.  C'è un'icona a forma di spina a destra del titolo Environment che collega a chainlist.org, dove puoi ottenere le specifiche della chain con cui desideri interagire.
    ![chainlist](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interacting/images/chainlist.png "chainlist")
