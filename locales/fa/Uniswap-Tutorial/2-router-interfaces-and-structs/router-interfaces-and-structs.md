@@ -1,11 +1,11 @@
-The entire UniswapSwapExamples contract will only be presented in section 5 of this tutorial.  Before then, we'll build up blocks of code.
+کل قرارداد UniswapSwapExamples تنها در بخش ۵ این آموزش ارائه خواهد شد.  قبل از آن، ما بلوک‌های کد را ایجاد خواهیم کرد.
 
-This section explores the `ISwapRouter` interface, which defines the functions that can be called on the Uniswap Swap contract.
+این بخش به بررسی رابط `ISwapRouter` می‌پردازد که توابعی را تعریف می‌کند که می‌توان روی قرارداد مبادله Uniswap فراخوانی کرد.
 
-Single-hop swaps allow users to exchange one token for another directly within a liquidity pool.
-Multi-hop swaps allow users to exchange one token for another by routing through multiple tokens.
+تبادلات تک‌گام به کاربران اجازه می‌دهد تا یک توکن را مستقیماً در یک استخر نقدینگی با توکن دیگر مبادله کنند.
+تبادلات چند مرحله‌ای به کاربران اجازه می‌دهد تا یک توکن را برای توکن دیگر از طریق چندین توکن مبادله کنند.
 
-Interfaces in Solidity specify functions that must be included in a contract that inherits them.  They are useful for declaring what functions be supported and allow for easier integration and interaction between different contracts.
+رابط‌ها در سالیدیتی توابعی را مشخص می‌کنند که باید در قراردادی که آن‌ها را به ارث می‌برد، گنجانده شوند.  آنها برای اعلام اینکه چه عملکردهایی پشتیبانی می‌شوند و همچنین برای تسهیل ادغام و تعامل بین قراردادهای مختلف مفید هستند.
 
 Structs are used to define custom data types.
 
