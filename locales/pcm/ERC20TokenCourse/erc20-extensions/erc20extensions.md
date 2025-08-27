@@ -19,15 +19,15 @@ If yu wan more information, look di <a href="https://github.com/OpenZeppelin/ope
 
 ### Pausable
 
-With di "Pausable" contract module (line 6 and 9) the owner go fit to pause (line 14) and unpause (line 18) di contract. In the pause state, tokens can't be transferred, which can be helpful in emergency scenarios.
-For more information, have a look at the <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/Pausable.sol" target="_blank">Pausable contract</a>.
+With di "Pausable" contract module (line 6 and 9) the owner go fit to pause (line 14) and unpause (line 18) di contract. For di pause State, dem no fit transfer token wen suppose get use for emergency matters.
+If you wan get more information, check here <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/Pausable.sol" target="_blank">Pausable contract</a>.
 
-Have a look at the OpenZeppelins <a href="https://docs.openzeppelin.com/contracts/4.x/wizard" target="_blank">Contract Wizard</a>, which allows you to easily add additional functionality.
+Try see the OpenZeppelins <a href="https://docs.openzeppelin.com/contracts/4.x/wizard" target="_blank">Contract Wizard</a>, wey dey go let you to easily add more and more functionality.
 
-If you successfully completed this course, try the Learneth NFT Course as the next step in your journey.
+If you don finally finish this course, try check out the Learneth NFT Course as next step for your journey.
 
-## ⭐️ Assignment
+## Homework
 
-1. Try to mint tokens to an account after deployment. Call `totalSupply()` and `balanceOf()` to confirm the correct execution.
-2. Burn tokens and then call `totalSupply()` and `balanceOf()` to confirm the correct execution.
-3. Test the pause function by pausing the contract using the owner account and trying to make a transfer with a second account. The transaction should not be able to be executed and will throw the exception: "Pausable: paused".
+1. Try mint tokens go one account after you don do deployment. Call `totalSupply()` and `balanceOf()` to dey sure of the correct execution.
+2. Burn tokens con call `totalSupply()` and `balanceOf()` to confirm say na the correct execution.
+3. You go test run the pause function by pausing the contract with the owner account con try mame transfer with another account. The transaction no suppose work and w suppose con throw the exception:"Pausable: paused".
