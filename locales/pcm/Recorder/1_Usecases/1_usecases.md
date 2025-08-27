@@ -1,7 +1,7 @@
-1. You want to show someone what happens when you do a number of transactions with a contract and you don't want to explain each step - you just want to get them to the last step.
+1. If you wan show persin wetin dey sup when you do plenty transactions and you no wan explain explain each-step you just want make dem reach last step.
 
-    - To show someone a problem in their code.
+    - If you wan show persin problem for their code.
 
-    - In a class, to get the students to a certain place and have them start working from there.
+    - In one class, to get the students reach one kain place, and you go con make dem dey work for there.
 
 2. You want to start your development in the JavascriptVM because it is quick and then to switch to another testnet - but you don't want to manually repeat all the tedious clicking for each different network.
