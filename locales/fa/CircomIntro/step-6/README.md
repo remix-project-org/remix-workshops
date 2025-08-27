@@ -1,27 +1,27 @@
-With the trusted setup complete, you can now compute the witness for your circuit based on specific inputs.
+با اتمام نصب مورد اعتماد، اکنون می‌توانید شاهد مدار خود را بر اساس ورودی‌های مشخص محاسبه کنید.
 
-## What is a Witness?
+## شاهد چیست؟
 
- - A **Witness** is a set of values that satisfy all the constraints of your circuit. It includes all the intermediate numbers and results that satisfy the circuit's rules. The witness is used in zero-knowledge proofs to demonstrate that you know a valid solution to the problem without actually showing the solution itself. This allows others to verify that you did everything correctly while keeping your specific numbers and calculations private.
- - It is essential for generating a proof.
+ - یک **شاهد** مجموعه‌ای از مقادیر است که تمام قیود مدار شما را برآورده می‌کند. این شامل تمام اعداد و نتایج میانجی است که قوانین مدار را برآورده می‌کنند. شاهد در اثبات‌های بدون دانش برای نشان دادن این که شما یک راه‌حل صحیح برای مشکل دارید بدون اینکه به‌واقع راه‌حل را نشان دهید، استفاده می‌شود. این به دیگران اجازه می‌دهد تا تأیید کنند که شما همه چیز را به درستی انجام داده‌اید در حالی که اعداد و محاسبات خاص خود را خصوصی نگه می‌دارید.
+ - این برای تولید یک مدرک ضروری است.
 
-## Inputting Values
+## ورود مقادیر
 
-1. In the **Compute Witness** section, you'll see input fields dynamically generated based on your circuit's inputs.
-2. Enter values for `a` and `b`. For example:
+1. در بخش **شهادت محاسبه**، فیلدهای ورودی به صورت پویا بر اساس ورودی‌های مدار شما ایجاد می‌شوند.
+2. مقدارهای `a` و `b` را وارد کنید. برای مثال:
     - `a = 3`
     - `b = 4`
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-6/images/compute_witness.png" alt="compute-witness" width=280 height=240>
 
-## Computing the Witness
+## محاسبه شاهد
 
-1. After entering the inputs, click on the **Compute Witness** button.
-2. The plugin will compute the witness based on your inputs.
-3. If successful, you'll see `multiplier.wtn` created in the `.bin` directory in the file explorer.
+1. پس از وارد کردن ورودی‌ها، روی دکمه **محاسبه شاهد** کلیک کنید.
+2. این پلاگین بر اساس ورودی‌های شما شهادت را محاسبه خواهد کرد.
+3. اگر موفق باشید، خواهید دید که `multiplier.wtn` در دایرکتوری `.bin` در فایل اکسپلورر ایجاد شده است.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-6/images/witness_computed.png" alt="witness-computed" width=340 height=350>
 
-**Note:** If there are any errors, ensure that your inputs are valid and satisfy the circuit's constraints.
+**توجه:** اگر خطایی وجود دارد، اطمینان حاصل کنید که ورودی‌های شما معتبر بوده و محدودیت‌های مدار را برآورده می‌کنند.
 
-In the next step, we'll generate a proof using the computed witness.
+در مرحله بعد، ما یک اثبات با استفاده از شاهد محاسبه شده تولید خواهیم کرد.
