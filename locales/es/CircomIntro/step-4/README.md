@@ -1,18 +1,18 @@
-With your `multiplier.circom` circuit ready, let's compile it using the Circuit Compiler plugin.
+Con tu circuito `multiplier.circom` listo, vamos a compilarlo usando el complemento Compilador de Circuito.
 
-## Selecting the Compiler Version
+## Selección de la Versión del Compilador
 
-Choose the desired **Compiler Version** from the dropdown menu. For this tutorial, select the latest stable version.
+Escoge la **Versión del Compilador** deseada desde el menú desplegable. Para este tutorial, selecciona la última versión estable.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-4/images/select_compiler_version.png" alt="select-compiler-version" width=250 height=100>
 
-## Configuring Compilation Options
+## Configuración de las Opciones de Compilación
 
-- **Auto Compile:** You can enable this option to automatically compile your circuit whenever you save changes.
-- **Hide Warnings:** Enable this to suppress compiler warnings if any.
-- **Advanced Configuration:**
-  - Click to expand.
-  - Select the **Prime Field**. Para la mayoría de los casos, `BN128` es suficiente.
+- **Auto Compilación:** Puedes habilitar esta opción para que automáticamente se compile tu circuito cada vez que guardes algún cambio realizado en este.
+- **Ocultar Advertencias:** Habilita esto para suprimir las advertencias del compilador.
+- **Configuración Avanzada:**
+  - Click en expandir.
+  - Selecciona el **Campo Prime**. Para la mayoría de los casos, `BN128` es suficiente.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-4/images/advanced_configuration.png" alt="advanced-configuration" width=300 height=100>
 
