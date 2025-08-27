@@ -1,4 +1,4 @@
-# Proxy Contract AKA the Dispatcher
+# Di Proxy Contract AKA de Dispatcher
 
 ## Why?
 
