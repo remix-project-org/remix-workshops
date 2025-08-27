@@ -1,28 +1,28 @@
-In this section, we'll explore the **initialization process** of the Multisig smart contract. We'll examine the constructor function and review how it sets up the initial state of the contract.
+For dis area we go explore di **initialization process** of the Multisig smart contract. We fit examine di constructor function and review how im set up di initial state of di contract.
 
-## Note
+## De note
 
-From this section on in this tutorial, we will be building up a multisig contract. In subsequent sections, the contract will become increasingly complete.
+For dis section dis tutorial fit build up ua mulstisig contract. In small section di contract fit become more complete.
 
-## Overview
+## Di overview
 
-In this section, the contract consists of events, state variables, modifiers, and functions. **Events** provide transparency by logging specified activities on the blockchain, while **modifiers** ensure that only authorized users can execute certain functions.
+Dis section di contract get events, state variables, modifiers and functions. **Events** provide transparency by logging specified activities on de blockchain, while **modifiers** ensure say na only authorized users can execute certain functions.
 
-## State Variables
+## Dis na State Variables
 
-In Line 4, we have the MultisigWallet contract itself. At the beginning of the contract, we have three state variables.
+For line 4 we get de MultisigWallet contract itself. For di begining of di contract we get three state variables.
 
-1. **`owners`:** An array containing the addresses of all owners of the multi-signature wallet (Line 5).
-2. **`isOwner`:** A mapping indicating whether an address is an owner (Line 6).
-3. **`numConfirmationsRequired`:** The number of confirmations required for a transaction (Line 7).
+1. **`owners`:** An array containing de addresses of all im owners of de multi-signature wallet (Line 5).
+2. **`isOwner`:** A mapping indicating whether an address na im owner (Line 6).
+3. **`numConfirmationsRequired`:** de number of confirmations required for a transaction (Line 7).
 
-The setup of array and mapping allows us to easily retrieve the list of owners and verify whether an address is an owner.
+Di setup of array and im mapping dey allow us collect di list of owners and verify whether an address na im owner.
 
-## Modifiers
+## Di modifiers
 
-Next, we have a modifier called `onlyOwner` (Line 9). Modifiers in Solidity are special keywords that can be used to amend the behavior of functions. In our case, the `onlyOwner` modifier ensures that only owners can execute a function. It does this by checking whether the address of the **caller** is an owner.
+Next we get modifiers wey dem call `onlyOwner` (Line 9). Modifiers in Solidity are special keywords that can be used to amend the behavior of functions. For our case di `onlyOwner` modifier ensures say na only owners can execute a function. E dey do am by checking whether di address of di **caller** is an owner.
 
-## Constructor Function
+## Di Constructor Function
 
 The `constructor` function (Line 14) is executed only once during the deployment of the contract. It initializes essential parameters, in this case, the list of owners and the required number of confirmations (Line 14).
 
