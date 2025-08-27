@@ -2,14 +2,15 @@
 
 ![Remix layout](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/a-layout1c.png "Remix layout")
 
-- Most plugins appear in the **Side Panel**.
-- Editing code happens in tabs in the **Main Panel**.
-- The results of transactions and other actions are visible in the **Terminal**.
-- Switching between plugins happens in the **Icons Panel**.
-- To make a panel larger, drag its border.
+- Most plugins dey appear for d **Side Panel**.
+- Editing code dey happen fr tabs for d **Main Panel**.
+- D results of transactions nd other actions dey visible fr d **Terminal**.
+- Na inside **Icons Panel** Switching between plugins dey happen.
+- To make panel big pass as e dey, drag hin border.
 
-Try clicking the **Solidity Compiler** icon ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/solidity-icon.png) in the **Icons Panel**. Then click the **Deploy & Run** icon ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/deploy-run.png).  Then come back to **LearnEth** by clicking this icon ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/learneth.png).
+Try click d **Solidity Compiler** icon ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/solidity-icon.png) inside d **Icons Panel**. Mk u con click d **Deploy & Run** icon ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/deploy-run.png).  Make yu con come back to **LearnEth** as
+u click dis icon ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/learneth.png).
 
-In the **Main Panel** of Remix, make sure you see the **Home** tab.  The **Home** tab has lots of useful links. To navigate there, either click the **Home** tab in the **Main Panel** or click the Remix icon ![Remix icon](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/remix-logo.png "Remix icon") on the top of the icon panel.
+For d **Main Panel** of Remix, make sure say yu see d **Home** tab.  Dat **Home** tab get plenty links wey useful. If yu wan navigate d place, either make u click d **Home** tab for d **Main Panel** abi yu click d Remix icon ![Remix icon](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/remix-logo.png "Remix icon") wey dey d top of d icon panel.
 
-- See all the plugins in the **Plugin Manager**.  Click this icon ![plugin manager](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/plugin1.png "Plugin Manager icon") in the lower left corner Remix.
+- Make yu for See all d plugins inside d **Plugin Manager**.  Make yu Click dis icon ![plugin manager](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/plugin1.png "Plugin Manager icon") for d lower left corner Remix.
