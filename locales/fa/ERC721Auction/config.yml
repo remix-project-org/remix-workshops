@@ -15,5 +15,5 @@ steps:
     name: توابع شروع و پیشنهاد قیمت
     path: حراج-شروع-پیشنهاد
   - 
-    name: Withdraw and End Functions
-    path: auction-withdraw-end
+    name: توابع برداشت و پایان
+    path: پایان حراج-برداشت
