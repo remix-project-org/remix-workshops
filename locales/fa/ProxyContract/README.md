@@ -1,3 +1,3 @@
-## Learn the Proxy Pattern
+## الگوی پروکسی را بیاموزید
 
-Save gas & make upgradable contracts
+صرفه جویی در سوخت و ایجاد قراردادهای قابل ارتقاء
