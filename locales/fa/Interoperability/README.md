@@ -1,3 +1,3 @@
-## Interoperability Between Blockchains
+## قابلیت همکاری بین بلاکچین‌ها
 
-Learn how to build interoperable smart contracts that can send messages and assets between different blockchains using Axelar technology.
+بیاموزید که چگونه قراردادهای هوشمند تعاملی بسازید که بتوانند با استفاده از فناوری Axelar، پیام‌ها و دارایی‌ها را بین بلاکچین‌های مختلف ارسال کنند.
