@@ -1,24 +1,24 @@
-The values of variables in Solidity can be stored in different data locations: _memory_, _storage_, and _calldata_.
+مقدار متغیرها در سالیدیتی می‌تواند در مکان‌های داده مختلف ذخیره شود: _حافظه_، _ذخیره‌سازی_ و _کال‌داده_.
 
-As we have discussed before, variables of the value type store an independent copy of a value, while variables of the reference type (array, struct, mapping) only store the location (reference) of the value.
+همانطور که قبلاً بحث کردیم، متغیرهای نوع مقدار یک نسخه مستقل از یک مقدار را ذخیره می‌کنند، در حالی که متغیرهای نوع مرجع (آرایه، ساختار، نگاشتن) تنها موقعیت (ارجاع) مقدار را ذخیره می‌کنند.
 
-If we use a reference type in a function, we have to specify in which data location their values are stored. The price for the execution of the function is influenced by the data location; creating copies from reference types costs gas.
+اگر ما از یک نوع مرجع در یک عملکرد استفاده کنیم، باید تعیین کنیم که مقادیر آنها در کدام مکان داده ذخیره شده‌اند. قیمت اجرای تابع تحت تأثیر محل داده‌هاست؛ ایجاد کپی از انواع مرجع هزینه گاز می‌برد.
 
-### Storage
+### ذخیره‌سازی
 
-Values stored in _storage_ are stored permanently on the blockchain and, therefore, are expensive to use.
+مقدارهای ذخیره شده در _ذخیره‌سازی_ به‌صورت دائمی در بلاکچین ذخیره می‌شوند و به همین دلیل، استفاده از آن‌ها هزینه‌بر است.
 
-In this contract, the state variables `arr`, `map`, and `myStructs` (lines 5, 6, and 10) are stored in storage. State variables are always stored in storage.
+در این قرارداد، متغیرهای دولتی `arr`، `map` و `myStructs` (خطوط ۵، ۶ و ۱۰) در حافظه ذخیره می‌شوند. متغیرهای حالت همیشه در حافظه ذخیره می‌شوند.
 
-### Memory
+### حافظه
 
-Values stored in _memory_ are only stored temporarily and are not on the blockchain. They only exist during the execution of an external function and are discarded afterward. They are cheaper to use than values stored in _storage_.
+مقادیر ذخیره شده در _حافظه_ تنها به صورت موقتی ذخیره می‌شوند و در بلاک‌چین نیستند. آنها تنها در طول اجرای یک تابع خارجی وجود دارند و بعد از آن کنار گذاشته می‌شوند. استفاده از آنها ارزان‌تر از مقادیری است که در _ذخیره‌سازی_ نگهداری می‌شوند.
 
-In this contract, the local variable `myMemstruct` (line 19), as well as the parameter `_arr` (line 31), are stored in memory. Function parameters need to have the data location _memory_ or _calldata_.
+در این قرارداد، متغیر محلی `myMemstruct` (خط 19) و همچنین پارامتر `_arr` (خط 31) در حافظه ذخیره می‌شوند. پارامترهای تابع باید محل داده _حافظه_ یا _کال دیتا_ داشته باشند.
 
-### Calldata
+### کال دیتا
 
-_Calldata_ stores function arguments. Like _memory_, _calldata_ is only stored temporarily during the execution of an external function. In contrast to values stored in _memory_, values stored in _calldata_ can not be changed. Calldata is the cheapest data location to use.
+_کال دیتا_ آرگومان‌های تابع را ذخیره می‌کند. مانند _حافظه_، _کالldata_ تنها در طول اجرای یک تابع خارجی به طور موقت ذخیره می‌شود. In contrast to values stored in _memory_, values stored in _calldata_ can not be changed. Calldata is the cheapest data location to use.
 
 In this contract, the parameter `_arr` (line 35) has the data location _calldata_. If we wanted to assign a new value to the first element of the array `_arr`, we could do that in the `function g` (line 31) but not in the `function h` (line 35). This is because `_arr` in `function g `has the data location _memory_ and _function h_ has the data location `calldata`.
 
