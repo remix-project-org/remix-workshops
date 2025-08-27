@@ -1,32 +1,32 @@
-## Compiling the Circuit
+## تجمیع مدار
 
-### Selecting the Compiler Version
+### انتخاب نسخه کامپایلر
 
-1. Go to the **Circuit Compiler** plugin in the sidebar.
-2. Choose the desired **Compiler Version** from the dropdown menu. For this tutorial, select the latest stable version.
+1. به افزونه **Circuit Compiler** در نوار کناری بروید.
+2. نسخه **کامپایلر** مورد نظر را از منوی کشویی انتخاب کنید. برای این آموزش، آخرین نسخه پایدار را انتخاب کنید.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-4/images/select_compiler_version.png" alt="select-compiler-version" width=250 height=100>
 
-### Configuring Compilation Options
+### پیکربندی گزینه‌های کامپایل
 
-- **Auto Compile:** You can enable this option to automatically compile your circuit whenever you save changes.
-- **Hide Warnings:** Enable this to suppress compiler warnings if any.
-- **Advanced Configuration:**
-  - Click to expand.
-  - Select the **Prime Field**. For most cases, `BN128` is sufficient.
+- **کامپایل خودکار:** می‌توانید این گزینه را فعال کنید تا هر بار که تغییراتی ذخیره می‌کنید، مدار شما به طور خودکار کامپایل شود.
+- **هشدارها را مخفی کنید:** این گزینه را فعال کنید تا در صورت وجود، هشدارهای کامپایلر نادیده گرفته شوند.
+- **پیکربندی پیشرفته:**
+  - برای گسترش کلیک کنید.
+  - رشته‌ی اول را انتخاب کنید. برای بیشتر موارد، `BN128` کافی است.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-4/images/advanced_configuration.png" alt="advanced-configuration" width=300 height=100>
 
-### Compiling the Circuit
+### تجمیع مدار
 
-1. Click on the **Compile** button.
-2. Wait for the compilation to complete. A success badge will appear if compilation is successful.
+1. بر روی دکمه **کامپایل** کلیک کنید.
+2. منتظر بمانید تا کامپایل کامل شود. اگر کامپایل با موفقیت انجام شود، نشان موفقیت ظاهر خواهد شد.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-4/images/compilation_success.png" alt="compilation-success" width=300 height=675>
 
-### Understanding the Compilation Output
+### درک خروجی کامپایل
 
-- After successful compilation, the **Setup and Exports** section becomes visible.
-- You can proceed to the next step to perform a trusted setup.
+- پس از compilation موفق، بخش **نصب و صادرات** قابل مشاهده می‌شود.
+- شما می‌توانید به مرحله بعدی بروید تا یک تنظیمات معتبر انجام دهید.
 
-In the next step, we'll perform a trusted setup using the compiled circuit.
+در مرحله بعد، ما یک تنظیم مطمئن با استفاده از مدار کامپایل شده انجام خواهیم داد.
