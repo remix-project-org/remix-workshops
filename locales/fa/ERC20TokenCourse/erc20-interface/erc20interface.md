@@ -39,38 +39,38 @@ ERC20 (درخواست نظرات اتریوم ۲۰) استانداردی برا�
 تابع `transferFrom` (خط ۶۳) `مقداری` از توکن‌ها را از طرف آدرس `sender` به آدرس `recipient` منتقل می‌کند.
 این تابع **باید** یک رویداد `Transfer` منتشر کند.
 
-## ERC20 Events
+## رویدادهای ERC20
 
-ERC20 contracts must also emit two events:
+قراردادهای ERC20 همچنین باید دو رویداد را منتشر کنند:
 
-### Transfer
+### انتقال
 
-The `Transfer` (line 71) event must be emitted when `value` amount of tokens are transferred from the account with the address `indexed from` to `indexed to`. The parameters `from` and `to` are `indexed` allowing us to search for these events using the indexed parameters as filters.
+رویداد `Transfer` (خط ۷۱) باید زمانی صادر شود که مقدار `value` توکن‌ها از حسابی با آدرس `indexed from` به `indexed to` منتقل شود. پارامترهای «از» و «تا» «ایندکس‌شده» هستند و به ما اجازه می‌دهند این رویدادها را با استفاده از پارامترهای اندیس‌گذاری‌شده به عنوان فیلتر جستجو کنیم.
 
-### Approval
+### تایید
 
-The `Approval` (line 77)  event must be emitted when the account `indexed owner` approves the account `indexed spender` to transfer `value` amount of tokens on its behalf.
+رویداد «تأیید» (خط ۷۷) باید زمانی صادر شود که حساب «مالک ایندکس‌شده» حساب «خرج‌کننده ایندکس‌شده» را برای انتقال «مقدار» توکن از طرف خود تأیید کند.
 
-## ERC20 Optional functions
+## توابع اختیاری ERC20
 
-In addition to the mandatory functions and events, there are also three optional functions specified in the ERC20 standard that are not implemented in this interface:
+علاوه بر توابع و رویدادهای اجباری، سه تابع اختیاری نیز در استاندارد ERC20 مشخص شده است که در این رابط پیاده‌سازی نشده‌اند:
 
-### name
+### نام
 
-`function name() external view returns (string);`
+`function name()‎ نمای خارجی (رشته) را برمی‌گرداند.`
 
-Returns the name of the token.
+نام توکن را برمی‌گرداند.
 
-### symbol
+### نماد
 
-`function symbol() external view returns (string);`
+`تابع symbol() نمای خارجی (رشته) را برمی‌گرداند.`
 
-Returns the symbol of the token.
+نماد توکن را برمی‌گرداند.
 
-### decimals
+### اعشاری
 
-`function decimals() external view returns (uint8);`
+`تابع decimals() مقدار خروجی نمای خارجی (uint8) را برمی‌گرداند.`
 
-Returns the number of decimal places the token uses.
+تعداد ارقام اعشاری که توکن استفاده می‌کند را برمی‌گرداند.
 
-You may want to use decimals to make your token divisible into arbitrary amounts like 1.5 ETH when displayed. The EVM (Ethereum virtual machine) only supports integer numbers. That's why the ERC20 standard suggests to implement the decimal functionality that specifies how many decimal places a token has. 18 decimal places is the industry standard.
+ممکن است بخواهید از اعداد اعشاری استفاده کنید تا توکن شما هنگام نمایش به مقادیر دلخواه مانند ۱٫۵ ETH قابل تقسیم باشد. ماشین مجازی اتریوم (EVM) فقط از اعداد صحیح پشتیبانی می‌کند. به همین دلیل است که استاندارد ERC20 پیشنهاد می‌کند که قابلیت اعشاری پیاده‌سازی شود که مشخص می‌کند یک توکن چند رقم اعشار دارد. ۱۸ رقم اعشار استاندارد صنعت است.
