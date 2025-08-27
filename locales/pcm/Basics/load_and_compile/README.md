@@ -2,7 +2,7 @@ Make we load file from the file explorer come the Editor.
 
 1. Inside the icon panel, press ![file explorer icon](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/load_and_compile/images/files1.png "file explorer icon") ,di icon of di file explorer.
 
-2. Make sure you are in the **default_workspace**.
+2. Make sure say u dey the **default_workspace**.
 
 ![default workspace](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/load_and_compile/images/default_workspace_open.png)
 
