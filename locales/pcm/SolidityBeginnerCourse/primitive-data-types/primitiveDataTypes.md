@@ -1,28 +1,28 @@
-In this section, we will show you Solidity’s primitive data types, how to declare them, and their characteristics.
+For dis area we fit show u solidity primitive data types how we fit declare dem and dem characteristics.
 
-### bool
+### di bool
 
-You can declare data a boolean type by using the keyword ‘bool’. Booleans can either have the value `true` or `false`.
+U fit declare data a boolean type by using di keyword 'bool'. Booleans fit either get di value `true` or `false`.
 
-### uint
+### di uint
 
-We use  the keywords `uint` and `uint8` to `uint256` to declare an _unsigned integer type_ (they don’t have a sign, unlike -12, for example). Uints are integers that are positive or zero and range from 8 bits to 256 bits. The type `uint` is the same as `uint256`.
+We fit use di keyword  `uint` and `uint8` to `uint256` to declare an _unsigned integer type_ (they don’t have a sign, unlike -12, for example). Di Uints dey integers dat are positive or zero and range from 8 bits to 256 bits. Dis type `uint` is the same as `uint256`.
 
-### int
+### di int
 
-We use the keywords `int` and `int8` to `int256` to declare an integer type. Integers can be positive, negative, or zero and range from 8 bits to 256 bits. The type `int` is the same as `int256`.
+We fit use di keywords `int` and `int8` to `int256` to declare an integer type. Integers fit dey positive, negative, or zero and range from 8 bits to 256 bits. Di type `int` is di same as `int256`.
 
-### address
+### di address
 
-Variables of the type `address` hold a 20-byte value, which is the size of an Ethereum address. There is also a special kind of Ethereum address, `address payable`, which can receive ether from the contract.
+Variables of di type `address` hold a 20-byte value, which is di size of an Ethereum address. They get special kind of Ethereum address, `address payable`, which fit receive ether from di contract.
 
 All these data types have default values, as shown in the contract (line 29).
 
-You can learn more about these data types as well as _Fixed Point Numbers_, _Byte Arrays_, _Strings_, and more in the <a href="https://docs.soliditylang.org/en/latest/types.html" target="_blank">Solidity documentation</a>.
+U fit learn more about dis data type as well _Point number wey dem fix_ _Byte Arrays_, _Strings_ and more for de <a href="https://docs.soliditylang.org/en/latest/types.html" target="_blank">Solidity documentation</a>.
 
-Later in the course, we will look at data structures like **Mappings**, **Arrays**, **Enums**, and **Structs**.
+Later for de course we go look at data structures like **Mappings**, **Arrays**, **Enums**, and **Structs**.
 
-<a href="https://www.youtube.com/watch?v=8Tj-Th_S7NU" target="_blank">Watch a video tutorial on Primitive Data Types</a>.
+Ui go watch video tutorials for de data types wey dey primitive</a>.
 
 ## ⭐️ Assignment
 
