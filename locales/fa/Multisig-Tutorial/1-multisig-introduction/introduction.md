@@ -1,41 +1,41 @@
-Welcome to the Multisignature Wallet course! In this section, we'll explore the fundamentals of Multisignature (Multisig) wallets and we'll go through a multisig wallet contract.
+به دوره آموزشی کیف پول چندامضایی خوش آمدید! در این بخش، اصول اولیه کیف پول‌های چندامضایی (Multisig) را بررسی خواهیم کرد و یک قرارداد کیف پول چندامضایی را بررسی خواهیم کرد.
 
-## What is a Multisignature Wallet?
+## کیف پول چند امضایی چیست؟
 
-A multisignature (multisig) wallet is a type of digital wallet that requires multiple keys to authorize a cryptocurrency transaction.
+کیف پول چندامضایی (multisig) نوعی کیف پول دیجیتال است که برای تأیید تراکنش ارز دیجیتال به چندین کلید نیاز دارد.
 
-Imagine a multisig wallet as a secure vault with multiple locks. To open the vault, each keyholder must open their individual lock. This setup ensures that no single person can access the vault's contents without the others' consent.
+یک کیف پول چندامضایی را به عنوان یک گاوصندوق امن با چندین قفل تصور کنید. برای باز کردن گاوصندوق، هر کلیددار باید قفل مخصوص به خودش را باز کند. این تنظیمات تضمین می‌کند که هیچ شخصی نمی‌تواند بدون رضایت دیگران به محتویات گاوصندوق دسترسی پیدا کند.
 
-## How Does a Multisig Wallet Work?
+## کیف پولکیف پول
 
-In a multisig setup, each transaction must receive a predetermined number of approvals from a set group of individuals. For instance, in a 3-of-5 wallet configuration, there are five authorized addresses, but a transaction only goes through when at least three of them give their approval. When a transaction is initiated, it's presented as a **proposal** to the group. Each member who agrees to the transaction uses their private key to digitally sign it.
+کیف پول چندامضایی چگونه کار می‌کند. برای مثال، در پیکربندی کیف پول، پنج 3-of-5 آدرس مجاز وجود دارد، اما یک تراکنش تنها زمانی انجام می‌شود که حداقل سه نفر از آنها تأیید خود را اعلام کنند. وقتی یک تراکنش آغاز می‌شود، به عنوان یک **پیشنهاد** به گروه ارائه می‌شود. هر عضوی که با تراکنش موافقت می‌کند، از کلید خصوصی خود برای امضای دیجیتالی آن استفاده می‌کند.
 
-These **digital signatures** are unique and are generated based on the combination of the transaction data and the private key.
+این **امضاهای دیجیتال** منحصر به فرد هستند و بر اساس ترکیب داده‌های تراکنش و کلید خصوصی تولید می‌شوند.
 
-When the required number of signatures is reached, the transaction is broadcasted to the blockchain for execution.
+وقتی تعداد امضاها به حد نصاب رسید، تراکنش برای اجرا به بلاکچین ارسال می‌شود.
 
-## Why Use a Multisig Wallet?
+## چرا از کیف پول چندامضایی استفاده کنیم؟
 
-Multisig wallets are crucial for enhanced security in cryptocurrency transactions. They mitigate the risk of theft or loss of a single key. In business, they're used to ensure that funds can't be moved without consensus among stakeholders. For instance, in a company managing cryptocurrency assets, a multisig wallet might require the CFO, CEO, and a board member to all approve significant transactions, protecting against internal fraud or external hacks.
+کیف پول‌های چندامضایی برای افزایش امنیت در تراکنش‌های ارزهای دیجیتال بسیار مهم هستند. آنها خطر سرقت یا گم شدن یک کلید را کاهش می‌دهند. در تجارت، از آنها برای اطمینان از عدم جابجایی وجوه بدون اجماع بین ذینفعان استفاده می‌شود. برای مثال، در شرکتی که دارایی‌های ارز دیجیتال را مدیریت می‌کند، یک کیف پول چندامضایی ممکن است از مدیر ارشد مالی، مدیرعامل و یکی از اعضای هیئت مدیره بخواهد که همگی تراکنش‌های مهم را تأیید کنند و از این طریق در برابر کلاهبرداری داخلی یا هک‌های خارجی محافظت شود.
 
-## Conclusion
+## نتیجه گیری
 
-In this section, we learned that a multisig wallet requires multiple keys to authorize a proposed cryptocurrency transaction and that a multisigs mitigates the risk of theft or loss of a single key.
+در این بخش، آموختیم که یک کیف پول چندامضایی برای تأیید یک تراکنش ارز دیجیتال پیشنهادی به چندین کلید نیاز دارد و چندامضایی بودن، خطر سرقت یا از دست دادن یک کلید را کاهش می‌دهد.
 
-## ⭐️ Assignment: Multiple Choice Test
+## ⭐️ تکلیف: آزمون چندگزینه‌ای
 
-### 1. What is a Multisignature Wallet?
+### 1. کیف پول چند امضایی چیست؟
 
-1. A digital wallet that requires a single signature for transactions.
-2. A digital wallet that requires multiple signatures for transactions.
-3. A physical wallet used for storing cryptocurrency.
-4. A wallet that can only hold multiple types of cryptocurrencies.
+1. کیف پول دیجیتالی که برای تراکنش‌ها به یک امضا نیاز دارد.
+2. کیف پول دیجیتالی که برای تراکنش‌ها به چندین امضا نیاز دارد.
+3. یک کیف پول فیزیکی که برای ذخیره‌سازی ارزهای دیجیتال استفاده می‌شود.
+4. کیف پولی که فقط می‌تواند چندین نوع ارز دیجیتال را در خود نگه دارد.
 
-### 2) How does a Multisignature Wallet enhance security?
+### 2) چگونه یک کیف پول چندامضایی امنیت را افزایش می‌دهد؟
 
-1. By requiring a single private key for transactions.
-2. By distributing transaction approval across multiple owners.
-3. By storing transaction data on-chain.
-4. None of the above.
+1. با الزام به یک کلید خصوصی واحد برای تراکنش‌ها.
+2. با توزیع تأیید تراکنش بین چندین مالک.
+3. با ذخیره داده‌های تراکنش روی زنجیره.
+4. هیچ یک از موارد فوق.
 
-Feel free to take your time and answer the questions above. Once you're ready, we'll move on to exploring the Multisig smart contract and understanding its structure.
+لطفا وقت بگذارید و به سوالات بالا پاسخ دهید. وقتی آماده شدید، به بررسی قرارداد هوشمند چندامضایی و درک ساختار آن خواهیم پرداخت.
