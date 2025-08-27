@@ -1,26 +1,26 @@
-After compiling your circuit, you need to perform a trusted setup to generate proving and verification keys.
+Después de compilar su circuito, necesita realizar una configuración de confianza para generar claves de prueba y verificación.
 
-## Understanding Trusted Setup
+## Comprender la configuración de confianza
 
- - **Trusted Setup:** A process required for zk-SNARKs to generate the necessary parameters for proof generation and verification.
- - You can choose between different protocols like **Groth16** and **Plonk**.
+ - **Configuración de confianza:** Un proceso requerido para que zk-SNARKs genere los parámetros necesarios para la generación y verificación de pruebas.
+ - Puedes elegir entre diferentes protocolos como **Groth16** y **Plonk**.
 
-## Performing the Trusted Setup
+## Realizar la configuración de confianza
 
-1. In the **Setup and Exports** section, select the **Proving Scheme**:
-    - Choose between **Groth16** or **Plonk**. We'll use **Groth16** for this tutorial.
+1. En la sección **Configuración y exportaciones**, seleccione el **Esquema de prueba**:
+    - Elija entre **Groth16** o **Plonk**. Usaremos **Groth16** para este tutorial.
 
-2. Choose the appropriate **Power of Tau** file from the dropdown. This file is necessary for the trusted setup.
-    - If unsure, select the default option.
+2. Elija el archivo **Power of Tau** apropiado del menú desplegable. Este archivo es necesario para la configuración de confianza.
+    - Si no está seguro, seleccione la opción predeterminada.
 
-3. Click on the **Setup** button to start the trusted setup process.
+3. Haga clic en el botón **Configuración** para iniciar el proceso de configuración de confianza.
 
-4. You can enable **Export Verification Key** to get the verification parameters.
+4. Puede habilitar **Exportar clave de verificación** para obtener los parámetros de verificación.
 
-5. You can enable **Export Verification Contract** if you intend to verify proofs on-chain.
+5. Puede habilitar **Contrato de verificación de exportación** si tiene la intención de verificar las pruebas en cadena.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-5/images/trusted_setup.png" alt="trusted-setup" width=330 height=350>
 
-**Note:** The trusted setup may take some time, depending on the complexity of your circuit.
+**Nota:** La configuración de confianza puede llevar algún tiempo, dependiendo de la complejidad de su circuito.
 
 En el siguiente paso, calcularemos el testigo de nuestro circuito.
