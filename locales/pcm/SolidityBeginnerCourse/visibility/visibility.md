@@ -13,25 +13,25 @@ Dem dey regulate if function wit state variable dem fit call am form inside di c
 - Dem fit call am from insid di contrakt
 - Dem fit call am from child contrakt
 
-### public
+### outside
 
-- Can be called from inside the contract
-- Can be called from a child contract
-- Can be called from other contracts or transactions
+- Dem fit call am from insid di contrakt
+- Dem fit call am from insid di contrakt
+- Dem fit call am from oda contrakt or transacshon
 
-### external
+### outside
 
-- Can be called from other contracts or transactions
-- State variables can not be `external`
+- Dem fit call am from oda contrakt or transacshon
+- State variables no fit b from outside
 
-In this example, we have two contracts, the `Base` contract (line 4) and the `Child` contract (line 55) which inherits the functions and state variables from the `Base` contract.
+For dis exampu we get two contrakts, di base contrakt and di pikin contrakt (line 55) wey dey collect di function and state variable from di base contraks.
 
-When you uncomment the `testPrivateFunc` (lines 58-60) you get an error because the child contract doesn’t have access to the private function `privateFunc` from the `Base` contract.
+Wen you commot wetin you talk di `testPrivateFunc` (lines 58-60) you go see error unto say di pikin contrakt no get access go di private function `privateFunc` from di `Base` contract.
 
-If you compile and deploy the two contracts, you will not be able to call the functions `privateFunc` and `internalFunc` directly. You will only be able to call them via `testPrivateFunc` and `testInternalFunc`.
+If you go compile come scatta di two contrak you no go fit to call di funkshon `privateFunc` and `internalFunc` directly. You go fit call dem onli wit testPrivateFunc and testInternalFunc.
 
-<a href="https://www.youtube.com/watch?v=NBzQVJ6OrrQ" target="_blank">Watch a video tutorial on Visibility</a>.
+<a href="https://www.youtube.com/watch?v=NBzQVJ6OrrQ" target="_blank">Ho see video tutorial for visibility</a>.
 
-## ⭐️ Assignment
+## di ⭐️ Assignment
 
-Create a new function in the `Child` contract called `testInternalVar` that returns the values of all state variables from the `Base` contract that are possible to return.
+Make new function for di Child contract wey dem go call testInternalVar. Dat function go return all the state variables wey dey inside the Base contract wey e possible to return.
