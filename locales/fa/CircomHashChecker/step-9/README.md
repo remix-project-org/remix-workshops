@@ -1,37 +1,37 @@
-## Understanding `groth16_zkproof.ts`
+## `groth16_zkproof.ts` را درک کردن
 
-Navigate to `scripts/groth16/groth16_zkproof.ts`. This script generates the zero-knowledge proof and prepares it for verification.
+به `scripts/groth16/groth16_zkproof.ts` بروید. این اسکریپت مدرک بدون دانش را تولید کرده و آن را برای تأیید آماده می‌کند.
 
-### Code Overview
+### مروری بر کد
 
-#### Loading Files:
+#### در حال بارگذاری فایل‌ها:
 
-- Reads the R1CS and WASM files generated from the circuit.
-- Loads the final proving key (`zkey_final`) and verification key (`vKey`).
+- فایل‌های R1CS و WASM تولید شده از مدار را می‌خواند.
+- کلید نهایی اثبات (`zkey_final`) و کلید تأیید (`vKey`) را بارگذاری می‌کند.
 
-#### Defining Inputs:
+#### تعریف ورودی‌ها:
 
-- Sets the private values (`value1`, `value2`, `value3`, `value4`).
-- Computes the `hash` using Poseidon from [CircomLib](https://github.com/iden3/circomlib).
+- مقادیر خصوصی (`value1`، `value2`، `value3`، `value4`) را تعیین می‌کند.
+- هش را با استفاده از پایزیدون از [CircomLib](https://github.com/iden3/circomlib) محاسبه می‌کند.
 
-#### Witness Calculation and Proof Generation:
+#### محاسبه شاهد و تولید اثبات:
 
-- Calculates the witness (`wtns`).
-- Checks the witness against the `R1CS`.
-- Generates the proof using `Groth16`.
-- Verifies the proof.
+- شاهد را محاسبه می‌کند (`wtns`).
+- شاهد را در برابر `R1CS` بررسی می‌کند.
+- مدل اثبات را با استفاده از `Groth16` تولید می‌کند.
+- اثبات را تأیید می‌کند.
 
-#### Exporting Verifier Contract and Inputs:
+#### صادرات تأیید کننده قرارداد و ورودی‌ها:
 
-- Generates a Solidity verifier contract.
-- Exports the proof inputs to `input.json`.
+- یک قرارداد تاییدکننده Solidity تولید می‌کند.
+- ورودی‌های اثبات را به `input.json` صادر می‌کند.
 
-### Purpose
+### هدف
 
-- Generates a zero-knowledge proof that the prover knows values hashing to a specific hash.
-- Prepares the verifier contract and inputs for on-chain verification.
+- یک مدرک بدون دانش تولید می‌کند که ثابت می‌کند اثبات‌کننده مقادیری دارد که به یک هش خاص هش می‌شوند.
+- قرارداد تأییدکننده و ورودی‌های لازم برای تأیید زنجیره‌ای را آماده می‌کند.
 
-### Execute the Script
+### اسکریپت را اجرا کن
 
-- Click the play button in the editor, or right-click the file and select "Run".
-- Wait for the script to complete and `"zk proof validity"` logged in the terminal.
+- دکمه پخش را در ویرایشگر کلیک کنید، یا روی فایل کلیک راست کرده و "اجرا" را انتخاب کنید.
+- صبر کنید تا اسکریپت کامل شود و "اعتبار اثبات zk" در ترمینال ثبت شود.
