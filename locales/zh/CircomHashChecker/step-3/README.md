@@ -11,22 +11,22 @@
 
 #### `计算哈希` 模板：
 
-- Defines inputs `value1`, `value2`, `value3`, `value4`.
-- Uses the `Poseidon` hash function to compute a hash of these values.\
-- Outputs `out`, which is the hash.
+- 定义输入 `value`、`value`、`value`、`value`。
+- 使用 `Poseidon` 哈希函数来计算这些值的哈希
+- 输出 `out`，这是哈希值。
 
-#### `HashChecker` Template:
+#### `HashChecker` 模板：
 
-- Inputs are the same values plus a `hash`.
-- Instantiates `CalculateHash` as `calculateSecret`.
-- Computes `calculatedHash`.
-- Uses `assert(hash == calculatedHash);` to ensure the provided hash matches the calculated hash.
+- 输入是相同的值加上一个`hash`。
+- 将 `CalculateHash` 实例化为 `calculateSecret`。
+- 计算 `calculatedHash`。
+- 使用 `assert(hash == calculatedHash);` 确保提供的哈希与计算得到的哈希匹配。
 
-#### Main Component:
+#### 主要组成部分：
 
-- `component main {public [hash]} = HashChecker();`
-- Specifies that `hash` is a `public` input, while the values are `private`.
+- `组件主 {公共 [哈希]} = 哈希检查器();`
+- 指定 `hash` 是一个 `public` 输入，而这些值则是 `private`。
 
-### Purpose
+### 目的
 
-The circuit allows someone to prove they know `value1`, `value2`, `value3`, and `value4` that hash to a specific `hash` without revealing the values themselves.
+该电路允许某人证明他们知道`value`、`value`、`value`和`value`，这些值的哈希值为特定的`hash`，而不透露这些值本身。
