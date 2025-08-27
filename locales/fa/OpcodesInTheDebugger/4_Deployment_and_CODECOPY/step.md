@@ -1,11 +1,11 @@
-Let's go back to our contract.
-Please make sure the `solidity compiler` and `Deploy & Run Transactions` are activated.
+بگذارید به قرارداد خود برگردیم.
+لطفاً اطمینان حاصل کنید که `کامپایلر سالیدیتی` و `استقرار و اجرای تراکنش‌ها` فعال شده‌اند.
 
-Alternatively, you can click on `Solidity` from the `Home Page` **Environments** section.
+لطفاً اطمینان حاصل کنید که `کامپایلر سالیدیتی` و `استقرار و اجرای تراکنش‌ها` فعال شده‌اند.
 
-- Compile the contract from the `solidity compiler`.
-- Go to the `Deploy & Run Transactions` and make sure `SimpleStore` is selected contract.
-- In the textbox to the right of `Deploy`, input a positive integer.
-- Click on `Deploy`.
+- قرارداد را از `کامپایلر سالیدیتی` تهیه کنید.
+- به بخش `استقرار و اجرای تراکنش‌ها` بروید و مطمئن شوید که قرارداد `SimpleStore` انتخاب شده است.
+- در کادر متنی سمت راست `Deploy`، یک عدد صحیح مثبت وارد کنید.
+- روی `Deploy` کلیک کنید.
 
-In the next step, we'll watch the deployment in the debugger.
+در مرحله بعد، استقرار را در دیباگر خواهیم دید.
