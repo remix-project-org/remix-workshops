@@ -1,32 +1,32 @@
-## Exploring `calculate_hash.circom`
+## کاوش در `calculate_hash.circom`
 
-Navigate to the `circuits` directory and open `calculate_hash.circom`. This file contains the Circom code for the Hash Checker circuit.
+به دایرکتوری `circuits` بروید و فایل `calculate_hash.circom` را باز کنید. این فایل حاوی کد Circom برای مدار بررسی هش است.
 
-### Code Breakdown
+### تحلیل کد
 
-#### Pragma and Includes:
+#### پرگما و شامل‌ها:
 
-- `pragma circom 2.0.0;` specifies the Circom version.
-- `include "circomlib/circuits/poseidon.circom";` fetch and includes the Poseidon hash function from [CircomLib](https://github.com/iden3/circomlib).
+- `pragma circom 2.0.0;` نسخه Circom را مشخص می‌کند.
+- `include "circomlib/circuits/poseidon.circom";` تابع هش پوزایدن را از [CircomLib](https://github.com/iden3/circomlib) فراخوانی و شامل می‌کند.
 
-#### `CalculateHash` Template:
+#### `محاسبهHash` الگو:
 
-- Defines inputs `value1`, `value2`, `value3`, `value4`.
-- Uses the `Poseidon` hash function to compute a hash of these values.\
-- Outputs `out`, which is the hash.
+- ورودی‌های `value1`، `value2`، `value3`، `value4` را تعریف می‌کند.
+- از تابع هش `پوزئیدون` برای محاسبه یک هش از این مقادیر استفاده می‌کند
+- خروجی `out` است که هش می‌باشد.
 
-#### `HashChecker` Template:
+#### `HashChecker` الگو:
 
-- Inputs are the same values plus a `hash`.
-- Instantiates `CalculateHash` as `calculateSecret`.
-- Computes `calculatedHash`.
-- Uses `assert(hash == calculatedHash);` to ensure the provided hash matches the calculated hash.
+- ورودی‌ها مقادیر مشابهی هستند به‌علاوه یک `هش`.
+- `CalculateHash` را به عنوان `calculateSecret` نمونه‌سازی می‌کند.
+- هش محاسبه شده را محاسبه می کند.
+- محاسبات `calcuUses `assert(hash == calculatedHash);\` برای اطمینان از اینکه هش ارائه شده با هش محاسبه شده مطابقت دارد.
 
-#### Main Component:
+#### جزء اصلی:
 
-- `component main {public [hash]} = HashChecker();`
-- Specifies that `hash` is a `public` input, while the values are `private`.
+- `کامپوننت اصلی {عمومی [هش]} = بررسی‌کننده هش();`
+- `hash` مشخص می‌کند که یک ورودی `عمومی` است، در حالی که مقادیر `خصوصی` می‌باشند.
 
-### Purpose
+### هدف
 
-The circuit allows someone to prove they know `value1`, `value2`, `value3`, and `value4` that hash to a specific `hash` without revealing the values themselves.
+این مدار به کسی این امکان را می‌دهد که ثابت کند آنها `value1`، `value2`، `value3` و `value4` را می‌شناسند که به یک `hash` خاص هش می‌شوند بدون اینکه خود مقادیر را فاش کنند.
