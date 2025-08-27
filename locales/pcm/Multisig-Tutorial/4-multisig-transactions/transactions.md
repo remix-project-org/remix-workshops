@@ -14,60 +14,61 @@ For line 28, we get struct wey we deh call `Transaction`. We dey store struct me
 
 ## Mapping of Confirmations
 
-For line 37, we get mapping wey dem dey call `isConfirmed`. This mapping is used to keep track of the confirmations of each transaction. It maps the transaction's index to a mapping of an owner addresse to a boolean value. The boolean value indicates whether this owner has confirmed the transaction.
+For line 37, we get mapping wey dem dey call `isConfirmed`. The mapping dey used to observe confirmation for every transaction. E map the transaction index go one mapping of owner address to boolean value. Na the boolean number dey show if the owner don confirm the transaction.
 
 ## Transactions Array
 
-On line 39, we have an array called `transactions`. The array is used to store all the transactions submitted to the multi-signature wallet.
+For line 39, we get one array wey we dey call `transactions`. The array dey used to store every transaction wey dey submitted go multi signature wallet.
 
 ## Events
 
-We have four new events in this iteration of the contract:
+We get four new events inside this iteration of the contract:
 
-1. **`SubmitTransaction` event:** emitted whenever a transaction is submitted to the multi-signature wallet.
-2. **`ConfirmTransaction` event:** emitted whenever a transaction is confirmed by an owner.
-3. **`RevokeConfirmation` event:** emitted whenever a transaction confirmation is revoked by an owner.
-4. **`ExecuteTransaction` event:** emitted whenever a transaction is executed.
+1. `SubmitTransaction` event:\*\* e dey emit anytime transaction dey submitted for the multi-signature wallet.
+2. `ConfirmTransaction` event: e dey emit anytime transaction dey confirmed by any owner.
+3. `RevokeConfirmation` event: e dey emit anytime wey the owner dey revoke the transaction conformation.
+4. `ExecuteTransaction` event: e dey emit anytime wey transaction don finish dey run.
 
 ## submitTransaction Function
 
-The `submitTransaction` function (Line 78) allows users to submit a transaction to the multi-sig wallet. E go take three parameters: to`, `value`, and `data`. The `to`parameter is the address of the recipient of the transaction. The`value`parameter is the amount of Ether to be sent. The`data\` parameter is the data to be sent to the recipient. Only the owner fit submit transactions.
+The `submitTransaction` function (Line 78) dey allows users submit transaction go the multi-sig wallet. E go take three parameters: to`, `value`, and `data`. The `to\` parameter na address of the person wey reveive the transaction. The value parameter na the amount of ether wey we suppose send. The data parameter na the data wey dem send go the person wey dey collect am. Only the owner fit submit transactions.
 
-On line, 85 we create a new transaction struct and push it to the `transactions` array and emit the `SubmitTransaction` event. The `txIndex` variable is used to keep track of the transaction index.
+For line 85, we create new transaction struct, push am go the transactions array, then emit the SubmitTransaction event. The `txIndex` variable na wetin we go use keep track of the transaction index.
 
 ## confirmTransaction Function
 
-The `confirmTransaction` function (Line 98) allows users to confirm a transaction. It takes one parameter: `txIndex`.
-It has three modifiers: `onlyOwner`, `txExists`, and `notExecuted`. The `onlyOwner` modifier ensures that only owners can confirm transactions. The `txExists` modifier ensures that the transaction exists. The `notExecuted` modifier ensures that the transaction has not been executed.
+The `confirmTransaction` function (Line 98) dey allow people confirm transaction. E go take one parameter: `txIndex`.
+E get three modifiers `onlyOwner`, `txExists`, and `notExecuted`. The `onlyOwner` modifier dey make sure say na only owners fit confirm transactions. The `txExists` modifier dey make sure say the transaction dey. The `notExecuted` modifier dey make sure say the transaction never execute.
 
-On line 101, we store the transaction in a local variable called `transaction`. We then increment the `numConfirmations` variable of the transaction and set the `isConfirmed` mapping of the transaction index and the caller's address to true. Finally, we emit the `ConfirmTransaction` event.
+For line 101, we save the transaction for local variable called `transaction`. We go con increase the `numConfirmations` variable for the transaction con set the `isConfirmed` mapping for the transaction index and the caller address go true. Finally we go emit the `ConfirmTransaction` event.
 
 ## executeTransaction Function
 
-The `executeTransaction` function (Line 108) allows users to execute a transaction. On line 113, we require that the number of confirmations of the transaction is greater than or equal to the required number of confirmations. We then set the `executed` variable of the transaction to true. Finally, send the funds using the `call` function.  This is the `call` of the recipient address with the value and data of the transaction. If the transaction is successful, we emit the `ExecuteTransaction` event.
+The `executeTransaction` function (Line 108) dey make users do transaction. For line 113 we require say the number of confirmations wey dey the transaction dey bigger than or equal to the number wey the confirmations require. We go come set the executed variable wey dey the transaction to true. Finally, send the funds using the `call` function.  Na the call of the recipient address with the value and data wey dey the transaction. If the transaction dey successful we go emit the `ExecuteTransaction` event.
 
 ## getTransactionCount Function
 
-The `getTransactionCount` function (Line 132) allows users to retrieve the number of transactions in the multi-signature wallet. It returns the length of the `transactions` array.
+The `getTransactionCount` function (Line 132) go allow users to retrieve the number of transactions wey dey the multi-signature wallet. E dey give back the length for the transaction array.
 
 ## getTransaction Function
 
-The `getTransaction` function (Line 136) allows users to retrieve a transaction. It returns the transaction struct members that we explored earlier in this section.
+The `getTransaction` function (Line 136) dey allow people retrieve one transaction. E dey give back the transaction struct member wey we see together for this section.
 
 ## Conclusion
 
-In this section, we explored the process of submitting, confirming, and executing transactions. We examined the `submitTransaction`, `confirmTransaction`, and `executeTransaction` functions and understood how they work together to allow multiple users to submit and confirm transactions.
+For this section we explore the process on how u go submit, confirm and execute transactions. We examined the `submitTransaction`, `confirmTransaction`, and `executeTransaction` functions and understood how they work together to allow multiple users to submit and confirm transactions.
 
 ## ⭐️ Assignment: Make a Transaction
 
 Submit, confirm, and execute a transaction to send 2 Ether to the first account in the "ACCOUNTS" dropdown menu.
 
-1. Deploy the Multisig contract as in the previous assignment. Make sure that the required number of confirmations is 2.
-2. Fund the multisig from any address by sending 4 Ether as you did in the previous assignment.
-3. Try sending 2 Ether to the first account in the "ACCOUNTS" dropdown menu.  Once you have submitted this transaction (with submitTransaction), click on `getTransactionCount` and should see one transaction or you can click on `getTransaction`, insert 0 as the transaction index and see the transaction you just submitted.
-4. Now you can click on `confirmTransaction` and insert 0 as the transaction index. If you click on `getTransaction` again, you should see that the transaction has been confirmed once.
-5. Switch to the second owner account and confirm the transaction again. If you click on `getTransaction` again, you should see that the transaction has been confirmed twice.
-6. The last step is to execute the transaction. Click on `executeTransaction` and insert 0 as the transaction index. If you click on `getTransaction` again, you should see that the transaction has been executed. You can also check the balance of the first account in the "ACCOUNTS" dropdown menu. It should now be 2 Ether higher and the balance of the multi-signature wallet should be 2 Ether lower.
+1. Deploy the Multisig contract as in the previous assignment. Make sure say the required number of the confirmations na 2.
+2. Fund the multisig from any address by sending 4 Ether as u do am for the previous assignment.
+3. Try send 2 Ether go the first account in "ACCOUNTS" dropdown menu.  Once u don sumbit this transaction (with submitTransaction), click that `getTransactionCount` u go come see one transaction or u fit click on `getTransaction`,
+   put 0 as the transaction index then see the transaction wey u just submit.
+4. Now u fit click on `confirmTransaction` and insert 0 as the transaction index. If you click that `getTransaction` again u go see say the transaction go confirm once.
+5. Switch go the second owner account then confirm the transaction again. If you click that `getTransaction` again, you go see say the transaction don confirm twice.
+6. The last step na to execute the transaction. Click on `executeTransaction` then insert 0 as the transaction index. If you click that `getTransaction` again, you go see say the transaction don dey executed. U fit also check the balance of the first account for "ACCOUNTS" dropdown menu. E go come be 2 Ether higher and the balance of the multi-signature wallet go come be 2 Ether lower.
 
-**Hint:**
-If you submit a transaction make sure that the value is in Wei and that the _data field is correctly filled in. E.g. it could look like this: "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4, 2000000000000000000, 0x" for 2 Ether.
+**Hint**
+If u submit one transaction make sure say the valid dey inside Wei and the _data field dey correct. E.g. e fit look like this: "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4, 2000000000000000000, 0x" for 2 Ether.
