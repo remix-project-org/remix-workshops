@@ -1,28 +1,28 @@
 ---
-id: nftTokenCourse
-name: Solidity NFT Course
-summary: Learn how to create your own NFT tokens. Developed by the p2p learning platform https://dacade.org.
+id: دوره توکن ان اف تی
+name: دوره آموزشی NFT در سالیدیتی
+summary: یاد بگیرید چگونه توکن‌های NFT خود را ایجاد کنید. این برنامه توسط پلتفرم یادگیری p2p https://dacade.org توسعه یافته است.
 level: 1
 tags:
   - Solidity
-  - Tokens
-  - NFT
+  - توکن ها
+  - نیفتی
 steps:
   - 
-    name: 1. Introduction
-    path: introduction
+    name: 1. مقدمه
+    path: مقدمه
   - 
-    name: 2. Interface
-    path: erc721-interface
+    name: ۲. رابط کاربری
+    path: رابطه erc721
   - 
-    name: 3. Metadata Interface
-    path: erc721-interface-metadata
+    name: ۳. رابط متا داده
+    path: رابطه متادیتا erc721
   - 
-    name: 4. Token Creation
-    path: erc721-token-creation
+    name: ۴. ایجاد توکن
+    path: ایجاد توکنERC721
   - 
-    name: 5. Metadata IPFS
+    name: ۵. متادیتا IPFS
     path: erc721-metadata-ipfs
   - 
-    name: 6. Deploy to Testnet
-    path: erc721-deploy-testnet-opensea
+    name: ۶. استقرار در شبکه آزمایشی
+    path: تست شبکه آزمایشی اکتور721 - اوپن‌سی
