@@ -1,5 +1,5 @@
-# Uniswap Swap Course
+# دوره مبادله یونی سواپ
 
-Review the code of the Uniswap V3 Swap contract for performing token swaps.
+کد قرارداد مبادله Uniswap V3 برای انجام مبادلات توکن را بررسی کنید.
 
-Developed by the p2p learning platform https://dacade.org.
+توسعه یافته توسط پلتفرم یادگیری p2p https://dacade.org.
