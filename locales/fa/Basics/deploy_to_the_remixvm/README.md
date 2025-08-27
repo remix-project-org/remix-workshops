@@ -1,15 +1,15 @@
-In the previous chapter, we compiled a contract  - which is to say the Solidity code has been transformed into little chunks of Ethereum Virtual Machine (EVM) bytecode.
+در فصل قبل، ما یک قرارداد جمع‌آوری کردیم - به این معنی که کد سالیدیتی به تکه های کوچک کد بایت اتریوم ویرچوال ماشین (EVM) تبدیل شده است.
 
-Now we will put that code on a test blockchain.
+حالا آن کد را بر روی یک بلاکچین آزمایشی قرار خواهیم داد.
 
-1. Click the Deploy and Run icon ![deploy & run icon](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/deploy_to_the_remixvm/images/run.png "deploy & run icon").
+1. روی آیکون استقرار و اجرا کلیک کنید ![آیکون استقرار و اجرا](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/deploy_to_the_remixvm/images/run.png "آیکون استقرار و اجرا").
 
-2. Select one of the **Remix VM**s from the **Environment** pulldown.
+2. یکی از **Remix VM** ها را از منوی کشویی **Environment** انتخاب کنید.
 
-3. Click the Deploy button (or the transact button in the expanded view).
+3. دکمه استقرار را کلیک کنید (یا دکمه تراکنش را در نمای گسترش یافته کلیک کنید).
 
-4. You have deployed your compiled contract to the Remix VM - a simulated blockchain that is running inside of your browser window.  The Remix VM is simple, fast test chain.  It is not that realistic because you don't need to approve each transaction.
+4. شما قرارداد کامپایل شده خود را به Remix VM - یک بلاک‌چین شبیه‌سازی شده که در داخل پنجره مرورگر شما اجرا می‌شود، مستقر کرده‌اید.  زنجیره آزمایشی Remix VM ساده و سریع است.  این واقعاً واقع‌گرایانه نیست زیرا شما نیاز ندارید هر تراکنش را تأیید کنید.
 
-5. Check the terminal to see detail of this deployment transaction.
+5. ترمینال را بررسی کنید تا جزئیات این تراکنش استقرار را ببینید.
 
-You can also use Remix to deploy to other public EVM chains. To do this, you'll need to connect to a different **Environment** - like Injected Provider.  The Injected Provider connects Remix to browser wallet (like MetaMask or similar).  We'll try deploying to a public network at the end of this tutorial. But before we get there, we'll cover how to interact with a deployed contract's functions.
+شما همچنین می‌توانید از Remix برای استقرار در سایر زنجیره‌های عمومی EVM استفاده کنید. برای انجام این کار، شما نیاز دارید که به یک **محیط** متفاوت متصل شوید - مانند ارائه‌دهنده تزریق شده.  پروایدر تزریقی، ریمیکس را به کیف پول مرورگر (مانند متامسک یا مشابه آن) متصل می‌کند.  ما در انتهای این آموزش سعی خواهیم کرد که به یک شبکه عمومی مستقر شویم. اما قبل از اینکه به آنجا برسیم، نحوه تعامل با عملکردهای یک قرارداد مستقر را پوشش خواهیم داد.
