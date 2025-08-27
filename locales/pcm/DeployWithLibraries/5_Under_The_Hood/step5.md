@@ -1,8 +1,7 @@
-Switch to the `Solidity compiler` module
-![Solidity Compiler](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_icon_solidity.png "Solidity Compiler")
+Switch go the solidity compiler module ![Solidity Compiler](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_icon_solidity.png "Solidity Compiler")
 
- - Select the `sampleContract` contract in the list of compiled contracts.
- - click on `ByteCode`, it should copy the following to the clipboard:
+- Select the samplecontract contract for di list of complied contracts.
+- click on bytecode he suppose copy di following put for di clipboard:
 
 ```
 {
@@ -22,9 +21,9 @@ Switch to the `Solidity compiler` module
 }
 ```
 
-This is basically what the compiler is returning:
+Na wetin the computer dey return b dis:
 
- - `linkReferences` describes what are the libraries used by the contract.
- - `object` is the compiled contract (bytecode). This is what gets deployed and saved onto the blockchain. In this example, the value `__$d42d70ba92b626965f4c69b39148e37a33$__` inside the bytecode is just a placeholder for the library address. In your case, the placeholder will be between `__$` and `$__`.
+- Linkreferences dey tell us wetin di libraries dey use the contract do.
+- Object na be di compiled contract (bytecode). Na this thing Dem dey deployed and dem still dey save am for di Blockchain. $d42d70ba92b626965f4c69b39148e37a33$$d42d70ba92b626965f4c69b39148e37a33$$d42d70ba92b626965f4c69b39148e37a33$ For your case, the placeholder go dey for between `__$` and `$__`.
 
-The metadata JSON from Remix IDE tells Remix to replace the placeholder with the given address.
+The metadata JSON from the remix IDE dey tell about remix to replace di placeholder with the given adress.
