@@ -1,9 +1,9 @@
-With the trusted setup complete, you can now compute the witness for your circuit based on specific inputs.
+When the trusted setup don complete, you fit con compute the witness for your circuit based on inputs wey dey specific.
 
-## What is a Witness?
+## Wetin be witness?
 
- - A **Witness** is a set of values that satisfy all the constraints of your circuit. It includes all the intermediate numbers and results that satisfy the circuit's rules. The witness is used in zero-knowledge proofs to demonstrate that you know a valid solution to the problem without actually showing the solution itself. This allows others to verify that you did everything correctly while keeping your specific numbers and calculations private.
- - It is essential for generating a proof.
+- **witness** na set of values wey dey satisfy all the constraints of your circuit. E include all the intermediate numbers and results wey dey satisfy the circuit rules. The witness is used in zero-knowledge proofs to demonstrate that you know a valid solution to the problem without actually showing the solution itself. This allows others to verify that you did everything correctly while keeping your specific numbers and calculations private.
+- It is essential for generating a proof.
 
 ## Inputting Values
 
