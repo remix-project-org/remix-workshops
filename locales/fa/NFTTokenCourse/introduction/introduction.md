@@ -1,17 +1,17 @@
-In this section of the course, we will give you a theoretical introduction to blockchain-based tokens.
+در این بخش از دوره، ما مقدمه‌ای نظری بر توکن‌های مبتنی بر بلاک‌چین به شما ارائه خواهیم داد.
 
-Blockchain tokens are a new technological building block created by blockchain technology (like websites were for the internet) that enables a decentralized, ownable internet (web3).
+توکن‌های بلاکچین یک بلوک ساختاری جدید هستند که توسط تکنولوژی بلاکچین ایجاد شده‌اند (مانند وب‌سایت‌ها برای اینترنت) و یک اینترنت غیرمتمرکز و قابل مالکیت (وب3) را ممکن می‌سازند.
 
-### Introduction
+### مقدمه
 
-In the context of web3, tokens represent ownership. Tokens can represent ownership of anything: art, reputation, items in a video game, shares in a company, voting rights, or currencies.
+در زمینه وب3، توکن‌ها نمایانگر مالکیت هستند. توکن‌ها می‌توانند نمایانگر مالکیت هر چیزی باشند: هنر، شهرت، آیتم‌ها در یک بازی ویدئویی، سهام در یک شرکت، حقوق رأی‌گیری یا ارزها.
 
-The revolutionary innovation of blockchain technology is that it allows data to be stored publicly in an immutable (unchangeable) way.
-This new form of data storage allows us to keep track of ownership and enable truly ownable digital items for the first time.
+توکن‌ها می‌توانند نمایانگر مالکیت هر چیزی باشند: هنر، شهرت، آیتم‌ها در یک بازی ویدئویی، سهام در یک شرکت، حقوق رأی‌گیری یا ارزها.
+این شکل جدید از ذخیره‌سازی داده‌ها به ما این امکان را می‌دهد که مالکیت را پیگیری کنیم و برای اولین‌بار اشیای دیجیتال واقعاً قابل مالکیت را ممکن کنیم.
 
-Blockchain Technology was originally invented to keep track of the ownership of Bitcoin, a decentralized digital currency and fungible token.
+فناوری بلاک‌چین در ابتدا برای پیگیری مالکیت بیت‌کوین، یک ارز دیجیتال غیرمتمرکز و توکن قابل تعویض، اختراع شد.
 
-### Fungible and non-fungible tokens
+### توکن‌های قابل تعویض و غیرقابل تعویض
 
 Assets like money: Bitcoin or a one-dollar bill, for example, are fungible. Fungible means that all assets are the same and are interchangeable. Assets like art, collectibles, or houses are non-fungible; they are all different and not interchangeable.
 
