@@ -3,7 +3,7 @@
 And now for a slightly different example:
 
 - Compile notSimpleStore.sol
-- Deploy the contract `notSoSimpleStore`
+- Deploy di contract `notSoSimpleStore`
 - Make sure you have a successful deployment - if not check that you used **the correct input type** in the constructor.
 - Go to the Debugger by clicking the **debug** button at the (successful) creation transaction.
 - Find the value of the parameter of `CODECOPY` which represents the offset in calldata where to copy from.
