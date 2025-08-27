@@ -1,29 +1,29 @@
-The Axelar Gas Service is an extremely useful tool made available to pay gas for an interchain transaction. It allows you to pay for the cost of a transaction in the token of the source chain, making for a much easier end user (and developer) experience. If for example the source chain is Ethereum and the destination chain is Polygon then the gas service will receive the complete payment for the transaction in ETH and no matic is needed from the caller to pay for the execution on the Polygon destination chain.
+Axelar Gas Service na important tool wey fot help us pay moni for transaction from one chain to anoda. E dey allow make you pay for the transaction with the token of the chain wey you dey transact from, make user (and developer) experience for no get wahala. If di siurce chain na Ethereum, and where we the chain you wan send am go na Polygon. Na Ethereum you go use pay for all the service and you no need use matic at all take pay for the Polygon chain wey you wan send am go.
 
-The following are the two more relevant functions you will need to be familiar with in regards to the Gas Service.
+"Di two relevant functions wey you need sabi for Gas Service na dis ones.
 
-## payNativeGasForContractCall()
+## u go payNativeGasForContractCall()
 
-This function allows you to pay for the entirety of an interchain transaction in the native token of the source chain. It takes five relevant parameters:
+"Dis function go allow you pay for di whole interchain transaction with di native token of di source chain. "E dey take five important parameters:"
 
-1. `sender`: The address making the payment
-2. `destinationAddress`: The address on the destination chain the transaction is sent to
-3. `destinationChain`: The name of the destination the transaction is sent to
-4. `payload`: The message that is being sent
-5. `refundAddress`: The address any refunds should be sent to if too much gas was sent along with this transaction.
+1. "sender: Na di address wey dey make di payment
+2. `destinationAddress`: Di adress for di destination chain transaction go execute for
+3. `destinationAddress`: Di adress for di destination chain transaction go execute for
+4. `payload`: Di message wey dem send
+5. na di `refundAddress`: de address any refunds should be sent to if too much gas was sent along with dis transaction.
 
-The parameters overlap with the parameters required by the `callContract()` function in the Gateway contract. The two parameters not discussed in the Gateway section are `sender` and `refundAddress`. The sender is the address paying for the transaction and the refund address is the address that will receive any surplus funds sent to the gas service.
+Di parameters dey overlap with di ones wey callContract() function for Gateway contract need. Di two parameters no discuss for dey gateway area are `sender` and `refundAddress`. Di sender na di address wey dey pay for di transaction, and di refund address na di address wey go receive any extra funds wey dem send to di gas service.
 
-## payNativeGasForContractCallWithToken()
+## u go payNativeGasForContractCallWithToken()
 
-This function allows you to pay for the entirety of an interchain transaction (that includes a token transfer) in the native token of the source chain. It takes seven relevant parameters:
+"Dis function go allow you pay for di whole interchain transaction (wey include token transfer) with di native token of di source chain. "E dey take five important parameters:"
 
-1. `sender`: The address making the payment
-2. `destinationAddress`: The address on the destination chain the transaction is sent to
-3. `destinationChain`: The name of the destination the transaction is sent to
-4. `payload`: The message that is being sent
-5. `symbol`: The symbol of the token that was sent
-6. `amount`: The amount of the token that was sent
-7. `refundAddress`: The address any refunds should be sent to if too much gas was sent along with this transaction.
+1. "sender: Na di address wey dey make di payment
+2. `destinationAddress`: Di adress for di destination chain transaction go execute for
+3. `destinationAddress`: Di adress for di destination chain transaction go execute for
+4. `payload`: Di message wey dem send
+5. di symbol\`: de symbol of de token that was sent
+6. di symbol\`: de symbol of de token that was sent
+7. na di `refundAddress`: de address any refunds should be sent to if too much gas was sent along with dis transaction.
 
-This function is nearly identical to the first top one the main difference being that it is used for message + token transfer transactions as opposed to just interchain message transactions (aka GMP Transactions). As a result the GasService needs to also know the `symbol` and `amount` of the token that is being sent.
+Dis function dey nearly identical to di first top one di main difference being dat e use for di message + token transfertransactions as opposed to just interchain message transaction (aka GMP Transactions). As a result di gasservice needs also di `symbol` and `amount` of di token that is being sent.
