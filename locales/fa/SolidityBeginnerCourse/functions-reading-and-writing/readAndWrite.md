@@ -1,23 +1,23 @@
-This section will give a short introduction to functions and teach you how to use them to read from and write to a state variable.
+این بخش مقدمه‌ای کوتاه درباره توابع ارائه می‌دهد و به شما می‌آموزد چگونه از آنها برای خواندن و نوشتن در یک متغیر وضعیت استفاده کنید.
 
-As in other languages, we use functions in Solidity to create modular, reusable code. However, Solidity functions have some particularities.
+مانند سایر زبان‌ها، ما در سالیدیتی از توابع برای ایجاد کد ماژولار و قابل استفاده مجدد استفاده می‌کنیم. با این حال، توابع سالیدیتی دارای برخی خصوصیات خاص هستند.
 
-Solidity functions can be split into two types:
+توابع سالیدیتی را می‌توان به دو نوع تقسیم کرد:
 
-1. Functions that modify the state of the blockchain, like writing to a state variable. In this contract, the `set` function (line 9) changes the state variable `num`.
-2. Functions that don't modify the state of the blockchain. These functions are marked `view` or `pure`. For example, in this contract, the `get` function (line 14) marked `view` that only returns `num` does not change the state.
+1. توابعی که وضعیت بلاکچین را تغییر می‌دهند، مانند نوشتن در یک متغیر وضعیت. در این قرارداد، تابع `set` (خط ۹) متغیر حالت `num` را تغییر می‌دهد.
+2. توابعی که حالت بلاک‌چین را تغییر نمی‌دهند. این توابع به عنوان `view` یا `pure` علامت‌گذاری شده‌اند. به عنوان مثال، در این قرارداد، تابع `get` (خط ۱۴) که به عنوان `view` علامت‌گذاری شده است و تنها `num` را باز می‌گرداند، وضعیت را تغییر نمی‌دهد.
 
-To define a function, use the `function` keyword followed by a unique name.
+برای تعریف یک تابع، از کلمه کلیدی `function` به همراه یک نام منحصر به فرد استفاده کنید.
 
-If the function takes inputs like our `set` function (line 9), you must specify the parameter types and names. A common convention is to use an underscore as a prefix for the parameter name to distinguish them from state variables.
+اگر تابع ورودی‌هایی مانند تابع `set` ما (خط 9) بگیرد، شما باید نوع‌ها و نام‌های پارامترها را مشخص کنید. یک عرف رایج این است که از یک زیرخط به عنوان پیشوند برای نام پارامتر استفاده شود تا آن‌ها را از متغیرهای حالت متمایز کند.
 
-You can then set the visibility of a function and declare them `view` or `pure` as we do for the `get` function if they don't modify the state. Our `get` function also returns values, so we have to specify the return types. In this case, it's a `uint` since the state variable `num` that the function returns is a `uint`.
+سپس می‌توانید قابلیت مشاهده یک تابع را تعیین کرده و آن‌ها را مانند تابع `get` با اعلام `view` یا `pure` در صورتی که وضعیت را تغییر ندهند، مشخص کنید. تابع `get` ما نیز مقادیر را باز می‌گرداند، بنابراین باید نوع‌های بازگشتی را مشخص کنیم. در این حالت، این یک `uint` است زیرا متغیر وضعیت `num` که تابع باز می‌گرداند یک `uint` است.
 
-We will explore the particularities of Solidity functions in more detail in the following sections.
+ما جزئیات توابع سالیدیتی را در بخش‌های بعدی به طور دقیق‌تر بررسی خواهیم کرد.
 
-<a href="https://www.youtube.com/watch?v=Mm6834AAY00" target="_blank">Watch a video tutorial on Functions</a>.
+<a href="https://www.youtube.com/watch?v=Mm6834AAY00" target="_blank">یک آموزش ویدیویی در مورد توابع را مشاهده کنید</a>.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-1. Create a public state variable called `b` that is of type `bool` and initialize it to `true`.
-2. Create a public function called `get_b` that returns the value of `b`.
+1. یک متغیر عمومی به نام `b` ایجاد کنید که از نوع `bool` باشد و آن را به `true` مقداردهی اولیه کنید.
+2. یک تابع عمومی به نام `get_b` ایجاد کنید که مقدار `b` را برگرداند.
