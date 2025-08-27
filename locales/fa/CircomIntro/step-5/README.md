@@ -1,26 +1,26 @@
-After compiling your circuit, you need to perform a trusted setup to generate proving and verification keys.
+پس از کامپایل مدار خود، نیاز است که یک راه‌اندازی مورد اعتماد انجام دهید تا کلیدهای اثبات و تأیید تولید شوند.
 
-## Understanding Trusted Setup
+## درک نصب معتبر
 
- - **Trusted Setup:** A process required for zk-SNARKs to generate the necessary parameters for proof generation and verification.
- - You can choose between different protocols like **Groth16** and **Plonk**.
+ - **راه‌اندازی مورد اعتماد:** یک فرآیند لازم برای zk-SNARKها برای تولید پارامترهای ضروری برای تولید و تأیید گواهینامه.
+ - شما می‌توانید بین پروتکل‌های مختلفی مانند **Groth16** و **Plonk** انتخاب کنید.
 
-## Performing the Trusted Setup
+## انجام تنظیمات مورد اعتماد
 
-1. In the **Setup and Exports** section, select the **Proving Scheme**:
-    - Choose between **Groth16** or **Plonk**. We'll use **Groth16** for this tutorial.
+1. در بخش **تنظیمات و صادرات**، **طرح اثبات** را انتخاب کنید:
+    - بین **Groth16** یا **Plonk** انتخاب کنید. ما در این آموزش از **Groth16** استفاده خواهیم کرد.
 
-2. Choose the appropriate **Power of Tau** file from the dropdown. This file is necessary for the trusted setup.
-    - If unsure, select the default option.
+2. فایل مناسب **قدرت تائو** را از منوی کشویی انتخاب کنید. این فایل برای راه‌اندازی مورد اعتماد ضروری است.
+    - اگر مطمئن نیستید، گزینه پیش‌فرض را انتخاب کنید.
 
-3. Click on the **Setup** button to start the trusted setup process.
+3. برای شروع روند نصب مورد اعتماد، روی دکمه **تنظیمات** کلیک کنید.
 
-4. You can enable **Export Verification Key** to get the verification parameters.
+4. شما می‌توانید **کلید تأیید صادرات** را فعال کنید تا پارامترهای تأیید را دریافت کنید.
 
-5. You can enable **Export Verification Contract** if you intend to verify proofs on-chain.
+5. شما می‌توانید **قرارداد تأیید صادرات** را فعال کنید اگر قصد دارید مدارک را در زنجیره تأیید کنید.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-5/images/trusted_setup.png" alt="trusted-setup" width=330 height=350>
 
-**Note:** The trusted setup may take some time, depending on the complexity of your circuit.
+**توجه:** تنظیمات مورد اعتماد ممکن است مدتی طول بکشد، بسته به پیچیدگی مدار شما.
 
-In the next step, we'll compute the witness for our circuit.
+در مرحله بعد، ما شاهد را برای مدار خود محاسبه خواهیم کرد.
