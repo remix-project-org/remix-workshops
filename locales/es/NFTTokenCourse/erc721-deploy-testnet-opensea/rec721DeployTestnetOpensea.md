@@ -12,15 +12,15 @@ En esta sección, usaremos Metamask (una billetera de Ethereum) para implementar
 
 Para realizar transacciones en la testnet, necesitamos tokens de Ethereum testnet.
 
-**2.1** Switch your Metamask from "Ethereum Mainnetwork" to "Sepolia Test Network".
+**2.1** Cambie su Metamask de "Ethereum Mainnetwork" a "Sepolia Test Network".
 
-**2.2** Go to <a href="https://www.alchemy.com/faucets/ethereum-sepolia" 
-target="_blank">https://www.alchemy.com/faucets/ethereum-sepolia</a>, enter the address of your account and claim testnet ETH.
-Or check the faucets listed on <a href="https://ethereum.org/en/developers/docs/networks/#testnet-faucets" target="_blank">ethereum.org</a> for other options.
+**2.2** Vaya a <a href="https://www.alchemy.com/faucets/ethereum-sepolia" 
+target="_blank">https://www.alchemy.com/faucets/ethereum-sepolia</a>, introduzca la dirección de su cuenta y reclame testnet ETH.
+O consulte los grifos listados en <a href="https://ethereum.org/en/developers/docs/networks/#testnet-faucets" target="_blank">ethereum.org</a> para otras opciones.
 
 ### 3. Despliegue de Contrato
 
-**3.1** In the "DEPLOY & RUN TRANSACTIONS" module of the Remix IDE under "ENVIRONMENT" **select** "Injected Provide-Metamask" (or whatever wallet you are using). Luego debería pedirle que conecte su cuenta, lo que debe confirmar. Then in the wallet, connect to the Sepolia network.  You may need to turn on a switch to view test networks. Once connected, there will be a "badge" with Sepolia and its network ID under "Injected Provider".
+**3.1** En el módulo "DEPLOY & RUN TRANSACTIONS" del Remix IDE en "ENVIRONMENT" **seleccione** "Injected Provide-Metamask" (o cualquier billetera que esté usando). Luego debería pedirle que conecte su cuenta, lo que debe confirmar. Luego, en la cartera, conéctese a la red Sepolia.  Es posible que deba activar un interruptor para ver las redes de prueba. Una vez conectado, habrá una "insignia" con Sepolia y su ID de red en "Proveedor inyectado".
 
 **3.2** Implemente su contrato de token y confirme la transacción en Metamask.
 
