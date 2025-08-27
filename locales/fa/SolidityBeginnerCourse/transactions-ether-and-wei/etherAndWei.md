@@ -1,26 +1,26 @@
-_Ether_ (ETH) is a cryptocurrency. _Ether_ is also used to pay fees for using the Ethereum network, like making transactions in the form of sending _Ether_ to an address or interacting with an Ethereum application.
+_اتر_ (ETH) یک ارز دیجیتال است. _اتر_ همچنین برای پرداخت هزینه‌ها به منظور استفاده از شبکه اتریوم، مانند انجام معاملات به شکل ارسال _اتر_ به یک آدرس یا تعامل با یک برنامه اتریوم، استفاده می‌شود.
 
-### Ether Units
+### واحدهای اتریوم
 
-To specify a unit of _Ether_, we can add the suffixes `wei`, `gwei`, or `ether` to a literal number.
+برای مشخص کردن واحد _اتر_، می‌توانیم پسوندهای `wei`، `gwei` یا `ether` را به یک عدد حقیقی اضافه کنیم.
 
-#### `wei`
+#### wei
 
-_Wei_ is the smallest subunit of _Ether_, named after the cryptographer [Wei Dai](https://en.wikipedia.org/wiki/Wei_Dai). _Ether_ numbers without a suffix are treated as `wei` (line 7).
+_Wei_ کوچک‌ترین زیر واحد _Ether_ است که به نام رمزنگار [Wei Dai](https://en.wikipedia.org/wiki/Wei_Dai) نامگذاری شده است. _عددهای اتر_ بدون پسوند به عنوان `وِی` در نظر گرفته می‌شوند (خط ۷).
 
-#### `gwei`
+#### Gwei
 
-One `gwei` (giga-wei) is equal to 1,000,000,000 (10^9) `wei`.
+یک `gwei` (گیگا-وای) برابر با 1,000,000,000 (۱۰^۹) `wei` است.
 
-#### `ether`
+#### Ethers
 
-One `ether` is equal to 1,000,000,000,000,000,000 (10^18) `wei` (line 11).
+یک `اتر` برابر با 1,000,000,000,000,000,000 (۱۰^۱۸) `وی` است (خط ۱۱).
 
-<a href="https://www.youtube.com/watch?v=ybPQsjssyNw" target="_blank">Watch a video tutorial on Ether and Wei</a>.
+<a href="https://www.youtube.com/watch?v=ybPQsjssyNw" target="_blank">یک ویدیوی آموزشی درباره اتر و وی را تماشا کنید</a>.
 
-## ⭐️ Assignment
+## تکلیف
 
-1. Create a `public` `uint` called `oneGWei` and set it to 1 `gwei`.
-2. Create a `public` `bool` called `isOneGWei` and set it to the result of a comparison operation between 1 gwei and 10^9.
+1. یک `uint` عمومی به نام `oneGWei` ایجاد کنید و آن را به ۱ `gwei` تنظیم کنید.
+2. یک `bool` عمومی به نام `isOneGWei` ایجاد کنید و آن را به نتیجه عمل مقایسه بین 1 گوی و 10^9 تنظیم کنید.
 
-Tip: Look at how this is written for `gwei` and `ether` in the contract.
+نکته: به نحوه نوشتن این برای `gwei` و `ether` در قرارداد نگاه کنید.
