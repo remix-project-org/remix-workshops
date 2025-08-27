@@ -24,15 +24,15 @@ Configuriamo Remix per generare il **file dei metadata**.
 
 1. Apri il Solidity Compiler ![Solidity Compiler](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_icon_solidity.png "Solidity Compiler")
 
-2. Compile `2_contractSimpleLibrary.sol`.
+2. Compila `2_contractSimpleLibrary.sol`.
 
-3. Switch to the File Explorer ![File Explorer](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_file_explorer.png "File Explorer")
+3. Passa al File Explorer ![File Explorer](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_file_explorer.png "File Explorer")
 
-4. Navigate to the newly create JSON files.
-    - It should be in the folder:
+4. Vai ai file JSON appena creati.
+    - Dovrebbe trovarsi nella cartella:
 
 **browser/.learneth/DeployWithLibraries/2_Generate_Metadata/artifacts/**
 
-5. Select the newly created JSON file created from the contract.  It has the **same name** as the contract `sample` but with the extension **json**: `sample.json` (don't select the library's metadata `contractSimpleLibrary.json`).
+5. Seleziona il file JSON appena creato dal contratto.  Ha lo stesso **nome del** contratto `sample` ma con estensione **json**: `sample.json` (non selezionare i metadata della libreria `contractSimpleLibrary.json`).
 
-In the next step we'll make some adjustments to the metadata file.
+Nel prossimo passo faremo alcune modifiche al file dei metadata.
