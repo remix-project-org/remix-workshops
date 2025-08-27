@@ -1,29 +1,29 @@
-In Solidity, we can define custom data types in the form of _structs_. Structs are a collection of variables that can consist of different data types.
+در سالیدیتی، می‌توانیم انواع داده‌های سفارشی را به صورت _ساختارها_ تعریف کنیم. ساختارها مجموعه‌ای از متغیرها هستند که می‌توانند شامل انواع داده‌های مختلف باشند.
 
-### Defining structs
+### تعریف ساختارها
 
-We define a struct using the `struct` keyword and a name (line 5). Inside curly braces, we can define our struct’s members, which consist of the variable names and their data types.
+ما یک ساختار را با استفاده از کلمه کلیدی `struct` و یک نام تعریف می کنیم (خط 5). در داخل آکولادها، می‌توانیم اعضای ساختار خود را تعریف کنیم که شامل نام متغیرها و نوع داده‌های آنهاست.
 
-### Initializing structs
+### راه‌اندازی ساختارها
 
-There are different ways to initialize a struct.
+راه‌های مختلفی برای مقداردهی اولیه یک ساختار وجود دارد.
 
-Positional parameters: We can provide the name of the struct and the values of its members as parameters in parentheses (line 16).
+پارامترهای موقعیتی: ما می‌توانیم نام ساختار و مقادیر اعضای آن را به عنوان پارامتر در پرانتزها ارائه دهیم (خط ۱۶).
 
-Key-value mapping: We provide the name of the struct and the keys and values as a mapping inside curly braces (line 19).
+نگاشت کلید-مقدار: ما نام ساختار و کلیدها و مقادیر را به عنوان یک نگاشت درون براکت‌های جفت {} فراهم می‌کنیم (خط ۱۹).
 
-Initialize and update a struct: We initialize an empty struct first and then update its member by assigning it a new value (line 23).
+یک ساختار را مقداردهی اولیه و به‌روزرسانی کنید: در ابتدا یک ساختار خالی را مقداردهی اولیه می‌کنیم و سپس عضو آن را با اختصاص یک مقدار جدید به‌روزرسانی می‌کنیم (خط 23).
 
-### Accessing structs
+### دسترسی به ساختارها
 
-To access a member of a struct we can use the dot operator (line 33).
+برای دسترسی به یکی از اعضای یک ساختار، می‌توانیم از عملگر نقطه‌ای استفاده کنیم (خط ۳۳).
 
-### Updating structs
+### به‌روز رسانی ساختارها
 
-To update a structs’ member we also use the dot operator and assign it a new value (lines 39 and 45).
+برای بروزرسانی یک عضو ساختار، ما نیز از عملگر نقطه استفاده می‌کنیم و به آن یک مقدار جدید اختصاص می‌دهیم (خطوط ۳۹ و ۴۵).
 
-<a href="https://www.youtube.com/watch?v=kYBHq7EmFBc" target="_blank">Watch a video tutorial on Structs</a>.
+<a href="https://www.youtube.com/watch?v=kYBHq7EmFBc" target="_blank">یک آموزش ویدیویی درباره ساختارها را تماشا کنید</a>.
 
-## ⭐️ Assignment
+## یک آموزش ویدیویی درباره ساختارها را تماشا کنید
 
-Create a function `remove` that takes a `uint` as a parameter and deletes a struct member with the given index in the `todos` mapping.
+یک تابع `remove` ایجاد کنید که یک `uint` را به عنوان پارامتر دریافت کند و یک عضو ساختار را با ایندکس داده شده در مپ `todos` حذف نماید.
