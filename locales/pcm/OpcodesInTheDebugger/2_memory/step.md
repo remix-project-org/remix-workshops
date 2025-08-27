@@ -2,7 +2,7 @@ Before we start, just quick reminder:
 
 The runtime of the EVM has several kinds of memory:
 
-- `calldata`: This is the input value given to the transaction.
-- `stack`: Basically, this is a list of values, each value is limited in size (32 bytes).
-- `memory`: Memory is used when the **type** of value getting stored is more complex like an array or a mapping. This memory is **temporary** and is **released** at the end of the execution.
-- `storage`: This is a mapping, each value stored is **persisted** and saved on chain.
+- `calldata`: This one na the input wey dem give the transaction.
+- `stack`: Normal Normal, this one na the list of values, each value get limited size (32 bytes).
+- `memory`: Dem go use memory when the **kain** value wey dem dey store dey more complexed like array or mapping. This memory dey **temporary** and dem go **release** am at the end of the execution.
+- `storage`: Na mapping be this, each value wey dem store go dey **persisted** and saved onchain.
