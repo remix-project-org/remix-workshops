@@ -1,8 +1,8 @@
-In this section, we'll explore the process of submitting and confirming transactions.
+For dis we go explore di process of submitting and to confirm di transaction.
 
-## Modifiers
+## Di modifiers
 
-We have new modifiers in this iteration of the contract. Let's examine them one by one.
+We get new new modifiers for dis iteration. Make we examine nam one by one.
 
 1. **`txExists` modifier:** (Line 13) ensures that the transaction exists. It does this by checking whether the transaction index is less than the length of the `transactions` array. We'll go into more about in this modifier later in this section.
 2. **`notExecuted` modifier:** (Line 18) ensures that the transaction has not been executed. It does this by checking whether the `executed` variable of the transaction is false.
