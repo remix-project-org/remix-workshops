@@ -1,14 +1,14 @@
-## Workspaces help organize your separate projects.
+## I workspace aiutano a organizzare i tuoi progetti separati.
 
-If this is your first time to Remix, a Workspace named **default_workspace** is loaded in the File Explorer.
+Se è la tua prima volta su Remix, un Workspace chiamato default_workspace viene caricato nell'Esploratore di File.
 
 ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/default_workspace.png)
 
-The **default_workspace** has three Solidity (.sol) files in the contracts folder. Remix has a number of other templates. When you load a template, it goes into a Workspace. To go between Workspaces, use the select box at the top of the File Explorer.
+Il default_workspace contiene tre file Solidity (.sol) nella cartella contracts. Remix ha diversi altri modelli. Quando carichi un modello, questo viene inserito in un Workspace. Per passare tra i Workspace, usa il menu a tendina in cima all'Esploratore di File.
 
 ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/select-box.png)
 
-But Workspaces are not only for templates. When cloning a repo into Remix, the files will be put into a Workspace.
+Ma i Workspace non sono solo per i modelli. Quando cloni un repository in Remix, i file verranno inseriti in un Workspace.
 
 Creiamo un nuovo Workspace
 
