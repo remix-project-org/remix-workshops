@@ -1,30 +1,30 @@
-In this section, we'll delve into the `swapExactInputMultiHop` function in the `UniswapV3SwapExamples` contract. This function enables more complex token swaps by allowing users to specify a custom path through multiple liquidity pools.
+در این بخش، به بررسی تابع `swapExactInputMultiHop` در قرارداد `UniswapV3SwapExamples` خواهیم پرداخت. این تابع امکان تبادل توکن‌های پیچیده‌تر را با اجازه دادن به کاربران برای تعیین یک مسیر سفارشی از طریق چندین استخر نقدینگی فراهم می‌کند.
 
-If for example, a user wants to swap token A for token D, but there is no direct liquidity pool for A and D, the user can specify a path through multiple tokens. For example, the user can swap A for B, then B for C, and finally C for D. This is of course automatically done by the Uniswap V3 Swap contract.
+به عنوان مثال، اگر یک کاربر بخواهد توکن A را با توکن D مبادله کند، اما استخر نقدینگی مستقیمی برای A و D وجود نداشته باشد، کاربر می‌تواند مسیری را از طریق چندین توکن مشخص کند. به عنوان مثال، کاربر می‌تواند A را با B عوض کند، سپس B را با C و در نهایت C را با D عوض کند. این کار البته به‌طور خودکار توسط قرارداد تعویض Uniswap V3 انجام می‌شود.
 
-### Parameters and Return Value
+### پارامترها و مقدار بازگشتی
 
-On line 32, we define a function called `swapExactInputMultiHop`. This function executes a multi-hop swap. It takes the following parameters:
+در خط ۳۲، یک تابع به نام `swapExactInputMultiHop` تعریف می‌کنیم. این تابع یک تعویض چند مرحله‌ای را اجرا می‌کند. این پارامترهای زیر را می‌گیرد:
 
-- **`bytes calldata path`**: Encoded information about the swap path (i.e., which tokens to swap through).
-- **`address tokenIn`**: The address of the token being sent.
-- **`uint amountIn`**: The amount of the input token being sent.
+- **`bytes calldata path`**: اطلاعات کدگذاری شده درباره مسیر مبادله (یعنی کدام توکن‌ها باید مبادله شوند).
+- **`آدرس tokenIn`**: آدرس توکنی که در حال ارسال است.
+- **`uint amountIn`**: مقدار توکن ورودی که ارسال می‌شود.
 
-It returns a `uint` called `amountOut`, which is the amount of the output token that was received.
+این یک `uint` به نام `amountOut` برمی‌گرداند، که مقدار توکن خروجی دریافتی است.
 
-### Function Body
+### بدنه تابع
 
-In the function body, we first transfer the input token from the sender to our contract, line 38.
-Then, we approve the Uniswap Swap router to spend the input token on our behalf, line 41.
+درون بدنه تابع، ابتدا توکن ورودی را از فرستنده به قرارداد خودمان منتقل می‌کنیم، خط ۳۸.
+سپس، ما روتر مبادله یونی‌سواپ را برای هزینه کردن توکن ورودی به نمایندگی از خود تایید می‌کنیم، خط ۴۱.
 
-On line 43, we create an instance of the `ExactInputParams` struct, line 73. This struct contains the parameters that are required for our `exactInput` function on line 81, which will execute the multi-hop swap.
+در خط ۴۳، ما یک نمونه از ساختار `ExactInputParams` را ایجاد می‌کنیم، خط ۷۳. این ساختار شامل پارامترهایی است که برای تابع `exactInput` ما در خط 81 مورد نیاز است و این تابع تعویض چند مرحله‌ای را اجرا خواهد کرد.
 
-We set the parameters of the struct as follows:
+ما پارامترهای ساختار را به صورت زیر تنظیم می‌کنیم:
 
-- **`path`**: We set this to the `path` parameter of our function.
-- **`recipient`**: We set this to the sender of the transaction.
-- **`deadline`**: We set this to the current timestamp. We do this because we want the transaction to be processed as soon as possible.
-- **`amountIn`**: We set this to the `amountIn` parameter of our function.
-- **`amountOutMinimum`**: We set this to 0 because we do not want to specify a minimum amount of the output token that we are willing to accept.
+- **`path`**: ما این را به پارامتر `path` تابع خود تنظیم کردیم.
+- **`گیرنده`**: ما این را به فرستنده تراکنش تنظیم می‌کنیم.
+- **`موعد نهایی`**: ما این را به زمان حال تعیین می‌کنیم. ما این کار را انجام می‌دهیم زیرا می‌خواهیم تراکنش در اسرع وقت پردازش شود.
+- **`amountIn`**: ما این را به پارامتر `amountIn` تابع خود تنظیم می‌کنیم.
+- **`مقدارخروجحداقل`**: ما این را برابر با 0 قرار می‌دهیم زیرا نمی‌خواهیم مقدار حداقلی از توکن خروجی که مایل به پذیرش آن هستیم را مشخص کنیم.
 
-On line 53, we execute the multi-hop swap by calling the `exactInput` function. This function returns the amount of the output token that was received.
+در خط ۵۳، ما تعویض چند مرحله‌ای را با فراخوانی تابع `exactInput` اجرا می‌کنیم. این تابع مقدار توکن خروجی که دریافت شده است را برمی‌گرداند.
