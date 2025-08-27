@@ -1,14 +1,14 @@
-In this section, we'll explore the `IERC20` interface, a standard interface for interacting with ERC-20 tokens and the `IWETH` interface, a standard interface for interacting with wrapped Ether (WETH). Understanding these interfaces is crucial as it is used in the Uniswap V3 Swap contract to handle token transfers and approvals.
+Dis area we go explore di `IERC20` interface, na standard interface for talking with ERC-20 tokens and di `IWETH` interface, a standard interface for interacting with wrapped Ether (WETH). To fit understand dis interfacee dey crucialas e dey use di uniswap V3 swap contract to fit handle token transfers and approval.
 
-You can find a "Solidity ERC20 Token Course" for beginners in LearnEth to understand the ERC20 token standard in more detail.
+U fit find solidity ERC20 token course for beginners in learnEth to understand di ERC20 token standard in more detail.
 
-## IERC20 Interface
+## Na IERC20 Interface
 
-On line 80, we define the `IERC20` interface. This interface defines a standard set of functions that ERC-20 tokens must implement. Let's examine the key functions within this interface:
+On line 80, we fit define di `IERC20` interface. Dis interface defines a standard set of function dat ERC-20 tokens must implement. Make we chack di key function within dis interface:
 
-### 1. totalSupply
+### na 1. dis na totalSupply
 
-On line 81, we define the `totalSupply` function. This function returns the total supply of the token.
+For dis line 81 we define di `totalSupply` function. Di function return di total supply of di token.
 
 ### 2. balanceOf
 
