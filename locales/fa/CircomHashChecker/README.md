@@ -1,14 +1,13 @@
-Hash Checker Tutorial
+آموزش چک کردن هش
 
-This tutorial guides you through creating and understanding a Hash Checker circuit using Remix-IDE. You'll learn how to generate the circuit using a template, explore the code, perform a trusted setup, generate proofs, and verify them. This tutorial is suitable for beginners familiar with Circom and Zero-Knowledge Proofs.
+این آموزش شما را در ایجاد و درک یک مدار چک‌کننده هش با استفاده از Remix-IDE راهنمایی می‌کند. شما یاد خواهید گرفت که چگونه مدار را با استفاده از یک الگو تولید کنید، کد را بررسی کنید، تنظیمات معتبر را انجام دهید، مدارک تولید کنید و آن‌ها را تأیید کنید. این آموزش مناسب مبتدیانی است که با Circom و اثبات‌های بدون دانش آشنا هستند.
 
-Prerequisites
+پیش نیازها
 
 ```
-Basic understanding of Zero-Knowledge Proofs and Circom.
-Familiarity with Remix-IDE.
+درک پایه‌ای از اثبات‌های بدون دانش و Circom. آشنایی با Remix-IDE.
 ```
 
-Estimated Time
+زمان تخمینی
 
-Approximately 1-2 hours.
+تقریباً ۱-۲ ساعت.
