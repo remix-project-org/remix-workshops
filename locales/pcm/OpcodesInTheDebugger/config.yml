@@ -1,10 +1,10 @@
 ---
-id: opcodesdebug
-name: Opcodes in the Debugger
-summary: Using the Debugger, we'll check out what the CODECOPY opcode does and how it is used by the EVM during contract creation.
+id: opcodesdebugo
+name: Opcodes for the Debugger
+summary: If u use di Debugger, we go check out wetin do CODECOPY opcode dey do and how e go use di EVM for do contract creation.
 level: 3
 tags:
   - Remix
   - Debugging
   - EVM
-  - Opcodes
+  - Di opcodes
