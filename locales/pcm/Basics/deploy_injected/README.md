@@ -1,21 +1,21 @@
 1. If you neva get wallet browser like **Metamask** make you download one kon install am.
 
-2. Tap the Metamask icon for ya browser. Put ya details make you choose Ephemery test network. You fit need update ya wallet setting so you go fit see **test networks**.  Alternatively, you can go to Remix's Deploy & Run transation module and in the ENVIRONMENT section select Ephemery.
+2. Tap the Metamask icon for ya browser. Put ya details make you choose Ephemery test network. You fit need update ya wallet setting so you go fit see **test networks**.  Anoda way dey, you fit go Remix's Deploy & Run transation module and for the ENVIRONMENT side make you choose Ephemery.
 
-3. Getting test ETH for public test networks is often annoying.  Ephemery is a public network that is refreshed monthly, so getting test ETH should be painless.  Here is a link to some <a href="https://github.com/ephemery-testnet/ephemery-resources?tab=readme-ov-file#faucets" target="_blank">Ephemery faucets</a>.
+3. To take get test ETH for genera test networks dey vex pesin sometimes.  Ephemery na public network wey dem dey refresh every month, so e no go hard to take get test ETH.  Na link to some <a href="https://github.com/ephemery-testnet/ephemery-resources?tab=readme-ov-file#faucets" target="_blank">Ephemery faucets</a>.
 
 ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/deploy_injected/images/testnet.png)
 
-Sepolia is another popular testnet that is not refreshed, so deployments will persist, but Sepolia faucets are more difficult to use.
+Sepolia na anoda testnet wey pipu sabi wey no dey refreshed, so launch go kontinue, but Sepolia faucets hard to use pass others.
 
-In your browser wallet make sure that you have NOT selected mainnet or any network that will cost real ETH. In the Deploy & Run module, below the Environment select box, you'll see a badge with the network's ID and for popular chains, its name.  In the case below its Sepolia.
+No select mainnet for your browser wallet or any network wey go cost you real ETH. For the Deploy & Run module, na the Environment selct box dey down so, you go see badge wey the name, network ID and popular chain dey.  Na Sepolia dey down so.
 
 ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/deploy_injected/images/sepolia.png)
 
-5. Make sure you see the 2_Owner.sol as a choice in the **CONTRACT** select box, then click the **Deploy** button.
+5. Konfam say you see 2_Owner.sol as option for the **CONTRACT** select box, kon click **Deploy** button.
 
-If the **CONTRACT** select box is empty, you'll need to compile 2_Owner again by making 2_Owner.sol the active file in the **editor** and then go to the **Solidity Compiler** to compile it.
+If notin dey the **CONTRACT** select box, you go need gather all 2_Owner again wen you make 2_Owner.sol the file wey dey aktiv for **editor** kon go **Solidity Compiler** take join am togeda.
 
-6. After you hit the `Deploy` button, you'll see the browser wallet popup asking you to pay for the transactions.  If you have the appropriate kind of ETH for this chain, approve this transaction.  Check the printout in the terminal.  Once the block is validated, the **deployed instance** will appear at the bottom of Deploy & Run
+6. Afta you don touch 'Deploy' button, you go see say browser wallet go come up dey ask make you pay for transactions.  If you get the kind ETH wey you need for this chain, approve the transaction.  Check printout for di termina.  If dem don confam ya block, **deployed instance** go show for Deploy & Run side for down
 
-And with that you have finished this tutorial.  You now have experience with opening, compiling, deploying and interacting with Smart Contracts in Remix IDE.
+Like dat you don finish this lesson.  You don sabi how to take open, join, launch kon run tins with Smart Contracts for Remix IDE.
