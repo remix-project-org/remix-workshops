@@ -24,5 +24,5 @@ steps:
     name: 5. Metadata IPFS
     path: erc721-metadata-ipfs
   - 
-    name: 6. Deploy to Testnet
+    name: 6. Implementar en Testnet
     path: erc721-deploy-testnet-opensea
