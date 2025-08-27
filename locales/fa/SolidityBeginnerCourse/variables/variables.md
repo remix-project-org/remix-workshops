@@ -1,29 +1,29 @@
-There are three different types of variables in Solidity: _State Variables_, _Local Variables_, and _Global Variables_.
+در سالیدیتی سه نوع متغیر مختلف وجود دارد: _متغیرهای وضعیت_، _متغیرهای محلی_ و _متغیرهای جهانی_.
 
-## 1. State Variables
+## 1. متغیرهای حالت
 
-_State Variables_ are stored in the contract _storage_ and thereby on the blockchain. They are declared inside the contract but outside the function.
-This contract has two state variables, the string `text`(line 6) and the uint `num` (line 7).
+_متغیرهای حالت_ در _ذخیره‌سازی_ قرارداد ذخیره می‌شوند و بدین ترتیب بر روی بلاکچین قرار می‌گیرند. آنها درون قرارداد اعلام شده‌اند اما خارج از تابع.
+این قرارداد دارای دو متغیر حالت است، رشته `text` (خط 6) و uint `num` (خط 7).
 
-## 2. Local Variables
+## 2. متغیرهای محلی
 
-_Local Variables_ are stored in the _memory_ and their values are only accessible within the function they are defined in. Local Variables are not stored on the blockchain.
-In this contract, the uint `i` (line 11) is a local variable.
+_متغیرهای محلی_ در _حافظه_ ذخیره می‌شوند و مقادیر آن‌ها فقط در تابعی که در آن تعریف شده‌اند، قابل دسترسی هستند. متغیرهای محلی در بلاکچین ذخیره نمی‌شوند.
+در این قرارداد، متغیر uint `i` (خط 11) یک متغیر محلی است.
 
-## 3. Global Variables
+## 3. متغیرهای جهانی
 
-_Global Variables_, also called _Special Variables_, exist in the global namespace. They don't need to be declared but can be accessed from within your contract.
-Global Variables are used to retrieve information about the blockchain, particular addresses, contracts, and transactions.
+_متغیرهای جهانی_، که همچنین به عنوان _متغیرهای خاص_ شناخته می‌شوند، در فضای نام جهانی وجود دارند. آنها نیازی به اعلام ندارند اما می توانند از داخل قرارداد شما دسترسی پیدا کنند.
+متغیرهای جهانی برای بازیابی اطلاعات درباره بلاکچین، آدرس‌های خاص، قراردادها و معاملات استفاده می‌شوند.
 
-In this example, we use `block.timestamp` (line 14) to get a Unix timestamp of when the current block was generated and `msg.sender` (line 15) to get the caller of the contract function’s address.
+در این مثال، از (خط 14) برای به‌دست آوردن زمان Unix هنگامی که بلوک فعلی ایجاد شد، استفاده می‌کنیم و از `msg.sender` (خط 15) برای به‌دست آوردن آدرس فراخوانی‌کننده تابع قرارداد استفاده می‌کنیم.
 
-A list of all Global Variables is available in the <a href="https://docs.soliditylang.org/en/latest/cheatsheet.html?highlight=Variables#global-variables" target="_blank">Solidity documentation</a>.
+فهرستی از تمام متغیرهای جهانی در مستندات <a href="https://docs.soliditylang.org/en/latest/cheatsheet.html?highlight=Variables#global-variables" target="_blank">سالیدیتی</a> در دسترس است.
 
-Watch video tutorials on <a href="https://www.youtube.com/watch?v=hl692-xJPUQ" target="_blank">State Variables</a>, <a href="https://www.youtube.com/watch?v=5Gxzwn0SQDU" target="_blank">Local Variables</a>, and <a href="https://www.youtube.com/watch?v=ryA86ZiSD-w" target="_blank">Global Variables</a>.
+ویدیوهای آموزشی در مورد <a href="https://www.youtube.com/watch?v=hl692-xJPUQ" target="_blank">متغیرهای حالت</a>، <a href="https://www.youtube.com/watch?v=5Gxzwn0SQDU" target="_blank">متغیرهای محلی</a> و <a href="https://www.youtube.com/watch?v=ryA86ZiSD-w" target="_blank">متغیرهای جهانی</a> را مشاهده کنید.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-1. Create a new public state variable called `blockNumber`.
-2. Inside the function `doSomething()`, assign the value of the current block number to the state variable `blockNumber`.
+1. یک متغیر عمومی جدید به نام `blockNumber` ایجاد کنید.
+2. درون تابع `doSomething()`، مقدار شماره بلوک فعلی را به متغیر حالت `blockNumber` اختصاص دهید.
 
-Tip: Look into the global variables section of the Solidity documentation to find out how to read the current block number.
+نکته: به بخش متغیرهای جهانی در مستندات Solidity نگاهی بیندازید تا یاد بگیرید چگونه شماره بلوک جاری را بخوانید.
