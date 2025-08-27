@@ -1,50 +1,50 @@
-In this section, we will use Metamask (an Ethereum wallet) to deploy our contract to the Sepolia testnet of the Ethereum blockchain, mint an NFT, and look at it on the NFT marketplace OpenSea.
+در این بخش، ما از Metamask (یک کیف پول اتریوم) برای استقرار قرارداد خود در شبکه آزمایشی Sepolia از بلاکچین اتریوم، ایجاد یک NFT و بررسی آن در بازار NFT OpenSea استفاده خواهیم کرد.
 
-### 1. Install Metamask
+### 1. Metamask را نصب کنید
 
-**1.1** Go to <a href="https://metamask.io/" target="_blank">metamask.io</a>.
+**1.1** به <a href="https://metamask.io/" target="_blank">metamask.io</a> بروید.
 
-**1.2** Click on the download button, then click on install for your browser (e.g. Chrome) and add the extension to your browser.
+**۱٫۲** روی دکمه دانلود کلیک کنید، سپس روی نصب برای مرورگر خود (مثلاً کروم) کلیک کنید و افزونه را به مرورگر خود اضافه کنید.
 
-**1.3** Create a wallet as described.
+**۱٫۳** طبق توضیحات، یک کیف پول ایجاد کنید.
 
-### 2. Get testnet token for Sepolia
+### 2. دریافت توکن شبکه آزمایشی برای سپولیا
 
-In order to make transactions on the testnet, we need Ethereum testnet tokens.
+برای انجام تراکنش‌ها در شبکه آزمایشی، به توکن‌های شبکه آزمایشی اتریوم نیاز داریم.
 
-**2.1** Switch your Metamask from "Ethereum Mainnetwork" to "Sepolia Test Network".
+**۲٫۱** متامسک خود را از «شبکه اصلی اتریوم» به «شبکه آزمایشی سپولیا» تغییر دهید.
 
-**2.2** Go to <a href="https://www.alchemy.com/faucets/ethereum-sepolia" 
-target="_blank">https://www.alchemy.com/faucets/ethereum-sepolia</a>, enter the address of your account and claim testnet ETH.
-Or check the faucets listed on <a href="https://ethereum.org/en/developers/docs/networks/#testnet-faucets" target="_blank">ethereum.org</a> for other options.
+**2.2** به <a href="https://www.alchemy.com/faucets/ethereum-sepolia" 
+target="_blank">https://www.alchemy.com/faucets/ethereum-sepolia</a> بروید، آدرس حساب خود را وارد کنید و ETH شبکه آزمایشی را درخواست کنید.
+یا برای گزینه‌های دیگر، فاست‌های فهرست‌شده در <a href="https://ethereum.org/en/developers/docs/networks/#testnet-faucets" target="_blank">ethereum.org</a> را بررسی کنید.
 
-### 3. Contract Deployment
+### 3. استقرار قرارداد
 
-**3.1** In the "DEPLOY & RUN TRANSACTIONS" module of the Remix IDE under "ENVIRONMENT" **select** "Injected Provide-Metamask" (or whatever wallet you are using). It should then ask you to connect your account, which you should confirm. Then in the wallet, connect to the Sepolia network.  You may need to turn on a switch to view test networks. Once connected, there will be a "badge" with Sepolia and its network ID under "Injected Provider".
+**۳٫۱** در ماژول «استقرار و اجرای تراکنش‌ها» در Remix IDE، در قسمت «محیط» گزینه‌ی «تزریق ارائه-متاماسک» (یا هر کیف پولی که استفاده می‌کنید) را انتخاب کنید. سپس از شما می‌خواهد که حساب خود را متصل کنید، که باید آن را تأیید کنید. سپس در کیف پول، به شبکه سپولیا متصل شوید.  برای مشاهده شبکه‌های آزمایشی، ممکن است لازم باشد سوئیچ را روشن کنید. پس از اتصال، یک «نشان» با نام Sepolia و شناسه شبکه آن در زیر «ارائه‌دهنده تزریق‌شده» وجود خواهد داشت.
 
-**3.2** Deploy your token contract and confirm the transaction in Metamask.
+**۳٫۲** قرارداد توکن خود را مستقر کنید و تراکنش را در متامسک تأیید کنید.
 
-**3.3**  Your contract should appear in the "Deployed Contracts" section.
+**۳٫۳** قرارداد شما باید در بخش «قراردادهای مستقر» نمایش داده شود.
 
-### 4. Mint an NFT
+### 4. یک NFT ضرب کنید
 
-**4.1** Expand your contract in the IDE so you can see the buttons for the functions.
+**۴٫۱** قرارداد خود را در IDE باز کنید تا بتوانید دکمه‌های مربوط به توابع را ببینید.
 
-**4.2** Expand the input fields next to the safeMint button. Enter the Ethereum address of the account that is connected to Remix in the “to:” input field. Enter “0” in the input field "tokenID:". Click on transact.
+**۴٫۲** فیلدهای ورودی کنار دکمه safeMint را باز کنید. آدرس اتریوم حسابی که به Remix متصل است را در فیلد ورودی «to:» وارد کنید. در قسمت ورودی "tokenID:" عدد "0" را وارد کنید. روی تراکنش کلیک کنید.
 
-**4.3** In Metamask click on assets, then click on the “Import tokens” link, and paste the address of your contract in the input field. You can set decimals to 0.
+**۴٫۳** در متامسک روی دارایی‌ها کلیک کنید، سپس روی پیوند «وارد کردن توکن‌ها» کلیک کنید و آدرس قرارداد خود را در فیلد ورودی جایگذاری کنید. می‌توانید اعداد اعشاری را روی ۰ تنظیم کنید.
 
-You should now see the name of the symbol of your token contract (e.g. GEO) in your “Assets” view in Metamask. You should have one of these tokens.
+اکنون باید نام نماد قرارداد توکن خود (مثلاً GEO) را در نمای «دارایی‌ها» در متامسک مشاهده کنید. شما باید یکی از این توکن‌ها را داشته باشید.
 
-### 5. See your NFT on OpenSea
+### 5. NFT خود را در OpenSea ببینید
 
 <a href="https://opensea.io/" 
-target="_blank">OpenSea </a> is one of the most popular online marketplace for NFTs. OpenSea also provides a version where you can see assets on the testnet, under <a href="https://testnets.opensea.io/" 
-target="_blank">https://testnets.opensea.io/</a>
+target="_blank">اوپن‌سی </a> یکی از محبوب‌ترین بازارهای آنلاین برای NFTها است. OpenSea همچنین نسخه‌ای ارائه می‌دهد که در آن می‌توانید دارایی‌ها را در شبکه آزمایشی، در آدرس <a href="https://testnets.opensea.io/" 
+target="_blank">https://testnets.opensea.io/</a> مشاهده کنید
 
-**5.1** Go to <a href="https://testnets.opensea.io/login" 
-target="_blank">https://testnets.opensea.io/login</a>.
+**5.1** به <a href="https://testnets.opensea.io/login" 
+target="_blank">https://testnets.opensea.io/login</a> بروید.
 
-**5.2** Connect with your Metamask wallet. You should be redirected to your account <a href="https://testnets.opensea.io/account" target="_blank">https://testnets.opensea.io/account</a> view on OpenSea, where you should be able to see your NFT. You should see the image of your NFT; when you click on it, you should see the name, description, and under properties, also the attributes that you created.
+**5.2** با کیف پول متامسک خود متصل شوید. شما باید به صفحه حساب کاربری خود <a href="https://testnets.opensea.io/account" target="_blank">https://testnets.opensea.io/account</a> در OpenSea هدایت شوید، جایی که باید بتوانید NFT خود را ببینید. شما باید تصویر NFT خود را ببینید؛ وقتی روی آن کلیک می‌کنید، باید نام، توضیحات و در قسمت ویژگی‌ها، همچنین ویژگی‌هایی که ایجاد کرده‌اید را ببینید.
 
-If you successfully completed this course and are familiar with the basics of Solidity development, we encourage you to continue your learning journey by learning how to create your own NFT auction contract from the Learneth resources.
+اگر این دوره را با موفقیت به پایان رساندید و با اصول اولیه توسعه سالیدیتی آشنا هستید، شما را تشویق می‌کنیم که با یادگیری نحوه ایجاد قرارداد حراج NFT خود از منابع Learneth، سفر یادگیری خود را ادامه دهید.
