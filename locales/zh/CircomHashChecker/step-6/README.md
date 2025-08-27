@@ -1,28 +1,28 @@
-## Compute Witness
+## 计算见证
 
-1. **Access the Compute Witness Section**:
-    - After the trusted setup, the **Compute Witness** section becomes available.
+1. **访问计算见证部分**：
+    - 在可信设置之后，**计算见证**部分可用。
 
-2. **Input Values**:
+2. **输入值**：
     - You'll see input fields for `value1`, `value2`, `value3`, `value4`, and `hash`.
-    - Enter values for each input. For example:
-       - `value1`: `1234`
-       - `value2`: `2`
-       - `value3`: `3`
-       - `value4`: `4`
+    - 为每个输入输入值。 例如：
+       - `value一`: `一千二百三十四`
+       - `value`: `2`
+       - `value3`: `三`
+       - `value4`: `四`
 
-3. **Calculate the Hash**:
+3. **计算哈希**：
 
-    - Compute the Poseidon hash of the four values using an external tool or library compatible with the Poseidon hash function.
-    - For the values above, here is the computed Poseidon hash `16382790289988537028417564277589554649233048801038362947503054340165041751802`.
-    - Enter the calculated `hash` value in the `hash` input field.
+    - 使用与波塞冬哈希函数兼容的外部工具或库计算四个值的波塞冬哈希。
+    - 对于上面的值，这里是计算出的波塞冬哈希 \`\`。
+    - 在 `hash` 输入字段中输入计算出的 `hash` 值。
 
          <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-6/images/compute_witness.png" alt="compute-witness" width=250 height=400>
 
-4. **Compute the Witness**:
+4. \*\*计算见证人：
 
-    - Click on the **Compute Witness** button.
-    - Wait for the process to complete. A success badge will appear if the witness is computed successfully.
-    - If successful, you'll see `calculate_hash.wtn` created in the `.bin` directory in the file explorer.
+    - 点击 **计算见证** 按钮。
+    - 等待过程完成。 如果证人成功计算，将会出现一个成功徽章。
+    - 如果成功，你将在文件资源管理器的 `.bin` 目录中看到 `calculate_hash.wtn` 文件被创建。
 
          <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-6/images/witness_computed.png" alt="witness-computed" width=300 height=100>
