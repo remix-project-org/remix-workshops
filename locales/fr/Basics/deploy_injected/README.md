@@ -8,14 +8,14 @@
 
 Sepolia est un autre réseau de test populaire qui n'est pas remis à zéro : les déploiements y persistent, mais les faucets Sepolia sont plus difficile à utilier.
 
-Dans le portefeuille de votre navigateur, assurez-vous de ne PAS avoir sélectionné "mainnet" ou tout autre réseau qui vous coûterai de vrais ETH. In the Deploy & Run module, below the Environment select box, you'll see a badge with the network's ID and for popular chains, its name.  In the case below its Sepolia.
+Dans le portefeuille de votre navigateur, assurez-vous de ne PAS avoir sélectionné "mainnet" ou tout autre réseau qui vous coûterai de vrais ETH. Si vous n'avez pas de portefeuille de navigateur comme MetaMask, téléchargez et installez-en un maintenant.  In the case below its Sepolia.
 
 ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/deploy_injected/images/sepolia.png)
 
-5. Make sure you see the 2_Owner.sol as a choice in the **CONTRACT** select box, then click the **Deploy** button.
+5. Assurez-vous de voir 2_Owner.sol comme option dans la boîte de sélection CONTRACT, puis cliquez sur le bouton Déployer.
 
-If the **CONTRACT** select box is empty, you'll need to compile 2_Owner again by making 2_Owner.sol the active file in the **editor** and then go to the **Solidity Compiler** to compile it.
+Si la boîte de sélection CONTRACT est vide, vous devrez compiler à nouveau 2_Owner en faisant de 2_Owner.sol le fichier actif dans l'éditeur, puis aller dans le Compilateur Solidity pour le compiler.
 
-6. After you hit the `Deploy` button, you'll see the browser wallet popup asking you to pay for the transactions.  If you have the appropriate kind of ETH for this chain, approve this transaction.  Check the printout in the terminal.  Once the block is validated, the **deployed instance** will appear at the bottom of Deploy & Run
+6. Après avoir cliqué sur le bouton Déployer, vous verrez une fenêtre contextuelle du portefeuille du navigateur vous demandant de payer les transactions.  Si vous avez le type approprié d'ETH pour cette chaîne, approuvez cette transaction.  Vérifiez l'affichage dans le terminal.  Une fois le bloc validé, l'instance déployée apparaîtra en bas de Déployer & Exécuter
 
-And with that you have finished this tutorial.  You now have experience with opening, compiling, deploying and interacting with Smart Contracts in Remix IDE.
+Et avec cela, vous avez terminé ce tutoriel.  Vous avez maintenant de l'expérience avec l'ouverture, la compilation, le déploiement et l'interaction avec les contrats intelligents dans Remix IDE.
