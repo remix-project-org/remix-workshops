@@ -1,5 +1,5 @@
-## Interactive Solidity Token Course
+## Dis na interactive Solidity Token Course
 
-Learn to understand and create ERC20 tokens.
+Learn to fit understand and fit create ERC20 tokens.
 
-Developed by the p2p learning platform https://dacade.org.
+Na p2p learning platform https://dacade.org develop am.
