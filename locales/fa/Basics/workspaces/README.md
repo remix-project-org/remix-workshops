@@ -1,23 +1,23 @@
-## Workspaces help organize your separate projects.
+## فضاهای کاری به سازماندهی پروژه‌های جداگانه شما کمک می‌کنند.
 
-If this is your first time to Remix, a Workspace named **default_workspace** is loaded in the File Explorer.
+اگر این اولین بار است که به Remix وارد می‌شوید، یک فضای کاری به نام **default_workspace** در مرورگر فایل بارگذاری می‌شود.
 
 ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/default_workspace.png)
 
-The **default_workspace** has three Solidity (.sol) files in the contracts folder. Remix has a number of other templates. When you load a template, it goes into a Workspace. To go between Workspaces, use the select box at the top of the File Explorer.
+**فضای کاری پیش‌فرض** شامل سه فایل سالیدیتی (.sol) در پوشه‌ی قراردادها است. ریمیکس چندین الگوی دیگر دارد. وقتی شما یک الگو را بارگذاری می‌کنید، آن به یک فضای کاری می‌رود. برای جابجایی بین فضای کاری، از جعبه انتخاب در بالای کاوشگر فایل استفاده کنید.
 
 ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/select-box.png)
 
-But Workspaces are not only for templates. When cloning a repo into Remix, the files will be put into a Workspace.
+اما فضاي کار تنها برای الگوها نیست. هنگام کلون کردن یک مخزن در ریمیکس، فایل‌ها در یک فضای کاری قرار می‌گیرند.
 
-Let's create a new Workspace
+بیایید یک فضای کاری جدید ایجاد کنیم
 
-1. At the top of the File Explorer, click the hamburger icon (the 3 horizontal lines). Read through the commands and tools in this menu.
+1. در بالای مرورگر فایل، روی آیکون همبرگری (سه 3 خط افقی) کلیک کنید. دستورها و ابزارهای موجود در این منو را مرور کنید.
 
-2. Select **+ Create** (the first choice).
+2. گزینه **+ ایجاد** (اولین انتخاب) را انتخاب کنید.
 
-3. In the modal the comes up, choose one of the templates.
+3. در مدالی که ظاهر می‌شود، یکی از الگوها را انتخاب کنید.
 
-![hamburger](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/workspaces/images/popup.png)
+![هامبرگر](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/workspaces/images/popup.png)
 
-Notice that in this popup menu, you can clone a repo. Managing a Git repo happens in the DGit plugin. You can also create Github actions with the three workflow choices in the popup menu.
+توجه داشته باشید که در این منوی پاپ آپ، می‌توانید یک ریپویتوری را کلون کنید. مدیریت یک مخزن گیت در افزونه DGit انجام می‌شود. شما همچنین می‌توانید با سه گزینه کارکرد در منوی بازشو، اقدامات گیت‌هاب ایجاد کنید.
