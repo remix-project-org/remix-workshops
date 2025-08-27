@@ -1,81 +1,81 @@
-ERC721 is a standard for token contracts that manage non-fungible tokens (NFTs) on the Ethereum blockchain.
+ERC721 استانداردی برای قراردادهای توکن است که توکن‌های غیرقابل تعویض (NFT) را در بلاکچین اتریوم مدیریت می‌کند.
 
-Each non-fungible token is unique and not interchangeable. NFTs can have different properties, behavior, or rights. Non-fungible tokens are used to represent ownership of unique digital and physical assets like art, collectibles, or real estate.
+هر توکن غیرقابل تعویض منحصر به فرد است و قابل تعویض نیست. NFTها می‌توانند ویژگی‌ها، رفتار یا حقوق متفاوتی داشته باشند. توکن‌های غیرقابل تعویض برای نشان دادن مالکیت دارایی‌های دیجیتال و فیزیکی منحصر به فرد مانند آثار هنری، اشیاء کلکسیونی یا املاک و مستغلات استفاده می‌شوند.
 
-If you want to know more about the ERC721 token standard, have a look at the specifications in its <a href="https://eips.ethereum.org/EIPS/eip-721" target="_blank">Ethereum improvement proposal</a>.
+اگر می‌خواهید درباره استاندارد توکن ERC721 بیشتر بدانید، به مشخصات موجود در <a href="https://eips.ethereum.org/EIPS/eip-721" target="_blank">پیشنهاد بهبود اتریوم</a> آن نگاهی بیندازید.
 
-## Interface
+## رابط
 
-The ERC721 standard is more complex than the ERC20 standard and it features optional extensions. ERC721 compliant contracts must, at a minimum, implement the ERC721 and ERC165 interfaces, which we will look at in this section.
+استاندارد ERC721 پیچیده‌تر از استاندارد ERC20 است و دارای افزونه‌های اختیاری می‌باشد. قراردادهای سازگار با ERC721 حداقل باید رابط‌های ERC721 و ERC165 را پیاده‌سازی کنند که در این بخش به آنها خواهیم پرداخت.
 
-This interface (line 11) is part of the open-source contract library provided by <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/IERC721.sol" target="_blank">OpenZeppelin</a>.
+این رابط (خط ۱۱) بخشی از کتابخانه قرارداد متن‌باز ارائه شده توسط <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/IERC721.sol" target="_blank">OpenZeppelin</a> است.
 
-## Basic IERC721 Functions
+## توابع پایه IERC721
 
-Contracts compliant with the ERC721 standard have to implement the following functions:
+قراردادهایی که با استاندارد ERC721 مطابقت دارند باید عملکردهای زیر را پیاده‌سازی کنند:
 
-### balanceOf
+### تعادل از
 
-The function `balanceOf` (line 30) returns the amount of tokens owned by the account with the address `owner`.
+تابع `balanceOf` (خط 30) تعداد توکن‌های متعلق به حسابی با آدرس `owner` را برمی‌گرداند.
 
-### ownerOf
+### صاحب
 
-The function `ownerOf` (line 39) returns the address `owner` of the account that holds the token with the id `tokenId`.
+تابع `ownerOf` (خط ۳۹) آدرس `owner` حسابی را که توکن با شناسه `tokenId` را در اختیار دارد، برمی‌گرداند.
 
 ### safeTransferFrom
 
-The function `safeTransferFrom` (line 55) transfers the ownership of a token with the id `tokenId` from the account with the address `from` to the account with the address `to`.
+تابع `safeTransferFrom` (خط ۵۵) مالکیت یک توکن با شناسه `tokenId` را از حسابی با آدرس `from` به حسابی با آدرس `to` منتقل می‌کند.
 
-The function `safeTransferFrom` (line 137) is almost identical to the function `safeTransferFrom` (line 55) .The only difference is that this function has a non-empty payload `data`.
+تابع `safeTransferFrom` (خط ۱۳۷) تقریباً مشابه تابع `safeTransferFrom` (خط ۵۵) است. تنها تفاوت این است که این تابع دارای یک payload غیر خالی به نام `data` است.
 
-A smart contract must implement the ERC721TokenReceiver Interface if it is to receive a transfer. This will ensure that the contract can handle ERC721 token transfers and prevent the tokens from being locked in a contract that can’t.
+یک قرارداد هوشمند برای دریافت یک انتقال باید رابط ERC721TokenReceiver را پیاده‌سازی کند. این تضمین می‌کند که قرارداد می‌تواند انتقال توکن‌های ERC721 را مدیریت کند و از قفل شدن توکن‌ها در قراردادی که نمی‌تواند این کار را انجام دهد، جلوگیری می‌کند.
 
-### transferFrom
+### انتقال از
 
-The function `transferFrom` (line 55) transfers the ownership of a token with the id `tokenId` from the account with the address `from` to the account with the address `to`.
+تابع `transferFrom` (خط ۵۵) مالکیت یک توکن با شناسه `tokenId` را از حسابی با آدرس `from` به حسابی با آدرس `to` منتقل می‌کند.
 
-**It is recommended to use safeTransferFrom instead of transferFrom whenever possible.**
-The `transferFrom` function is not secure because it doesn’t check if the smart contract that is the recipient of the transfer has implemented the ERC721TokenReceiver interface and is capable of handling ERC721 tokens.
+**توصیه می‌شود در صورت امکان از safeTransferFrom به جای transferFrom استفاده کنید.**
+تابع `transferFrom` امن نیست زیرا بررسی نمی‌کند که آیا قرارداد هوشمندی که گیرنده انتقال است، رابط ERC721TokenReceiver را پیاده‌سازی کرده است و قادر به مدیریت توکن‌های ERC721 است یا خیر.
 
-## Advanced IERC721 Functions
+## توابع پیشرفته IERC721
 
-### approve
+### تایید کند
 
-The function `approve` (line 94) gives the account with the address `to` the permission to manage the token with the id `tokenId` on behalf of the account calling the function.
+تابع `approve` (خط ۹۴) به حسابی که آدرس `to` دارد، اجازه می‌دهد تا توکنی با شناسه `tokenId` را از طرف حسابی که تابع را فراخوانی می‌کند، مدیریت کند.
 
-### getApproved
+### دریافت تایید
 
-The function `getApproved` (line 103) returns the address of the account (return var `operator`) that is approved to manage the token with the id `tokenId`.
+تابع `getApproved` (خط ۱۰۳) آدرس حسابی (متغیر return `operator`) را که برای مدیریت توکن با شناسه `tokenId` تأیید شده است، برمی‌گرداند.
 
-### setApprovalForAll
+### تاییدیه برای همه
 
-The function `setApprovalForAll` (line 115) sets the permission (`_approved`) for the account with the specified address (input param - `operator`) to manage all tokens of the account calling the function.
+تابع `setApprovalForAll` (خط 115) مجوز (`_approved`) را برای حسابی با آدرس مشخص شده (پارامتر ورودی - `operator`) تنظیم می‌کند تا تمام توکن‌های حسابی که تابع را فراخوانی می‌کند، مدیریت کند.
 
-### isApprovedForAll
+### تایید شده برای همه
 
-The function `getApproved` (line 103) returns the boolean true if the account with the address `operator` is approved to manage all tokens of the account with the address `owner`.
+تابع `getApproved` (خط ۱۰۳) در صورتی که حساب کاربری با آدرس `operator` برای مدیریت تمام توکن‌های حساب کاربری با آدرس `owner` تأیید شده باشد، مقدار بولی true را برمی‌گرداند.
 
-## IERC721 Events
+## رویدادهای IERC721
 
-ERC721 contracts must also emit the following events:
+قراردادهای ERC721 همچنین باید رویدادهای زیر را منتشر کنند:
 
-### Transfer
+### تراکنش ها
 
-The `Transfer` event (line 15) must be emitted when the token with the id `tokenId` is transferred from the account with the address `from` to the account with the address  `to`.
+رویداد `Transfer` (خط ۱۵) باید زمانی صادر شود که توکن با شناسه `tokenId` از حسابی با آدرس `from` به حسابی با آدرس `to` منتقل شود.
 
-### Approval
+### تایید
 
-The `Approval` event (line 20) must be emitted when the account with the address `owner` approves the account with the address `spender` to manage the token with the id `tokenId` on its behalf.
+رویداد `Approval` (خط 20) باید زمانی صادر شود که حسابی با آدرس `owner`، حسابی با آدرس `spender` را برای مدیریت توکن با شناسه `tokenId` از طرف خود تأیید کند.
 
-### ApprovalForAll
+### تأیید برای همه
 
-The `ApprovalForAll` event (line 25) must be emitted when the account with the address `owner` gives or removes the permission (`_approved`) of the account with the address `operator` to manage all its tokens.
+رویداد `ApprovalForAll` (خط ۲۵) باید زمانی صادر شود که حساب کاربری با آدرس `owner` به حساب کاربری با آدرس `operator` مجوز (`_approved`) برای مدیریت تمام توکن‌هایش را بدهد یا آن را لغو کند.
 
 ## IERC165
 
-In addition to the ERC721 interface, ERC721 compliant contracts must also implement the ERC165 interface.
+علاوه بر رابط ERC721، قراردادهای سازگار با ERC721 باید رابط ERC165 را نیز پیاده‌سازی کنند.
 
-With the implementation of the ERC165 interface, contracts can declare the support of specific interfaces. A contract that wants to interact with another contract can then query if the other contract supports this interface before making a transaction e.g. sending tokens to it that they might not support.
+با پیاده‌سازی رابط ERC165، قراردادها می‌توانند پشتیبانی از رابط‌های خاص را اعلام کنند. قراردادی که می‌خواهد با قرارداد دیگری تعامل داشته باشد، می‌تواند قبل از انجام تراکنش، مثلاً ارسال توکن‌هایی که ممکن است از آنها پشتیبانی نکند، بررسی کند که آیا قرارداد دیگر از این رابط پشتیبانی می‌کند یا خیر.
 
 Our IERC721 interface here imports (line 6) and inherits (line 11) from the IERC165 interface.
 
