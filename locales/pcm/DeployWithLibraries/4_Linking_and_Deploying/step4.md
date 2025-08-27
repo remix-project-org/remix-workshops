@@ -1,26 +1,26 @@
-Switch to the `Deploy & Run` module
+Switch go d `Deploy & Run` module
 ![Run transaction](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/4_Linking_and_Deploying/images/remix_runtransaction.png "Run Transaction")
 
-- Select the Remix VM Environment and select the `sampleContract` contract in the list of compiled contracts.
+- Make yu select d Remix VM Environment nd select d `sampleContract` contract inside d list of compiled contracts.
 
-- Click on `Deploy`
+- Tap ontop `Deploy`
 
-The terminal should output something like `creation of sample errored: <address> is not a valid address. Please check the provided address is valid.`
-That is expected: **We have set `autoDeployLib` to false, so Remix expects to have an address and not just `<address>`**
+The terminal suppose output something like `creation of sample errored: <address> no b valid address. Abeg check d address way dem provide if e valid.`
+E dey expected: **We don set `autoDeployLib` to false, so Remix expects to get address nd no be just `<address>`**
 
-So we need deploy the library to get its address.
+So we go need deploy d library to get hin address.
 
-- Select the library `aLib` in the list of compiled contract and hit `deploy`
+- Select d library `aLib` inside d list of compiled contract con hit `deploy`
 
   ![Choose aLib](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/4_Linking_and_Deploying/images/contract_alib.png "Choose aLib")
 
-- Click the clipboard icon to copy the address of the library.
+- Click d clipboard icon to fit copy d address of d library.
 
   ![Copy lib1](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/4_Linking_and_Deploying/images/alib_copy.png "Copy")
 
-- Paste it into the **contract sample's** metadata JSON.
+- Paste am inside d **contract sample's** metadata JSON.
 
-- Reselect the `sampleContract` contract in the `Run transaction` module and hit deploy.
+- Sti select d `sampleContract` contract fr d `Run transaction` module con hit deploy.
 
-- Deploy should now be successful.
+- By now deploy suppose show successful.
 
