@@ -1,28 +1,28 @@
 ---
-id: tokenCourse
-name: Solidity ERC20 Token Course
-summary: Learn how to create your own ERC20 tokens. Developed by the p2p learning platform https://dacade.org.
+id: دوره توکن
+name: دوره آموزشی توکن Solidity ERC20
+summary: یاد بگیرید که چگونه توکن‌های ERC20 خودتان را ایجاد کنید. توسعه یافته توسط پلتفرم یادگیری همتا به همتا https://dacade.org.
 level: 1
 tags:
   - Solidity
-  - Tokens
+  - توکن ها
   - ERC20
 steps:
   - 
-    name: 1. Introduction
-    path: introduction
+    name: 1. مقدمه
+    path: المقدمه
   - 
-    name: 2. Interface
-    path: erc20-interface
+    name: 2. رابط
+    path: رابط erc20
   - 
-    name: 3. Token Creation
-    path: erc20-token-creation
+    name: ۳. ایجاد توکن
+    path: ایجاد توکن erc20
   - 
-    name: 4. Interaction
-    path: erc20-interaction
+    name: ۴. تعامل
+    path: تعامل erc20
   - 
-    name: 5. Testnet Deployment
-    path: erc20-testnet-deployment
+    name: ۵. استقرار شبکه آزمایشی
+    path: استقرار شبکه آزمایشی erc20
   - 
-    name: 6. Extensions
-    path: erc20-extensions
+    name: ۶. افزونه‌ها
+    path: افزونه‌های erc20
