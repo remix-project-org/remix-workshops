@@ -1,32 +1,32 @@
-Welcome to this interactive Solidity course for beginners.
+به این دوره تعاملی سالیدیتی برای مبتدیان خوش آمدید.
 
-In this first section, we will give you a short preview of the concepts we will cover in this course, look at an example smart contract, and show you how you can interact with this contract in the Remix IDE.
+در این بخش اول، به شما یک پیش‌نمایش کوتاه از مفاهیمی که در این دوره پوشش خواهیم داد، ارائه می‌دهیم، به یک قرارداد هوشمند نمونه نگاه می‌کنیم و به شما نشان می‌دهیم که چگونه می‌توانید با این قرارداد در IDE Remix تعامل داشته باشید.
 
-This contract is a counter contract that has the functionality to increase, decrease, and return the state of a counter variable.
+این قرارداد یک قرارداد شمارشی است که قابلیت افزایش، کاهش و بازگشت وضعیت یک متغیر شمارشگر را دارد.
 
-If we look at the top of the contract, we can see some information about the contract like the license (line 1), the Solidity version (line 2), as well as the keyword `contract` and it's name, `Counter` (line 4). We will cover these concepts in the next section about the **Basic Syntax**.
+اگر به بالای قرارداد نگاه کنیم، می‌توانیم اطلاعاتی درباره قرارداد از قبیل مجوز (خط ۱)، نسخه‌ی سالیدیتی (خط ۲)، و همچنین کلیدواژه‌ی `contract` و نام آن، `Counter` (خط ۴) را ببینیم. ما این مفاهیم را در بخش بعدی درباره **سینتکس پایه** بررسی خواهیم کرد.
 
-With `uint public count` (line 5) we declare a state variable of the type `uint` with the visibility `public`. We will cover these concepts in our sections about **Variables**, **Primitive Data Types**, and **Visibility**.
+با `uint public count` (خط ۵) ما یک متغیر حالت از نوع `uint` با قابلیت دسترسی `public` اعلام می‌کنیم. ما این مفاهیم را در بخش‌های مربوط به **متغیرها**، **نوع‌های داده‌ی اولیه** و **دیده‌بانی** پوشش خواهیم داد.
 
-We then create a `get` function (line 8) that is defined with the `view` keyword and returns a `uint` type. Specifically, it returns the `count` variable. This contract has two more functions, an `inc` (line 13) and `dec` (line 18) function that increases or decreases our count variable.
-We will talk about these concepts in our sections about **Functions - Reading and Writing to a State Variable** and **Functions - View and pure**.
+سپس یک تابع `get` ایجاد می‌کنیم (خط ۸) که با کلمه کلیدی `view` تعریف شده و یک نوع `uint` را بازمی‌گرداند. به طور خاص، متغیر `count` را برمی‌گرداند. این قرارداد دو عملکرد دیگر دارد، یک تابع `inc` (خط ۱۳) و یک تابع `dec` (خط ۱۸) که متغیر شمارش ما را افزایش یا کاهش می‌دهد.
+ما در بخش‌های مربوط به **توابع - خواندن و نوشتن به یک متغیر حالت** و **توابع - دید و خالص** به این مفاهیم صحبت خواهیم کرد.
 
-## Compile and Deploy through Remix
+## تجمیع و استقرار از طریق رمیكس
 
-**GIF** Interacting with the contract: <img src="https://github.com/dacadeorg/remixMedia/blob/main/solidity-beginner-course/introduction.gif?raw=true" alt="Compile and deploy contract" width="300"/>
+**GIF** تعامل با قرارداد: <img src="https://github.com/dacadeorg/remixMedia/blob/main/solidity-beginner-course/introduction.gif?raw=true" alt="Compile and deploy contract" width="300"/>
 
-1. We can compile your `Counter` contract in the "Solidity compiler" module of the Remix IDE.
+1. ما می‌توانیم قرارداد `Counter` شما را در ماژول "کامپایلر سالیدیتی" IDE ریمیکس کامپایل کنیم.
 
-2. In the "Deploy & run transactions" module, we select our contract "Counter" in the contract input field and click on the "Deploy" button.
+2. در ماژول "استقرار و اجرای تراکنش‌ها"، قرارداد "شمارنده" را در فیلد ورودی قرارداد انتخاب کرده و روی دکمه "استقرار" کلیک می‌کنیم.
 
-3. We expand the token contract functions in the IDE, and test its `get`, `inc`, and `dec` functions.
+3. ما توابع قرارداد توکن را در IDE گسترش می‌دهیم و توابع `get`، `inc` و `dec` آن را تست می‌کنیم.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-Throughout this course, we will give you assignments to test and consolidate your newly acquired knowledge.
+⭐️ در طول این دوره، ما به شما تکالیفی خواهیم داد تا دانش تازه کسب کرده خود را آزمایش و تعمیق کنید.
 
-Your first assignment is to:
+اولین وظیفه شما این است که:
 
-1. Compile this contract.
-2. Deploy it to the Remix VM.
-3. Interact with your contract.
+1. این قرارداد را تهیه کنید.
+2. آن را به ماشین مجازی ریمیکس منتقل کنید.
+3. با قرارداد خود تعامل کنید.
