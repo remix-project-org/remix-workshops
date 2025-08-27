@@ -1,5 +1,5 @@
-## Interactive Solidity Token Course
+## دوره تعاملی توکن سالیدیتی
 
-Learn to understand and create ERC20 tokens.
+یاد بگیرید که توکن‌های ERC20 را درک و ایجاد کنید.
 
-Developed by the p2p learning platform https://dacade.org.
+توسعه یافته توسط پلتفرم یادگیری p2p https://dacade.org.
