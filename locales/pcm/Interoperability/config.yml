@@ -1,7 +1,7 @@
 ---
 id: interopCourse
 name: Multichain Protocols with Axelar
-summary: Learn how to build interoperable smart contracts that can send messages and assets between different blockchains using Axelar technology.
+summary: Learn how yu go build interoperable smart contracts wey fit use Axelar technology send messages nd assets between different blockchains.
 level: 2
 tags:
   - Solidity
@@ -9,7 +9,7 @@ tags:
   - Axelar
 steps:
   - 
-    name: An Intro to Axelar
+    name: Better intro inside Alex
     path: 1_Intro
   - 
     name: Axelar Gateway
