@@ -1,5 +1,5 @@
-## Solidity NFT Course
+## De solidify NFT COURSE
 
-Learn how to create your own NFTs (non-fungible tokens).
+U go learn how to create ur own NFT (non-fungible tokens).
 
-Developed by the p2p learning platform https://dacade.org.
+Developed by de p2p learning platform https://dacade.org.
