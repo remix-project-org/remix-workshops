@@ -1,7 +1,7 @@
-From the Remix terminal, identify the transaction that deployed the contract and click `Debug`
+از ترمینال Remix، تراکنشی که قرارداد را مستقر کرده شناسایی کنید و بر روی `Debug` کلیک کنید
 
-In the gutter of the editor, put a breakpoint on the line `s = _o`, and click on `Jump to the next Breakpoint` (bottom right button).
+در لبه ویرایشگر، روی خط `s = _o` یک نقطه توقف قرار دهید و روی `پرش به نقطه توقف بعدی` کلیک کنید (دکمه پایین سمت راست).
 
-Click on `Step into`, to move along the opcodes until you reach `SSTORE`.
+بر روی `Step into` کلیک کنید تا به جلو بروید و به `SSTORE` برسید.
 
-`SSTORE` is the opcode for storing the value `_o` in the storage. Let's continue further to the `CODECOPY`.
+`SSTORE` کد عملیاتی برای ذخیره‌سازی مقدار `_o` در حافظه است. بیایید ادامه دهیم به `CODECOPY`.
