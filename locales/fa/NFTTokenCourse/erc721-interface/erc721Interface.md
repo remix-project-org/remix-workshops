@@ -77,24 +77,23 @@ ERC721 استانداردی برای قراردادهای توکن است که �
 
 با پیاده‌سازی رابط ERC165، قراردادها می‌توانند پشتیبانی از رابط‌های خاص را اعلام کنند. قراردادی که می‌خواهد با قرارداد دیگری تعامل داشته باشد، می‌تواند قبل از انجام تراکنش، مثلاً ارسال توکن‌هایی که ممکن است از آنها پشتیبانی نکند، بررسی کند که آیا قرارداد دیگر از این رابط پشتیبانی می‌کند یا خیر.
 
-Our IERC721 interface here imports (line 6) and inherits (line 11) from the IERC165 interface.
+رابط IERC721 ما در اینجا رابط IERC165 را وارد (خط 6) و از آن ارث‌بری (خط 11) می‌کند.
 
-This is how <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol" target="_blank">OpenZeppelins implementation</a> of the ERC165 interface looks like:
+پیاده‌سازی <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol" target="_blank">رابط ERC165</a>در OpenZeppelins به این صورت است:
 
 ```
-interface IERC165 {
-    function supportsInterface(bytes4 interfaceId) external view returns (bool);
-}
+رابط IERC165 {
+تابع supportsInterface(bytes4 interfaceId) مقدار خروجی نمای خارجی (bool) را برمی‌گرداند
 ```
 
-For example, the ERC165 identifier for the ERC721 interface as specified in the EIP721 is “0x80ac58cd”. Learn how to calculate an interface identifier and more about the ERC165 in its <a href="https://eips.ethereum.org/EIPS/eip-165" target="_blank">improvement proposal</a>.
+برای مثال، شناسه ERC165 برای رابط ERC721 همانطور که در EIP721 مشخص شده است، "0x80ac58cd" است. نحوه محاسبه شناسه رابط و اطلاعات بیشتر در مورد ERC165 را در <a href="https://eips.ethereum.org/EIPS/eip-165" target="_blank">پیشنهاد بهبود</a> آن بیاموزید.
 
-## Other interfaces
+## سایر رابط ها
 
-The <a href="https://eips.ethereum.org/EIPS/eip-721#specification" target="_blank">IERC721TokenReceiver</a> interface must be implemented to accept safe transfers.
+رابط <a href="https://eips.ethereum.org/EIPS/eip-721#specification" target="_blank">IERC721TokenReceiver</a> باید برای پذیرش انتقال‌های امن پیاده‌سازی شود.
 
-There are two optional extensions for ERC721 contracts specified in the EIP721:
+دو افزونه اختیاری برای قراردادهای ERC721 که در EIP721 مشخص شده‌اند، وجود دارد:
 
-IERC721Enumerable enables a contract to publish its full list of tokens and make them discoverable.
+IERC721Enumerable به یک قرارداد این امکان را می‌دهد که لیست کامل توکن‌های خود را منتشر کند و آنها را قابل کشف سازد.
 
-IERC721Metadata enables a contract to associate additional information to a token. We will have a more detailed look into this in the next section.
+IERC721فراداده به یک قرارداد امکان می‌دهد اطلاعات اضافی را به یک توکن مرتبط کند. در بخش بعدی بررسی دقیق‌تری در این مورد خواهیم داشت.
