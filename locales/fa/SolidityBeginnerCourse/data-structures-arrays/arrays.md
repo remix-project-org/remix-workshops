@@ -1,44 +1,44 @@
-In the next sections, we will look into the data structures that we can use to organize and store our data in Solidity.
+در بخش‌های بعدی، به ساختارهای داده‌ای که می‌توانیم برای سازماندهی و ذخیره‌سازی داده‌هایمان در سالیدیتی استفاده کنیم، خواهیم پرداخت.
 
-_Arrays_, _mappings_ and _structs_ are all _reference types_. Unlike _value types_ (e.g. _booleans_ or _integers_) reference types don't store their value directly. Instead, they store the location where the value is being stored. Multiple reference type variables could reference the same location, and a change in one variable would affect the others, therefore they need to be handled carefully.
+_آرایه‌ها_، _نقشه‌ها_ و _ساختارها_ همگی _نوع‌های مرجع_ هستند. برخلاف _نوع‌های ارزشی_ (مانند _بولین‌ها_ یا _اعداد صحیح_)، نوع‌های مرجع ارزش خود را به‌طور مستقیم ذخیره نمی‌کنند. در عوض، آنها محل ذخیره‌سازی مقدار را ذخیره می‌کنند. متغیرهای نوع مرجع متعدد می‌توانند به یک مکان مشابه اشاره کنند و تغییر در یک متغیر بر بقیه تأثیر می‌گذارد، بنابراین باید با احتیاط مدیریت شوند.
 
-In Solidity, an array stores an ordered list of values of the same type that are indexed numerically.
+در سالیدیتی، یک آرایه فهرستی مرتب از مقادیر هم نوع را ذخیره می‌کند که به صورت عددی اندیس گذاری شده‌اند.
 
-There are two types of arrays, compile-time _fixed-size_ and _dynamic arrays_. For fixed-size arrays, we need to declare the size of the array before it is compiled. The size of dynamic arrays can be changed after the contract has been compiled.
+دو نوع آرایه وجود دارد، آرایه‌های _اندازه‌ثابت در زمان کامپایل_ و _آرایه‌های پویا_. برای آرایه‌های با اندازه ثابت، ما باید اندازه آرایه را قبل از کامپایل اعلام کنیم. اندازه آرایه‌های پویا پس از اینکه قرارداد تنظیم شده است، می‌تواند تغییر کند.
 
-### Declaring arrays
+### اعلام آرایه‌ها
 
-We declare a fixed-size array by providing its type, array size (as an integer in square brackets), visibility, and name (line 9).
+ما یک آرایه با اندازه ثابت را با ارائه نوع آن، اندازه آرایه (به عنوان یک عدد صحیح در داخل براکت‌های مربعی)، دید و نام آن اعلام می‌کنیم (خط 9).
 
-We declare a dynamic array in the same manner. However, we don’t provide an array size and leave the brackets empty (line 6).
+ما یک آرایه پویا را به همان روش اعلام می‌کنیم. با این حال، ما اندازه آرایه را تعیین نمی‌کنیم و پرانتزها را خالی می‌گذاریم (خط ۶).
 
-### Initializing arrays
+### راه‌اندازی آرایه ها
 
-We can initialize the elements of an array all at once (line 7), or initiate new elements one by one (arr[0] = 1;). If we declare an array, we automatically initialize its elements with the default value 0 (line 9).
+ما می‌توانیم تمامی عناصر یک آرایه را به طور همزمان مقداردهی اولیه کنیم (خط ۷)، یا عناصر جدید را یکی مقداردهی کنیم (arr[0] = 1;). اگر ما یک آرایه را اعلام کنیم، به طور خودکار عناصر آن را با مقدار پیش‌فرض 0 (خط 9) مقداردهی اولیه می‌کنیم.
 
-### Accessing array elements
+### دسترسی به عناصر آرایه
 
-We access elements inside an array by providing the name of the array and the index in brackets (line 12).
+ما به عناصر داخل یک آرایه از طریق ارائه نام آرایه و ایندکس در براکت‌ها دسترسی پیدا می‌کنیم (خط 12).
 
-### Adding array elements
+### افزودن عناصر آرایه
 
-Using the `push()` member function, we add an element to the end of a dynamic array (line 25).
+با استفاده از تابع عضو `push()`، ما یک عنصر را به انتهای یک آرایه دینامیک اضافه می‌کنیم (خط ۲۵).
 
-### Removing array elements
+### حذف عناصر آرایه
 
-Using the `pop()` member function, we delete the last element of a dynamic array (line 31).
+با استفاده از تابع عضو `pop()`، آخرین عنصر یک آرایه پویا را حذف می‌کنیم (خط ۳۱).
 
-We can use the `delete` operator to remove an element with a specific index from an array (line 42).
-When we remove an element with the `delete` operator all other elements stay the same, which means that the length of the array will stay the same. This will create a gap in our array.
-If the order of the array is not important, then we can move the last element of the array to the place of the deleted element (line 46), or use a mapping. A mapping might be a better choice if we plan to remove elements in our data structure.
+ما می‌توانیم از عملگر `delete` برای حذف یک عنصر با یک ایندکس خاص از یک آرایه استفاده کنیم (خط ۴۲).
+زمانی که ما یک عنصر را با عملگر `delete` حذف می‌کنیم، همه عناصر دیگر همانند قبل باقی می‌مانند، به این معنی که طول آرایه تغییر نخواهد کرد. این باعث ایجاد یک فاصله در آرایه ما خواهد شد.
+اگر ترتیب آرایه مهم نیست، می‌توانیم آخرین عنصر آرایه را به جای عنصر حذف شده (خط ۴۶) منتقل کنیم، یا از یک نقشه استفاده کنیم. یک نگاشت ممکن است گزینه بهتری باشد اگر ما قصد داریم عناصر را در ساختار داده خود حذف کنیم.
 
-### Array length
+### طول آرایه
 
-Using the length member, we can read the number of elements that are stored in an array (line 35).
+با استفاده از عضو طول، می‌توانیم تعداد عناصری که در یک آرایه ذخیره شده‌اند را بخوانیم (خط ۳۵).
 
-<a href="https://www.youtube.com/watch?v=vTxxCbwMPwo" target="_blank">Watch a video tutorial on Arrays</a>.
+<a href="https://www.youtube.com/watch?v=vTxxCbwMPwo" target="_blank">یک آموزش ویدیویی در مورد آرایه‌ها را تماشا کنید</a>.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-1. Initialize a public fixed-sized array called `arr3` with the values 0, 1, 2. Make the size as small as possible.
-2. Change the `getArr()` function to return the value of `arr3`.
+1. یک آرایه عمومی با اندازه ثابت به نام `arr3` با مقادیر 0، 1 و 2 را ایجاد کنید. اندازه را تا حد امکان کوچک کنید.
+2. `getArr()` را تغییر دهید تا مقدار `arr3` را برگرداند.
