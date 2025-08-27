@@ -1,4 +1,4 @@
-# Find the offset ;)
+# U go find de offset ;)
 
 And now for a slightly different example:
 
