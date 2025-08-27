@@ -15,5 +15,5 @@ steps:
     name: Funciones de inicio y oferta
     path: auction-start-bid
   - 
-    name: Withdraw and End Functions
+    name: Retirar y Finalizar Funciones
     path: auction-withdraw-end
