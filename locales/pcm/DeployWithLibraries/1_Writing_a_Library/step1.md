@@ -8,9 +8,9 @@ For the contract wey dey follow:
 
 E dey possible make u put a library for the same file with another contract.  Oya carry the library put below the contract.
 
-This library should have a method called `getFromLib` method which returns `3`.
+The library suppose get method wey dem dey call getFromlib pattern wey dey return 3.
 
-- Update the `get` method in the `test` contract to use the `LibraryForTest` library.   The function `get` should return the value it receives from `getFromLib`.
+- Update the get method in the test contract so e go use the library for test.   The function get gats return the value wey e receive from getFromLib.
 
 ---------
 
