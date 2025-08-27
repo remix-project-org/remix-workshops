@@ -1,12 +1,12 @@
-The ERC20 standard only describes the required and optional functionality that your contract needs, but you can add additional functionality.
+D ERC20 standard dey only describe di required and optional functionality way yur contract need, but you fit add additional functionality.
 
-In this section, we added the functionality to burn and mint tokens, as well as the ability to pause the contract, by using OpenZeppelin extensions.
+Inside dis section, we don add d functionality to burn and mint tokens, as well as di ability to pause di contract, as we use OpenZeppelin extensions.
 
-Of course, you can write your own ERC20 token contract implementation or extensions and import them into your contract. But OpenZeppelin contracts have been audited by security experts and are a great way to add desired functionality.
+Naso, you fit write your own ERC20 token contract implementation or extensions nd dit import them put for yur contract. But security experts don audit OpenZeppelin contracts and dem b nice connect to add functionality wey yu like.
 
 ### Mintable
 
-The mint function allows the creator of the contract to mint (create) additional tokens after the contract has been deployed (line 22). As input parameters, the function needs the address that the tokens will be minted to, and the amount of tokens that should be minted.
+D mint function dey allow di creator of di contract to mint (create) additional tokens after dem don deploy d contract (line 22). As input parameters, the function needs the address that the tokens will be minted to, and the amount of tokens that should be minted.
 
 We don't have to import `mint()` from another contract since the mint function is already part of the <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol" target="_blank">ERC20 contract</a> implementation of OpenZeppelin. We import `Ownable` (line 7) which is a contract module that provides a basic access control mechanism that allows an owner to have exclusive access to specific functions. In this contract, we add the inherited `onlyOwner` modifier to the `mint` function (line 22) and restrict access to this function to the "owner".
 
