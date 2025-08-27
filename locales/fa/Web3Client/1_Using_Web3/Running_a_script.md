@@ -1,24 +1,23 @@
-## Querying the Blockchain
+## پرس و جو در بلاکچین
 
-In this tutorial, we'll run a script that queries the blockchain using a JavaScript library.
+در این آموزش، ما اسکریپتی را اجرا خواهیم کرد که با استفاده از یک کتابخانه جاوااسکریپت به بلاکچین درخواست می‌زند.
 
-This means that instead of using the Remix GUI or a block explorer like Etherscan, we'll use a script in the editor and will run it from the terminal.
+این به این معنی است که به جای استفاده از رابط کاربری Remix یا یک مرورگر بلاک مانند Etherscan، ما از یک اسکریپت در ویرایشگر استفاده خواهیم کرد و آن را از طریق ترمینال اجرا خواهیم کرد.
 
-The JS libraries that are used the most for interacting with the blockchain are web3.js & ethers.js.
+کتابخانه‌های جاوا اسکریپتی که بیشتر برای تعامل با بلاکچین استفاده می‌شوند، web3.js و ethers.js هستند.
 
-Let's begin with a simple web3.js example, queryBlockNum.js.
+بیایید با یک مثال ساده از web3.js، یعنی queryBlockNum.js شروع کنیم.
 
-The script's call to web3.js is wrapped in a self-executing async function that contains a try/catch block.
+فراخوانی اسکریپت به web3.js در یک تابع ناهمزمان خوداجرا محصور شده است که شامل یک بلوک try/catch می‌باشد.
 
-We'll query the current blocknumber with:
-`let blockNumber = await web3.eth.getBlockNumber()`
+ما شماره بلوک فعلی را با استفاده از:`let blockNumber = await web3.eth.getBlockNumber()` می‌پرسیم
 
-Note that the object `web3` is injected by Remix. For more info on web3.js, check their docs, <a href="https://web3js.readthedocs.io/" target="_blank">https://web3js.readthedocs.io</a>.
+توجه داشته باشید که شی `web3` توسط Remix تزریق شده است. برای اطلاعات بیشتر در مورد web3.js، مستندات آن‌ها را بررسی کنید، <a href="https://web3js.readthedocs.io/" target="_blank">https://web3js.readthedocs.io</a>.
 
-To use web3.js or ethers.js, you need to select the **Injected Web3** or **Web3 Provider** environment in the **Deploy & Run** module.  Scripts don't currently work with the JSVM. **If you try, you'll get an error.**
+برای استفاده از web3.js یا ethers.js، شما باید محیط **Web3 تزریقی** یا **Provider Web3** را در ماژول **استقرار و اجرا** انتخاب کنید.  اسکریپت‌ها در حال حاضر با JSVM کار نمی‌کنند. **اگر شما تلاش کنید، یک خطا دریافت خواهید کرد.**
 
-So for this example choose **Injected Web3** in the Deploy & Run module and have Metamask installed.
+بنابراین برای این مثال، **Web3 تزریقی** را در ماژول استقرار و اجرا انتخاب کنید و متامسک را نصب کنید.
 
-From the terminal, execute `remix.execute()`. This command will execute the current JavaScript file with the line `let blockNumber = await web3.eth.getBlockNumber()`.
+از ترمینال، دستور `remix.execute()` را اجرا کنید. این دستور فایل جاوا اسکریپت فعلی را با خط `let blockNumber = await web3.eth.getBlockNumber()` اجرا خواهد کرد.
 
-In the console, you should see the current block number of the chain that metamask is connected to.
+در کنسول، شما باید شماره بلوک فعلی زنجیره‌ای که متامسک به آن متصل است را ببینید.
