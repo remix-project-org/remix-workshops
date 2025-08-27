@@ -2,25 +2,25 @@ Con el testigo calculado, el paso final es generar una prueba que pueda ser veri
 
 ## Generar la prueba
 
-1. In the **Generate Proof** section, you have the option to **Export Verifier Calldata**.
-    - Enable the **Export Verifier Calldata** checkbox if you plan to verify the proof on-chain.
-2. Click on the **Generate Proof** button.
+1. En la sección **Generar prueba**, tiene la opción de **Exportar datos de llamada del verificador**.
+    - Active la casilla de verificación **Exportar datos de llamada del verificador** si planea verificar la prueba en cadena.
+2. Haga clic en el botón **Generar prueba**.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-7/images/generate_proof.png" alt="generate-proof" width=280 height=120>
 
-## Understanding the Output
+## Entendiendo el resultado
 
- - After generating the proof, the plugin will display the proof data.
- - If you enabled **Export Verifier Calldata**, it will also provide the calldata needed for on-chain verification.
+ - Después de generar la prueba, el complemento mostrará los datos de la prueba.
+ - Si habilitó **Exportar datos de llamada del verificador**, también proporcionará los datos de llamada necesarios para la verificación en cadena.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-7/images/proof_generated.png" alt="proof-generated" width=310 height=350>
 
 ## Próximos pasos
 
- - **Verification:** You can use the verification key or contract exported earlier to verify the proof.
- - **On-Chain Verification:** If you're familiar with smart contracts, you can deploy the verification contract and use the calldata to perform on-chain verification.
+ - **Verificación:** Puede usar la clave de verificación o el contrato exportado anteriormente para verificar la prueba.
+ - **Verificación en cadena:** Si está familiarizado con los contratos inteligentes, puede implementar el contrato de verificación y utilizar los datos de llamada para realizar la verificación en cadena.
 
-**Congratulations!** You've successfully written a Circom circuit, compiled it, performed a trusted setup, computed a witness, and generated a proof using Remix-IDE.
+\*\*¡Felicidades! \*\* Has escrito con éxito un circuito Circom, lo has compilado, realizado una configuración confiable, calculado un testigo y generado una prueba usando Remix-IDE.
 
 ## Recursos adicionales
 
