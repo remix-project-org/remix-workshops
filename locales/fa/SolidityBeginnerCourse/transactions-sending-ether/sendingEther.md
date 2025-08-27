@@ -1,86 +1,86 @@
-In this section, we will learn how a contract can send and receive Ether.
+در این بخش، ما یاد خواهیم گرفت که چگونه یک قرارداد می‌تواند اتریوم ارسال و دریافت کند.
 
-### Sending Ether
+### ارسال اتریوم
 
-We have three different options to transfer Ether: `transfer()`, `send()` and `call()`.
+ما سه گزینه مختلف برای انتقال اتر داریم: `transfer()`، `send()` و `call()`.
 
-#### **transfer**
+#### تراکنش ها
 
-`<address payable>.transfer(uint256 amount)`
+`<address payable>.انتقال(مقدار uint256)`
 
-- `transfer()` throws an exception on failure
-- Forwards a fixed 2300 gas stipend
+- `transfer()` در صورت شکست یک استثنا را پرتاب می‌کند
+- یک کمک هزینه ثابت ۲۳۰۰ گازی را پیش‌پرداخت می‌کند
 
-An example of `transfer()` can be seen in the `SendEther` contract (line 35).
-**`Transfer()` is not recommended to be used anymore.**
+یک نمونه از `transfer()` را می‌توان در قرارداد `SendEther` (خط ۳۵) دید.
+**استفاده از `Transfer()` دیگر توصیه نمی‌شود.**
 
-#### **send**
+#### **ارسال**
 
-`<address payable>.send(uint256 amount) returns (bool)`
+`<address payable>.ارسال(uint256 مقدار) بازگشت (bool)`
 
-- `send()` returns false on failure
-- Forwards a fixed 2300 gas stipend
+- `send()` در صورت عدم موفقیت، false را برمی‌گرداند
+- یک کمک هزینه ثابت ۲۳۰۰ گازی را پیش‌پرداخت می‌کند
 
-An example of `send()` can be seen in the `SendEther` contract (line 41).
-**`Send()` is not recommended to be used anymore.**
+یک نمونه از `send()` را می‌توان در قرارداد `SendEther` (خط ۴۱) دید.
+**`Send()` دیگر توصیه نمی‌شود که استفاده شود.**
 
-#### **call**
+#### **تماس**
 
-`<address>.call(bytes memory) returns (bool, bytes memory)`
+`<address>.صدا بزن (حافظه بایت‌ها) باز می‌گرداند (بول، حافظه بایت‌ها)`
 
-- `call()` returns false on failure
-- Forwards the maximum amount of gas, but this is adjustable
+- `call()` در صورت عدم موفقیت، false را برمی‌گرداند
+- حداکثر مقدار گاز را به جلو می‌فرستد، اما این قابل تنظیم است
 
-An example of `call()` can be seen in the `SendEther` contract (line 48).
-`Call()` is currently recommended if you are transfering Ether.
+یک نمونه از `call()` را می‌توان در قرارداد `SendEther` (خط ۴۸) دید.
+`Call()` در حال حاضر برای انتقال اتر توصیه می‌شود.
 
-The reason `transfer()` and `send()` were introduced was to guard against _reentry attacks_ by limiting the forwarded gas to 2300, which would be insufficient to make a reentrant call that can modify storage.
+دلیل معرفی `transfer()` و `send()` برای محافظت در برابر _حملات ورودی مجدد_ از طریق محدود کردن گاز ارسال شده به ۲۳۰۰ بود، که برای انجام یک تماس ورودی مجدد که می‌تواند ذخیره‌سازی را تغییر دهد، کافی نخواهد بود.
 
-As we discussed in the last section, each operation on Ethereum has a specific cost associated with it. Certain operations have become more cost intensive over time, so the gas costs associated with them are also raised. When gas costs for operations are subject to change it is not good to use a hardcoded gas amount like transfer(), and send() do.
+همانطور که در بخش گذشته بحث کردیم، هر عملیات در اتریوم هزینه خاصی مرتبط با خود دارد. برخی عملیات به مرور زمان هزینه بیشتری یافته‌اند، بنابراین هزینه‌های گاز مربوط به آن‌ها نیز افزایش یافته است. زمانی که هزینه‌های گاز برای عملیات ممکن است تغییر کند، استفاده از مقدار گاز سخت‌افزاری مانند transfer() و send() مناسب نیست.
 
-That’s why `call()` instead of `transfer()` is now recommended to send Ether.
+به همین دلیل اکنون استفاده از `call()` به جای `transfer()` برای ارسال اتر توصیه می‌شود.
 
-Learn more about the subject in this <a href="https://consensys.net/diligence/blog/2019/09/stop-using-soliditys-transfer-now/" target="_blank">Consensys blog post</a>.
+بیشتر در مورد موضوع در این <a href="https://consensys.net/diligence/blog/2019/09/stop-using-soliditys-transfer-now/" target="_blank">پست وبلاگ کنسنسس</a> بیاموزید.
 
-### Reentrancy attack
+### حمله بازگشت پذیری
 
-A _reentrancy attack_ occurs when a function makes an external call to an untrusted contract and the attacker uses the contract to make recursive calls back to the original function before it finishes its execution. Through this method, the attacker can drain funds and manipulate data in unintended ways.
+یک _حمله بازگشتی_ زمانی رخ می‌دهد که یک تابع به یک قرارداد غیرقابل اعتماد تماس می‌گیرد و مهاجم از قرارداد برای انجام تماس‌های بازگشتی به تابع اصلی قبل از اتمام اجرای آن استفاده می‌کند. با این روش، مهاجم می‌تواند وجوه را تخلیه کرده و داده‌ها را به روش‌های غیرمنتظره دستکاری کند.
 
-To guard against a _reentrancy attack_, all state changes should be made before calling an external contract. This is also called the <a href="https://docs.soliditylang.org/en/latest/security-considerations.html#re-entrancy" target="_blank">Checks-Effects-Interactions</a> pattern.
+برای جلوگیری از حمله _بازگشتی_، تمام تغییرات وضعیت باید قبل از فراخوانی یک قرارداد خارجی انجام شود. این الگو همچنین به نام الگوی <a href="https://docs.soliditylang.org/en/latest/security-considerations.html#re-entrancy" target="_blank">بررسی‌ها-اثرها-تعاملات</a> شناخته می‌شود.
 
-Another way to prevent reentrancy is to use a _Reentrancy Guard_ that checks for such calls and rejects them. You can see an example of this in the contract in our modifier section or a more gas-efficient version on <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/ReentrancyGuard.sol" target="_blank">Open Zepplin</a>.
+یک روش دیگر برای جلوگیری از بازگشت مجدد این است که از _نگهبان بازگشت مجدد_ استفاده کنیم که چنین تماس‌هایی را بررسی کرده و آنها را رد می‌کند. شما می‌توانید یک نمونه از این را در قرارداد در بخش تغییرات ما مشاهده کنید یا نسخه‌ای با مصرف گاز کمتر را در <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/ReentrancyGuard.sol" target="_blank">Open Zepplin</a> ببینید.
 
-### Receiving Ether
+### دریافت اتریوم
 
-If we want to enable a contract to receive Ether without a function being called, we need to create a `receive` function (line 22) or a `fallback` function (line 25); otherwise, the Ether will be rejected, and the contract will throw an exception.
+اگر می‌خواهیم که یک قرارداد بتواند اتریوم دریافت کند بدون اینکه تابعی فراخوانی شود، باید یک تابع `receive` (خط ۲۲) یا یک تابع `fallback` (خط ۲۵) ایجاد کنیم؛ در غیر این صورت، اتریوم رد خواهد شد و قرارداد یک استثنا پرتاب خواهد کرد.
 
-The `receive` function is executed on calls with empty calldata (e.g. plain Ether transfers via send() or transfer()), while the fallback function is executed on calls with calldata. If no receive function exists but a fallback function does, calls with empty calldata will also use the fallback function.
+تابع `receive` در درخواست‌هایی با calldata خالی اجرا می‌شود (برای مثال انتقال‌های ساده اتر از طریق send() یا transfer())، در حالی که تابع fallback در درخواست‌هایی با calldata اجرا می‌شود. اگر هیچ تابع دریافت‌کننده‌ای وجود نداشته باشد اما یک تابع جایگزین وجود داشته باشد، تماس‌هایی با کد calldata خالی نیز از تابع جایگزین استفاده خواهند کرد.
 
-### Payable function modifier
+### تعدیل کننده تابع قابل پرداخت
 
-The `payable` function modifier allows a function to receive Ether.
+مودیفایر تابع `payable` اجازه می‌دهد که یک تابع اتر دریافت کند.
 
-The `receive` function (line 22) needs to be `payable`. If you delete the `payable` modifier you will get an error from the compiler. If you delete the `payable` modifier from the `fallback` function (line 25) it will compile, but it won’t be able to receive Ether.
-The functions `sendViaTransfer`, `sendViaSend`, and `sendViaCall` (lines 33, 38, and 45) also need to be `payable` in order to receive Ether.
+تابع `receive` (خط ۲۲) نیاز دارد که `payable` باشد. اگر شما اصلاح‌گر `payable` را حذف کنید، یک خطا از کامپایلر دریافت خواهید کرد. اگر modifier `payable` را از تابع `fallback` (خط 25) حذف کنید، کامپایل خواهد شد، اما نمی‌تواند اتر دریافت کند.
+توابع `sendViaTransfer`، `sendViaSend` و `sendViaCall` (خطوط ۳۳، ۳۸ و ۴۵) همچنین باید `payable` باشند تا قادر به دریافت اتر باشند.
 
-### Payable address
+### آدرس
 
-Solidity makes a distinction between two different flavors of the address data type: address and address payable.
+زبان Solidity تفاوتی بین دو نوع مختلف از نوع داده آدرس ایجاد می‌کند: آدرس و آدرس قابل پرداخت.
 
-`address`: Holds a 20-byte value.
-`address payable`: Holds a 20-byte value and can receive Ether via its members: transfer and send.
+`address`: یک مقدار 20 بایتی را نگه می‌دارد.
+`آدرس قابل پرداخت`: یک مقدار 20 بایتی را نگه می‌دارد و می‌تواند از طریق اعضای خود: انتقال و ارسال، اتر دریافت کند.
 
-If you change the parameter type for the functions `sendViaTransfer` and `sendViaSend` (line 33 and 38) from `payable address` to `address`, you won’t be able to use `transfer()` (line 35) or `send()` (line 41).
+اگر نوع پارامترها را برای توابع `sendViaTransfer` و `sendViaSend` (سطح 33 و 38) از `payable address` به `address` تغییر دهید، نخواهید توانست از `transfer()` (سطح 35) یا `send()` (سطح 41) استفاده کنید.
 
-<a href="https://www.youtube.com/watch?v=_5vGaqgzlG8" target="_blank">Watch a video tutorial on Sending Ether</a>.
+<a href="https://www.youtube.com/watch?v=_5vGaqgzlG8" target="_blank">یک آموزش ویدیویی درباره ارسال اتر را تماشا کنید</a>.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-Build a charity contract that receives Ether that can be withdrawn by a beneficiary.
+یک قرارداد خیریه بسازید که اتریوم را دریافت کند و توسط یک ذینفع قابل برداشت باشد.
 
-1. Create a contract called `Charity`.
-2. Add a public state variable called `owner` of the type address.
-3. Create a donate function that is public and payable without any parameters or function code.
-4. Create a withdraw function that is public and sends the total balance of the contract to the `owner` address.
+1. یک قرارداد به نام `خیریه` ایجاد کنید.
+2. یک متغیر عمومی به نام `owner` از نوع آدرس اضافه کنید.
+3. یک تابع اهدا ایجاد کنید که عمومی و قابل پرداخت باشد و بدون هیچ پارامتر یا کدی از تابع باشد.
+4. یک تابع برداشت ایجاد کنید که عمومی باشد و کل موجودی قرارداد را به آدرس `owner` ارسال کند.
 
-Tip: Test your contract by deploying it from one account and then sending Ether to it from another account. Then execute the withdraw function.
+نکته: قرارداد خود را با مستقر کردن آن از یک حساب آزمایش کنید و سپس از حساب دیگری به آن اتریوم ارسال کنید. سپس تابع برداشت را اجرا کنید.
