@@ -1,4 +1,4 @@
-## Remix is composed of four panels.
+## Remix dey composed of four panels.
 
 ![Remix layout](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/a-layout1c.png "Remix layout")
 
