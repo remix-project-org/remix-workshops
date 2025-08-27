@@ -1,3 +1,3 @@
-**Libraries** are deployed contracts that do not store state and are used by other contracts to decrease their size and thus their deployment costs.
+**Libraries** na contracts wey dey deployed wey no dey store state nd are other contracts dey use am to decrease their size nd thus their deployment costs.
 
-Learn to work with **Libraries** in Remix - you won't need to whisper.
+Make u sabi work wit **Libraries** in Remix - you no go need to whisper.
