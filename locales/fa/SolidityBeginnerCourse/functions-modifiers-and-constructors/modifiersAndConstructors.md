@@ -1,39 +1,39 @@
-In this section, we will learn how to modify the behavior of a function and how to run contract initialization code.
+در این بخش، ما یاد خواهیم گرفت که چگونه رفتار یک تابع را تغییر دهیم و چگونه کد اولیه قرارداد را اجرا کنیم.
 
-### Function Modifier
+### تغییر دهن
 
-_Function Modifiers_ are used to change the behavior of a function. For example, they often check for a condition prior to executing a function to restrict access or validate inputs.
+_مودیفایرهای تابع_ برای تغییر رفتار یک تابع استفاده می‌شوند. برای مثال، آن‌ها اغلب قبل از اجرای یک عملکرد برای محدود کردن دسترسی یا اعتبارسنجی ورودی‌ها، شرایطی را بررسی می‌کنند.
 
-This first part of this contract is about changing ownership of a contract. Ownership in this contract is expressed by the value of the state variable `owner` that is of the type `address` (line 7).
+این بخش اول این قرارداد درباره تغییر مالکیت یک قرارداد است. مالکیت در این قرارداد با ارزش متغیر حالت `owner` که از نوع `address` است (خط 7) بیان می‌شود.
 
-The function `changeOwner` (line 33) can change this ownership. It takes an input parameter of the type `address` and assigns its value to the state variable `owner`.
+تابع `changeOwner` (خط 33) می‌تواند این مالکیت را تغییر دهد. این یک پارامتر ورودی از نوع `address` می‌گیرد و مقدار آن را به متغیر وضعیت `owner` تخصیص می‌دهد.
 
-However, this function cannot simply be executed under all conditions; it has two modifiers, `onlyOwner` and `validAddress`.
+با این حال، این عملکرد نمی‌تواند به سادگی تحت تمام شرایط اجرا شود؛ این عملکرد دارای دو اصلاح‌کننده به نام‌های `onlyOwner` و `validAddress` است.
 
-Let's look at `onlyOwner` first (line 18).
-Function modifiers are defined with the `modifier` keyword and a unique name; they can also have parameters.
+بیایید ابتدا به `onlyOwner` نگاه کنیم (خط ۱۸).
+تعدیل‌کننده‌های تابع با کلمه کلیدی `modifier` و یک نام منحصر به فرد تعریف می‌شوند؛ آن‌ها همچنین می‌توانند پارامترهایی داشته باشند.
 
-The underscore `_` (line 23) is used inside modifiers to represent the rest of the code that will be executed in the body of the modified function.
-The code you place before the underscore in the modifier will be executed before the code in the body of the modified function. The code after the underscore will be executed after the code in the body of the modified function.
+نخط زیرین `_` (خط ۲۳) در درون اصلاح‌کننده‌ها به‌عنوان نماینده باقی‌مانده کدی که در بدنه تابع اصلاح‌شده اجرا خواهد شد، استفاده می‌شود.
+کدی که قبل از زیرخط در تغییردهنده قرار می‌دهید، قبل از کد موجود در بدنه تابع تغییر یافته اجرا خواهد شد. کدی که قبل از زیرخط در تغییردهنده قرار می‌دهید، قبل از کد موجود در بدنه تابع تغییر یافته اجرا خواهد شد.
 
-In this case, the `require` function (line 19) checks if the address executing the contract is the same as the value stored in the variable `owner`. If it is, the rest of the code will be executed, otherwise it will throw an error.
+در این مورد، تابع `require` (خط ۱۹) بررسی می‌کند که آیا آدرس اجرای قرارداد همانند مقداری است که در متغیر `owner` ذخیره شده است. اگر چنین باشد، بقیه کد اجرا خواهد شد، وگرنه یک خطا ایجاد خواهد کرد.
 
-You can learn more about `assert` and `require` in the <a href="https://docs.soliditylang.org/en/latest/control-structures.html#error-handling-assert-require-revert-and-exceptions" target="_blank">Solidity documentation</a>, they are used to check for conditions and throw errors if they are not met.
+شما می‌توانید بیشتر درباره‌ی `assert` و `require` در <a href="https://docs.soliditylang.org/en/latest/control-structures.html#error-handling-assert-require-revert-and-exceptions" target="_blank">مستندات Solidity</a> یاد بگیرید، آنها برای بررسی شرایط و پرتاب خطا در صورت عدم تحقق آنها استفاده می‌شوند.
 
-The `validAddress` modifier (line 28) has a parameter of type `address` and checks if the provided address is valid. If it is, it continues to execute the code.
+مودر `validAddress` (خط ۲۸) پارامتری از نوع `address` دارد و بررسی می‌کند که آیا آدرس ارائه‌شده معتبر است. اگر اینطور است، به اجرای کد ادامه می‌دهد.
 
-### Constructor
+### سازنده
 
-A constructor function is executed upon the creation of a contract. You can use it to run contract initialization code. The constructor can have parameters and is especially useful when you don't know certain initialization values before the deployment of the contract.
+یک تابع سازنده هنگام ایجاد یک قرارداد اجرا می‌شود. شما می‌توانید از آن برای اجرای کد اولیه‌سازی قرارداد استفاده کنید. سازنده می‌تواند پارامترهایی داشته باشد و به‌ویژه زمانی مفید است که قبل از استقرار قرارداد، برخی از مقادیر اولیه را نمی‌دانید.
 
-You declare a constructor using the `constructor` keyword. The constructor in this contract (line 11) sets the initial value of the owner variable upon the creation of the contract.
+شما یک سازنده را با استفاده از کلمه کلیدی `constructor` اعلام می‌کنید. سازنده در این قرارداد (خط ۱۱) مقدار اولیه متغیر مالک را هنگام ایجاد قرارداد تنظیم می‌کند.
 
-<a href="https://www.youtube.com/watch?v=b6FBWsz7VaI" target="_blank">Watch a video tutorial on Function Modifiers</a>.
+<a href="https://www.youtube.com/watch?v=b6FBWsz7VaI" target="_blank">یک ویدیوی آموزشی درباره تغییر دهنده‌های تابع را تماشا کنید</a>.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-1. Create a new function, `increaseX` in the contract. The function should take an input parameter of type `uint` and increase the value of the variable `x` by the value of the input parameter.
-2. Make sure that x can only be increased.
-3. The body of the function `increaseX` should be empty.
+1. یک تابع جدید به نام `increaseX` در قرارداد ایجاد کنید. این تابع باید یک پارامتر ورودی از نوع `uint` بگیرد و مقدار متغیر `x` را به اندازه مقدار پارامتر ورودی افزایش دهد.
+2. اطمینان حاصل کنید که x تنها می‌تواند افزایش یابد.
+3. بدنه تابع `increaseX` باید خالی باشد.
 
-Tip: Use modifiers.
+نکته: از اصلاح‌کننده‌ها استفاده کنید.
