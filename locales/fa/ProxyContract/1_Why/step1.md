@@ -1,27 +1,24 @@
-# Proxy Contract AKA the Dispatcher
+# قرارداد پروکسی که به عنوان دیسپچر شناخته می‌شود
 
-## Why?
+## چرا؟
 
-This is a great pattern that is used mainly in **library development**.
+این یک الگوی عالی است که عمدتاً در **توسعه کتابخانه** استفاده می‌شود.
 
-It helps in the following ways:
+این در راه‌های زیر مفید است:
 
-- **Save gas cost at deployment time**
-  The purpose of a high gas cost is to discourage the operations that cost a lot for their execution and to encourage optimized code.
+- **در زمان استقرار هزینه گاز را صرفه‌جویی کنید** هدف از هزینه بالای گاز، جلوگیری از انجام عملیات‌هایی است که هزینه زیادی برای اجرای آن‌ها دارند و تشویق به استفاده از کدهای بهینه است.
 
-- Proxy contracts are useful when a lot of instances of the same contract need to be deployed because they reduce the duplications in the deployment.
+- قراردادهای پروکسی زمانی مفید هستند که نیاز باشد چندین نمونه از یک قرارداد مشابه مستقر شوند زیرا آنها تکرارها را در استقرار کاهش می‌دهند.
 
-- **Avoid code repetition in the blockchain.**
-  Heavy computations are expensive because every node will need to perform them, this is of course slowing the network.
+- محاسبات سنگین هزینه‌بر هستند زیرا هر گره باید آنها را انجام دهد، این موضوع به طور طبیعی باعث کندی شبکه می‌شود.
 
-- **Develop upgradable(versioned) contracts**
-  When the contract is deployed, it’s immutable. By re-designing the code into different contracts, it is possible to allow logic upgrades while keeping the storage the same.
+- **توسعه قراردادهای قابل ارتقا (نسخه بندی شده)** زمانی که قرارداد پیاده‌سازی می‌شود، غیرقابل تغییر است. با طراحی دوباره کد به قراردادهای مختلف، امکان ارتقاء منطق در حالی که ذخیره‌سازی ثابت می‌ماند، فراهم می‌شود.
 
-## Example of gas cost
+## نمونه‌ای از هزینه گاز
 
-Storing contract code at creation time can cost up to:
+ذخیره کد قرارداد در زمان ایجاد می‌تواند تا هزینه داشته باشد:
 
-- 200 \* max_byte_code_length gas
-- 200 \* 24576 = 49152004915200 \* 10 gwei = 49152000 gwei = 0.049152 ether = 9 EUR
+- ۲۰۰ \* حداکثر طول کد بایت گاز
+- 200 \* 24576 = 49152004915200 \* 10 گوی = 49152000 گوی = 0.049152 اتریوم = 9 یورو
 
-see https://github.com/ethereum/EIPs/blob/master/EIPS/eip-170.md for more info on max_byte_code_length.
+برای اطلاعات بیشتر در مورد max_byte_code_length به https://github.com/ethereum/EIPs/blob/master/EIPS/eip-170.md مراجعه کنید.
