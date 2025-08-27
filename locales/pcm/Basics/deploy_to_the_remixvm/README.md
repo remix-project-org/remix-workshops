@@ -1,15 +1,15 @@
-In the previous chapter, we compiled a contract  - which is to say the Solidity code has been transformed into little chunks of Ethereum Virtual Machine (EVM) bytecode.
+For di former chapter we gather contract - we fit talk say Solidity code don dey transformed into small small bit of Ethereum Virtual Machine (EVM) bytecode.
 
-Now we will put that code on a test blockchain.
+Now we go put dat code for test blockchain.
 
-1. Click the Deploy and Run icon ![deploy & run icon](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/deploy_to_the_remixvm/images/run.png "deploy & run icon").
+1. Click di deploy and run icon so ![deploy & run icon](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/deploy_to_the_remixvm/images/run.png "deploy & run icon").
 
-2. Select one of the **Remix VM**s from the **Environment** pulldown.
+2. Go pick one of di Remix VMs from di **Environment** pulldown.
 
-3. Click the Deploy button (or the transact button in the expanded view).
+3. Click di deploy button or di transact burton wey dey di view wey don expand.
 
-4. You have deployed your compiled contract to the Remix VM - a simulated blockchain that is running inside of your browser window.  The Remix VM is simple, fast test chain.  It is not that realistic because you don't need to approve each transaction.
+4. You don deploy your compiled contract give di remix VM - na stimulated blockchain ey dey run inside of your browser window.  Di remix vm dey simple fast test chain.  E no dey realistic unto say you no need approve each transaction.
 
-5. Check the terminal to see detail of this deployment transaction.
+5. Check di terminal to see di detail of dis deployment transaction.
 
-You can also use Remix to deploy to other public EVM chains. To do this, you'll need to connect to a different **Environment** - like Injected Provider.  The Injected Provider connects Remix to browser wallet (like MetaMask or similar).  We'll try deploying to a public network at the end of this tutorial. But before we get there, we'll cover how to interact with a deployed contract's functions.
+You fit use remix take deploy oda public EVM chains. To take do dis one you o need connect go anoda Environment like Injected Provider.  Di injected provider dey connec remix go browser wallet like metamask or similar one.  We dey try make we go public network for di end of dis tutorial. But before we go dere, we go cover how we go take interact wit deploye contract function.
