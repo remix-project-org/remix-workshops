@@ -1,7 +1,7 @@
-1. You want to show someone what happens when you do a number of transactions with a contract and you don't want to explain each step - you just want to get them to the last step.
+1. شما می‌خواهید به کسی نشان دهید که وقتی با یک قرارداد چند معامله انجام می‌دهید چه اتفاقی می‌افتد و نمی‌خواهید هر مرحله را توضیح دهید - فقط می‌خواهید آنها را به مرحله آخر برسانید.
 
-    - To show someone a problem in their code.
+    - به کسی یک مشکل در کدشان نشان دادن.
 
-    - In a class, to get the students to a certain place and have them start working from there.
+    - در یک کلاس، برای رساندن دانش‌آموزان به یک مکان مشخص و شروع کار از آنجا.
 
-2. You want to start your development in the JavascriptVM because it is quick and then to switch to another testnet - but you don't want to manually repeat all the tedious clicking for each different network.
+2. شما می‌خواهید توسعه خود را در JavascriptVM آغاز کنید زیرا سریع است و سپس به شبکه آزمون دیگری سوئیچ کنید - اما نمی‌خواهید به طور دستی تمام کلیک‌های خسته‌کننده را برای هر شبکه مختلف تکرار کنید.
