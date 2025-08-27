@@ -1,13 +1,13 @@
-# How it works?
+# این چگونه کار می‌کند؟
 
-**EIP-7 DelegateCall** opcode allows a separate execution in another contract while maintaining the original execution context.
+**عملیات کد EIP-7 DelegateCall** اجازه می‌دهد تا اجرای جداگانه‌ای در قرارداد دیگری در حالی که زمینه اجرای اصلی حفظ می‌شود، انجام شود.
 
-All **message calls** from the user go through a **Proxy contract**.
+همه **تماس‌های پیام** از کاربر از طریق یک **قرارداد پروکسی** عبور می‌کنند.
 
-The **Proxy contract** then will redirect them to the **Logic contract**.
+سپس **قرارداد پروکسی** آنها را به **قرارداد منطق** هدایت خواهد کرد.
 
-And when you need to **upgrade** the logic, you'll **just** deploy that - **HOWEVER** - the implementation of Proxy will remain the same.
+و هنگامی که نیاز به **به‌روزرسانی** منطق داشته باشید، **فقط** آن را پیاده‌سازی می‌کنید - **اما** - پیاده‌سازی پروکسی همان خواهد ماند.
 
-You'll only need to update the address of Logic contract in Proxy.
+شما تنها نیاز دارید که آدرس قرارداد منطق را در پروکسی به‌روزرسانی کنید.
 
-The Proxy Contract uses **Delegate calls** and **Solidity assembly** because without it, it's impossible to return any value from **delegatecall**.
+قرارداد پروکسی از **تماس‌های نماینده** و **اسمبلی سالیدیتی** استفاده می‌کند زیرا بدون آن غیرممکن است که هیچ ارزشی از **delegatecall** بازگردانده شود.
