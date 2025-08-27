@@ -4,4 +4,4 @@ Inside the gutter of the Editor, put break point for the line `s = _o`, con pres
 
 Press `step into`, make you fit move along opcodes until you go reach `SSTORE`.
 
-`SSTORE` na the opcode wey you go use if you wan store value `_o` for inside storage. Let's continue further to the `CODECOPY`.
+`SSTORE` na the opcode wey you go use if you wan store value `_o` for inside storage. Make we go front go enter `CODECOPY`.
