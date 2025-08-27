@@ -18,7 +18,7 @@ Di receive function dey marked as external and payable. Di external modifier mea
 
 Di receive function dey emit di Deposit event (Line 44) with di address of di sender di amount of Ether wey dey sent and di updated balance of di contract. E no dey send back anytin.
 
-For enta Ether, contract must to get receive fallback or function wey get di payable modifier. If none of these are present, the contract will reject any Ether sent to it.
+For enta Ether, contract must to get receive fallback or function wey get di payable modifier. If none of these things dey present, the contract go reject any Ether wey dem send to am.
 
 ## Conclusion
 
