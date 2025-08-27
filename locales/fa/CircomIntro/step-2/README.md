@@ -1,25 +1,25 @@
-In this step, we'll set up Remix for Circom development by activating the `Circom ZKP compiler` plugin.
+در این مرحله، ما Remix را برای توسعه Circom راه‌اندازی خواهیم کرد با فعال کردن افزونه `کامپایلر ZKP Circom`.
 
-## Activating the Circom ZKP compiler
+## فعال‌سازی کامپایلر ZKP Circom
 
-1. At the bottom of the icon panel on the left of the screen, click on the **Plugin Manager** (the plug icon).
-   2.In the search bar, type **Circom**.
-2. Find the **Circuit Compiler** plugin in the list and click on the **Activate** button.
-3. The plugin will now appear in your sidebar.
+1. در پایین پنل آیکون در سمت چپ صفحه، بر روی **مدیر افزونه** (آیکون پلاگین) کلیک کنید.
+   2 نوار جستجو، **Circom** را تایپ کنید.
+2. لیست را مرور کنید و پلاگین **Circuit Compiler** را پیدا کنید و روی دکمه **فعال سازی** کلیک کنید.
+3. اکنون پلاگین در نوار کناری شما ظاهر خواهد شد.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-2/images/install_plugin.png" alt="install-plugin" width=200 height=475>
 
-## The Circom Compiler Interface
+## رابط کامپایلر سیرکوم
 
-- **Compiler Version Dropdown:** Select the Circom compiler version you wish to use.
-- **Auto Compile Checkbox:** Enable this to automatically compile your circuit whenever you make changes.
-- **Hide Warnings Checkbox:** Enable this to suppress compiler warnings.
-- **Advanced Configuration:** Click to expand options for selecting the prime field (e.g., BN128, BLS12381).
+- **منوی انتخاب نسخه کامپایلر:** نسخه کامپایلر Circom که می‌خواهید استفاده کنید را انتخاب نمایید.
+- **چک باکس کامپایل خودکار:** این را فعال کنید تا هر بار که تغییراتی ایجاد می‌کنید، مدار شما به طور خودکار کامپایل شود.
+- **جعبه تیک برای مخفی کردن هشدارها:** این گزینه را فعال کنید تا هشدارهای کامپایلر پنهان شوند.
+- **پیکربندی پیشرفته:** برای گسترش گزینه‌ها برای انتخاب میدان اصلی (به عنوان مثال، BN128، BLS12381) کلیک کنید.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-2/images/compiler_interface.png" alt="compiler-interface" width=300 height=300>
 
-With the plugin installed, you're now ready to start writing Circom code in Remix-IDE.
+با نصب افزونه، اکنون آماده‌اید تا کد Circom را در Remix-IDE بنویسید.
 
-**Note:** Make sure your internet connection is stable, as Remix-IDE is a web-based tool.
+**توجه:** اطمینان حاصل کنید که اتصال اینترنت شما پایدار باشد، زیرا Remix-IDE یک ابزار مبتنی بر وب است.
 
-In the next step, we'll write our first Circom circuit.
+در مرحله بعد، اولین مدار Circom خود را خواهیم نوشت.
