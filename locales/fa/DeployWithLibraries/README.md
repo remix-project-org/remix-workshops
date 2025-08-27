@@ -1,3 +1,3 @@
-**Libraries** are deployed contracts that do not store state and are used by other contracts to decrease their size and thus their deployment costs.
+**کتابخانه‌ها** قراردادهای مستقر شده‌ای هستند که حالت را ذخیره نمی‌کنند و توسط قراردادهای دیگر برای کاهش اندازه و در نتیجه کاهش هزینه‌های استقرار آنها استفاده می‌شوند.
 
-Learn to work with **Libraries** in Remix - you won't need to whisper.
+یاد بگیرید که چگونه با **کتابخانه‌ها** در ریمیکس کار کنید - نیازی به پچ‌پچ کردن ندارید.
