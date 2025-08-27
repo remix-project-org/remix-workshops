@@ -1,42 +1,42 @@
-In this section, we will create a function to start the auction and a function to bid on the NFT.
+For here we go create di function to take start di auction and di function to take bid for NFT.
 
-### Start
+### Start am
 
-We use some control structures to check if necessary conditions are met before we let the seller start the auction.
+We go use control structue to sabi if some kind conditions dey met before we fit make di seller start auction.
 
-First, we check if the auction has already started (line 49). If it has started and our state variable `started` returns `true` we exit the function and throw an exception.
+We go first see if di seller don start (line 49). If e don start and awa state variable `started` returns `true` we go exit di function come throway exception.
 
-The second condition we check for is whether the seller is executing the function (line 50). We have already created a function to store the seller's address when they deploy the contract in the `seller` state variable and can now check if the account executing the start function is the seller. If not we throw an exception.
+Di second thing an to check weda di seller dey execute di function (line50). We don already create function to take store di seller address wen dem deploy di contract for di `seller` state variable and you fit now check if de account wey dey execute di start function na di seller. If not we go throw exception enter.
 
-Next, we want to transfer the NFT that is up for auction from the seller to the contract (line 52).
-We set the state variable `started` to `true` (line 53), and create an end date for the auction (line 54). In this case, it will be seven days from when the start function has been called. We can use a suffix like `days` after a literal number to specify units of time. If you want to learn more about time units have a look at the <a href="https://docs.soliditylang.org/en/latest/units-and-global-variables.html#time-units" target="_blank">solidity documentation</a>.
+Di next one we go transfer di NFT wey dey up to fit auction from di seller reach di contract (line 52).
+Na we set di state variable `started` go `true` (line 53), come create date wey di auction go end (line 54). For dis matta e go be seven days from wen dem start di start function. We fit use suffix like `days` after literal number to take specify di units of time. If you wan sabi more about di time unit go look di <a href="https://docs.soliditylang.org/en/latest/units-and-global-variables.html#time-units" target="_blank">solidity wey dem document</a>.
 
-Finally, we will emit our `Start()` event (line 56).
+Las las we go emit our `Start()` event (line 56).
 
-### Bid
+### Di bid
 
-Before the function caller can make a bid, we need to be sure that certain conditions are met. The auction needs to have started (line 60), the auction can not have ended (line 61) and the bid (the value attached to the call) needs to be higher than the current highest bid (line 62).
+Before di function caller fit make bid, we to dey sure say some kind conditions dem meet am. Di auctiom suppose don start (line 60), di auction no go don end (line 61) and di bid (di value wey dem add go di call) need to high pass di high bid wey dey current (line 62).
 
-Now we want to store the bid of the current highest bidder before we make a new bid.
-First, we check if there is a bidder (line 64). If this function call is the first bid then the next line would be irrelevant.
-In our mapping `bids` (line 34) we map the key, the `address` of the bidder, to the value, a `uint` that represents the total amount of ETH a bidder has bid in the auction before withdrawing.
-If there is a bidder, we add the last bid (`highestBid`) of the `highestBidder` to the total value of the bids they have made (line 65) before withdrawing.
-We store the bids because we want to enable the bidder to withdraw the ETH they used to make bids if they are no longer the highest bidder.
+Now we wan store di bid of di bid wey high and current pass before we go make new bid.
+First tin first make we see if bidder dey (line 64). For dis function di call na di first bid den di next line no go need.
+For our mapping `bids` (line 34) we go map di key, di `address` of di bidder, to di value, a `uint` wey dey represent di whole amount of ETH wey di bidder don bid for auction before e widraw.
+If bidder dey we go add di last bid (`highestBid`) of di `highestBidder` to di whole value of di bids wey dem don make (line 65) beefore you widraw.
+We dey store di bids unto say w wan make di bidder make e widraw di ETH dem dey use take make bids if dem no come be di highest bidder.
 
-Next, we set the `highestBidder` to the account calling the function (line 68), and the `highestBid` to their bid, the value that was sent with the call (line 69).
+After dat wan we do put de Bidder wey high wel well to de account wey dey cal de function (line 68) and de highestBid to dier own bid de value wey dem send wit de call (line 69).
 
-Finally, we emit the `Bid` event (line 71).
+Finally we don emit de bid event we be (line 71).
 
-## ⭐️ Assignment
+## De Asignment
 
-1. Deploy an NFT contract. You can use the NFT contract that we create in our "Solidity NFT Course" Learneth course.
+1. U go deploy NFT contract. U fit use NFT contract wey we create for our own solidity NFT course Learneth course.
 
-2. Mint yourself an NFT with the tokenId 0.
+2. U go mint urself NFT wit de token 0.
 
-3. Deploy this EnglishAuction contract. Use the address of the NFT contract as an argument for the `_nft` parameter, 0 for `_nftId`, and 1 for `_startingBid`.
+3. U go deploy de EngishAuction contract. U go use de address of NFT contact as argument wey be for _nft parameter, 0 for de nftld, and 1 to te `_startBid`.
 
-4. Call the `approve` function of your NFT contract with the address of the auction contract as an argument for the `to` parameter, and 0 for `tokenId`. This will allow the contract to transfer the token to be auctioned.
+4. U go call de approve function of ur own NFT contract wit de address of de auction contract as argument for de to parameter, and0 wey be for de tokend. E go gree make di contract transfer di token ey wan dey auctioned.
 
-5. Call the `start` function of your auction contract. If you call the `started` function now, it should return `true`. If you call the `highestBid` function it should return 1.
+5. Put call for di `start` function of your auction contract. If you call di `started` function now, e suppose come back `true`. Wen you put call for di `highestBid` functione suppose go back 1.
 
-6. Set the value that you can attach to transactions to 3 Wei and call the `bid` function of the auction contract. If you call the `highestBid` function it should now return 3.
+6. Put di value wey you fit join to transaction go 3 Wei make you call di bid functiom of di conrakt of di auction. If you put call for di `highestBid` function e suppose go back 3.
