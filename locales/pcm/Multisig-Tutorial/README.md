@@ -1,5 +1,6 @@
-## MultiSig Wallet
+## Multisig Wallet dem
 
-Learn how to write a MultiSig Wallet smart contract on Ethereum.
+Sabi how to take write Multisig Wallet smart contrakt for Ethereum.
 
-Developed by the p2p learning platform https://dacade.org.
+Divelop by di p2p platform wey dem dey learn
+https://dacade.org./.
