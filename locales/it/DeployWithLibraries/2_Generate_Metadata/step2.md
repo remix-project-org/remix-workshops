@@ -1,28 +1,28 @@
 ## Deploying Library
 
-The **library** from the previous chapter was in the same file as the **contract**. However, they won't be deployed together and will have different addresses.
+La **library** del capitolo precedente era nello stesso file del **contract**. Tuttavia, non verranno deployati insieme e avranno indirizzi diversi.
 
-In order to use a library, the calling contract must have the library's **address**.
+Per poter usare una libreria, il contratto che la richiama deve avere l’**address** della libreria.
 
-But the library's address is not directly specified in the solidity code. The calling contract's compiled bytecode contains a **placeholder** where library's **addresses** will go.
+Ma l’indirizzo della libreria non è specificato direttamente nel codice Solidity. Il bytecode compilato del contratto che la richiama contiene un placeholder dove andranno gli address della libreria.
 
-At deployment of the **calling contract**, Remix will look in the contract's **metadata** for the library's address and will update the placeholder with the address.
+Al momento del deploy del **contratto chiamante**, Remix cercherà l’indirizzo della libreria nei **metadata** del contratto e aggiornerà il placeholder con l’indirizzo.
 
-So before deploying a contract that calls a library, you need to generate the contract's metadata (AKA its **build artifact**) and then you need to input the library's address into the metadata file.
+Quindi, prima di fare deploy di un contratto che richiama una libreria, devi generare i metadata del contratto (ossia il suo build artifact) e poi inserire l’indirizzo della libreria nel file dei metadata.
 
-A contract's metadata is generated at **compile time**.
+I metadata di un contratto vengono generati in **fase di compilazione**.
 
-Let's setup Remix to generate the **metadata file**.
+Configuriamo Remix per generare il **file dei metadata**.
 
- - Go to the settings module by clicking on the settings ![settings](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/settings.png "Settings") icon in the icon panel.
+ - Vai al modulo delle impostazioni cliccando sull’icona delle impostazioni ![settings](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/settings.png "Settings").
 
-![settings module](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_settings.png "Settings Module")
+![impostazioni](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_settings.png "Settings Module")
 
- - And check the first option `Generate contract metadata`.
+ - E seleziona la prima opzione Generate `Generate contract metadata`.
 
-# Compile and generate metadata (JSON) file.
+# Compila e genera il file dei metadata (JSON).
 
-1. Open the Solidity Compiler ![Solidity Compiler](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_icon_solidity.png "Solidity Compiler")
+1. Apri il Solidity Compiler ![Solidity Compiler](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/2_Generate_Metadata/remix_icon_solidity.png "Solidity Compiler")
 
 2. Compile `2_contractSimpleLibrary.sol`.
 
