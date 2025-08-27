@@ -1,18 +1,17 @@
-# Find the offset ;)
+# مقدار انحراف را پیدا کن ;)
 
-And now for a slightly different example:
+و حالا برای یک مثال کمی متفاوت:
 
-- Compile notSimpleStore.sol
-- Deploy the contract `notSoSimpleStore`
-- Make sure you have a successful deployment - if not check that you used **the correct input type** in the constructor.
-- Go to the Debugger by clicking the **debug** button at the (successful) creation transaction.
+- کامپایل notSimpleStore.sol
+- قرارداد `notSoSimpleStore` را مستقر کنید
+- اطمینان حاصل کنید که پیاده‌سازی موفقی داشته‌اید - در غیر این صورت بررسی کنید که آیا **نوع ورودی صحیح** را در سازنده استفاده کرده‌اید.
+- با کلیک بر روی دکمه **debug** به دیباگر بروید پس از (ایجاد) موفقیت‌آمیز تراکنش.
 - Find the value of the parameter of `CODECOPY` which represents the offset in calldata where to copy from.
 
 Remember: _codecopy(t, f, s)_ - copy **s** bytes from code at position **f** to memory at position **t**
 
-If you look in the **Stack**, you should see that the 2nd element is:
-0x0000000000000000000000000000000000000000000000000000000000000083
+اگر به **پشته** نگاه کنید، باید ببینید که عنصر دوم عبارت است از: 0x0000000000000000000000000000000000000000000000000000000000000083
 
-And this is the **f** of the input params of codecopy.
+و این **f** از پارامترهای ورودی کدکپی است.
 
-### Hope you picked up a thing or 2 about how opcodes work!
+### امیدوارم که چیزهایی 2 مورد چگونگی کارکرد کدهای عملیاتی یاد گرفته باشید!
