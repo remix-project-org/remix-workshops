@@ -1,6 +1,6 @@
 id: circom-intro
 name: Intro to Circom
-summary: A intro to using Circom for creating arithmetic circuits.
+summary: This na intro on how you go use circom take create arithmetic circuits.
 level: 1
 tags:
   - Circom
@@ -10,7 +10,7 @@ steps:
     name: Introduction
     path: step-1
   - 
-    name: Installing the Circuit-Compiler
+    name: How to take Install the Circuit-Compiler
     path: step-2
   - 
     name: Writing Your First Circom Circuit
@@ -19,11 +19,11 @@ steps:
     name: Compiling the Circuit Using the Plugin
     path: step-4
   - 
-    name: Performing a Trusted Setup
+    name: How you go perform trusted setup
     path: step-5
   - 
-    name: Computing the Witness
+    name: How you go take compute the Witness
     path: step-6
   - 
-    name: Generating the Proof
+    name: How you go generate the proof
     path: step-7
