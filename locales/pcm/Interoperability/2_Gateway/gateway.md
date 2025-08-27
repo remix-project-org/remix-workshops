@@ -1,25 +1,25 @@
-The Axelar Gateway is the entrypoint for your smart contract into the Axelar ecosystem. Once you have triggered the appropriate function on the Gateway, your transaction will begin its interchain journey from your source chain across the Axelar network to the destination chain. Each chain that is connected to Axelar has a deployed gateway contract for you to interact with.
+Di Axelar Gateway na di entrypoint wey your smart contract take enter inside di Axelar ecosystem. Once you don trigger di correct function for di Gateway, your transaction go start im interchain journey from your source chain waka pass di Axelar network reach di destination chain. Each chain wey dem connected to Axelar get gateway wey dem deploy gateway contract wey you fit use relate with.
 
-The following are the two more relevant functions you will need to be familiar with.
+Di following na di two more important functions wey you go need to sabi.
 
-## callContract()
+## callcontract ()
 
-This function triggers an interchain transaction with a message from the source to the destination chain. It takes three relevant parameters:
+Dis function dey trigger one interchain transaction with message from di source go di chain destination. E go take three parameta wey dey important:
 
-1. `destinationChain`: The name of the destination chain
-2. `destinationContractAddress`: The address on the destination chain this transaction will execute at.
-3. `payload`: The message that is being sent
+1. `destinationChain`: Di name of di destination chain
+2. `destinationContractAddress`: Di address for di destination chain dis transaction go execute at.
+3. `payload`: Di message wey dem send
 
-The first two parameters are quite intuitive. They consist of both the name of the chain you want this transaction to go to and the address on that chain you want to end execute at. The final parameter is the payload. This payload represents a general message that is sent to the destination chain. The message can be used in many different ways on the destination chain. For example, you can send data to be used as a parameter in another function on the destination chain, you can send a function signature as a message that will then get executed on a destination chain, and much more.
+Di first two parameta dey intuitive. Dem consist of both di name of di chain wey you wan make dis transaction go, and di address for dat chain wey you wan end execute for. Dis final parameta na di payload. Dis payload represent general message wey dem send go di chain final place. Dem fit use di message for different ways for di destination chain. Like now, you fit send data wey dem go use as parameter inside another function for di final place chain, you fit send function signature as message wey go later execute for di final place chain, and plenty other tins.
 
 ## callContractWithToken()
 
-This function triggers an interchain with a message and a fungible token from the source to the destination chain. It takes five relevant parameters:
+Dis function dey trigger one interchain transaction with message from di source go di chain destination. "E dey take five important parameters:"
 
-1. `destinationChain`: The name of the destination chain
-2. `destinationContractAddress`: The address on the destination chain this transaction will execute at.
-3. `payload`: The message that is being sent
-4. `symbol`: The symbol of the token being sent
-5. `amount`: The amount of that token that is being sent
+1. `destinationChain`: Di name of di destination chain
+2. `destinationContractAddress`: Di address for di destination chain dis transaction go execute at.
+3. `payload`: Di message wey dem send
+4. di symbol\`: de symbol of de token wey dem send
+5. `amount`: Di amant of dat token wey dem send
 
-The first three parameters here are the same as in `callContract()`. The final two parameters are relevant to the token that is being sent along with the message. These are the symbol of the token and the amount of the token that is being sent.
+Di first three parameta for here na di same as e be for `callContract()`. Di final two parameters dey important to di token wey dem dey send join wit di message. Dis na di symbol of di token and di amount of di token wey dem send.
