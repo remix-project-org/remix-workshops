@@ -1,36 +1,36 @@
-Single-hop swaps allow users to exchange one token for another directly within a liquidity pool. In this section, we will learn how to use the Uniswap V3 Swap contract to execute single-hop swaps.
+تبادلات تک‌گام به کاربران اجازه می‌دهد تا یک توکن را مستقیماً در یک استخر نقدینگی با توکن دیگر مبادله کنند. در این بخش، ما یاد خواهیم گرفت که چگونه از قرارداد مبادله Uniswap V3 برای انجام مبادلات تک مرحله‌ای استفاده کنیم.
 
-## Function Parameters
+## پارامترهای تابع
 
-On line 8, we define a function called `swapExactInputSingleHop`. This function executes a single-hop swap. It takes the following parameters:
+در خط 8، یک تابع به نام `swapExactInputSingleHop` تعریف می‌کنیم. این تابع یک تعویض یک مرحله‌ای را اجرا می‌کند. این پارامترهای زیر را می‌گیرد:
 
-- **`address tokenIn`**: The address of the token being sent.
-- **`address tokenOut`**: The address of the token being received.
-- **`uint24 poolFee`**: The fee associated with the swap.
-- **`uint amountIn`**: The amount of the input token being sent.
+- **`نشانی توکن`**: نشانی توکنی که در حال ارسال است.
+- **`آدرس tokenOut`**: آدرس توکنی که دریافت می‌شود.
+- **`uint24 poolFee`**: هزینه مربوط به تعویض.
+- **`uint amountIn`**: مقدار توکن ورودی که ارسال می‌شود.
 
-It returns a `uint` called `amountOut`, which is the amount of the output token that was received.
+این یک `uint` به نام `amountOut` برمی‌گرداند، که مقدار توکن خروجی دریافتی است.
 
-## Function Body
+## بدنه تابع
 
-In the function body, we first transfer the input token from the sender to our contract, line 14.
-Then, we approve the Uniswap Swap contract to spend the input token on our behalf, line 15.
+درون بدنه تابع، ابتدا توکن ورودی را از فرستنده به قرارداد خود منتقل می‌کنیم، خط ۱۴.
+سپس، ما قرارداد مبادله یونی سwap را برای هزینه کردن توکن ورودی به نمایندگی از خودمان تأیید می‌کنیم، خط ۱۵.
 
-On line 17, we create an instance of the `ExactInputSingleParams` struct. This struct contains the parameters that are required for our `exactInputSingle` function on line 45, which will execute the single-hop swap. We repeat `ISwapRouter.ExactInputSingleParams` two times on that line because we are making an instance of a struct that is defined in an interface.
+در خط 17، یک نمونه از ساختار `ExactInputSingleParams` ایجاد می‌کنیم. این ساختار شامل پارامترهایی است که برای تابع `exactInputSingle` ما در خط ۴۵ مورد نیاز است، که مبادله یک مرحله‌ای را اجرا خواهد کرد. ما `ISwapRouter.ExactInputSingleParams` را در آن خط دو بار تکرار می‌کنیم زیرا داریم یک نمونه از یک ساختار که در یک رابط تعریف شده است، ایجاد می‌کنیم.
 
-## Parameters of the ExactInputSingleParams Struct
+## پارامترهای ساختار ExactInputSingleParams
 
-We set the parameters of the struct as follows:
+ما پارامترهای ساختار را به صورت زیر تنظیم می‌کنیم:
 
-- **`tokenIn`**: We set this to the `tokenIn` parameter of our function.
-- **`tokenOut`**: We set this to the `tokenOut` parameter of our function.
-- **`fee`**: We set this to the `poolFee` parameter of our function.
-- **`recipient`**: We set this to the sender of the transaction.
-- **`deadline`**: We set this to the current timestamp. We do this because we want the transaction to be processed as soon as possible.
-- **`amountIn`**: We set this to the `amountIn` parameter of our function.
-- **`amountOutMinimum`**: We set this to 0 because we do not want to specify a minimum amount of the output token that we are willing to accept.
-- **`sqrtPriceLimitX96`**: We set this to 0 because we do not want to specify a limit on the price.
+- **`tokenIn`**: ما این را به پارامتر `tokenIn` تابع خود تنظیم می‌کنیم.
+- **`tokenOut`**: ما این را به پارامتر `tokenOut` تابع خود تنظیم می‌کنیم.
+- **`هزینه`**: ما این را به پارامتر `poolFee` تابع خود تنظیم می‌کنیم.
+- **`گیرنده`**: ما این را به فرستنده تراکنش تنظیم می‌کنیم.
+- **`موعد نهایی`**: ما این را به زمان حال تعیین می‌کنیم. ما این کار را انجام می‌دهیم زیرا می‌خواهیم تراکنش در اسرع وقت پردازش شود.
+- **`amountIn`**: ما این را به پارامتر `amountIn` تابع خود تنظیم می‌کنیم.
+- **`مقدارخروجحداقل`**: ما این مقدار را به 0 تنظیم می‌کنیم زیرا نمی‌خواهیم حداقل مقدار توکن خروجی که مایل به پذیرش آن هستیم را مشخص کنیم.
+- **`sqrtPriceLimitX96`**: ما این را 0 تنظیم می‌کنیم زیرا نمی‌خواهیم محدودیتی برای قیمت تعیین کنیم.
 
-## Executing the Single-hop Swap
+## اجرای مبادله یک مرحله‌ای
 
-On line 29, we assign the output of the `exactInputSingle` function to the `amountOut` variable. This function executes the single-hop swap and returns the amount of the output token that was received.
+در خط ۲۹، خروجی تابع `exactInputSingle` را به متغیر `amountOut` نسبت می‌دهیم. این تابع تعویض یک جهته را اجرا می‌کند و مقدار توکن خروجی که دریافت شده است را باز می‌گرداند.
