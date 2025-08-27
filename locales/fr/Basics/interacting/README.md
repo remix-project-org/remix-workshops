@@ -1,19 +1,19 @@
-## Accessing functions in a deployed contract
+## Accéder aux fonctions d'un contrat déployé
 
-1. When a contract has been successfully deployed, it will appear at the bottom of the Deploy and Run plugin. Open up the contract by clicking the caret - so the caret points down.
-   ![deploy contract](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interacting/images/instance.png "deployed contract")
+1. Lorsqu'un contrat a été déployé avec succès, il apparaîtra en bas du plugin Déployer et Exécuter. Ouvrez le contrat en cliquant sur le caret - de sorte que le caret pointe vers le bas.
+   ![contrat déployé](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interacting/images/instance.png "deployed contract")
 
-2. There are 2 functions in this contract.  To input the parameters individually, clicking the caret to the right of changeOwner (outlined in red below). In the expanded view, each parameter has its own input box.
+2. Il y a 2 fonctions dans ce contrat.  Pour saisir les paramètres individuellement, cliquez sur le caret à droite de changeOwner (entouré en rouge ci-dessous). Dans la vue étendue, chaque paramètre a sa propre boîte de saisie.
 
-![deploy contract](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interacting/images/deployed_open2.png "deployed contract")
+![contrat déployé](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interacting/images/deployed_open2.png "deployed contract")
 
-If this contract had imported other contracts, then the functions of the imported contracts would also be visible here.  At some point, try playing with An ERC20 contract to see all its many functions.
+Si ce contrat avait importé d'autres contrats, les fonctions des contrats importés seraient également visibles ici.  À un moment donné, essayez de jouer avec un contrat ERC20 pour voir toutes ses nombreuses fonctions.
 
-3. Functions with blue buttons are either  **pure** or **view** functions.  This means that they are just reading a property or are returning a value.  In other words, they aren't saving anything - so they are FREE (they don’t cost gas).  Functions with other colors - usually orange (depending on the Remix theme) cost gas because they are saving information.  They are creating a **transaction**.
+3. Les fonctions avec des boutons bleus sont soit des fonctions pures, soit des fonctions view.  Cela signifie qu'elles ne font que lire une propriété ou retourner une valeur.  En d'autres termes, elles n'enregistrent rien - donc elles sont GRATUITES (elles ne coûtent pas de gaz).  Les fonctions avec d'autres couleurs - généralement orange (selon le thème Remix) coûtent du gaz car elles enregistrent des informations.  Elles créent une transaction.
 
-4. 2_Owner.sol does not have a **payable** function.  If it did, the button's color would be red.  Payable functions allow you to send Ether to the function.  To send ETH with a payable function, you put the amount you want to send in the **value** field towards the top of the Deploy & Run module.
+4. 2_Owner.sol n'a pas de fonction payable.  Si c'était le cas, la couleur du bouton serait rouge.  Les fonctions payables vous permettent d'envoyer de l'Ether à la fonction.  Pour envoyer de l'ETH avec une fonction payable, vous indiquez le montant que vous souhaitez envoyer dans le champ valeur vers le haut du module Déployer & Exécuter.
 
-5. In the Remix VM, you don't need to approve a transaction.  When using a more realistic test environment or when using the mainnet - you will need to approve the transactions for them to go through. Approving a transaction costs gas.
+5. Dans la VM Remix, vous n'avez pas besoin d'approuver une transaction.  Lorsque vous utilisez un environnement de test plus réaliste ou le réseau principal, vous devrez approuver les transactions pour qu'elles soient effectuées. Approuver une transaction coûte du gaz.
 
-6. Choosing a public network is not done in Remix but in your Browser Wallet.  There is a plug icon to the right of the Environment title that links to chainlist.org where you can get the specs of the chain you want to interact with.
+6. Le choix d'un réseau public ne se fait pas dans Remix, mais dans votre portefeuille de navigateur.  Il y a une icône de prise à droite du titre Environnement qui mène à chainlist.org où vous pouvez obtenir les spécifications de la chaîne avec laquelle vous souhaitez interagir.
    ![chainlist](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interacting/images/chainlist.png "chainlist")
