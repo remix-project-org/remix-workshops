@@ -1,15 +1,15 @@
-## Exploring `calculate_hash.circom`
+## 探索 `calculate_hash.circom`
 
-Navigate to the `circuits` directory and open `calculate_hash.circom`. This file contains the Circom code for the Hash Checker circuit.
+导航到 `circuits` 目录并打开 `calculate_hash.circom` 文件。 该文件包含哈希检查器电路的Circom代码。
 
-### Code Breakdown
+### 代码解析
 
-#### Pragma and Includes:
+#### 预处理指令和包含文件：
 
-- `pragma circom 2.0.0;` specifies the Circom version.
-- `include "circomlib/circuits/poseidon.circom";` fetch and includes the Poseidon hash function from [CircomLib](https://github.com/iden3/circomlib).
+- `pragma circom 2.0.0;` 指定了 Circom 版本。
+- `include "circomlib/circuits/poseidon.circom";` 从 [CircomLib](https://github.com/iden/circomlib) 获取并包含 Poseidon 哈希函数。
 
-#### `CalculateHash` Template:
+#### `计算哈希` 模板：
 
 - Defines inputs `value1`, `value2`, `value3`, `value4`.
 - Uses the `Poseidon` hash function to compute a hash of these values.\
