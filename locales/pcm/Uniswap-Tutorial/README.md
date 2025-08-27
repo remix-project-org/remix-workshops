@@ -1,5 +1,5 @@
-# Uniswap Swap Course
+# Di uniswap swap course
 
-Review the code of the Uniswap V3 Swap contract for performing token swaps.
+Check di code of di Uniswap V3 swap contract for performiing token swaps.
 
-Developed by the p2p learning platform https://dacade.org.
+Developed by di p2p learninng platform https://dacade.org.
