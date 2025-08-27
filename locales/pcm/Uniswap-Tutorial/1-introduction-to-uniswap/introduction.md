@@ -1,47 +1,47 @@
-In this tutorial, we'll explore the Uniswap V3 Swap contract to learn about how single-hop and multi-hop swaps work.
+For dis tutorial we go explore di Uniswap V3 Swap contract to fit learn about how single-hop and multi-hop take dey work.
 
-But first, some Uniswap fundamentals.
+But first some Uniswap im fundamentals.
 
-## What is Uniswap?
+## Wetin be Uniswap?
 
-Uniswap is a decentralized cryptocurrency exchange. It allows users to exchange tokens without the need for a centralized intermediary. Uniswap is a key player in the decentralized finance (DeFi) space.
+Uniswap na crypto exchange wey dem decetralize. E dey allow make users fit exchange token wey e no need centralied intermediary. Uniswap na key player for di decentralized finance (DeFi) space.
 
-## How does Uniswap work?
+## How uniswap take dey work?
 
-Instead of using an order book like a traditional centralized exchange, Uniswap uses an automated market maker (AMM) model. In Uniswap, the AMM is a smart contract that holds reserves of tokens (Liquidity Pool). Users can trade between tokens in the Liquidity Pool. The price of each token is determined by the ratio of the reserves.
+Instead make you use order book like di old exchange wey centralise, Uniswap dey use automated market maker (AMM) model. For Uniswap, di AMM na smart contract wey dey hold plenti token (Liquidity Pool). Users fit trade between tokens for Liquidity pool. Di price for each token na ratio of di reserve dey determine am.
 
-### Step-by-step example of a Uniswap trade
+### Step by step example of Uniswap trade
 
-1. Alice wants to trade 1 ETH for DAI.
-2. Alice sends 1 ETH to the Uniswap smart contract.
-3. The Uniswap smart contract calculates the amount of DAI that Alice should receive based on the current exchange rate.
-4. The Uniswap smart contract sends the DAI to Alice.
-5. The Uniswap smart contract adds the 1 ETH to its reserves.
-6. The Uniswap smart contract recalculates the exchange rate based on the new reserves.
+1. Alice wan trade 1 ETH for DAI.
+2. Alice dey send 1 ETH give di Uniswap smart contract.
+3. Di Uniswap smart contract dey calculate di amount if DAI wey Alice suppose collect based on today rate.
+4. Di Uniswap smart contract dey send di DAI give Alice.
+5. Di Uniswap smart contract dey add di 1 ETH go imr eserve.
+6. Di Uniswap smart contract dey calculate de rate again based on say new reserves don dey.
 
-The tokens in the Liquidity Pool are provided by Liquidity Providers. When a Liquidity Provider deposits tokens into a Liquidity Pool, they receive Liquidity Provider Tokens in return. Liquidity Provider Tokens represent a user's share of a Liquidity Pool.
+Di tokens wey dey di Liquidity Pool dem provide am wit Liquidity Providers. Wen liquidity provider put token for liquidity pool, dem dey receive token back. Liquidity Provider Token dey represent user share for liquidity pool.
 
-Users of Uniswap pay a fee for each trade. The fee is paid to the Liquidity Providers in the form of additional Liquidity Provider Tokens.
+Users wey dey uniswap dey pay moni for everi trade. Dem pay di fee go Liquidity Providers as Liquidity Provider Token wey dem add.
 
-## Uniswap Swap Contract
+## Uniswap wap Contract
 
-The Uniswap Swap contract allows users to swap tokens using Uniswap V3. It can do single-hop swaps, which allow users to exchange one token for another directly. It can also do multi-hop swaps, which means that users can exchange one token for another by routing through multiple tokens. Routing in this context means that the swap contract will exchange the token for another token, then exchange that token for another token, and so on until it reaches the desired token.
+Di Uniswap Swap contract dey allow make users swap token as dem dey use Uniswap V3. E fit do single hop swaps wey dey allow users to dey exchange one token go anoda one straight. E fit do multi-hop swaps wey mean di users fit change one token go anoda one as e dey route go plenti token. Routing for dis context mean say di swap contract go exchange di token for anoda token, den exchange da token for anida token, like dat like dat till e reach di token wey you want.
 
-## Conclusion
+## De end
 
-In this section, we learned about Uniswap, how it works, and how we are going to use it to swap tokens.
+For dis section we don learn say Uniswap ho e take dey work and how we go use am take swap tokens.
 
-## ⭐️ Assignment: Multiple Choice Test
+## ⭐️ Housework: Multiple Choice Test
 
-### 1. What is Uniswap?
+### 1. Wetin be Uniswap?
 
-1. A centralized exchange protocol.
-2. A decentralized exchange protocol that uses an order book.
-3. A decentralized exchange protocol that uses an automated market maker (AMM) model.
-4. A decentralized exchange protocol that uses an order book and an automated market maker (AMM) model.
+1. Na centralized exchange protocol.
+2. Na decentralized protocol wey dey use order block.
+3. Na decentralized exchange protocol wey dey use automated market maker (AMM) model.
+4. Decentralized exchange protocol wey dey use order book and na automated market maker (AMM) model.
 
-### 2) How does Uniswap determine the price of a token?
+### 2) How Umiswap ake dey sabi price of token?
 
-1. The price of a token is determined by the ratio of the reserves.
-2. The price of a token is determined by the ratio of the reserves and the number of trades.
-3. The price of a token is determined by the ratio of the reserves and the number of Liquidity Providers.
+1. De price of di token na di ratioof di reserve dey determine am.
+2. Di price of di token na di ratio of di reserve and di number of trades dey determine am.
+3. Di price of di token na di ratio of di reserve and di number of Liquidity Providers dey determin am.
