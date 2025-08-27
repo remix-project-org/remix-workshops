@@ -1,37 +1,37 @@
 ## Understanding `groth16_zkproof.ts`
 
-Navigate to `scripts/groth16/groth16_zkproof.ts`. This script generates the zero-knowledge proof and prepares it for verification.
+Navigate go `scripts/groth16/groth16_zkproof.ts`. This script dey generate zero-knowledege proof con still prepare am for verification.
 
 ### Code Overview
 
 #### Loading Files:
 
-- Reads the R1CS and WASM files generated from the circuit.
-- Loads the final proving key (`zkey_final`) and verification key (`vKey`).
+- E go read d R1CS and WASM files wey generate from d circuit.
+- E dey load the final proving key (`zkey_final`) and verification key (`vKey`).
 
-#### Defining Inputs:
+#### To define Inputs:
 
-- Sets the private values (`value1`, `value2`, `value3`, `value4`).
+- E dey set d private values (`value1`, `value2`, `value3`, `value4`).
 - Computes the `hash` using Poseidon from [CircomLib](https://github.com/iden3/circomlib).
 
 #### Witness Calculation and Proof Generation:
 
-- Calculates the witness (`wtns`).
-- Checks the witness against the `R1CS`.
-- Generates the proof using `Groth16`.
-- Verifies the proof.
+- E dey calculate d witness (`wtns`).
+- E go check d witness against d `R1CS`.
+- E go generate d proof using `Groth16`.
+- E go verify d proof.
 
-#### Exporting Verifier Contract and Inputs:
+#### To export Verifier Contract and Inputs:
 
-- Generates a Solidity verifier contract.
-- Exports the proof inputs to `input.json`.
+- E dey generate Solidity verifier contract.
+- E dey export d proof inputs go `input.json`.
 
 ### Purpose
 
-- Generates a zero-knowledge proof that the prover knows values hashing to a specific hash.
-- Prepares the verifier contract and inputs for on-chain verification.
+- E dey Generate zero-knowledge proof say d prover know d value of hashing to a specific hash.
+- E dey prepare d verifier contract nd inputs for on-chain verification.
 
-### Execute the Script
+### Finish d Script
 
-- Click the play button in the editor, or right-click the file and select "Run".
-- Wait for the script to complete and `"zk proof validity"` logged in the terminal.
+- Click d play button wey dey d editor, abi make yu right-click d file con select "Run".
+- Wait make d script complete and `"zk proof validity"` logged in d terminal.
