@@ -6,20 +6,20 @@ Naso, you fit write your own ERC20 token contract implementation or extensions n
 
 ### Mintable
 
-D mint function dey allow di creator of di contract to mint (create) additional tokens after dem don deploy d contract (line 22). As input parameters, the function needs the address that the tokens will be minted to, and the amount of tokens that should be minted.
+D mint function dey allow di creator of di contract to mint (create) additional tokens after dem don deploy d contract (line 22). As na input parameters, the function go need di address wey di tokens go dey minted to, and the amount of tokens wey suppose dey minted.
 
-We don't have to import `mint()` from another contract since the mint function is already part of the <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol" target="_blank">ERC20 contract</a> implementation of OpenZeppelin. We import `Ownable` (line 7) which is a contract module that provides a basic access control mechanism that allows an owner to have exclusive access to specific functions. In this contract, we add the inherited `onlyOwner` modifier to the `mint` function (line 22) and restrict access to this function to the "owner".
+We no need to import `mint()` from another contract since di mint function na already part of di <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol" target="_blank">ERC20 contract</a> implementation of OpenZeppelin. We dey import `Ownable` (line 7) wey be contract module wey dey provide basic access control mechanism wey dey allow owner to get exclusive access to specific functions. Inside dz contract, we don add di inherited `onlyOwner` modifier to di `mint` function (line 22) and we don restrict access to dis function to di "owner".
 
-The contract will inherit additional functions like owner(), transferOwnership() and renounceOwnership() to manage access, from the <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol" target="_blank">Ownable contract</a>.
+The contract go inherit additional functions like owner(), transferOwnership() nd renounceOwnership() to manage access, from di <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol" target="_blank">Ownable contract</a>.
 
 ### Burnable
 
-By importing the "ERC20Burnable" (line 5) and inheriting its functions (line 9) our contract allows token holders to destroy their tokens as well as the tokens in their allowance.
-For more information, have a look at the <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Burnable.sol" target="_blank">ERC20Burnable contract</a>.
+Once yu import di "ERC20Burnable" (line 5) nd yu inherit hin functions (line 9) our contract go allow token holders fit destroy their tokens as well as di tokens wey dey dia allowance.
+If yu wan more information, look di <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Burnable.sol" target="_blank">ERC20Burnable contract</a>.
 
 ### Pausable
 
-With the "Pausable" contract module (line 6 and 9) the owner is able to pause (line 14) and unpause (line 18) the contract. In the pause state, tokens can't be transferred, which can be helpful in emergency scenarios.
+With di "Pausable" contract module (line 6 and 9) the owner go fit to pause (line 14) and unpause (line 18) di contract. In the pause state, tokens can't be transferred, which can be helpful in emergency scenarios.
 For more information, have a look at the <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/Pausable.sol" target="_blank">Pausable contract</a>.
 
 Have a look at the OpenZeppelins <a href="https://docs.openzeppelin.com/contracts/4.x/wizard" target="_blank">Contract Wizard</a>, which allows you to easily add additional functionality.
