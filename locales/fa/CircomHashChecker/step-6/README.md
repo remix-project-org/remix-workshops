@@ -1,28 +1,28 @@
-## Compute Witness
+## شاهد محاسبه
 
-1. **Access the Compute Witness Section**:
-    - After the trusted setup, the **Compute Witness** section becomes available.
+1. **دسترسی به بخش گواهی محاسبات**:
+    - پس از راه‌اندازی قابل اعتماد، بخش **شهادت محاسبه** در دسترس قرار می‌گیرد.
 
-2. **Input Values**:
-    - You'll see input fields for `value1`, `value2`, `value3`, `value4`, and `hash`.
-    - Enter values for each input. For example:
-       - `value1`: `1234`
+2. **مقادیر ورودی**:
+    - شما فیلدهای ورودی برای `value1`، `value2`، `value3`، `value4` و `hash` را مشاهده خواهید کرد.
+    - مقادیر را برای هر ورودی وارد کنید. برای مثال:
+       - `value1`: `۱۲۳۴`
        - `value2`: `2`
        - `value3`: `3`
        - `value4`: `4`
 
-3. **Calculate the Hash**:
+3. **محاسبه هش**:
 
-    - Compute the Poseidon hash of the four values using an external tool or library compatible with the Poseidon hash function.
-    - For the values above, here is the computed Poseidon hash `16382790289988537028417564277589554649233048801038362947503054340165041751802`.
-    - Enter the calculated `hash` value in the `hash` input field.
+    - هش پوزئیدون از چهار مقدار را با استفاده از یک ابزار یا کتابخانه خارجی که با تابع هش پوزئیدون سازگار باشد، محاسبه کنید.
+    - برای مقادیر فوق، هش پوزیدون محاسبه شده به صورت زیر است `16382790289988537028417564277589554649233048801038362947503054340165041751802`.
+    - مقدار `hash` محاسبه‌شده را در فیلد ورودی `hash` وارد کنید.
 
          <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-6/images/compute_witness.png" alt="compute-witness" width=250 height=400>
 
-4. **Compute the Witness**:
+4. **شاهد را محاسبه کنید**:
 
-    - Click on the **Compute Witness** button.
-    - Wait for the process to complete. A success badge will appear if the witness is computed successfully.
-    - If successful, you'll see `calculate_hash.wtn` created in the `.bin` directory in the file explorer.
+    - بر روی دکمه **محاسبه شاهد** کلیک کنید.
+    - منتظر بمانید تا فرایند به پایان برسد. اگر شاهد با موفقیت محاسبه شود، یک نشان موفقیت ظاهر خواهد شد.
+    - اگر موفق باشید، خواهید دید که `calculate_hash.wtn` در دایرکتوری `.bin` در فایل اکسپلورر ایجاد شده است.
 
          <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-6/images/witness_computed.png" alt="witness-computed" width=300 height=100>
