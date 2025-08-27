@@ -1,17 +1,17 @@
 ## 理解 `groth十六_zkproof.ts`
 
-Navigate to `scripts/groth16/groth16_zkproof.ts`. This script generates the zero-knowledge proof and prepares it for verification.
+导航到 `scripts/groth十六/groth十六_zkproof.ts`。 该脚本生成零知识证明并准备进行验证。
 
-### Code Overview
+### 代码概述
 
-#### Loading Files:
+#### 加载文件：
 
 - Reads the R1CS and WASM files generated from the circuit.
-- Loads the final proving key (`zkey_final`) and verification key (`vKey`).
+- 加载最终证明密钥（`zkey_final`）和验证密钥（`vKey`）。
 
-#### Defining Inputs:
+#### 定义输入：
 
-- Sets the private values (`value1`, `value2`, `value3`, `value4`).
+- 设置私有值（`value一`，`value二`，`value三`，`value四`）。
 - Computes the `hash` using Poseidon from [CircomLib](https://github.com/iden3/circomlib).
 
 #### Witness Calculation and Proof Generation:
