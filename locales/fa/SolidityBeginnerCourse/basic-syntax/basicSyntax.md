@@ -1,26 +1,26 @@
-In this section, we will create our first _smart contract_. This contract only consists of a string that holds the value "Hello World!".
+در این بخش، ما اولین _قرارداد هوشمند_ خود را ایجاد خواهیم کرد. این قرارداد تنها شامل یک رشته است که شامل مقدار "سلام دنیا!" می‌باشد.
 
-In the first line, we should specify the license that we want to use. You can find a comprehensive list of licenses here: <a href="https://spdx.org/licenses/" target="_blank">https://spdx.org/licenses/</a>.
+در خط اول، باید مجوزی را که می‌خواهیم از آن استفاده کنیم مشخص کنیم. شما می‌توانید فهرستی جامع از مجوزها را اینجا پیدا کنید: <a href="https://spdx.org/licenses/" target="_blank">https://spdx.org/licenses/</a>.
 
-Using the `pragma` keyword (line 3), we specify the Solidity version we want the compiler to use. In this case, it should be greater than or equal to `0.8.3` but less than 0.9.0.
+با استفاده از کلمه کلیدی `pragma` (خط ۳)، نسخه سالیدیتی را که می‌خواهیم کامپایلر از آن استفاده کند مشخص می‌کنیم. در این حالت، باید بزرگ‌تر یا برابر با `0.8.3` باشد اما کمتر از `0.9.0`.
 
-We define a contract with the keyword `contract` and give it a name, in this case, `HelloWorld` (line 5).
+ما یک قرارداد را با کلمه کلیدی `contract` تعریف می کنیم و به آن یک نام می دهیم، در این مورد، `HelloWorld` (خط ۵).
 
-Inside our contract, we define a _state variable_ `greet` that holds the string `"Hello World!"` (line 6).
+در داخل قرارداد ما، یک _متغیر حالت_ `greet` تعریف می‌کنیم که رشته "سلام دنیا!" را نگه می‌دارد (خط 6).
 
-Solidity is a _statically typed_ language, which means that you need to specify the type of the variable when you declare it. In this case, `greet` is a `string`.
+سالیدیتی یک زبان _استاتیک تایپ_ است، به این معنی که شما باید نوع متغیر را هنگام اعلام آن مشخص کنید. در این حالت، `greet` یک `رشته` است.
 
-We also define the _visibility_ of the variable, which specifies from where you can access it. In this case, it's a `public` variable that you can access from inside and outside the contract.
+ما همچنین _قابلیت دید_ متغیر را تعریف می‌کنیم، که مشخص می‌کند از کجا می‌توان به آن دسترسی پیدا کرد. در این مورد، این یک متغیر `عمومی` است که می‌توانید از داخل و خارج قرارداد به آن دسترسی داشته باشید.
 
-Don't worry if you didn't understand some concepts like _visibility_, _data types_, or _state variables_. We will look into them in the following sections.
+نگران نباشید اگر برخی مفاهیم مانند _دیدپذیری_، _نوع داده‌ها_ یا _متغیرهای حالت_ را درک نکردید. ما در بخش‌های آینده به آنها رسیدگی خواهیم کرد.
 
-To help you understand the code, we will link in all following sections to video tutorials from the <a href="https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA" target="_blank">creator</a> of the Solidity by Example contracts.
+برای کمک به شما در درک کد، در تمام بخش‌های آینده به ویدئوهای آموزشی از <a href="https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA" target="_blank">خالق</a> قراردادهای Solidity by Example لینک خواهید داد.
 
-<a href="https://www.youtube.com/watch?v=g_t0Td4Kr6M" target="_blank">Watch a video tutorial on Basic Syntax</a>.
+<a href="https://www.youtube.com/watch?v=g_t0Td4Kr6M" target="_blank">یک ویدیوی آموزشی در مورد سینتکس پایه تماشا کنید</a>.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-1. Delete the HelloWorld contract and its content.
-2. Create a new contract named "MyContract".
-3. The contract should have a public state variable called "name" of the type string.
-4. Assign the value "Alice" to your new variable.
+1. قرارداد HelloWorld و محتوای آن را حذف کنید.
+2. یک قرارداد جدید به نام "قرارداد من" ایجاد کنید.
+3. قرارداد باید یک متغیر عمومی به نام "name" از نوع رشته داشته باشد.
+4. مقدار "Alice" را به متغیر جدید خود اختصاص دهید.
