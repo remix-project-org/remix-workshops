@@ -1,25 +1,25 @@
 ---
-id: multisigCourse
-name: Multisig Wallet
-summary: Learn how to create and interact with a multisig wallet. Developed by the p2p learning platform https://dacade.org.
+id: دوره چند امضایی
+name: کیف پول چندامضایی
+summary: یاد بگیرید که چگونه یک کیف پول چندامضایی ایجاد کنید و با آن تعامل داشته باشید. توسعه یافته توسط پلتفرم آموزشی همتا به همتا https://dacade.org.
 level: 1
 tags:
   - Solidity
-  - Tokens
+  - توکن ها
   - Multisig
 steps:
   - 
-    name: 1. Introduction
-    path: 1-multisig-introduction
+    name: ۱. مقدمه
+    path: ۱-مقدمه چندامضایی
   - 
-    name: 2. Initialize the Contract
-    path: 2-multisig-initialization
+    name: ۲. قرارداد را اولیه کنید
+    path: ۲-چندامضایی-مقداردهی اولیه
   - 
-    name: 3. Deposits
-    path: 3-multisig-deposits
+    name: ۳. سپرده‌ها
+    path: سپرده‌های ۳-امضایی
   - 
-    name: 4. Transactions
-    path: 4-multisig-transactions
+    name: ۴. تراکنش‌ها
+    path: تراکنش‌های چندامضایی با ۴ امضا
   - 
-    name: 5. Revoking Confirmations
-    path: 5-multisig-revoke
+    name: ۵. لغو تأییدیه‌ها
+    path: لغو چندامضایی ۵ مرحله‌ای
