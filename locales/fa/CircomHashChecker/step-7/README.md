@@ -1,21 +1,21 @@
-## Generate Proof
+## مدرک تولید کنید
 
-1. **Access the Generate Proof Section**:
-    - After computing the witness, expand the **Generate Proof** section.
+1. **دسترسی به بخش تولید مدرک**:
+    - پس از محاسبه شاهد، بخش **تولید مدرک** را گسترش دهید.
 
-2. **Configure Proof Generation**:
-    - **Export Verifier Calldata**: Enable this option if you plan to verify the proof on-chain.
+2. **پیکر بندی تولید گواهی**:
+    - **تأیید کننده صادرات کالادا**: این گزینه را فعال کنید اگر قصد دارید اثبات را در زنجیره تأیید کنید.
 
-3. **Generate the Proof**:
+3. **اثبات را تولید کنید**:
 
-    - Click on the **Generate Proof** button.
-    - Wait for the proof generation to complete.
+    - بر روی دکمه **تأیید تولید** کلیک کنید.
+    - منتظر بمانید تا فرآیند تولید مدرک به اتمام برسد.
 
          <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-7/images/generate_proof.png" alt="generate-proof" width=280 height=120>
 
-4. **View the Proof**:
+4. **مدرک را مشاهده کنید**:
 
-    - The proof data will be displayed in the File Explorer.
-    - **Congratulations!** You've successfully compiled the `Hash Checker` circuit, performed a trusted setup, computed a witness, and generated a proof using Remix-IDE.
+    - اطلاعات اثبات در مرورگر فایل نمایش داده خواهد شد.
+    - **تبریک!** شما با موفقیت مدار `Hash Checker` را کامپایل کردید، یک راه‌اندازی معتبر انجام دادید، یک شاهد محاسبه کردید و یک مدرک با استفاده از Remix-IDE تولید کردید.
 
          <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-7/images/proof_generated.png" alt="generate-proof" width=375 height=300>
