@@ -1,9 +1,9 @@
-# Delegate call
+# De Delegate call
 
-It's a special variant of a **message call**, which is identical to a message call apart from the fact that the code at the target address is executed in the context of the calling contract so **msg.sender** and **msg.value** do not change their values.
+Na special variant for **message call**, which dey identical to di message call apart from do fact say do code for di target address dey executed for di context of di calling contract so **msg.sender** and **msg.value** no dey change their values.
 
-This means that a contract can dynamically load code from a different address at runtime.
+Dis mean say contract fit dynamically load code for different addresss at runtime.
 
-The storage, the current address and balance still refer to the calling contract, only the code is taken from the called address.
+De storage, de current address and balance fit still refer the calling contract, na only the code go take from the called address.
 
-So when a **Proxy** delegates calls to the Logic contract, every storage modification will impact the storage of Logic contract.
+So when **Proxy** delegates calls con di Logos contract, all di storage modification go impact di storage for Logic contract.
