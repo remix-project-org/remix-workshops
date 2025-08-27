@@ -1,24 +1,24 @@
-In this section, we'll explore the `receive` function and the associated Deposit event. We'll examine how the `receive` function is used to deposit Ether into the multi-signature wallet and how the Deposit event provides transparency.
+For dis section, we go explore di receive function and di associated Deposit event. We go examine how di receive function dey use for deposit Ether inside di multi-signature wallet and how di Deposit event dey bring transparency.
 
 ## Deposit Event
 
-On line, 9 we have the Deposit event. The Deposit event is emitted whenever Ether is deposited into the multi-signature wallet. It includes three parameters:
+On line, 9 we get di Deposit event. Di Deposit event dey emit weneva Ether dey enta inside di multi-signature wallet. E get three parameta:
 
-1. `sender`: The address that sent the Ether.
-2. `amount`: The amount of Ether deposited.
-3. `balance`: The updated balance of the contract after the deposit.
+1. `sender`: De address wey send di Ether.
+2. `amount`: De amount of Ether wey dem deposit.
+3. balance: Di updated balance of di contract after di deposit.
 
-We can use the Deposit event to track the flow of Ether into the multi-signature wallet and maybe trigger other actions based on the event.
+We fit use di Deposit event track di flow of Ether inside di multi-signature wallet and maybe trigger other actions based on di event.
 
 ## receive Function
 
-On line 43, we have the `receive` function. The `receive` function is a special function that is executed whenever Ether is sent to the contract.
+For line 43, we get the `receive` function. Di receive function na special function wey dey executed whenever Ether dey sent go di contract.
 
-The `receive` function is marked as `external` and `payable`. The `external` modifier means that the function can only be called from outside the contract. The `payable` modifier means that the function can receive Ether.
+Di receive function dey marked as external and payable. Di external modifier mean say di function fit only dey called from outside di contract. Di payable modifier mean say di function fit collect Ether.
 
-The `receive` function emits the Deposit event (Line 44) with the address of the sender, the amount of Ether sent, and the updated balance of the contract. It doesn't return anything.
+Di receive function dey emit di Deposit event (Line 44) with di address of di sender di amount of Ether wey dey sent and di updated balance of di contract. E no dey send back anytin.
 
-To receive Ether, a contract must have a `receive`, `fallback`, or a function with the `payable` modifier. If none of these are present, the contract will reject any Ether sent to it.
+For enta Ether, contract must to get receive fallback or function wey get di payable modifier. If none of these are present, the contract will reject any Ether sent to it.
 
 ## Conclusion
 
