@@ -1,25 +1,25 @@
 ---
-id: uniswapSwapCourse
-name: Uniswap Swap Course
-summary: Go through the Solidity code of the Uniswap V3 Swap contract. Developed by the p2p learning platform https://dacade.org.
+id: دوره مبادله یونی سواپ
+name: دوره مبادله یونی سواپ
+summary: کد سالیدیتی قرارداد مبادله Uniswap V3 را مرور کنید. این قرارداد توسط پلتفرم یادگیری p2p https://dacade.org توسعه یافته است.
 level: 2
 tags:
   - Solidity
-  - Tokens
-  - Uniswap
+  - توکن ها
+  - یونی سواپ
 steps:
   - 
-    name: 1. Introduction
-    path: 1-introduction-to-uniswap
+    name: 1. مقدمه
+    path: 1-مقدمه‌ای بر یونی‌سwap
   - 
-    name: 2. Routers, Interfaces, and Structs
-    path: 2-router-interfaces-and-structs
+    name: 2. روترها، رابط‌ها و ساختارها
+    path: ۲-رابط‌های روتر و ساختارها
   - 
-    name: 3. Single Hop Swaps
-    path: 3-single-hop-swaps
+    name: 3. مبادلات تک پرش
+    path: ۳ مبادله‌ی ساده
   - 
-    name: 4. Multi-Hop Swaps
-    path: 4-multi-hop-swaps
+    name: ۴. تعویض‌های چند مرحله‌ای
+    path: تعویض‌های چند مرحله‌ای ۴
   - 
-    name: 5. Erc20 and Weth Interfaces
-    path: 5-erc20-weth-interfaces
+    name: 5. رابط‌های Erc20 و Weth
+    path: ۵-اسم‌های رابط -weth-interfaces
