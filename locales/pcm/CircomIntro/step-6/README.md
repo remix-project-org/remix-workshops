@@ -2,26 +2,26 @@ When the trusted setup don complete, you fit con compute the witness for your ci
 
 ## Wetin be witness?
 
-- **witness** na set of values wey dey satisfy all the constraints of your circuit. E include all the intermediate numbers and results wey dey satisfy the circuit rules. The witness is used in zero-knowledge proofs to demonstrate that you know a valid solution to the problem without actually showing the solution itself. This allows others to verify that you did everything correctly while keeping your specific numbers and calculations private.
-- It is essential for generating a proof.
+- **witness** na set of values wey dey satisfy all the constraints of your circuit. E include all the intermediate numbers and results wey dey satisfy the circuit rules. De witness go dey used for proof wey dey-zero knowledge to te demonsrater dat u go know solution wey good to de problems without de solutoin no go show himself. Dis go allow others to te verify dat u go do everything correctly while keep ur specific nombers and calculations private.
+- Im dey essential to dey generate proof.
 
-## Inputting Values
+## U go input values
 
-1. In the **Compute Witness** section, you'll see input fields dynamically generated based on your circuit's inputs.
-2. Enter values for `a` and `b`. For example:
-    - `a = 3`
-    - `b = 4`
+1. For de **Compute Witness** section u fit see input fields dynamiclly generated based on ur circuits inputs.
+2. U go enter values for a and b. For eksampol:
+    - a=3
+    - b=4
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-6/images/compute_witness.png" alt="compute-witness" width=280 height=240>
 
-## Computing the Witness
+## De Computing de witness
 
-1. After entering the inputs, click on the **Compute Witness** button.
-2. The plugin will compute the witness based on your inputs.
-3. If successful, you'll see `multiplier.wtn` created in the `.bin` directory in the file explorer.
+1. After u don enter de inputs u go press de**Computa Witness** button.
+2. Go compute de witness based oon de inputes wey u don put.
+3. If u dey successful u go see \`multiplier.wtn created in de bin directory for de person wey dey exploy file.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-6/images/witness_computed.png" alt="witness-computed" width=340 height=350>
 
-**Note:** If there are any errors, ensure that your inputs are valid and satisfy the circuit's constraints.
+**Note:** If errors dey we go ensure say ur inputs dey valid to dey satisfied de circuit constrait.
 
-In the next step, we'll generate a proof using the computed witness.
+In de step we go genera proof wey we dey use de computed witness.
