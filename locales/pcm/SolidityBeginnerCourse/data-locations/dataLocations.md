@@ -1,8 +1,8 @@
-The values of variables in Solidity can be stored in different data locations: _memory_, _storage_, and _calldata_.
+For Solidity, variable fit dey for different kain location: _memory_ wey be temporary, _storage_ wey permanent for blockchain, and _calldata_ wey hold the input wey no fit change.
 
 As we have discussed before, variables of the value type store an independent copy of a value, while variables of the reference type (array, struct, mapping) only store the location (reference) of the value.
 
-If we use a reference type in a function, we have to specify in which data location their values are stored. The price for the execution of the function is influenced by the data location; creating copies from reference types costs gas.
+If we use reference type for function, we gats talk where we wan store the value for the data. The price for the execution of the function is influenced by the data location; creating copies from reference types costs gas.
 
 ### Storage
 
