@@ -1,12 +1,12 @@
-A libraries looks like a **contract** but use the keyword `library`
+A libraries resemble **contract** but e dey use d keyword `library`
 
-A library typically is a collection of useful functions sitting out there on the blockchain that any contract can use.  Because the library is already deployed, it saves the deployment costs of the many contracts that use it.
+A library na typically collection of functions wey useful wey jst dey sidown out there on d blockchain way any contract fit use.  Because say the library don dey deployed e go save the deployment costs of the amount of contracts wey dey use am.
 
-In the following contract:
+For the contract wey dey follow:
 
-- Make a library with the name `LibraryForTest`.
+- Use the name make one library `LibraryForTest`.
 
-It is possible to put a library in same file with another contract.  So put the library below the contract.
+E dey possible make u put a library for the same file with another contract.  Oya carry the library put below the contract.
 
 This library should have a method called `getFromLib` method which returns `3`.
 
