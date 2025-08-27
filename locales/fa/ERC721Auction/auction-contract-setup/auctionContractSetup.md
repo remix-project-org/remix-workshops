@@ -1,46 +1,45 @@
-In this contract tutorial, we will learn how to create an ERC721 (NFT) auction contract.
-We recommend to you, to do the Learneth "Solidity NFT Course" before starting this tutorial.
+در این آموزش قرارداد، یاد خواهیم گرفت که چگونه یک قرارداد حراج ERC721 (NFT) ایجاد کنیم.
+قبل از شروع این آموزش، به شما توصیه می‌کنیم که دوره آموزشی «Solidity NFT» را بگذرانید.
 
-In the following sections, we will create a contract that will enable a seller to auction an NFT to the highest bidder. This contract was created by the <a href="https://solidity-by-example.org/app/english-auction/" target="_blank">Solidity by Example</a> project. In this first section, we will create an interface, the necessary state variables, and the constructor.
+در بخش‌های بعدی، قراردادی ایجاد خواهیم کرد که به فروشنده امکان می‌دهد یک NFT را به بالاترین پیشنهاد دهنده حراج کند. این قرارداد توسط پروژه <a href="https://solidity-by-example.org/app/english-auction/" target="_blank">Solidity by Example</a> ایجاد شده است. در این بخش اول، یک رابط، متغیرهای حالت لازم و سازنده constructor را ایجاد خواهیم کرد.
 
-### Interface
+### رابط
 
-We create the interface (line 5) for the ERC721 token since our contract will need to interact with it. We will need the `safeTransferFrom` (line 5),  and` transferFrom` (line 11) methods.
+ما رابط (خط ۵) را برای توکن ERC721 ایجاد می‌کنیم، زیرا قرارداد ما نیاز به تعامل با آن دارد. ما به متدهای `safeTransferFrom` (خط ۵) و `transferFrom` (خط ۱۱) نیاز خواهیم داشت.
 
-### EnglishAuction
+### حراج انگلیسی
 
-We create the four events `Start`, `Bid`, `Withdraw`, `End` (line 19-22) so we can log important interactions.
+ما چهار رویداد `Start`، `Bid`، `Withdraw`، `End` (خطوط ۱۹-۲۲) را ایجاد می‌کنیم تا بتوانیم تعاملات مهم را ثبت کنیم.
 
-Next, we will create the state variables that store all the necessary information about our auction on-chain.
+در مرحله بعد، متغیرهای وضعیت را ایجاد خواهیم کرد که تمام اطلاعات لازم در مورد حراج درون زنجیره‌ای ما را ذخیره می‌کنند.
 
-We create two state variables for the NFT we want to auction. In the variable `nft` (line 24) we store a representation of the NFT contract, that will allow us to call its functions by combining the interface IERC721 and the address of the NFT contract.
-In `nftId` (line 25), we store the specific token id in our NFT contract that will be auctioned.
+ما دو متغیر حالت برای NFT که می‌خواهیم به حراج بگذاریم، ایجاد می‌کنیم. در متغیر `nft` (خط 24) نمایشی از قرارداد NFT را ذخیره می‌کنیم که به ما امکان می‌دهد توابع آن را با ترکیب رابط IERC721 و آدرس قرارداد NFT فراخوانی کنیم.
+در `nftId` (خط ۲۵)، شناسه توکن خاص را در قرارداد NFT خود کهبه حراج گذاشته خواهد شد، ذخیره می‌کنیم.
 
-Next, we need a variable to store the address of the person that is auctioning off the NFT, the `seller` (line 27).
-We want our NFT contract to send the seller the proceeds of the auction when it is finished, that’s why use `address payable`.
+در مرحله بعد، به یک متغیر نیاز داریم تا آدرس شخصی که NFT را به حراج می‌گذارد، یعنی «فروشنده» (خط ۲۷) را در آن ذخیره کند.
+ما می‌خواهیم قرارداد NFT ما پس از اتمام حراج، درآمد حاصل از آن را برای فروشنده ارسال کند، به همین دلیل از «آدرس قابل پرداخت» استفاده می‌کنیم.
 
-We create a state variable `endAt` (line 28) where we will store the end date of the auction.
-We also create the two booleans, `started` (line 29) and `ended` (line 30), that keep track of whether the auction has started or ended.
+ما یک متغیر وضعیت به نام `endAt` (خط ۲۸) ایجاد می‌کنیم که در آن تاریخ پایان حراج را ذخیره خواهیم کرد.
+ما همچنین دو مقدار بولی «started» (خط ۲۹) و «ended» (خط ۳۰) را ایجاد می‌کنیم که شروع یا پایان حراج را پیگیری می‌کنند.
 
-We create a variable `highestBidder` (line 32) where we will store the address of the highest bidder. We will send the highest bidder the NFT once the auction has ended.
+ما یک متغیر به نام `highestBidder` (خط ۳۲) ایجاد می‌کنیم که آدرس بالاترین پیشنهاد دهنده را در آن ذخیره خواهیم کرد. پس از پایان حراج، NFT را برای بالاترین پیشنهاد دهنده ارسال خواهیم کرد.
 
-Finally, we need a uint `highestBid` (line 33) to store the highest bid and a mapping `bids` (line 34), where we can store the total value of bids that an account has made before withdrawing; more on this in the next section.
+در نهایت، به یک متغیر uint به نام `highestBid` (خط ۳۳) برای ذخیره بالاترین پیشنهاد و یک نگاشت `bids` (خط ۳۴) نیاز داریم که در آن بتوانیم کل ارزش پیشنهادهایی را که یک حساب قبل از برداشت انجام داده است، ذخیره کنیم؛ در بخش بعدی بیشتر در این مورد صحبت خواهیم کرد.
 
-### Constructor
+### سازنده
 
-When the auctioneer deploys the contract, they need to provide a few arguments:
-the address of the contract of the NFT they want to auction `_nft` (line 37), the token id of the NFT they want to auction `_nftId` (line 38), and a starting price that must be overbid to place the first bid in the auction,`_startingBid` (line 39).
+وقتی حراج‌گذار قرارداد را اجرا می‌کند، باید چند آرگومان ارائه دهد: آدرس قرارداد NFT که می‌خواهند حراج کنند `_nft` (خط ۳۷)، شناسه توکن NFT که می‌خواهند حراج کنند `_nftId` (خط ۳۸) و قیمت شروعی که باید برای قرار دادن اولین پیشنهاد در حراج، `_startingBid` (خط ۳۹) بیشتر از قیمت پیشنهادی اولیه باشد.
 
-Once deployed, the state variables `nft` (line 41), `nftId` (line 42), `highestBid` (line 45) will be assigned the values from the arguments. The address of the `seller` that deployed the contract will be automatically read out via msg.sender and stored in the state variable `seller` (line 44).
+پس از استقرار، به متغیرهای حالت `nft` (خط ۴۱)، `nftId` (خط ۴۲) و `highestBid` (خط ۴۵) مقادیری از آرگومان‌ها اختصاص داده خواهد شد. آدرس «فروشنده» که قرارداد را مستقر کرده است، به طور خودکار از طریق msg.sender خوانده شده و در متغیر state `seller` (خط ۴۴) ذخیره می‌شود.
 
-In the next section, we will enable the auctioneer to start the auction and bidders to place their bids.
+در بخش بعدی، به حراج‌گذار اجازه می‌دهیم تا حراج را شروع کند و پیشنهاددهندگان نیز می‌توانند پیشنهادات خود را ارائه دهند.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-We will use the assignment part of the following sections to give you instructions on testing your contract in the Remix VM environment of Remix.
+ما از بخش واگذاری بخش‌های بعدی برای ارائه دستورالعمل‌هایی در مورد آزمایش قرارداد شما در محیط Remix VM ریمیکس استفاده خواهیم کرد.
 
-1. Deploy an NFT contract. You can use the NFT contract that we created in our "3.3 ERC721 - Token Creation" section.
+1. یک قرارداد NFT راه‌اندازی کنید. شما می‌توانید از قرارداد NFT که در بخش «ایجاد توکن - ERC721 3.3» ایجاد کرده‌ایم، استفاده کنید.
 
-2. Deploy this EnglishAuction contract. Use the address of the NFT contract as an argument for the `_nft` parameter, 0 for `_nftId`, and 1 for `_startingBid`.
+2. این قرارداد EnglishAuction را مستقر کنید. از آدرس قرارداد NFT به عنوان آرگومان برای پارامتر `_nft`، 0 برای `_nftId` و 1 برای `_startingBid` استفاده کنید.
 
-3. After deploying your contract, test if contract functions like `nft`, `nftId`, and `started` work as expected.
+3. پس از استقرار قرارداد، بررسی کنید که آیا توابع قرارداد مانند `nft`، `nftId` و `started` طبق انتظار کار می‌کنند یا خیر.
