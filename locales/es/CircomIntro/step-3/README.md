@@ -1,15 +1,15 @@
-Let's write a simple Circom circuit.
+Escribamos un circuito de Circom simple.
 
-## Creating a New Circuit File
+## Creación de un nuevo archivo de circuito
 
-1. In the **File Explorer** on the left sidebar, click on the **Create New File** icon.
-2. Name your file `multiplier.circom` and press **Enter**.
+1. En el **Explorador de archivos** en la barra lateral izquierda, haga clic en el icono **Crear nuevo archivo**.
+2. Nombre su archivo `multiplier.circom` y presione **Enter**.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-3/images/create_new_file.png" alt="create-new-file" width=300 height=200>
 
-## Writing the Circuit
+## Escribiendo el circuito
 
-Open `multiplier.circom` and add the following code:
+Abra `multiplier.circom` y agregue el siguiente código:
 
 ```circom
 pragma circom 2.0.0;
@@ -27,12 +27,12 @@ component main = Multiplier();
 
 ## Explicación:
 
- - template `Multiplier()`: Defines a new circuit template called Multiplier.
- - `signal input a;` and `signal input b;`: Declare input signals a and b.
- - `signal output c;`: Declare an output signal c.
- - `c <== a * b;`: Constrain c to be the product of a and b.
- - `component main = Multiplier();`: Instantiates the Multiplier circuit as main, which is required for the compiler.
+ - plantilla `Multiplier()`: Define una nueva plantilla de circuito llamada Multiplier.
+ - `entrada de señal a;` y `entrada de señal b;`: Declarar señales de entrada a y b.
+ - `salida de señal c;`: Declara una señal de salida c.
+ - `c <== a * b;`: Restringa c a ser el producto de a y b.
+ - `component main = Multiplier();`: Instancia el circuito multiplicador como principal, que es necesario para el compilador.
 
 ### NB:
 
-Signals are values in a cryptographic circuit that are strictly determined by the circuit's equations and constraints. Think of a signal as a value that must follow specific mathematical rules defined by the circuit—once set, it can't be changed arbitrarily. In regular programming, variables are flexible and can be updated or reassigned as needed, whereas, signals can't be altered freely.
+Las señales son valores en un circuito criptográfico que están estrictamente determinados por las ecuaciones y restricciones del circuito. Piense en una señal como un valor que debe seguir reglas matemáticas específicas definidas por el circuito; una vez establecido, no se puede cambiar arbitrariamente. En la programación regular, las variables son flexibles y se pueden actualizar o reasignar según sea necesario, mientras que las señales no se pueden alterar libremente.
