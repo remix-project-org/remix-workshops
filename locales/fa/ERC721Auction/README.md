@@ -1,5 +1,5 @@
-## NFT Auction Contract
+## قرارداد حراج NFT
 
-Learn how to write an ERC721 (NFT) auction contract.
+یاد بگیرید که چگونه یک قرارداد حراج ERC721 (NFT) بنویسید.
 
-Developed by the p2p learning platform https://dacade.org.
+توسعه یافته توسط پلتفرم یادگیری p2p https://dacade.org.
