@@ -1,71 +1,71 @@
-In this section, we will deploy a contract in our browser and test its functionality.
+In questa sezione, distribuiremo un contratto nel nostro browser e testeremo le sue funzionalità.
 
-### 1. Deploy the contract
+### 1. Distribuisci il contratto
 
-**1.1** Compile your EduCoin contract in the "Solidity compiler" module of the Remix IDE.
+1.1 Compila il tuo contratto EduCoin nel modulo "Solidity compiler" dell'IDE Remix.
 
-**1.2** In the "Deploy & run transactions" module, select your contract "EduCoin" in the contract input field and click on the "Deploy" button. Always make sure to select the correct contract in the contract selector input field.
+1.2 Nel modulo "Deploy & run transactions", seleziona il tuo contratto "EduCoin" nel campo di input del contratto e fai clic sul pulsante "Deploy". Assicurati sempre di selezionare il contratto corretto nel campo di selezione del.
 
-**GIF** Compile and deploy: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_compileAndDeploy.gif?raw=true" alt="Compile and deploy contract" width="300"/>
+Testa le funzioni
 
-### 2. Test the functions
+### 2. Testa le funzioni
 
-Expand the token contract functions in the IDE.
+Espandi le funzioni del contratto token nell'IDE.
 
-#### 2.1 Decimals
+#### 2.1 Decimali
 
-Click on the "decimals" button to call the decimals() function.
-It should return "18".
+Fai clic sul pulsante "decimals" per chiamare la funzione decimals().
+Dovrebbe restituire "18".
 
-#### 2.2 Name
+#### 2.2 Nome
 
-Click on the "name" button to call the name() function.
-It should return "EduCoin".
+Fai clic sul pulsante "name" per chiamare la funzione name().
+Dovrebbe restituire "EduCoin".
 
-#### 2.3 Symbol
+#### 2.3 Simbolo
 
-Click on the "symbol" button to call the symbol() function.
-It should return "EDC".
+Fai clic sul pulsante "symbol" per chiamare la funzione symbol().
+Dovrebbe restituire "EDC".
 
-#### 2.4 Total supply
+#### 2.4 Offerta totale
 
-Click on the "totalSupply" button to call the totalSupply() function.
-It should return 1000000000000000000000 (1000\*10\*\*18).
+Fai clic sul pulsante "totalSupply" per chiamare la funzione totalSupply().
+Dovrebbe restituire 1000000000000000000000 (1000\*10\*\*18).
 
-**GIF** Test decimals, name, symbol, and totalSupply functions: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_test_functions.gif?raw=true" alt="Test transfer function" width="300"/>
+GIF Testa le funzioni decimals, name, symbol e totalSupply:
 
-#### 2.5 Balance of
+#### 2.5 Saldo di
 
-**2.5.1** Go to the "ACCOUNT" section in the sidebar and copy the displayed address by using the copy icon next to it.
+2.5.1 Vai alla sezione "ACCOUNT" nella barra laterale e copia l'indirizzo visualizzato utilizzando l'icona di copia accanto ad esso.
 
-**2.5.2** Paste the address in the input field next to the "balanceOf" function button and click on the button.
-It should return 1000000000000000000000 (1000\*10\*\*18).
+2.5.2 Incolla l'indirizzo nel campo di input accanto al pulsante della funzione "balanceOf" e fai clic sul pulsante.
+Dovrebbe restituire 1000000000000000000000 (1000\*10\*\*18).
 
-**GIF** Test balanceOf function: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_balanceOf.gif?raw=true" alt="Test transfer function" width="300"/>
+GIF Testa la funzione balanceOf: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_balanceOf.gif?raw=true" alt="Test transfer function" width="300"/>
 
 #### 2.6 Transfer
 
-We will transfer EduCoin from one account to a second account.
+Trasferiremo EduCoin da un account a un secondo account.
 
-**2.6.1** Go to the "ACCOUNT" section in the sidebar and click on the displayed address. This should open a dropdown. Select the second address displayed and copy its address (account 2).
+2.6.1 Vai alla sezione "ACCOUNT" nella barra laterale e fai clic sull'indirizzo visualizzato. Questo dovrebbe aprire un menu a tendina. Seleziona il secondo indirizzo visualizzato e copia il suo indirizzo (account 2).
 
-**2.6.2** Open the dropdown and select the first account again (account 1), because this is the account that we want to use to make the transfer.
+2.6.2 Apri il menu a tendina e seleziona nuovamente il primo account (account 1), perché questo è l'account che vogliamo utilizzare per effettuare il trasferimento.
 
-**2.6.3** Paste the address in the input field next to the "transfer" function button, input the number 500000000000000000000, and click on the button.
+2.6.3 Incolla l'indirizzo nel campo di input accanto al pulsante della funzione "transfer", inserisci il numero 500000000000000000000 e fai clic sul pulsante.
 
-**2.6.4** If you check the balances for account 1 and account 2, they should both return the amount 500000000000000000000.
+2.6.4 Se controlli i saldi per l'account 1 e l'account 2, entrambi dovrebbero restituire l'importo 500000000000000000000.
 
-**GIF** Test transfer function: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_transfer.gif?raw=true" alt="Test transfer function" width="300"/>
+GIF Testa la funzione transfer: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_transfer.gif?raw=true" alt="Test transfer function" width="300"/>
 
-#### 2.7 Approve
+#### 2.7 Approva
 
-We will now allow account 1 to spend tokens on behalf of account 2.
+Ora consentiremo all'account 1 di spendere token per conto dell'account 2.
 
-**2.7.1** Go to the "Account" section, copy the address of account 1, then set it to account 2 again.
+2.7.1 Vai alla sezione "Account", copia l'indirizzo dell'account 1, quindi impostalo nuovamente sull'account 2.
 
-**2.7.2** In the approve function, enter the address of account 1 as the input for spender and set the amount to 250000000000000000000.
+2.7.2 Nella funzione approve, inserisci l'indirizzo dell'account 1 come input per spender e imposta l'importo a 250000000000000000000.
 
-**GIF** Test approve function: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_approve.gif?raw=true" alt="Test approve function" width="300"/>
+GIF Testa la funzione approve: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_approve.gif?raw=true" alt="Test approve function" width="300"/>
 
 #### 2.8 Allowance
 
