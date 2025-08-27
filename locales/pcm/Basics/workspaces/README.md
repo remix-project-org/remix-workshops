@@ -1,23 +1,23 @@
-## Workspaces help organize your separate projects.
+## Workspace dey help organize your separate projects.
 
-If this is your first time to Remix, a Workspace named **default_workspace** is loaded in the File Explorer.
+If na your first time to remix be this, dem don load workspace wey dem de call **default_workspace** inside the File Explorer.
 
 ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/default_workspace.png)
 
-The **default_workspace** has three Solidity (.sol) files in the contracts folder. Remix has a number of other templates. When you load a template, it goes into a Workspace. To go between Workspaces, use the select box at the top of the File Explorer.
+The **default_workspace** get three solidity (.sol) file inside the contract folder. Remix get plenty other templates. When you load template, e de go Workspace. To de fit go between different Workspace, go use the select box wey dey the top of the File Explorer.
 
 ![](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/select-box.png)
 
-But Workspaces are not only for templates. When cloning a repo into Remix, the files will be put into a Workspace.
+But Workspace no be only for template. As you dey clone repo enter Remix, Dem go put the file inside Workspace.
 
-Let's create a new Workspace
+Make we create new Workspace
 
-1. At the top of the File Explorer, click the hamburger icon (the 3 horizontal lines). Read through the commands and tools in this menu.
+1. On top the File Explorer, press the hamburger icon (the 3 lines wey de horizontal). Read pass all the commands and tools wey dey this menu.
 
 2. Select **+ Create** (the first choice).
 
-3. In the modal the comes up, choose one of the templates.
+3. Inside the model wey come up, choose one inside the templates.
 
 ![hamburger](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/workspaces/images/popup.png)
 
-Notice that in this popup menu, you can clone a repo. Managing a Git repo happens in the DGit plugin. You can also create Github actions with the three workflow choices in the popup menu.
+Notice say inside this pop-up menu, you fit clone repo. Managing of Git repo de sup inside DGit plugin. You fit also create GitHub actions with all the three workflow choices wey dey the pop-up menu.
