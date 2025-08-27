@@ -18,37 +18,37 @@
 
 ### کال دیتا
 
-_کال دیتا_ آرگومان‌های تابع را ذخیره می‌کند. مانند _حافظه_، _کالldata_ تنها در طول اجرای یک تابع خارجی به طور موقت ذخیره می‌شود. In contrast to values stored in _memory_, values stored in _calldata_ can not be changed. Calldata is the cheapest data location to use.
+_کال دیتا_ آرگومان‌های تابع را ذخیره می‌کند. مانند _حافظه_، _کالldata_ تنها در طول اجرای یک تابع خارجی به طور موقت ذخیره می‌شود. برخلاف مقادیری که در _حافظه_ ذخیره شده‌اند، مقادیر ذخیره شده در _کال‌داده_ نمی‌توانند تغییر کنند. کالldata ارزان‌ترین موقعیت داده‌ای است که می‌توان از آن استفاده کرد.
 
-In this contract, the parameter `_arr` (line 35) has the data location _calldata_. If we wanted to assign a new value to the first element of the array `_arr`, we could do that in the `function g` (line 31) but not in the `function h` (line 35). This is because `_arr` in `function g `has the data location _memory_ and _function h_ has the data location `calldata`.
+در این قرارداد، پارامتر `_arr` (خط ۳۵) محل داده _calldata_ دارد. اگر ما می‌خواستیم یک مقدار جدید به عنصر اول آرایه `_arr` اختصاص دهیم، می‌توانستیم این کار را در `تابع g` (خط ۳۱) انجام دهیم اما در `تابع h` (خط ۳۵) نمی‌توانستیم. این به این دلیل است که `_arr` در `تابع g` مکان داده _حافظه_ و _تابع h_ مکان داده `calldata` دارد.
 
-## Assignments
+## تکالیف
 
-### Memory to memory
+### از حافظه به حافظه
 
-Assignments from _memory_ to _memory_ create references instead of copies. If you change the value in one variable, the value of all other variables that reference the same data will be changed.
+تأ assignments از _حافظه_ به _حافظه_ به جای کپی، ارجاعات ایجاد می کند. اگر شما مقدار یک متغیر را تغییر دهید، مقدار تمام متغیرهای دیگری که به همان داده اشاره می‌کنند تغییر خواهد کرد.
 
-If we were to create a new struct `myMemStruct2` with the data location _memory_ inside the `function f` (line 12) and assign it the value of `myMemStruct` (line 19), any change to `myMemStruct2` would also change the value of `myMemStruct`.
+اگر ما بخواهیم یک ساختار جدید به نام `myMemStruct2` با محل داده _memory_ در داخل `function f` (خط 12) ایجاد کنیم و مقدار آن را به `myMemStruct` (خط 19) نسبت دهیم، هرگونه تغییر در `myMemStruct2` همچنین مقدار `myMemStruct` را تغییر خواهد داد.
 
-### Storage to local storage
+### ذخیره‌سازی به حافظه محلی
 
-Assignments from _storage_ to _local storage_ also create references, not copies.
+انتقال‌ها از _ذخیره‌سازی_ به _ذخیره‌سازی محلی_ نیز مراجع اشاره‌ها می‌سازند، نه کپی‌ها.
 
-If we change the value of the local variable `myStruct` (line 17), the value of our state variable `myStructs` (line 10) changes as well.
+اگر ما مقدار متغیر محلی `myStruct` (خط 17) را تغییر دهیم، مقدار متغیر حالت ما `myStructs` (خط 10) نیز تغییر می‌کند.
 
-## Storage and memory/calldata
+## ذخیره‌سازی و حافظه/داده‌های ورودی
 
-Assignments between _storage_ and _memory_ (or _calldata_) create independent copies, not references.
+انتساب‌ها بین _ذخیره‌سازی_ و _حافظه_ (یا _کال‌داده_) کپی‌های مستقل ایجاد می‌کنند، نه مراجع.
 
-If we were to create a new struct `myMemStruct3` with the data location _memory_ inside the `function f` (line 12) and assign it the value of `myStruct`, changes in `myMemStruct3` would not affect the values stored in the mapping `myStructs` (line 10).
+اگر ما بخواهیم یک ساختار جدید به نام `myMemStruct3` با محل داده _memory_ در داخل `function f` (خط 12) ایجاد کنیم و مقدار آن را به `myStruct` تخصیص دهیم، تغییرات در `myMemStruct3` بر ارزش‌های ذخیره شده در نگاشت `myStructs` (خط 10) تأثیری نخواهد داشت.
 
-As we said in the beginning, when creating contracts we have to be mindful of gas costs. Therefore, we need to use data locations that require the lowest amount of gas possible.
+همان‌طور که در ابتدای کار گفتیم، هنگام ایجاد قراردادها باید به هزینه‌های گاز توجه داشته باشیم. بنابراین، ما نیاز داریم از مکان‌های داده‌ای استفاده کنیم که کمترین میزان گاز ممکن را نیاز دارند.
 
-## ⭐️ Assignment
+## ⭐️ تکلیف
 
-1. Change the value of the `myStruct` member `foo`, inside the `function f`, to 4.
-2. Create a new struct `myMemStruct2` with the data location _memory_ inside the `function f` and assign it the value of `myMemStruct`. Change the value of the `myMemStruct2` member `foo` to 1.
-3. Create a new struct `myMemStruct3` with the data location _memory_ inside the `function f` and assign it the value of `myStruct`. Change the value of the `myMemStruct3` member `foo` to 3.
-4. Let the function f return `myStruct`, `myMemStruct2`, and `myMemStruct3`.
+1. مقدار عضو `foo` از `myStruct` را در داخل تابع `f` به ۴ تغییر دهید.
+2. یک ساختار جدید به نام `myMemStruct2` با مکان داده _memory_ داخل تابع `f` ایجاد کنید و آن را به مقدار `myMemStruct` اختصاص دهید. مقدار عضو `foo` در `myMemStruct2` را به ۱ تغییر دهید.
+3. یک ساختار جدید به نام `myMemStruct3` ایجاد کنید که موقعیت داده `*memory*` را درون `تابع f` داشته باشد و آن را به مقدار `myStruct` اختصاص دهید. مقدار عضو `foo` در ساختار `myMemStruct3` را به ۳ تغییر دهید.
+4. بگذارید تابع f مقادیر `myStruct`، `myMemStruct2` و `myMemStruct3` را بازگرداند.
 
-Tip: Make sure to create the correct return types for the function `f`.
+نکته: اطمینان حاصل کنید که انواع بازگشتی صحیحی برای تابع ایجاد کرده‌اید.
