@@ -1,24 +1,24 @@
-## Querying the Blockchain
+## To fit query di blockchain
 
-In this tutorial, we'll run a script that queries the blockchain using a JavaScript library.
+For dis tutorial, we go run di script wey queries blockchain using javascript library.
 
-This means that instead of using the Remix GUI or a block explorer like Etherscan, we'll use a script in the editor and will run it from the terminal.
+Dis one means say instead of using di remix GUI orr a block explorer like Etherscan we go use script for di editor or ruun am from terminal.
 
-The JS libraries that are used the most for interacting with the blockchain are web3.js & ethers.js.
+Di js libraries wey dey use di most interacting with di blockchain na web3.js and ether.js.
 
-Let's begin with a simple web3.js example, queryBlockNum.js.
+Make we begin with simple web3.js example, queryBlockNum.js.
 
-The script's call to web3.js is wrapped in a self-executing async function that contains a try/catch block.
+Di script call to web3.js e wrapped in self executing async function wey contain try/catch block.
 
-We'll query the current blocknumber with:
-`let blockNumber = await web3.eth.getBlockNumber()`
+We query di current blocknumber with
+let blockNumber = await web3.eth.getBlockNumber()\`
 
-Note that the object `web3` is injected by Remix. For more info on web3.js, check their docs, <a href="https://web3js.readthedocs.io/" target="_blank">https://web3js.readthedocs.io</a>.
+Know say di object web3 dey injected by remix. For more info on web3.js, check di docs, <a href="https://web3js.readthedocs.io/" target="_blank">https://web3js.readthedocs.io</a>.
 
-To use web3.js or ethers.js, you need to select the **Injected Web3** or **Web3 Provider** environment in the **Deploy & Run** module.  Scripts don't currently work with the JSVM. **If you try, you'll get an error.**
+To use web.3js or ether.js u need to select di **Injected Web3** or **Web3 Provider** environment in the **Deploy & Run** module.  Script no dey currently work with di JSVM. **if u try, u go get error.**
 
-So for this example choose **Injected Web3** in the Deploy & Run module and have Metamask installed.
+For example choose **Injected Web3** for di deploy and run module and metamask installed.
 
-From the terminal, execute `remix.execute()`. This command will execute the current JavaScript file with the line `let blockNumber = await web3.eth.getBlockNumber()`.
+For di terminnal, execute `remix.executed()`. Dis command fit remove di current javascript file with di line `let blockNumber= await web3.eth.getblockNumber()`.
 
-In the console, you should see the current block number of the chain that metamask is connected to.
+Di console, u fit see di current block number of di chain dat metamask dey connected.
