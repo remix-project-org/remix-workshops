@@ -1,18 +1,16 @@
-# The Opcode RETURN
+# کد عملیاتی RETURN
 
-At the end of the last chapter we had moved to one step after **CODECOPY** to see what happened in the memory.
+در پایان فصل گذشته، ما به یک مرحله پس از **CODECOPY** حرکت کرده بودیم تا ببینیم در حافظه چه اتفاقی افتاده است.
 
-Now that CODECOPY has been executed, we are on the opcode `PUSH1 00`.
+اکنون که کد اجرای CODECOPY انجام شده است، ما روی کد عملیاتی `PUSH1 00` هستیم.
 
-`PUSH1 00` prepares the stack for the `RETURN` opcode.
-`RETURN` is the last part of this process.  It is where the code is returned to the client.
+`PUSH1 00` پشته را برای دستور `RETURN` آماده می‌کند.
+`بازگشت` آخرین بخش این فرآیند است.  این جایی است که کد به مشتری برگردانده می‌شود.
 
-We push `00` to the stack because this is the offset position of the contract bytecode in memory.
+ما `00` را به پشته می‌فرستیم زیرا این موقعیت افست کد بایت قرارداد در حافظه است.
 
-Now we can call the all important `RETURN` opcode.
+اکنون می‌توانیم کد عمل مهم `RETURN` را فراخوانی کنیم.
 
-The **stack inspector** shows:
-`0: 0x0000000000000000000000000000000000000000000000000000000000000000`
-`1: 0x000000000000000000000000000000000000000000000000000000000000003e`
+بازرس **پشته** نشان می‌دهد:`0: 0x0000000000000000000000000000000000000000000000000000000000000000``1: 0x000000000000000000000000000000000000000000000000000000000000003e`
 
-Which is to say it returns to the client the bytecode starting `0x00` with length `0x3e`.
+به این معنی است که بایت کد را از `0x00` به طول `0x3e` به کلاینت باز می‌گرداند.
