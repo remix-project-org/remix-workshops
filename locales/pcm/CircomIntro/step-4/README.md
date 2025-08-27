@@ -1,34 +1,34 @@
-With your `multiplier.circom` circuit ready, let's compile it using the Circuit Compiler plugin.
+As yu get yur `multiplier.circom` circuit ready, make we use d Circuit Compiler plugin compile am.
 
-## Selecting the Compiler Version
+## To select d Compiler Version
 
-Choose the desired **Compiler Version** from the dropdown menu. For this tutorial, select the latest stable version.
+Make yu choose **Compiler Version** wey yu like from d dropdown menu. For this tutorial, make yu select d latest stable version.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-4/images/select_compiler_version.png" alt="select-compiler-version" width=250 height=100>
 
-## Configuring Compilation Options
+## To Configure Compilation Options
 
-- **Auto Compile:** You can enable this option to automatically compile your circuit whenever you save changes.
-- **Hide Warnings:** Enable this to suppress compiler warnings if any.
-- **Advanced Configuration:**
-  - Click to expand.
-  - Select the **Prime Field**. For most cases, `BN128` is sufficient.
+- **Auto Compile:** You fit enable dis option to fit automatically compile your circuit anytime yu wan save changes.
+- **Hide Warnings:** mk yu enable am to fit suppress compiler warnings if e dey.
+- **Configuration wey Advance:**
+  - Click am to expand.
+  - Make u select d **Prime Field**. For plenty cases, `BN128` dey sufficient.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-4/images/advanced_configuration.png" alt="advanced-configuration" width=300 height=100>
 
-## Compiling the Circuit
+## To compile the Circuit
 
-1. Click on the **Compile** button.
-2. The compiler will process your circuit.
-3. If successful, you'll see a compilation success message.
+1. Make yu click ontop d **Compile** button.
+2. D compiler go process yur circuit.
+3. If wetn yu do successful, yu go see compilation success message.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-4/images/compilation_success.png" alt="compilation-success" width=200 height=400>
 
-**Note:** If there are any errors, they will be displayed in the console. Check your code for typos or syntax errors.
+**Make u sabi say:** If errors dey, e go display dem inside d console. Check your code well well for typos abi syntax errors.
 
-## Understanding the Compilation Output
+## To understand d Compilation Output
 
-- After successful compilation, the **Setup and Exports** section becomes visible.
-- You can proceed to the next step to perform a trusted setup.
+- After yu compile am well, d **Setup nd Exports** section go con dey visible.
+- You fit proceed go d next step to perform a trusted setup.
 
-In the next step, we'll perform a trusted setup using the compiled circuit.
+Inside d next step, we go use compiled circuit perform a trusted setup.
