@@ -1,4 +1,4 @@
-id: circom-intro
+id: introducción a circom
 name: Introducción a Circom
 summary: Una introducción al uso de Circom para crear circuitos aritméticos.
 level: 1
@@ -8,22 +8,22 @@ tags:
 steps:
   - 
     name: Introducción
-    path: step-1
+    path: paso-1
   - 
-    name: Installing the Circuit-Compiler
-    path: step-2
+    name: Instalación del Compilador de Circuito
+    path: paso-2
   - 
-    name: Writing Your First Circom Circuit
-    path: step-3
+    name: Escribiendo Tu Primer Circuito Circom
+    path: paso-3
   - 
-    name: Compiling the Circuit Using the Plugin
-    path: step-4
+    name: Compilando el Circuito Usando el Complemento
+    path: paso-4
   - 
-    name: Performing a Trusted Setup
-    path: step-5
+    name: Ejecutando una Configuración de Confianza
+    path: paso-5
   - 
-    name: Computing the Witness
-    path: step-6
+    name: Computando el Testigo
+    path: paso-6
   - 
-    name: Generating the Proof
-    path: step-7
+    name: Generación de Prueba
+    path: paso-7
