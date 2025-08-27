@@ -1,31 +1,31 @@
-With the witness computed, the final step is to generate a proof that can be verified by others.
+با محاسبه شاهد، مرحله نهایی تولید یک اثبات است که می‌تواند توسط دیگران تأیید شود.
 
-## Generating the Proof
+## ایجاد اثبات
 
-1. In the **Generate Proof** section, you have the option to **Export Verifier Calldata**.
-    - Enable the **Export Verifier Calldata** checkbox if you plan to verify the proof on-chain.
-2. Click on the **Generate Proof** button.
+1. در بخش **تولید مدرک**، شما گزینه **صادرات داده های تأیید کننده** را دارید.
+    - اگر قصد دارید اثبات را در زنجیره تأیید کنید، کادر **صادر کردن بررسی کننده کالداتا** را فعال کنید.
+2. بر روی دکمه **تأیید تولید** کلیک کنید.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-7/images/generate_proof.png" alt="generate-proof" width=280 height=120>
 
-## Understanding the Output
+## درک خروجی
 
- - After generating the proof, the plugin will display the proof data.
- - If you enabled **Export Verifier Calldata**, it will also provide the calldata needed for on-chain verification.
+ - پس از تولید مدرک، افزونه داده‌های مدرک را نمایش خواهد داد.
+ - اگر **صادر کردن داده‌های احراز اعتبار** را فعال کرده‌اید، همچنین داده‌های لازم برای احراز اعتبار در زنجیره را نیز فراهم خواهد کرد.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-7/images/proof_generated.png" alt="proof-generated" width=310 height=350>
 
-## Next Steps
+## گام‌های بعدی
 
- - **Verification:** You can use the verification key or contract exported earlier to verify the proof.
- - **On-Chain Verification:** If you're familiar with smart contracts, you can deploy the verification contract and use the calldata to perform on-chain verification.
+ - **تأیید:** شما می‌توانید از کلید تأیید یا قرارداد صادر شده در مراحل قبل برای تأیید مدرک استفاده کنید.
+ - **تأیید در زنجیره:** اگر با قراردادهای هوشمند آشنا هستید، می‌توانید قرارداد تأیید را اجرا کنید و از داده‌های تماس برای انجام تأیید در زنجیره استفاده کنید.
 
-**Congratulations!** You've successfully written a Circom circuit, compiled it, performed a trusted setup, computed a witness, and generated a proof using Remix-IDE.
+**تبریک می‌گویم!** شما با موفقیت یک مدار Circom نوشته‌اید، آن را کامپایل کرده‌اید، یک تنظیم مطمئن انجام داده‌اید، یک شهود محاسبه کرده‌اید و با استفاده از Remix-IDE یک اثبات تولید کرده‌اید.
 
-## Additional Resources
+## منابع اضافی
 
- - [Circom Documentation](https://docs.circom.io/)
- - [Remix-IDE Documentation](https://remix-ide.readthedocs.io/)
- - [Zero-Knowledge Proofs Explained](https://zkproof.org/)
+ - [مستندات Circom](https://docs.circom.io/)
+ - [مستندات Remix-IDE](https://remix-ide.readthedocs.io/)
+ - [توضیحات درباره اثبات‌های بدون دانش](https://zkproof.org/)
 
-Feel free to experiment with more complex circuits and explore the capabilities of Circom and Remix-IDE further.
+با خیال راحت می‌توانید با مدارات پیچیده‌تر آزمایش کنید و قابلیت‌های Circom و Remix-IDE را بیشتر بررسی کنید.
