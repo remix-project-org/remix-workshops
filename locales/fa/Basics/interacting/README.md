@@ -1,19 +1,19 @@
-## Accessing functions in a deployed contract
+## دسترسی به توابع در یک قرارداد مستقر شده
 
-1. When a contract has been successfully deployed, it will appear at the bottom of the Deploy and Run plugin. Open up the contract by clicking the caret - so the caret points down.
-   ![deploy contract](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interacting/images/instance.png "deployed contract")
+1. زمانی که یک قرارداد با موفقیت مستقر شده باشد، در انتهای افزونه استقرار و اجرای قرارداد ظاهر خواهد شد. قرارداد را با کلیک بر روی علامت کوچک باز کنید - به طوری که علامت کوچک به سمت پایین اشاره کند.
+   ![به‌کارگیری](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interacting/images/instance.png "قرارداد مستقر شده")
 
-2. There are 2 functions in this contract.  To input the parameters individually, clicking the caret to the right of changeOwner (outlined in red below). In the expanded view, each parameter has its own input box.
+2. در این قرارداد ۲ تابع وجود دارد.  برای وارد کردن پارامترها به صورت جداگانه، بر روی علامت پیکان به سمت راست changeOwner (که در زیر با رنگ قرمز مشخص شده است) کلیک کنید. در نمای گسترش یافته، هر پارامتر جعبه ورودی مخصوص به خود را دارد.
 
-![deploy contract](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interacting/images/deployed_open2.png "deployed contract")
+![قرارداد مستقر شده](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interacting/images/deployed_open2.png "قرارداد مستقر شده")
 
-If this contract had imported other contracts, then the functions of the imported contracts would also be visible here.  At some point, try playing with An ERC20 contract to see all its many functions.
+اگر این قرارداد شامل قراردادهای دیگر شده باشد، آنگاه عملکردهای قراردادهای واردشده نیز در اینجا قابل مشاهده خواهد بود.  در یک مقطع، سعی کنید با یک قرارداد ERC20 بازی کنید تا تمامی عملکردهای متعدد آن را ببینید.
 
-3. Functions with blue buttons are either  **pure** or **view** functions.  This means that they are just reading a property or are returning a value.  In other words, they aren't saving anything - so they are FREE (they don’t cost gas).  Functions with other colors - usually orange (depending on the Remix theme) cost gas because they are saving information.  They are creating a **transaction**.
+3. توابعی که دکمه‌های آبی دارند، یا **خالص** هستند یا **نمایش**.  این به این معنی است که آنها فقط در حال خواندن یک ویژگی هستند یا یک مقدار را برمی گردانند.  این به این معنی است که آنها فقط در حال خواندن یک ویژگی(هستند یا) یک مقدار را برمی گردانند.  عملکردهایی با رنگ‌های دیگر - معمولاً نارنجی (بسته به تم Remix) هزینه گاز دارند زیرا اطلاعات را ذخیره می‌کنند.  آنها در حال ایجاد یک **معامله** هستند.
 
-4. 2_Owner.sol does not have a **payable** function.  If it did, the button's color would be red.  Payable functions allow you to send Ether to the function.  To send ETH with a payable function, you put the amount you want to send in the **value** field towards the top of the Deploy & Run module.
+4. فایل 2_Owner.sol تابع **قابل پرداخت** ندارد.  2_Ownersol یک تابع **قابل پرداخت** ندارداگر داشت، رنگ دکمه قرمز بود.  توابع قابل پرداخت به شما امکان می‌دهند تا اتر را به تابع ارسال کنید.  برای ارسال ETH با یک تابع پرداختی، مقدار مورد نظر خود را در قسمت **value** در بالای ماژول Deploy & Run وارد می‌کنید.
 
-5. In the Remix VM, you don't need to approve a transaction.  When using a more realistic test environment or when using the mainnet - you will need to approve the transactions for them to go through. Approving a transaction costs gas.
+5. در Remix VM، شما نیازی به تأیید یک تراکنش ندارید.  هنگام استفاده از یک محیط آزمایش واقعی‌تر یا هنگام استفاده از شبکه اصلی - شما باید تراکنش‌ها را تأیید کنید تا انجام شوند. تأیید یک تراکنش هزینه گاز دارد.
 
-6. Choosing a public network is not done in Remix but in your Browser Wallet.  There is a plug icon to the right of the Environment title that links to chainlist.org where you can get the specs of the chain you want to interact with.
-   ![chainlist](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interacting/images/chainlist.png "chainlist")
+6. انتخاب یک شبکه عمومی در ریمیکس انجام نمی‌شود بلکه در کیف پول مرورگر شما انجام می‌شود.  یک آیکون دوشاخه در سمت راست عنوان محیط وجود دارد که به chainlist.org لینک می‌شود، جایی که می‌توانید مشخصات زنجیره‌ای که می‌خواهید با آن تعامل کنید را بدست آورید.
+   ![زنجیره‌لیست](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interacting/images/chainlist.png "زنجیره‌لیست")
