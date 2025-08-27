@@ -1,52 +1,52 @@
-In this section, we'll explore the `IERC20` interface, a standard interface for interacting with ERC-20 tokens and the `IWETH` interface, a standard interface for interacting with wrapped Ether (WETH). Understanding these interfaces is crucial as it is used in the Uniswap V3 Swap contract to handle token transfers and approvals.
+در این بخش، ما به بررسی رابط `IERC20`، یک رابط استاندارد برای تعامل با توکن‌های ERC-20 و رابط `IWETH`، یک رابط استاندارد برای تعامل با اتر بسته‌بندی شده (WETH) می‌پردازیم. درک این رابط‌ها بسیار حیاتی است زیرا در قرارداد مبادله Uniswap V3 برای مدیریت انتقال توکن‌ها و تأییدیه‌ها استفاده می‌شود.
 
-You can find a "Solidity ERC20 Token Course" for beginners in LearnEth to understand the ERC20 token standard in more detail.
+شما می‌توانید دوره "توکن ERC20 Solidity" برای مبتدیان را در LearnEth بیابید تا استاندارد توکن ERC20 را به طور دقیق‌تری درک کنید.
 
-## IERC20 Interface
+## رابطه IERC20
 
-On line 80, we define the `IERC20` interface. This interface defines a standard set of functions that ERC-20 tokens must implement. Let's examine the key functions within this interface:
+در خط 80، ما رابط `IERC20` را تعریف می کنیم. این رابط مجموعه‌ای استاندارد از توابعی را تعیین می‌کند که توکن‌های ERC-20 باید پیاده‌سازی کنند. بیایید توابع کلیدی را در این رابط بررسی کنیم:
 
-### 1. totalSupply
+### 1. عرضه کل
 
-On line 81, we define the `totalSupply` function. This function returns the total supply of the token.
+در خط ۸۱، ما تابع `totalSupply` را تعریف می‌کنیم. این تابع مجموع عرضه توکن را برمی‌گرداند.
 
-### 2. balanceOf
+### 2. تعادل
 
-On line 83, we define the `balanceOf` function. This function returns the balance of the specified address.
+در خط ۸۳، ما تابع `balanceOf` را تعریف می‌کنیم. این تابع موجودی آدرس مشخص شده را باز می‌گرداند.
 
-### 3. transfer
+### 3. انتقال
 
-On line 85, we define the `transfer` function. This function transfers tokens from the sender to the specified recipient.
+در خط ۸۵، ما تابع `transfer` را تعریف می‌کنیم. این تابع توکن‌ها را از فرستنده به گیرنده مشخص شده انتقال می‌دهد.
 
-### 4. allowance
+### 4. حق‌الزحمه
 
-On line 87, we define the `allowance` function. This function returns the amount of tokens that the spender is allowed to spend on behalf of the owner.
+در خط 87، ما تابع `allowance` را تعریف می کنیم. این تابع مقدار توکن‌هایی را که خرج‌کننده مجاز به خرج کردن به نمایندگی از مالک است باز می‌گرداند.
 
-### 5. approve
+### 5. تأیید کردن
 
-On line 89, we define the `approve` function. When called, this function approves a spender to spend the specified amount of tokens on behalf of the sender.
+در خط ۸۹، ما تابع `approve` را تعریف می‌کنیم. هنگام فراخوانی، این تابع یک خرج کننده را برای خرج کردن مبلغ مشخصی از توکن‌ها به نمایندگی از فرستنده تأیید می‌کند.
 
-### 6. transferFrom
+### 6. انتقال از
 
-On line 91, we define the `transferFrom` function. This function transfers tokens from the specified sender to the recipient. The function can only be called by the spender if the spender is allowed to spend the specified amount of tokens on behalf of the sender.
+در خط 91، ما تابع `transferFrom` را تعریف می کنیم. این تابع توکن‌ها را از فرستنده مشخص شده به گیرنده انتقال می‌دهد. این تابع تنها می‌تواند توسط خرج‌کننده فراخوانی شود اگر خرج‌کننده مجاز باشد که مقدار مشخصی از توکن‌ها را به نمایندگی از فرستنده هزینه کند.
 
-### 7. Events
+### 7. رویدادها
 
-On lines 102-103, we define the `Transfer` and `Approval` events. These events are emitted when the `transfer` and `approve` functions are called, respectively.
+در خطوط ۱۰۲-۱۰۳، ما رویدادهای `انتقال` و `تأیید` را تعریف می‌کنیم. این رویدادها زمانی صادر می‌شوند که به ترتیب توابع `انتقال` و `تأیید` فراخوانی می‌شوند.
 
-## IWETH Interface
+## رابط IWETH
 
-On line 106, we define the `IWETH` interface. This interface extends the `IERC20` interface and defines two additional functions:
+در خط ۱۰۶، ما رابط `IWETH` را تعریف می‌کنیم. این رابط `IERC20` را گسترش می‌دهد و دو تابع اضافی را تعریف می‌کند:
 
-### 1. deposit
+### 1. سپرده
 
-On line 107, we define the `deposit` function. This function deposits ETH into the contract and returns the equivalent amount of WETH. This function is used to wrap ETH into WETH.
-We need to wrap ETH into WETH because the Uniswap V3 Swap contract only supports ERC-20 tokens.
+در خط 107، ما تابع `deposit` را تعریف می‌کنیم. این تابع ETH را به قرارداد واریز می‌کند و معادل آن مقدار WETH را برمی‌گرداند. این تابع برای تبدیل اتر (ETH) به اتر Wrapped (WETH) استفاده می‌شود.
+ما باید اتر را به WETH تبدیل کنیم زیرا قرارداد سواپ Uniswap V3 فقط از توکن‌های ERC-20 پشتیبانی می‌کند.
 
-### 2. withdraw
+### 2. عقب نشینی
 
-On line 109, we define the `withdraw` function. This function withdraws the specified amount of WETH from the contract and returns the equivalent amount of ETH. This function is used to unwrap WETH into ETH.
+در خط ۱۰۹، ما تابع `withdraw` را تعریف می‌کنیم. این تابع مقدار مشخصی از WETH را از قرارداد خارج کرده و معادل آن مقدار ETH را بازمی‌گرداند. این تابع برای باز کردن WETH به ETH استفاده می‌شود.
 
-## Conclusion
+## نتیجه گیری
 
-In this tutorial, we explored the Uniswap V3 Swap contract.  To get a full sense of how Uniswap works, try making some swaps on the <a href="https://app.uniswap.org/" target="_blank">Uniswap DApp</a> and go to the <a href="https://docs.uniswap.org/" target="_blank">Uniswap docs</a>.
+در این آموزش، قرارداد مبادله Uniswap V3 را بررسی کردیم.  برای درک کامل نحوه عملکرد یونی سواپ، سعی کنید چند مبادله در <a href="https://app.uniswap.org/" target="_blank">برنامه غیرمتمرکز یونی سواپ</a> انجام دهید و به <a href="https://docs.uniswap.org/" target="_blank">مدارک یونی سواپ</a> بروید.
