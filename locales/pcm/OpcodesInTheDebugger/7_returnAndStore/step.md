@@ -1,18 +1,17 @@
-# The Opcode RETURN
+# Opcode don come back
 
-At the end of the last chapter we had moved to one step after **CODECOPY** to see what happened in the memory.
+For the end of the chapter wey we jus finish, we dom carry another leg after **CODECOPY** make we fit see wetin sup for the memory.
 
-Now that CODECOPY has been executed, we are on the opcode `PUSH1 00`.
+Now wey CODECOPY don launch, we don dey opcode `PUSH1 00`.
 
-`PUSH1 00` prepares the stack for the `RETURN` opcode.
-`RETURN` is the last part of this process.  It is where the code is returned to the client.
+`PUSH1 00` dey prepare the stack for `RETURN` opcode.
+`RETURN` na the fina part for this process.  Na where dem dey return code to customer.
 
-We push `00` to the stack because this is the offset position of the contract bytecode in memory.
+We push `00` go stack becos na the position wey bytecode contract for memory no balance.
 
-Now we can call the all important `RETURN` opcode.
+Now we fit call `RETURN` opcode wey dey important.
 
-The **stack inspector** shows:
-`0: 0x0000000000000000000000000000000000000000000000000000000000000000`
+Return the **stack inspector** dey show: `0: 0x0000000000000000000000000000000000000000000000000000000000000000`
 `1: 0x000000000000000000000000000000000000000000000000000000000000003e`
 
-Which is to say it returns to the client the bytecode starting `0x00` with length `0x3e`.
+Wetin e mean na say e dey go back client di bytecode starting `0x00` wit length `0x3e`.
