@@ -1,26 +1,26 @@
-id: circom-intro
-name: Intro to Circom
-summary: A intro to using Circom for creating arithmetic circuits.
+id: معرفی سیرکوم
+name: مقدمه‌ای بر سیرکوم
+summary: مقدمه‌ای بر استفاده از Circom برای ایجاد مدارهای حسابی.
 level: 1
 tags:
-  - Circom
-  - Remix-IDE
+  - سیرکوم
+  - ریمیکس-آیدی ای دی
 steps:
   - 
-    name: Introduction
-    path: step-1
+    name: مقدمه
+    path: گام-۱
   - 
-    name: Installing the Circuit-Compiler
-    path: step-2
+    name: نصب کامپایلر مدار
+    path: گام-۲
   - 
-    name: Writing Your First Circom Circuit
-    path: step-3
+    name: نوشتن اولین مدار سیرکوم شما
+    path: گام-۳
   - 
-    name: Compiling the Circuit Using the Plugin
-    path: step-4
+    name: ترکیب مدار با استفاده از پلاگین
+    path: گام-۴
   - 
-    name: Performing a Trusted Setup
-    path: step-5
+    name: انجام یک راه‌اندازی اعتماد شده
+    path: گام-۵
   - 
     name: Computing the Witness
     path: step-6
