@@ -1,25 +1,25 @@
-In this step, we'll set up Remix for Circom development by activating the `Circom ZKP compiler` plugin.
+For this step, we go set up remix wey you go use develop circom by activating the `Circom ZKP compiler` plugin.
 
-## Activating the Circom ZKP compiler
+## How you go activate the circom zkp compiler
 
-1. At the bottom of the icon panel on the left of the screen, click on the **Plugin Manager** (the plug icon).
-   2.In the search bar, type **Circom**.
-2. Find the **Circuit Compiler** plugin in the list and click on the **Activate** button.
-3. The plugin will now appear in your sidebar.
+1. For the down of the icon panel wey dey the left of your screen, tap the plugin manager (the plug icon).
+   2.Type **Circom**, for d search bar.
+2. Mk u Find d **Circuit Compiler** plugin for d list and click ontop d **Activate** button.
+3. The plugin go con appear for yur sidebar.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-2/images/install_plugin.png" alt="install-plugin" width=200 height=475>
 
-## The Circom Compiler Interface
+## D Circom Compiler Interface
 
-- **Compiler Version Dropdown:** Select the Circom compiler version you wish to use.
-- **Auto Compile Checkbox:** Enable this to automatically compile your circuit whenever you make changes.
-- **Hide Warnings Checkbox:** Enable this to suppress compiler warnings.
-- **Advanced Configuration:** Click to expand options for selecting the prime field (e.g., BN128, BLS12381).
+- **Compiler Version Dropdown:** Select d Circom compiler version yu go like to use.
+- **Auto Compile Checkbox:** Make u enable am to fit automatically compile your circuit anytime you do changes.
+- **Hide Warnings Checkbox:** make yu enable am to fit suppress compiler warnings.
+- **Advanced Configuration:** Click am to expand options for selecting d prime field (e.g., BN128, BLS12381).
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-2/images/compiler_interface.png" alt="compiler-interface" width=300 height=300>
 
-With the plugin installed, you're now ready to start writing Circom code in Remix-IDE.
+After you don install the plugin, you don ready to start dey write circom code for remix-ide.
 
-**Note:** Make sure your internet connection is stable, as Remix-IDE is a web-based tool.
+Remember: make sure say your Internet connection dey stable, based on say remix-ide na web based tool.
 
-In the next step, we'll write our first Circom circuit.
+For the next step, we go write our first circom circuit.
