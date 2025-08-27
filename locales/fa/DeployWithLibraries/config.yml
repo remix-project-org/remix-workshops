@@ -1,7 +1,7 @@
 ---
-id: deploylibraries
-name: Deploy with Libraries
-summary: Write, Deploy and link a Library to a Contract
+id: کتابخانه‌های استقرار
+name: استقرار با کتابخانه‌ها
+summary: کتابی بنویسید، مستقر کنید و به یک قرارداد لینک کنید
 level: 3
 tags:
   - Remix
