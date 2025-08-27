@@ -1,9 +1,9 @@
 # Delegate call
 
-It's a special variant of a **message call**, which is identical to a message call apart from the fact that the code at the target address is executed in the context of the calling contract so **msg.sender** and **msg.value** do not change their values.
+این یک نوع خاص از **تماس پیام** است که مشابه تماس پیام است به جز اینکه کد در آدرس هدف در بافت قرارداد فراخوانی اجرا می‌شود، بنابراین **msg.sender** و **msg.value** مقادیر خود را تغییر نمی‌دهند.
 
-This means that a contract can dynamically load code from a different address at runtime.
+این به این معناست که یک قرارداد می‌تواند در زمان اجرا به طور دینامیک کد را از آدرس متفاوتی بارگذاری کند.
 
-The storage, the current address and balance still refer to the calling contract, only the code is taken from the called address.
+ذخیره، آدرس فعلی و موجودی هنوز به قرارداد فراخوانی اشاره می‌کند، تنها کد از آدرس فراخوانی شده گرفته شده است.
 
 So when a **Proxy** delegates calls to the Logic contract, every storage modification will impact the storage of Logic contract.
