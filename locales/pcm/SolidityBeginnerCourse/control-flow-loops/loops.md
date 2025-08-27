@@ -1,15 +1,15 @@
-Solidity supports iterative control flow statements that allow contracts to execute code repeatedly.
+Solidity fit support iterative control flow statementwey go allow contract to execute code repeatedly.
 
-Solidity differentiates between three types of loops: `for`, `while`, and `do while` loops.
+Solidity differentiates between di three types of loops: `for`, `while`, and `do while` loops.
 
 ### for
 
-Generally, `for` loops (line 7) are great if you know how many times you want to execute a certain block of code. In solidity, you should specify this amount to avoid transactions running out of gas and failing if the amount of iterations is too high.
+Generally `for` loops (line 7) dey great if u sabi how many times u want to execute a certain block of code. For solidity u fit specify dis amount to fit avoid transaction running out of gas and failing if di amount of iterations is too high.
 
-### while
+### na while
 
-If you don’t know how many times you want to execute the code but want to break the loop based on a condition, you can use a `while` loop (line 20).
-Loops are seldom used in Solidity since transactions might run out of gas and fail if there is no limit to the number of iterations that can occur.
+If u no know how many times u wan execute di code but wan break di loop based on a condition u fit use `while` loop (line 20).
+Loops dey seldom used for solidity since transactions fit run di gas and fail if dem no get limit of di number of iterations that can occur.
 
 ### do while
 
