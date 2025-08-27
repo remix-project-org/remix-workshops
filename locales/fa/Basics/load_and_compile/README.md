@@ -1,20 +1,20 @@
-Let's load a file from the File Explorer into the Editor.
+بیایید یک فایل را از مرورگر فایل به ویرایشگر بارگذاری کنیم.
 
-1. In the icon panel, click ![file explorer icon](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/load_and_compile/images/files1.png "file explorer icon") , the File Explorer's icon.
+1. در پانل آیکون، روی ![آیکون جستجوی فایل](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/load_and_compile/images/files1.png "آیکون جستجوی فایل") کلیک کنید، که آیکون مرورگر فایل است.
 
-2. Make sure you are in the **default_workspace**.
+2. مطمئن شوید که در **فضای کاری پیش‌فرض** هستید.
 
-![default workspace](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/load_and_compile/images/default_workspace_open.png)
+![فضای کار پیش‌فرض](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/load_and_compile/images/default_workspace_open.png)
 
-3. Open the contracts folder and click on **2_Owner.sol** in the contracts folder. Click it. The file will appear in a tab in the main panel.
+3. پوشه قراردادها را باز کنید و بر روی **2_Owner.sol** در پوشه قراردادها کلیک کنید. آن را کلیک کن. فایل در یک برگه در پنل اصلی ظاهر خواهد شد.
 
-4. In the icon panel, click the **Solidity Compiler** ![solidity compiler icon](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/load_and_compile/images/solidity1.png "solidity compiler icon"). The Solidity compiler should now be in the side panel.
+4. در پنل آیکون، روی **کامپایلر سالیدیتی** کلیک کنید ![آیکون کامپایلر سالیدیتی](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/load_and_compile/images/solidity1.png "آیکون کامپایلر سالیدیتی"). حالا کامپایلر Solidity باید در پانل کناری قرار داشته باشد.
 
-5. Click the compile button.
-   ![compile 2_owner](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/load_and_compile/images/compile2owner.png "compile 2_Owner")
+5. دکمه کامپایل را کلیک کنید.
+   ![کامپایل کردن](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/load_and_compile/images/compile2owner.png "کامپایل 2_مالک")
 
-6. Compiling can also be triggered by hitting **CTRL + S**.
+6. کامپایل کردن همچنین می‌تواند با فشار دادن **CTRL + S** آغاز شود.
 
-The spinner will turn while the file is compiling.
+اسپینر در حین کامپایل شدن فایل می‌چرخد.
 
-**Note:** The spinner also turns when the compiler itself is loading.  To choose a **different version of Solidity**, go to the select box at the top of the plugin.
+**توجه:** هنگامی که کامپایلر در حال بارگذاری است، اسپیندر نیز می‌چرخد.  برای انتخاب یک **نسخه متفاوت از سالیدیتی**، به کادر انتخاب در بالای افزونه بروید.
