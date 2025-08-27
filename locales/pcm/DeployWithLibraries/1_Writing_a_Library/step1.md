@@ -14,4 +14,4 @@ The library suppose get method wey dem dey call getFromlib pattern wey dey retur
 
 ---------
 
-You can find more info about libraries in <a href="https://solidity.readthedocs.io/en/latest/contracts.html?highlight=library#libraries" target="_blank">this section of the Solidity Docs</a>.
+You fi see more info about libraries for <a href="https://solidity.readthedocs.io/en/latest/contracts.html?highlight=library#libraries" target="_blank">this section of the Solidity Docs</a>.
