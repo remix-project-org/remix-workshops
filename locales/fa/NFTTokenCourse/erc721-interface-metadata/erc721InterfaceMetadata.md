@@ -6,39 +6,22 @@
 
 تابع `name` (خط 16) نام مجموعه توکن‌ها را برمی‌گرداند. یک مجموعه توکن به معنای تمام توکن‌هایی است که با پیاده‌سازی قرارداد توکن ERC721 شما ایجاد شده‌اند. هر توکن در این مجموعه این نام را خواهد داشت، صرف نظر از tokenId آن.
 
-### symbol
+### نماد
 
-The function `symbol` (line 21) returns the symbol of the token collection.
+تابع `symbol` (خط 21) نماد مجموعه توکن را برمی‌گرداند.
 
-### tokenURI
+### توکن
 
-The function `tokenURI` (line 26) returns the URI for the token with the id `tokenId`. In this case it’s not the URI of the whole collection but of an individual token in the collection.
+تابع `tokenURI` (خط 26) URI مربوط به توکن با شناسه `tokenId` را بازمی‌گرداند. در این مورد، این آدرس URI مربوط به کل مجموعه نیست بلکه مربوط به یک توکن فردی در مجموعه است.
 
-## ERC721 Metadata JSON Schema
+## اسکیمای متادیتای ERC721
 
-The file that the tokenURI points to should conform to the Metadata JSON Schema as it is specified in the <a href="https://eips.ethereum.org/EIPS/eip-721#specification" target="_blank">EIP-721</a>.
+فایلی که tokenURI به آن اشاره می‌کند باید به استاندارد JSON Schema متادیتا مطابق با مشخصات <a href="https://eips.ethereum.org/EIPS/eip-721#specification" target="_blank">EIP-721</a> باشد.
 
 ```
-{
-    "title": "Asset Metadata",
-    "type": "object",
-    "properties": {
-        "name": {
-            "type": "string",
-            "description": "Identifies the asset to which this NFT represents"
-        },
-        "description": {
-            "type": "string",
-            "description": "Describes the asset to which this NFT represents"
-        },
-        "image": {
-            "type": "string",
-            "description": "A URI pointing to a resource with mime type image/* representing the asset to which this NFT represents. Consider making any images at a width between 320 and 1080 pixels and aspect ratio between 1.91:1 and 4:5 inclusive."
-        }
-    }
-}
+{"title": "متادیتای دارایی","type": "اشیاء","properties": {"name": {"type": "رشته","description": "دارایی را که این NFT نشان می‌دهد شناسایی می‌کند"},"description": {"type": "رشته","description": "دارایی را که این NFT نشان می‌دهد توصیف می‌کند"},"image": {"type": "رشته","description": "یک URI که به یک منبع با نوع میم تصویر/* که دارایی را که این NFT نشان می‌دهد اشاره می‌کند. در نظر بگیرید که هر تصویر را با عرض بین 320 تا 1080 پیکسل و نسبت ابعاد بین 1.91:1 و 4:5 شامل کنید."}}}
 ```
 
-The root element must be of the type object. This root object should have properties with the keys: name, description, and image that should be all of the type string.
+عنصر ریشه باید از نوع شیء باشد. این شیء اصلی باید دارای ویژگی‌هایی با کلیدهای: نام، توضیحات و تصویر باشد که همگی از نوع رشته باشند.
 
-The ERC721 standard is pretty flexible, the tokenURI does not need to point to a JSON document and the JSON does not need to have all properties and often has additional properties.
+استاندارد ERC721 نسبتاً انعطاف‌پذیر است، tokenURI نیازی به اشاره به یک سند JSON ندارد و JSON نیازی به داشتن تمام مشخصات ندارد و اغلب شامل مشخصات اضافی است.
