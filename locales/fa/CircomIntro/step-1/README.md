@@ -1,13 +1,13 @@
-Welcome to this beginner-level tutorial on Circom using Remix. In this tutorial, you'll learn the basics of Circom, a domain-specific language used for creating arithmetic circuits.
+به این آموزش سطح مبتدی درباره Circom با استفاده از Remix خوش آمدید. در این آموزش، شما اصول اولیه Circom، یک زبان خاص دامنه برای ایجاد مدارهای حسابی را یاد خواهید گرفت.
 
-**What is Circom?**
+**سیرکام چیست؟**
 
-Circom is a language designed for writing arithmetic circuits that can be used in zero-knowledge proofs, particularly zk-SNARKs. It allows developers to define complex mathematical circuits that can prove knowledge of certain data without revealing it.
+Circom زبانی است که برای نوشتن مدارهای عددی طراحی شده است که می‌توان از آنها در اثبات‌های بدون دانش، به‌خصوص zk-SNARKها، استفاده کرد. این امکان را به توسعه‌دهندگان می‌دهد که مدارهای ریاضی پیچیده‌ای تعریف کنند که می‌توانند دانش از داده‌های خاصی را ثابت کنند بدون اینکه آن را فاش کنند.
 
-**Why Use Remix-IDE for Circom?**
+**چرا از Remix-IDE برای Circom استفاده کنیم؟**
 
-- **Ease of Use:** Remix-IDE provides a user-friendly interface that simplifies the development process.
-- **Integrated Tools:** With plugins like `circuit-compiler`, you can compile Circom code, perform trusted setups, compute witnesses, and generate proofs all within the same environment.
-- **No Installation Required:** As a web-based IDE, you can start coding immediately without setting up a local development environment.
+- **سادگی استفاده:** Remix-IDE یک رابط کاربری دوستانه ارائه می‌دهد که روند توسعه را ساده می‌کند.
+- **ابزارهای یکپارچه:** با افزونه‌هایی مانند `circuit-compiler`، می‌توانید کد Circom را کامپایل کنید، راه‌اندازی‌های مورد اعتماد انجام دهید، گواهی‌ها را محاسبه کنید و تمام این فرآیندها را در یک محیط واحد انجام دهید.
+- **نیاز به نصب نیست:** به عنوان یک IDE مبتنی بر وب، شما می‌توانید بلافاصله کدنویسی را آغاز کنید بدون اینکه نیاز به تنظیم محیط توسعه محلی داشته باشید.
 
-In the next steps, we'll guide you through setting up Remix-IDE for Circom development and help you write your first circuit.
+در مراحل بعدی، ما شما را در راه‌اندازی Remix-IDE برای توسعه Circom راهنمایی می‌کنیم و به شما در نوشتن اولین مدار خود کمک خواهیم کرد.
