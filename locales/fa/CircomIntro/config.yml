@@ -22,8 +22,8 @@ steps:
     name: انجام یک راه‌اندازی اعتماد شده
     path: گام-۵
   - 
-    name: Computing the Witness
-    path: step-6
+    name: محاسبه شاهد
+    path: گام-۶
   - 
-    name: Generating the Proof
-    path: step-7
+    name: ایجاد اثبات
+    path: گام-۷
