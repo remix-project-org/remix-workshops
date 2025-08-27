@@ -1,39 +1,39 @@
-At this point we have gone over an example of how to send a general message between one blockchain to another. Now, let's implement a contract that sends a message and a token from one blockchain to another.
+در این مرحله، ما مثالی از نحوه ارسال یک پیام عمومی بین یک بلاکچین به بلاکچین دیگر را بررسی کردیم. حال، بیایید قراردادی را پیاده‌سازی کنیم که یک پیام و یک توکن را از یک بلاکچین به بلاکچین دیگر ارسال کند.
 
-## Overview
+## نمای کلی
 
-This contract should seem largely familiar. Much like the previous section the `constructor` receives the `Gateway` and `Gas Service` addresses.
+این قرارداد باید تا حد زیادی آشنا به نظر برسد. بسیار شبیه به بخش قبلی، «سازنده» آدرس‌های «دروازه» و «سرویس گاز» را دریافت می‌کند.
 
-It then has a function that will be called from the source chain called `sendToMany` that takes in parameters similar to the previous section.
+سپس تابعی به نام `sendToMany` دارد که از زنجیره منبع فراخوانی می‌شود و پارامترهایی مشابه بخش قبل را دریافت می‌کند.
 
-1. `_destinationChain`: The chain the transaction is sending to
-2. `_destinationAddress`: The address on the destination chain your transaction is sending to
-3. `_destinationAddresses`: The message that you will be sending along with your token transfer. In this example the message is a list of receiving addresses for the token transfer.
-4. `_symbol`: The symbol of the token address being sent
-5. `_amount`: The amount of the token being sent
+1. `_destinationChain`: زنجیره‌ای که تراکنش به آن ارسال می‌شود
+2. `_destinationAddress`: آدرسی در زنجیره مقصد که تراکنش شما به آن ارسال می‌شود
+3. `_destinationAddresses`: پیامی که همراه با انتقال توکن خود ارسال خواهید کرد. در این مثال، پیام، فهرستی از آدرس‌های دریافت‌کننده برای انتقال توکن است.
+4. `_symbol`: نماد آدرس توکن ارسالی
+5. `_amount`: مقدار توکنی که ارسال می‌شود
 
-In the function we already have the `require` statement implemented to ensure gas is sent
+در تابع، ما از قبل دستور `require` را برای اطمینان از ارسال گاز پیاده‌سازی کرده‌ایم
 
-We also have the basic ERC20 functionality to send the token from the calling wallet to this smart contract. The contract also calls the `approve` function to allow the Gateway to eventually transfer funds on its behalf.
+ما همچنین قابلیت پایه ERC20 را برای ارسال توکن از کیف پول فراخوان به این قرارداد هوشمند داریم. این قرارداد همچنین تابع «تأیید» را فراخوانی می‌کند تا به Gateway اجازه دهد در نهایت از طرف آن وجه منتقل کند.
 
-Finally, the `_executeWithToken()` function is also implemented out of the box.
+در نهایت، تابع `_executeWithToken()` نیز به صورت پیش‌فرض پیاده‌سازی شده است.
 
-It makes use of the following params:
+از پارامترهای زیر استفاده می‌کند:
 
-1. `_payload`: The incoming message from the source chain
-2. `_tokenSymbol`: The symbol of the token that was sent from the source chain
-3. `_amount`: The amount of the token that was sent from the source chain
+1. `_payload`: پیام ورودی از زنجیره منبع
+2. `_tokenSymbol`: نماد توکنی که از زنجیره منبع ارسال شده است
+3. `_amount`: مقدار توکنی که از زنجیره منبع ارسال شده است
 
-Now with these params that were passed in, the `_execute()` function can send the tokens that were sent to the appropriate receivers.
+اکنون با این پارامترهایی که ارسال شده‌اند، تابع `_execute()` می‌تواند توکن‌هایی را که به گیرنده‌های مناسب ارسال شده‌اند، ارسال کند.
 
-## Challenge
+## چالش
 
-Your challenge here is to finish off the `sendToMany()` function using the Axelar Gateway and Gas Service to trigger an interchain transaction.
+چالش شما در اینجا این است که تابع `sendToMany()` را با استفاده از دروازه Axelar و سرویس Gas برای ایجاد یک تراکنش بین زنجیره‌ای به پایان برسانید.
 
-In the end you should be able to deploy this contract on two testnets, trigger the `sendToMany()` function and see the live transaction on <a href="https://testnet.axelarscan.io" target="_blank">Axelarscan (testnet) block explorer</a>.
+در نهایت شما باید بتوانید این قرارداد را روی دو شبکه آزمایشی مستقر کنید، تابع `sendToMany()` را فعال کنید و تراکنش زنده را در <a href="https://testnet.axelarscan.io" target="_blank">کاوشگر بلوک Axelarscan (شبکه آزمایشی)</a> مشاهده کنید.
 
-### Testing Notes
+### یادداشت های آزمایشی
 
-Note 1: The recommended ERC20 to use is `aUSDC` a wrapped version of the USDC token that can be obtained from <a href= "https://docs.axelar.dev/resources/rpc/resources" target="_blank">the discord faucet bot</a>. When triggering the `sendToMany()` function simply pass in the symbol `aUSDC` to the fourth param.
+نکته ۱: ERC20 پیشنهادی برای استفاده، «aUSDC» است، یک نسخه پیچیده شده از توکن USDC که می‌توان آن را از <a href= "https://docs.axelar.dev/resources/rpc/resources" target="_blank">ربات دیسکورد فاست</a> دریافت کرد. هنگام فعال‌سازی تابع `sendToMany()`، کافیست نماد `aUSDC` را به پارامتر چهارم ارسال کنید.
 
 Note2: When triggering the `sendToMany()` function you must remember to `approve` your contract to spend `aUSDC` tokens on your behalf, otherwise `transferFrom()` on line49 will throw an error.
