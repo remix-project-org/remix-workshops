@@ -1,34 +1,34 @@
-With your `multiplier.circom` circuit ready, let's compile it using the Circuit Compiler plugin.
+با مدار `multiplier.circom` خود آماده، بیایید آن را با استفاده از افزونه کامپایلر مدار کامپایل کنیم.
 
-## Selecting the Compiler Version
+## انتخاب نسخه کامپایلر
 
-Choose the desired **Compiler Version** from the dropdown menu. For this tutorial, select the latest stable version.
+نسخه **کامپایلر** مورد نظر را از منوی کشویی انتخاب کنید. برای این آموزش، آخرین نسخه پایدار را انتخاب کنید.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-4/images/select_compiler_version.png" alt="select-compiler-version" width=250 height=100>
 
-## Configuring Compilation Options
+## پیکربندی گزینه‌های کامپایل
 
-- **Auto Compile:** You can enable this option to automatically compile your circuit whenever you save changes.
-- **Hide Warnings:** Enable this to suppress compiler warnings if any.
-- **Advanced Configuration:**
-  - Click to expand.
-  - Select the **Prime Field**. For most cases, `BN128` is sufficient.
+- **کامپایل خودکار:** می‌توانید این گزینه را فعال کنید تا هر بار که تغییراتی ذخیره می‌کنید، مدار شما به طور خودکار کامپایل شود.
+- **هشدارها را مخفی کنید:** این گزینه را فعال کنید تا در صورت وجود، هشدارهای کامپایلر نادیده گرفته شوند.
+- **پیکربندی پیشرفته:**
+  - برای گسترش کلیک کنید.
+  - رشته‌ی اول را انتخاب کنید. برای بیشتر موارد، `BN128` کافی است.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-4/images/advanced_configuration.png" alt="advanced-configuration" width=300 height=100>
 
-## Compiling the Circuit
+## تجمیع مدار
 
-1. Click on the **Compile** button.
-2. The compiler will process your circuit.
-3. If successful, you'll see a compilation success message.
+1. بر روی دکمه **کامپایل** کلیک کنید.
+2. کامپایلر مدار شما را پردازش خواهد کرد.
+3. اگر موفق باشید، پیامی مبنی بر موفقیت کامپایل را مشاهده خواهید کرد.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-4/images/compilation_success.png" alt="compilation-success" width=200 height=400>
 
-**Note:** If there are any errors, they will be displayed in the console. Check your code for typos or syntax errors.
+**توجه:** اگر خطاهایی وجود داشته باشد، در کنسول نمایش داده خواهند شد. کد خود را برای غلط‌های املایی یا خطاهای نحوی بررسی کنید.
 
-## Understanding the Compilation Output
+## درک خروجی کامپایل
 
-- After successful compilation, the **Setup and Exports** section becomes visible.
-- You can proceed to the next step to perform a trusted setup.
+- پس از موفقیت در کامپایل، بخش **نصب و صادرات** قابل مشاهده می‌شود.
+- شما می‌توانید به مرحله بعدی بروید تا یک تنظیم مطمئن انجام دهید.
 
-In the next step, we'll perform a trusted setup using the compiled circuit.
+در مرحله بعد، ما یک تنظیم مطمئن با استفاده از مدار کامپایل شده انجام خواهیم داد.
