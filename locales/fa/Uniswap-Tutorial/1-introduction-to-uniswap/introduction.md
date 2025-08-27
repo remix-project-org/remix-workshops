@@ -1,47 +1,47 @@
-In this tutorial, we'll explore the Uniswap V3 Swap contract to learn about how single-hop and multi-hop swaps work.
+در این آموزش، ما به قرارداد سوآپ Uniswap V3 خواهیم پرداخت تا درباره نحوه عملکرد سوآپ‌های یک پرش و چند پرش یاد بگیریم.
 
-But first, some Uniswap fundamentals.
+اما ابتدا، برخی اصول اولیه یونی سواپ.
 
-## What is Uniswap?
+## یونی سواپ چیست؟
 
-Uniswap is a decentralized cryptocurrency exchange. It allows users to exchange tokens without the need for a centralized intermediary. Uniswap is a key player in the decentralized finance (DeFi) space.
+یونی سواپ یک صرافی ارزهای دیجیتال غیرمتمرکز است. این به کاربران این امکان را می‌دهد که توکن‌ها را بدون نیاز به واسطه مرکزی تبادل کنند. یونی سواپ یک عامل کلیدی در فضای مالی غیرمتمرکز (دیفای) است.
 
-## How does Uniswap work?
+## یونی سواپ چگونه کار می‌کند؟
 
-Instead of using an order book like a traditional centralized exchange, Uniswap uses an automated market maker (AMM) model. In Uniswap, the AMM is a smart contract that holds reserves of tokens (Liquidity Pool). Users can trade between tokens in the Liquidity Pool. The price of each token is determined by the ratio of the reserves.
+به جای استفاده از کتاب سفارش مانند یک صرافی متمرکز سنتی، یونی‌سواپ از مدل سازنده بازار خودکار (AMM) استفاده می‌کند. به جای استفاده از کتاب سفارش مانند یک صرافی متمرکز سنتی، یونی‌سواپ از مدل سازنده بازار خودکار (AMM) استفاده می‌کند. کاربران می‌توانند بین توکن‌ها در استخر نقدینگی تجارت کنند. قیمت هر توکن بر اساس نسبت ذخایر تعیین می‌شود.
 
-### Step-by-step example of a Uniswap trade
+### نمونه‌ای گام به گام از یک معامله در یونی‌سواپ
 
-1. Alice wants to trade 1 ETH for DAI.
-2. Alice sends 1 ETH to the Uniswap smart contract.
-3. The Uniswap smart contract calculates the amount of DAI that Alice should receive based on the current exchange rate.
-4. The Uniswap smart contract sends the DAI to Alice.
-5. The Uniswap smart contract adds the 1 ETH to its reserves.
-6. The Uniswap smart contract recalculates the exchange rate based on the new reserves.
+1. الیس می‌خواهد 1 ETH را به DAI معامله کند.
+2. آلیس ۱ اتر به قرارداد هوشمند یونی سواپ ارسال می‌کند.
+3. قرارداد هوشمند یونی‌سواپ مقدار دای که آلیس باید دریافت کند را بر اساس نرخ تبدیل فعلی محاسبه می‌کند.
+4. قرارداد هوشمند یونی سواپ DAI را به آلیس ارسال می‌کند.
+5. قرارداد هوشمند یونی‌سواپ ۱ اتر را به ذخایر خود اضافه می‌کند.
+6. قرارداد هوشمند یونی‌سواپ نرخ تبادل را بر اساس ذخایر جدید محاسبه مجدد می‌کند.
 
-The tokens in the Liquidity Pool are provided by Liquidity Providers. When a Liquidity Provider deposits tokens into a Liquidity Pool, they receive Liquidity Provider Tokens in return. Liquidity Provider Tokens represent a user's share of a Liquidity Pool.
+توکن‌های موجود در استخر نقدینگی توسط تامین‌کنندگان نقدینگی ارائه می‌شوند. زمانی که یک ارائه‌دهنده نقدینگی توکن‌ها را به یک استخر نقدینگی واریز می‌کند، به‌عنوان مقابل توکن‌های ارائه‌دهنده نقدینگی دریافت می‌کند. توکن‌های تأمین کنندگان نقدینگی نمایانگر سهم یک کاربر از یک استخر نقدینگی هستند.
 
-Users of Uniswap pay a fee for each trade. The fee is paid to the Liquidity Providers in the form of additional Liquidity Provider Tokens.
+کاربران یونی سواپ برای هر معامله هزینه ای پرداخت می کنند. حق‌الزحمه به تأمین‌کنندگان نقدینگی به صورت توکن‌های اضافی تأمین‌کننده نقدینگی پرداخت می‌شود.
 
-## Uniswap Swap Contract
+## قرارداد مبادله یونی سواپ
 
-The Uniswap Swap contract allows users to swap tokens using Uniswap V3. It can do single-hop swaps, which allow users to exchange one token for another directly. It can also do multi-hop swaps, which means that users can exchange one token for another by routing through multiple tokens. Routing in this context means that the swap contract will exchange the token for another token, then exchange that token for another token, and so on until it reaches the desired token.
+قرارداد سواپ یونی‌سواپ به کاربران این امکان را می‌دهد که با استفاده از یونی‌سواپ V3 توکن‌ها را مبادله کنند. این امکان وجود دارد که تبادل‌های تک‌پرشی انجام دهد، که به کاربران این اجازه را می‌دهد که یک توکن را به طور مستقیم با توکن دیگری تعویض کنند. این همچنین می‌تواند مبادلات چند مرحله‌ای را انجام دهد، به این معنی که کاربران می‌توانند یک توکن را برای توکن دیگری با عبور از چندین توکن مبادله کنند. در این زمینه، مسیریابی به این معنی است که قرارداد مبادله توکن را با توکن دیگری مبادله می‌کند، سپس آن توکن را با توکن دیگری تبادل می‌کند و به همین ترتیب ادامه می‌دهد تا به توکن مورد نظر برسد.
 
-## Conclusion
+## نتیجه گیری
 
-In this section, we learned about Uniswap, how it works, and how we are going to use it to swap tokens.
+در این بخش، ما درباره یونی سواپ، چگونگی کارکرد آن و چگونگی استفاده از آن برای تعویض توکن ها یاد گرفتیم.
 
-## ⭐️ Assignment: Multiple Choice Test
+## ⭐️ تکلیف: آزمون چند گزینه‌ای
 
-### 1. What is Uniswap?
+### 1. یونی سواپ چیست؟
 
-1. A centralized exchange protocol.
-2. A decentralized exchange protocol that uses an order book.
-3. A decentralized exchange protocol that uses an automated market maker (AMM) model.
-4. A decentralized exchange protocol that uses an order book and an automated market maker (AMM) model.
+1. یک پروتکل صرافی متمرکز.
+2. یک پروتکل تبادل غیرمتمرکز که از دفتر سفارش استفاده می‌کند.
+3. یک پروتکل صرافی غیرمتمرکز که از مدل سازنده بازار خودکار (AMM) استفاده می‌کند.
+4. پروتکل صرافی غیرمتمرکز که از دفتر سفارش و مدل سازنده بازار خودکار (AMM) استفاده می‌کند.
 
-### 2) How does Uniswap determine the price of a token?
+### 2) یونی سواپ چگونه قیمت یک توکن را تعیین می‌کند؟
 
-1. The price of a token is determined by the ratio of the reserves.
-2. The price of a token is determined by the ratio of the reserves and the number of trades.
-3. The price of a token is determined by the ratio of the reserves and the number of Liquidity Providers.
+1. قیمت یک توکن بر اساس نسبت ذخایر تعیین می‌شود.
+2. قیمت یک توکن توسط نسبت ذخایر و تعداد معاملات تعیین می‌شود.
+3. قیمت یک توکن بر اساس نسبت ذخایر و تعداد ارائه‌دهندگان نقدینگی تعیین می‌شود.
