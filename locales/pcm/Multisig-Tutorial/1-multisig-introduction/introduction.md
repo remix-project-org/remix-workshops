@@ -1,10 +1,10 @@
-Welcome to the Multisignature Wallet course! In this section, we'll explore the fundamentals of Multisignature (Multisig) wallets and we'll go through a multisig wallet contract.
+U dey welcome to de Multisignature Wallet course! For dis section we go exploy de fundamental of Multisignature (Multisig) wallet and we go go multisiq wallet contract.
 
-## What is a Multisignature Wallet?
+## Wetin be Multisignature Wallet?
 
-A multisignature (multisig) wallet is a type of digital wallet that requires multiple keys to authorize a cryptocurrency transaction.
+Multisignatur (multisig) wallet ma a type if digital wallet wey require plenty keys to te authorize transaction for cryptocurrency.
 
-Imagine a multisig wallet as a secure vault with multiple locks. To open the vault, each keyholder must open their individual lock. This setup ensures that no single person can access the vault's contents without the others' consent.
+Emagine multisig wey be like secure vault wit plenty locks. To tey open de vault one one key ho; der must open dier individual locks. This setup ensures that no single person can access the vault's contents without the others' consent.
 
 ## How Does a Multisig Wallet Work?
 
@@ -38,4 +38,4 @@ In this section, we learned that a multisig wallet requires multiple keys to aut
 3. By storing transaction data on-chain.
 4. None of the above.
 
-Feel free to take your time and answer the questions above. Once you're ready, we'll move on to exploring the Multisig smart contract and understanding its structure.
+E dey okay to take ur time anser de kwestion wey dey up. Omce u dey ready we go move to dey exploy de multisig smart contrct and understanding im structure.
