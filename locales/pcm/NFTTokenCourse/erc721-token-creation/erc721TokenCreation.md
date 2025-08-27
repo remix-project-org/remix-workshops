@@ -2,13 +2,13 @@ For dis contract we go use ERC20 token contract implementation from openzepplin 
 
 U go look dier implementation of a<a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol" target="_blank">ERC721 contract</a>. Apart from di functionality specified in di ERC20 standard dis contract provides additional functionality.
 
-## myToken
+## my Token
 
-We create our own contract called MyToken (line 7), which inherits (line 7) the functionality from the OpenZepplin `ERC721` token contract implementation and `Ownable` that we imported (line 4). If you don't remember the Ownable contract module, have a look at the ERC20 extensions section.
+We fit still create our own contract called MY TOKEN (line 6), which inherits the functionality from the OpenZepplin ERC20 token contract implementation that we imported (line 4). If you don't remember the Ownable contract module, have a look at the ERC20 extensions section.
 
 This ERC721 implementation makes use of the IERC721Metadata extension that is specified in the EIP. Our contract inherits the functions `name()` and `symbol()`
 and has a constructor that allows their values to be set during the deployment of the contract (line 8).
-In this case, we are going to use the default values. We name our token the same as the contract `"MyToken"` and make `"MTK"` its symbol.
+In this case, we are going to use the default values. We fit call our token di same as di contract `"MyToken"` and make `"MTK"` its symbol.
 
 ### Base URI
 
