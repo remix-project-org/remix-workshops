@@ -26,4 +26,4 @@ Esta función le permite pagar por la totalidad de una transacción intercadena 
 6. "amount": La cantidad del token que se envió
 7. `refundAddress`: La dirección de cualquier reembolso debería ser enviada a si se envió demasiado gas junto con esta transacción.
 
-This function is nearly identical to the first top one the main difference being that it is used for message + token transfer transactions as opposed to just interchain message transactions (aka GMP Transactions). Como resultado, GasService también necesita conocer el `symbol` y `amount` del token que se está enviando.
+Esta función es casi idéntica a la primera superior, la principal diferencia es que se utiliza para transacciones de transferencia de mensajes + tokens en lugar de solo transacciones de mensajes entre cadenas (también conocidas como Transacciones GMP). Como resultado, GasService también necesita conocer el `symbol` y `amount` del token que se está enviando.
