@@ -10,14 +10,14 @@ The **default_workspace** has three Solidity (.sol) files in the contracts folde
 
 But Workspaces are not only for templates. When cloning a repo into Remix, the files will be put into a Workspace.
 
-Let's create a new Workspace
+Creiamo un nuovo Workspace
 
-1. At the top of the File Explorer, click the hamburger icon (the 3 horizontal lines). Read through the commands and tools in this menu.
+1. In cima al File Explorer, clicca sull’icona hamburger (le 3 linee orizzontali). Leggi i comandi e gli strumenti in questo menu.
 
-2. Select **+ Create** (the first choice).
+2. Seleziona \*_+ Create_ (la prima scelta).
 
-3. In the modal the comes up, choose one of the templates.
+3. Nella finestra che appare, scegli uno dei template.
 
 ![hamburger](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/workspaces/images/popup.png)
 
-Notice that in this popup menu, you can clone a repo. Managing a Git repo happens in the DGit plugin. You can also create Github actions with the three workflow choices in the popup menu.
+Nota che in questo menu popup puoi clonare un repo. La gestione di un repo Git avviene nel plugin DGit. Puoi anche creare Github Actions con le tre scelte di workflow nel menu popup.
