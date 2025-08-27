@@ -2,13 +2,13 @@ Dem get three different types of variables for solidity _State Variables_, _Loca
 
 ## na 1. De State Variables
 
-_State Variables_ dey stored for di contract _storage_ and thereby on the blockchain. They are declared inside the contract but outside the function.
-This contract has two state variables, the string `text`(line 6) and the uint `num` (line 7).
+_State Variables_ dey stored for di contract _storage_ and thereby on the blockchain. They don declared for inside say di contract but outside di function.
+Dis contract get two state variables, using di string `text`(line 6) and the uint `num` (line 7).
 
-## 2. Local Variables
+## dis na 2. Di local variables
 
-_Local Variables_ are stored in the _memory_ and their values are only accessible within the function they are defined in. Local Variables are not stored on the blockchain.
-In this contract, the uint `i` (line 11) is a local variable.
+_di local variables_dem store am for di _memory_ and thier values are only accessible within di function dem don define in. Dis local Variables dem no stored am for di blockchain.
+Dis contract di uint `i` (line 11) is a local variable.
 
 ## na 3. Di Global Variables
 
