@@ -34,14 +34,13 @@ Contract wey make sense must implement de ERC721TokenReciever Interface na to co
 
 De function transferFrom (line 55) tranfer de ownership of token wey get de id tokenld from de account wey get de address from to de account wit de adress to.
 
-**It is recommended to use safeTransferFrom instead of transferFrom whenever possible.**
-The `transferFrom` function is not secure because it doesn’t check if the smart contract that is the recipient of the transfer has implemented the ERC721TokenReceiver interface and is capable of handling ERC721 tokens.
+**E go dey best if u use safeTransferFrom instead of transferFrom whenever e dey possible** The `transferFrom` function no dey secure because e no dey check if the smart contract wey the recipient of the transfer don implement the ERC721 TokenReceiver interface and if e fit handle ERC721 tokens.
 
 ## Advanced IERC721 Functions
 
 ### approve
 
-The function `approve` (line 94) gives the account with the address `to` the permission to manage the token with the id `tokenId` on behalf of the account calling the function.
+Di function dey approve (line 94) dey give di akant wit di address to di permission to fit manage di token wit di I'd tokenld on behalf of di akant wey dey call di function.
 
 ### getApproved
 
@@ -65,9 +64,9 @@ The `Transfer` event (line 15) must be emitted when the token with the id `token
 
 ### Approval
 
-The `Approval` event (line 20) must be emitted when the account with the address `owner` approves the account with the address `spender` to manage the token with the id `tokenId` on its behalf.
+The `Approval` event (line 20) gats dey emitted when the account wey get the address `owner` approves the account wey get the address `spender` to manage the token with the id `tokenId` on him behalf.
 
-### ApprovalForAll
+### Approval for everybody
 
 The `ApprovalForAll` event (line 25) must be emitted when the account with the address `owner` gives or removes the permission (`_approved`) of the account with the address `operator` to manage all its tokens.
 
@@ -87,7 +86,7 @@ interface IERC165 {
 }
 ```
 
-For example, the ERC165 identifier for the ERC721 interface as specified in the EIP721 is “0x80ac58cd”. Learn how to calculate an interface identifier and more about the ERC165 in its <a href="https://eips.ethereum.org/EIPS/eip-165" target="_blank">improvement proposal</a>.
+For example, the ERC165 identifier for the ERC721 interface as specified in the EIP721 is “0x80ac58cd”. Sabi how to calculate an interface identifier and more about the ERC165 in its <a href="https://eips.ethereum.org/EIPS/eip-165" target="_blank">improvement proposal</a>.
 
 ## Other interfaces
 
