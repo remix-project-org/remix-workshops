@@ -1,15 +1,15 @@
-Let's write a simple Circom circuit.
+让我们编写一个简单的 Circom 电路。
 
-## Creating a New Circuit File
+## 创建一个新的电路文件。
 
-1. In the **File Explorer** on the left sidebar, click on the **Create New File** icon.
-2. Name your file `multiplier.circom` and press **Enter**.
+1. 在左侧边栏的 **文件资源管理器** 中，点击 **创建新文件** 图标。
+2. 将文件命名为 `multiplier.circom`，然后按 **Enter** 键。
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-3/images/create_new_file.png" alt="create-new-file" width=300 height=200>
 
-## Writing the Circuit
+## 编写电路
 
-Open `multiplier.circom` and add the following code:
+打开 `multiplier.circom` 文件并添加以下代码：
 
 ```circom
 pragma circom 2.0.0;
@@ -21,18 +21,18 @@ template Multiplier() {
 
     c <== a * b;
 }
-
-component main = Multiplier();
 ```
 
-## Explanation:
+## 拆解：
 
- - template `Multiplier()`: Defines a new circuit template called Multiplier.
- - `signal input a;` and `signal input b;`: Declare input signals a and b.
- - `signal output c;`: Declare an output signal c.
- - `c <== a * b;`: Constrain c to be the product of a and b.
- - `component main = Multiplier();`: Instantiates the Multiplier circuit as main, which is required for the compiler.
+- 模板 `Multiplier()`：定义了一个名为 Multiplier 的新电路模板。
+- `signal input a;` 和 `signal input b;`：声明输入信号 `a` 和 `b`。
+- `signal output c;`：声明一个输出信号 `c`。
+- `c <== a * b;`：将 `c` 限制为 `a` 和 `b` 的乘积。
+- `component main = Multiplier();`：实例化 `Multiplier` 电路为 `main`，这是编译器所需的。
 
-### NB:
+### 注意;
 
-Signals are values in a cryptographic circuit that are strictly determined by the circuit's equations and constraints. Think of a signal as a value that must follow specific mathematical rules defined by the circuit—once set, it can't be changed arbitrarily. In regular programming, variables are flexible and can be updated or reassigned as needed, whereas, signals can't be altered freely.
+信号是加密电路中的值，这些值严格由电路的方程式和约束决定。
+将信号看作是一个必须遵循电路中定义的特定数学规则的值——一旦设置，它就不能随意更改。
+在常规编程中，变量是灵活的，可以根据需要更新或重新赋值，而信号则不能随意更改。
