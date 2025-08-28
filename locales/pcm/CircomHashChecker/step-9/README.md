@@ -12,9 +12,9 @@ Navigate go `scripts/groth16/groth16_zkproof.ts`. This script dey generate zero-
 #### To define Inputs:
 
 - E dey set d private values (`value1`, `value2`, `value3`, `value4`).
-- Computes the `hash` using Poseidon from [CircomLib](https://github.com/iden3/circomlib).
+- Computes di `hash` using Posidon from [CircomLib](https://github.com/iden3/circomlib).
 
-#### Witness Calculation and Proof Generation:
+#### Make una check Calculation and Proof Generation:
 
 - E dey calculate d witness (`wtns`).
 - E go check d witness against d `R1CS`.
