@@ -4,20 +4,20 @@ As e be for other languages, we dey use functions in Solidity take create modula
 
 Solidity functions fit dey split into two types:
 
-1. Functions wey modify di state of d iblockchain, like writing to a state variable. In this contract, the `set` function (line 9) changes the state variable `num`.
-2. Functions that don't modify the state of the blockchain. These functions are marked `view` or `pure`. For example, in this contract, the `get` function (line 14) marked `view` that only returns `num` does not change the state.
+1. Functions wey modify di state of d iblockchain, like writing to a state variable. For dis contract de set of function (line 9) go change de state of variable num.
+2. Functions wey no dey modify de state of de blockchain. Dis functions dey marked view or pure. For eksampol for dis contract de get functions (line14) don dey marked view wey fit only return num no dey change de state.
 
-To define a function, use the `function` keyword followed by a unique name.
+To te define a function u go use de functions keyword wey follow by name wey unique.
 
-If the function takes inputs like our `set` function (line 9), you must specify the parameter types and names. A common convention is to use an underscore as a prefix for the parameter name to distinguish them from state variables.
+If de function don take inputs wey be like our set os functions (line 9), u must specify de pererimeter types and names. A common convention na to use underscore wey be like prefix for de parameter name distiguish dem from state wy get variables.
 
-You can then set the visibility of a function and declare them `view` or `pure` as we do for the `get` function if they don't modify the state. Our `get` function also returns values, so we have to specify the return types. In this case, it's a `uint` since the state variable `num` that the function returns is a `uint`.
+You fit den set de visibility of function and declare dem or pure as we dey do for de get function if dey no modify de state. Our get functions also dey return values so we go have to specify de return types. For dis case na unit since de state variable num dat de function go return as unit.
 
-We will explore the particularities of Solidity functions in more detail in the following sections.
+We go exploi de particularities of solidity functions for more detailes for de following sections.
 
-<a href="https://www.youtube.com/watch?v=Mm6834AAY00" target="_blank">Watch a video tutorial on Functions</a>.
+<a href="https://www.youtube.com/watch?v=Mm6834AAY00" target="_blank">U go watch video tutorial wen u dey send Ether</a>.
 
-## ⭐️ Assignment
+## De Assignment
 
 1. Create a public state variable called `b` that is of type `bool` and initialize it to `true`.
 2. Create a public function called `get_b` that returns the value of `b`.
