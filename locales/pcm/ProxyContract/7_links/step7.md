@@ -3,7 +3,7 @@
 - ERC DelegateProxy
   https://github.com/ethereum/EIPs/pull/897
 
-- The joint post by Zeppelin Solutions and Aragon.
+- Di joint post by Zeppelin Solutions and Aragon.
   https://blog.openzeppelin.com/proxy-libraries-in-solidity-79fbe4b970fd/
 
 - Proxy Patterns by OpenZeppelin
