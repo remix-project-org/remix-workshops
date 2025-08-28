@@ -1,21 +1,21 @@
-Intro to Circom
+Circom 入门
 
-This is an introduction to Circom. You'll learn how to write, compile, and test arithmetic circuits in Circom. We'll go over how to do this within Remix-IDE.
+这是 Circom 的介绍。 您将学习如何在 Circom 中编写、编译和测试算术电路。 我们将讲解如何在 Remix-IDE 中进行这些操作。
 
-Tutorial Overview
-
-```
-Step 1: Introduction
-Step 2: Setting Up Remix-IDE and Installing the Circuit-Compiler Plugin
-Step 3: Writing Your First Circom Circuit
-Step 4: Compiling the Circuit Using the Plugin
-Step 5: Performing a Trusted Setup
-Step 6: Computing the Witness
-Step 7: Generating the Proof
-```
-
-Prerequisites:
+教程概览
 
 ```
-Basic understanding of cryptography and zero-knowledge proofs is helpful but not required.
+第 1 步：介绍
+第 2 步：设置 Remix-IDE 并安装 Circuit-Compiler 插件
+第 3 步：编写您的第一个 Circom 电路
+第 4 步：使用插件编译电路
+第 5 步：执行可信设置
+第 6 步：计算见证值
+第 7 步：生成证明
+```
+
+前提条件：
+
+```
+对密码学和零知识证明有基本的理解会有所帮助，但不是必需。
 ```
