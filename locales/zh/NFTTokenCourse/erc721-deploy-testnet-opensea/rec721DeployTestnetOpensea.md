@@ -1,4 +1,4 @@
-In this section, we will use Metamask (an Ethereum wallet) to deploy our contract to the Sepolia testnet of the Ethereum blockchain, mint an NFT, and look at it on the NFT marketplace OpenSea.
+在本节中，我们将使用 Metamask（以太坊钱包） 将我们的合约部署到以太坊区块链的 Sepolia 测试网，然后铸造一个 NFT，并在 OpenSea NFT 市场 上查看它。
 
 ### 1. 安装Metamask
 
@@ -8,19 +8,19 @@ In this section, we will use Metamask (an Ethereum wallet) to deploy our contrac
 
 **1.3** 按照说明创建一个钱包。
 
-### 2. Get testnet token for Sepolia
+### 2. 获取 Sepolia 测试网代币
 
 为了在测试网上进行交易，我们需要以太坊测试代币。
 
-**2.1** Switch your Metamask from "Ethereum Mainnetwork" to "Sepolia Test Network".
+**2.1** 将你的 Metamask 从 “Ethereum Mainnetwork”（以太坊主网）切换到 “Sepolia Test Network”（Sepolia 测试网）。
 
-**2.2** Go to <a href="https://www.alchemy.com/faucets/ethereum-sepolia" 
-target="_blank">https://www.alchemy.com/faucets/ethereum-sepolia</a>, enter the address of your account and claim testnet ETH.
-Or check the faucets listed on <a href="https://ethereum.org/en/developers/docs/networks/#testnet-faucets" target="_blank">ethereum.org</a> for other options.
+**2.2** 访问 <a href="https://www.alchemy.com/faucets/ethereum-sepolia" 
+target="_blank">https://www.alchemy.com/faucets/ethereum-sepolia</a>，输入你的账户地址并领取测试网 ETH。
+或者查看 <a href="https://ethereum.org/en/developers/docs/networks/#testnet-faucets" target="_blank">ethereum.org\</a> 上列出的水龙头以获取其他选项。
 
 ### 3. 合约部署
 
-**3.1** In the "DEPLOY & RUN TRANSACTIONS" module of the Remix IDE under "ENVIRONMENT" **select** "Injected Provide-Metamask" (or whatever wallet you are using). 然后它应该要求您连接您的账户，请确认。 Then in the wallet, connect to the Sepolia network.  You may need to turn on a switch to view test networks. Once connected, there will be a "badge" with Sepolia and its network ID under "Injected Provider".
+**3.1** 在 Remix IDE 的 **“DEPLOY & RUN TRANSACTIONS”** 模块中，找到 **“ENVIRONMENT”** **选择** “Injected Provider - Metamask”（或你正在使用的钱包）。 然后它应该要求您连接您的账户，请确认。 然后在钱包中连接到 **Sepolia 测试网**。  你可能需要开启一个开关以显示测试网络。 连接成功后，在 **“Injected Provider”** 下会显示带有 Sepolia 名称及其网络 ID 的"标识" 。
 
 **3.2** 部署您的代币合约并在Metamask中确认交易。
 
