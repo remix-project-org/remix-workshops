@@ -63,14 +63,14 @@ De payable function wey dey modify dey allow functon to dey receive Ether.
 De receiver function (line 22) need to dey payable. If u don deletede delete de payable modifier u go get error from de compiler. If u don delete de payable modifier from de fallback function (line 25) im go co, pile, but im no go fit able receive Ether.
 De functions sendviatransfer sendviasend and sendviacall (lines 33 38and 45) go also need to dey payable in order make im receive Ether.
 
-### Payable address
+### Address wey dey payable
 
-Solidity makes a distinction between two different flavors of the address data type: address and address payable.
+De solidity go make distinction between two different flavours of de address data type address and address wey dey payable.
 
-`address`: Holds a 20-byte value.
-`address payable`: Holds a 20-byte value and can receive Ether via its members: transfer and send.
+D address dey hold 20-byte value.
+De address wey dey payable dey hold 20-byte value and im go still receive Ether via its members transfer and go send.
 
-If you change the parameter type for the functions `sendViaTransfer` and `sendViaSend` (line 33 and 38) from `payable address` to `address`, you won’t be able to use `transfer()` (line 35) or `send()` (line 41).
+If u fit change de parameter type for de function sendViaTransfer and sendViaSend (line 33 and38) from address to address u no go fit use transfer() (line 35) or send() (line 41).
 
 <a href="https://www.youtube.com/watch?v=_5vGaqgzlG8" target="_blank">U go watch video tutorial wen u dey send Ether</a>.
 
