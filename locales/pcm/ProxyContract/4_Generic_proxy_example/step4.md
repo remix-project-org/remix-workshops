@@ -1,15 +1,15 @@
-# A Basic Generic Proxy Example
+# Di Basic Generic Proxy Example
 
-In the associated solidity file, **step4.sol**, there are 2 contracts - **ProxyContract** and **LogicContract**.
+For di associated solidity file **step4.sol**, there are 2 contracts - **ProxyContract** and **LogicContract**.
 
-To use this system, we first deploy the LogicContract.
+To fit use dis system we first deploy di logicContract.
 
-And then when we go to deploy the ProxyContract, we pass the LogicContract's address as an argument of the ProxyContract's constructor.
+When we go deploydi proxyContract, we pass di logic contract address as an argument of di proxycontract's constructor.
 
-The ProxyContract is deployed only once.
+Di proxycontract dey deploy for once.
 
-The code of LogicContract will be called at the line 20. It will be forwarded with delegate call while keeping the context of LogicContract.
+Di code of logiccontract fit be call di line 20. Dem fit forward di delegate call while keeping di contract of logic contract.
 
-In case we need to change the logic we would deploy a new LogicContract and set the address of it with setLogicContractAddress setter function.
+In case we need change di logic we fit deploy new logiccontract and set di address of am with setLogicContractAddress setter function.
 
-_Note: The LogicContract we have here does not use the storage. Once you need to use the storage the implementation becomes a bit more complicated because those contracts share the context._
+note say di logiccontract we get di storage. Once u need use di storage di implement go become a bit more complicated becuz those contract share di context
