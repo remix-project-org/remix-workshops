@@ -24,6 +24,6 @@ Switch go the solidity compiler module ![Solidity Compiler](https://github.com/e
 Na wetin the computer dey return b dis:
 
 - Linkreferences dey tell us wetin di libraries dey use the contract do.
-- Object na be di compiled contract (bytecode). Na this thing Dem dey deployed and dem still dey save am for di Blockchain. $d42d70ba92b626965f4c69b39148e37a33$$d42d70ba92b626965f4c69b39148e37a33$$d42d70ba92b626965f4c69b39148e37a33$ For your case, the placeholder go dey for between `__$` and `$__`.
+- Object na be di compiled contract (bytecode). Na this thing Dem dey deployed and dem still dey save am for di Blockchain. $d42d70ba92b626965f4c69b39148e37a33$$d42d70ba92b626965f4c69b39148e37a33$$d42d70ba92b626965f4c69b39148e37a33$ For your case the placeholder go dey for the middle
 
 The metadata JSON from the remix IDE dey tell about remix to replace di placeholder with the given adress.
