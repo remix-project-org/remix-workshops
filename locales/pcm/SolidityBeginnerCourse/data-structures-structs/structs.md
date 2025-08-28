@@ -1,4 +1,4 @@
-In Solidity, we can define custom data types in the form of _structs_. Structs are a collection of variables that can consist of different data types.
+For solidity we fit define am as custom data types in di form of _structs_. Structs na collection of variables wey fit join different data types.
 
 ### Defining structs
 
