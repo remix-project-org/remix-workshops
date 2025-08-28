@@ -50,18 +50,18 @@ To fit guide against a _reentrancy attack_, do all state changes before u call a
 
 Another way to prevent reentrancy na to use a _Reentrancy Guard_ wey go dey check for dat kind calls dey reject them. You fit see hin example inside the contract for our modifier section abi a more gas-efficient version ontop <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/ReentrancyGuard.sol" target="_blank">Open Zepplin</a>.
 
-### Receiving Ether
+### De Receiving Ether
 
-If we want to enable a contract to receive Ether without a function being called, we need to create a `receive` function (line 22) or a `fallback` function (line 25); otherwise, the Ether will be rejected, and the contract will throw an exception.
+If we wan enable contract to te receive Ether witout function being called, we go need make we create receive function (line 22) or fall go back function (line 25) otherwise, de Ether go dey rejected, and de contract go throw expection.
 
-The `receive` function is executed on calls with empty calldata (e.g. plain Ether transfers via send() or transfer()), while the fallback function is executed on calls with calldata. If no receive function exists but a fallback function does, calls with empty calldata will also use the fallback function.
+De receive function dey executed on call wey get empty callday (e.g.plain Ether transfer via send()or transfer()), while de fallback function dey executed for calls wit calldata. If any receive function no exist but fallback function dey do am im dey call wit empty calldata go also dey use de function wey dey fallback.
 
-### Payable function modifier
+### De payable function wey dey modify
 
-The `payable` function modifier allows a function to receive Ether.
+De payable function wey dey modify dey allow functon to dey receive Ether.
 
-The `receive` function (line 22) needs to be `payable`. If you delete the `payable` modifier you will get an error from the compiler. If you delete the `payable` modifier from the `fallback` function (line 25) it will compile, but it won’t be able to receive Ether.
-The functions `sendViaTransfer`, `sendViaSend`, and `sendViaCall` (lines 33, 38, and 45) also need to be `payable` in order to receive Ether.
+De receiver function (line 22) need to dey payable. If u don deletede delete de payable modifier u go get error from de compiler. If u don delete de payable modifier from de fallback function (line 25) im go co, pile, but im no go fit able receive Ether.
+De functions sendviatransfer sendviasend and sendviacall (lines 33 38and 45) go also need to dey payable in order make im receive Ether.
 
 ### Payable address
 
@@ -72,15 +72,15 @@ Solidity makes a distinction between two different flavors of the address data t
 
 If you change the parameter type for the functions `sendViaTransfer` and `sendViaSend` (line 33 and 38) from `payable address` to `address`, you won’t be able to use `transfer()` (line 35) or `send()` (line 41).
 
-<a href="https://www.youtube.com/watch?v=_5vGaqgzlG8" target="_blank">Watch a video tutorial on Sending Ether</a>.
+<a href="https://www.youtube.com/watch?v=_5vGaqgzlG8" target="_blank">U go watch video tutorial wen u dey send Ether</a>.
 
-## ⭐️ Assignment
+## De Assignment
 
-Build a charity contract that receives Ether that can be withdrawn by a beneficiary.
+U go build charity contact wey dey recieve Ether wey u fit witdraw by beneficiary.
 
-1. Create a contract called `Charity`.
-2. Add a public state variable called `owner` of the type address.
-3. Create a donate function that is public and payable without any parameters or function code.
-4. Create a withdraw function that is public and sends the total balance of the contract to the `owner` address.
+1. U go create contact wey dem dey call charity.
+2. U go add public state variable wey dem dey call owner of de type of addresses.
+3. U go create donate function wey dey public wey dey payable witout any thing wey dey block am or code wey get function.
+4. U go create witdraw function wey be public wey go send de total balance of de contract de person wey get address.
 
-Tip: Test your contract by deploying it from one account and then sending Ether to it from another account. Then execute the withdraw function.
+Tip: U go test ur contract wen u dey develop am fromone account and den we go send Ether to it from account wey no be how own. Den u go execute de witdrawn function.
