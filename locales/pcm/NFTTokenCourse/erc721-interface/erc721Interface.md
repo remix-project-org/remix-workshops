@@ -48,52 +48,52 @@ The function `getApproved` (line 103) returns the address of the account (return
 
 ### setApprovalForAll
 
-The function `setApprovalForAll` (line 115) sets the permission (`_approved`) for the account with the specified address (input param - `operator`) to manage all tokens of the account calling the function.
+Di function `setApprovalForAll` (line 115) dey set di permission (`_approved`) for di akant wit di specified addresss (input param - `operator`) to fit manage all Di token of di akant wey dey call di function.
 
-### isApprovedForAll
+### edeyApprovedForAll
 
-The function `getApproved` (line 103) returns the boolean true if the account with the address `operator` is approved to manage all tokens of the account with the address `owner`.
+Di function getApproved (line 103) go back di boolean true if di account wit di address operator dey approved to fit manage all tokens of di account wit di address owner.
 
 ## IERC721 Events
 
-ERC721 contracts must also emit the following events:
+ERC721 contracts must to emit di following events:
 
 ### Transfer
 
-The `Transfer` event (line 15) must be emitted when the token with the id `tokenId` is transferred from the account with the address `from` to the account with the address  `to`.
+Di Transfer event (line 15) gaz dey emitted wen di token wit di id tokenId dey transferred from di account wit di address from go di account wit di address to.
 
-### Approval
+### Accept am
 
 The `Approval` event (line 20) gats dey emitted when the account wey get the address `owner` approves the account wey get the address `spender` to manage the token with the id `tokenId` on him behalf.
 
 ### Approval for everybody
 
-The `ApprovalForAll` event (line 25) must be emitted when the account with the address `owner` gives or removes the permission (`_approved`) of the account with the address `operator` to manage all its tokens.
+Di ApprovalForAll event (line 25) gaz dey emitted wen di account wit di address owner dey give or commot di permission (_approved) of di account wit di address operator for management of all its tokens.
 
 ## IERC165
 
-In addition to the ERC721 interface, ERC721 compliant contracts must also implement the ERC165 interface.
+For addition to di ERC721 interface ERC721 compliant contracts gaz dey implement di ERC165 interface.
 
-With the implementation of the ERC165 interface, contracts can declare the support of specific interfaces. A contract that wants to interact with another contract can then query if the other contract supports this interface before making a transaction e.g. sending tokens to it that they might not support.
+For di implementation of di ERC165 intaface contrakts fit declare di support of specific intaface. Contract wey wan relate wit another contract fit come query if di other contract dey support dis interface before e maketransaction like to send tokens to am wey dem fit no support.
 
-Our IERC721 interface here imports (line 6) and inherits (line 11) from the IERC165 interface.
+Our IERC721intaface here dey bring (line 6) make e inherit (line 11) from di IERC165 intaface.
 
-This is how <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol" target="_blank">OpenZeppelins implementation</a> of the ERC165 interface looks like:
+Na like dis <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol" target="_blank">OpenZEppelins implementation </a> of di ERC165 intaface be like:
 
 ```
 interface IERC165 {
-    function supportsInterface(bytes4 interfaceId) external view returns (bool);
+function dey supportsInterface(bytes4 interfaceId) external view go back (bool);
 }
 ```
 
-For example, the ERC165 identifier for the ERC721 interface as specified in the EIP721 is “0x80ac58cd”. Sabi how to calculate an interface identifier and more about the ERC165 in its <a href="https://eips.ethereum.org/EIPS/eip-165" target="_blank">improvement proposal</a>.
+Like now, di ERC165 indentifier for di ERC721 intaface as dem specify am for di EIP721 na “0x80ac58cd”. Sabi how to calculate an interface identifier and more about the ERC165 in its <a href="https://eips.ethereum.org/EIPS/eip-165" target="_blank">improvement proposal</a>.
 
-## Other interfaces
+## Oda intaface
 
-The <a href="https://eips.ethereum.org/EIPS/eip-721#specification" target="_blank">IERC721TokenReceiver</a> interface must be implemented to accept safe transfers.
+Di <a href="https://eips.ethereum.org/EIPS/eip-721#specification" target="_blank">IERC721TokenReceiver</a> intaface must dey implemented to fit accept safe transfer.
 
-There are two optional extensions for ERC721 contracts specified in the EIP721:
+E get two optional extensions for ERC721 contract wey dem specify for di EIP721:
 
-IERC721Enumerable enables a contract to publish its full list of tokens and make them discoverable.
+IERC721 Enumerable dey gree make contract publish im full list of token and make pipu fit see am.
 
-IERC721Metadata enables a contract to associate additional information to a token. We will have a more detailed look into this in the next section.
+IERC721 Metadata dey gree make contrakt fit associate info to add join to token. We go get more deep look into am for di next place.
