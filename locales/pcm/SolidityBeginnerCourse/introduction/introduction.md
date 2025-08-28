@@ -1,8 +1,8 @@
-Welcome to this interactive Solidity course for beginners.
+Welcome as you come dis interactive solidity course wey dey for beginners.
 
-In this first section, we will give you a short preview of the concepts we will cover in this course, look at an example smart contract, and show you how you can interact with this contract in the Remix IDE.
+For dis first section we go give you short preview of di concepts we go cover for dis course look one example forsmart contract make e show you how you fit relate with dis contract inside di Remix IDE.
 
-This contract is a counter contract that has the functionality to increase, decrease, and return the state of a counter variable.
+Dis contract na counter contract wey get di functionality to fit join commot and go back di state of counter variable.
 
 If we look at the top of the contract, we can see some information about the contract like the license (line 1), the Solidity version (line 2), as well as the keyword `contract` and it's name, `Counter` (line 4). We will cover these concepts in the next section about the **Basic Syntax**.
 
