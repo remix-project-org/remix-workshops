@@ -2,8 +2,8 @@ After compiling your circuit, you need to perform a trusted setup to generate pr
 
 ## Understanding Trusted Setup
 
- - **Trusted Setup:** A process required for zk-SNARKs to generate the necessary parameters for proof generation and verification.
- - You can choose between different protocols like **Groth16** and **Plonk**.
+- **Trusted Setup:** A process required for zk-SNARKs to generate the necessary parameters for proof generation and verification.
+- You can choose between different protocols like **Groth16** and **Plonk**.
 
 ## Performing the Trusted Setup
 
@@ -23,4 +23,4 @@ After compiling your circuit, you need to perform a trusted setup to generate pr
 
 **Note:** The trusted setup may take some time, depending on the complexity of your circuit.
 
-In the next step, we'll compute the witness for our circuit.
+下一步， 我们将为我们的电路验算见证。
