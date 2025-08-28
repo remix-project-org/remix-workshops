@@ -13,20 +13,20 @@ Loops dey seldom used for solidity since transactions fit run di gas and fail if
 
 ### do while
 
-The `do while` loop is a special kind of while loop where you can ensure the code is executed at least once, before checking on the condition.
+Di `do while` loop is a special kind of while loop where u can ensure the code is executed at least once, before u check on the condition.
 
-### continue
+### na to continue
 
-The `continue` statement is used to skip the remaining code block and start the next iteration of the loop. In this contract, the `continue` statement (line 10) will prevent the second if statement (line 12) from being executed.
+Di `continue` statement is used to skip the remaining code block and start the next iteration of the loop. For dis contract di `continue` statement (line 10) will prevent the second if statement (line 12) from being executed.
 
-### break
+### di break
 
-The `break` statement is used to exit a loop. In this contract, the break statement (line 14) will cause the for loop to be terminated after the sixth iteration.
+Di `break` statement is used to exit a loop. Dis contract go break statement (line 14) will cause the for loop to be terminated after de sixth iteration.
 
-<a href="https://www.youtube.com/watch?v=SB705OK3bUg" target="_blank">Watch a video tutorial on Loop statements</a>.
+<a href="https://www. youtube. com/watch? v=vTxxCbwMPwo" target="_blank"> Watch video wey go explain array</a>.
 
-## ⭐️ Assignment
+## When you give variable value
 
-1. Create a public `uint` state variable called count in the `Loop` contract.
-2. At the end of the for loop, increment the count variable by 1.
-3. Try to get the count variable to be equal to 9, but make sure you don’t edit the `break` statement.
+1. Create public `uint` state variable called count in de `Loop` contra.
+2. At di end of di loop, increment the count variable by 1.
+3. Try get di count variable to be equal to 9, but make sure you don’t edit the `break` statement.
