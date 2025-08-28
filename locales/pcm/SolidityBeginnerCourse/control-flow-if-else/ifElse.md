@@ -1,33 +1,33 @@
-Solidity supports different control flow statements that determine which parts of the contract will be executed. The conditional _If/Else statement_ enables contracts to make decisions depending on whether boolean conditions are either `true` or `false`.
+Solidity dey support different control flow statement wey dey determine which part of di contract go dey executed. Di conditional _If/Else statement_ dey allow contrakt to fit make decision based on weda Boolean conditions weda e dey true or false.
 
-Solidity differentiates between three different If/Else statements: `if`, `else`, and `else if`.
+Soliditi difference wey dey between three different If/Else statements: If, else, and else if.
 
 ### if
 
-The `if` statement is the most basic statement that allows the contract to perform an action based on a boolean expression.
+If di statement ba di most basic statement wey dey allow di contrakt to fit perform action wey dey based on Boolean expression.
 
-In this contract’s `foo` function (line 5) the if statement (line 6) checks if `x` is smaller than `10`. If the statement is true, the function returns `0`.
+For dis contract foo function (line 5) di if statement (line 6) dey check if x dey smaller than 10. If di statement dey true, di functions dey go back '0'.
 
-### else
+### if not
 
-The `else` statement enables our contract to perform an action if conditions are not met.
+De else statement dey gree make out contract fit perform action if condition no dey met.
 
-In this contract, the `foo` function uses the `else` statement (line 10) to return `2` if none of the other conditions are met.
+For dis contract di foo function dey use di else statement (line 10) to bring am back 2 if none of di other conditions dey meet.
 
-### else if
+### or else if
 
-With the `else if` statement we can combine several conditions.
+Wit di else if statement we fit join different conditions.
 
-If the first condition (line 6) of the foo function is not met, but the condition of the `else if` statement (line 8) becomes true, the function returns `1`.
+If di first condition (line 6) of di foo function no meet but di condition of di else if statement (line 8) turn true di function go bring am back 1.
 
-<a href="https://www.youtube.com/watch?v=Ld8bFWXLSfs" target="_blank">Watch a video tutorial on the If/Else statement</a>.
+<a href="https://www.youtube.com/watch?v=Ld8bFWXLSfs" target="_blank">Go see video tutorial for di If/Else statement</a>.
 
 ## ⭐️ Assignment
 
-Create a new function called `evenCheck` in the `IfElse` contract:
+Create new function wey dem call even check for di IfElse contrakt:
 
-- That takes in a `uint` as an argument.
-- The function returns `true` if the argument is even, and `false` if the argument is odd.
-- Use a ternery operator to return the result of the `evenCheck` function.
+- E dey take hint as argument.
+- Di function dey come back true if di argument dey even and false if di argument dey odd.
+- Use ternary operator to take return di result of di even check function.
 
-Tip: The modulo (%) operator produces the remainder of an integer division.
+Take am join: Tip: Di modulo (%) operator dey produce di remainder of integer division.
