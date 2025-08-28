@@ -9,7 +9,7 @@ Fain your way go the `circuits` directory con open `calculate_hash.circom`. Circ
 - `pragma circom 2.0.0;` de specify the Circom version.
 - "Put "circomlib/circuits/poseidon.circom";\` fetch con add the Poseidon hash function from [CircomLib](https://github.com/iden3/circomlib).
 
-#### `CalculateHash` Template:
+#### 'CalculateHash\` Template:
 
 - Defines inputs `value1`, `value2`, `value3`, `value4`.
 - E de use the `Poseidon` hash function to compute hash of all dis values.\
