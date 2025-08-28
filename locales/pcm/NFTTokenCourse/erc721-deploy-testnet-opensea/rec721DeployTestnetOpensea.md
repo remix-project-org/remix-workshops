@@ -28,23 +28,23 @@ Or observe the faucets listed for <a href="https://ethereum.org/en/developers/do
 
 ### 4. Mint NFT
 
-**4.1** Expand your contract in the IDE so you can see the buttons for the functions.
+**4.1** Expand ur contract inside the IDE so u go fit see the buttons for the functions.
 
-**4.2** Expand the input fields next to the safeMint button. Enter di ethereum address of the account wey dey connected to remix in the to input field. Enter “0” in the input field "tokenID:". Click on transact.
+**4.2** Expand the input fields next to the safeMint button. Enter di ethereum address of the account wey dey connected to remix in the to input field. Enter “0” inside the input field "tokenID:". Click on transact.
 
-**4.3** In Metamask click on assets, then click on the “Import tokens” link, and paste the address of your contract in the input field. U fit set did decimals go 0.
+**4.3** Inside Metamask click on assets, then click that “Import tokens” link, and paste the address of ur contract inside the input field. U fit set did decimals go 0.
 
-You should now see the name of the symbol of your token contract (e.g. GEO) in your “Assets” view in Metamask. You should have one of these tokens.
+You suppose don see the name of di symbol of your token contract (e.g. GEO) in your Assets view for Metamask. You suppose don get one of these token.
 
 ### 5. Observe your nft for opensea
 
 <a href="https://opensea.io/" 
-target="_blank">OpenSea </a> is one of the most popular online marketplace for NFTs. OpenSea also provides a version where you can see assets on the testnet, under <a href="https://testnets.opensea.io/" 
+target="_blank">OpenSea </a> na one of di most popular online marketplace for NFTs. OpenSea dey provides a version where you fit take see assets for the testnet, under <a href="https://testnets.opensea.io/" 
 target="_blank">https://testnets.opensea.io/</a>
 
 **5.1** Go to <a href="https://testnets.opensea.io/login" 
 target="_blank">https://testnets.opensea.io/login</a>.
 
-5.2 link your Metamask wallet. You should be redirected to your account <a href="https://testnets.opensea.io/account" target="_blank">https://testnets.opensea.io/account</a> view on OpenSea, where you should be able to see your NFT. You suppose see the picture of your nft, when you tap am. You go see the name, description and hidden properties, and the attribute wey you create too.
+5.2 link your Metamask wallet. Dem suppose carry you go back to your account <a href="https://testnets.opensea.io/account" target="_blank">https://testnets.opensea.io/account</a> view on OpenSea, where you suppose take see your NFT. You suppose see the picture of your nft, when you tap am. You go see the name, description and hidden properties, and the attribute wey you create too.
 
 If you don finally finish this course and you dey familiar with basis for solidity development, we go encourage you make you no stop your learning journey based on learning how to make your own NFT auction contract wey dey the Learneth resources.
