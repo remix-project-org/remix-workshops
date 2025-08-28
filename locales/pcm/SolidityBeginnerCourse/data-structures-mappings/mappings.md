@@ -1,10 +1,10 @@
-In Solidity, _mappings_ are a collection of key types and corresponding value type pairs.
+For the Solidity, _mappings_ na collection of key types and corresponding value type pairs
 
-The biggest difference between a mapping and an array is that you can't iterate over mappings. If we don't know a key we won't be able to access its value. If we need to know all of our data or iterate over it, we should use an array.
+De biggest difference btw a mapping and array be say u no fit iterate over mappings. If we no know key we no go fit access e value. If we want know all of our data or iterate over am, we go use array.
 
-If we want to retrieve a value based on a known key we can use a mapping (e.g. addresses are often used as keys). Looking up values with a mapping is easier and cheaper than iterating over arrays. If arrays become too large, the gas cost of iterating over it could become too high and cause the transaction to fail.
+If we want retrieve value wen base on a known key we fit use mapping (e.g addresses fit be used as keys. If we look up values with mapping e dey easier and cheaper pass iterating over arrays. If de arrays too large, de gas cost of iterating over am it fit become too high e fit cause the transaction to fail.
 
-We could also store the keys of a mapping in an array that we can iterate over.
+We fit store de keys of de mapping for array wey we fit iterate over.
 
 ### Creating mappings
 
