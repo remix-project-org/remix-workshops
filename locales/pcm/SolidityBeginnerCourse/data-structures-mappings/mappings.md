@@ -1,8 +1,8 @@
-For the Solidity, _mappings_ na collection of key types and corresponding value type pairs
+For the Solidity, _mappings_ na collection of key types and corresponding value type pairs.
 
 De biggest difference btw a mapping and array be say u no fit iterate over mappings. If we no know key we no go fit access e value. If we want know all of our data or iterate over am, we go use array.
 
-If we want retrieve value wen base on a known key we fit use mapping (e.g addresses fit be used as keys. If we look up values with mapping e dey easier and cheaper pass iterating over arrays. If de arrays too large, de gas cost of iterating over am it fit become too high e fit cause the transaction to fail.
+If we wan retrieve value wey dey based on a known key we fit use mapping (e.g. addresses are often used as keys). If we look up values with mapping e dey easier and cheaper pass iterating over arrays. If de arrays too large, de gas cost of iterating over am it fit become too high e fit cause the transaction to fail.
 
 We fit store de keys of de mapping for array wey we fit iterate over.
 
@@ -34,4 +34,4 @@ We fit use the delete operator take delete the value wey dey associated with any
 
 1. Make one public mapping `balances`wey go join the key type `address` with the value type `uint`.
 2. Change the get and remove function make e work with the mapping balances.
-3. Change the function `set` to create a new entry to the balances mapping, where the key is the address of the parameter and the value is the balance associated with the address of the parameter.
+3. Change the function set make e create new entry for the balances mapping, where the key na the address wey dey the parameter and the value na the balance wey dey associated with the address wey dey the parameter.
