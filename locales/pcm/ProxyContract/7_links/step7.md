@@ -1,4 +1,4 @@
-# Check out some links for more info
+# Observe some of our links for plenty information
 
 - ERC DelegateProxy
   https://github.com/ethereum/EIPs/pull/897
