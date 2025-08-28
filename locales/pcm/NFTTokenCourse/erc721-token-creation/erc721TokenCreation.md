@@ -4,9 +4,9 @@ U go look dier implementation of a<a href="https://github.com/OpenZeppelin/openz
 
 ## my Token
 
-We fit still create our own contract called MY TOKEN (line 6), which inherits the functionality from the OpenZepplin ERC20 token contract implementation that we imported (line 4). If u no remember the ownable contract module just go look the ERC20 extensions section.
+We fit still create our own contract called MY TOKEN (line 7), which inherits(line 7) the functionality from the OpenZepplin ERC20 token contract implementation that we imported (line 4). If u no remember the ownable contract module just go look the ERC20 extensions section.
 
-This ERC721 implementation makes use of the IERC721Metadata extension that is specified in the EIP. Our contract dey inherits di functions name() wit symbol() and e get constructor wey dey allow dem values to dey set during di deployment of di contract (line 8).
+Dis ERC721 implementation makes use of di IERC721Metadata extension wey dey specified for di EIP. Our contract dey inherits di functions name() wit symbol() and e get constructor wey dey allow dem values to dey set during di deployment of di contract (line 8).
 For this situation we go gat use the default values. We fit call our token di same as di contract `"MyToken"` and make `"MTK"` its symbol.
 
 ### Base URl
