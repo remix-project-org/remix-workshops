@@ -1,24 +1,24 @@
-In this section, we will create our first _smart contract_. This contract only consists of a string that holds the value "Hello World!".
+For this section, we go create our first _smart contract_. This contract only consists of a string that holds the value "Hello World!".
 
-In the first line, we should specify the license that we want to use. You can find a comprehensive list of licenses here: <a href="https://spdx.org/licenses/" target="_blank">https://spdx.org/licenses/</a>.
+Inside the first line, we suppose specify the license wey we wan use. You can find a comprehensive list of licenses here: <a href="https://spdx.org/licenses/" target="_blank">https://spdx.org/licenses/</a>.
 
-Using the `pragma` keyword (line 3), we specify the Solidity version we want the compiler to use. In this case, it should be greater than or equal to `0.8.3` but less than 0.9.0.
+As we dey use `pragma` keyword (line 3), we specify the Solidity version wey we want make the compiler use. For this matter, e suppose dey equal to and greater than `0.8.3` but e go small pass 0.9.0.
 
-We define a contract with the keyword `contract` and give it a name, in this case, `HelloWorld` (line 5).
+We dey define contract with the keyword `contract` and we go give am name. for this matter, `HelloWorld` (line 5).
 
-Inside our contract, we define a _state variable_ `greet` that holds the string `"Hello World!"` (line 6).
+Inside our contract, we define _state variable_ `greet` wey dey hold the the string `"Hello World!"` (line 6).
 
-Solidity is a _statically typed_ language, which means that you need to specify the type of the variable when you declare it. In this case, `greet` is a `string`.
+Solidity na statically typed language, and this one mean say you must to specify the kain variable when you declare am. For this matter, `greet` na `string`.
 
-We also define the _visibility_ of the variable, which specifies from where you can access it. In this case, it's a `public` variable that you can access from inside and outside the contract.
+We also define the _visibility_ of the variable wey de specify from where you fit access am. For this matter, na `public` variable wey you fit access from inside and outside the contract.
 
-Don't worry if you didn't understand some concepts like _visibility_, _data types_, or _state variables_. We will look into them in the following sections.
+Don't worry if you didn't understand some concepts like _visibility_, _data types_, or _state variables_. We go look into them inside all this sections.
 
-To help you understand the code, we will link in all following sections to video tutorials from the <a href="https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA" target="_blank">creator</a> of the Solidity by Example contracts.
+Make persin fit understand the code, we go. link inside all this sections to video tutorials from <a href="https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA" target="_blank">creator</a> of Solidity by Example contracts.
 
-<a href="https://www.youtube.com/watch?v=g_t0Td4Kr6M" target="_blank">Watch a video tutorial on Basic Syntax</a>.
+<a href="https://www.youtube.com/watch?v=g_t0Td4Kr6M" target="_blank">Watch video tutorial on top Basic syntax</a>.
 
-## ⭐️ Assignment
+## ⭐Carry this work go do
 
 1. Delete the HelloWorld contract and its content.
 2. Create a new contract named "MyContract".
