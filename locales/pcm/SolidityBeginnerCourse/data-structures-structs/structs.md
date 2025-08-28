@@ -1,8 +1,8 @@
 For solidity we fit define am as custom data types in di form of _structs_. Structs na collection of variables wey fit join different data types.
 
-### Defining structs
+### To define structs
 
-We define a struct using the `struct` keyword and a name (line 5). Inside curly braces, we can define our struct’s members, which consist of the variable names and their data types.
+We dey use di `struct` keyword nd a name (line 5) take define struct. Inside curly braces, we can define our struct’s members, which consist of the variable names and their data types.
 
 ### Initializing structs
 
