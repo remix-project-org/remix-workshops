@@ -6,24 +6,23 @@ U go look dier implementation of a<a href="https://github.com/OpenZeppelin/openz
 
 We fit still create our own contract called MY TOKEN (line 6), which inherits the functionality from the OpenZepplin ERC20 token contract implementation that we imported (line 4). If u no remember the ownable contract module just go look the ERC20 extensions section.
 
-This ERC721 implementation makes use of the IERC721Metadata extension that is specified in the EIP. Our contract inherits the functions `name()` and `symbol()`
-and has a constructor that allows their values to be set during the deployment of the contract (line 8).
+This ERC721 implementation makes use of the IERC721Metadata extension that is specified in the EIP. Our contract dey inherits di functions name() wit symbol() and e get constructor wey dey allow dem values to dey set during di deployment of di contract (line 8).
 For this situation we go gat use the default values. We fit call our token di same as di contract `"MyToken"` and make `"MTK"` its symbol.
 
 ### Base URl
 
-With an ERC721 contract, we are able to mint various tokens, each with its own tokenId. As we saw in the IERC721Metadata interface, each token can have its own `tokenURI`, which typically points to a JSON file to store metadata like name, description, and image link.
-If a contract mints multiple tokens, ERC721 implementations often use the same URI as a base (`baseURI`) for all tokens and only differentiate them by adding their unique `tokenId` at the end via concatenation. For the next part we go see wetin this go look like for pratice.
+Wit ERC721 contrakt, we fit mind plenti kind token each one get im own tokenld. Like we don see for di IERC721Metadata interface, each token fit get im own tokenURI wey typically dey point to JSON file to store metadata like name description wit image link.
+If contract dey mint multiple tokens ERC721 implementations dey often use di same URI as base (baseURI) for all tokens and only dey differentiate dem as e dey put their unique tokenId for di end via concatenation. For the next part we go see wetin this go look like for pratice.
 
 For this example we dey store our data for IPFS _ plenty of am for the next session. Our baseURI na <a href="https://ipfs.io/ipfs/QmUYLUKwqX6CaZxeiYGwmAYeEkeTsV4cHNZJmCesuu3xKy/" target="_blank">https://ipfs.io/ipfs/QmUYLUKwqX6CaZxeiYGwmAYeEkeTsV4cHNZJmCesuu3xKy/</a> (line 11).
 Through concatenation the tokenURI for the token with the id 0 go be <a href="https://ipfs.io/ipfs/QmUYLUKwqX6CaZxeiYGwmAYeEkeTsV4cHNZJmCesuu3xKy/0" target="_blank">https://ipfs.io/ipfs/QmUYLUKwqX6CaZxeiYGwmAYeEkeTsV4cHNZJmCesuu3xKy/0</a> , the tokenURI for the token with the id 1 go be <a href="https://ipfs.io/ipfs/QmUYLUKwqX6CaZxeiYGwmAYeEkeTsV4cHNZJmCesuu3xKy/1" target="_blank">https://ipfs.io/ipfs/QmUYLUKwqX6CaZxeiYGwmAYeEkeTsV4cHNZJmCesuu3xKy/1</a>, and so on.
 
-When using IPFS and you run into "504 Gateway Time-out" errors, you might have to wait and retry until the data is available.
+When you dey use IPFS and you jam “504 Gateway Time-out” errors you go gats to wait den retry until di data dey available.
 
 ### safeMint
 
-With the safeMint function (line 14) we enable the owner to create new tokens with a dedicated token id after contract deployment.
-The safeMint function is part of the ERC721 implementation of OpenZeppelin and lets us safely mint a token with the id `tokenId` to the account with the address `to`. For access control we dey use the `onlyOwner` modifier wey dey the ownable access control contract module wey we import (line 5).
+For di safeMint function (line 14) we make sure say di owner fit create new tokens wit dedicated token id after contract deployment.
+Di safeMint function na part of di ERC721 implementation of OpenZeppelin and dem dey let us dey mint tokenwit no wahala wit di id tokenId for di account wit di address to. For access control we dey use the `onlyOwner` modifier wey dey the ownable access control contract module wey we import (line 5).
 
 For the next section we go see how we go fit take create and host metadata for our NFTs.
 
