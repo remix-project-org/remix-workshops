@@ -44,7 +44,7 @@ Di function dey approve (line 94) dey give di akant wit di address to di permiss
 
 ### getApproved
 
-The function `getApproved` (line 103) returns the address of the account (return var `operator`) that is approved to manage the token with the id `tokenId`.
+Di fuktion `getApproved` (line 103) follow am back di address of di account (return var `operator`) wey dey give access to manage di tokin with di id `tokenId`.
 
 ### setApprovalForAll
 
