@@ -1,4 +1,4 @@
-In Solidity _enums_ are custom data types consisting of a limited set of constant values. We use enums when our variables should only get assigned a value from a predefined set of values.
+For Solidity enums na custom data types wey get limited set of constant values. We use enums when our variables should only get assigned a value from a predefined set of values.
 
 In this contract, the state variable `status` can get assigned a value from the limited set of provided values of the enum `Status` representing the various states of a shipping status.
 
