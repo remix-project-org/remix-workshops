@@ -12,26 +12,26 @@
 #### 定义输入：
 
 - 设置私有值（`value一`，`value二`，`value三`，`value四`）。
-- Computes the `hash` using Poseidon from [CircomLib](https://github.com/iden3/circomlib).
+- 使用来自 [CircomLib](https://github.com三/iden/circomlib) 的 Poseidon 计算 `hash`。
 
-#### Witness Calculation and Proof Generation:
+#### 见算证生：
 
-- Calculates the witness (`wtns`).
-- Checks the witness against the `R1CS`.
-- Generates the proof using `Groth16`.
-- Verifies the proof.
+- 计见证 (wtns)。
+- 按"R一CS"验见证人。
+- 以"Groth十六"为验。
+- 验之。
 
-#### Exporting Verifier Contract and Inputs:
+#### 导出验证者合约和输：
 
-- Generates a Solidity verifier contract.
-- Exports the proof inputs to `input.json`.
+- 创建 Solidity 验证器合约。
+- 输入导出至"input.json"。
 
-### Purpose
+### 志也
 
-- Generates a zero-knowledge proof that the prover knows values hashing to a specific hash.
-- Prepares the verifier contract and inputs for on-chain verification.
+- 创一个零知之验,证者有哈希到特定哈希直之直。
+- 将验证者合约输以验链上。
 
-### Execute the Script
+### 行脚本
 
-- Click the play button in the editor, or right-click the file and select "Run".
-- Wait for the script to complete and `"zk proof validity"` logged in the terminal.
+- 单击编辑器中播放按钮,或右键单击文而择"行"。
+- 待脚本成行,书于终端术语"zk 有效性"。
