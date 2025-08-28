@@ -1,27 +1,27 @@
-With the trusted setup complete, you can now compute the witness for your circuit based on specific inputs.
+完成可信设置后，您现在可以根据特定的输入计算电路的见证值。
 
-## What is a Witness?
+## 什么是见证值？
 
- - A **Witness** is a set of values that satisfy all the constraints of your circuit. It includes all the intermediate numbers and results that satisfy the circuit's rules. The witness is used in zero-knowledge proofs to demonstrate that you know a valid solution to the problem without actually showing the solution itself. This allows others to verify that you did everything correctly while keeping your specific numbers and calculations private.
- - It is essential for generating a proof.
+- **见证值** 是一组满足电路所有约束的值。 它包含了所有满足电路规则的中间数值和结果。 零知识证明中使用见证值来表明您知道问题的有效解决方案，而无需实际展示解决方案本身。 这样，其他人就可以验证您是否正确完成了所有操作，同时保证您的具体数字和计算的私密性。
+- 这对于生成证明至关重要。
 
-## Inputting Values
+## 输入值
 
-1. In the **Compute Witness** section, you'll see input fields dynamically generated based on your circuit's inputs.
-2. Enter values for `a` and `b`. For example:
+1. 在 **计算见证值** 部分，您将看到根据电路输入动态生成的输入字段。
+2. 输入 `a` 和 `b` 的值。 例如：
     - `a = 3`
     - `b = 4`
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-6/images/compute_witness.png" alt="compute-witness" width=280 height=240>
 
-## Computing the Witness
+## 计算见证值
 
-1. After entering the inputs, click on the **Compute Witness** button.
-2. The plugin will compute the witness based on your inputs.
-3. If successful, you'll see `multiplier.wtn` created in the `.bin` directory in the file explorer.
+1. 输入输入后点击**计算见证值** 按钮。
+2. 插件将根据您的输入计算见证值。
+3. 如果成功，您将在文件资源管理器的 `.bin` 目录中看到创建的 `multiplier.wtn` 文件。
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-6/images/witness_computed.png" alt="witness-computed" width=340 height=350>
 
-**Note:** If there are any errors, ensure that your inputs are valid and satisfy the circuit's constraints.
+**注意：** 如果出现任何错误，请确保您的输入有效并满足电路的约束条件。
 
-In the next step, we'll generate a proof using the computed witness.
+在下一步中，我们将使用计算出的见证值生成证明。
