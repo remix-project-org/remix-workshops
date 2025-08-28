@@ -6,9 +6,9 @@ _De function Modiifier_ fit change the behaviour of a function. For example,they
 
 Dis first part of dis contract na to change ownership of de contract. Ownership wey dey for dis contract is expressed by the value of the state variable `owber` wey dey for the type `address` ( line 7).
 
-De function `changeOwner` (line 33) fit change dis ownership. It takes an input parameter of the type `address` and assigns its value to the state variable `owner`.
+De function `changeOwner` (line 33) fit change dis ownership. E dey take input parameter wey get the type `address` con give am value of the state variable `owner`.
 
-However, this function cannot simply be executed under all conditions; it has two modifiers, `onlyOwner` and `validAddress`.
+But still, dis function fit no work for all conditions, e get two modifiers, `onlyOwner` and `validAddress`.
 
 Let's look at `onlyOwner` first (line 18).
 Function modifiers are defined with the `modifier` keyword and a unique name; they can also have parameters.
