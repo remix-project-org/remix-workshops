@@ -13,6 +13,6 @@ U go remember: \*codecopy(t, f, s) - copy **s** bytes from code wey dey position
 If you look in the **Stack**, you go see say the 2nd element na:
 0x0000000000000000000000000000000000000000000000000000000000000083
 
-And this is the **f** of the input params of codecopy.
+And na e be dis **f** of di input params for di codecopy.
 
-### Hope you picked up a thing or 2 about how opcodes work!
+### Shey u been pick up one thin or 2 about how di opcodes do work!
