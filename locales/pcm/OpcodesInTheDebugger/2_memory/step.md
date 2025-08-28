@@ -1,6 +1,6 @@
-Before we start, just quick reminder:
+Before we go start just quick reminder:
 
-The runtime of the EVM has several kinds of memory:
+The runtime of the evn get many memory:
 
 - `calldata`: This one na the input wey dem give the transaction.
 - `stack`: Normal Normal, this one na the list of values, each value get limited size (32 bytes).
