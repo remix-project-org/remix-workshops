@@ -19,5 +19,5 @@ We go exploi de particularities of solidity functions for more detailes for de f
 
 ## De Assignment
 
-1. Create a public state variable called `b` that is of type `bool` and initialize it to `true`.
-2. Create a public function called `get_b` that returns the value of `b`.
+1. U go Create public state variable wey dem dey call b na of de type bool and u go initialize am to trure.
+2. U go create public function called get ey go return de value of b.
