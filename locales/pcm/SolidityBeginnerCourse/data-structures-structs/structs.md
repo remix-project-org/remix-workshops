@@ -2,28 +2,28 @@ For solidity we fit define am as custom data types in di form of _structs_. Stru
 
 ### To define structs
 
-We dey use di `struct` keyword nd a name (line 5) take define struct. Inside curly braces, we can define our struct’s members, which consist of the variable names and their data types.
+We dey use di `struct` keyword nd a name (line 5) take define struct. Inside curly braces, we fit define our struct’s members, wey consist of di variable names nd dia data types.
 
-### Initializing structs
+### To intialize structs
 
-There are different ways to initialize a struct.
+Different ways dey to take initialize a struct.
 
-Positional parameters: We can provide the name of the struct and the values of its members as parameters in parentheses (line 16).
+Positional parameters: We fit provide di name of di struct nd di values of hin members as parameters fr parentheses (line 16).
 
-Key-value mapping: We provide the name of the struct and the keys and values as a mapping inside curly braces (line 19).
+Key-value mapping: We go provide di name of di struct nd di keys and values as mapping inside curly braces (line 19).
 
-Initialize and update a struct: We initialize an empty struct first and then update its member by assigning it a new value (line 23).
+Initialize and update a struct: We go initialize one empty struct first con assign am a new value (line 23) to update hin member.
 
-### Accessing structs
+### To access structs
 
-To access a member of a struct we can use the dot operator (line 33).
+To access a member of a struct we fit use di dot operator (line 33).
 
-### Updating structs
+### To update structs
 
-To update a structs’ member we also use the dot operator and assign it a new value (lines 39 and 45).
+To update a structs’ member too go use di dot operator and assign am a new value (lines 39 and 45).
 
-<a href="https://www.youtube.com/watch?v=kYBHq7EmFBc" target="_blank">Watch a video tutorial on Structs</a>.
+<a href="https://www.youtube.com/watch?v=kYBHq7EmFBc" target="_blank">You fit watch video tutorial ontop Structs</a>.
 
 ## ⭐️ Assignment
 
-Create a function `remove` that takes a `uint` as a parameter and deletes a struct member with the given index in the `todos` mapping.
+Create a function `remove` wey go take `uint` as parameter nd go delete a struct member with the given index inside di `todos` mapping.
