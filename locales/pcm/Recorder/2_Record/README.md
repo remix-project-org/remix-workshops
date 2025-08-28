@@ -1,18 +1,18 @@
 # Setting up a tedious series of steps
 
-## Following this could get tedious but that's the point.
+## To dey follow all this things go dey stressful, but na the point be that.
 
-We are going to:
+Where w dey go:
 
 - Deploy a voting contract where there are 3 proposals input in the constructor.
 - Give voting privileges to 2 additional address (so we have a total of 3 voting addresses).
 - Have one address vote for proposal 1 (0-based index) and the other two vote for proposal 2.
 
-1. Take the 3_Ballot.sol from the sample solidity files and compile it.  Then go to the **Deploy & Run** Module.
+1. Take the 3_Ballot.sol from the sample solidity files and compile it.  Con go the \*\*deploy &, run "" Module.
 
 2. Select the **JavaScript VM** Environment.
 
-3. In the constructor's parameter - put in **["0x5031000000000000000000000000000000000000000000000000000000000000", "0x5032000000000000000000000000000000000000000000000000000000000000", "0x5033000000000000000000000000000000000000000000000000000000000000"]** Then click the **Deploy** button.
+3. Inside the contract parameter put ["0x5031000000000000000000000000000000000000000000000000000000000000", "0x5032000000000000000000000000000000000000000000000000000000000000", "0x5033000000000000000000000000000000000000000000000000000000000000"]\*\* con press the \*_Deploy button_.
 
 4. Open up the deployed contract.
 
