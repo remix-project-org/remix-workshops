@@ -10,7 +10,7 @@ And now for a slightly different example:
 
 U go remember: \*codecopy(t, f, s) - copy **s** bytes from code wey dey position **f** to memory for position **t**
 
-If you look in the **Stack**, you should see that the 2nd element is:
+If you look in the **Stack**, you go see say the 2nd element na:
 0x0000000000000000000000000000000000000000000000000000000000000083
 
 And this is the **f** of the input params of codecopy.
