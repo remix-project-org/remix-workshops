@@ -4,11 +4,11 @@ And now for a slightly different example:
 
 - Compile notSimpleStore.sol
 - Deploy di contract `notSoSimpleStore`
-- Make sure you have a successful deployment - if not check that you used **the correct input type** in the constructor.
-- Go to the Debugger by clicking the **debug** button at the (successful) creation transaction.
-- Find the value of the parameter of `CODECOPY` which represents the offset in calldata where to copy from.
+- We go make sure say we get succesful deployment -if dat wan no dey okay u fit still check **de correct input type** foor de constructor.
+- U go go de Debugger by clicking de **debug** button for de (successful) creation transaction.
+- U go find de value of de parameter of CODECOPY which go represent de offset wey dey calldata where u go copy from.
 
-Remember: _codecopy(t, f, s)_ - copy **s** bytes from code at position **f** to memory at position **t**
+U go remember: \*codecopy(t, f, s) - copy **s** bytes from code wey dey position **f** to memory for position **t**
 
 If you look in the **Stack**, you should see that the 2nd element is:
 0x0000000000000000000000000000000000000000000000000000000000000083
