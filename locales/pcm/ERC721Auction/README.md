@@ -2,4 +2,4 @@
 
 Sabi write ERC721 (NFT) auction contract.
 
-U go develop by learning platform https://dacade.org.
+Developed by the p2p learning platform https://
