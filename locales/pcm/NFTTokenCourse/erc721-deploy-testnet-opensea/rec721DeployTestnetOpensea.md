@@ -20,7 +20,7 @@ Or observe the faucets listed for <a href="https://ethereum.org/en/developers/do
 
 ### 3. How to deploy contract
 
-**3.1** In the "DEPLOY & RUN TRANSACTIONS" module of the Remix IDE under "ENVIRONMENT" **select** "Injected Provide-Metamask" (or whatever wallet you are using). E go come ask you make u connect your account wey u go confirm. Then inside the wallet connect go sepolia network.  You go gats turn on switch to see test networks. Once connected one kind badge with sepolia and it's network ID under injected provider.
+**3.1** For di "DEPLOY & RUN TRANSACTIONS" module of di Remix IDE under "ENVIRONMENT" **select** "Injected Provide-Metamask" (or Any kin wallets wey u dey use). E go come ask you make u connect your account wey u go confirm. Then inside the wallet connect go sepolia network.  You go gats turn on switch to see test networks. Once connected one kind badge with sepolia and it's network ID under injected provider.
 
 **3.2** Deploy your token contract make you confirm di transaction for Metamask.
 
