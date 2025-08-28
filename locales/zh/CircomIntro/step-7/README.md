@@ -1,31 +1,31 @@
-With the witness computed, the final step is to generate a proof that can be verified by others.
+在计算出见证值后，最后一步是生成一个可以被他人验证的证明。
 
-## Generating the Proof
+## 生成证明
 
-1. In the **Generate Proof** section, you have the option to **Export Verifier Calldata**.
-    - Enable the **Export Verifier Calldata** checkbox if you plan to verify the proof on-chain.
-2. Click on the **Generate Proof** button.
+1. 在 **生成证明** 部分，您可以选择 **导出验证器的调用数据**。
+    - 如果您计划在链上验证证明，请启用 **Export Verifier Calldata** 复选框。
+2. 点击 **Generate Proof**按钮。
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-7/images/generate_proof.png" alt="generate-proof" width=280 height=120>
 
-## Understanding the Output
+## 了解输出
 
- - After generating the proof, the plugin will display the proof data.
- - If you enabled **Export Verifier Calldata**, it will also provide the calldata needed for on-chain verification.
+- 证明生成后，插件将显示验证数据。
+- 如果你启用了 **Export Verifier Calldata**，你还会获得链上验证所需的调用数据。
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-7/images/proof_generated.png" alt="proof-generated" width=310 height=350>
 
-## Next Steps
+## 下一步
 
- - **Verification:** You can use the verification key or contract exported earlier to verify the proof.
- - **On-Chain Verification:** If you're familiar with smart contracts, you can deploy the verification contract and use the calldata to perform on-chain verification.
+- **验证:** 您可以使用之前导出的验证密钥或合约来验证证明。
+- **链上验证：** 如果您熟悉智能合约，可以部署验证合约并使用 Calldata 来执行链上验证。
 
-**Congratulations!** You've successfully written a Circom circuit, compiled it, performed a trusted setup, computed a witness, and generated a proof using Remix-IDE.
+\*\*恭喜！\*\*您已成功编写了 Circom 电路、对其进行了编译、执行了可信设置、计算了见证值，并使用 Remix-IDE 生成了证明。
 
-## Additional Resources
+## 附加资源
 
- - [Circom Documentation](https://docs.circom.io/)
- - [Remix-IDE Documentation](https://remix-ide.readthedocs.io/)
- - [Zero-Knowledge Proofs Explained](https://zkproof.org/)
+- [Circom 文档](https://docs.circom.io/)
+- [Remix-IDE 文档](https://remix-ide.readthedocs.io/)
+- [零知识证明诠释](https://zkproof.org/)
 
-Feel free to experiment with more complex circuits and explore the capabilities of Circom and Remix-IDE further.
+请尽管尝试更复杂的电路，并进一步探索 Circom 和 Remix-IDE 的功能。
