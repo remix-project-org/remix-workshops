@@ -31,4 +31,4 @@ Choose the desired **Compiler Version** from the dropdown menu. For this tutoria
 - After successful compilation, the **Setup and Exports** section becomes visible.
 - You can proceed to the next step to perform a trusted setup.
 
-In the next step, we'll perform a trusted setup using the compiled circuit.
+在下一步中，我们将使用编译后的电路进行可信设置。
