@@ -100,4 +100,4 @@ https://ipfs.io/ipfs/QmVrsYxXh5PzTfkKZr1MfUN6PotJj8VQkGQ3kGyBNVKtqp/0 </a>
 For dis contrakt, commot di baseURL wit your own baseURL. For dis example di baseURl e consist of di URL
 "https://ipfs.io/ipfs/", di CID wey dey contain di JSON files and slash for di end "/".
 
-An individual tokenURI will now be created for each token by adding the tokenId to the baseURI — exactly what we did manually in the example above to access the JSON file.
+Individual tokenURI go now dey created for each token by putting di tokenId to di baseURI — exactly like wetin we do manually for di example above to take access di JSON file.
