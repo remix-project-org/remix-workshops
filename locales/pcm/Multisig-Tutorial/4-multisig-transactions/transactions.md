@@ -56,13 +56,14 @@ The `getTransaction` function (Line 136) dey allow people retrieve one transacti
 
 ## Conclusion
 
-For this section we explore the process on how u go submit, confirm and execute transactions. We examined the `submitTransaction`, `confirmTransaction`, and `executeTransaction` functions and understood how they work together to allow multiple users to submit and confirm transactions.
+For this section we explore the process on how u go submit, confirm and execute transactions. We dey examine the submit transaction
+Confirm transaction and execute transaction functions and understood how dem take dey work together to allow many users submit and confirm transaction.
 
 ## ⭐️ Assignment: Make a Transaction
 
-Submit, confirm, and execute a transaction to send 2 Ether to the first account in the "ACCOUNTS" dropdown menu.
+Submit, confirm and execute a transaction to send 2 ether to the first account in the accounts drop down menu.
 
-1. Deploy the Multisig contract as in the previous assignment. Make sure say the required number of the confirmations na 2.
+1. Deploy di multisig contract as in di previous assignment. Make sure say the required number of the confirmations na 2.
 2. Fund the multisig from any address by sending 4 Ether as u do am for the previous assignment.
 3. Try send 2 Ether go the first account in "ACCOUNTS" dropdown menu.  Once u don sumbit this transaction (with submitTransaction), click that `getTransactionCount` u go come see one transaction or u fit click on `getTransaction`,
    put 0 as the transaction index then see the transaction wey u just submit.
