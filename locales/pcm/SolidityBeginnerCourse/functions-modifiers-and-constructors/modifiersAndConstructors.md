@@ -1,10 +1,10 @@
-In this section, we will learn how to modify the behavior of a function and how to run contract initialization code.
+For dis section, we go learn how dey they modify behavior for function and how to run contract initialization code.
 
-### Function Modifier
+### De function Modiifier
 
-_Function Modifiers_ are used to change the behavior of a function. For example, they often check for a condition prior to executing a function to restrict access or validate inputs.
+_De function Modiifier_ fit change the behaviour of a function. For example,they dey check a condition wey prior to executing a function we go restrict access or validate inputs
 
-This first part of this contract is about changing ownership of a contract. Ownership in this contract is expressed by the value of the state variable `owner` that is of the type `address` (line 7).
+Dis first part of dis contract na to change ownership of de contract. Ownership in this contract is expressed by the value of the state variable `owner` that is of the type `address` (line 7).
 
 The function `changeOwner` (line 33) can change this ownership. It takes an input parameter of the type `address` and assigns its value to the state variable `owner`.
 
