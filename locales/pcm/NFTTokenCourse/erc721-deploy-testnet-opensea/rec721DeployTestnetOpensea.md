@@ -20,19 +20,19 @@ Or observe the faucets listed for <a href="https://ethereum.org/en/developers/do
 
 ### 3. How to deploy contract
 
-**3.1** In the "DEPLOY & RUN TRANSACTIONS" module of the Remix IDE under "ENVIRONMENT" **select** "Injected Provide-Metamask" (or whatever wallet you are using). E go come ask you make u connect your account wey u go confirm. Then inside the wallet connect go sepolia network.  You go gats turn on switch to see test networks. Once connected, there will be a "badge" with Sepolia and its network ID under "Injected Provider".
+**3.1** In the "DEPLOY & RUN TRANSACTIONS" module of the Remix IDE under "ENVIRONMENT" **select** "Injected Provide-Metamask" (or whatever wallet you are using). E go come ask you make u connect your account wey u go confirm. Then inside the wallet connect go sepolia network.  You go gats turn on switch to see test networks. Once connected one kind badge with sepolia and it's network ID under injected provider.
 
-**3.2** Deploy your token contract and confirm the transaction in Metamask.
+**3.2** Deploy your token contract make you confirm di transaction for Metamask.
 
-**3.3**  Your contract should appear in the "Deployed Contracts" section.
+**3.3**  Your contract suppose  appear for di "Deployed Contracts" section.
 
-### 4. Mint an NFT
+### 4. Mint NFT
 
 **4.1** Expand your contract in the IDE so you can see the buttons for the functions.
 
-**4.2** Expand the input fields next to the safeMint button. Enter the Ethereum address of the account that is connected to Remix in the “to:” input field. Enter “0” in the input field "tokenID:". Click on transact.
+**4.2** Expand the input fields next to the safeMint button. Enter di ethereum address of the account wey dey connected to remix in the to input field. Enter “0” in the input field "tokenID:". Click on transact.
 
-**4.3** In Metamask click on assets, then click on the “Import tokens” link, and paste the address of your contract in the input field. You can set decimals to 0.
+**4.3** In Metamask click on assets, then click on the “Import tokens” link, and paste the address of your contract in the input field. U fit set did decimals go 0.
 
 You should now see the name of the symbol of your token contract (e.g. GEO) in your “Assets” view in Metamask. You should have one of these tokens.
 
