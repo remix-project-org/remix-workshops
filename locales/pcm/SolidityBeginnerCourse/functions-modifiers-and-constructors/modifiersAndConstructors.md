@@ -4,9 +4,9 @@ For dis section, we go learn how dey they modify behavior for function and how t
 
 _De function Modiifier_ fit change the behaviour of a function. For example,they dey check a condition wey prior to executing a function we go restrict access or validate inputs
 
-Dis first part of dis contract na to change ownership of de contract. Ownership in this contract is expressed by the value of the state variable `owner` that is of the type `address` (line 7).
+Dis first part of dis contract na to change ownership of de contract. Ownership wey dey for dis contract is expressed by the value of the state variable `owber` wey dey for the type `address` ( line 7).
 
-The function `changeOwner` (line 33) can change this ownership. It takes an input parameter of the type `address` and assigns its value to the state variable `owner`.
+De function `changeOwner` (line 33) fit change dis ownership. It takes an input parameter of the type `address` and assigns its value to the state variable `owner`.
 
 However, this function cannot simply be executed under all conditions; it has two modifiers, `onlyOwner` and `validAddress`.
 
