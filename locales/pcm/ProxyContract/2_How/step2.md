@@ -1,13 +1,13 @@
-# How it works?
+# How e dey work?
 
-**EIP-7 DelegateCall** opcode allows a separate execution in another contract while maintaining the original execution context.
+**EIP-7 DelegateCall** opcode allows a separate execution in another contract while maintain de original execution context.
 
-All **message calls** from the user go through a **Proxy contract**.
+All di **message calls** from de yuser go through a **Proxy contract**.
 
-The **Proxy contract** then will redirect them to the **Logic contract**.
+Di **Proxy contract** then will redirect them to the **Logic contract**.
 
-And when you need to **upgrade** the logic, you'll **just** deploy that - **HOWEVER** - the implementation of Proxy will remain the same.
+When u need to **upgrade** the logic, you'll **just** deploy that - **HOWEVER** - the implementation of Proxy will remain di same.
 
-You'll only need to update the address of Logic contract in Proxy.
+U need update di address of logic contract in proxy.
 
-The Proxy Contract uses **Delegate calls** and **Solidity assembly** because without it, it's impossible to return any value from **delegatecall**.
+Di proxy contract dey use **Delegate calls** and **Solidity assembly** because without it, it's impossible to return any value from **delegatecall**.
