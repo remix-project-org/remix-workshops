@@ -1,29 +1,29 @@
 id: circom-intro
-name: Intro to Circom
-summary: A intro to using Circom for creating arithmetic circuits.
+name: Circom 简介
+summary: 使用 Circom 创建算术电路的入门介绍。
 level: 1
 tags:
   - Circom
   - Remix-IDE
 steps:
   - 
-    name: Introduction
-    path: step-1
+    name: 简介
+    path: 步骤-1
   - 
-    name: Installing the Circuit-Compiler
-    path: step-2
+    name: 安装电路编译器
+    path: 步骤-2
   - 
-    name: Writing Your First Circom Circuit
-    path: step-3
+    name: 编写您的第一个Circom 电路
+    path: 步骤-3
   - 
-    name: Compiling the Circuit Using the Plugin
-    path: step-4
+    name: 使用插件编译电路
+    path: 步骤-4
   - 
-    name: Performing a Trusted Setup
-    path: step-5
+    name: 执行可信设置
+    path: 步骤-5
   - 
-    name: Computing the Witness
-    path: step-6
+    name: 计算见证值
+    path: 步骤-6
   - 
-    name: Generating the Proof
-    path: step-7
+    name: 生成证明
+    path: 步骤-7
