@@ -8,30 +8,30 @@ We fit store de keys of de mapping for array wey we fit iterate over.
 
 ### Creating mappings
 
-Mappings are declared with the syntax `mapping(KeyType => ValueType) VariableName`.
-The key type can be any built-in value type or any contract, but not a reference type. The value type can be of any type.
+Mappings dey declared with the syntax `mapping(KeyType => ValueType) VariableName`.
+The key type fit be any inbuilt value type abi contract, but e no fit be reference type. The value type fit be any type at all.
 
-In this contract, we are creating the public mapping `myMap` (line 6) that associates the key type `address` with the value type `uint`.
+For dis contract, we dey create public mapping `myMap` (line 6) wey dey associate the key type `address` go the value type `uint`.
 
 ### Accessing values
 
-The syntax for interacting with key-value pairs of mappings is similar to that of arrays.
-To find the value associated with a specific key, we provide the name of the mapping and the key in brackets (line 11).
+The syntax wey you go use interact with key-value pairs for mapping dey similar to the type for array.
+To find the value wey dey together with one particular key, we go provide the name of the mapping and the key for brackets (line 11).
 
-In contrast to arrays, we won't get an error if we try to access the value of a key whose value has not been set yet. When we create a mapping, every possible key is mapped to the default value 0.
+Different from arrays, we no go get error if we try access the value of any key wey never get set value yet. Anytime wey ee create mapping, all the possible key go dey mapped to 0 wey be the default value.
 
 ### Setting values
 
-We set a new value for a key by providing the mapping’s name and key in brackets and assigning it a new value (line 16).
+We fit set new value for any key as long say we provide the mapping name and key for bracket con give am new value (line 16).
 
-### Removing values
+### To dey commot values
 
-We can use the delete operator to delete a value associated with a key, which will set it to the default value of 0. As we have seen in the arrays section.
+We fit use the delete operator take delete the value wey dey associated with any key, wey go con set am go 0 wey be the default value. As we don see for the array section.
 
-<a href="https://www.youtube.com/watch?v=tO3vVMCOts8" target="_blank">Watch a video tutorial on Mappings</a>.
+<a href="https://www.youtube.com/watch?v=tO3vVMCOts8" target="_blank">Watch this video tutorial on Mappings</a>.
 
-## ⭐️ Assignment
+## ⭐️ homework
 
-1. Create a public mapping `balances` that associates the key type `address` with the value type `uint`.
-2. Change the functions `get` and `remove` to work with the mapping balances.
+1. Make one public mapping `balances`wey go join the key type `address` with the value type `uint`.
+2. Change the get and remove function make e work with the mapping balances.
 3. Change the function `set` to create a new entry to the balances mapping, where the key is the address of the parameter and the value is the balance associated with the address of the parameter.
