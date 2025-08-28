@@ -29,5 +29,5 @@ We fit use de delete operator to delete de enum value of de variable, which mena
 ##
 
 1. Define de enum type called `Size` with the members `S`, `M` and `L`.
-2. Initialize the variable `sizes` of the enum type `Size`.
-3. Create a getter function `getSize()` that returns the value of the variable `sizes`.
+2. Initialize di variable `sizes` of di enum type `Size`.
+3. Create getter fuktion 'getSize()' wey dey push back di value of di variable 'sizes'.
