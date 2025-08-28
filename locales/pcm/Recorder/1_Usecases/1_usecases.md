@@ -4,4 +4,4 @@
 
     - In one class, to get the students reach one kain place, and you go con make dem dey work for there.
 
-2. You want to start your development in the JavascriptVM because it is quick and then to switch to another testnet - but you don't want to manually repeat all the tedious clicking for each different network.
+2. You wan start your development inside javsascriptVM cause say e dey fast and to switch go another testnet - but you no wan repeat all the stressful press press. for different network.
