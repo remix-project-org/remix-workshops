@@ -1,6 +1,6 @@
-# Editing a scenario
+# Editing de scenario
 
-Here's the first few lines of the scenario that I recorded.  The addresses on my machine will be different from your's.
+Na the first few lines of the scenerio wen I record.  De addresses for my machine go dey different from ur own.
 
 ```
 {
@@ -11,11 +11,11 @@ Here's the first few lines of the scenario that I recorded.  The addresses on my
     }
 ```
 
-So if you wanted to play this scenario in another testnet, you'd need to change these addresses to address that you have test ETH on so that you could pay for the transactions.  But other than swapping out the addresses, you can quickly run this on other nets.
+So if u want play dis scenario for another testnet, u go need change de addresses to address wen u go test ETH on so u go pay for de transactions.  Apart to dey swap the addresses, u fit quickly run dis for other nets.
 
-And you might change the parameters for the functions.
+U fit change de parameters for de functions.
 
-For example here is a bit of the scenario.json a bit further down where proposal 2 was voted for by one of the addresses:
+For example here na a bit of de scenario.json a bit further down where dey vote proposal 2 for by one of the addresses:
 
 ```
 {
@@ -35,9 +35,9 @@ For example here is a bit of the scenario.json a bit further down where proposal
     },
 ```
 
-Let's edit this so that another proposal wins in the playback.
+Make we dis make another proposal win for the playback.
 
-Change the **parameters** array which now is:
+Make we change the **parameters** array which be now:
 
 ```
 "parameters": [
@@ -48,7 +48,7 @@ Change the **parameters** array which now is:
 to:
 
 ```
-"parameters": [
+Di "parameters": [
           "1"
         ]
 ```
