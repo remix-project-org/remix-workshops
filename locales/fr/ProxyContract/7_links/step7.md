@@ -6,14 +6,14 @@
 - The joint post by Zeppelin Solutions and Aragon.
   https://blog.openzeppelin.com/proxy-libraries-in-solidity-79fbe4b970fd/
 
-- Proxy Patterns by OpenZeppelin
+- Modèles de proxy par OpenZeppelin
   https://blog.openzeppelin.com/proxy-patterns/
 
-- The most mature implementation of Proxy pattern is The Unstructure Storage pattern that is released as part of ZeppelinOS
+- L'implémentation la plus mature du modèle Proxy est le modèle Unstructure Storage qui est publié dans le cadre de ZeppelinOS
   https://blog.openzeppelin.com/upgradeability-using-unstructured-storage/
 
-- Great blog post by Jack Tanner
+- Excellent article de blog de Jack Tanner
   https://blog.indorse.io/ethereum-upgradeable-smart-contract-strategies-456350d0557c
 
-- Upgradeable Ethereum Smart Contracts
+- Contrats intelligents Ethereum évolutifs
   https://medium.com/@daonomic/upgradeable-ethereum-smart-contracts-d036cb373d6
