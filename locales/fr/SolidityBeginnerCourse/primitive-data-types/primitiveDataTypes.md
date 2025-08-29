@@ -10,19 +10,19 @@ We use  the keywords `uint` and `uint8` to `uint256` to declare an _unsigned int
 
 ### int
 
-We use the keywords `int` and `int8` to `int256` to declare an integer type. Integers can be positive, negative, or zero and range from 8 bits to 256 bits. The type `int` is the same as `int256`.
+We use the keywords `int` and `int8` to `int256` to declare an integer type. Integers can be positive, negative, or zero and range from 8 bits to 256 bits. Le type `int` est le même que `int256`.
 
 ### address
 
-Variables of the type `address` hold a 20-byte value, which is the size of an Ethereum address. There is also a special kind of Ethereum address, `address payable`, which can receive ether from the contract.
+Les variables de type `adresse` ont une valeur de 20 octets, qui est la taille d'une adresse Ethereum. Il existe également un type spécial d'adresse Ethereum, « adresse payable », qui peut recevoir de l'éther du contrat.
 
 All these data types have default values, as shown in the contract (line 29).
 
-You can learn more about these data types as well as _Fixed Point Numbers_, _Byte Arrays_, _Strings_, and more in the <a href="https://docs.soliditylang.org/en/latest/types.html" target="_blank">Solidity documentation</a>.
+Vous pouvez en savoir plus sur ces types de données ainsi que sur les _nombres de points fixes_, les _matrices d'octets_, les _chaînes_ et plus encore dans la documentation <0>Solidité</0>.
 
 Later in the course, we will look at data structures like **Mappings**, **Arrays**, **Enums**, and **Structs**.
 
-<a href="https://www.youtube.com/watch?v=8Tj-Th_S7NU" target="_blank">Watch a video tutorial on Primitive Data Types</a>.
+<0>Regardez un tutoriel vidéo sur les types de données primitives</0>.
 
 ## ⭐️ Assignment
 
@@ -30,4 +30,4 @@ Later in the course, we will look at data structures like **Mappings**, **Arrays
 2. Create a `public` variable called `neg` that is a negative number, decide upon the type.
 3. Create a new variable, `newU` that has the smallest `uint` size type and the smallest `uint` value and is `public`.
 
-Tip: Look at the other address in the contract or search the internet for an Ethereum address.
+Conseil : Regardez l'autre adresse dans le contrat ou recherchez sur Internet une adresse Ethereum.
