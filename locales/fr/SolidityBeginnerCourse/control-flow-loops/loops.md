@@ -1,6 +1,6 @@
 Solidity supports iterative control flow statements that allow contracts to execute code repeatedly.
 
-Solidity differentiates between three types of loops: `for`, `while`, and `do while` loops.
+Solidity différencie trois types de boucles : les boucles `for`, `while` et `do while`.
 
 ### for
 
@@ -17,13 +17,13 @@ The `do while` loop is a special kind of while loop where you can ensure the cod
 
 ### continue
 
-The `continue` statement is used to skip the remaining code block and start the next iteration of the loop. In this contract, the `continue` statement (line 10) will prevent the second if statement (line 12) from being executed.
+The `continue` statement is used to skip the remaining code block and start the next iteration of the loop. Dans ce contrat, l'instruction `continuer` (ligne 10) empêchera la deuxième instruction if (ligne 12) d'être exécutée.
 
 ### break
 
 The `break` statement is used to exit a loop. In this contract, the break statement (line 14) will cause the for loop to be terminated after the sixth iteration.
 
-<a href="https://www.youtube.com/watch?v=SB705OK3bUg" target="_blank">Watch a video tutorial on Loop statements</a>.
+<0>Regardez un tutoriel vidéo sur les déclarations Loop</0>.
 
 ## ⭐️ Assignment
 
