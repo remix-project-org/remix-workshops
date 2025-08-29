@@ -1,13 +1,13 @@
 ERC20 (Ethereum Request for Comments 20) is a standard for token contracts that manages fungible tokens on the Ethereum blockchain.
 
-Fungible tokens are all equal to each other and have the same value, behavior, and rights. Fungible tokens are often used as a medium of exchange, like the currencies ETH or BTC. However, they can also have other use cases like voting rights or reputation.
+Fungible tokens are all equal to each other and have the same value, behavior, and rights. Les jetons fongibles sont souvent utilisés comme moyen d'échange, comme les devises ETH ou BTC. Cependant, ils peuvent également avoir d'autres cas d'utilisation comme le droit de vote ou la réputation.
 
-If you want to know more about the ERC20 token standard, have a look at the specifications in its <a href="https://eips.ethereum.org/EIPS/eip-20" target="_blank">Ethereum improvement proposal</a>.
+Si vous voulez en savoir plus sur la norme de jetons ERC20, jetez un coup d'œil aux spécifications de sa <0>proposition d'amélioration Ethereum</0>.
 
 ## Interface
 
 To get an overview of the required functionality of an ERC20 token contract, we will look at an interface that interacts with an ERC20 contract.
-This interface (line 9) is part of the open-source contract library provided by <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.4.0/contracts/token/ERC20/IERC20.sol" target="_blank">OpenZeppelin</a>.
+Cette interface (ligne 9) fait partie de la bibliothèque de contrats open source fournie par <0>OpenZeppelin</0>.
 
 ## ERC20 Functions
 
@@ -15,11 +15,11 @@ Contracts compliant with the ERC20 standard must implement the following six fun
 
 ### totalSupply
 
-The function `totalSupply` (line 13) returns the total amount of tokens available.
+La fonction `totalSupply` (ligne 13) renvoie le nombre total de jetons disponibles.
 
 ### balanceOf
 
-The function `balanceOf` (line 18) returns the amount of tokens owned by the account with the address `account`.
+La fonction `balanceOf` (ligne 18) renvoie la quantité de jetons appartenant au compte avec l'adresse `compte`.
 
 ### transfer
 
@@ -32,11 +32,11 @@ The function `approve` (line 52) creates an allowance for the address `spender` 
 
 ### allowance
 
-The function `allowance` (line 36) returns the amount of tokens that the address `spender` is allowed to spend on behalf of the account with the address `owner`.
+La fonction `allowance` (ligne 36) renvoie le nombre de jetons que l'adresse `spender` est autorisé à dépenser au nom du compte avec l'adresse `propriétaire`.
 
 ### transferFrom
 
-The function `transferFrom` (line 63) transfers `amount` of tokens on behalf of the address `sender` to the address `recipient`.
+La fonction `transferFrom` (ligne 63) transfère `montant` de jetons au nom de l'adresse `expéditeur` à l'adresse `destinataire`.
 This function **must** emit a `Transfer` event.
 
 ## ERC20 Events
@@ -51,13 +51,13 @@ The `Transfer` (line 71) event must be emitted when `value` amount of tokens are
 
 The `Approval` (line 77)  event must be emitted when the account `indexed owner` approves the account `indexed spender` to transfer `value` amount of tokens on its behalf.
 
-## ERC20 Optional functions
+## ERC20 Fonctions optionnelles
 
 In addition to the mandatory functions and events, there are also three optional functions specified in the ERC20 standard that are not implemented in this interface:
 
 ### name
 
-`function name() external view returns (string);`
+`function name() vue externe renvoie (chaîne) ;`
 
 Returns the name of the token.
 
@@ -67,7 +67,7 @@ Returns the name of the token.
 
 Returns the symbol of the token.
 
-### decimals
+### Décimales
 
 `function decimals() external view returns (uint8);`
 
