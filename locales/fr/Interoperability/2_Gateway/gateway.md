@@ -14,12 +14,12 @@ Les deux premiers paramètres sont assez intuitifs. They consist of both the nam
 
 ## callContractWithToken()
 
-Cette fonction déclenche une interchaîne avec un message et un jeton fongible de la source à la chaîne de destination. It takes five relevant parameters:
+Cette fonction déclenche une interchaîne avec un message et un jeton fongible de la source à la chaîne de destination. Il faut cinq paramètres pertinents :
 
 1. `destinationChain`: The name of the destination chain
 2. `destinationContractAddress`: The address on the destination chain this transaction will execute at.
 3. `payload`: The message that is being sent
-4. `symbol`: The symbol of the token being sent
+4. `symbole` : Le symbole du jeton envoyé
 5. `amount`: The amount of that token that is being sent
 
-The first three parameters here are the same as in `callContract()`. The final two parameters are relevant to the token that is being sent along with the message. These are the symbol of the token and the amount of the token that is being sent.
+The first three parameters here are the same as in `callContract()`. The final two parameters are relevant to the token that is being sent along with the message. Ce sont le symbole du jeton et le montant du jeton qui est envoyé.
