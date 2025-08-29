@@ -2,13 +2,13 @@ ERC721 is a standard for token contracts that manage non-fungible tokens (NFTs) 
 
 Each non-fungible token is unique and not interchangeable. NFTs can have different properties, behavior, or rights. Non-fungible tokens are used to represent ownership of unique digital and physical assets like art, collectibles, or real estate.
 
-If you want to know more about the ERC721 token standard, have a look at the specifications in its <a href="https://eips.ethereum.org/EIPS/eip-721" target="_blank">Ethereum improvement proposal</a>.
+Si vous voulez en savoir plus sur la norme de jeton ERC721, jetez un coup d'œil aux spécifications de sa <0>proposition d'amélioration Ethereum</0>.
 
 ## Interface
 
 The ERC721 standard is more complex than the ERC20 standard and it features optional extensions. ERC721 compliant contracts must, at a minimum, implement the ERC721 and ERC165 interfaces, which we will look at in this section.
 
-This interface (line 11) is part of the open-source contract library provided by <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/IERC721.sol" target="_blank">OpenZeppelin</a>.
+Cette interface (ligne 11) fait partie de la bibliothèque de contrats open source fournie par <0>OpenZeppelin</0>.
 
 ## Basic IERC721 Functions
 
@@ -28,7 +28,7 @@ The function `safeTransferFrom` (line 55) transfers the ownership of a token wit
 
 The function `safeTransferFrom` (line 137) is almost identical to the function `safeTransferFrom` (line 55) .The only difference is that this function has a non-empty payload `data`.
 
-A smart contract must implement the ERC721TokenReceiver Interface if it is to receive a transfer. This will ensure that the contract can handle ERC721 token transfers and prevent the tokens from being locked in a contract that can’t.
+Un contrat intelligent doit mettre en œuvre l'interface ERC721TokenReceiver s'il doit recevoir un transfert. Cela garantira que le contrat peut gérer les transferts de jetons ERC721 et empêcher les jetons d'être verrouillés dans un contrat qui ne le peut pas.
 
 ### transferFrom
 
@@ -41,7 +41,7 @@ The `transferFrom` function is not secure because it doesn’t check if the smar
 
 ### approve
 
-The function `approve` (line 94) gives the account with the address `to` the permission to manage the token with the id `tokenId` on behalf of the account calling the function.
+La fonction `approve` (ligne 94) donne au compte avec l'adresse `to` la permission de gérer le jeton avec l'identifiant `tokenId` au nom du compte appelant la fonction.
 
 ### getApproved
 
@@ -57,7 +57,7 @@ The function `getApproved` (line 103) returns the boolean true if the account wi
 
 ## IERC721 Events
 
-ERC721 contracts must also emit the following events:
+Les contrats ERC721 doivent également émettre les événements suivants :
 
 ### Transfer
 
@@ -79,7 +79,7 @@ With the implementation of the ERC165 interface, contracts can declare the suppo
 
 Our IERC721 interface here imports (line 6) and inherits (line 11) from the IERC165 interface.
 
-This is how <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol" target="_blank">OpenZeppelins implementation</a> of the ERC165 interface looks like:
+Voici à quoi ressemble <0>l'implémentation OpenZeppelins</0> de l'interface ERC165 :
 
 ```
 interface IERC165 {
@@ -87,13 +87,13 @@ interface IERC165 {
 }
 ```
 
-For example, the ERC165 identifier for the ERC721 interface as specified in the EIP721 is “0x80ac58cd”. Learn how to calculate an interface identifier and more about the ERC165 in its <a href="https://eips.ethereum.org/EIPS/eip-165" target="_blank">improvement proposal</a>.
+Par exemple, l'identifiant ERC165 pour l'interface ERC721 comme spécifié dans l'EIP721 est "0x80ac58cd". Apprenez à calculer un identifiant d'interface et en savoir plus sur l'ERC165 dans sa <0>proposition d'amélioration</0>.
 
 ## Other interfaces
 
-The <a href="https://eips.ethereum.org/EIPS/eip-721#specification" target="_blank">IERC721TokenReceiver</a> interface must be implemented to accept safe transfers.
+L'interface <0>IERC721TokenReceiver</0> doit être implémentée pour accepter les transferts sécurisés.
 
-There are two optional extensions for ERC721 contracts specified in the EIP721:
+Il existe deux extensions facultatives pour les contrats ERC721 spécifiées dans l'EIP721 :
 
 IERC721Enumerable enables a contract to publish its full list of tokens and make them discoverable.
 
