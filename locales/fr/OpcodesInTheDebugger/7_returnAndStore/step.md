@@ -11,7 +11,7 @@ We push `00` to the stack because this is the offset position of the contract by
 
 Now we can call the all important `RETURN` opcode.
 
-The **stack inspector** shows:
+L'inspecteur de pile\*\* montre :
 `0: 0x0000000000000000000000000000000000000000000000000000000000000000`
 `1: 0x000000000000000000000000000000000000000000000000000000000000003e`
 
