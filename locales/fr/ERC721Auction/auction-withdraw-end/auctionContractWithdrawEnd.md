@@ -1,4 +1,4 @@
-In this section, we will finish the contract, create a function to withdraw the bids that an account has made, and create a function to end the auction.
+Dans cette section, nous allons terminer le contrat, créer une fonction pour retirer les offres qu'un compte a faites et créer une fonction pour mettre fin à l'enchère.
 
 ### Withdraw
 
@@ -6,7 +6,7 @@ We create a local variable `bal` (balance) that stores the total value of bids t
 
 Next, we set the value of the address of the function caller to 0 in the bids mapping because they will withdraw the total value of their bids (line 76).
 
-Now we transfer that amount of ETH from the contract to the function caller and emit the `Withdraw` event (line 79).
+Maintenant, nous transférons ce montant d'ETH du contrat à l'appelant de la fonction et émettons l'événement "Retrait" (ligne 79).
 
 ### End
 
@@ -24,7 +24,7 @@ Finally, we emit the `End` event (line 95).
 
 ## ⭐️ Assignment
 
-1. Deploy an NFT contract. You can use the NFT contract that we created in our Learneth "Solidity NFT Course".
+1. Déployer un contrat NFT. You can use the NFT contract that we created in our Learneth "Solidity NFT Course".
 
 2. Mint yourself an NFT with the tokenId 0.
 
