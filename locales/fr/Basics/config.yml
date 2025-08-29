@@ -1,7 +1,7 @@
 ---
-id: basics
+id: basiques
 name: Basics of Remix
-summary: A typical workflow in Remix
+summary: Un flux de travail typique dans Remix
 level: 1
 tags:
   - Remix
