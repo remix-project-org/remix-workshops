@@ -17,24 +17,24 @@ Des actifs comme l'argent : Bitcoin ou un billet d'un dollar, par exemple, sont 
 
 We can divide tokens into these two types: fungible tokens, where all tokens are the same, and non-fungible tokens (NFTs), where every token is unique.
 
-### Token standard
+### Norme de jeton
 
 The behavior of a token is specified in its smart contract (token contract). The contract could, for example, include the functionality to transfer a token or check for its total supply.
 
 If everybody would create their own token contracts with different behavior and naming conventions, it would make it very hard for people to build contracts or applications that are able to interact with each other.
 
-The Ethereum community has developed token standards that define how a developer can create tokens that are interoperable (able to work with others) with other contracts, products, and services. Contracts developed under these standards need to include a certain set of functions and events.
+La communauté Ethereum a développé des normes de jetons qui définissent comment un développeur peut créer des jetons interopérables (capables de travailler avec d'autres) avec d'autres contrats, produits et services. Contracts developed under these standards need to include a certain set of functions and events.
 
 The most popular token standards are the ERC20 for fungible tokens and the ERC721 for non-fungible tokens. In this course, we will learn how to create and interact with NFTs, tokens created with the ERC721 token standard.
 
 If you want to learn more about fungible tokens and the ERC20 token standard, have a look at the Learneth ERC20 Token Course.
 
-The ERC777 is a fungible token standard, like the ERC20, that includes more advanced features like hooks while remaining backward compatible with ERC20. Learn more about the ERC777 in its <a href="https://eips.ethereum.org/EIPS/eip-777" target="_blank">EIP (Ethereum improvement proposal)</a>.
+The ERC777 is a fungible token standard, like the ERC20, that includes more advanced features like hooks while remaining backward compatible with ERC20. En savoir plus sur l'ERC777 dans sa <0>EIP (proposition d'amélioration de l'Ethereum)</0>.
 
 The ERC1155 is a multi-token standard that allows a single contract to manage different types of tokens, such as fungible, non-fungible, or semi-fungible tokens.
-Learn more about the ERC1155 in its <a href="https://eips.ethereum.org/EIPS/eip-1155" target="_blank">EIP</a>.
+En savoir plus sur l'ERC1155 dans son <0>EIP</0>.
 
-## ⭐️ Assignment
+## ⭐️ Affectation
 
 For this assignment, we will test your knowledge via a short quiz.
 Assign the number of the best answer to the variables `question1` (line 5),
@@ -42,7 +42,7 @@ Assign the number of the best answer to the variables `question1` (line 5),
 
 ### Question 1:
 
-Why are blockchain-based tokens so revolutionary?
+Pourquoi les jetons basés sur la blockchain sont-ils si révolutionnaires ?
 
 1. Because people can now make investments anonymously.
 2. Because they represent ownership in digital assets that can be owned and transferred.
@@ -50,7 +50,7 @@ Why are blockchain-based tokens so revolutionary?
 
 ### Question 2:
 
-Why did the community create token standards?
+Pourquoi la communauté a-t-elle créé des normes de jetons ?
 
 1. So that the community can control and approve the tokens that are created.
 2. In order to restrict the functionality of tokens to safe and non-malicious actions.
