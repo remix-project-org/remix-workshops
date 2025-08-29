@@ -55,11 +55,11 @@ steps:
     name: 9. Ubicaciones de datos
     path: data-locations
   - 
-    name: 10.1 Transactions - Ether and Wei
+    name: '10.1. Transacciones: ether y Wei'
     path: transactions-ether-and-wei
   - 
-    name: 10.2 Transactions - Gas and Gas Price
+    name: '10.2. Transacciones: gas y precio del gas'
     path: transactions-gas-and-gas-price
   - 
-    name: 10.3 Transactions - Sending Ether
+    name: '10.3. Transacciones: enviar ether'
     path: transactions-sending-ether
