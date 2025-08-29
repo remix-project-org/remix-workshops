@@ -1,4 +1,4 @@
-Welcome to the Multisignature Wallet course! In this section, we'll explore the fundamentals of Multisignature (Multisig) wallets and we'll go through a multisig wallet contract.
+Welcome to the Multisignature Wallet course! Dans cette section, nous explorerons les principes fondamentaux des portefeuilles Multisignature (Multisig) et nous passerons par un contrat de portefeuille multisig.
 
 ## What is a Multisignature Wallet?
 
@@ -6,13 +6,13 @@ A multisignature (multisig) wallet is a type of digital wallet that requires mul
 
 Imagine a multisig wallet as a secure vault with multiple locks. To open the vault, each keyholder must open their individual lock. This setup ensures that no single person can access the vault's contents without the others' consent.
 
-## How Does a Multisig Wallet Work?
+## Comment fonctionne un portefeuille multisig ?
 
-In a multisig setup, each transaction must receive a predetermined number of approvals from a set group of individuals. For instance, in a 3-of-5 wallet configuration, there are five authorized addresses, but a transaction only goes through when at least three of them give their approval. When a transaction is initiated, it's presented as a **proposal** to the group. Each member who agrees to the transaction uses their private key to digitally sign it.
+In a multisig setup, each transaction must receive a predetermined number of approvals from a set group of individuals. Par exemple, dans une configuration de portefeuille 3 sur 5, il y a cinq adresses autorisées, mais une transaction n'est effectuée que lorsqu'au moins trois d'entre elles donnent leur approbation. Lorsqu'une transaction est initiée, elle est présentée comme une **proposition** au groupe. Chaque membre qui accepte la transaction utilise sa clé privée pour la signer numériquement.
 
 These **digital signatures** are unique and are generated based on the combination of the transaction data and the private key.
 
-When the required number of signatures is reached, the transaction is broadcasted to the blockchain for execution.
+Lorsque le nombre requis de signatures est atteint, la transaction est diffusée sur la blockchain pour exécution.
 
 ## Why Use a Multisig Wallet?
 
@@ -31,7 +31,7 @@ In this section, we learned that a multisig wallet requires multiple keys to aut
 3. A physical wallet used for storing cryptocurrency.
 4. A wallet that can only hold multiple types of cryptocurrencies.
 
-### 2) How does a Multisignature Wallet enhance security?
+### 2) Comment un portefeuille multisignature améliore-t-il la sécurité ?
 
 1. By requiring a single private key for transactions.
 2. By distributing transaction approval across multiple owners.
