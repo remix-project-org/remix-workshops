@@ -1,6 +1,6 @@
 ---
 id: deploylibraries
-name: Deploy with Libraries
+name: Déployer avec des bibliothèques
 summary: Write, Deploy and link a Library to a Contract
 level: 3
 tags:
