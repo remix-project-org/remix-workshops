@@ -4,17 +4,17 @@ The following are the two more relevant functions you will need to be familiar w
 
 ## callContract()
 
-This function triggers an interchain transaction with a message from the source to the destination chain. It takes three relevant parameters:
+Cette fonction déclenche une transaction interchaîne avec un message de la source à la chaîne de destination. It takes three relevant parameters:
 
 1. `destinationChain`: The name of the destination chain
-2. `destinationContractAddress`: The address on the destination chain this transaction will execute at.
+2. `destinationContractAddress` : L'adresse sur la chaîne de destination à laquelle cette transaction sera exécutée.
 3. `payload`: The message that is being sent
 
-The first two parameters are quite intuitive. They consist of both the name of the chain you want this transaction to go to and the address on that chain you want to end execute at. The final parameter is the payload. This payload represents a general message that is sent to the destination chain. The message can be used in many different ways on the destination chain. For example, you can send data to be used as a parameter in another function on the destination chain, you can send a function signature as a message that will then get executed on a destination chain, and much more.
+Les deux premiers paramètres sont assez intuitifs. They consist of both the name of the chain you want this transaction to go to and the address on that chain you want to end execute at. The final parameter is the payload. This payload represents a general message that is sent to the destination chain. The message can be used in many different ways on the destination chain. For example, you can send data to be used as a parameter in another function on the destination chain, you can send a function signature as a message that will then get executed on a destination chain, and much more.
 
 ## callContractWithToken()
 
-This function triggers an interchain with a message and a fungible token from the source to the destination chain. It takes five relevant parameters:
+Cette fonction déclenche une interchaîne avec un message et un jeton fongible de la source à la chaîne de destination. It takes five relevant parameters:
 
 1. `destinationChain`: The name of the destination chain
 2. `destinationContractAddress`: The address on the destination chain this transaction will execute at.
