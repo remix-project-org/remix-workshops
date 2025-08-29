@@ -15,13 +15,13 @@ steps:
     name: 2. Interface
     path: erc20-interface
   - 
-    name: 3. Token Creation
+    name: 3. Création de jetons
     path: erc20-token-creation
   - 
     name: 4. Interaction
     path: erc20-interaction
   - 
-    name: 5. Testnet Deployment
+    name: 5. Déploiement de Testnet
     path: erc20-testnet-deployment
   - 
     name: 6. Extensions
