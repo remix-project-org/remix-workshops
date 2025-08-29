@@ -1,8 +1,8 @@
-# Delegate call
+# Appel de délégué
 
-It's a special variant of a **message call**, which is identical to a message call apart from the fact that the code at the target address is executed in the context of the calling contract so **msg.sender** and **msg.value** do not change their values.
+C'est une variante spéciale d'un **appel de message**, qui est identique à un appel de message mis à part le fait que le code à l'adresse cible est exécuté dans le contexte du contrat d'appel afin que **msg.sender** et **msg.value** ne changent pas leurs valeurs.
 
-This means that a contract can dynamically load code from a different address at runtime.
+Cela signifie qu'un contrat peut charger dynamiquement du code à partir d'une adresse différente au moment de l'exécution.
 
 The storage, the current address and balance still refer to the calling contract, only the code is taken from the called address.
 
