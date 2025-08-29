@@ -4,7 +4,7 @@ The metadata extension is optional. It allows us to add additional information t
 
 ### name
 
-The function `name` (line 16) returns the name of the token collection. A token collection means all tokens created with your ERC721 token contract implementation. Every token in this collection will have this name, regardless of their tokenId.
+La fonction `name` (ligne 16) renvoie le nom de la collection de jetons. Une collection de jetons désigne tous les jetons créés avec la mise en œuvre de votre contrat de jeton ERC721. Every token in this collection will have this name, regardless of their tokenId.
 
 ### symbol
 
@@ -14,9 +14,9 @@ The function `symbol` (line 21) returns the symbol of the token collection.
 
 The function `tokenURI` (line 26) returns the URI for the token with the id `tokenId`. In this case it’s not the URI of the whole collection but of an individual token in the collection.
 
-## ERC721 Metadata JSON Schema
+## Schéma JSON de métadonnées ERC721
 
-The file that the tokenURI points to should conform to the Metadata JSON Schema as it is specified in the <a href="https://eips.ethereum.org/EIPS/eip-721#specification" target="_blank">EIP-721</a>.
+Le fichier vers lequel le tokenURI pointe doit être conforme au schéma JSON de métadonnées tel qu'il est spécifié dans le <0>EIP-721</0>.
 
 ```
 {
@@ -25,15 +25,16 @@ The file that the tokenURI points to should conform to the Metadata JSON Schema 
     "properties": {
         "name": {
             "type": "string",
-            "description": "Identifies the asset to which this NFT represents"
+            "description": "Identifie l'actif que ce NFT représente"
         },
         "description": {
             "type": "string",
-            "description": "Describes the asset to which this NFT represents"
-        },
+            "description": "Décrit l'actif que ce NFT représente"
+
+},
         "image": {
             "type": "string",
-            "description": "A URI pointing to a resource with mime type image/* representing the asset to which this NFT represents. Consider making any images at a width between 320 and 1080 pixels and aspect ratio between 1.91:1 and 4:5 inclusive."
+            "description": "Un URI pointant vers une ressource avec une image de type mime/* représentant l'actif que ce NFT représente. Envisagez de créer des images d'une largeur comprise entre 320 et 1080 pixels et un rapport d'aspect compris entre 1,91:1 et 4:5 inclus."
         }
     }
 }
