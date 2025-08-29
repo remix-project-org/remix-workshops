@@ -13,7 +13,7 @@ Nous devons donc déployer la bibliothèque pour obtenir son adresse.
 
   ![Choose aLib](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/4_Linking_and_Deploying/images/contract_alib.png "Choose aLib")
 
-- Click the clipboard icon to copy the address of the library.
+- Cliquez sur l'icône du presse-papiers pour copier l'adresse de la bibliothèque.
 
   ![Copy lib1](https://github.com/ethereum/remix-workshops/raw/master/DeployWithLibraries/4_Linking_and_Deploying/images/alib_copy.png "Copy")
 
@@ -21,5 +21,5 @@ Nous devons donc déployer la bibliothèque pour obtenir son adresse.
 
 - Reselect the `sampleContract` contract in the `Run transaction` module and hit deploy.
 
-- Deploy should now be successful.
+- Le déploiement devrait maintenant réussir.
 
