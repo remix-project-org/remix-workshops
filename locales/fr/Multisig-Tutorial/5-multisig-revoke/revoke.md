@@ -1,4 +1,4 @@
-In this section, we'll explore the process of revoking confirmations. This process is necessary when an owner changes their mind about a transaction and wants to stop it from being executed. This section will be pretty straightforward.
+In this section, we'll explore the process of revoking confirmations. This process is necessary when an owner changes their mind about a transaction and wants to stop it from being executed. Cette section sera assez simple.
 
 ## revokeConfirmation Event
 
@@ -27,4 +27,4 @@ Confirm and revoke a transaction to send 2 Ether to the first account in the "AC
 
 ## Final Conclusion
 
-In this tutorial, we explored the process of creating a multi-signature wallet. We learned how to initialize the contract, deposit Ether, submit, confirm, and revoke transactions. We also learned how to execute transactions and retrieve information about the multi-signature wallet.
+Dans ce tutoriel, nous avons exploré le processus de création d'un portefeuille multi-signature. We learned how to initialize the contract, deposit Ether, submit, confirm, and revoke transactions. We also learned how to execute transactions and retrieve information about the multi-signature wallet.
