@@ -1,7 +1,7 @@
-1. You want to show someone what happens when you do a number of transactions with a contract and you don't want to explain each step - you just want to get them to the last step.
+1. Vous voulez montrer à quelqu'un ce qui se passe lorsque vous effectuez un certain nombre de transactions avec un contrat et que vous ne voulez pas expliquer chaque étape - vous voulez juste l'amener à la dernière étape.
 
-    - To show someone a problem in their code.
+   - Pour montrer à quelqu'un un problème dans son code.
 
-    - In a class, to get the students to a certain place and have them start working from there.
+   - Dans une classe, pour amener les étudiants à un certain endroit et les faire commencer à travailler à partir de là.
 
-2. You want to start your development in the JavascriptVM because it is quick and then to switch to another testnet - but you don't want to manually repeat all the tedious clicking for each different network.
+2. Vous voulez commencer votre développement dans le JavascriptVM parce que c'est rapide, puis passer à un autre réseau de test - mais vous ne voulez pas répéter manuellement tous les clics fastidieux pour chaque réseau différent.
