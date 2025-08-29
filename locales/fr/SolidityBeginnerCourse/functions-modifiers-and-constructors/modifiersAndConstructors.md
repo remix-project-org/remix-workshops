@@ -18,21 +18,21 @@ The code you place before the underscore in the modifier will be executed before
 
 Dans ce cas, la fonction `require` (ligne 19) vérifie si l'adresse exécutant le contrat est la même que la valeur stockée dans la variable `owner`. If it is, the rest of the code will be executed, otherwise it will throw an error.
 
-You can learn more about `assert` and `require` in the <a href="https://docs.soliditylang.org/en/latest/control-structures.html#error-handling-assert-require-revert-and-exceptions" target="_blank">Solidity documentation</a>, they are used to check for conditions and throw errors if they are not met.
+Vous pouvez en apprendre plus sur `assert` et `require` dans la <0>Documentation Solidity</0>, ils sont utilisés pour vérifier les conditions et lancer des erreurs si elles ne sont pas remplies.
 
 The `validAddress` modifier (line 28) has a parameter of type `address` and checks if the provided address is valid. If it is, it continues to execute the code.
 
 ### Constructor
 
-A constructor function is executed upon the creation of a contract. You can use it to run contract initialization code. The constructor can have parameters and is especially useful when you don't know certain initialization values before the deployment of the contract.
+A constructor function is executed upon the creation of a contract. Vous pouvez l'utiliser pour exécuter le code d'initialisation du contrat. The constructor can have parameters and is especially useful when you don't know certain initialization values before the deployment of the contract.
 
 You declare a constructor using the `constructor` keyword. The constructor in this contract (line 11) sets the initial value of the owner variable upon the creation of the contract.
 
-<a href="https://www.youtube.com/watch?v=b6FBWsz7VaI" target="_blank">Watch a video tutorial on Function Modifiers</a>.
+<0>Regardez un tutoriel vidéo sur les modificateurs de fonction</0>.
 
 ## ⭐️ Assignment
 
-1. Create a new function, `increaseX` in the contract. The function should take an input parameter of type `uint` and increase the value of the variable `x` by the value of the input parameter.
+1. Create a new function, `increaseX` in the contract. La fonction doit prendre un paramètre d'entrée de type `uint` et augmenter la valeur de la variable `x` de la valeur du paramètre d'entrée.
 2. Make sure that x can only be increased.
 3. The body of the function `increaseX` should be empty.
 
