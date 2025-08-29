@@ -1,16 +1,16 @@
 ---
 id: uniswapSwapCourse
-name: Uniswap Swap Course
+name: Cours d'échange Uniswap
 summary: Go through the Solidity code of the Uniswap V3 Swap contract. Developed by the p2p learning platform https://dacade.org.
 level: 2
 tags:
   - Solidity
-  - Tokens
+  - Jetons
   - Uniswap
 steps:
   - 
     name: 1. Introduction
-    path: 1-introduction-to-uniswap
+    path: 1-introduction-à-uniswap
   - 
     name: 2. Routers, Interfaces, and Structs
     path: 2-router-interfaces-and-structs
