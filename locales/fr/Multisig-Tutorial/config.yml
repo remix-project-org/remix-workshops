@@ -12,7 +12,7 @@ steps:
     name: 1. Introduction
     path: 1-multisig-introduction
   - 
-    name: 2. Initialize the Contract
+    name: 2. Initialiser le contrat
     path: 2-multisig-initialization
   - 
     name: 3. Deposits
@@ -21,5 +21,5 @@ steps:
     name: 4. Transactions
     path: 4-multisig-transactions
   - 
-    name: 5. Revoking Confirmations
+    name: 5. Révocation des confirmations
     path: 5-multisig-revoke
