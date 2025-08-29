@@ -1,4 +1,4 @@
-CODECOPY is one of the many opcodes run by the EVM. Check out the complete list of opcodes at <a href="https://ethervm.io/" target="_blank">https://ethervm.io/</a> .
+CODECOPY is one of the many opcodes run by the EVM. Consultez la liste complète des opcodes sur <0>https://ethervm.io/</0> .
 
 CODECOPY takes the **running code** (or part of it) and to copies it from the `calldata` to the `memory`.
 
