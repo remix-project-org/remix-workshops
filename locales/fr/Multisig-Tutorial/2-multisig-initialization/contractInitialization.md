@@ -6,7 +6,7 @@ From this section on in this tutorial, we will be building up a multisig contrac
 
 ## Overview
 
-In this section, the contract consists of events, state variables, modifiers, and functions. **Events** provide transparency by logging specified activities on the blockchain, while **modifiers** ensure that only authorized users can execute certain functions.
+Dans cette section, le contrat se compose d'événements, de variables d'état, de modificateurs et de fonctions. **Events** provide transparency by logging specified activities on the blockchain, while **modifiers** ensure that only authorized users can execute certain functions.
 
 ## State Variables
 
@@ -24,21 +24,21 @@ Next, we have a modifier called `onlyOwner` (Line 9). Modifiers in Solidity are 
 
 ## Constructor Function
 
-The `constructor` function (Line 14) is executed only once during the deployment of the contract. It initializes essential parameters, in this case, the list of owners and the required number of confirmations (Line 14).
+The `constructor` function (Line 14) is executed only once during the deployment of the contract. Il initialise les paramètres essentiels, dans ce cas, la liste des propriétaires et le nombre requis de confirmations (ligne 14).
 
-On lines 15 and 16, we have two `require` statements to ensure that the inputs are valid. In this case, we require that there must be at least one owner and that the number of required confirmations must be greater than zero and less than or equal to the number of owners.
+On lines 15 and 16, we have two `require` statements to ensure that the inputs are valid. Dans ce cas, nous exigeons qu'il y ait au moins un propriétaire et que le nombre de confirmations requises soit supérieur à zéro et inférieur ou égal au nombre de propriétaires.
 
 The constructor then initializes the contract state by verifying that is not address(0) (Line 25) and that the owner is unique (Line 26).  Then it adds a key/ value pair to the isOwner mapping (Line 28), and then it populates the `owners` array with the provided owner addresses (Line 29).
 
-Finally, it sets the `numConfirmationsRequired` variable with the specified value (Line 32).
+Enfin, il définit la variable `numConfirmionsRequired` avec la valeur spécifiée (ligne 32).
 
 ## getOwners Function
 
-The `getOwners` function (Line 36) allows users to retrieve the list of owners of the multi-signature wallet. It returns the `owners` array (Line 37).
+The `getOwners` function (Line 36) allows users to retrieve the list of owners of the multi-signature wallet. Il renvoie le tableau `owners` (ligne 37).
 
 ## getNumConfirmationsRequired Function
 
-The `getNumConfirmationsRequired` function (Line 41) allows users to retrieve the number of confirmations required for a transaction. It returns the `numConfirmationsRequired` variable (Line 42).
+La fonction `getNumConfirmationsRequired` (ligne 41) permet aux utilisateurs de récupérer le nombre de confirmations requises pour une transaction. It returns the `numConfirmationsRequired` variable (Line 42).
 
 ## Conclusion
 
@@ -54,7 +54,7 @@ Deploy a Multisig contract with three owners and require two confirmations for t
 4. Under "_OWNERS", enter three an array of three addresses.
 5. Under "_NUM_CONFIRMATIONS_REQUIRED", enter the number of confirmations required for a transaction.
 
-**Hints:**
+**Indices:**
 
 - You can get addresses from the "ACCOUNTS" dropdown menu.
 - The array of addresses should be in the format: ["0x123...", "0x456...", "0x789..."].
