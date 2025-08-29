@@ -24,7 +24,7 @@ Finally, we emit the `End` event (line 95).
 
 ## ⭐️ Assignment
 
-1. Déployer un contrat NFT. You can use the NFT contract that we created in our Learneth "Solidity NFT Course".
+1. Déployer un contrat NFT. Vous pouvez utiliser le contrat NFT que nous avons créé dans notre cours Learneth "Solidity NFT".
 
 2. Mint yourself an NFT with the tokenId 0.
 
@@ -38,7 +38,7 @@ Finally, we emit the `End` event (line 95).
 
 7. Bid 2 Ether using account 1, and 3 Ether using account 2. If you call the `highestBidder` function, it should now return the address of account 2.
 
-8. Call the `withdraw` function with account 1. In the balance of account 1, you should see the 2 Ether minus some transaction fees.
+8. Appelez la fonction `retrait` avec le compte 1. In the balance of account 1, you should see the 2 Ether minus some transaction fees.
 
 9. After 5 minutes have passed, call the `end` function. Then, call the `ended` function which should return `true`.
 
