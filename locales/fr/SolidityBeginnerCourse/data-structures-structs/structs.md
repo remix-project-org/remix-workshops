@@ -2,28 +2,28 @@ In Solidity, we can define custom data types in the form of _structs_. Structs a
 
 ### Defining structs
 
-We define a struct using the `struct` keyword and a name (line 5). Inside curly braces, we can define our struct’s members, which consist of the variable names and their data types.
+Nous définissons une structure en utilisant le mot-clé `struct` et un nom (ligne 5). Inside curly braces, we can define our struct’s members, which consist of the variable names and their data types.
 
-### Initializing structs
+### Initialisation des structures
 
-There are different ways to initialize a struct.
+Il existe différentes façons d'initialiser une structure.
 
 Positional parameters: We can provide the name of the struct and the values of its members as parameters in parentheses (line 16).
 
 Key-value mapping: We provide the name of the struct and the keys and values as a mapping inside curly braces (line 19).
 
-Initialize and update a struct: We initialize an empty struct first and then update its member by assigning it a new value (line 23).
+Initialiser et mettre à jour une structure : Nous initialisons d'abord une structure vide, puis mettons à jour son membre en lui attribuant une nouvelle valeur (ligne 23).
 
 ### Accessing structs
 
 To access a member of a struct we can use the dot operator (line 33).
 
-### Updating structs
+### Mise à jour des structures
 
-To update a structs’ member we also use the dot operator and assign it a new value (lines 39 and 45).
+Pour mettre à jour le membre d'une structure, nous utilisons également l'opérateur de point et lui attribuons une nouvelle valeur (lignes 39 et 45).
 
-<a href="https://www.youtube.com/watch?v=kYBHq7EmFBc" target="_blank">Watch a video tutorial on Structs</a>.
+<0>Regardez un tutoriel vidéo sur les structures</0>.
 
-## ⭐️ Assignment
+## ⭐️ Affectation
 
 Create a function `remove` that takes a `uint` as a parameter and deletes a struct member with the given index in the `todos` mapping.
