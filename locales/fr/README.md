@@ -1,35 +1,29 @@
-# This is a repo of tutorials for the Remix's LearnEth Plugin
+# Ceci est un dépôt de tutoriels pour le plugin LearnEth de Remix
 
-### To use these tutorials:
+### Pour utiliser ces tutoriels :
 
-**1. Open Remix**
+**1. Ouvrez Remix**
 
 https://remix.ethereum.org
 
-**2. In the plugin manager activate LEARNETH**
+**2. Dans le gestionnaire de plugins activiez LEARNETH**
 
-**3. Go to the Learneth plugin and these tutorials will load by default**
+\*\*3. Allez dans le plugin LearnEth et ces tutoriels se chargeront par défaut
 
-**4. You may need to sign into Github especially during an in-person workshop**
+\*\*4. Vous devrez peut-être vous connecter à Github en particulier lors d'un atelier en présentiel
 
-Github will block too many requests from the same location, unless you are signed into Github and have input your token.  Generally, this is only an issue during in person workshops, when there can be many requests from the same location.
+Github bloquera un trop grand du même emplacement, à moins que vous ne soyez connecter à Github et que vous n'ayez saisi votre jeton.  En général, cela repose problème que des ateliers en présentiel, lorsqu'il peut y avoir de nombreuses requêtes provenant du même endroit.
 
-To input your Github token:
+Pour saisir votre jeton Github :
 
 ```
-- In one browser window - go to https://remix.ethereum.org and go to the settings tab
-- In another browser window go to: 
-
-https://github.com/settings/tokens 
-
-and create a new token and save it in Remix in the you just opened on the settings tab.
 ```
 
 ---
 
-### Write your own tutorials for LEARNETH:
+### Rédigez vos propre tutoriels pour LEARNETH:
 
-See this site for instructions:
+Consultez ce site pour Les instructions :
 
 https://remix-learneth-plugin.readthedocs.io/en/latest/index.html#creating-tutorials
 
