@@ -1,3 +1,3 @@
-## Learn the Proxy Pattern
+## Apprendre le modèle de proxy
 
-Save gas & make upgradable contracts
+Économisez de l'essence et faites des contrats à niveau
