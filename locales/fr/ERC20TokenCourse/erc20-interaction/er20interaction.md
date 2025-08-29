@@ -1,26 +1,27 @@
-In this section, we will deploy a contract in our browser and test its functionality.
+Dans cette section, nous allons déployer un contrat dans notre navigateur et tester sa fonctionnalité.
 
-### 1. Deploy the contract
+### 1. Déployer le contrat
 
-**1.1** Compile your EduCoin contract in the "Solidity compiler" module of the Remix IDE.
+**1.1** Compilez votre contrat EduCoin dans le module "Solidity compiler" de l'IDE Remix.
 
 **1.2** In the "Deploy & run transactions" module, select your contract "EduCoin" in the contract input field and click on the "Deploy" button. Always make sure to select the correct contract in the contract selector input field.
 
-**GIF** Compile and deploy: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_compileAndDeploy.gif?raw=true" alt="Compile and deploy contract" width="300"/>
+**GIF** Compiler et déployer :
+<0/>
 
-### 2. Test the functions
+### 2. Testez les fonctions
 
 Expand the token contract functions in the IDE.
 
-#### 2.1 Decimals
+#### 2.1 Décimales
 
 Click on the "decimals" button to call the decimals() function.
-It should return "18".
+Il devrait retourner "18".
 
 #### 2.2 Name
 
 Click on the "name" button to call the name() function.
-It should return "EduCoin".
+Il devrait renvoyer "EduCoin".
 
 #### 2.3 Symbol
 
@@ -30,58 +31,64 @@ It should return "EDC".
 #### 2.4 Total supply
 
 Click on the "totalSupply" button to call the totalSupply() function.
-It should return 1000000000000000000000 (1000\*10\*\*18).
+Il devrait retourner 1000000000000000000000 (1000\*10\*\*18).
 
-**GIF** Test decimals, name, symbol, and totalSupply functions: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_test_functions.gif?raw=true" alt="Test transfer function" width="300"/>
+**GIF** Testez les décimales, le nom, le symbole et les fonctions de totalSupply :
+<0/>
 
 #### 2.5 Balance of
 
 **2.5.1** Go to the "ACCOUNT" section in the sidebar and copy the displayed address by using the copy icon next to it.
 
 **2.5.2** Paste the address in the input field next to the "balanceOf" function button and click on the button.
-It should return 1000000000000000000000 (1000\*10\*\*18).
+Il devrait retourner 1000000000000000000000 (1000\*10\*\*18).
 
-**GIF** Test balanceOf function: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_balanceOf.gif?raw=true" alt="Test transfer function" width="300"/>
+**GIF** Test de l'équilibre de la fonction :
+<0/>
 
 #### 2.6 Transfer
 
 We will transfer EduCoin from one account to a second account.
 
-**2.6.1** Go to the "ACCOUNT" section in the sidebar and click on the displayed address. This should open a dropdown. Select the second address displayed and copy its address (account 2).
+**2.6.1** Allez dans la section "COMPTE" dans la barre latérale et cliquez sur l'adresse affichée. This should open a dropdown. Sélectionnez la deuxième adresse affichée et copiez son adresse (compte 2).
 
 **2.6.2** Open the dropdown and select the first account again (account 1), because this is the account that we want to use to make the transfer.
 
-**2.6.3** Paste the address in the input field next to the "transfer" function button, input the number 500000000000000000000, and click on the button.
+**2.6.3** Collez l'adresse dans le champ de saisie à côté du bouton de fonction "transfert", entrez le numéro 500000000000000000000 et cliquez sur le bouton.
 
 **2.6.4** If you check the balances for account 1 and account 2, they should both return the amount 500000000000000000000.
 
-**GIF** Test transfer function: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_transfer.gif?raw=true" alt="Test transfer function" width="300"/>
+**GIF** Fonction de transfert de test :
+<0/>
 
 #### 2.7 Approve
 
 We will now allow account 1 to spend tokens on behalf of account 2.
 
-**2.7.1** Go to the "Account" section, copy the address of account 1, then set it to account 2 again.
+**2.7.1** Allez dans la section "Compte", copiez l'adresse du compte 1, puis définissez-la à nouveau sur le compte 2.
 
 **2.7.2** In the approve function, enter the address of account 1 as the input for spender and set the amount to 250000000000000000000.
 
-**GIF** Test approve function: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_approve.gif?raw=true" alt="Test approve function" width="300"/>
+**GIF** Fonction d'approbation de test :
+<0/>
 
-#### 2.8 Allowance
+#### 2.8 Allocation
 
-Next to the "allowance" button enter the address of account 2 as the owner and account 1 as the spender; click on the button.
+À côté du bouton "allocation", entrez l'adresse du compte 2 en tant que propriétaire et du compte 1 en tant que dépensier ; cliquez sur le bouton.
 It should return 1000000000000000000000.
 
-**GIF** Test allowance function: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_allowance.gif?raw=true" alt="Test allowance function" width="300"/>
+**GIF** Fonction d'allocation de test :
+<0/>
 
 #### 2.9 TransferFrom
 
-Now account 1 will transfer 250000000000000000000 tokens from account 2 to its own account.
+Maintenant, le compte 1 transférera 2500000000000000000 de jetons du compte 2 vers son propre compte.
 
 **2.9.1** Select account 1 in the "ACCOUNT" section.
 
-**2.9.2** Next to the "transferFrom" button enter the address of account 2 as the sender and account 1 as the recipient, enter 250000000000000000000 as the amount and click on the button.
+**2.9.2** À côté du bouton "transferFrom", entrez l'adresse du compte 2 comme expéditeur et du compte 1 comme destinataire, entrez 25000000000000000000 comme montant et cliquez sur le bouton.
 
-**2.9.3** Check the balances of accounts 2 and 1, they should return 250000000000000000000 and 750000000000000000000.
+**2.9.3** Vérifiez les soldes des comptes 2 et 1, ils devraient retourner 2500000000000000000 et 7500000000000000000.
 
-**GIF** Test transferFrom function: <img src="https://github.com/dacadeorg/remixMedia/blob/main/token-course/erc20/erc20_transferFrom.gif?raw=true" alt="Test transferFrom function" width="300"/>
+**GIF** Test transferFrom function:
+<0/>
