@@ -13,6 +13,6 @@ Remember: _codecopy(t, f, s)_ - copy **s** bytes from code at position **f** to 
 If you look in the **Stack**, you should see that the 2nd element is:
 0x0000000000000000000000000000000000000000000000000000000000000083
 
-And this is the **f** of the input params of codecopy.
+Et c'est le **f** des paramètres d'entrée de codecopy.
 
 ### Hope you picked up a thing or 2 about how opcodes work!
