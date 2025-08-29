@@ -1,6 +1,6 @@
-# Editing a scenario
+# Modification d'un scénario
 
-Here's the first few lines of the scenario that I recorded.  The addresses on my machine will be different from your's.
+Voici les premières lignes du scénario que j'ai enregistré.  Les adresses sur ma machine seront différentes des vôtres.
 
 ```
 {
@@ -11,11 +11,11 @@ Here's the first few lines of the scenario that I recorded.  The addresses on my
     }
 ```
 
-So if you wanted to play this scenario in another testnet, you'd need to change these addresses to address that you have test ETH on so that you could pay for the transactions.  But other than swapping out the addresses, you can quickly run this on other nets.
+So if you wanted to play this scenario in another testnet, you'd need to change these addresses to address that you have test ETH on so that you could pay for the transactions.  Mais en plus d'échanger les adresses, vous pouvez rapidement l'exécuter sur d'autres réseaux.
 
 And you might change the parameters for the functions.
 
-For example here is a bit of the scenario.json a bit further down where proposal 2 was voted for by one of the addresses:
+Par exemple, voici un peu du scenario.json un peu plus bas où la proposition 2 a été votée par l'une des adresses :
 
 ```
 {
@@ -35,7 +35,7 @@ For example here is a bit of the scenario.json a bit further down where proposal
     },
 ```
 
-Let's edit this so that another proposal wins in the playback.
+Modifions ceci pour qu'une autre proposition gagne dans la lecture.
 
 Change the **parameters** array which now is:
 
@@ -45,7 +45,7 @@ Change the **parameters** array which now is:
         ]
 ```
 
-to:
+à:
 
 ```
 "parameters": [
