@@ -1,22 +1,22 @@
-In this section, we will learn how to modify the behavior of a function and how to run contract initialization code.
+Dans cette section, nous allons apprendre à modifier le comportement d'une fonction et à exécuter le code d'initialisation du contrat.
 
 ### Function Modifier
 
-_Function Modifiers_ are used to change the behavior of a function. For example, they often check for a condition prior to executing a function to restrict access or validate inputs.
+_Function Modifiers_ are used to change the behavior of a function. Par exemple, ils vérifient souvent une condition avant d'exécuter une fonction pour restreindre l'accès ou valider les entrées.
 
-This first part of this contract is about changing ownership of a contract. Ownership in this contract is expressed by the value of the state variable `owner` that is of the type `address` (line 7).
+This first part of this contract is about changing ownership of a contract. La propriété dans ce contrat est exprimée par la valeur de la variable d'état `owner` qui est du type `address` (ligne 7).
 
 The function `changeOwner` (line 33) can change this ownership. It takes an input parameter of the type `address` and assigns its value to the state variable `owner`.
 
-However, this function cannot simply be executed under all conditions; it has two modifiers, `onlyOwner` and `validAddress`.
+Cependant, cette fonction ne peut pas simplement être exécutée sous toutes les conditions ; elle a deux modificateurs, `onlyOwner` et `validAddress`.
 
 Let's look at `onlyOwner` first (line 18).
-Function modifiers are defined with the `modifier` keyword and a unique name; they can also have parameters.
+Les modificateurs de fonction sont définis avec le mot-clé `modifier` et un nom unique ; ils peuvent également avoir des paramètres.
 
 The underscore `_` (line 23) is used inside modifiers to represent the rest of the code that will be executed in the body of the modified function.
 The code you place before the underscore in the modifier will be executed before the code in the body of the modified function. The code after the underscore will be executed after the code in the body of the modified function.
 
-In this case, the `require` function (line 19) checks if the address executing the contract is the same as the value stored in the variable `owner`. If it is, the rest of the code will be executed, otherwise it will throw an error.
+Dans ce cas, la fonction `require` (ligne 19) vérifie si l'adresse exécutant le contrat est la même que la valeur stockée dans la variable `owner`. If it is, the rest of the code will be executed, otherwise it will throw an error.
 
 You can learn more about `assert` and `require` in the <a href="https://docs.soliditylang.org/en/latest/control-structures.html#error-handling-assert-require-revert-and-exceptions" target="_blank">Solidity documentation</a>, they are used to check for conditions and throw errors if they are not met.
 
