@@ -30,7 +30,7 @@ When you uncomment the `testPrivateFunc` (lines 58-60) you get an error because 
 
 If you compile and deploy the two contracts, you will not be able to call the functions `privateFunc` and `internalFunc` directly. You will only be able to call them via `testPrivateFunc` and `testInternalFunc`.
 
-<a href="https://www.youtube.com/watch?v=NBzQVJ6OrrQ" target="_blank">Watch a video tutorial on Visibility</a>.
+<0>Regardez un tutoriel vidéo sur la visibilité</0>.
 
 ## ⭐️ Assignment
 
