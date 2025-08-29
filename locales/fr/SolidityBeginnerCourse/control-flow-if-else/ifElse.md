@@ -1,4 +1,4 @@
-Solidity supports different control flow statements that determine which parts of the contract will be executed. The conditional _If/Else statement_ enables contracts to make decisions depending on whether boolean conditions are either `true` or `false`.
+Solidity prend en charge différentes déclarations de flux de contrôle qui déterminent quelles parties du contrat seront exécutées. The conditional _If/Else statement_ enables contracts to make decisions depending on whether boolean conditions are either `true` or `false`.
 
 Solidity differentiates between three different If/Else statements: `if`, `else`, and `else if`.
 
@@ -6,11 +6,11 @@ Solidity differentiates between three different If/Else statements: `if`, `else`
 
 The `if` statement is the most basic statement that allows the contract to perform an action based on a boolean expression.
 
-In this contract’s `foo` function (line 5) the if statement (line 6) checks if `x` is smaller than `10`. If the statement is true, the function returns `0`.
+Dans la fonction `foo` de ce contrat (ligne 5), l'instruction if (ligne 6) vérifie si `x` est inférieur à `10`. Si l'instruction est vraie, la fonction renvoie `0`.
 
 ### else
 
-The `else` statement enables our contract to perform an action if conditions are not met.
+La déclaration `else` permet à notre contrat d'effectuer une action si les conditions ne sont pas remplies.
 
 In this contract, the `foo` function uses the `else` statement (line 10) to return `2` if none of the other conditions are met.
 
@@ -18,13 +18,13 @@ In this contract, the `foo` function uses the `else` statement (line 10) to retu
 
 With the `else if` statement we can combine several conditions.
 
-If the first condition (line 6) of the foo function is not met, but the condition of the `else if` statement (line 8) becomes true, the function returns `1`.
+Si la première condition (ligne 6) de la fonction foo n'est pas rencontrée, mais que la condition de l'instruction `else if` (ligne 8) devient vraie, la fonction renvoie `1`.
 
-<a href="https://www.youtube.com/watch?v=Ld8bFWXLSfs" target="_blank">Watch a video tutorial on the If/Else statement</a>.
+<a href="https://www.youtube.com/watch?v=Ld8bFWXLSfs" target="_blank">Regardez un tutoriel vidéo sur l'instruction If/Else</a>.
 
 ## ⭐️ Assignment
 
-Create a new function called `evenCheck` in the `IfElse` contract:
+Créez une nouvelle fonction appelée `evenCheck` dans le contrat `IfElse` :
 
 - That takes in a `uint` as an argument.
 - The function returns `true` if the argument is even, and `false` if the argument is odd.
