@@ -8,7 +8,7 @@ On line 80, we define the `IERC20` interface. This interface defines a standard 
 
 ### 1. totalSupply
 
-On line 81, we define the `totalSupply` function. This function returns the total supply of the token.
+On line 81, we define the `totalSupply` function. Cette fonction renvoie l'offre totale du jeton.
 
 ### 2. balanceOf
 
@@ -16,15 +16,15 @@ On line 83, we define the `balanceOf` function. This function returns the balanc
 
 ### 3. transfer
 
-On line 85, we define the `transfer` function. This function transfers tokens from the sender to the specified recipient.
+Sur la ligne 85, nous définissons la fonction `transfert`. This function transfers tokens from the sender to the specified recipient.
 
 ### 4. allowance
 
-On line 87, we define the `allowance` function. This function returns the amount of tokens that the spender is allowed to spend on behalf of the owner.
+À la ligne 87, nous définissons la fonction `allocation`. This function returns the amount of tokens that the spender is allowed to spend on behalf of the owner.
 
 ### 5. approve
 
-On line 89, we define the `approve` function. When called, this function approves a spender to spend the specified amount of tokens on behalf of the sender.
+Sur la ligne 89, nous définissons la fonction `approuver`. When called, this function approves a spender to spend the specified amount of tokens on behalf of the sender.
 
 ### 6. transferFrom
 
@@ -32,11 +32,11 @@ On line 91, we define the `transferFrom` function. This function transfers token
 
 ### 7. Events
 
-On lines 102-103, we define the `Transfer` and `Approval` events. These events are emitted when the `transfer` and `approve` functions are called, respectively.
+Sur les lignes 102-103, nous définissons les événements `Transfert` et `Approbation`. Ces événements sont émis lorsque les fonctions "transfert" et "approuver" sont appelées, respectivement.
 
 ## IWETH Interface
 
-On line 106, we define the `IWETH` interface. This interface extends the `IERC20` interface and defines two additional functions:
+À la ligne 106, nous définissons l'interface `IWETH`. This interface extends the `IERC20` interface and defines two additional functions:
 
 ### 1. deposit
 
@@ -49,4 +49,4 @@ On line 109, we define the `withdraw` function. This function withdraws the spec
 
 ## Conclusion
 
-In this tutorial, we explored the Uniswap V3 Swap contract.  To get a full sense of how Uniswap works, try making some swaps on the <a href="https://app.uniswap.org/" target="_blank">Uniswap DApp</a> and go to the <a href="https://docs.uniswap.org/" target="_blank">Uniswap docs</a>.
+In this tutorial, we explored the Uniswap V3 Swap contract.  Pour avoir une idée complète du fonctionnement d'Uniswap, essayez de faire quelques swaps sur le <0>Uniswap DApp</0> et allez dans les <1>documents Uniswap</1>.
