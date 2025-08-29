@@ -1,6 +1,6 @@
 In this section of the course, we will give you a theoretical introduction to blockchain-based tokens.
 
-Blockchain tokens are a new technological building block created by blockchain technology (like websites were for the internet) that enables a decentralized, ownable internet (web3).
+Les jetons Blockchain sont un nouveau bloc de construction technologique créé par la technologie blockchain (comme les sites Web l'étaient pour Internet) qui permet un Internet décentralisé et propriétaire (web3).
 
 ### Introduction
 
@@ -13,7 +13,7 @@ Blockchain Technology was originally invented to keep track of the ownership of 
 
 ### Fungible and non-fungible tokens
 
-Assets like money: Bitcoin or a one-dollar bill, for example, are fungible. Fungible means that all assets are the same and are interchangeable. Assets like art, collectibles, or houses are non-fungible; they are all different and not interchangeable.
+Des actifs comme l'argent : Bitcoin ou un billet d'un dollar, par exemple, sont fongibles. Fungible means that all assets are the same and are interchangeable. Assets like art, collectibles, or houses are non-fungible; they are all different and not interchangeable.
 
 We can divide tokens into these two types: fungible tokens, where all tokens are the same, and non-fungible tokens (NFTs), where every token is unique.
 
