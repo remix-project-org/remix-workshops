@@ -5,13 +5,13 @@ In this step, we'll set up Remix for Circom development by activating the `Circo
 1. At the bottom of the icon panel on the left of the screen, click on the **Plugin Manager** (the plug icon).
    2.In the search bar, type **Circom**.
 2. Find the **Circuit Compiler** plugin in the list and click on the **Activate** button.
-3. The plugin will now appear in your sidebar.
+3. Le plugin apparaîtra maintenant dans votre barre latérale.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-2/images/install_plugin.png" alt="install-plugin" width=200 height=475>
 
-## The Circom Compiler Interface
+## L'interface du compilateur Circom
 
-- **Compiler Version Dropdown:** Select the Circom compiler version you wish to use.
+- **Déroulant de la version du compilateur :** Sélectionnez la version du compilateur Circom que vous souhaitez utiliser.
 - **Auto Compile Checkbox:** Enable this to automatically compile your circuit whenever you make changes.
 - **Hide Warnings Checkbox:** Enable this to suppress compiler warnings.
 - **Advanced Configuration:** Click to expand options for selecting the prime field (e.g., BN128, BLS12381).
