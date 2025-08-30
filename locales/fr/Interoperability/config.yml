@@ -27,5 +27,5 @@ steps:
     name: Transferts de jetons inter-chaînes
     path: 6_InterchainTokenTransfer
   - 
-    name: Further Reading
-    path: 7_FurtherReading
+    name: Lectures supplémentaires
+    path: 7_Lire la suite
