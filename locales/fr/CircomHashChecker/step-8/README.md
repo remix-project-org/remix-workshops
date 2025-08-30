@@ -1,6 +1,6 @@
 ## Understanding `groth16_trusted_setup.ts`
 
-Navigate to `scripts/groth16/groth16_trusted_setup.ts`. This script performs the trusted setup necessary for generating proofs.
+Accédez à `scripts/groth16/groth16_trusted_setup.ts`. This script performs the trusted setup necessary for generating proofs.
 
 ### Code Breakdown
 
@@ -14,9 +14,9 @@ Navigate to `scripts/groth16/groth16_trusted_setup.ts`. This script performs the
 - `snarkjs.zKey.contribute`: Adds contributions to the proving key (`zkey_1`).
 - `snarkjs.zKey.beacon`: Finalizes the proving key (`zkey_final`).
 
-#### Verification:
+#### Vérification :
 
-- `snarkjs.zKey.verifyFromR1cs`: Verifies the proving key against the `R1CS` and initial parameters.
+- `snarkjs.zKey.verifyFromR1cs` : Vérifie la clé de preuve par rapport aux paramètres `R1CS` et initiaux.
 
 #### Exporting Keys:
 
@@ -31,4 +31,4 @@ Navigate to `scripts/groth16/groth16_trusted_setup.ts`. This script performs the
 ### Execute the Script
 
 - Click the play button in the editor, or right-click the file and select "Run".
-- Wait for the script to complete and `"setup done."` logged in the terminal.
+- Attendez que le script se termine et `"setup done."` se connecte au terminal.
