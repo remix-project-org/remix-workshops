@@ -1,6 +1,6 @@
-1. If you neva get wallet browser like **Metamask** make you download one kon install am.
+1. If you neva get browser wallet like **Metamask** make you download one kon install am.
 
-2. Tap the Metamask icon for ya browser. Put ya details make you choose Ephemery test network. You fit need update ya wallet setting so you go fit see **test networks**.  Anoda way dey, you fit go Remix's Deploy & Run transation module and for the ENVIRONMENT side make you choose Ephemery.
+2. Tap di Metamask icon for your browser. Put ya details make you choose Ephemery test network. You fit need update ya wallet setting so you go fit see **test networks**.  Anoda way dey, you fit go Remix's Deploy & Run transation module and for the ENVIRONMENT side make you choose Ephemery.
 
 3. To take get test ETH for genera test networks dey vex pesin sometimes.  Ephemery na public network wey dem dey refresh every month, so e no go hard to take get test ETH.  Na link to some <a href="https://github.com/ephemery-testnet/ephemery-resources?tab=readme-ov-file#faucets" target="_blank">Ephemery faucets</a>.
 
