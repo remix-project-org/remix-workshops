@@ -2,16 +2,16 @@ After compiling your circuit, you need to perform a trusted setup to generate pr
 
 ## Understanding Trusted Setup
 
- - **Trusted Setup:** A process required for zk-SNARKs to generate the necessary parameters for proof generation and verification.
- - You can choose between different protocols like **Groth16** and **Plonk**.
+- **Configuration de confiance :** Un processus requis pour que zk-SNARK génère les paramètres nécessaires à la génération et à la vérification des preuves.
+- You can choose between different protocols like **Groth16** and **Plonk**.
 
 ## Performing the Trusted Setup
 
 1. In the **Setup and Exports** section, select the **Proving Scheme**:
-    - Choose between **Groth16** or **Plonk**. We'll use **Groth16** for this tutorial.
+   - Choose between **Groth16** or **Plonk**. We'll use **Groth16** for this tutorial.
 
 2. Choose the appropriate **Power of Tau** file from the dropdown. This file is necessary for the trusted setup.
-    - If unsure, select the default option.
+   - Si vous n'êtes pas sûr, sélectionnez l'option par défaut.
 
 3. Click on the **Setup** button to start the trusted setup process.
 
