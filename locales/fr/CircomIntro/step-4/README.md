@@ -1,4 +1,4 @@
-With your `multiplier.circom` circuit ready, let's compile it using the Circuit Compiler plugin.
+Avec votre circuit `multiplier.circom` prêt, compilons-le à l'aide du plugin Circuit Compiler.
 
 ## Selecting the Compiler Version
 
@@ -18,8 +18,8 @@ Choose the desired **Compiler Version** from the dropdown menu. For this tutoria
 
 ## Compiling the Circuit
 
-1. Click on the **Compile** button.
-2. The compiler will process your circuit.
+1. Cliquez sur le bouton **Compiler**.
+2. Le compilateur traitera votre circuit.
 3. If successful, you'll see a compilation success message.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-4/images/compilation_success.png" alt="compilation-success" width=200 height=400>
@@ -28,7 +28,7 @@ Choose the desired **Compiler Version** from the dropdown menu. For this tutoria
 
 ## Understanding the Compilation Output
 
-- After successful compilation, the **Setup and Exports** section becomes visible.
-- You can proceed to the next step to perform a trusted setup.
+- Après une compilation réussie, la section **Configuration et exportations** devient visible.
+- Vous pouvez passer à l'étape suivante pour effectuer une configuration de confiance.
 
 In the next step, we'll perform a trusted setup using the compiled circuit.
