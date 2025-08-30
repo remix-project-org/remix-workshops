@@ -10,8 +10,8 @@ steps:
     name: Introduction to the Hash Checker Circuit
     path: step-1
   - 
-    name: Generating the Hash Checker Template in Remix-IDE
-    path: step-2
+    name: Génération du modèle de vérification de hachage dans Remix-IDE
+    path: Étape 2
   - 
     name: Exploring calculate_hash.circom
     path: step-3
@@ -20,12 +20,12 @@ steps:
     path: step-4
   - 
     name: Performing a Trusted Setup
-    path: step-5
+    path: Étape 5
   - 
     name: Compute Witness
-    path: step-6
+    path: Étape-6
   - 
-    name: Generate Proof
+    name: Générer une preuve
     path: step-7
   - 
     name: Exploring the Trusted Setup Script (Optional)
