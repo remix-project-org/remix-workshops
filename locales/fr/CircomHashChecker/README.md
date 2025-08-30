@@ -1,12 +1,12 @@
 Hash Checker Tutorial
 
-This tutorial guides you through creating and understanding a Hash Checker circuit using Remix-IDE. You'll learn how to generate the circuit using a template, explore the code, perform a trusted setup, generate proofs, and verify them. This tutorial is suitable for beginners familiar with Circom and Zero-Knowledge Proofs.
+Ce tutoriel vous guide dans la création et la compréhension d'un circuit Hash Checker à l'aide de Remix-IDE. Vous apprendrez à générer le circuit à l'aide d'un modèle, à explorer le code, à effectuer une configuration de confiance, à générer des preuves et à les vérifier. Ce tutoriel convient aux débutants familiers avec Circom et Zero-Knowledge Proofs.
 
 Prerequisites
 
 ```
-Basic understanding of Zero-Knowledge Proofs and Circom.
-Familiarity with Remix-IDE.
+Compréhension de base des preuves de connaissance zéro et du cirque.
+Familiarité avec Remix-IDE.
 ```
 
 Estimated Time
