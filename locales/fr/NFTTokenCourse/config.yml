@@ -5,7 +5,7 @@ summary: Apprenez à créer vos propres jetons NFT. Développé par la plateform
 level: 1
 tags:
   - Solidity
-  - Tokens
+  - Jetons
   - NFT
 steps:
   - 
@@ -15,7 +15,7 @@ steps:
     name: 2. Interface
     path: erc721-interface
   - 
-    name: 3. Metadata Interface
+    name: 3. Interface de métadonnées
     path: erc721-interface-metadata
   - 
     name: 4. Token Creation
