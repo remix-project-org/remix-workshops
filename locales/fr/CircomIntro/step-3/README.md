@@ -9,7 +9,7 @@ Let's write a simple Circom circuit.
 
 ## Writing the Circuit
 
-Open `multiplier.circom` and add the following code:
+Ouvrez `multiplier.circom` et ajoutez le code suivant :
 
 ```circom
 pragma circom 2.0.0;
@@ -27,12 +27,12 @@ component main = Multiplier();
 
 ## Explanation:
 
- - template `Multiplier()`: Defines a new circuit template called Multiplier.
- - `signal input a;` and `signal input b;`: Declare input signals a and b.
- - `signal output c;`: Declare an output signal c.
- - `c <== a * b;`: Constrain c to be the product of a and b.
- - `component main = Multiplier();`: Instantiates the Multiplier circuit as main, which is required for the compiler.
+- template `Multiplier()`: Defines a new circuit template called Multiplier.
+- `signal input a;` and `signal input b;`: Declare input signals a and b.
+- `signal output c;`: Declare an output signal c.
+- `c <== a * b;`: Constrain c to be the product of a and b.
+- `component main = Multiplier();`: Instantiates the Multiplier circuit as main, which is required for the compiler.
 
 ### NB:
 
-Signals are values in a cryptographic circuit that are strictly determined by the circuit's equations and constraints. Think of a signal as a value that must follow specific mathematical rules defined by the circuit—once set, it can't be changed arbitrarily. In regular programming, variables are flexible and can be updated or reassigned as needed, whereas, signals can't be altered freely.
+Les signaux sont des valeurs dans un circuit cryptographique qui sont strictement déterminées par les équations et les contraintes du circuit. Think of a signal as a value that must follow specific mathematical rules defined by the circuit—once set, it can't be changed arbitrarily. Dans la programmation régulière, les variables sont flexibles et peuvent être mises à jour ou réaffectées selon les besoins, alors que les signaux ne peuvent pas être modifiés librement.
