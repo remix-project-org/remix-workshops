@@ -15,10 +15,10 @@ Navigate to the `circuits` directory and open `calculate_hash.circom`. This file
 - Uses the `Poseidon` hash function to compute a hash of these values.\
 - Outputs `out`, which is the hash.
 
-#### `HashChecker` Template:
+#### Modèle `HashChecker` :
 
 - Inputs are the same values plus a `hash`.
-- Instantiates `CalculateHash` as `calculateSecret`.
+- Instancie `CalculateHash` comme `calculateSecret`.
 - Computes `calculatedHash`.
 - Uses `assert(hash == calculatedHash);` to ensure the provided hash matches the calculated hash.
 
@@ -29,4 +29,4 @@ Navigate to the `circuits` directory and open `calculate_hash.circom`. This file
 
 ### Purpose
 
-The circuit allows someone to prove they know `value1`, `value2`, `value3`, and `value4` that hash to a specific `hash` without revealing the values themselves.
+Le circuit permet à quelqu'un de prouver qu'il connaît `value1`, `value2`, `value3` et `value4` qui hache à un `hash` spécifique sans révéler les valeurs elles-mêmes.
