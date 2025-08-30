@@ -14,7 +14,7 @@
 
 4. **Export Verification Key and Contract** (optional):
 
-- Enable **Export Verification Key** to save the verification key to the File Explorer.
+- Activez **Exporter la clé de vérification** pour enregistrer la clé de vérification dans l'explorateur de fichiers.
 - Enable **Export Verifier Contract** to save the Solidity contract for on-chain verification.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-5/images/trusted_setup.png" alt="trusted-setup" width=330 height=350>
