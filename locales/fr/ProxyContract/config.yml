@@ -1,9 +1,9 @@
 ---
 id: proxycontract
-name: All about Proxy Contracts
-summary: This tutorial gives a short introduction of the web3.js library, querying the block number
+name: Tout sur les contrats de procuration
+summary: Ce tutoriel donne une brève introduction de la bibliothèque web3.js, interrogeant le numéro de bloc
 level: 3
 tags:
   - Remix
   - Solidity
-  - Code Patterns
+  - Modèles de code
