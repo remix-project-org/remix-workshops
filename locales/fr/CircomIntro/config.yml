@@ -1,5 +1,5 @@
 id: circom-intro
-name: Intro to Circom
+name: Introduction à Circom
 summary: A intro to using Circom for creating arithmetic circuits.
 level: 1
 tags:
@@ -8,10 +8,10 @@ tags:
 steps:
   - 
     name: Introduction
-    path: step-1
+    path: Étape-1
   - 
     name: Installing the Circuit-Compiler
-    path: step-2
+    path: Étape-2
   - 
     name: Writing Your First Circom Circuit
     path: step-3
@@ -26,4 +26,4 @@ steps:
     path: step-6
   - 
     name: Generating the Proof
-    path: step-7
+    path: Étape-7
