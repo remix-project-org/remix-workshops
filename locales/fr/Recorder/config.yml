@@ -1,6 +1,6 @@
 ---
-id: recorder
-name: Recorder
+id: Enregistreur
+name: Enregistreur
 summary: Save a set of actions and replay and replay and replay
 level: 2
 tags:
