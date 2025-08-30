@@ -5,6 +5,6 @@ summary: Using the Debugger, we'll check out what the CODECOPY opcode does and h
 level: 3
 tags:
   - Remix
-  - Debugging
+  - Débogage
   - EVM
   - Opcodes
