@@ -3,14 +3,14 @@
 ### Selecting the Compiler Version
 
 1. Go to the **Circuit Compiler** plugin in the sidebar.
-2. Choose the desired **Compiler Version** from the dropdown menu. For this tutorial, select the latest stable version.
+2. Choisissez la **Version du compilateur** souhaitée dans le menu déroulant. For this tutorial, select the latest stable version.
 
 <img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomHashChecker/step-4/images/select_compiler_version.png" alt="select-compiler-version" width=250 height=100>
 
 ### Configuring Compilation Options
 
-- **Auto Compile:** You can enable this option to automatically compile your circuit whenever you save changes.
-- **Hide Warnings:** Enable this to suppress compiler warnings if any.
+- **Compilation automatique :** Vous pouvez activer cette option pour compiler automatiquement votre circuit chaque fois que vous enregistrez les modifications.
+- **Hasser les avertissements :** Activez ceci pour supprimer les avertissements du compilateur, le cas échéant.
 - **Advanced Configuration:**
   - Click to expand.
   - Select the **Prime Field**. For most cases, `BN128` is sufficient.
@@ -27,6 +27,6 @@
 ### Understanding the Compilation Output
 
 - After successful compilation, the **Setup and Exports** section becomes visible.
-- You can proceed to the next step to perform a trusted setup.
+- Vous pouvez passer à l'étape suivante pour effectuer une configuration de confiance.
 
 In the next step, we'll perform a trusted setup using the compiled circuit.
