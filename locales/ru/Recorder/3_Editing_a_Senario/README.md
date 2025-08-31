@@ -22,17 +22,17 @@ For example here is a bit of the scenario.json a bit further down where proposal
       "timestamp": 1566428184043,
       "record": {
         "value": "0",
-        "parameters": [
+        "параметры": [
           "2"
         ],
-        "to": "created{1566428035436}",
+        "до": "Создана{1566428035436}",
         "abi": "0xc41589e7559804ea4a2080dad19d876a024ccb05117835447d72ce08c1d020ec",
         "name": "vote",
         "inputs": "(uint8)",
         "type": "function",
-        "from": "account{4}"
+        "от": "Аккаунт{4}
       }
-    },
+},
 ```
 
 Let's edit this so that another proposal wins in the playback.
