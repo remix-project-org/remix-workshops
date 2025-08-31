@@ -1,35 +1,35 @@
-# This is a repo of tutorials for the Remix's LearnEth Plugin
+# Это репозиторий обучающих материалов для LearnEth Plugin от Remix
 
-### To use these tutorials:
+### Чтобы использовать эти руководства:
 
-**1. Open Remix**
+**1. Открыть Remix**
 
 https://remix.ethereum.org
 
-**2. In the plugin manager activate LEARNETH**
+**2. В менеджере плагинов активируйте LEARNETH**
 
-**3. Go to the Learneth plugin and these tutorials will load by default**
+**3. Перейдите в Learneth plugin, и эти руководства будут загружены по умолчанию**
 
-**4. You may need to sign into Github especially during an in-person workshop**
+**4. Возможно, вам потребуется войти в Github, особенно во время очного семинара**
 
-Github will block too many requests from the same location, unless you are signed into Github and have input your token.  Generally, this is only an issue during in person workshops, when there can be many requests from the same location.
+Github будет блокировать слишком много запросов из одного и того же места, если вы не вошли в Github и не ввели свой токен.  Как правило, эта проблема возникает только во время очных семинаров, когда может поступать много запросов из одного и того же места.
 
-To input your Github token:
+Чтобы ввести свой токен Github:
 
 ```
-- In one browser window - go to https://remix.ethereum.org and go to the settings tab
-- In another browser window go to: 
+- В одном окне браузера перейдите по адресу https://remix.ethereum.org и перейдите во вкладку настроек
+- В другом окне браузера перейдите по адресу: 
 
 https://github.com/settings/tokens 
 
-and create a new token and save it in Remix in the you just opened on the settings tab.
+и создайте новый токен, сохранив его в Remix во вкладке настроек, которую вы только что открыли.
 ```
 
 ---
 
-### Write your own tutorials for LEARNETH:
+### Напишите собственные руководства для LEARNETH:
 
-See this site for instructions:
+Инструкции смотрите на этом сайте:
 
 https://remix-learneth-plugin.readthedocs.io/en/latest/index.html#creating-tutorials
 
