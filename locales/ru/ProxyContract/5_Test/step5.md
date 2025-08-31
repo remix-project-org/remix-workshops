@@ -1,6 +1,6 @@
-# Let's test what we've learned
+# Давайте проверим, чему мы научились
 
-- Write a contract named "LogicContract" which implements a public function named "getNumber" which returns 10
-- Write a proxy contract named "ProxyContract". This ProxyContract should take an address of LogicContract as a first parameter.
+- Напишите контракт с именем «LogicContract», который реализует публичную функцию с именем «getNumber», возвращающую 10
+- Напишите прокси-контракт под названием «ProxyContract». Этот ProxyContract должен принимать адрес LogicContract в качестве первого параметра.
 
-Good Luck!
+Удачи!
