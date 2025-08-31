@@ -71,12 +71,12 @@ This is how the JSON for the second token could look:
 ```
 {
     "name": "Geometry#1",
-    "description": "Geometry is an NFT collection for educational purposes.",
-    "image": "https://ipfs.io/ipfs/QmTJok2tju9zstjtAqESdZxTiUiFCBAyApHiDVj4maV75P/geo_2.png",
+    "description": "Geometry is the NFT collection for educational purposes. ,
+    "image": "https://ipfs.io/ipfs/QmTJok2tju9zstjtAqESdZxTiUiFCBAyApHiDVj4maV75P/geo_2. ng",
     "attributes": [
         { "trait_type": "background", "value": "magenta" },
         { "trait_type": "color", "value": "green" },
-        { "trait_type": "shape", "value": "square" }
+        { "trait_type": "shape", "значение": "квадрат" }
     ]
 }
 ```
