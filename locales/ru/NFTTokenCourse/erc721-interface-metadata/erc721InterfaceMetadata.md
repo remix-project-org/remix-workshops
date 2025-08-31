@@ -20,20 +20,20 @@ The file that the tokenURI points to should conform to the Metadata JSON Schema 
 
 ```
 {
-    "title": "Asset Metadata",
+    "title": "Метаданные активов",
     "type": "object",
     "properties": {
         "name": {
             "type": "string",
-            "description": "Identifies the asset to which this NFT represents"
+            "description": "Определяет актив, к которому принадлежит NFT"
         },
         "description": {
             "type": "string",
-            "description": "Describes the asset to which this NFT represents"
+            "Описание": "Описание актива, к которому принадлежит NFT"
         },
         "image": {
             "type": "string",
-            "description": "A URI pointing to a resource with mime type image/* representing the asset to which this NFT represents. Consider making any images at a width between 320 and 1080 pixels and aspect ratio between 1.91:1 and 4:5 inclusive."
+            "Описание": "URI, указывающий на ресурс с изображением mime типа/* представляющий актив, к которому принадлежит NFT. Рассмотрим возможность создания любых изображений шириной от 320 до 1080 пикселей и соотношения сторон между 1. 1:1 и 4:5 включительно."
         }
     }
 }
