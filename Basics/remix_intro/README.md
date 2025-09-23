@@ -1,5 +1,3 @@
-# Introduction to Remix
-
 Remix IDE is a browser-based (also includes a desktop variant) development environment for building, testing, and shipping smart contracts. It’s designed to remove setup friction, make feedback loops tight, and help you reason about what’s really happening on-chain.
 
 This page explains what Remix is for, how it’s structured, and the mental model to bring to it.

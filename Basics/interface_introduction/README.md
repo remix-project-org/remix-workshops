@@ -1,6 +1,6 @@
 # Remix IDE Layout
 
-![Remix layout](./images/remix-layout.png)
+![Remix layout](ttps://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface-introduction/images/remix-layout.png)
 
 Each component of the Remix IDE performs specific functions:
 
@@ -11,5 +11,4 @@ Each component of the Remix IDE performs specific functions:
 - You can switch between plugins on the **Icon Panel**.
 - The **Status Bar** provides info about your current branch, alerts, and tips.
 
-> [!TIP]
-> You can make a panel larger (or smaller) by dragging its border.
+**TIP: You can make a panel larger (or smaller) by dragging its border.**
