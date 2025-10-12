@@ -1,4 +1,4 @@
-![Remix layout](https://raw.githubusercontent.com/ethereum/remix-workshops/master/Basics/interface_introduction/images/remix-layout.png)
+![Remix layout](https://raw.githubusercontent.com/davidekete/remix-workshops/improve-intro/Basics/interface_introduction/images/remix-layout.png)
 
 Each component of the Remix IDE performs specific functions:
 
