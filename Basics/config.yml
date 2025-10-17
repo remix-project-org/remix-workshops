@@ -6,6 +6,8 @@ level: 1
 tags: 
   - Remix
 steps:
+  - name: Introduction to Remix IDE
+    path: remix_intro
   - name: Intro to the Interface 
     path: interface_introduction
   - name: Intro to Workspaces 
