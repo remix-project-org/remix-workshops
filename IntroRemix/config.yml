@@ -9,16 +9,4 @@ tags:
   - Video
 steps:
   - name: 1. Introduction
-    path: 1-multisig-introduction
-
-  - name: 2. Initialize the Contract
-    path: 2-multisig-initialization
-
-  - name: 3. Deposits
-    path: 3-multisig-deposits
-
-  - name: 4. Transactions
-    path: 4-multisig-transactions
-
-  - name: 5. Revoking Confirmations
-    path: 5-multisig-revoke
+    path: 1-intro-tour
