@@ -1,0 +1,12 @@
+---
+id: videoIntroRemix
+name: Introdution to Remix
+summary: Learn how to use the Remix interface.
+level: 1
+tags:
+  - Solidity
+  - Remix
+  - Video
+steps:
+  - name: 1. Introduction
+    path: 1-intro-tour
