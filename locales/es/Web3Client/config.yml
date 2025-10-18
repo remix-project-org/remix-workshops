@@ -1,0 +1,9 @@
+---
+id: usodeweb3js
+name: Uso básico de web3.js
+summary: Este tutorial da una breve introducción a la biblioteca web3.js, consultando el número de bloque
+level: 2
+tags:
+  - JS
+  - Remix
+  - Web3

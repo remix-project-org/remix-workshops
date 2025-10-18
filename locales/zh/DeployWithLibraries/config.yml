@@ -1,0 +1,8 @@
+---
+id: deploylibraries
+name: 与程序库一起部署
+summary: 编写、部署并将库链接到合约
+level: 3
+tags:
+  - Remix
+  - Solidity

@@ -1,0 +1,10 @@
+---
+id: opcodesdebugo
+name: Opcodes for the Debugger
+summary: If u use di Debugger, we go check out wetin do CODECOPY opcode dey do and how e go use di EVM for do contract creation.
+level: 3
+tags:
+  - Remix
+  - Debugging
+  - EVM
+  - Di opcodes

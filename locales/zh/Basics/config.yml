@@ -1,0 +1,26 @@
+---
+id: 基础知识
+name: 混音的基础知识
+summary: Remix中的典型工作流程
+level: 1
+tags:
+  - 重混
+steps:
+  - 
+    name: 界面介绍
+    path: 界面介绍
+  - 
+    name: 工作区简介
+    path: 工作区
+  - 
+    name: 加载与编译
+    path: 加载并编译
+  - 
+    name: 部署到 Remix 虚拟机
+    path: 部署到 RemixVM
+  - 
+    name: 与函数互动
+    path: 互动
+  - 
+    name: 部署到公共网络
+    path: 部署注入

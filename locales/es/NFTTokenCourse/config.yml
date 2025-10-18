@@ -1,0 +1,28 @@
+---
+id: nftTokenCourse
+name: Curso NFT en Solidity
+summary: Aprende a crear tus propios tokens NFT. Desarrollado por la plataforma de aprendizaje p2p https://dacade.org.
+level: 1
+tags:
+  - Solidity
+  - Tokens
+  - NFT
+steps:
+  - 
+    name: 1. Introducción
+    path: introducción
+  - 
+    name: 2. Interfaz
+    path: erc721-interfaz
+  - 
+    name: 3. Interfaz de metadatos
+    path: erc721-interfaz-metadatos
+  - 
+    name: 4. Creación de tokens
+    path: erc721-creación-de-tokens
+  - 
+    name: 5. Metadatos IPFS
+    path: erc721-metadata-ipfs
+  - 
+    name: 6. Implementar en Testnet
+    path: erc721-deploy-testnet-opensea

@@ -1,0 +1,26 @@
+---
+id: basi
+name: Fondamenti del Rimica
+summary: Un flusso di lavoro tipico in Rimica
+level: 1
+tags:
+  - Rimica
+steps:
+  - 
+    name: Introduzione all'interfaccia
+    path: introduzione all'interfaccia
+  - 
+    name: Introduzione agli Spazi di lavoro
+    path: workspaces
+  - 
+    name: Caricamento e Compilazione
+    path: carica_e_compila
+  - 
+    name: Distribuzione sulla Remi VM
+    path: distribuire_alla_remixvm
+  - 
+    name: Interagire con le funzioni
+    path: interagendo
+  - 
+    name: Distribuzione su reti pubbliche
+    path: distribuire_iniettato

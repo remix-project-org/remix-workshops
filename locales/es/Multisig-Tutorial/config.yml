@@ -1,0 +1,25 @@
+---
+id: multisigCourse
+name: Billetera multifirma
+summary: Aprende a crear e interactuar con una billetera multisig. Desarrollado por la plataforma de aprendizaje p2p https://dacade.org.
+level: 1
+tags:
+  - Solidity
+  - Tókenes
+  - Multifirma
+steps:
+  - 
+    name: 1. Introducción
+    path: 1-multisig-introducción
+  - 
+    name: 2. Inicializar el contrato
+    path: 2-inicialización multisig
+  - 
+    name: 3. Depósitos
+    path: 3-depósitos multisig
+  - 
+    name: 4. Transacción
+    path: 4-multisig-transacciones
+  - 
+    name: 5. Revocación de confirmaciones
+    path: 5-multisig-revocar

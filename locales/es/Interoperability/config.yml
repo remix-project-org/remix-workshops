@@ -1,0 +1,31 @@
+---
+id: interopCourse
+name: Protocolos multicadena con Axelar
+summary: Aprenda a crear contratos inteligentes interoperables que puedan enviar mensajes y activos entre diferentes cadenas de bloques utilizando la tecnología Axelar.
+level: 2
+tags:
+  - Solidity
+  - Interoperabilidad
+  - Axelar
+steps:
+  - 
+    name: Una introducción a Axelar
+    path: 1_Intro
+  - 
+    name: Puerta de enlace Axelar
+    path: 2_Puerta de entrada
+  - 
+    name: Servicio de gas Axelar
+    path: 3_Servicio de gas
+  - 
+    name: Axelar Executable
+    path: 4_Executable
+  - 
+    name: Mensajes Intercadena
+    path: 5_InterchainMessage
+  - 
+    name: Transferencias de tokens entre cadenas
+    path: 6_InterchainTokenTransfer
+  - 
+    name: Lectura adicional
+    path: 7_Leer más

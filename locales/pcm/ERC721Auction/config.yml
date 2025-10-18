@@ -1,0 +1,19 @@
+---
+id: er721Auction
+name: NFT Auction Contrak
+summary: Learn how you go fit write ERC721 (NFT) auction contract. E dey divelop by di p2p learning platform https://dacade.org.
+level: 2
+tags:
+  - Soliditi
+  - Tokens
+  - NFT
+steps:
+  - 
+    name: Contract Setup
+    path: auction-contract-setup
+  - 
+    name: Start and Bid Functions
+    path: auction-start-bid
+  - 
+    name: Withdraw and End Functions
+    path: auction-withdraw-end

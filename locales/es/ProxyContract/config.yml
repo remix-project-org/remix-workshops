@@ -1,0 +1,9 @@
+---
+id: proxycontract
+name: Todo sobre los contratos de representación
+summary: Este tutorial ofrece una breve introducción a la biblioteca web3.js, consultando el número de bloque
+level: 3
+tags:
+  - Remix
+  - Solidity
+  - Patrones de código

@@ -1,0 +1,35 @@
+id: comprobador-de-hash-circom
+name: Tutorial para Comprobar un Hash
+summary: Un tutorial para crear y comprender los Circuitos de Comprobación de Hash utilizando plantillas en el IDE de Remix, incluyendo una configuración de confianza y una generación de prueba.
+level: 1
+tags:
+  - Circom
+  - Remix-IDE
+steps:
+  - 
+    name: Introducción al Circuito del Comprobador de Hash
+    path: paso-1
+  - 
+    name: Generación de la Plantilla para la Comprobación del Hash en Remix-IDE
+    path: paso-2
+  - 
+    name: Explorando calculate_hash.circom
+    path: paso-3
+  - 
+    name: Compilando el Circuito
+    path: paso-4
+  - 
+    name: Realizando una Configuración de Confianza
+    path: paso-5
+  - 
+    name: Testigo de Cómputo
+    path: paso-6
+  - 
+    name: Generación de Prueba
+    path: paso-7
+  - 
+    name: Explorando el Script de Configuración de Confianza (Opcional)
+    path: paso-8
+  - 
+    name: Explorando el Script de Generación de Prueba (Opcional)
+    path: paso-9

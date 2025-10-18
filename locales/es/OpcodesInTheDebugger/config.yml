@@ -1,0 +1,10 @@
+---
+id: opcodesdebug
+name: Opcodes en el depurador
+summary: Usando el depurador, comprobaremos qué hace el código de operación CODECOPY y cómo lo utiliza la EVM durante la creación del contrato.
+level: 3
+tags:
+  - Remix
+  - Depuración
+  - EVM
+  - Opcodes

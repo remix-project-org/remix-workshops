@@ -1,0 +1,26 @@
+---
+id: conceptos básicos
+name: Conceptos básicos de Remix
+summary: Un flujo de trabajo típico en Remix
+level: 1
+tags:
+  - Remix
+steps:
+  - 
+    name: Introducción a la interfaz
+    path: introducción a la interfaz
+  - 
+    name: Introducción a los espacios de trabajo
+    path: espacios de trabajo
+  - 
+    name: Carga y compilación
+    path: cargar_y_compilar
+  - 
+    name: Implementación en la máquina virtual Remix
+    path: implementar en RemixVM
+  - 
+    name: Interactuar con funciones
+    path: interactuando
+  - 
+    name: Implementación a las Redes Públicas
+    path: implementar_inyectado

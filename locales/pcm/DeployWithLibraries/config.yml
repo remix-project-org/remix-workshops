@@ -1,0 +1,8 @@
+---
+id: deploylibraries
+name: Deploy wit Libraries
+summary: Write, Deploy make yu link Library to a Contract
+level: 3
+tags:
+  - Remix
+  - Solidity

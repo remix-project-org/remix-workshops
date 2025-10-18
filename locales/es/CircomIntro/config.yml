@@ -1,0 +1,29 @@
+id: introducción a circom
+name: Introducción a Circom
+summary: Una introducción al uso de Circom para crear circuitos aritméticos.
+level: 1
+tags:
+  - Circom
+  - Remix-IDE
+steps:
+  - 
+    name: Introducción
+    path: paso-1
+  - 
+    name: Instalación del Compilador de Circuito
+    path: paso-2
+  - 
+    name: Escribiendo Tu Primer Circuito Circom
+    path: paso-3
+  - 
+    name: Compilando el Circuito Usando el Complemento
+    path: paso-4
+  - 
+    name: Ejecutando una Configuración de Confianza
+    path: paso-5
+  - 
+    name: Computando el Testigo
+    path: paso-6
+  - 
+    name: Generación de Prueba
+    path: paso-7

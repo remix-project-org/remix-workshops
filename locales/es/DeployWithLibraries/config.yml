@@ -1,0 +1,8 @@
+---
+id: deploylibraries
+name: Implementar con bibliotecas
+summary: Escribir, implementar y vincular una biblioteca a un contrato
+level: 3
+tags:
+  - Remix
+  - Solidity
