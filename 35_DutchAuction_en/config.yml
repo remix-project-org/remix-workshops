@@ -1,0 +1,15 @@
+id: '35'
+name: 35. Dutch Auction
+summary: In this lecture, I will introduce the Dutch Auction and explain how to issue
+  an `NFT` using the `ERC721` standard through a simplified version of the `Azuki`
+  Dutch Auction code.
+level: intermediate
+tags:
+- solidity
+- application
+- wtfacademy
+- ERC721
+- Dutch Auction
+steps:
+- name: Dutch Auction
+  path: step1

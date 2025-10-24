@@ -1,0 +1,13 @@
+id: '30'
+name: 30. Try Catch
+summary: '`try-catch` is a standard way of handling exceptions that is almost ubiquitous
+  in modern programming languages. Besides, it''s added to `solidity`0.6.'
+level: intermediate
+tags:
+- solidity
+- advanced
+- wtfacademy
+- try catch
+steps:
+- name: Try Catch
+  path: step1

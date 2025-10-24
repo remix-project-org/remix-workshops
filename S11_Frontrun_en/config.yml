@@ -1,0 +1,13 @@
+id: S11
+name: S11. Front-running
+summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) --- In this
+  lesson, we will introduce front-running in smart contracts. According to statistics,
+  arbitrageurs on Ethereum have made $1.2 '
+level: advanced
+tags:
+- solidity
+- security
+- erc721
+steps:
+- name: Front-running
+  path: step1

@@ -5,7 +5,7 @@ Let's write a simple Circom circuit.
 1. In the **File Explorer** on the left sidebar, click on the **Create New File** icon.
 2. Name your file `multiplier.circom` and press **Enter**.
 
-<img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-3/images/create_new_file.png" alt="create-new-file" width=300 height=200>
+<img src="https://raw.githubusercontent.com/remix-project-org/remix-workshops/master/CircomIntro/step-3/images/create_new_file.png" alt="create-new-file" width=300 height=200>
 
 ## Writing the Circuit
 

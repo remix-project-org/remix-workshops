@@ -1,0 +1,11 @@
+id: '10'
+name: 10. Control Flow
+summary: In this section, we will introduce control flow in Solidity, and write an
+  insertion sort (`InsertionSort`), a program that looks simple but is actually bug-prone.
+level: beginner
+tags:
+- solidity
+- tutorial
+steps:
+- name: Control Flow
+  path: step1

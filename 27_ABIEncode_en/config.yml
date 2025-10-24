@@ -1,0 +1,15 @@
+id: '27'
+name: 27. ABI Encoding and Decoding
+summary: '`ABI`(Application Binary Interface) is the standard for interacting with
+  Ethereum smart contracts. Data is encoded based on its type, and because the encoded
+  result doesn''t contain type information, i'
+level: intermediate
+tags:
+- solidity
+- advanced
+- wtfacademy
+- abi encoding
+- abi decoding
+steps:
+- name: ABI Encoding and Decoding
+  path: step1

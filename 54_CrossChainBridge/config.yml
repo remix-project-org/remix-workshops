@@ -1,0 +1,14 @@
+id: '54'
+name: 54. Cross-chain bridge
+summary: I'm recently re-learning solidity, consolidating the details, and writing
+  a "WTF Solidity Minimalist Introduction" for novices (programming experts can find
+  another tutorial), updating 1-3 lectures ev
+level: advanced
+tags:
+- solidity
+- erc20
+- eip712
+- openzepplin
+steps:
+- name: Cross-chain bridge
+  path: step1

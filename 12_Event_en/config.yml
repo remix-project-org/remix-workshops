@@ -1,0 +1,13 @@
+id: '12'
+name: 12. Events
+summary: In this section, we introduce `event` in Solidity, using transfer events
+  in ERC20 tokens as an example.
+level: beginner
+tags:
+- solidity
+- basic
+- wtfacademy
+- event
+steps:
+- name: Events
+  path: step1

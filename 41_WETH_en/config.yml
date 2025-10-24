@@ -1,0 +1,14 @@
+id: '41'
+name: 41. WETH
+summary: I am currently re-learning Solidity to refresh my knowledge and create a
+  "WTF Solidity Crash Course" for beginners to use (advanced programmers may find
+  other resources more suitable). A new lesson wi
+level: advanced
+tags:
+- solidity
+- application
+- ERC20
+- fallback
+steps:
+- name: WETH
+  path: step1

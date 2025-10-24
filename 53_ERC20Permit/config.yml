@@ -1,0 +1,14 @@
+id: '53'
+name: 53. ERC-2612 ERC20Permit
+summary: I'm recently re-learning solidity, consolidating the details, and writing
+  a "WTF Solidity Minimalist Introduction" for novices (programming experts can find
+  another tutorial), updating 1-3 lectures ev
+level: advanced
+tags:
+- solidity
+- erc20
+- eip712
+- openzepplin
+steps:
+- name: ERC-2612 ERC20Permit
+  path: step1

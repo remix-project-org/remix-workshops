@@ -1,0 +1,12 @@
+id: '55'
+name: 55. Multiple calls
+summary: I'm recently re-learning solidity, consolidating the details, and writing
+  a "WTF Solidity Minimalist Introduction" for novices (programming experts can find
+  another tutorial), updating 1-3 lectures ev
+level: advanced
+tags:
+- solidity
+- erc20
+steps:
+- name: Multiple calls
+  path: step1

@@ -1,0 +1,13 @@
+id: S15
+name: S15. Oracle Manipulation
+summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) --- In this
+  lesson, we will introduce the oracle manipulation attack on smart contracts and
+  reproduce it using Foundry. In the example, w'
+level: advanced
+tags:
+- solidity
+- security
+- oracle
+steps:
+- name: Oracle Manipulation
+  path: step1

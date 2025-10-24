@@ -1,0 +1,13 @@
+id: '48'
+name: 48. Transparent Proxy
+summary: I've been relearning Solidity lately to solidify some details and create
+  a "WTF Solidity Crash Course" for beginners (advanced programmers might want to
+  look for other tutorials). I'll be updating wit
+level: advanced
+tags:
+- solidity
+- proxy
+- OpenZeppelin
+steps:
+- name: Transparent Proxy
+  path: step1

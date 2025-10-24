@@ -1,0 +1,12 @@
+id: '46'
+name: 46. Proxy Contract
+summary: Recently, I have been re-learning Solidity to review the details and write
+  a "WTF Solidity Quick Start" for beginners to use (programmer gurus can find other
+  tutorials). The tutorial will be updated w
+level: advanced
+tags:
+- solidity
+- proxy
+steps:
+- name: Proxy Contract
+  path: step1

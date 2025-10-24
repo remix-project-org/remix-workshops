@@ -1,0 +1,14 @@
+id: '17'
+name: 17. Library
+summary: In this section, we use the library contract `String` referenced by `ERC721`
+  as an example to introduce the library contract in `solidity`,
+level: intermediate
+tags:
+- solidity
+- advanced
+- wtfacademy
+- library
+- using for
+steps:
+- name: Library
+  path: step1
