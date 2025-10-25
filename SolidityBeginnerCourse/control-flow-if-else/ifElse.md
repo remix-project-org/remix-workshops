@@ -17,7 +17,9 @@ With the `else if` statement we can combine several conditions.
 
 If the first condition (line 6) of the foo function is not met, but the condition of the `else if` statement (line 8) becomes true, the function returns `1`.
 
-<a href="https://www.youtube.com/watch?v=Ld8bFWXLSfs" target="_blank">Watch a video tutorial on the If/Else statement</a>.
+Watch a video tutorial on the If/Else statement:
+
+![youtube](https://www.youtube.com/embed/Ld8bFWXLSfs)
 
 ## ⭐️ Assignment
 Create a new function called `evenCheck` in the `IfElse` contract: 

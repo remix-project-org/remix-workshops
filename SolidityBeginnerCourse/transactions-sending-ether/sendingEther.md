@@ -62,7 +62,9 @@ Solidity makes a distinction between two different flavors of the address data t
 
 If you change the parameter type for the functions `sendViaTransfer` and `sendViaSend` (line 33 and 38) from `payable address` to `address`, you won’t be able to use `transfer()` (line 35) or `send()` (line 41).
 
-<a href="https://www.youtube.com/watch?v=_5vGaqgzlG8" target="_blank">Watch a video tutorial on Sending Ether</a>.
+Watch a video tutorial on Sending Ether:
+
+![youtube](https://www.youtube.com/embed/_5vGaqgzlG8)
 
 ## ⭐️ Assignment
 Build a charity contract that receives Ether that can be withdrawn by a beneficiary.

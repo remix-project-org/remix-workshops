@@ -18,7 +18,9 @@ You can learn more about these data types as well as *Fixed Point Numbers*, *Byt
 
 Later in the course, we will look at data structures like **Mappings**, **Arrays**, **Enums**, and **Structs**.
 
-<a href="https://www.youtube.com/watch?v=8Tj-Th_S7NU" target="_blank">Watch a video tutorial on Primitive Data Types</a>.
+Watch a video tutorial on Primitive Data Types:
+
+![youtube](https://www.youtube.com/embed/8Tj-Th_S7NU)
 
 ## ⭐️ Assignment
 1. Create a new variable `newAddr` that is a `public` `address` and give it a value that is not the same as the available variable `addr`.

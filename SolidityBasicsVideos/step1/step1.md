@@ -9,32 +9,32 @@ This tutorial provides a comprehensive introduction to Solidity programming basi
 ### 1. Hello World
 Get started with Solidity by writing your first smart contract - a simple Hello World program.
 
-**Video**: [Hello World](https://www.youtube.com/watch?v=g_t0Td4Kr6M)
+![youtube](https://www.youtube.com/embed/g_t0Td4Kr6M)
 
 ### 2. Events
 Learn how to use events in Solidity to emit data from your smart contracts, which can be listened to by frontend applications.
 
-**Video**: [Events](https://www.youtube.com/watch?v=nopo9KwwRg4)
+![youtube](https://www.youtube.com/embed/nopo9KwwRg4)
 
 ### 3. Functions
 Understand the different types of functions in Solidity, function visibility, and how to structure your contract's logic.
 
-**Video**: [Functions](https://www.youtube.com/watch?v=71cmPaD_AnQ)
+![youtube](https://www.youtube.com/embed/71cmPaD_AnQ)
 
 ### 4. Payable Functions
 Learn how to create functions that can receive Ether and handle cryptocurrency transactions in your smart contracts.
 
-**Video**: [Payable Functions](https://www.youtube.com/watch?v=yD9EL1QN40Q)
+![youtube](https://www.youtube.com/embed/yD9EL1QN40Q)
 
 ### 5. State Variables
 Understand state variables in Solidity - how to declare, use, and manage data that persists on the blockchain.
 
-**Video**: [State Variables](https://www.youtube.com/watch?v=4XQsHBJScEk)
+![youtube](https://www.youtube.com/embed/4XQsHBJScEk)
 
 ### 6. Gas & Gas Price
 Learn about gas in Ethereum, how it works, how to estimate gas costs, and tips for writing gas-efficient code.
 
-**Video**: [Gas & Gas Price](https://www.youtube.com/watch?v=oTS9uxU6cAM)
+![youtube](https://www.youtube.com/embed/oTS9uxU6cAM)
 
 ## Next Steps
 

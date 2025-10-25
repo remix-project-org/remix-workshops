@@ -86,4 +86,6 @@ In this tutorial, we briefly introduced `Solidity`, `Remix` IDE, and completed o
 ### Recommended materials on Solidity：
 
 1. [Solidity Documentation](https://docs.soliditylang.org/en/latest/)
-2. [Solidity Tutorial by freeCodeCamp](https://www.youtube.com/watch?v=ipwxYa-F1uY)
+2. Solidity Tutorial by freeCodeCamp:
+
+![youtube](https://www.youtube.com/embed/ipwxYa-F1uY)

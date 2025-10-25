@@ -14,7 +14,9 @@ You can then set the visibility of a function and declare them `view` or `pure` 
 
 We will explore the particularities of Solidity functions in more detail in the following sections.
 
-<a href="https://www.youtube.com/watch?v=Mm6834AAY00" target="_blank">Watch a video tutorial on Functions</a>.
+Watch a video tutorial on Functions:
+
+![youtube](https://www.youtube.com/embed/Mm6834AAY00)
 
 ## ⭐️ Assignment
 1. Create a public state variable called `b` that is of type `bool` and initialize it to `true`.
