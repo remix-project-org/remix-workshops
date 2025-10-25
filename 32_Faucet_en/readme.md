@@ -13,6 +13,4 @@ tags:
 In lesson 31, we learned about the `ERC20` token standard. In this lesson, we will learn about the smart contract for an `ERC20` faucet. In this contract, users can receive free `ERC20` tokens.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

@@ -11,6 +11,4 @@ tags:
 In this lesson, we will discuss contract length checks bypassing and introduce how to prevent it.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

@@ -11,6 +11,4 @@ tags:
 In this lesson, we will discuss the `tx.origin` phishing attack and prevention methods in smart contracts.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

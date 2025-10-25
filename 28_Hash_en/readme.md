@@ -12,6 +12,4 @@ tags:
 The hash function is a cryptographic concept. It can convert a message of arbitrary length into a fixed-length value. This value is also called the hash. In this lecture, we briefly introduce the hash function and its application in solidity.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

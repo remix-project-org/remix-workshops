@@ -14,6 +14,4 @@ tags:
 In this lesson, we will discuss the reentrancy vulnerability in NFT contracts and attack a vulnerable NFT contract to mint 100 NFTs.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

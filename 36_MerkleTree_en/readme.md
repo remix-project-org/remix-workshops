@@ -13,6 +13,4 @@ tags:
 In this lecture, I will introduce the `Merkle Tree` and how to use it to distribute a `NFT` whitelist.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

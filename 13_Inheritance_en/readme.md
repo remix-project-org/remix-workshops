@@ -12,6 +12,4 @@ tags:
 In this section, we introduce `inheritance` in Solidity, including simple inheritance, multiple inheritance, and inheritance of modifiers and constructors.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

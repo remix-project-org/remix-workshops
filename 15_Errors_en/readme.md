@@ -13,6 +13,4 @@ tags:
 In this chapter, we will introduce three ways to throw exceptions in solidity: `error`, `require`, and `assert`.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

@@ -5,6 +5,4 @@ In this section, we will introduce two keywords to restrict modifications to the
 Value-typed variables can be declared as `constant` and `immutable`; `string` and `bytes` can be declared as `constant`, but not `immutable`.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

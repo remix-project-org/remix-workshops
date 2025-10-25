@@ -14,6 +14,4 @@ In this section, we use the library contract `String` referenced by `ERC721` as 
 and then summarize the commonly used library functions.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

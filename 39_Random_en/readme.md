@@ -12,6 +12,4 @@ tags:
 # WTF Solidity Quick Start: 39. Chainlink Randomness
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

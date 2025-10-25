@@ -14,6 +14,4 @@ A Token Lock is a simple time-based smart contract that allows one to lock a num
 ### What are LP Tokens?
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

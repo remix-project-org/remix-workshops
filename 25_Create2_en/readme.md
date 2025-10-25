@@ -15,6 +15,4 @@ tags:
 In this chapter, I will introduce the use of `CREATE2`.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

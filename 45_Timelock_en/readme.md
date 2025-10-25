@@ -10,6 +10,4 @@ tags:
 In this lesson, we introduce time locks and time lock contracts. The code is based on the simplified version of the [Timelock contract](https://github.com/compound-finance/compound-protocol/blob/master/contracts/Timelock.sol) of Compound.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

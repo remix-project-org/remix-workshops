@@ -12,6 +12,4 @@ tags:
 In this lecture, we introduce a more advanced and secure signature method, EIP712 typed data signature.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

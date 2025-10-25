@@ -12,6 +12,4 @@ tags:
 There are three ways of sending `ETH` in `Solidity`: `transfer()`, `send()` and `call()`, in which `call()` is recommended.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

@@ -10,6 +10,4 @@ tags:
 # WTF Solidity Tutorial: 16. Overloading
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

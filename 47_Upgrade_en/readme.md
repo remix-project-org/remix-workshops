@@ -12,6 +12,4 @@ tags:
 in this lesson, we'll introduce Upgradeable Contract, the sample contracts used for teaching are simplified from `OpenZeppelin` contracts, they may pose security issues, DO NOT USE IN PRODUCTION.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

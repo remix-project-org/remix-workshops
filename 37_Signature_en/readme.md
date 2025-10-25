@@ -13,6 +13,4 @@ tags:
 In this lecture, we will briefly introduce the digital signature `ECDSA` in Ethereum and how to use it to issue an `NFT` whitelist. The `ECDSA` library used in the code is simplified from the library of the same name from `OpenZeppelin`.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

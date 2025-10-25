@@ -17,6 +17,4 @@ tags:
 Note⚠️: Prior to solidity 0.6.x, only `fallback()` was available, for receiving Ether and as a fallback function.  
 After version 0.6,  `fallback()` was separated to `receive()` and `fallback()`. 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

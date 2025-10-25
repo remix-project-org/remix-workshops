@@ -13,6 +13,4 @@ tags:
 In this section, we will introduce `constructor` and `modifier` in Solidity, using an access control contract (`Ownable`) as an example.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

@@ -10,6 +10,4 @@ tags:
 In this lecture, we will introduce the MultiCall multi-call contract, which is designed to execute multiple function calls in one transaction, which can significantly reduce transaction fees and improve efficiency.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

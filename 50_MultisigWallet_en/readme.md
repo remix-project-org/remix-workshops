@@ -15,6 +15,4 @@ Vitalik once said that a multisig wallet is safer than a hardware wallet ([tweet
 ![Vitalik statement](./img/50-1.png)
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

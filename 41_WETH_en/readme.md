@@ -12,6 +12,4 @@ tags:
 In this lecture, we will learn about `WETH` - the wrapped version of `ETH`.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

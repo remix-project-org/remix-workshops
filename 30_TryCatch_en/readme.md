@@ -14,6 +14,4 @@ tags:
 In this chapter, we will introduce how to use `try-catch` to handle exceptions in smart contracts. 
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

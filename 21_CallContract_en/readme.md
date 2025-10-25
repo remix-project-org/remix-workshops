@@ -10,6 +10,4 @@ tags:
 # WTF Solidity Tutorial: 21. Interact with other Contract
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

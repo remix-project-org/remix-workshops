@@ -12,6 +12,4 @@ tags:
 In this section, we introduce `event` in Solidity, using transfer events in ERC20 tokens as an example.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

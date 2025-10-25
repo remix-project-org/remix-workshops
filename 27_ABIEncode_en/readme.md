@@ -17,6 +17,4 @@ In Solidity, `ABI encode` has four functions: `abi.encode`, `abi.encodePacked`, 
 In this chapter, We will learn how to use these functions.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

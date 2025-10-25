@@ -11,6 +11,4 @@ tags:
 # WTF Solidity Tutorial: 23. Delegatecall
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

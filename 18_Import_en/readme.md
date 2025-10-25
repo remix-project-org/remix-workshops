@@ -14,6 +14,4 @@ tags:
 if not specified, all global symbols of the imported file will be imported into the current global scope.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**

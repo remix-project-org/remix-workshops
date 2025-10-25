@@ -13,6 +13,4 @@ tags:
 In this lecture, we will introduce the ERC20 token standard on Ethereum and issue our test tokens.
 
 
----
 
-**[Continue to full tutorial →](./step1/step1.md)**
