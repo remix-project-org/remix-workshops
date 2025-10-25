@@ -1,0 +1,12 @@
+id: file-management-version-control
+name: File Management and Version Control
+summary: 'Learn how to manage files in Remix, including loading files, importing dependencies, using the editor, Git integration, and connecting to your filesystem.'
+level: beginner
+tags:
+- remix
+- beginner
+- git
+- tutorial
+steps:
+- name: File Management and Version Control
+  path: step1

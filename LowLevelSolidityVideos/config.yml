@@ -1,0 +1,12 @@
+id: low-level-solidity-videos
+name: Low Level Solidity Videos
+summary: 'Deep dive into EVM internals with videos on storage, transient storage, bit masking, structs in storage, and arrays in storage for advanced gas optimization.'
+level: advanced
+tags:
+- solidity
+- evm
+- advanced
+- tutorial
+steps:
+- name: Low Level Solidity Videos
+  path: step1
