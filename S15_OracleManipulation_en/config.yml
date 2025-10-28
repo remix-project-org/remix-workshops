@@ -1,9 +1,7 @@
-id: S15
+id: s15-oracle-manipulation
 name: S15. Oracle Manipulation
-summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) --- In this
-  lesson, we will introduce the oracle manipulation attack on smart contracts and
-  reproduce it using Foundry. In the example, w'
-level: advanced
+summary: Study oracle manipulation attacks that exploit price feed vulnerabilities. Learn how flash loans enable these attacks and discover secure oracle integration patterns.
+level: 2
 tags:
 - solidity
 - security

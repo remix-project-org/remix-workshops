@@ -1,9 +1,7 @@
-id: '54'
+id: 54-cross-chain-bridge
 name: 54. Cross-chain bridge
-summary: I'm recently re-learning solidity, consolidating the details, and writing
-  a "WTF Solidity Minimalist Introduction" for novices (programming experts can find
-  another tutorial), updating 1-3 lectures ev
-level: advanced
+summary: Understand how cross-chain bridges work and learn to implement secure bridge contracts for transferring assets between different blockchain networks.
+level: 2
 tags:
 - solidity
 - erc20

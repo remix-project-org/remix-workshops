@@ -1,9 +1,7 @@
-id: S08
+id: s08-contract-check-bypassing
 name: S08. Contract Check Bypassing
-summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) ----- In
-  this lesson, we will discuss contract length checks bypassing and introduce how
-  to prevent it.'
-level: advanced
+summary: Explore how attackers can bypass contract existence checks by exploiting constructor behavior. Learn secure patterns for verifying whether an address contains a contract.
+level: 2
 tags:
 - solidity
 - security

@@ -1,9 +1,7 @@
-id: S03
+id: s03-centralization-risks
 name: S03. Centralization Risks
-summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) --- In this
-  lesson, we will discuss the risks of centralization and pseudo-decentralization
-  in smart contracts. The `Ronin` bridge and `H'
-level: advanced
+summary: Explore the risks of centralization and pseudo-decentralization in smart contracts. Learn from real-world examples like the Ronin bridge hack and how to design more resilient systems.
+level: 2
 tags:
 - solidity
 - security

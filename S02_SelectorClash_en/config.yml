@@ -1,9 +1,7 @@
-id: S02
+id: s02-selector-clash
 name: S02. Selector Clash
-summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) --- In this
-  lesson, we will introduce the selector clash attack, which is one of the reasons
-  behind the hack of the cross-chain bridge Po'
-level: advanced
+summary: Understand selector clash attacks that exploit function signature collisions. Learn how this vulnerability contributed to major cross-chain bridge hacks and how to protect against it.
+level: 2
 tags:
 - solidity
 - security

@@ -1,9 +1,7 @@
-id: S11
+id: s11-front-running
 name: S11. Front-running
-summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) --- In this
-  lesson, we will introduce front-running in smart contracts. According to statistics,
-  arbitrageurs on Ethereum have made $1.2 '
-level: advanced
+summary: Understand front-running attacks where malicious actors exploit transaction ordering. Learn about MEV, sandwich attacks, and techniques to protect your contracts and users.
+level: 2
 tags:
 - solidity
 - security

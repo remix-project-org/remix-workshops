@@ -1,56 +1,55 @@
-id: 'solidity-basics-part3'
-name: Solidity Basics - Part 3: Applications & Standards (Lessons 31-53)
+id: solidity-basics-part3
+name: Solidity Basics - Part 3 - Applications & Standards (Lessons 31-53)
 summary: 'Build real-world Solidity applications: ERC20, ERC721, ERC1155 tokens, NFT auctions, Merkle trees, digital signatures, WETH, payment splitting, token vesting, timelocks, proxy patterns, upgradeable contracts, multisig wallets, ERC4626 vaults, EIP712 signatures, and ERC20 Permit.'
-level: advanced
+level: 2
 tags:
-- solidity
-- tutorial
-- applications
-- token-standards
+  - solidity
+  - applications
+  - token-standards
 steps:
-- name: 31. ERC20
-  path: step1
-- name: 32. Token Faucet
-  path: step2
-- name: 33. Airdrop Contract
-  path: step3
-- name: 34. ERC721
-  path: step4
-- name: 35. Dutch Auction
-  path: step5
-- name: 36. Merkle Tree
-  path: step6
-- name: 37. Digital Signature
-  path: step7
-- name: 38. NFT Exchange
-  path: step8
-- name: 39. Chainlink Randomness
-  path: step9
-- name: 40. ERC1155
-  path: step10
-- name: 41. WETH
-  path: step11
-- name: 42. Payment Splitting
-  path: step12
-- name: 43. Linear Release
-  path: step13
-- name: 44. Token Lock
-  path: step14
-- name: 45. Time Lock
-  path: step15
-- name: 46. Proxy Contract
-  path: step16
-- name: 47. Upgradeable Contract
-  path: step17
-- name: 48. Transparent Proxy
-  path: step18
-- name: 49. UUPS
-  path: step19
-- name: 50. Multisignature Wallet
-  path: step20
-- name: 51. ERC4626 Tokenization of Vault Standard
-  path: step21
-- name: 52. EIP712 Typed Data Signature
-  path: step22
-- name: 53. ERC-2612 ERC20Permit
-  path: step23
+  - name: 31. ERC20
+    path: step1
+  - name: 32. Token Faucet
+    path: step2
+  - name: 33. Airdrop Contract
+    path: step3
+  - name: 34. ERC721
+    path: step4
+  - name: 35. Dutch Auction
+    path: step5
+  - name: 36. Merkle Tree
+    path: step6
+  - name: 37. Digital Signature
+    path: step7
+  - name: 38. NFT Exchange
+    path: step8
+  - name: 39. Chainlink Randomness
+    path: step9
+  - name: 40. ERC1155
+    path: step10
+  - name: 41. WETH
+    path: step11
+  - name: 42. Payment Splitting
+    path: step12
+  - name: 43. Linear Release
+    path: step13
+  - name: 44. Token Lock
+    path: step14
+  - name: 45. Time Lock
+    path: step15
+  - name: 46. Proxy Contract
+    path: step16
+  - name: 47. Upgradeable Contract
+    path: step17
+  - name: 48. Transparent Proxy
+    path: step18
+  - name: 49. UUPS
+    path: step19
+  - name: 50. Multisignature Wallet
+    path: step20
+  - name: 51. ERC4626 Tokenization of Vault Standard
+    path: step21
+  - name: 52. EIP712 Typed Data Signature
+    path: step22
+  - name: 53. ERC-2612 ERC20Permit
+    path: step23

@@ -1,8 +1,7 @@
-id: S10
+id: s10-honeypot-pixiu
 name: S10. Honeypot / Pixiu
-summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) --- In this
-  lesson, we will introduce the Pixiu contract and stay away from Pixiu tokens.'
-level: advanced
+summary: Identify honeypot and Pixiu token scams that trap victims by allowing buys but preventing sells. Learn to recognize malicious contract patterns and protect yourself from these traps.
+level: 2
 tags:
 - solidity
 - security

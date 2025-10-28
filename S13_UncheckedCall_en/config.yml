@@ -1,9 +1,7 @@
-id: S13
+id: s13-unchecked-low-level-calls
 name: S13. Unchecked Low-Level Calls
-summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) ----- In
-  this lesson, we will discuss the unchecked low-level calls in smart contracts. Failed
-  low-level calls will not cause the transac'
-level: advanced
+summary: Discover the risks of unchecked low-level calls that fail silently. Learn why you must always check return values from call, delegatecall, and send operations.
+level: 2
 tags:
 - solidity
 - security

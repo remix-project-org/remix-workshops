@@ -1,9 +1,7 @@
-id: '55'
+id: 55-multiple-calls
 name: 55. Multiple calls
-summary: I'm recently re-learning solidity, consolidating the details, and writing
-  a "WTF Solidity Minimalist Introduction" for novices (programming experts can find
-  another tutorial), updating 1-3 lectures ev
-level: advanced
+summary: Learn how to aggregate multiple contract calls into a single transaction using MultiCall, improving efficiency and reducing gas costs in Solidity applications.
+level: 2
 tags:
 - solidity
 - erc20

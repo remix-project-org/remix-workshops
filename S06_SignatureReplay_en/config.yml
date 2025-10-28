@@ -1,9 +1,7 @@
-id: S06
+id: s06-signature-replay
 name: S06. Signature Replay
-summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) --- In this
-  lesson, we will introduce the Signature Replay attack and how to prevent it in smart
-  contracts, which indirectly led to the t'
-level: advanced
+summary: Learn about signature replay attacks where valid signatures can be reused maliciously. Understand nonces, chain IDs, and other techniques to prevent signature replay vulnerabilities.
+level: 2
 tags:
 - solidity
 - security

@@ -1,9 +1,7 @@
-id: '57'
+id: 57-flash-loan
 name: 57. Flash loan
-summary: I'm recently re-learning solidity, consolidating the details, and writing
-  a "WTF Solidity Minimalist Introduction" for novices (programming experts can find
-  another tutorial), updating 1-3 lectures ev
-level: advanced
+summary: Master flash loans in DeFi by learning how to borrow large amounts without collateral and execute complex arbitrage strategies within a single transaction.
+level: 2
 tags:
 - solidity
 - flashloan

@@ -1,9 +1,7 @@
-id: S16
+id: s16-nft-reentrancy-attack
 name: S16. NFT Reentrancy Attack
-summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) --- In this
-  lesson, we will discuss the reentrancy vulnerability in NFT contracts and attack
-  a vulnerable NFT contract to mint 100 NFTs.'
-level: advanced
+summary: Understand reentrancy vulnerabilities specific to NFT contracts. Learn how ERC721 and ERC1155 callbacks can be exploited and implement proper reentrancy guards.
+level: 2
 tags:
 - solidity
 - security
