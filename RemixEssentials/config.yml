@@ -1,0 +1,11 @@
+id: remix-essentials
+name: Remix Essentials
+summary: 'Watch videos to learn Remix''s interface and essential features. Learn about basic workflows, AI tools, the debugger, and running scripts in Remix.'
+level: beginner
+tags:
+- remix
+- beginner
+- tutorial
+steps:
+- name: Remix Essentials
+  path: step1

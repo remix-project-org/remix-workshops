@@ -1,0 +1,11 @@
+id: s09-denial-of-service
+name: S09. Denial of Service (DoS)
+summary: Learn about Denial of Service vulnerabilities that can freeze or break smart contract functionality. Understand common DoS patterns and design strategies to build resilient contracts.
+level: 2
+tags:
+- solidity
+- security
+- fallback
+steps:
+- name: Denial of Service (DoS)
+  path: step1

@@ -1,0 +1,10 @@
+id: 55-multiple-calls
+name: 55. Multiple calls
+summary: Learn how to aggregate multiple contract calls into a single transaction using MultiCall, improving efficiency and reducing gas costs in Solidity applications.
+level: 2
+tags:
+- solidity
+- erc20
+steps:
+- name: Multiple calls
+  path: step1

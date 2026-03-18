@@ -7,7 +7,7 @@ In this step, we'll set up Remix for Circom development by activating the `Circo
 3. Find the **Circuit Compiler** plugin in the list and click on the **Activate** button.
 4. The plugin will now appear in your sidebar.
 
-<img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-2/images/install_plugin.png" alt="install-plugin" width=200 height=475>
+<img src="https://raw.githubusercontent.com/remix-project-org/remix-workshops/master/CircomIntro/step-2/images/install_plugin.png" alt="install-plugin" width=200 height=475>
 
 ## The Circom Compiler Interface
 
@@ -16,7 +16,7 @@ In this step, we'll set up Remix for Circom development by activating the `Circo
 - **Hide Warnings Checkbox:** Enable this to suppress compiler warnings.
 - **Advanced Configuration:** Click to expand options for selecting the prime field (e.g., BN128, BLS12381).
 
-<img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-2/images/compiler_interface.png" alt="compiler-interface" width=300 height=300>
+<img src="https://raw.githubusercontent.com/remix-project-org/remix-workshops/master/CircomIntro/step-2/images/compiler_interface.png" alt="compiler-interface" width=300 height=300>
 
 With the plugin installed, you're now ready to start writing Circom code in Remix-IDE.
 

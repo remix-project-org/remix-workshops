@@ -1,0 +1,11 @@
+id: s07-bad-randomness
+name: S07. Bad Randomness
+summary: Understand the dangers of using predictable randomness sources in smart contracts. Learn why block data is not truly random and explore secure alternatives like Chainlink VRF.
+level: 2
+tags:
+- solidity
+- security
+- random
+steps:
+- name: Bad Randomness
+  path: step1

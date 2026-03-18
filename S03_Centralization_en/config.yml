@@ -1,0 +1,11 @@
+id: s03-centralization-risks
+name: S03. Centralization Risks
+summary: Explore the risks of centralization and pseudo-decentralization in smart contracts. Learn from real-world examples like the Ronin bridge hack and how to design more resilient systems.
+level: 2
+tags:
+- solidity
+- security
+- multisig
+steps:
+- name: Centralization Risks
+  path: step1

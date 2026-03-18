@@ -24,7 +24,9 @@ We set a new value for a key by providing the mapping’s name and key in bracke
 ### Removing values
 We can use the delete operator to delete a value associated with a key, which will set it to the default value of 0. As we have seen in the arrays section.
 
-<a href="https://www.youtube.com/watch?v=tO3vVMCOts8" target="_blank">Watch a video tutorial on Mappings</a>.
+Watch a video tutorial on Mappings:
+
+![youtube](https://www.youtube.com/embed/tO3vVMCOts8)
 
 ## ⭐️ Assignment
 1. Create a public mapping `balances` that associates the key type `address` with the value type `uint`.

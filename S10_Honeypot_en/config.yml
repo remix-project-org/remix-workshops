@@ -1,0 +1,12 @@
+id: s10-honeypot-pixiu
+name: S10. Honeypot / Pixiu
+summary: Identify honeypot and Pixiu token scams that trap victims by allowing buys but preventing sells. Learn to recognize malicious contract patterns and protect yourself from these traps.
+level: 2
+tags:
+- solidity
+- security
+- erc20
+- swap
+steps:
+- name: Honeypot / Pixiu
+  path: step1

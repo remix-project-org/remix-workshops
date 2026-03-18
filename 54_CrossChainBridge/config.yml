@@ -1,0 +1,12 @@
+id: 54-cross-chain-bridge
+name: 54. Cross-chain bridge
+summary: Understand how cross-chain bridges work and learn to implement secure bridge contracts for transferring assets between different blockchain networks.
+level: 2
+tags:
+- solidity
+- erc20
+- eip712
+- openzepplin
+steps:
+- name: Cross-chain bridge
+  path: step1

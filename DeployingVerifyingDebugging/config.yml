@@ -1,0 +1,12 @@
+id: deploying-verifying-debugging
+name: Deploying, Verifying & Debugging
+summary: 'Master the deployment process in Remix, including using the Deploy & Run plugin, verifying contracts, generating frontends, using the Remix VM, and recording transactions.'
+level: beginner
+tags:
+- solidity
+- remix
+- plugins
+- tutorial
+steps:
+- name: Deploying, Verifying & Debugging
+  path: step1

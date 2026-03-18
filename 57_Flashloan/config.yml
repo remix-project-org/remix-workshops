@@ -1,0 +1,13 @@
+id: 57-flash-loan
+name: 57. Flash loan
+summary: Master flash loans in DeFi by learning how to borrow large amounts without collateral and execute complex arbitrage strategies within a single transaction.
+level: 2
+tags:
+- solidity
+- flashloan
+- Defi
+- uniswap
+- aave
+steps:
+- name: Flash loan
+  path: step1

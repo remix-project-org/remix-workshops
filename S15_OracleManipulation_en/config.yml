@@ -1,0 +1,11 @@
+id: s15-oracle-manipulation
+name: S15. Oracle Manipulation
+summary: Study oracle manipulation attacks that exploit price feed vulnerabilities. Learn how flash loans enable these attacks and discover secure oracle integration patterns.
+level: 2
+tags:
+- solidity
+- security
+- oracle
+steps:
+- name: Oracle Manipulation
+  path: step1

@@ -1,0 +1,10 @@
+id: s05-integer-overflow
+name: S05. Integer Overflow
+summary: Discover integer overflow and underflow vulnerabilities in Solidity. Learn how arithmetic operations can be exploited and how to use SafeMath or Solidity 0.8+ to prevent these issues.
+level: 2
+tags:
+- solidity
+- security
+steps:
+- name: Integer Overflow
+  path: step1

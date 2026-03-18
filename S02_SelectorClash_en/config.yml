@@ -1,0 +1,12 @@
+id: s02-selector-clash
+name: S02. Selector Clash
+summary: Understand selector clash attacks that exploit function signature collisions. Learn how this vulnerability contributed to major cross-chain bridge hacks and how to protect against it.
+level: 2
+tags:
+- solidity
+- security
+- selector
+- abi encode
+steps:
+- name: Selector Clash
+  path: step1

@@ -1,0 +1,14 @@
+id: s16-nft-reentrancy-attack
+name: S16. NFT Reentrancy Attack
+summary: Understand reentrancy vulnerabilities specific to NFT contracts. Learn how ERC721 and ERC1155 callbacks can be exploited and implement proper reentrancy guards.
+level: 2
+tags:
+- solidity
+- security
+- fallback
+- nft
+- erc721
+- erc1155
+steps:
+- name: NFT Reentrancy Attack
+  path: step1
