@@ -17,7 +17,9 @@ When sending a transaction, the sender specifies the maximum amount of gas that 
 
 Learn more about *gas* on <a href="https://ethereum.org/en/developers/docs/gas/" target="_blank">ethereum.org</a>.
 
-<a href="https://www.youtube.com/watch?v=oTS9uxU6cAM" target="_blank">Watch a video tutorial on Gas and Gas Price</a>.
+Watch a video tutorial on Gas and Gas Price:
+
+![youtube](https://www.youtube.com/embed/oTS9uxU6cAM)
 
 ## ⭐️ Assignment
 Create a new `public` state variable in the `Gas` contract called `cost` of the type `uint`. Store the value of the gas cost for deploying the contract in the new variable, including the cost for the value you are storing.

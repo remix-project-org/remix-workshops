@@ -1,0 +1,13 @@
+id: S07
+name: S07. Bad Randomness
+summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) ----- In
+  this lesson, we will discuss the Bad Randomness vulnerability in smart contracts
+  and methods to prevent. This vulnerability is c'
+level: advanced
+tags:
+- solidity
+- security
+- random
+steps:
+- name: Bad Randomness
+  path: step1

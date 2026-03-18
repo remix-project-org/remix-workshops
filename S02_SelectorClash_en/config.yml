@@ -1,0 +1,14 @@
+id: S02
+name: S02. Selector Clash
+summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) --- In this
+  lesson, we will introduce the selector clash attack, which is one of the reasons
+  behind the hack of the cross-chain bridge Po'
+level: advanced
+tags:
+- solidity
+- security
+- selector
+- abi encode
+steps:
+- name: Selector Clash
+  path: step1

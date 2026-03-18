@@ -1,0 +1,15 @@
+id: '38'
+name: 38. NFT Exchange
+summary: I have been revisiting Solidity lately to review the details and create a
+  "WTF Simplified Introduction to Solidity" for beginners (professional programmers
+  may find other tutorials more suitable), wit
+level: advanced
+tags:
+- solidity
+- application
+- wtfacademy
+- ERC721
+- NFT Swap
+steps:
+- name: NFT Exchange
+  path: step1

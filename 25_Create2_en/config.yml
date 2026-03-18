@@ -1,0 +1,15 @@
+id: '25'
+name: 25. Create2
+summary: '`CREATE2` opcode helps us to predict the address of the smart contract before
+  it is deployed on the Ethereum network, and `Uniswap` created `Pair` contract with
+  `CREATE2` instead of `CREATE`.'
+level: intermediate
+tags:
+- solidity
+- advanced
+- wtfacademy
+- create contract
+- create2
+steps:
+- name: Create2
+  path: step1

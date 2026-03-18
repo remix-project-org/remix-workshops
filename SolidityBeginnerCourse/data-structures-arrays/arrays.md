@@ -30,7 +30,9 @@ If the order of the array is not important, then we can move the last element of
 ### Array length
 Using the length member, we can read the number of elements that are stored in an array (line 35).
 
-<a href="https://www.youtube.com/watch?v=vTxxCbwMPwo" target="_blank">Watch a video tutorial on Arrays</a>.
+Watch a video tutorial on Arrays:
+
+![youtube](https://www.youtube.com/embed/vTxxCbwMPwo)
 
 ## ⭐️ Assignment
 1. Initialize a public fixed-sized array called `arr3` with the values 0, 1, 2. Make the size as small as possible.

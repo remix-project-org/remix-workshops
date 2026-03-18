@@ -1,0 +1,14 @@
+id: S01
+name: S01. Reentrancy Attack
+summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) --- In this
+  lesson, we will introduce the most common type of smart contract attack - a reentrancy
+  attack, which has led to the Ethereum '
+level: advanced
+tags:
+- solidity
+- security
+- fallback
+- modifier
+steps:
+- name: Reentrancy Attack
+  path: step1

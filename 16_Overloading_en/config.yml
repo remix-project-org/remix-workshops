@@ -1,0 +1,13 @@
+id: '16'
+name: 16. Overloading
+summary: '`solidity` allows functions to be overloaded（`overloading`）. That is, functions
+  with the same name but different input parameter types'
+level: intermediate
+tags:
+- solidity
+- advanced
+- wtfacademy
+- overloading
+steps:
+- name: Overloading
+  path: step1

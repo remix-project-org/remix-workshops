@@ -1,0 +1,15 @@
+id: '37'
+name: 37. Digital Signature
+summary: I'm currently relearning Solidity to consolidate some details and write a
+  'WTF Solidity QuickStart' for newbies to use (programming experts can find other
+  tutorials), with 1-3 updates per week.
+level: advanced
+tags:
+- Solidity
+- Application
+- WTF Academy
+- ERC721
+- Signature
+steps:
+- name: Digital Signature
+  path: step1

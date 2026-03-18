@@ -1,0 +1,12 @@
+id: '01'
+name: 1. HelloWeb3 (Solidity in 3 lines)
+summary: '`Solidity` is a programming language used for creating smart contracts on
+  the Ethereum Virtual Machine (EVM). It''s a necessary skill for working on blockchain
+  projects. Moreover, as many of them are o'
+level: beginner
+tags:
+- solidity
+- tutorial
+steps:
+- name: HelloWeb3 (Solidity in 3 lines)
+  path: step1

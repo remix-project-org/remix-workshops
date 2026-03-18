@@ -1,0 +1,14 @@
+id: '18'
+name: 18. Import
+summary: '`solidity` supports the use of the `import` keyword to import global symbols
+  in other contracts (simply understood as external source code), making development
+  more modular. Generally,'
+level: intermediate
+tags:
+- solidity
+- advanced
+- wtfacademy
+- import
+steps:
+- name: Import
+  path: step1

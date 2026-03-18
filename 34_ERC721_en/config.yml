@@ -1,0 +1,16 @@
+id: '34'
+name: 34. ERC721
+summary: Tokens such as `BTC` and `ETH` belong to homogeneous tokens, and the first
+  `BTC` mined is no different from the 10,000th `BTC` mined, and they are equivalent.
+  However, many items in the world are hete
+level: intermediate
+tags:
+- solidity
+- application
+- wtfacademy
+- ERC721
+- ERC165
+- OpenZeppelin
+steps:
+- name: ERC721
+  path: step1

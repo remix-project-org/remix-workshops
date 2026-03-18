@@ -27,7 +27,9 @@ Arrays can be used as parameters, as shown in the function `arrayInput` (line 71
 
 You have to be cautious with arrays of arbitrary size because of their gas consumption. While a function using very large arrays as inputs might fail when the gas costs are too high, a function using a smaller array might still be able to execute.
 
-<a href="https://www.youtube.com/watch?v=je7dWT6bEZM" target="_blank">Watch a video tutorial on Function Outputs</a>.
+Watch a video tutorial on Function Outputs:
+
+![youtube](https://www.youtube.com/embed/je7dWT6bEZM)
 
 ## ⭐️ Assignment
 Create a new function called `returnTwo` that returns the values `-2` and `true` without using a return statement.

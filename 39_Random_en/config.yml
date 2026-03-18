@@ -1,0 +1,16 @@
+id: '39'
+name: 39. Chainlink Randomness
+summary: I am currently re-learning Solidity to sharpen my skills and writing a "WTF
+  Solidity Quick Start" guide for beginners to use (advanced programmers can look
+  for other tutorials). I will update 1-3 lect
+level: advanced
+tags:
+- solidity
+- application
+- wtfacademy
+- ERC721
+- random
+- chainlink
+steps:
+- name: Chainlink Randomness
+  path: step1

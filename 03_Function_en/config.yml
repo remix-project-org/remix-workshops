@@ -1,0 +1,12 @@
+id: '03'
+name: 3. Function
+summary: 'Here''s the format of a function in Solidity: ```solidity function <function
+  name>(<parameter types>) [internal|external] [pure|view|payable] [returns (<return
+  types>)]'
+level: beginner
+tags:
+- solidity
+- tutorial
+steps:
+- name: Function
+  path: step1

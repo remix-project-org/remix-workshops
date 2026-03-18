@@ -1,0 +1,11 @@
+id: solidity-basics-videos
+name: Solidity Basics Videos
+summary: 'Learn Solidity fundamentals through video tutorials covering Hello World, events, functions, payable functions, state variables, gas, and gas price.'
+level: beginner
+tags:
+- solidity
+- beginner
+- tutorial
+steps:
+- name: Solidity Basics Videos
+  path: step1

@@ -5,7 +5,7 @@ With your `multiplier.circom` circuit ready, let's compile it using the Circuit 
 
 Choose the desired **Compiler Version** from the dropdown menu. For this tutorial, select the latest stable version.
 
-<img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-4/images/select_compiler_version.png" alt="select-compiler-version" width=250 height=100>
+<img src="https://raw.githubusercontent.com/remix-project-org/remix-workshops/master/CircomIntro/step-4/images/select_compiler_version.png" alt="select-compiler-version" width=250 height=100>
 
 ## Configuring Compilation Options
 
@@ -15,7 +15,7 @@ Choose the desired **Compiler Version** from the dropdown menu. For this tutoria
   - Click to expand.
   - Select the **Prime Field**. For most cases, `BN128` is sufficient.
 
-<img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-4/images/advanced_configuration.png" alt="advanced-configuration" width=300 height=100>
+<img src="https://raw.githubusercontent.com/remix-project-org/remix-workshops/master/CircomIntro/step-4/images/advanced_configuration.png" alt="advanced-configuration" width=300 height=100>
 
 ## Compiling the Circuit
 
@@ -23,7 +23,7 @@ Choose the desired **Compiler Version** from the dropdown menu. For this tutoria
 2. The compiler will process your circuit.
 3. If successful, you'll see a compilation success message.
 
-<img src="https://raw.githubusercontent.com/ethereum/remix-workshops/master/CircomIntro/step-4/images/compilation_success.png" alt="compilation-success" width=200 height=400>
+<img src="https://raw.githubusercontent.com/remix-project-org/remix-workshops/master/CircomIntro/step-4/images/compilation_success.png" alt="compilation-success" width=200 height=400>
 
 **Note:** If there are any errors, they will be displayed in the console. Check your code for typos or syntax errors.
 

@@ -1,0 +1,16 @@
+id: '51'
+name: 51. ERC4626 Tokenization of Vault Standard
+summary: 'I have recently been revising Solidity to consolidate the details, and am
+  writing a "WTF Simplified Introduction to Solidity" for beginners to use (programming
+  experts can find other tutorials), with '
+level: advanced
+tags:
+- solidity
+- erc20
+- erc4626
+- defi
+- vault
+- openzepplin
+steps:
+- name: ERC4626 Tokenization of Vault Standard
+  path: step1

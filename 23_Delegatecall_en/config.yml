@@ -1,0 +1,14 @@
+id: '23'
+name: 23. Delegatecall
+summary: '`delegatecall` is similar to `call`, is a low level function in `Solidity`.
+  `delegate` means entrust/represent, so what does `delegatecall` entrust?'
+level: intermediate
+tags:
+- solidity
+- advanced
+- wtfacademy
+- call contract
+- delegatecall
+steps:
+- name: Delegatecall
+  path: step1

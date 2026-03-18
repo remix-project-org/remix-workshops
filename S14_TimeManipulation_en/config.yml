@@ -1,0 +1,13 @@
+id: S14
+name: S14. Block Timestamp Manipulation
+summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) --- In this
+  lesson, we will introduce the block timestamp manipulation attack on smart contracts
+  and reproduce it using Foundry. Before t'
+level: advanced
+tags:
+- solidity
+- security
+- timestamp
+steps:
+- name: Block Timestamp Manipulation
+  path: step1

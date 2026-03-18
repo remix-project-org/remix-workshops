@@ -1,0 +1,15 @@
+id: '32'
+name: 32. Token Faucet
+summary: In lesson 31, we learned about the `ERC20` token standard. In this lesson,
+  we will learn about the smart contract for an `ERC20` faucet. In this contract,
+  users can receive free `ERC20` tokens.
+level: intermediate
+tags:
+- solidity
+- application
+- wtfacademy
+- ERC20
+- faucet
+steps:
+- name: Token Faucet
+  path: step1

@@ -1,0 +1,13 @@
+id: S12
+name: S12. tx.origin Phishing Attack
+summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) --- In this
+  lesson, we will discuss the `tx.origin` phishing attack and prevention methods in
+  smart contracts.'
+level: advanced
+tags:
+- solidity
+- security
+- tx.origin
+steps:
+- name: tx.origin Phishing Attack
+  path: step1

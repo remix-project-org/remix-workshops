@@ -1,0 +1,11 @@
+id: '02'
+name: 2. Value Types
+summary: 1. **Value Type**：This includes boolean, integer, etc. These variables directly
+  pass values when assigned.
+level: beginner
+tags:
+- solidity
+- tutorial
+steps:
+- name: Value Types
+  path: step1

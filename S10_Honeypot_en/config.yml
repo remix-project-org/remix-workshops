@@ -1,0 +1,13 @@
+id: S10
+name: S10. Honeypot / Pixiu
+summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) --- In this
+  lesson, we will introduce the Pixiu contract and stay away from Pixiu tokens.'
+level: advanced
+tags:
+- solidity
+- security
+- erc20
+- swap
+steps:
+- name: Honeypot / Pixiu
+  path: step1

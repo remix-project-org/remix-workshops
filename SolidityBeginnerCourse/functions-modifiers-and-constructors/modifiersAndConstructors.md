@@ -26,7 +26,9 @@ A constructor function is executed upon the creation of a contract. You can use 
 
 You declare a constructor using the `constructor` keyword. The constructor in this contract (line 11) sets the initial value of the owner variable upon the creation of the contract.
 
-<a href="https://www.youtube.com/watch?v=b6FBWsz7VaI" target="_blank">Watch a video tutorial on Function Modifiers</a>.
+Watch a video tutorial on Function Modifiers:
+
+![youtube](https://www.youtube.com/embed/b6FBWsz7VaI)
 
 ## ⭐️ Assignment
 1. Create a new function, `increaseX` in the contract. The function should take an input parameter of type `uint` and increase the value of the variable `x` by the value of the input parameter.

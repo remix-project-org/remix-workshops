@@ -1,0 +1,13 @@
+id: S06
+name: S06. Signature Replay
+summary: 'English translations by: [@to_22X](https://twitter.com/to_22X) --- In this
+  lesson, we will introduce the Signature Replay attack and how to prevent it in smart
+  contracts, which indirectly led to the t'
+level: advanced
+tags:
+- solidity
+- security
+- signature
+steps:
+- name: Signature Replay
+  path: step1

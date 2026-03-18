@@ -1,0 +1,15 @@
+id: '33'
+name: 33. Airdrop Contract
+summary: In the world of cryptocurrency, one of the most exciting things is receiving
+  an airdrop of free tokens. In this tutorial, we will learn how to use a smart contract
+  to send `ERC20` tokens as an airdrop
+level: intermediate
+tags:
+- Solidity
+- Application
+- WTF Academy
+- ERC20
+- Airdrop
+steps:
+- name: Airdrop Contract
+  path: step1
